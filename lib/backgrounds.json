@@ -1,0 +1,222 @@
+[
+  {
+    "id": "pbg_celebrity",
+    "name": "Celebridade",
+    "description": "Você era uma figura pública. <i>Você era um ator? Cantor? Artista? Atleta? Político? A face pública de uma corporação ou de uma campanha publicitária militar?</i><br>Na sua vida antiga, você não podia ir a lugar nenhum sem ter paparazzis por perto. <i>Como você está se ajustando à sua nova vida como piloto? Você se voluntariou ou foi recrutado? Você ainda pratica sua arte, ofício, ou profissão, ou a rígida estrutura militar torna difícil manter as duas obrigações?</i>",
+    "skills": [
+      "sk_charm",
+      "sk_pull_rank",
+      "sk_lead_or_inspire",
+      "sk_threaten"
+    ]
+  },
+  {
+    "id": "pbg_colonist",
+    "name": "Colono",
+    "description": "Você era um colono na fronteira, uma das primeiras gerações a nascer em um mundo recém-assentado. Você está acostumado às exigências de uma vida na fronteira e sabe bem da posição precária em que a maioria dos agricultores de subsistência vivem. <i>Por que você partiu? Você foi forçado a fugir, se tornando um refugiado? Você escolheu se alistar?</i><br>E há o lar que você deixou para trás. <i>A colônia ainda está lá? Sua família? O quão familiarizado você está com o luxo dos mundos do núcleo? Você acha outras culturas difíceis de lidar ou é fascinado pela riqueza de expressões culturais humanas? Você carrega lembranças de casa ou amaldiçoa seu nome? Sua colônia estava em um canto esquecido da galáxia ou era uma populosa nova colônia em uma área do espaço com alto tráfego? Onde sua colônia estava localizada?</i>",
+    "skills": [
+      "sk_word_on_the_street",
+      "sk_spot",
+      "sk_survive",
+      "sk_patch"
+    ]
+  },
+  {
+    "id": "pbg_criminal",
+    "name": "Criminoso",
+    "description": "Você era um criminoso: peixe pequeno, chefe ou algo entre isso. <i>Você trabalhava para clientes corporativos? Uma organização criminosa? Para você mesmo? Você atacava pedestres nos becos de grandes cidades ou entrava despercebido em bases corporativas para roubar dados? Você fazia isso por ganho pessoal ou para alimentar sua familia? Como você se encontrou nessa vida, e como se tornou um piloto? Você operava com um código de honra? Você era leal a uma única família, pequena equipe, um político ou uma ideologia? Você operava nas sombras ou seu trabalho era feito à luz do dia, sem medo das consequências?</i><br>Deve existir uma razão que fez você decidir sair. <i>Foi um trabalho ruim ou talvez proteção à testemunha? Seus antigos empregadores ou equipe ainda estão por aí? Quais conexões eles têm e como eles se sentem em relação a você agora? O que — se algo — te atormenta?</i><br>Nota: para um aspecto mais \"Velho Oeste\", veja o Antecedente Fora da Lei.<i></i>",
+    "skills": [
+      "sk_threaten",
+      "sk_apply_fists_to_faces",
+      "sk_word_on_the_street",
+      "sk_take_control"
+    ]
+  },
+  {
+    "id": "pbg_far_field_team",
+    "name": "Explorador de Campo Distante",
+    "description": "Você era membro de uma Equipe de Campo Distante (ECD) da União, trabalhando na fronteira e limite da civilização para avaliar mundos estranhos e planetoides em busca de anomalias, descobertas e habitabilidade. <i>O que você viu na fronteira selvagem? Por quantos mundos você viajou? Você era parte de uma equipe pequena ou grande? Onde fica seu mundo natal?</i><br>Alguma coisa o levou a explorar. <i>Você está em busca de um mundo sagrado? Um éden entre as estrelas? Seu interesse na fronteira foi místico, científico ou baseado na velha curiosidade, ou foi estimulado por alguma outra coisa? Talvez exista uma lenda que você escutou, lá fora no escuro, que você quer encontrar ou que tem medo de que possa encontrar? Quais segredos — se algum — você encontrou nas suas pesquisas de longo alcance? Você mantém contato com seus velhos companheiros de equipe, se eles ainda estiverem vivos?</i><br>Como um antigo (ou atual) membro de uma ECD, você é um Cosmopolita. <i>Quando foi \"seu tempo\"? O quão separado você se sente da passagem do tempo?</i>",
+    "skills": [
+      "sk_survive",
+      "sk_investigate",
+      "sk_spot",
+      "sk_charm"
+    ]
+  },
+  {
+    "id": "pbg_hacker",
+    "name": "Hacker",
+    "description": "Você se especializou em guerra de informação e espionagem de dados, tanto para benefício próprio ou de seus empregadores. Para você, a omninet - a rede de informações mais rápida que a luz que conecta os mundos da União - é sua casa. <i>Como você entrou nessa vida? Você cresceu plugado na omninet ou você entrou nela tarde? O quão bem versado é você nos lugares escondidos, truques e segredos da omninet? O quão notório você era antes de se tornar um piloto? As pessoas ainda sussurram seu nome? Outros hackers se lembram de você? Você é celebrado ou amaldiçoado entre eles?</i><br>Mas não era apenas a omninet que você hackeava. <i>O quão habilidoso você era em manipular outras redes? Você consegue manipular sistemas discretos, código genético ou algum outro tipo de interface, digital ou mecânica? A quais segredos você teve acesso?</i>",
+    "skills": [
+      "sk_act_unseen_or_unheard",
+      "sk_get_a_hold_of_something",
+      "sk_hack_or_fix",
+      "sk_invent_or_create"
+    ]
+  },
+  {
+    "id": "pbg_mechanic",
+    "name": "Mecânico",
+    "description": "Macaco, chave, peão; você era um mecânico antes de se tornar um piloto. <i>Você trabalhava no espaço em um traje de atividade extraveicular, remendando naves danificadas? Ou você era de ficar em planetas, tunando caminhões e transportadores em uma linha de motores? Você consertava mechas destruídos em batalhas, sonhando em um dia pilotar um? Você possuía uma oficina ou trabalhava para outra pessoa? Você era militar, corporativo, parte de uma casta ou membro de sindicato? O quão bom é você em campo? Você está trabalhando em algum projeto pessoal?</i>",
+    "skills": [
+      "sk_hack_or_fix",
+      "sk_get_somewhere_quickly",
+      "sk_get_a_hold_of_something",
+      "sk_blow_something_up"
+    ]
+  },
+  {
+    "id": "pbg_medic",
+    "name": "Médico",
+    "description": "Você era um médico especialista na sua antiga vida. <i>Como você terminou pilotando um mecha? Qual era sua especialidade? Você trabalhava em pesquisa, atendimento ou trauma? Você amava a vida e levava seu dever a sério, ou se via como um mecânico orgânico?</i><br>Você pode ter trabalhado em uma colônia ou mundo do núcleo, de modo privado, para uma corporação ou na folha de pagamento de uma família nobre. <i>Você operava em uma pequena fronteira, ou trabalhava em um centro de emergência médica de um portão de lampejo, ou em um grande hospital universitário? Você era um jaleco branco ou paramédico? Tem alguma memória que te assombra ou uma que te conforta?</i>",
+    "skills": [
+      "sk_patch",
+      "sk_assault",
+      "sk_read_a_situation",
+      "sk_stay_cool"
+    ]
+  },
+  {
+    "id": "pbg_mercenary",
+    "name": "Mercenário",
+    "description": "Como um soldado de fortuna, você viveu pelo lema: \"tenho arma, vou viajar\". Você e seu equipamento estavam disponíveis para quem pagasse mais. <i>Você trabalhava sozinho ou com uma equipe? Sua companhia tinha uma nave? Foi nessa época que começou a pilotar mechas por conta própria? Você tinha um código de honra? Qual era esse código?</i><br>Algo te levou a sair da vida de mercenário. <i>Foi a promessa de riquezas? Desejo de poder? Aventura? Desespero?</i><br>Por alguma razão, você deixou aquela vida para trás. <i>Por quê? Um trabalho deu errado, ou teve um que realmente foi um lendário \"último trabalho\"? Seus antigos companheiros ainda estão por ai? Você tinha uma companhia rival ou inimigos? Você se lembra daquele tempo com carinho ou prefere nunca falar sobre ele?</i>",
+    "skills": [
+      "sk_threaten",
+      "sk_blow_something_up",
+      "sk_take_control",
+      "sk_apply_fists_to_faces"
+    ]
+  },
+  {
+    "id": "pbg_nhp_specialist",
+    "name": "Especialista em PNH",
+    "description": "Você esteve envolvido intimamente no estudo, criação ou manutenção de uma pessoa não humana primordial. Pessoa não humana, ou PNH, são inteligências artificiais complexas. Como uma PNH primordial, a que você estava associado era ainda mais complexa que a maioria. <i>Você interagiu com a entidade como um cientista ou engenheiro, ou mais como um sacerdote ou xamã? Você tem uma conexão pessoal com elas, depois de todo esse tempo? O que os clones dessa PNH acham de você? E agora, que você é um piloto, como você se sente em relação a inteligências não humanas?</i>",
+    "skills": [
+      "sk_stay_cool",
+      "sk_read_a_situation",
+      "sk_invent_or_create",
+      "sk_investigate"
+    ]
+  },
+  {
+    "id": "pbg_noble",
+    "name": "Nobre",
+    "description": "Você é membro da aristocracia do seu mundo, destinado desde nascença a ascender ao poder. <i>De que autoridade seu direito de nascença vem? Um deus? Um ancestral? Um texto antigo? Uma rotação anual complexa? Como o poder é passado de uma geração para a próxima?</i><br>Sua condição de nobre vem de algum lugar. <i>Você é o primeiro de sua familia a receber um título de nobreza, o último de sua casa, ou membro de uma linhagem bem estabelecida? Você é um herdeiro ou apenas filho do meio? Qual sua relação com seus pais nobres?</i><br>Quaisquer que sejam os privilégios que tenha recebido em casa, você descobriu que a União não se importa com títulos em suas forças armadas; sua posição social anterior é apenas plano de fundo, a menos que você retorne para casa ou faça parte de um grupo que reconheça sua nobreza. <i>Como você recebeu essa mudança?</i>",
+    "skills": [
+      "sk_pull_rank",
+      "sk_lead_or_inspire",
+      "sk_read_a_situation",
+      "sk_show_off"
+    ]
+  },
+  {
+    "id": "pbg_outlaw",
+    "name": "Fora da Lei",
+    "description": "Você veio de um início humilde, nascido no limite do espaço cultivado ou abaixo de enormes torres em mundos do núcleo esquecido até você sair e tomar o que lhe era devido. Alguns o chamam de criminoso, ladrão ou fora da lei, mas você simplesmente diz que é o que é: se eles não o tivessem negado seu pão, você não teria que ir tomá-lo. <i>Você era um bruto ou um trapaceiro? Charmoso ou monstruoso? Suas ações eram motivadas por ideologia, necessidade, desejo ou uma combinação dos três? Quem te definiu como um \"fora da lei\" e quem te via como herói? Existe um prêmio pela sua cabeça?</i>",
+    "skills": [
+      "sk_show_off",
+      "sk_take_someone_out",
+      "sk_charm",
+      "sk_survive"
+    ]
+  },
+  {
+    "id": "pbg_penal_colonist",
+    "name": "Colono Penal",
+    "description": "Muito tempo atrás, você foi exilado a uma colônia penal para uma sentença de trabalho forçado. Quando o Terceiro Comitê aboliu todas as colônias penais, seu planeta prisão foi – em teoria – \"liberado\". Infelizmente, nada mudou muito até que as naves de socorro da União finalmente chegassem. Agora livre tanto na prática quanto na teoria, lugares que eram fora dos limites foram abertos para você. <i>Você ficou por um tempo? Ou escolheu partir, indo para as estrelas ou tentando encontrar seu caminho de volta para casa? Você era culpado dos seus crimes ou foi condenado injustamente?</i><br>Colônias penais eram ambientes rigorosos e sem misericórdia. <i>Você era monitorado por alguma autoridade ou a colônia já era submetida à anarquia mesmo antes da abolição da União do sistema? Havia algum tipo de sociedade rudimentar lá? Você tinha amigos ou inimigos lá, e alguns deles saíram do mundo? E sua família – você tinha alguma antes da sua sentença? O que aconteceu com eles? Ou você não sabe?</i>",
+    "skills": [
+      "sk_survive",
+      "sk_apply_fists_to_faces",
+      "sk_word_on_the_street",
+      "sk_spot"
+    ]
+  },
+  {
+    "id": "pbg_priest",
+    "name": "Sacerdote",
+    "description": "Você era um sacerdote na sua vida antiga, de uma grande religião pan-galáctica ou uma seita menor. <i>Você era um eremita? Vivia em celibato em um monasterio? Vestia túnicas simples ou vestimentas majestosas? Quais eram as restrições impostas sobre você pela igreja? Que tipo de respeito era dado a você como uma pessoa de batina? Foi sua escolha se tornar um sacerdote? Como você acabou servindo como piloto?</i><br>Existem igrejas em todo lugar, cada uma única em seu próprio modo. <i>Você era membro de uma religião proeminente, ou de uma secreta e proibida? Você pregava uma fé terráquea, nascida no Berço e continuada por milênios? Ou a sua era uma espiritualidade Cosmopolitana, vinda das estrelas e do vazio do espaço interestelar? Talvez você tenha ministrado para um pequeno rebanho de uma seita obscura na fronteira ou nos cânions urbanos de um mundo do núcleo? Você manteve sua fé ou a perdeu?</i>",
+    "skills": [
+      "sk_read_a_situation",
+      "sk_stay_cool",
+      "sk_take_control",
+      "sk_lead_or_inspire"
+    ]
+  },
+  {
+    "id": "pbg_scientist",
+    "name": "Cientista",
+    "description": "Você era um cientista — trabalhando no laboratório ou no campo, em instituição pública ou privada. <i>Qual era a sua área de especialidade e por quanto tempo você a praticou? Onde você estudou e qual é a sua relação com essa instituição? Você tem rivais? Eles são bem conhecidos ou relativamente anônimos? Como sua sociedade natal percebe a ciência? Como você se tornou um piloto?</i><br><i>Importante, você trabalhou para um fabricante poderoso como a Arsenal Harrison, Smith-Shimano ou EIP-EN? Ou mergulhou no estranho, trabalhando em segredo em um pequeno grupo dedicado à HORUS? Quais segredos você conhece?</i>",
+    "skills": [
+      "sk_investigate",
+      "sk_invent_or_create",
+      "sk_get_a_hold_of_something",
+      "sk_blow_something_up"
+    ]
+  },
+  {
+    "id": "pbg_soldier",
+    "name": "Soldado",
+    "description": "Bucha de canhão. Bruto. Boi. Praça. Homem de armas. Você era um soldado raso, servindo em uma força de defesa planetária, milícia local, exército nacional ou guarda real. <i>Por quanto tempo você serviu antes da União te chamar? Que tipo de especialidade você treinou? Você já viu combate ou ainda é inexperiente? Você se voluntariou, foi recrutado ou é membro de uma casta militar? Ser soldado é uma orgulhosa tradição familiar, cívica ou religiosa, ou uma vida da qual você se arrepende? Onde estão os outros soldados do seu antigo esquadrão e qual é sua relação com eles agora?</i>",
+    "skills": [
+      "sk_assault",
+      "sk_blow_something_up",
+      "sk_pull_rank",
+      "sk_take_control"
+    ]
+  },
+  {
+    "id": "pbg_spaceborn",
+    "name": "Espaçonato",
+    "description": "Você cresceu em uma estação espacial, em quartos apertados e uma pequena comunidade, cercados sempre pelo implacável e absoluto vácuo do espaço. <i>Recursos eram escassos ou abundantes? Sua estação era isolada ou era um polo local (ou galático!)? Ela estava estacionada na noite infinita do espaço profunda ou em órbita acima de um planeta, lua ou outro corpo celeste? Ela era inteiramente fabricada ou foi construída em um asteroide ou lua?</i><br>Nenhuma estação é igual a outra. <i>Você cresceu vendo grandes naves aportarem e partirem exposto a milhares de línguas e culturas da galáxia, sonhando com exploração ou cresceu em corredores escuros e rochosos, ignorante sobre a galáxia ao lado de fora? Em resumo, como era sua vida, por que você partiu? Você ainda pode voltar?</i>",
+    "skills": [
+      "sk_survive",
+      "sk_hack_or_fix",
+      "sk_get_somewhere_quickly",
+      "sk_stay_cool"
+    ]
+  },
+  {
+    "id": "pbg_spec_ops",
+    "name": "Agente de Operações Especiais",
+    "description": "Você pode ter sido um espião ou assassino, trabalhando sozinho ou como parte de uma unidade de elite, operando atrás de linhas inimigas com pouco ou nenhum suporte, equipado com os melhores equipamentos que seus comandantes confiavam a você.<i></i><br>Suas missões eram longas, perigosas e nunca anunciadas. Se soldados são martelos, você era um bisturi. Independente da organização à qual você serviu, ela era falada apenas em sussurros, tanto nos quartéis quanto nas academias militares. <i>Qual trabalho você fez que ninguém sabe que foi você ou sua unidade? O quão perto a galáxia chegou de uma guerra total? Onde você operou? O quão velho você é — de verdade? Quais segredos você sabe? Onde está o resto da sua equipe?</i>",
+    "skills": [
+      "sk_act_unseen_or_unheard",
+      "sk_take_someone_out",
+      "sk_spot",
+      "sk_stay_cool"
+    ]
+  },
+  {
+    "id": "pbg_super_soldier",
+    "name": "Super Soldado",
+    "description": "Você é resultado de um projeto estatal ou corporativo cujo objetivo era criar soldados melhorados usando aprimoramentos biológicos e neurológicos, terapia de genes ou até mesmo apenas condicionamento extremo. <i>Você foi criado desde o nascimento para se tornar o que é, ou você se voluntariou já adulto para um programa de super soldado? Você é dos inúmeros 'super soldados' a serem produzidos pelo programa de clonagem fac-símile da Arsenal Harrison? O projeto era sancionado ou não? Ele foi um sucesso? Você já testou suas habilidades no campo ou ainda não se provou e está ansioso para ver o que pode fazer?</i><br>Sob o Terceiro Comitê, poucos programas como o que te criou ainda operam. <i>Você está feliz ou acha que isso torna a União fraca? Qual sua relação com seus criadores? Existe uma família que não sabe que você existe? Ou você vem de uma linha de irmãos produzidos em massa? Você foi liberado, se rendeu ou ainda está a serviço da organização ou entidade que você foi criado para servir?</i>",
+    "skills": [
+      "sk_apply_fists_to_faces",
+      "sk_get_somewhere_quickly",
+      "sk_assault",
+      "sk_read_a_situation"
+    ]
+  },
+  {
+    "id": "pbg_starship_pilot",
+    "name": "Piloto de Espaçonave",
+    "description": "Você pilotava uma espaçonave – civil, corporativa, militar ou outra. Você pode ter pilotado um cargueiro, um caça, um transportador ou uma nave maior. <i>Você tinha um trajeto regular ou voava para qualquer lugar? Você era membro de uma tripulação ou tinha a sua própria? Que tipo de voo você fazia e o que aconteceu com sua nave? Você pilotou apenas em trajetos de transporte de baixa e média órbita?</i><br>Ser um piloto é tanto um estilo de vida quanto uma profissão. <i>Qual era seu codinome? Você era conhecido ou anônimo? Existia um serviço, piloto ou grupo de pilotos rivais com os quais você tinha atrito? Você trabalhou com PNHs ou voou em combate? Você já viu algo estranho no espaço interestrelar ou no vazio total do espaço lampejo?</i>",
+    "skills": [
+      "sk_get_somewhere_quickly",
+      "sk_show_off",
+      "sk_get_a_hold_of_something",
+      "sk_hack_or_fix"
+    ]
+  },
+  {
+    "id": "pbg_worker",
+    "name": "Trabalhador",
+    "description": "No fim das contas, impérios só funcionam quando os trabalhadores batem ponto. O trabalho minera matérias-primas; o trabalho transforma pedra, metal e matéria orgânica em balas, parafusos e cola; trabalho cria os padrões de impressão para as impressoras; trabalho molda e solda, martela e constrói. Sem o trabalho de trilhões, todo o progresso para. <i>Antes de soltar sua chave-inglesa e pegar um leme, que tipo de trabalho você fazia? Você trabalhava nos campos, fábricas, estaleiros, minas ou alguma outra coisa? Como era sua vida antes de você começar a treinar como um piloto? Por que você partiu? Você retornará? Teve algum projeto em que você trabalhou e do qual se orgulha? Você ainda tem uma antiga equipe que continua batendo ponto? Qual mundo você chamava de casa e quais eram as condições de trabalho lá?</i>",
+    "skills": [
+      "sk_word_on_the_street",
+      "sk_stay_cool",
+      "sk_lead_or_inspire",
+      "sk_invent_or_create"
+    ]
+  }
+]

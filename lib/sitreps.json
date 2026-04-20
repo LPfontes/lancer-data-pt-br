@@ -1,0 +1,67 @@
+[
+  {
+    "id": "sitrep_standardcombat",
+    "name": "Combate Padrão",
+    "pcVictory": "Os PJs derrotam ou afugentam todas as forças inimigas.",
+    "enemyVictory": "Os PJs são derrotados ou recuam da batalha.",
+    "description": "Um confronto simples, com dois lados se enfrentando até que um deles seja quebrado ou destruído."
+  },
+  {
+    "id": "sitrep_control",
+    "name": "Controle",
+    "description": "Missões de CONTROLE exigem que os PJs mantenham o controle de quatro Zonas de Controle por seis rodadas. As zonas podem conter locais importantes como torres de transmissão, baterias de artilharia, terminais ou hangares. No final de cada rodada, cada lado ganha 1 ponto para cada Zona de Controle que controla. Se um lado controlar todas as quatro Zonas de Controle, ele ganha +1 ponto adicional.",
+    "pcVictory": "Os PJs têm a maior pontuação no final da sexta rodada.",
+    "enemyVictory": "A força inimiga tem a maior pontuação no final da sexta rodada.",
+    "noVictory": "Se ambos os lados tiverem uma pontuação igual no final da sexta rodada, não há vencedor e ambos os lados devem se retirar.",
+    "controlZone": "Quatro Zonas de Controle (tipicamente 4 espaços de cada lado) em diferentes quadrantes do mapa, cada uma colocada em qualquer lugar em seu quadrante. Elas devem ser aproximadamente simétricas, ou o mapa ficará desequilibrado. Se houver personagens de apenas um lado dentro de uma Zona de Controle, eles a controlam; se houver personagens de dois ou mais lados dentro de uma Zona de Controle, ela é contestada.",
+    "deployment": "O MJ e um jogador rolam 1d6 cada para determinar a ordem de implantação. Quem rolar o resultado mais baixo implanta primeiro."
+  },
+  {
+    "id": "sitrep_escort",
+    "name": "Escolta",
+    "description": "Missões de ESCOLTA exigem que os PJs levem um OBJETIVO em segurança para a Zona de Extração e saiam de lá.",
+    "pcVictory": "O Objetivo é extraído com segurança.",
+    "enemyVictory": "O Objetivo não foi extraído no final da oitava rodada. Se houver PJs restantes no campo quando isso ocorrer, eles são capturados ou sobrepujados.",
+    "noVictory": "O Objetivo é destruído.",
+    "deployment": "Os PJs implantam primeiro, escolhendo posições para seus personagens e o Objetivo na Zona de Implantação Aliada; então, o MJ implanta as forças inimigas na ZIA (Zona de Implantação Inimiga).",
+    "extraction": "Enquanto estiverem na Zona de Extração, os PJs podem extrair como uma ação livre no final de seu turno. PJs extraídos são removidos do campo de batalha. Se o Objetivo estiver adjacente a um PJ quando ele extrair e não for contestado por nenhum personagem do lado oposto, ele é extraído com segurança."
+  },
+  {
+    "id": "sitrep_extraction",
+    "name": "Extração",
+    "description": "Missões de EXTRAÇÃO exigem que os personagens jogadores corram pelo mapa para recuperar um objetivo e trazê-lo de volta em segurança para a extração.",
+    "pcVictory": "O Objetivo é extraído com segurança.",
+    "enemyVictory": "O Objetivo não foi extraído no final da décima rodada. Se houver PJs restantes no campo quando isso ocorrer, eles são capturados ou sobrepujados.",
+    "noVictory": "O Objetivo é destruído.",
+    "deployment": "Os PJs implantam primeiro, escolhendo posições para seus personagens na Zona de Implantação Aliada; em seguida, o MJ coloca o Objetivo na Zona do Objetivo.",
+    "objective": "Um objeto ou pessoa de TAMANHO 1/2–2. O Objetivo tem 10 PV por nível de TAMANHO, EVASÃO 10, DEFESA-E 10 e nenhuma ARMADURA. As forças inimigas querem o Objetivo e não o danificarão voluntariamente. Quando um personagem começa seu turno adjacente ao Objetivo, ele se move com eles quando eles fazem seu movimento regular. Se o Objetivo estiver adjacente a dois personagens de lados opostos, ele para de se mover e não pode se mover até que esteja adjacente apenas a personagens de um lado. O Objetivo não se move por conta própria.",
+    "extraction": "Enquanto estiverem na Zona de Extração/Zona de Implantação Aliada, os PJs podem extrair como uma ação livre no final de seu turno. PJs extraídos são removidos do campo de batalha. Se o Objetivo estiver adjacente a um PJ quando ele extrair e não for contestado por nenhum personagem do lado oposto, ele é extraído com segurança."
+  },
+  {
+    "id": "sitrep_gauntlet",
+    "name": "Desafio",
+    "description": "Missões de DESAFIO são geralmente feitas sob coação ou quando não há outras opções disponíveis, e geralmente ocorrem em território hostil. Missões de DESAFIO exigem que os PJs se movam através de uma área perigosa para garantir uma posição.",
+    "pcVictory": "No final da oitava rodada, há mais PJs dentro da Zona de Controle do que personagens inimigos. Ultras contam como 4 personagens, elites contam como 2 e peões contam como 1/4.",
+    "enemyVictory": "No final da oitava rodada, há pelo menos tantos personagens inimigos dentro da Zona de Controle quanto há PJs.",
+    "deployment": "O MJ implanta primeiro na ZIA; os PJs implantam em seguida, escolhendo posições para seus personagens dentro da Zona de Implantação Aliada.",
+    "controlZone": "A área ao redor da ZIA/Zona de Controle é fortificada com cobertura pesada de TAMANHO 1–2."
+  },
+  {
+    "id": "sitrep_holdout",
+    "name": "Resistência",
+    "description": "Missões de RESISTÊNCIA são empreendimentos desesperados. Elas exigem que os PJs defendam uma área contra um ataque maciço de inimigos. No melhor cenário, isso compra tempo para que aliados completem um objetivo em outro lugar; no pior, é sobreviver ou morrer. Os PJs começam com 4 pontos. No final da sexta rodada, os pontos são contados: os PJs perdem um ponto para cada inimigo dentro da Zona de Controle. Isso pode resultar em uma pontuação negativa.",
+    "pcVictory": "No final da sexta rodada, os PJs têm uma pontuação de 1 ou mais.",
+    "enemyVictory": "No final da sexta rodada, os PJs têm uma pontuação inferior a 1. Se houver PJs restantes no campo quando isso ocorrer, eles são capturados ou sobrepujados.",
+    "controlZone": "Uma área tipicamente de 10 por 5 espaços no meio do mapa, ou posicionada conforme necessário. A área ao redor da Zona de Controle deve ser fortificada com cobertura pesada de TAMANHO 1–2.",
+    "deployment": "Os PJs implantam primeiro, escolhendo posições para seus personagens dentro da Zona de Implantação Aliada/Zona de Controle; em seguida, o MJ implanta as forças inimigas na ZIA."
+  },
+  {
+    "id": "sitrep_recon",
+    "name": "Reconhecimento",
+    "description": "Missões de RECONHECIMENTO são empreendimentos perigosos envolvendo pequenas equipes entrando em território hostil para identificar alvos ou recuperar informações cruciais.",
+    "pcVictory": "No final da sexta rodada, os PJs controlam a Zona de Controle Verdadeira.",
+    "enemyVictory": "No final da sexta rodada, os PJs não controlam a Zona de Controle Verdadeira.",
+    "controlZone": "Quatro Zonas de Controle (tipicamente 4 espaços de cada lado) em diferentes quadrantes do mapa, cada uma colocada em qualquer lugar em seu quadrante. O MJ designa secretamente uma Zona de Controle como a Zona de Controle Verdadeira. Enquanto estiverem dentro de uma Zona de Controle, os PJs podem realizar uma ação completa para determinar se é a Zona de Controle Verdadeira. Se houver apenas PJs dentro da Zona de Controle Verdadeira, eles a controlam; se houver personagens de dois ou mais lados dentro da Zona de Controle Verdadeira, ela é contestada.",
+    "deployment": "Os PJs implantam primeiro, escolhendo posições para seus personagens dentro da Zona de Implantação Aliada; em seguida, o MJ implanta as forças inimigas na ZIA."
+  }
+]

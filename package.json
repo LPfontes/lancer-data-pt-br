@@ -1,0 +1,38 @@
+{
+  "name": "lancer-data-pt-br",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Dados do compêndio LANCER RPG traduzidos para Português do Brasil (pt-BR)",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "lib/"
+  ],
+  "license": "GPL-3.0-or-later",
+  "author": "",
+  "keywords": [
+    "lancer",
+    "lancer-rpg",
+    "compcon",
+    "translation",
+    "portuguese",
+    "pt-BR",
+    "localization",
+    "ttrpg"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LPfontes/lancer-data-pt-br.git"
+  },
+  "homepage": "https://github.com/LPfontes/lancer-data-pt-br#readme",
+  "bugs": {
+    "url": "https://github.com/LPfontes/lancer-data-pt-br/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {}
+}
