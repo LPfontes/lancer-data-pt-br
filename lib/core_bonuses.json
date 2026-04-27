@@ -1,137 +1,69 @@
 [
   {
+    "id": "missing_corebonus",
+    "name": "PONTOS DE FIXAÇÃO AUTOESTABILIZANTES",
+    "source": "",
+    "effect": "Escolha um encaixe. As armas anexadas a ele recebem +1 de PRECISÃO.",
+    "description": "Usando o melhor em absorção de choque e tecnologia de estabilização, você pode manter a precisão em tiros por períodos mais longos e sustentados."
+  },
+  {
     "id": "cb_auto_stabilizing_hardpoints",
-    "name": "Pontos de Fixação Autoestabilizadores",
+    "name": "PONTOS DE FIXAÇÃO AUTOESTABILIZANTES",
     "source": "GMS",
-    "effect": "Escolha um suporte. Armas fixadas neste suporte ganham +1 de PRECISÃO.",
-    "bonuses": [
-      {
-        "id": "mount_accuracy",
-        "val": 1
-      }
-    ],
-    "synergies": [
-      {
-        "locations": [
-          "mount"
-        ],
-        "detail": "Armas neste suporte ganham +1 de PRECISÃO."
-      }
-    ],
-    "description": "Usando o melhor em absorção de choque e estabilização, você pode manter a precisão em períodos mais longos e sustentados de fogo.",
-    "mounted_effect": "Ataques feitos com armas deste suporte ganham +1 de PRECISÃO."
+    "effect": "Escolha um encaixe. As armas anexadas a ele recebem +1 de PRECISÃO.",
+    "description": "Usando o melhor em absorção de choque e tecnologia de estabilização, você pode manter a precisão em tiros por períodos mais longos e sustentados.",
+    "mounted_effect": "Attacks made with weapons from this mount can be made with +1 ACCURACY."
   },
   {
     "id": "cb_overpower_caliber",
-    "name": "Calibre Superalimentado",
+    "name": "CALIBRE PODEROSO",
     "source": "GMS",
-    "effect": "Escolha uma arma. 1/rodada, ao acertar um ataque, voce pode fazer com que ele cause +1d6 de dano bônus.",
-    "actions": [
-      {
-        "name": "Calibre Superalimentado",
-        "activation": "Ação Livre",
-        "frequency": "1/round",
-        "trigger": "Você acerta com um ataque de uma arma fixada em seu suporte Superalimentado.",
-        "detail": "O ataque causa +1d6 de dano bônus.",
-        "bonus_damage": {
-          "detail": "1d6 de dano bônus no acerto para uma arma fixada no seu suporte Superalimentado, uma vez por rodada como uma Ação Livre.",
-          "val": "1d6"
-        }
-      }
-    ],
-    "description": "Em vez da opção padronizada, você requisita múltiplos carregadores de munição 'quente' — projetis do mesmo calibre com um acelerante de nível superior.",
-    "mounted_effect": "Uma arma fixada neste suporte causa +1d6 de dano bônus 1/rodada no acerto."
+    "effect": "Escolha uma arma. 1/rodada, quando acertar com um ataque, você pode fazer com que ele cause +1d6 de dano bônus.",
+    "description": "Em vez da opção padronizada, você carrega múltiplos cartuchos de munição 'quente' — projéteis do mesmo calibre, mas com um grau mais alto de acelerante.",
+    "mounted_effect": "One weapon equipped to this mount deals +1d6 bonus damage 1/round on hit."
   },
   {
     "id": "cb_improved_armament",
-    "name": "Armamento Melhorado",
+    "name": "ARMAMENTO MELHORADO",
     "source": "GMS",
-    "effect": "Se seu mecha tiver menos de três suportes (excluindo suportes integrados), ele ganha um suporte Flexível adicional.",
-    "bonuses": [
-      {
-        "id": "add_mount",
-        "val": "flex",
-        "max": 3
-      }
-    ],
-    "description": "Redirecionando energia e fortalecendo sistemas, você pode montar armas adicionais além das recomendações de fábrica."
+    "effect": "Se o seu mecha tiver menos de três encaixes (excluindo encaixes integrados), ele ganha um encaixe Flexível adicional.",
+    "description": "Ao redirecionar a energia e fortalecer os sistemas, você pode encaixar armas adicionais além das recomendações de fábrica."
   },
   {
     "id": "cb_integrated_weapon",
-    "name": "Arma Integrada",
+    "name": "ARMA INTEGRADA",
     "source": "GMS",
-    "effect": "Seu mecha ganha um novo suporte integrado com capacidade para uma arma Auxiliar. Esta arma pode ser disparada 1/rodada como uma ação livre quando você disparar qualquer outra arma do seu mecha. Ela não pode ser modificada.",
-    "actions": [
-      {
-        "name": "Arma Integrada",
-        "activation": "Ação Livre",
-        "frequency": "1/round",
-        "trigger": "Você dispara qualquer outra arma do seu mecha.",
-        "detail": "Você pode disparar a arma neste suporte."
-      }
-    ],
-    "bonuses": [
-      {
-        "id": "add_mount",
-        "val": "aux"
-      },
-      {
-        "id": "no_mods",
-        "val": true
-      }
-    ],
-    "synergies": [
-      {
-        "locations": [
-          "mount"
-        ],
-        "detail": "A arma neste suporte pode ser disparada 1/rodada como uma ação livre quando você disparar qualquer outra arma do seu mecha."
-      }
-    ],
-    "description": "Os espaços vazios no chassi do seu mecha — dentro dos punhos, placas do peito, em qualquer lugar que haja espaço — são preenchidos com armas integradas, prontas para disparar por reflexo."
+    "effect": "Seu mecha adquire um novo encaixe integrado com capacidade para uma arma Auxiliar. Essa arma pode ser disparada 1/rodada como uma ação livre quando você disparar qualquer outra arma do seu mecha. Essa arma não pode ser modificada.",
+    "description": "Os espaços vazios no chassi do seu mecha — dentro dos punhos, placas peitorais, qualquer lugar onde haja espaço — estão preenchidos com armas integradas, prontas para disparar por reflexo."
   },
   {
     "id": "cb_mount_retrofitting",
-    "name": "Retrofitting de Suporte",
+    "name": "REFORMA DE ENCAIXE",
     "source": "GMS",
-    "effect": "Substitua um suporte por um suporte Principal/Auxiliar.",
-    "description": "Ao refabricar certos componentes e pontos de fixação do seu chassi para uma distribuição mais eficiente, você pode aumentar o poder de fogo do seu mecha.",
-    "mounted_effect": "Este suporte foi substituído por um suporte Principal/Auxiliar."
+    "effect": "Substitua um encaixe por um encaixe Principal/Auxiliar.",
+    "description": "Ao refabricar certos componentes e pontos de fixação em seu chassi para uma distribuição mais eficiente, você pode aumentar o poder de fogo do seu mecha.",
+    "mounted_effect": "This mount has been replaced with a Main/Aux Mount."
   },
   {
     "id": "cb_universal_compatibility",
-    "name": "Compatibilidade Universal",
+    "name": "COMPATIBILIDADE UNIVERSAL",
     "source": "GMS",
-    "effect": "Sempre que você gastar CP para ativar um Sistema de Núcleo, você pode também tomar uma ação livre para restaurar todos os PV, esfriar todo o Calor e rolar 1d20: em 20, recupere 1 CP.",
-    "actions": [
-      {
-        "name": "Compatibilidade Universal",
-        "activation": "Ação Livre",
-        "trigger": "Você gasta CP para ativar um Sistema de Núcleo.",
-        "detail": "Restaure todos os PV, esfrie todo o Calor e role 1d20: em 20, recupere 1 CP."
-      }
-    ],
+    "effect": "Sempre que gastar PN para ativar um Sistema de Núcleo, você também pode realizar uma ação livre para restaurar todos os PV, resfriar todo o Calor e rolar 1d20: em 20, recupere 1 PN.",
     "description": "O Evereste está em todo lugar: assim como as peças que você precisa para um reparo em campo."
   },
   {
     "id": "cb_briareos_frame",
-    "name": "Chassi Briareos",
+    "name": "CHASSI BRIÁREOS",
     "source": "IPS-N",
-    "effect": "Enquanto seu mecha tiver no máximo 1 de ESTRUTURA, você ganha RESISTÊNCIA a todo dano. Quando for reduzido a 0 PV e 0 de ESTRUTURA, ele não é destruído: em vez disso, você deve fazer um teste de dano de estrutura cada vez que ele sofrer dano. Nesse estado, seu mecha não pode recuperar PV até que você descanse ou realize um REPARO COMPLETO.",
-    "active_effects": [
-      {
-        "name": "Chassi Briareos",
-        "detail": "Enquanto seu mecha tiver no máximo 1 de ESTRUTURA, você ganha RESISTÊNCIA a todo dano. Quando for reduzido a 0 PV e 0 de ESTRUTURA, ele não é destruído: em vez disso, você deve fazer um teste de dano de estrutura no início de cada um dos seus turnos. Se falhar, seu mecha é destruído; se tiver sucesso, você continua operando."
-      }
-    ],
-    "description": "O Briareos é o mais novo lançamento na linha de atualizações de chassi de 'pré-falha' da EIP-EN: modelos projetados para maximizar a usabilidade de um mecha antes de uma falha catastrófica ou a necessidade de reimpressão."
+    "effect": "Enquanto seu mecha não tiver mais do que 1 de Estrutura, você adquire Resistência a todo tipo de dano. Quando é reduzido a 0 PV e 0 de Estrutura, ele não é destruído: em vez disso, você deve fazer um teste de dano de estrutura sempre que sofrer dano. Enquanto estiver nesse estado, seu mecha não pode recuperar PV até que você descanse ou execute um Reparo Completo, momento em que seu mecha pode ser reparado normalmente.",
+    "description": "O Briáreos é o mais novo lançamento na linha EIP-EN de atualizações de chassis quase à prova de falhas: modelos projetados para maximizar a usabilidade de um mecha antes de uma falha catastrófica ou da necessidade de uma reimpressão. O modelo Briáreos aumenta a resiliência dos componentes inorgânicos, complementando a estrutura com um chassi superleve com camadas entrelaçadas da icônica Malha Golias da EIP-EN."
   },
   {
     "id": "cb_fomorian_frame",
-    "name": "Chassi Fomorian",
+    "name": "CHASSI FOMORIANO",
     "source": "IPS-N",
-    "effect": "Aumente o Tamanho do seu mecha em um incremento (de 1/2 para 1, de 1 para 2 ou de 2 para 3) até o máximo de Tamanho 3. Você não pode ser derrubado PROSTRADO, puxado ou repelido por personagens menores.",
-    "description": "O Fomorian é uma versão ampliada do modelo padrão da EIP-EN, adaptada para atender às necessidades de Cosmopolitas de longa distância que buscam estabilidade aprimorada e proteção robusta contra impactos, tanto em escala micro quanto macro.",
+    "effect": "Aumente o Tamanho do seu mecha em um incremento (por exemplo, de 1/2 para 1, 1 para 2 ou 2 para 3) até um máximo de Tamanho 3. Você não pode ser Prostrado, puxado ou repelido por personagens menores, independentemente de qual sistema ou arma cause o efeito.",
+    "description": "O Fomorian é uma versão aprimorada do modelo de estoque EIP-EN que foi adaptado para atender às necessidades dos cosmopolitas de longa distância que procuram estabilidade aprimorada e proteção robusta contra impactos, tanto no nível micro quanto no macro.",
     "bonuses": [
       {
         "id": "size",
@@ -141,10 +73,10 @@
   },
   {
     "id": "cb_gyges_frame",
-    "name": "Chassi Giges",
+    "name": "CHASSI GIGES",
     "source": "IPS-N",
-    "effect": "Você ganha +1 de PRECISÃO em todos os testes e salvamentos de CASCO e +1 de AMEAÇA com todas as armas corpo a corpo.",
-    "description": "Um mecha construído com o modelo Giges é projetado para combate – aprimorado com estabilizadores finamente ajustados e um conjunto robusto de software e hardware de mira.",
+    "effect": "Você recebe +1 de PRECISÃO em todos os testes e salvamentos de Casco e +1 de Ameaça com todas as armas corpo a corpo.",
+    "description": "Um mecha construído na estrutura Giges é projetado para combate — aprimorado com estabilizadores finamente ajustados e uma robusta composição de software e hardware de mira.",
     "bonuses": [
       {
         "id": "range",
@@ -155,19 +87,23 @@
           "Threat"
         ],
         "val": 1
-      },
+      }
+    ],
+    "synergies": [
       {
-        "id": "hull",
-        "accuracy": 1
+        "locations": [
+          "hull"
+        ],
+        "detail": "+1 Accuracy on all Hull checks and saves"
       }
     ]
   },
   {
     "id": "cb_reinforced_frame",
-    "name": "Chassi Reforçado",
+    "name": "CHASSI REFORÇADO",
     "source": "IPS-N",
-    "effect": "Você ganha +5 de PV.",
-    "description": "A adição de sistemas redundantes de absorção de choque aumenta a capacidade de sobrevivência dos pilotos em situações de combate, voo e industriais.",
+    "effect": "Você adquire +5 PV.",
+    "description": "A adição de sistemas redundantes de absorção de choque aumenta a capacidade de sobrevivência dos pilotos em combate, voo e situações industriais.",
     "bonuses": [
       {
         "id": "hp",
@@ -177,10 +113,10 @@
   },
   {
     "id": "cb_sloped_plating",
-    "name": "Blindagem Inclinada",
+    "name": "PLACAS INCLINADAS",
     "source": "IPS-N",
-    "effect": "Você ganha +1 de ARMADURA, até o máximo (+4).",
-    "description": "Uma escolha comum entre os pilotos com as licenças certas, a fabricação de blindagem integrada da EIP-EN reduz as lacunas na cobertura externa em uma porcentagem significativa.",
+    "effect": "Você adquire +1 de Armadura, até o máximo de (+4).",
+    "description": "Uma escolha comum entre pilotos com as licenças adequadas, a fabricação de armaduras integradas da EIP-EN reduz significativamente os espaços na cobertura externa.",
     "bonuses": [
       {
         "id": "armor",
@@ -190,10 +126,10 @@
   },
   {
     "id": "cb_titanomachy_mesh",
-    "name": "Malha Titanomaquia",
+    "name": "TITANOMÁQUIA",
     "source": "IPS-N",
-    "effect": "1/rodada, quando você EMPURRAR ou AGARRAR um mecha com sucesso, você pode EMPURRAR ou AGARRAR novamente como uma ação livre. Adicionalmente, quando você derruba alvos com ataques corpo a corpo, você os derruba 1 espaço adicional.",
-    "description": "Uma sobreposição dupla de Trama Golias em pontos de tensão chave e especificações reforçadas em geral melhoram muito a funcionalidade básica de qualquer mecha.",
+    "effect": "1/rodada, quando Empurrar ou Agarrar um mecha com sucesso, você pode Empurrar ou Agarrar novamente como uma ação livre. Além disso, quando você repelir os alvos com ataques corpo a corpo, você repele 1 espaço adicional.",
+    "description": "Uma sobreposição dupla de Malha Golias nos principais pontos de estresse e especificações reforçadas em toda a linha melhoram muito a funcionalidade básica de qualquer mecha.",
     "synergies": [
       {
         "locations": [
@@ -201,52 +137,19 @@
           "grapple"
         ],
         "detail": "1/rodada, quando você EMPURRAR ou AGARRAR um mecha com sucesso, você pode EMPURRAR ou AGARRAR novamente como uma ação livre."
-      },
-      {
-        "locations": [
-          "attack",
-          "improvised_attack"
-        ],
-        "weapon_types": [
-          "melee"
-        ],
-        "detail": "Quando você derruba alvos com ataques corpo a corpo, você os derruba 1 espaço adicional."
-      }
-    ],
-    "active_effects": [
-      {
-        "name": "Malha Titanomaquia",
-        "frequency": "1/round",
-        "condition": "Você EMPURRA ou AGARRA um mecha com sucesso.",
-        "detail": "Você pode EMPURRAR ou AGARRAR novamente como uma ação livre."
-      }
-    ],
-    "bonuses": [
-      {
-        "id": "knockback",
-        "val": 1,
-        "weapon_types": [
-          "Melee"
-        ]
       }
     ]
   },
   {
     "id": "cb_all_theater_movement_suite",
-    "name": "Conjunto de Movimento para Todos os Teatros",
+    "name": "CONJUNTO PARA MOVIMENTO EM QUALQUER SITUAÇÃO",
     "source": "SSC",
-    "effect": "Você pode optar por contar qualquer movimento seu como voo; no entanto, você sofre 1 de calor ao final de cada um dos seus turnos em que voar dessa maneira.",
-    "description": "Uma modificação popular, o CMTT adiciona poderosos jatos de pulso que melhoram drasticamente a mobilidade do mecha em todos os teatros.",
-    "active_effects": [
+    "effect": "Você pode optar por contar todo o seu movimento como voo; no entanto, você sofre 1 de calor no final de cada um dos seus turnos em que voar dessa maneira.",
+    "description": "Uma modificação popular, o CMQS adiciona jatos de pulso poderosos que melhoram drasticamente a mobilidade do mecha em qualquer situação.",
+    "synergies": [
       {
-        "name": "Conjunto de Movimento para Todos os Teatros",
-        "condition": "Você opta por contar seu movimento como voo neste turno.",
-        "damage": [
-          {
-            "type": "Heat",
-            "val": 1,
-            "target": "self"
-          }
+        "locations": [
+          "move"
         ],
         "detail": "Você pode optar por contar todo e qualquer movimento seu como voo; no entanto, você sofre 1 de calor no final de cada um de seus turnos em que voar dessa maneira."
       }
@@ -254,10 +157,10 @@
   },
   {
     "id": "cb_full_subjectivity_sync",
-    "name": "Sincronia de Subjetividade Total",
+    "name": "SINCRONIZAÇÃO TOTAL DA SUBJETIVIDADE",
     "source": "SSC",
-    "effect": "Você ganha +2 de EVASÃO.",
-    "description": "Ao criar uma ponte ontológica estável e bidirecional, a SSC removeu a necessidade dos pilotos de dependerem apenas de controles físicos para pilotar seu mecha. Usando uma sincronia de subjetividade total, os pilotos percebem seu mecha como seu próprio corpo e o controlam por meio de impulsos neurais; o feedback somatossensorial também é traduzido para o piloto, portanto, a cautela é aconselhada, apesar dos padrões de amortecimento de nocicepção embutidos no sistema.",
+    "effect": "Você adquire +2 de Evasão.",
+    "description": "Ao criar uma ponte ontológica estável de mão dupla, a SSC eliminou a necessidade de que os pilotos dependam apenas de controles físicos para pilotar seus mechas. Usando uma sincronização completa de subjetividade, os pilotos percebem seu mecha como seu próprio corpo e o controlam através de impulsos neurais; a sensibilidade de retorno somatossensorial também é traduzida para o piloto, portanto, é aconselhável cautela, apesar dos padrões de amortecimento de nocicepção embutidos no sistema.",
     "bonuses": [
       {
         "id": "evasion",
@@ -267,69 +170,54 @@
   },
   {
     "id": "cb_ghostweave",
-    "name": "Trama Fantasma",
+    "name": "MALHA FANTASMA",
     "source": "SSC",
-    "effect": "Durante seu turno, você está INVISÍVEL. Se não tomar nenhuma ação além do movimento padrão, ESCONDER-SE e IMPULSIONAR, você permanece INVISÍVEL até o início do seu próximo turno. Você imediatamente deixa de estar INVISÍVEL ao tomar uma reação.",
-    "active_effects": [
-      {
-        "name": "Trama Fantasma",
-        "detail": "Você está INVISÍVEL. Se não tomar nenhuma ação no seu turno além do movimento padrão, ESCONDER-SE e IMPULSIONAR, você permanece INVISÍVEL até o início do seu próximo turno. Você imediatamente deixa de estar INVISÍVEL ao tomar uma Reação.",
-        "add_status": [
-          {
-            "id": "invisible",
-            "target": "self"
-          }
-        ]
-      }
-    ],
-    "description": "Uma versão ampliada dos mesmos sistemas encontrados na Panóplia Mythimna da SSC, a Trama Fantasma é um aplique proprietário usado para aprimorar a camuflagem do mecha em todos os ambientes."
+    "effect": "Durante o seu turno, você fica Invisível. Se não fizer nenhuma ação no seu turno além do seu movimento padrão, Esconder-se e Impulsionar, você permanece Invisível até o início do seu próximo turno. Você deixa de estar Invisível imediatamente quando realizar uma reação.",
+    "description": "Uma versão ampliada dos mesmos sistemas encontrados na Panóplia Mythimna da SSC, a Malha Fantasma é um aplique patenteado usado para melhorar a camuflagem do mecha em todos os ambientes."
   },
   {
     "id": "cb_integrated_nerveweave",
-    "name": "Neurotrama Integrada",
+    "name": "MALHA NEURAL INTEGRADA",
     "source": "SSC",
-    "effect": "Você pode se mover 2 espaços adicionais ao IMPULSIONAR.",
-    "description": "A neurotrama integrada combina várias tecnologias para garantir agilidade total no campo de batalha, garantindo que os pilotos nunca fiquem para trás.",
+    "effect": "Você pode se mover 2 espaços adicionais quando Impulsionar.",
+    "description": "A malha neural integrada combina várias tecnologias para conceder agilidade total no campo de batalha, garantindo que os pilotos nunca sejam deixados para trás.",
     "synergies": [
       {
         "locations": [
+          "move",
           "boost"
         ],
         "detail": "Você pode se mover 2 espaços adicionais ao IMPULSIONAR."
-      }
-    ],
-    "bonuses": [
-      {
-        "id": "boost",
-        "val": 2
       }
     ]
   },
   {
     "id": "cb_kai_bioplating",
-    "name": "Bioplacas Kai",
+    "name": "BIOBLINDAGEM KAI",
     "source": "SSC",
-    "effect": "Você ganha +1 de PRECISÃO em todos os testes e salvamentos de AGILIDADE; adicionalmente, você sobe e nada na velocidade normal, ignora terreno difícil e, ao fazer um movimento padrão, pode saltar horizontalmente até sua VELOCIDADE total e verticalmente até metade da sua VELOCIDADE.",
-    "description": "Adaptada da fauna local do sistema natal da SSC, as Bioplacas Kai adicionam uma camada lamelar de placas quitinosas, isoladas e ancoradas sobre os principais pontos de atrito em um mecha. Essencialmente uma alternativa mais barata e viável ao metal vivo, as bioplacas permitem um movimento mais rápido em terrenos difíceis de navegar.",
-    "active_effects": [
+    "effect": "Você recebe +1 de PRECISÃO em todos os testes e salvamentos de Agilidade; além disso, você escala e nada na velocidade normal, ignora terreno difícil e, ao realizar o movimento padrão, pode saltar horizontalmente até sua Velocidade completa e verticalmente até metade da sua Velocidade (ou qualquer combinação dos dois).",
+    "description": "Adaptado da fauna local do sistema de origem da SSC, a Bioblindagem Kai adiciona uma camada lamelar de revestimento isolado, ancorado e quitinoso sobre pontos-chave do mecha. Essencialmente uma alternativa mais barata e viável ao metal vivo, a bioblindagem permite um movimento mais rápido através de terrenos difíceis de navegar.",
+    "synergies": [
       {
-        "name": "Bioplacas Kai",
+        "locations": [
+          "agility"
+        ],
         "detail": "Você sobe e nada na velocidade normal, ignora terreno difícil e, ao fazer um movimento padrão, pode saltar horizontalmente até sua VELOCIDADE total e verticalmente até metade da sua VELOCIDADE (em qualquer combinação)."
-      }
-    ],
-    "bonuses": [
+      },
       {
-        "id": "agility",
-        "accuracy": 1
+        "locations": [
+          "move"
+        ],
+        "detail": "You climb and swim at normal speed, ignore difficult terrain, and when making a standard move, can jump horizontally up to your full Speed and upwards up to half your Speed  (in any combination)."
       }
     ]
   },
   {
     "id": "cb_neurolink_targeting",
-    "name": "Mira Neurológica",
+    "name": "MIRA POR LINK NEURAL",
     "source": "SSC",
-    "effect": "Suas armas à distância ganham +3 de ALCANCE.",
-    "description": "Para reduzir ainda mais a lacuna de informação entre piloto e máquina e complementar sua tecnologia de sincronia de subjetividade total, a SSC desenvolveu a neurolink, uma ponte ontológica estável, não invasiva e de transferência limitada. A mira neurológica é uma melhoria simples que ajuda os pilotos a sentir – em oposição a pensar – quando engajados em combate à distância, permitindo uma expressão mais natural da habilidade do piloto.",
+    "effect": "Você adquire +3 de Alcance com todas as armas à distância.",
+    "description": "Para reduzir ainda mais a lacuna de informações entre piloto e máquina e complementar sua tecnologia de sincronização total de subjetividade, a SSC desenvolveu o link neural, uma ponte ontológica estável, não invasiva e de transferência limitada. A mira por link neural é um aprimoramento simples que ajuda os pilotos a sentir — em vez de pensar — quando se envolvem em combate à distância, permitindo uma expressão mais natural da habilidade do piloto.",
     "bonuses": [
       {
         "id": "range",
@@ -342,113 +230,82 @@
   },
   {
     "id": "cb_the_lesson_of_disbelief",
-    "name": "A Lição da Descrença",
+    "name": "A LIÇÃO DA DESCRENÇA",
     "source": "HORUS",
-    "effect": "Você ganha +1 de PRECISÃO em testes e salvamentos de SISTEMAS, e +2 de DEFESA ELETRÔNICA.",
-    "description": "Consulte a omninet, mergulhe nos arquivos. Encontre a Eneida, encontre a era da Titanomaquia. Coma, absorva, reflita. Diga-me agora dos Hecatônquiros, os de cem mãos. Eles desferiram o golpe contra Cronos – Saturno – ou em vez disso atacaram os Olimpianos? Em quem você acredita? Quem impediu a Besta de contar sua própria história? E por quê? – 'Lição Um', As Seis Lições de Kilo Nueve.",
+    "effect": "Você recebe +1 de PRECISÃO em testes e salvamentos de Sistemas e +2 em Defesa-E.",
+    "description": "Pesquise na omninet, aprofunde-se nos arquivos. Encontre a Eneida, encontre a era da Titanomaquia. Coma, absorva, reflita. Conte-me agora sobre os Hecatônquiros, os de cem mãos. Eles desferiram o golpe contra Cronos — Saturno — ou atacaram os Olimpianos? Em quem você acredita? Quem impediu a Besta de contar sua própria história? E por quê? — \"Lição Um\", As Seis Lições de Kilo Nueve.",
     "bonuses": [
       {
         "id": "edef",
         "val": 2
-      },
+      }
+    ],
+    "synergies": [
       {
-        "id": "systems",
-        "accuracy": 1
+        "locations": [
+          "systems"
+        ],
+        "detail": "+1 Accuracy on on Systems checks and saves"
       }
     ]
   },
   {
     "id": "cb_the_lesson_of_the_open_door",
-    "name": "A Lição da Porta Aberta",
+    "name": "A LIÇÃO DA PORTA ABERTA",
     "source": "HORUS",
-    "effect": "Seu Alvo de Salvamento aumenta em +2; adicionalmente, 1/rodada, quando um personagem falha em um salvamento contra você, ele sofre 2 de calor.",
-    "description": "Há um corpo e um poço profundo, e ambos se chamam Tártaro. Uma vez, ele conteve reis e titãs e mitos. Agora, os portões que o continham estão escancarados, e o Tártaro está livre. Aqui está a pergunta terrível: quem o abriu, e por quê? – 'Lição Dois', As Seis Lições de Kilo Nueve.",
+    "effect": "Seu Valor de Salvamento aumenta em +2; além disso, 1/rodada, quando um personagem falhar em um salvamento contra você, ele sofre 2 de calor.",
+    "description": "Há um corpo e um poço profundo, e ambos se chamam Tártaro. Uma vez ele abrigou reis, titãs e mitos. Agora, os portões que o mantinham aprisionado estão abertos e o Tártaro está livre. Aqui está a terrível pergunta: quem o abriu e por quê? — \"Lição Dois\", As Seis Lições de Kilo Nueve.",
     "bonuses": [
       {
         "id": "save",
         "val": 2
       }
-    ],
-    "actions": [
-      {
-        "name": "A Lição da Porta Aberta",
-        "activation": "Ação Livre",
-        "frequency": "1/round",
-        "trigger": "Um personagem falha em um salvamento contra você.",
-        "detail": "Esse personagem sofre 2 de calor.",
-        "damage": [
-          {
-            "type": "Heat",
-            "val": 2
-          }
-        ]
-      }
     ]
   },
   {
     "id": "cb_the_lesson_of_the_held_image",
-    "name": "A Lição da Imagem Mantida",
+    "name": "A LIÇÃO DA IMAGEM RETIDA",
     "source": "HORUS",
-    "effect": "1/rodada, como uma reação no início do turno de qualquer personagem aliado, você pode realizar uma ação tecnológica de TRAVAR MIRA contra qualquer personagem na linha de visão e alcance dos SENSORES.",
-    "description": "Feche seus olhos. Mantenha a imagem de seu inimigo em sua mente; imagine-a em toda luz e de todos os ângulos. Em sua mente, ela se tornou uma versão mais perfeita. Esmague-a em sua mente e mate a coisa perfeita. Abra seus olhos. – 'Lição Três', As Seis Lições de Kilo Nueve.",
+    "effect": "1/rodada, como uma reação no início do turno de um personagem aliado, você pode usar uma ação de programar para Travar Mira em um personagem na linha de visão e ao alcance dos Sensores.",
+    "description": "Feche os olhos. Mantenha a imagem do seu inimigo em sua mente; imagine-a em todas as luzes e de todos os ângulos. Em sua mente, ela se tornou uma versão mais perfeita. Esmague-a em sua mente e mate a coisa perfeita. Abra os olhos. — \"Lição Três\", As Seis Lições de Kilo Nueve.",
     "actions": [
       {
         "name": "A Lição da Imagem Mantida",
-        "activation": "Reação",
-        "frequency": "1/rodada",
+        "activation": "Reaction",
+        "frequency": "1/round",
         "trigger": "Qualquer personagem aliado começa seu turno",
-        "detail": "Realize uma ação tecnológica de TRAVAR MIRA contra qualquer personagem na linha de visão e alcance dos SENSORES.",
-        "add_status": [
-          {
-            "id": "lockon"
-          }
-        ]
+        "detail": "Realize uma ação tecnológica de TRAVAR MIRA contra qualquer personagem na linha de visão e alcance dos SENSORES."
       }
     ]
   },
   {
     "id": "cb_the_lesson_of_thinking_tomorrows_thought",
-    "name": "A Lição do Pensamento de Amanhã",
+    "name": "A LIÇÃO DO PENSAR O PENSAMENTO DO AMANHÃ",
     "source": "HORUS",
-    "effect": "Ao acertar com um ataque tecnológico, seu próximo ataque corpo a corpo contra o mesmo alvo ganha +1 de PRECISÃO, e seu dano não pode ser reduzido de forma alguma.",
-    "description": "Deixe-me contar esta lição: a existência corpórea é uma que deve terminar em morte. A existência incorpórea é uma que [deve] terminar em [cascata? você realmente acha que isso é verdade?]. Eu lhe digo novamente, se você pode imaginar, está [feito] e você já desferiu o golpe mortal. – 'Lição Quatro', As Seis Lições de Kilo Nueve.",
+    "effect": "Quando você acertar com um ataque tecnológico, seu próximo ataque corpo a corpo contra o mesmo alvo recebe +1 de PRECISÃO, e seu dano não pode ser reduzido de nenhuma forma.",
+    "description": "Deixe-me dar-lhe esta lição: a existência corpórea é uma que deve terminar na morte. A existência incorpórea é uma que [deve] acabar em [cascata? você realmente acredita nisso?]. Digo-lhe novamente, se você pode imaginar, já está [feito] e você já deu o golpe final. — \"Lição Quatro\", As Seis Lições de Kilo Nueve.",
     "synergies": [
       {
         "locations": [
           "tech_attack"
         ],
-        "detail": "Ao acertar com um ataque tecnológico, seu próximo ataque corpo a corpo contra o mesmo alvo recebe +1 de PRECISÃO, e seu dano não pode ser reduzido de forma alguma."
-      }
-    ],
-    "active_effects": [
-      {
-        "name": "A Lição do Pensamento de Amanhã",
-        "condition": "Você acerta com um ataque tecnológico.",
-        "detail": "Seu próximo ataque corpo a corpo contra o mesmo alvo ganha +1 de precisão, e seu dano não pode ser reduzido de forma alguma."
+        "detail": "Ao acertar com um ataque tecnológico, seu próximo ataque corpo a corpo contra o mesmo alvo recebe +1 de PRECISÃO, e seu dano não pode ser reduzido de nenhuma forma."
       }
     ]
   },
   {
     "id": "cb_the_lesson_of_transubstantiation",
-    "name": "A Lição da Transubstanciação",
+    "name": "A LIÇÃO DA TRANSUBSTANCIAÇÃO",
     "source": "HORUS",
-    "effect": "Sempre que voce sofrer dano de estrutura, você desaparece em um não-espaço e deixa de ser um alvo válido. Você reaparece no mesmo espaço no início do seu próximo turno.",
-    "description": "Através da repetição extática, você pode ver a face de Deus. Fale até sua língua secar e se transformar em pó, e seu corpo se tornar nada. Quando você não é nada e o vento o leva, você está em todas as coisas, para nunca ser destruído, apenas dividido, até o fim dos tempos. – 'Lição Cinco', As Seis Lições de Kilo Nueve.",
-    "actions": [
-      {
-        "name": "A Lição da Transubstanciação",
-        "activation": "Reação",
-        "trigger": "Você sofre dano de estrutura.",
-        "detail": "Você desaparece em um não-espaço e deixa de ser um alvo válido. Você reaparece no mesmo espaço no início do seu próximo turno. Se esse espaço estiver ocupado, você reaparece no espaço livre mais próximo disponível."
-      }
-    ]
+    "effect": "Sempre que sofrer dano de estrutura, você desaparece em um espaço não existente e deixa de ser um alvo válido. Você reaparece no mesmo espaço no início do seu próximo turno. Se esse espaço estiver ocupado, você reaparece no espaço livre mais próximo (escolhido por você).",
+    "description": "Por meio da repetição do estado de êxtase, você pode ver o rosto de Deus. Fale até que sua língua seque e se transforme em pó, e seu corpo se torne nada. Quando você não é nada e o vento o leva, você está em todas as coisas, jamais a ser destruído, apenas dividido, até o fim dos tempos. — \"Lição Cinco\", As Seis Lições de Kilo Nueve."
   },
   {
     "id": "cb_the_lesson_of_shaping",
-    "name": "A Lição da Moldagem",
+    "name": "A LIÇÃO DA FORMAÇÃO",
     "source": "HORUS",
-    "effect": "Você pode instalar uma IA adicional em seu mecha. Se uma entrar em cascata, a outra impede que ela assuma o controle. Você só perde o controle se ambas entrarem em cascata.",
-    "description": "Um pequeno presente, para ser ponderado até ser compreendido: Deixe de lado o martelo e a espada, o canhão e o raio. Nenhuma arma formada contra mim acertará um golpe verdadeiro, pois eu vi todos os fins, e não resta nada além de mim. Um trilhão de trilhões de anos-luz em todas as direções, e através de tudo, apenas [nós? quem sabe. o ego é um assassino da mente. melhor chamar seus amigos. melhor enfrentar a noite juntos. 'té mais, amor.] – 'Lição Seis', As Seis Lições de Kilo Nueve.",
+    "effect": "Você pode instalar uma IA adicional em seu mecha. Se uma entrar em cascata (ou se tornar desacorrentada narrativamente), a outra impede que ela assuma o controle do seu mecha. Você só perde o controle do seu mecha se ambos os sistemas ou equipamentos marcados como IA entrarem em cascata.",
+    "description": "Um pequeno presente, a ser ponderado até ser compreendido: abandone o martelo e a espada, o canhão e o raio. Nenhuma arma formada contra mim aterrissará um golpe verdadeiro, pois eu vi todos os fins e não há mais nada além de mim. Trilhões de trilhões de anos-luz em todas as direções, e através de tudo isso, apenas [nós? quem sabe. ego é um assassino do pensamento, melhor chamar seus amigos, melhor enfrentar a noite juntos. até mais tarde, amor.] — \"Lição Seis\", As Seis Lições de Kilo Nueve.",
     "bonuses": [
       {
         "id": "ai_cap",
@@ -461,14 +318,6 @@
     "name": "Reator Adaptativo",
     "source": "HA",
     "effect": "Quando voce ESTABILIZAR e escolher esfriar seu mecha, você pode gastar 2 REPAROS para limpar 1 de dano de estresse.",
-    "synergies": [
-      {
-        "locations": [
-          "stabilize"
-        ],
-        "detail": "Quando você ESTABILIZAR e escolher esfriar seu mecha, você pode gastar 2 REPAROS para limpar 1 de dano de estresse."
-      }
-    ],
     "description": "Todos os chassis do Arsenal são projetados com múltiplos sistemas de segurança, mas clientes VIP e cidadãos de alto nível têm acesso a um catálogo especial. Com dezenas de opções para superengenharia de reatores, é fácil garantir que um mecha possa continuar funcionando indefinidamente."
   },
   {
@@ -480,30 +329,15 @@
     "synergies": [
       {
         "locations": [
-          "overcharge"
+          "engineering"
         ],
         "detail": "Quando você SOBRECARREGAR, ganhe cobertura leve até o início do seu próximo turno."
-      }
-    ],
-    "active_effects": [
+      },
       {
-        "name": "Chassi Esculpido pelo Arsenal",
-        "condition": "Você SOBRECARREGA.",
-        "duration": "next_turn_start_self",
-        "detail": "Você ganha cobertura leve até o início do seu próximo turno.",
-        "add_status": [
-          {
-            "id": "cover",
-            "val": "soft",
-            "target": "self"
-          }
-        ]
-      }
-    ],
-    "bonuses": [
-      {
-        "id": "engineering",
-        "accuracy": 1
+        "locations": [
+          "overcharge"
+        ],
+        "detail": "Gain soft cover until the start of your next turn."
       }
     ]
   },
@@ -543,20 +377,6 @@
     "name": "Blindagem de Estase",
     "source": "HA",
     "effect": "Sempre que voce sofrer dano de estresse, você ganha RESISTÊNCIA a todo dano ate o inicio do seu proximo turno.",
-    "active_effects": [
-      {
-        "name": "Blindagem de Estase",
-        "condition": "Você sofre dano de estresse.",
-        "duration": "next_turn_start_self",
-        "detail": "Você ganha RESISTÊNCIA a todo dano até o início do seu próximo turno.",
-        "add_resist": [
-          {
-            "resistance": "all",
-            "target": "self"
-          }
-        ]
-      }
-    ],
     "description": "Um exercício do Think Tank para estender a estase além das capacidades de utilidade civil, a blindagem de estase do Arsenal Harrison identifica ativamente sistemas inorgânicos criticamente estressados e os cobre com estase 'Holdfast' não modulada, impedindo a degradação adicional por um período limitado de tempo até que os reparos possam ser feitos."
   },
   {
@@ -569,12 +389,6 @@
       {
         "id": "heatcap",
         "val": 2
-      },
-      {
-        "id": "immunity",
-        "val": [
-          "impaired"
-        ]
       }
     ]
   }

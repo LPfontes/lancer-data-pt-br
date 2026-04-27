@@ -1,0 +1,66 @@
+[
+    {
+        "id": "core-structure-damage",
+        "title": "Dano de Estrutura",
+        "description": "Quando um mecha é reduzido a 0 PV e sofre dano de estrutura, seu jogador (ou o MJ) faz um teste de dano de estrutura. Isso representa os resultados de golpes incomumente poderosos ou precisos, que podem desativar um mecha rapidamente se não forem tratados.<br/>Para fazer um teste de dano de estrutura, role 1d6 por ponto de dano de estrutura marcado, incluindo o dano de estrutura que acabou de ser sofrido. Escolha o resultado mais baixo e verifique a tabela de dano de estrutura para determinar o resultado. Rolar múltiplos 1s tem consequências particularmente catastróficas.",
+        "die": 6,
+        "results": [
+            {
+                "min": 5,
+                "max": 6,
+                "title": "Golpe Raspante",
+                "result": "Os sistemas de emergência são ativados e estabilizam seu mecha, mas ele fica IMPEDIDO até o final de seu próximo turno."
+            },
+            {
+                "min": 2,
+                "max": 4,
+                "title": "Trauma de Sistema",
+                "result": "Partes do seu mecha são arrancadas pelo dano. Role 1d6. Em um 1–3, todas as armas em um suporte de sua escolha são destruídas; em um 4–6, um sistema de sua escolha é destruído. Sistemas e armas LIMITADOS sem cargas não são escolhas válidas. Se não houver escolhas válidas restantes, torna-se o outro resultado. Se não houver sistemas ou armas válidos restantes, este resultado se torna um ACERTO DIRETO."
+            },
+            {
+                "min": 1,
+                "max": 1,
+                "title": "Acerto Direto",
+                "result": "Este resultado depende da ESTRUTURA restante do seu mecha:<ul><li>3+ Estrutura: Seu mecha fica ATORDOADO até o final de seu próximo turno.</li><li>2 Estrutura: Role um teste de CASCO. Em um sucesso, seu mecha fica ATORDOADO até o final de seu próximo turno. Em uma falha, seu mecha é destruído.</li><li>1 Estrutura: Seu mecha fica ATORDOADO até o final de seu próximo turno.</li></ul>"
+            },
+            {
+                "min": -1,
+                "max": -1,
+                "title": "Acerto Esmagador",
+                "result": "Seu mecha está danificado além do reparo — ele é destruído. Você ainda pode sair dele normalmente."
+            }
+        ]
+    },
+    {
+        "id": "core-overheating",
+        "title": "Superaquecimento",
+        "description": "Quando um mecha excede seu CAP. DE CALOR e sofre dano de estresse, seu jogador (ou o MJ) faz um teste de superaquecimento.<br>Para fazer um teste de superaquecimento, role 1d6 por ponto de dano de estresse marcado, incluindo o dano de estresse que acabou de ser sofrido. Escolha o resultado mais baixo e verifique a tabela de superaquecimento para determinar o resultado. Rolar múltiplos 1s tem consequências particularmente catastróficas.",
+        "die": 6,
+        "results": [
+            {
+                "min": 5,
+                "max": 6,
+                "title": "Desvio de Emergência",
+                "result": "Os sistemas de resfriamento do seu mecha conseguem conter o calor crescente; no entanto, seu mecha fica IMPEDIDO até o final de seu próximo turno."
+            },
+            {
+                "min": 2,
+                "max": 4,
+                "title": "Planta de Energia Desestabilizada",
+                "result": "A planta de energia fica instável, começando a ejetar jatos de plasma. Seu mecha fica EXPOSTO, recebendo o dobro de dano Cinético, Explosivo e Energético até que o status seja limpo."
+            },
+            {
+                "min": 1,
+                "max": 1,
+                "title": "Derretimento",
+                "result": "O resultado depende do ESTRESSE restante do seu mecha:<br>3+ ESTRESSE: Seu mecha fica EXPOSTO.<br>2 ESTRESSE: Role um teste de ENGENHARIA. Em um sucesso, seu mecha fica EXPOSTO; em uma falha, ele sofre um derretimento do reator após 1d6 dos seus turnos (rolado pelo MJ). Um derretimento do reator pode ser evitado repetindo o teste de ENGENHARIA como uma ação livre.<br>1 ESTRESSE: Seu mecha sofre um derretimento do reator no final de seu próximo turno."
+            },
+            {
+                "min": -1,
+                "max": -1,
+                "title": "Derretimento Irreversível",
+                "result": "O reator entra em estado crítico — seu mecha sofre um derretimento do reator no final de seu próximo turno."
+            }
+        ]
+    }
+]

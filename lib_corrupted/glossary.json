@@ -1,0 +1,158 @@
+[
+    {
+        "name": "Armadura",
+        "description": "A ARMADURA de um mecha reduz todo o dano recebido por esse valor, excluindo alguns tipos especiais de dano. A ARMADURA depende principalmente do CHASSI do seu mecha e nunca ultrapassa quatro."
+    },
+    {
+        "name": "Pontos de Sistema",
+        "description": "CHASSIS de mecha também possuem um número definido de PONTOS DE SISTEMA (SP). SP podem ser gastos para adicionar sistemas extras ao seu mecha, e algumas armas mais pesadas exigem tanto suportes quanto SP. Você não pode adicionar sistemas ao seu mecha que excedam seus SP disponíveis. O Brio do seu piloto, igual à metade do seu LL, é adicionado ao seu total de SP, e você ganha um SP adicional para cada dois pontos de SISTEMAS."
+    },
+    {
+        "name": "Dano de Bônus",
+        "description": "Dano extra — cinético, energético ou explosivo — que é adicionado a ataques corpo a corpo ou à distância. Ataques que visam mais de um personagem causam apenas metade do dano de bônus."
+    },
+    {
+        "name": "Personagem",
+        "description": "Um personagem do jogador (PJ), personagem não-jogador (PNJ) ou qualquer outra entidade capaz de agir (ou reagir) independentemente, como DRONES."
+    },
+    {
+        "name": "Dano",
+        "description": "O dano recebido é subtraído dos PV e é cinético, explosivo, energético ou de calor (queimadura)."
+    },
+    {
+        "name": "Defesa Eletrônica",
+        "description": "DEFESA-E é o quão difícil é para armas e sistemas eletrônicos e guiados atingirem você."
+    },
+    {
+        "name": "Evasão",
+        "description": "EVASÃO é o quão difícil é para ataques à distância e corpo a corpo atingirem você."
+    },
+    {
+        "name": "Brio",
+        "description": "Metade do Nível do Piloto (NL) de um personagem (arredondado para cima), representando sua experiênca em combate. Brio fornece bônus para algumas rolagens e características."
+    },
+    {
+        "name": "Calor",
+        "description": "O calor recebido por um alvo representa danos aos sistemas internos e à blindagem do reator. Ele preenche o CAP. DE CALOR. O calor ignora ARMADURA e não conta como dano."
+    },
+    {
+        "name": "Capacidade de Calor",
+        "description": "Seu mecha pode receber calor de ataques tecnológicos e de alguns de seus próprios sistemas. Se receber mais calor do que seu CAP. DE CALOR, ele superaquece. Mechas também têm ESTRESSE, que é semelhante à ESTRUTURA — quando excedem seu CAP. DE CALOR, recebem 1 de ESTRESSE e limpam todo o calor. Quando perdem ESTRESSE dessa forma, os mechas precisam fazer um teste de dano de estresse especial e receber uma consequência baseada na rolagem. A maioria dos mechas tem 4 de ESTRESSE e são destruídos quando chegam a 0 de ESTRESSE.<br><br>Se um personagem sem CAP. DE CALOR receber calor, ele recebe uma quantidade equivalente de dano energético."
+    },
+    {
+        "name": "PV",
+        "description": "A quantidade de dano que um piloto pode receber antes de ficar FORA DE COMBATE e a quantidade de dano que um mecha pode receber antes de sofrer dano de estrutura. Quando os mechas chegam a 0 PV, eles sofrem 1 de dano de estrutura e seus PV são resetados. Quando perdem ESTRUTURA dessa forma, os mechas precisam fazer um teste de dano de estrutura especial e receber uma consequência baseada na rolagem. A maioria dos mechas tem 4 de ESTRUTURA e são destruídos quando chegam a 0 de ESTRUTURA."
+    },
+    {
+        "name": "Imunidade",
+        "description": "Personagens com IMUNIDADE ignoram todo o dano e efeitos daquilo que são imunes."
+    },
+    {
+        "name": "Alcance",
+        "description": "O alcance máximo em que uma arma pode ser usada para ataques à distância, medido a partir do personagem que ataca."
+    },
+    {
+        "name": "Capacidade de Reparo",
+        "description": "REPAROS são um tipo de moeda que você pode usar para curar e consertar seu mecha. Se o seu mecha ficar sem REPAROS, você não poderá mais recuperar PV ou consertar sistemas danificados em campo."
+    },
+    {
+        "name": "Resistência",
+        "description": "Personagens com RESISTÊNCIA reduzem o dano, calor ou um tipo de dano pela metade, após a ARMADURA ter sido aplicada. RESISTÊNCIA ao mesmo tipo de dano não se acumula."
+    },
+    {
+        "name": "Alvo de Salvamento",
+        "description": "Quando você força outro personagem a fazer um salvamento, ele deve igualar ou superar o ALVO DE SALVAMENTO do seu mecha ou sofrer as consequências."
+    },
+    {
+        "name": "Estresse",
+        "description": "Todos os mechas de PJs (e alguns PNJs) têm uma certa quantidade de ESTRESSE — geralmente 4 de ESTRESSE para PJs. Esta é a quantidade de dano de estresse que eles podem suportar antes de sofrerem um derretimento do reator. Quando os mechas excedem seu CAP. DE CALOR, eles sofrem 1 de dano de estresse e fazem um teste de superaquecimento."
+    },
+    {
+        "name": "Estrutura",
+        "description": "Todos os mechas de PJs (e alguns PNJs) têm uma certa quantidade de ESTRUTURA — geralmente 4 de ESTRUTURA para PJs. Esta é a quantidade de dano de estrutura que eles podem suportar antes de serem destruídos. Quando os mechas chegam a 0 PV, eles sofrem 1 de dano de estrutura e fazem um teste de estrutura."
+    },
+    {
+        "name": "Sensores",
+        "description": "Os SENSORES do seu mecha são a distância máxima (em espaços) em que um mecha pode detectar inimigos, usar sistemas tecnológicos e fazer ataques tecnológicos. Se um personagem estiver dentro dos seus SENSORES e não estiver se escondendo, você sabe que ele está lá — mesmo que não consiga vê-lo diretamente."
+    },
+    {
+        "name": "Tamanho",
+        "description": "Todos os mechas, personagens e objetos no campo de batalha têm um TAMANHO que descreve o quão grandes são, em espaços de grade, de cada lado (arredondado para 1 se for menor, então um personagem de TAMANHO 1/2 e TAMANHO 1 ocupam o mesmo espaço). TAMANHO é uma medida abstrata — não descreve uma altura e largura precisas em metros, mas o espaço que um personagem controla ao seu redor. Humanos e os menores mechas são TAMANHO 1/2. A maioria dos mechas é TAMANHO 1, mas alguns chegam a ser TAMANHO 3."
+    },
+    {
+        "name": "Velocidade",
+        "description": "A VELOCIDADE do seu mecha determina o quão longe você pode se mover no seu turno, em espaços, quando faz um movimento padrão ou IMPULSIONA."
+    },
+    {
+        "name": "Ataque Tecnológico",
+        "description": "Você adiciona o ATAQUE TECNOLÓGICO do seu mecha como um bônus em vez de Brio quando conduz guerra eletrônica"
+    },
+    {
+        "name": "Ameaça",
+        "description": "O alcance máximo em que ataques corpo a corpo e de vigilância podem ser feitos com certas armas, medido a partir do personagem que ataca. Todas as armas têm AMEAÇA 1, a menos que especificado de outra forma."
+    },
+    {
+        "name": "Linha",
+        "description": "Equipamentos com padrão de ataque de LINHA afetam todos os alvos dentro de uma linha reta, com X espaços de comprimento. Uma rolagem de ataque separada é feita para cada alvo, mas o dano é rolado apenas uma vez e o dano de bônus é reduzido à metade se houver vários personagens afetados. Para qualquer habilidade ou efeito que exija que você escolha um alvo ou alvos dentro do ALCANCE, este equipamento pode escolher qualquer alvo que possa ser atingido pelo seu padrão.<br><br>Adicionalmente, alguns ataques de LINHA, CONE, EMANAÇÃO e EXPLOSÃO listam um ALCANCE. Nesses casos, o ponto de origem do ataque pode ser traçado a partir de um ponto dentro do alcance especificado e na linha de visão. Por exemplo, um ataque com Linha 5 e Alcance 10 afetaria uma área de LINHA 5 começando em qualquer ponto dentro do ALCANCE 10."
+    },
+    {
+        "name": "Cone",
+        "description": "Equipamentos com padrão de ataque de CONE afetam personagens dentro de um cone com X espaços de comprimento e X espaços de largura em seu ponto mais distante. O cone começa com um espaço de largura. Uma rolagem de ataque separada é feita para cada alvo, mas o dano é rolado apenas uma vez e o dano de bônus é reduzido à metade se houver vários personagens afetados. Para qualquer habilidade ou efeito que exija que você escolha um alvo ou alvos dentro do ALCANCE, este equipamento pode escolher qualquer alvo que possa ser atingido pelo seu padrão.<br><br>Adicionalmente, alguns ataques de LINHA, CONE, EMANAÇÃO e EXPLOSÃO listam um ALCANCE. Nesses casos, o ponto de origem do ataque pode ser traçado a partir de um ponto dentro do alcance especificado e na linha de visão. Por exemplo, um ataque com Cone 3 e Alcance 10 afetaria uma área de CONE 3 começando em qualquer ponto dentro do ALCANCE 10. "
+    },
+    {
+        "name": "Explosão",
+        "description": "Equipamentos com padrão de ataque de EXPLOSÃO afetam personagens dentro de um raio de X espaços, traçado a partir de um ponto dentro do ALCANCE e na linha de visão. Cobertura e linha de visão para os ataques são calculadas com base no centro da explosão, em vez da posição do atacante. Uma rolagem de ataque separada é feita para cada alvo, mas o dano é rolado apenas uma vez e o dano de bônus é reduzido à metade se houver vários personagens afetados. Para qualquer habilidade ou efeito que exija que você escolha um alvo ou alvos dentro do ALCANCE, este equipamento pode escolher qualquer alvo que possa ser atingido pelo seu padrão.<br><br>Adicionalmente, alguns ataques de LINHA, CONE, EMANAÇÃO e EXPLOSÃO listam um ALCANCE. Nesses casos, o ponto de origem do ataque pode ser traçado a partir de um ponto dentro do alcance especificado e na linha de visão. Por exemplo, um ataque com Explosão 3 e Alcance 10 afetaria uma área de EXPLOSÃO 3 começando em qualquer ponto dentro do ALCANCE 10."
+    },
+    {
+        "name": "Emanação",
+        "description": "Equipamentos com padrão de ataque de EMANAÇÃO afetam personagens dentro de um raio de X espaços, centrado e incluindo o espaço ocupado pelo usuário (ou alvo). Se a Emanação for um ataque, o usuário ou alvo não é afetado pelo ataque, a menos que especificado. Cobertura e linha de visão são calculadas a partir do personagem. Se um efeito de EMANAÇÃO for contínuo, ele se move com o personagem em seu centro. Uma rolagem de ataque separada é feita para cada alvo, mas o dano é rolado apenas uma vez e o dano de bônus é reduzido à metade se houver vários personagens afetados. Para qualquer habilidade ou efeito que exija que você escolha um alvo ou alvos dentro do ALCANCE, este equipamento pode escolher qualquer alvo que possa ser atingido pelo seu padrão.<br><br>Adicionalmente, alguns ataques de LINHA, CONE, EMANAÇÃO e EXPLOSÃO listam um ALCANCE. Nesses casos, o ponto de origem do ataque pode ser traçado a partir de um ponto dentro do alcance especificado e na linha de visão. Por exemplo, um ataque com Emanação 2 e Alcance 10 afetaria uma área de EMANAÇÃO 2 começando em qualquer ponto dentro do ALCANCE 10."
+    },
+    {
+        "name": "Movimento Involuntário",
+        "description": "Quando personagens são empurrados, puxados ou derrubados em certas direções, isso é chamado de movimento involuntário. O movimento involuntário força o personagem afetado a se mover em linha reta, em uma direção especificada. Ao se mover involuntariamente, os mechas não provocam reações ou engajamento, a menos que especificado de outra forma, mas ainda são bloqueados por obstruções."
+    },
+    {
+        "name": "Terreno Difícil",
+        "description": "Todo movimento através de terreno difícil é feito com metade da velocidade — cada espaço de terreno difícil em que se entra equivale a dois espaços de movimento."
+    },
+    {
+        "name": "Terreno Perigoso",
+        "description": "Quando personagens terminam seu turno em terreno perigoso ou entram nele pela primeira vez em uma rodada, devem fazer um teste de ENGENHARIA. Em uma falha, eles recebem 5 de dano — cinético, energético, explosivo ou de calor, dependendo do perigo. Cada personagem só precisa fazer um teste desse tipo por rodada."
+    },
+    {
+        "name": "Levantar e Arrastar",
+        "description": "Mechas podem arrastar personagens ou objetos de até o dobro do seu TAMANHO, mas ficam LENTOS enquanto o fazem. Eles também podem levantar personagens ou objetos de TAMANHO igual ou menor sobre a cabeça, mas ficam IMOBILIZADOS enquanto o fazem. Enquanto arrastam ou levantam, os personagens não podem realizar reações. As mesmas regras se aplicam a pilotos e outros personagens a pé, mas eles não podem arrastar ou levantar nada acima do TAMANHO 1/2.<br><br>Enquanto voam, os mechas não podem carregar personagens ou objetos com um TAMANHO total superior a TAMANHO 1/2 — simplesmente não há empuxo suficiente."
+    },
+    {
+        "name": "Pular e Escalar",
+        "description": "Personagens com pernas podem pular em vez de seu movimento padrão. Eles podem pular horizontalmente, movendo metade de sua velocidade em linha reta e ignorando obstruções ao nível do solo que poderiam pular (como fossos ou vãos), ou podem pular verticalmente, movendo-se 1 espaço adjacente e subindo espaços equivalentes ao seu TAMANHO. Por exemplo, um mecha de TAMANHO 1 poderia pular até 1 espaço de altura e 1 espaço de distância. Personagens que pulam e terminam o pulo no ar caem automaticamente ao final do movimento (veja abaixo).<br><br>Assim como mover-se através de terreno difícil, os personagens escalam com metade de sua VELOCIDADE usual — cada espaço movido equivale a mover 2 espaços normalmente. Um teste bem-sucedido de CASCO ou AGILIDADE pode ser exigido para escalar superfícies particularmente difíceis sem cair."
+    },
+    {
+        "name": "Queda/Dano de Queda",
+        "description": "A menos que especificado de outra forma, os personagens começam a cair no final do turno atual e caem no final de cada um de seus turnos subsequentes. Eles recebem 3 de dano cinético PA para cada três espaços caídos, até um máximo de 9. Cair conta como movimento involuntário."
+    },
+    {
+        "name": "Gravidade Zero",
+        "description": "Mechas operando sob a água, em gravidade zero ou no espaço ficam LENTOS, a menos que tenham um sistema de propulsão ou voo; no entanto, eles não podem cair e podem voar ao se mover, independentemente de terem um sistema de voo."
+    },
+    {
+        "name": "Voo/Pairar",
+        "description": "Personagens voadores podem se mover vertical e horizontalmente até sua VELOCIDADE. Por exemplo, um mecha com um sistema de voo e VELOCIDADE 6 poderia terminar seu movimento em qualquer lugar dentro de seis espaços de sua localização inicial, até um máximo de 6 espaços de altura. Ao voar, os personagens devem se mover pelo menos 1 espaço em seu turno ou começar a cair. O movimento de voo deve seguir uma linha reta; no entanto, se um personagem realizar ações de movimento adicionais, como IMPULSIONAR, estas podem ser usadas para se mover em uma direção diferente. <br><br>Personagens voadores têm IMUNIDADE a CAÍDO. Personagens voadores começam a cair se ficarem IMOBILIZADOS, ATORDOADOS ou de outra forma não puderem se mover. Personagens voadores que sofrem dano de estrutura ou estresse devem ser bem-sucedidos em um salvamento de AGILIDADE ou começarão a cair. <br><br>Alguns mechas avançados podem PAIRAR. PAIRAR é uma forma avançada de VOO. Personagens que pairam não precisam voar em linha reta e podem permanecer estacionários enquanto estão no ar sem cair."
+    },
+    {
+        "name": "Teletransporte",
+        "description": "Personagens devem começar e terminar um teletransporte em uma superfície na qual possam se mover normalmente; por exemplo, um personagem que não pode voar não pode se teletransportar no ar. O teletransporte ignora obstruções, não exige linha de visão, ignora engajamento e não provoca reações; no entanto, ainda conta como movimento e, portanto, é afetado por condições como IMOBILIZADO. Um personagem que se teletransporta conta como tendo se movido 1 espaço, não importa o quão longe viaje. Personagens podem tentar se teletransportar para espaços que não podem ver, mas se um espaço já estiver ocupado, o teletransporte falha."
+    },
+    {
+        "name": "Acertos Críticos",
+        "description": "Um 20+ em um ataque corpo a corpo ou à distância causa um acerto crítico. Em um acerto crítico, todos os dados de dano são rolados duas vezes (incluindo o dano de bônus) e o resultado mais alto de cada fonte de dano é usado. Por exemplo, se um jogador conseguisse um acerto crítico em um ataque que normalmente causaria 2d6 de dano, ele rolaria 4d6 e escolheria os dois resultados mais altos."
+    },
+    {
+        "name": "Dano/Calculando o Dano",
+        "description": "O dano é calculado nesta ordem:<br>1) O atacante rola o dano e aplica quaisquer reduções ou aumentos relevantes (ex: Exposto, metade do dano de Heavy Gunner)<br>2) A armadura do alvo é subtraída do dano total<br>3) Quaisquer outras deduções do defensor são subtraídas do dano restante; isso inclui reduções de Resistência, sistemas, talentos, etc."
+    },
+    {
+        "name": "Calor (Queimadura)",
+        "description": "Quando personagens recebem CALOR (Burn), isso tem dois efeitos: primeiro, eles recebem imediatamente dano de CALOR, ignorando ARMADURA, e então o personagem marca o calor que acabou de receber. No final do seu turno, personagens com calor marcado devem rolar um teste de ENGENHARIA. Em um sucesso, eles limpam todo o calor marcado atualmente; caso contrário, recebem dano de CALOR igual à quantidade de calor marcada atualmente.<br><br>Falhar no teste de ENGENHARIA não aumenta a quantidade de calor marcada, apenas impede que o calor marcado atualmente seja limpo. Além disso, se um personagem for atingido por múltiplas fontes de CALOR, ele ainda faz apenas um teste de ENGENHARIA."
+    }
+]

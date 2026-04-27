@@ -64,12 +64,6 @@
     "description": "Esta arma deve ser recarregada após cada uso. Mechas podem recarregar com a ação ESTABILIZAR e alguns sistemas."
   },
   {
-    "id": "tg_loading_after",
-    "name": "Recarga (Múltiplos Usos)",
-    "description": "Esta arma deve ser recarregada após {VAL} usos. Mechas podem recarregar com Estabilizar e alguns sistemas. O usuário pode optar por recarregar esta arma no final de seu turno, permitindo disparar novamente no mesmo turno. Este é um alias específico do COMP/CON para a tag RECARGA, e todas as regras pertinentes a RECARGA se aplicam.",
-    "hidden": true
-  },
-  {
     "id": "tg_ordnance",
     "name": "Artilharia",
     "description": "Esta arma só pode ser disparada antes que o usuário se mova ou realize qualquer outra ação em seu turno, exceto Protocolos. O usuário ainda pode agir e se mover normalmente após atacar. Adicionalmente, por causa de seu tamanho, esta arma não pode ser usada contra alvos em engajamento com o mecha do usuário, e não pode ser usada para RETALIAR."
@@ -202,20 +196,17 @@
   {
     "id": "tg_personal_armor",
     "name": "Armadura Pessoal",
-    "description": "Este equipamento oferece proteção em combate, mas é óbvio para os observadores e geralmente não pode ser escondido. Apenas uma peça de Armadura Pessoal pode ser usada por vez. Colocar a Armadura Pessoal leva de 10 a 20 minutos, e ao usá-la, os pilotos têm mobilidade e destreza restritas. Ninguém usa armadura a menos que espere entrar em uma zona de guerra.",
-    "hidden": true
+    "description": "Este equipamento oferece proteção em combate, mas é óbvio para os observadores e geralmente não pode ser escondido. Apenas uma peça de Armadura Pessoal pode ser usada por vez. Colocar a Armadura Pessoal leva de 10 a 20 minutos, e ao usá-la, os pilotos têm mobilidade e destreza restritas. Ninguém usa armadura a menos que espere entrar em uma zona de guerra."
   },
   {
     "id": "tg_pilot_weapon",
     "name": "Arma de Piloto",
-    "description": "Em missões, os pilotos podem levar até duas armas. Todas as armas de piloto são de escala de piloto e não podem ser usadas por mechas.",
-    "hidden": true
+    "description": "Em missões, os pilotos podem levar até duas armas. Todas as armas de piloto são de escala de piloto e não podem ser usadas por mechas."
   },
   {
     "id": "tg_gear",
     "name": "Equipamento",
-    "description": "Esta é uma ferramenta, peça de equipamento ou outro item. Os pilotos podem ter até três destes por vez.",
-    "hidden": true
+    "description": "Esta é uma ferramenta, peça de equipamento ou outro item. Os pilotos podem ter até três destes por vez."
   },
   {
     "id": "tg_sidearm",
@@ -262,7 +253,8 @@
   {
     "id": "tg_exotic",
     "name": "Equipamento Exótico",
-    "description": "EQUIPAMENTO EXÓTICO é uma tag geral para equipamentos que existem fora do sistema de licenciamento tradicional."
+    "description": "EQUIPAMENTO EXÓTICO é uma tag geral para equipamentos que existem fora do sistema de licenciamento tradicional.",
+    "filter_ignore": true
   },
   {
     "id": "tg_recharge",
@@ -323,36 +315,5 @@
     "name": "Previne Cascata",
     "description": "Proíbe um sistema de IA de ser reconhecido como um alvo válido para Cascata (TAG OCULTA).",
     "hidden": true
-  },
-  {
-    "id": "tg_irreducible",
-    "name": "Irredutível",
-    "description": "Proíbe a redução de dano de qualquer fonte (TAG OCULTA).",
-    "hidden": true
-  },
-  {
-    "id": "tg_npc_system",
-    "name": "Sistema de PNJ",
-    "description": "Esta característica de PNJ é categorizada como um SISTEMA."
-  },
-  {
-    "id": "tg_npc_weapon",
-    "name": "Arma de PNJ",
-    "description": "Esta característica de PNJ é categorizada como uma ARMA."
-  },
-  {
-    "id": "tg_npc_trait",
-    "name": "Traço de PNJ",
-    "description": "Esta característica de PNJ é categorizada como um TRAÇO."
-  },
-  {
-    "id": "tg_npc_reaction",
-    "name": "Reação de PNJ",
-    "description": "Esta característica de PNJ é categorizada como uma REAÇÃO."
-  },
-  {
-    "id": "tg_npc_tech",
-    "name": "Ação Tecnológica de PNJ",
-    "description": "Esta característica de PNJ é categorizada como uma AÇÃO TECNOLÓGICA."
   }
 ]

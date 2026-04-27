@@ -3,5 +3,6 @@
   "author": "Massif Press",
   "version": "July 2020 Release",
   "description": "The official base game",
-  "website": "https://massif-press.itch.io/lancer-core-book"
+  "website": "https://massif-press.itch.io/lancer-core-book",
+  "active": true
 }

@@ -1,5 +1,18 @@
 [
   {
+    "id": "missing_pilotweapon",
+    "name": "Arma Arcaica (Corpo a Corpo)",
+    "type": "Weapon",
+    "description": "Essas armas foram feitas com ligas e tecnologia pré-União e podem ser qualquer coisa, desde espadas de aço da era industrial até machados de pedra. Embora permaneçam amplamente utilizadas em alguns mundos, as armas arcaicas usadas por pilotos são geralmente relíquias, heranças de família ou armas cerimoniais.",
+    "tags": [
+      {
+        "id": "tg_pilot_weapon"
+      }
+    ],
+    "range": [],
+    "damage": []
+  },
+  {
     "id": "pg_archaic_melee",
     "name": "Arma Arcaica (Corpo a Corpo)",
     "type": "Weapon",
@@ -20,14 +33,14 @@
     ],
     "damage": [
       {
-        "type": "Kinetic",
+        "type": "kinetic",
         "val": 1
       }
     ]
   },
   {
     "id": "pg_archaic_ranged",
-    "name": "Arma Arcaica (À Distância)",
+    "name": "Arma Arcaica (Ã€ Distância)",
     "type": "Weapon",
     "description": "Essas armas são dispositivos pré-modernos como mosquetes e arcos, todos ainda utilizados em algumas sociedades.",
     "tags": [
@@ -46,7 +59,7 @@
     ],
     "damage": [
       {
-        "type": "Kinetic",
+        "type": "kinetic",
         "val": 1
       }
     ]
@@ -72,7 +85,7 @@
     ],
     "damage": [
       {
-        "type": "Kinetic",
+        "type": "kinetic",
         "val": 1
       }
     ]
@@ -121,7 +134,7 @@
     ],
     "damage": [
       {
-        "type": "Kinetic",
+        "type": "kinetic",
         "val": 3
       }
     ]
@@ -154,7 +167,7 @@
         "val": 1
       }
     ],
-    "effect": "Quando uma arma emblemática é adquirida, escolha seu tipo de dano – Explosivo, Energético ou Cinético."
+    "effect": "Quando uma arma emblemática é adquirida, escolha seu tipo de dano â€“ Explosivo, Energético ou Cinético."
   },
   {
     "id": "pg_medium_signature",
@@ -181,7 +194,7 @@
         "val": 2
       }
     ],
-    "effect": "Quando uma arma emblemática é adquirida, escolha seu tipo de dano – Explosivo, Energético ou Cinético."
+    "effect": "Quando uma arma emblemática é adquirida, escolha seu tipo de dano â€“ Explosivo, Energético ou Cinético."
   },
   {
     "id": "pg_heavy_signature",
@@ -214,7 +227,18 @@
         "val": 4
       }
     ],
-    "effect": "Quando uma arma emblemática é adquirida, escolha seu tipo de dano – Explosivo, Energético ou Cinético."
+    "effect": "Quando uma arma emblemática é adquirida, escolha seu tipo de dano â€“ Explosivo, Energético ou Cinético."
+  },
+  {
+    "id": "missing_pilotarmor",
+    "name": "Traje Reforçado de Assalto",
+    "type": "Armor",
+    "description": "Esses trajes reforçados, comuns entre unidades militares, apresentam blindagem mais pesada que os trajes reforçados leves, mas mais mobilidade que os trajes reforçados pesados. Eles são energizados, aumentando a força do usuário, e tipicamente apresentam um computador de bordo, conjunto de sensores, ar integrado, sistema de AEV de rajada e sistemas de reciclagem de resíduos.",
+    "tags": [
+      {
+        "id": "tg_personal_armor"
+      }
+    ]
   },
   {
     "id": "pg_light_hardsuit",
@@ -288,7 +312,7 @@
     "id": "pg_heavy_hardsuit",
     "name": "Traje Reforçado Pesado",
     "type": "Armor",
-    "description": "Os trajes reforçados mais pesados. São sempre energizados e superblindados com uma espessa blindagem compósita. Os trajes reforçados pesados frequentemente apresentam armas integradas, poderosos conjuntos de mobilidade e – ao aumentar a força do usuário – permitem que ele utilize armas muito mais pesadas do que a infantaria normal pode carregar. Os trajes reforçados pesados estão em declínio agora que os chassis de meio-tamanho são populares, mas ainda são comuns entre militares privados e forças armadas diaspóricas de nível médio.",
+    "description": "Os trajes reforçados mais pesados. São sempre energizados e superblindados com uma espessa blindagem compósita. Os trajes reforçados pesados frequentemente apresentam armas integradas, poderosos conjuntos de mobilidade e â€“ ao aumentar a força do usuário â€“ permitem que ele utilize armas muito mais pesadas do que a infantaria normal pode carregar. Os trajes reforçados pesados estão em declínio agora que os chassis de meio-tamanho são populares, mas ainda são comuns entre militares privados e forças armadas diaspóricas de nível médio.",
     "bonuses": [
       {
         "id": "pilot_hp",
@@ -378,8 +402,20 @@
     "actions": [
       {
         "name": "Ativar Traje Furtivo",
-        "activation": "Rápida",
-        "detail": "Torne-se INVISÍVEL. Você deixará de ser INVISÍVEL se sofrer qualquer dano."
+        "activation": "Quick",
+        "detail": "Torne-se INVISÍVEL. Você deixará de ser INVISÍVEL se sofrer qualquer dano.",
+        "pilot": true
+      }
+    ]
+  },
+  {
+    "id": "missing_pilotgear",
+    "name": "Curativo",
+    "type": "Gear",
+    "description": "'Curativo' é a gíria dos pilotos para qualquer tipo de equipamento de primeiros socorros moderno, incluindo medi-gel em spray e curativos médicos de ação instantânea.",
+    "tags": [
+      {
+        "id": "tg_gear"
       }
     ]
   },
@@ -392,8 +428,9 @@
     "actions": [
       {
         "name": "Usar Corretivo",
-        "activation": "Completa",
-        "detail": "Gaste uma carga para aplicar corretivos a pilotos CAÍDOS E APAGADOS, trazendo-os imediatamente de volta à consciência com 1 PV."
+        "activation": "Full",
+        "detail": "Gaste uma carga para aplicar corretivos a pilotos CAÍDOS E APAGADOS, trazendo-os imediatamente de volta à consciência com 1 PV.",
+        "pilot": true
       }
     ],
     "tags": [
@@ -414,7 +451,7 @@
     "actions": [
       {
         "name": "Usar Granada de Fragmentação",
-        "activation": "Rápida",
+        "activation": "Quick",
         "range": [
           {
             "type": "Range",
@@ -431,7 +468,8 @@
             "val": 2
           }
         ],
-        "detail": "Arremesse uma granada dentro do Alcance 5. Personagens afetados dentro de uma Explosão 1 devem ter sucesso em um salvamento de AGILIDADE ou sofrem 2 de Dano Explosivo."
+        "detail": "Arremesse uma granada dentro do Alcance 5. Personagens afetados dentro de uma Explosão 1 devem ter sucesso em um salvamento de AGILIDADE ou sofrem 2 de Dano Explosivo.",
+        "pilot": true
       }
     ],
     "tags": [
@@ -456,8 +494,9 @@
     "actions": [
       {
         "name": "Usar Curativo",
-        "activation": "Completa",
-        "detail": "Gaste uma carga para aplicar um curativo em si mesmo ou em um piloto adjacente, restaurando metade de seus PV máximos. Os curativos não têm efeito em pilotos CAÍDOS E APAGADOS."
+        "activation": "Full",
+        "detail": "Gaste uma carga para aplicar um curativo em si mesmo ou em um piloto adjacente, restaurando metade de seus PV máximos. Os curativos não têm efeito em pilotos CAÍDOS E APAGADOS.",
+        "pilot": true
       }
     ],
     "tags": [
@@ -479,8 +518,9 @@
     "actions": [
       {
         "name": "Usar Estimulante",
-        "activation": "Rápida",
-        "detail": "Gaste uma carga para um dos seguintes efeitos:<ul><li><b>Chute:</b> Mantém um piloto acordado e alerta por até 30 horas.</li><li><b>Gelo:</b> Mantém um piloto calmo e emocionalmente estável; amortece o medo e outras reações fortes.</li><li><b>Suco:</b> Aumenta os sentidos e o estado de alerta, reduz a fadiga e encurta os tempos de reação. O Suco ocasionalmente provoca raiva em alguns usuários.</li></ul>"
+        "activation": "Quick",
+        "detail": "Gaste uma carga para um dos seguintes efeitos:<ul><li><b>Chute:</b> Mantém um piloto acordado e alerta por até 30 horas.</li><li><b>Gelo:</b> Mantém um piloto calmo e emocionalmente estável; amortece o medo e outras reações fortes.</li><li><b>Suco:</b> Aumenta os sentidos e o estado de alerta, reduz a fadiga e encurta os tempos de reação. O Suco ocasionalmente provoca raiva em alguns usuários.</li></ul>",
+        "pilot": true
       }
     ],
     "tags": [
@@ -503,31 +543,13 @@
         "name": "Carga de Térmita",
         "type": "Mine",
         "detail": "Esta carga deve ser detonada remotamente como uma ação rápida. Personagens afetados devem ter sucesso em um salvamento de ENGENHARIA ou sofrem 3 de Dano Energético PF. Cargas de térmita atingem objetos automaticamente, causando 10 de Dano Energético PF.",
+        "pilot": true,
         "actions": [
           {
             "name": "Detonate",
             "activation": "Quick",
             "detail": "Personagens afetados devem ser bem-sucedidos em um salvamento de ENGENHARIA ou receber 3 de Energia PA.",
-            "damage": [
-              {
-                "type": "Energy",
-                "val": 3,
-                "ap": true,
-                "save": "eng"
-              }
-            ]
-          },
-          {
-            "name": "Detonate (vs. Object)",
-            "activation": "Quick",
-            "detail": "Thermal charges automatically hit objects, dealing 10 Energy AP.",
-            "damage": [
-              {
-                "type": "Energy",
-                "val": 10,
-                "ap": true
-              }
-            ]
+            "pilot": true
           }
         ]
       }
@@ -579,7 +601,7 @@
     "id": "pg_extra_rations",
     "name": "Rações Extras",
     "type": "Gear",
-    "description": "As rações de piloto não são muito melhores que suas precursoras náuticas – ambas são variantes de biscoito duro e pasta de nutrientes. Os pilotos costumam carregar um estoque de comida extra ou luxos como chocolate, café, álcool ou produtos preservados de seu mundo natal. Essas rações podem ser usadas para barganhar ou aumentar o moral.",
+    "description": "As rações de piloto não são muito melhores que suas precursoras náuticas â€“ ambas são variantes de biscoito duro e pasta de nutrientes. Os pilotos costumam carregar um estoque de comida extra ou luxos como chocolate, café, álcool ou produtos preservados de seu mundo natal. Essas rações podem ser usadas para barganhar ou aumentar o moral.",
     "tags": [
       {
         "id": "tg_gear"
@@ -601,7 +623,7 @@
     "id": "pg_handheld_printer",
     "name": "Impressora Portátil",
     "type": "Gear",
-    "description": "Uma versão miniaturizada das impressoras de grande escala da União, as impressoras portáteis podem ser usadas para fazer objetos simples de plástico flexível e durável – desde que você tenha o chip de padrão correto.",
+    "description": "Uma versão miniaturizada das impressoras de grande escala da União, as impressoras portáteis podem ser usadas para fazer objetos simples de plástico flexível e durável â€“ desde que você tenha o chip de padrão correto.",
     "tags": [
       {
         "id": "tg_gear"
@@ -612,7 +634,7 @@
     "id": "pg_subjectivity_enhancement_suite",
     "name": "Conjunto de Aprimoramento de Subjetividade",
     "type": "Gear",
-    "description": "Um conjunto de aprimoramento de subjetividade é um conjunto de implantes cibernéticos que permite aos usuários hackear sistemas sem um equipamento. Os usuários desses conjuntos misturam o orgânico com o sintético, ganhando a capacidade de extrudir cabos de plugue universal implantados de dentro de seus corpos para fazer conexões diretas com terminais. Quando conectados, os usuários podem acessar uma interface de realidade alternativa abrangente e totalmente interativa com acesso direto à omninet, tornando a navegação – ou o hackeamento – de sistemas locais e em rede tão fácil quanto desejar (claro, você deve ter cuidado: ao abrir sua mente para o digital, você pode enfrentar perigos dos quais pessoas menos aprimoradas ignoram).",
+    "description": "Um conjunto de aprimoramento de subjetividade é um conjunto de implantes cibernéticos que permite aos usuários hackear sistemas sem um equipamento. Os usuários desses conjuntos misturam o orgânico com o sintético, ganhando a capacidade de extrudir cabos de plugue universal implantados de dentro de seus corpos para fazer conexões diretas com terminais. Quando conectados, os usuários podem acessar uma interface de realidade alternativa abrangente e totalmente interativa com acesso direto à omninet, tornando a navegação â€“ ou o hackeamento â€“ de sistemas locais e em rede tão fácil quanto desejar (claro, você deve ter cuidado: ao abrir sua mente para o digital, você pode enfrentar perigos dos quais pessoas menos aprimoradas ignoram).",
     "tags": [
       {
         "id": "tg_gear"
@@ -623,7 +645,7 @@
     "id": "pg_infoskin",
     "name": "Infopel",
     "type": "Gear",
-    "description": "Um polímero sintético reativo com qualidades avançadas, a infopel se liga rapidamente à pele e ao cabelo reais. Uma vez aplicada, ela responde a sinais eletrônicos enviados por software vinculado, mudando rapidamente sua cor e textura – até mesmo contorcendo e distorcendo sua forma – permitindo que os usuários façam pequenas alterações em sua aparência. Com a infopel, é uma questão simples alterar características faciais, cor de cabelo ou padrões de maquiagem.",
+    "description": "Um polímero sintético reativo com qualidades avançadas, a infopel se liga rapidamente à pele e ao cabelo reais. Uma vez aplicada, ela responde a sinais eletrônicos enviados por software vinculado, mudando rapidamente sua cor e textura â€“ até mesmo contorcendo e distorcendo sua forma â€“ permitindo que os usuários façam pequenas alterações em sua aparência. Com a infopel, é uma questão simples alterar características faciais, cor de cabelo ou padrões de maquiagem.",
     "tags": [
       {
         "id": "tg_gear"
@@ -656,7 +678,7 @@
     "id": "pg_omnihook",
     "name": "Omnigancho",
     "type": "Gear",
-    "description": "Um terminal de omninet portátil – embora volumoso – que permite comunicação, transferência de dados e hotspotting limitado. Os omniganchos são extremamente valiosos, embora a maioria dos esquadrões de mechas tenha pelo menos um. Sintonizar um omnigancho requer um alto nível de habilidade, então eles geralmente são montados ou carregados por operadores designados.",
+    "description": "Um terminal de omninet portátil â€“ embora volumoso â€“ que permite comunicação, transferência de dados e hotspotting limitado. Os omniganchos são extremamente valiosos, embora a maioria dos esquadrões de mechas tenha pelo menos um. Sintonizar um omnigancho requer um alto nível de habilidade, então eles geralmente são montados ou carregados por operadores designados.",
     "tags": [
       {
         "id": "tg_gear"
@@ -701,7 +723,7 @@
     "name": "Saco de Dormir",
     "type": "Gear",
     "effect": "Você pode entrar em seu saco de dormir, ganhando Imunidade a queimadura, proteção contra vácuo e ar suficiente para durar uma hora; no entanto, enquanto estiver no saco de dormir, você está ATORDOADO e não pode realizar outras ações além de sair do saco como uma ação completa.",
-    "description": "Disponíveis em vários tamanhos, os sacos de dormir são uma necessidade em campo. São projetados para se desdobrar de um traje reforçado, caber dentro da cabine de um mecha, resistir ao fogo e a mudanças de temperatura e – quando necessário – selar contra o vácuo.",
+    "description": "Disponíveis em vários tamanhos, os sacos de dormir são uma necessidade em campo. São projetados para se desdobrar de um traje reforçado, caber dentro da cabine de um mecha, resistir ao fogo e a mudanças de temperatura e â€“ quando necessário â€“ selar contra o vácuo.",
     "tags": [
       {
         "id": "tg_gear"
@@ -712,7 +734,7 @@
     "id": "pg_ssc_sylph_undersuit",
     "name": "Traje Interno Sylph da SSC",
     "type": "Gear",
-    "description": "Descoberto em Acrimea IV, um mundo de cultivo de biomas controlado pela Smith-Shimano Corp (SSC), o sylph é uma forma de vida orgânica que aparentemente pode sobreviver em quase qualquer ambiente. Usando métodos análogos à criação definidos por doutrinas de bioengenharia estabelecidas, a SSC desenvolveu o traje interno sylph – sylphs estéreis e vivos, cultivados como envelopes e ajustados a seus donos. O sylph se liga ao seu usuário, formando uma relação simbiótica: o sylph é sustentado pelos produtos residuais do hospedeiro, em troca protegendo o hospedeiro de uma gama de fatores ambientais hostis.<br>Esses trajes internos semi-biológicos e justos podem ser usados por longos períodos. São translúcidos, semi-líquidos e podem ser armazenados quando não estão em uso, conformando-se a qualquer recipiente em que são colocados. Eles limpam o corpo do hospedeiro, auxiliam nos processos de cura natural e eliminam resíduos. Conforme desejado, segmentos podem se tornar opacos, mudar de cor ou assumir uma nova textura. Os trajes internos sylph podem cobrir a cabeça do hospedeiro, selando contra o vácuo, fornecendo proteção contra radiação e filtrando ar ou líquidos, até mesmo fornecendo a capacidade de respirar água por um tempo limitado.",
+    "description": "Descoberto em Acrimea IV, um mundo de cultivo de biomas controlado pela Smith-Shimano Corp (SSC), o sylph é uma forma de vida orgânica que aparentemente pode sobreviver em quase qualquer ambiente. Usando métodos análogos à criação definidos por doutrinas de bioengenharia estabelecidas, a SSC desenvolveu o traje interno sylph â€“ sylphs estéreis e vivos, cultivados como envelopes e ajustados a seus donos. O sylph se liga ao seu usuário, formando uma relação simbiótica: o sylph é sustentado pelos produtos residuais do hospedeiro, em troca protegendo o hospedeiro de uma gama de fatores ambientais hostis.<br>Esses trajes internos semi-biológicos e justos podem ser usados por longos períodos. São translúcidos, semi-líquidos e podem ser armazenados quando não estão em uso, conformando-se a qualquer recipiente em que são colocados. Eles limpam o corpo do hospedeiro, auxiliam nos processos de cura natural e eliminam resíduos. Conforme desejado, segmentos podem se tornar opacos, mudar de cor ou assumir uma nova textura. Os trajes internos sylph podem cobrir a cabeça do hospedeiro, selando contra o vácuo, fornecendo proteção contra radiação e filtrando ar ou líquidos, até mesmo fornecendo a capacidade de respirar água por um tempo limitado.",
     "tags": [
       {
         "id": "tg_gear"
