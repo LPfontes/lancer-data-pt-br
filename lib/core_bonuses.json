@@ -12,7 +12,7 @@
     "source": "GMS",
     "effect": "Escolha um encaixe. As armas anexadas a ele recebem +1 de PRECISÃO.",
     "description": "Usando o melhor em absorção de choque e tecnologia de estabilização, você pode manter a precisão em tiros por períodos mais longos e sustentados.",
-    "mounted_effect": "Attacks made with weapons from this mount can be made with +1 ACCURACY."
+    "mounted_effect": "Ataques feitos com armas deste encaixe podem ser feitos com +1 de PRECISÃO."
   },
   {
     "id": "cb_overpower_caliber",
@@ -20,7 +20,7 @@
     "source": "GMS",
     "effect": "Escolha uma arma. 1/rodada, quando acertar com um ataque, você pode fazer com que ele cause +1d6 de dano bônus.",
     "description": "Em vez da opção padronizada, você carrega múltiplos cartuchos de munição 'quente' — projéteis do mesmo calibre, mas com um grau mais alto de acelerante.",
-    "mounted_effect": "One weapon equipped to this mount deals +1d6 bonus damage 1/round on hit."
+    "mounted_effect": "Uma arma equipada neste encaixe causa +1d6 de dano bônus 1/rodada ao acertar."
   },
   {
     "id": "cb_improved_armament",
@@ -42,7 +42,7 @@
     "source": "GMS",
     "effect": "Substitua um encaixe por um encaixe Principal/Auxiliar.",
     "description": "Ao refabricar certos componentes e pontos de fixação em seu chassi para uma distribuição mais eficiente, você pode aumentar o poder de fogo do seu mecha.",
-    "mounted_effect": "This mount has been replaced with a Main/Aux Mount."
+    "mounted_effect": "Este encaixe foi substituído por um Encaixe Principal/Auxiliar."
   },
   {
     "id": "cb_universal_compatibility",
@@ -94,7 +94,7 @@
         "locations": [
           "hull"
         ],
-        "detail": "+1 Accuracy on all Hull checks and saves"
+        "detail": "+1 de PRECISÃO em todos os testes e salvamentos de Casco"
       }
     ]
   },
@@ -144,14 +144,14 @@
     "id": "cb_all_theater_movement_suite",
     "name": "CONJUNTO PARA MOVIMENTO EM QUALQUER SITUAÇÃO",
     "source": "SSC",
-    "effect": "Você pode optar por contar todo o seu movimento como voo; no entanto, você sofre 1 de calor no final de cada um dos seus turnos em que voar dessa maneira.",
-    "description": "Uma modificação popular, o CMQS adiciona jatos de pulso poderosos que melhoram drasticamente a mobilidade do mecha em qualquer situação.",
+    "effect": "Você pode optar por contar todo o seu movimento como voo; no entanto, você sofre 1 de Calor no final de cada um dos seus turnos em que voar dessa maneira.",
+    "description": "Uma modificação popular, o CMQS adiciona jatos de pulso poderosos que melhoram dramaticamente a mobilidade do mecha em qualquer situação.",
     "synergies": [
       {
         "locations": [
           "move"
         ],
-        "detail": "Você pode optar por contar todo e qualquer movimento seu como voo; no entanto, você sofre 1 de calor no final de cada um de seus turnos em que voar dessa maneira."
+        "detail": "Você pode optar por contar todo o seu movimento como voo; no entanto, você sofre 1 de Calor no final de cada um dos seus turnos em que voar dessa maneira."
       }
     ]
   },
@@ -187,7 +187,7 @@
           "move",
           "boost"
         ],
-        "detail": "Você pode se mover 2 espaços adicionais ao IMPULSIONAR."
+        "detail": "Você pode se mover 2 espaços adicionais quando Impulsionar."
       }
     ]
   },
@@ -202,13 +202,13 @@
         "locations": [
           "agility"
         ],
-        "detail": "Você sobe e nada na velocidade normal, ignora terreno difícil e, ao fazer um movimento padrão, pode saltar horizontalmente até sua VELOCIDADE total e verticalmente até metade da sua VELOCIDADE (em qualquer combinação)."
+        "detail": "Você recebe +1 de PRECISÃO em todos os testes e salvamentos de Agilidade."
       },
       {
         "locations": [
           "move"
         ],
-        "detail": "You climb and swim at normal speed, ignore difficult terrain, and when making a standard move, can jump horizontally up to your full Speed and upwards up to half your Speed  (in any combination)."
+        "detail": "Você escala e nada na velocidade normal, ignora terreno difícil e, ao realizar o movimento padrão, pode saltar horizontalmente até sua Velocidade completa e verticalmente até metade da sua Velocidade (ou qualquer combinação dos dois)."
       }
     ]
   },
@@ -216,7 +216,7 @@
     "id": "cb_neurolink_targeting",
     "name": "MIRA POR LINK NEURAL",
     "source": "SSC",
-    "effect": "Você adquire +3 de Alcance com todas as armas à distância.",
+    "effect": "Suas armas à distância recebem +3 de Alcance",
     "description": "Para reduzir ainda mais a lacuna de informações entre piloto e máquina e complementar sua tecnologia de sincronização total de subjetividade, a SSC desenvolveu o link neural, uma ponte ontológica estável, não invasiva e de transferência limitada. A mira por link neural é um aprimoramento simples que ajuda os pilotos a sentir — em vez de pensar — quando se envolvem em combate à distância, permitindo uma expressão mais natural da habilidade do piloto.",
     "bonuses": [
       {
@@ -233,7 +233,7 @@
     "name": "A LIÇÃO DA DESCRENÇA",
     "source": "HORUS",
     "effect": "Você recebe +1 de PRECISÃO em testes e salvamentos de Sistemas e +2 em Defesa-E.",
-    "description": "Pesquise na omninet, aprofunde-se nos arquivos. Encontre a Eneida, encontre a era da Titanomaquia. Coma, absorva, reflita. Conte-me agora sobre os Hecatônquiros, os de cem mãos. Eles desferiram o golpe contra Cronos — Saturno — ou atacaram os Olimpianos? Em quem você acredita? Quem impediu a Besta de contar sua própria história? E por quê? — \"Lição Um\", As Seis Lições de Kilo Nueve.",
+    "description": "Pesquise na omninet, aprofunde-se nos arquivos. Encontre a Eneida, encontre a era da Titanomaquia. Coma, absorva, reflita. Conte-me agora sobre os Hecatônquiros, os de cem mãos. Eles desferiram o golpe contra Cronos — Saturno — ou atacaram os Olimpianos? Em quem você acredita? Quem impediu a Besta de contar sua própria história? E por quê?<br>— \"Lição Um\", As Seis Lições de Kilo Nueve.",
     "bonuses": [
       {
         "id": "edef",
@@ -245,7 +245,7 @@
         "locations": [
           "systems"
         ],
-        "detail": "+1 Accuracy on on Systems checks and saves"
+        "detail": "+1 de PRECISÃO em testes e salvamentos de Sistemas"
       }
     ]
   },
@@ -253,8 +253,8 @@
     "id": "cb_the_lesson_of_the_open_door",
     "name": "A LIÇÃO DA PORTA ABERTA",
     "source": "HORUS",
-    "effect": "Seu Valor de Salvamento aumenta em +2; além disso, 1/rodada, quando um personagem falhar em um salvamento contra você, ele sofre 2 de calor.",
-    "description": "Há um corpo e um poço profundo, e ambos se chamam Tártaro. Uma vez ele abrigou reis, titãs e mitos. Agora, os portões que o mantinham aprisionado estão abertos e o Tártaro está livre. Aqui está a terrível pergunta: quem o abriu e por quê? — \"Lição Dois\", As Seis Lições de Kilo Nueve.",
+    "effect": "Seu Valor de Salvamento aumenta em +2; além disso, 1/rodada, quando um personagem falhar em um salvamento contra você, ele sofre 2 de Calor.",
+    "description": "Há um corpo e um poço profundo, e ambos se chamam Tártaro. Uma vez ele abrigou reis, titãs e mitos. Agora, os portões que o mantinham aprisionado estão abertos e o Tártaro está livre. Aqui está a terrível pergunta: quem o abriu e por quê?<br>— \"Lição Dois\", As Seis Lições de Kilo Nueve.",
     "bonuses": [
       {
         "id": "save",
@@ -267,14 +267,14 @@
     "name": "A LIÇÃO DA IMAGEM RETIDA",
     "source": "HORUS",
     "effect": "1/rodada, como uma reação no início do turno de um personagem aliado, você pode usar uma ação de programar para Travar Mira em um personagem na linha de visão e ao alcance dos Sensores.",
-    "description": "Feche os olhos. Mantenha a imagem do seu inimigo em sua mente; imagine-a em todas as luzes e de todos os ângulos. Em sua mente, ela se tornou uma versão mais perfeita. Esmague-a em sua mente e mate a coisa perfeita. Abra os olhos. — \"Lição Três\", As Seis Lições de Kilo Nueve.",
+    "description": "Feche os olhos. Mantenha a imagem do seu inimigo em sua mente; imagine-a em todas as luzes e de todos os ângulos. Em sua mente, ela se tornou uma versão mais perfeita. Esmague-a em sua mente e mate a coisa perfeita. Abra os olhos.<br>— \"Lição Três\", As Seis Lições de Kilo Nueve.",
     "actions": [
       {
-        "name": "A Lição da Imagem Mantida",
+        "name": "A Lição da Imagem Retida",
         "activation": "Reaction",
         "frequency": "1/round",
         "trigger": "Qualquer personagem aliado começa seu turno",
-        "detail": "Realize uma ação tecnológica de TRAVAR MIRA contra qualquer personagem na linha de visão e alcance dos SENSORES."
+        "detail": "Realize uma ação tecnológica de TRAVAR MIRA contra qualquer personagem na linha de visão e ao alcance dos SENSORES."
       }
     ]
   },
@@ -283,7 +283,7 @@
     "name": "A LIÇÃO DO PENSAR O PENSAMENTO DO AMANHÃ",
     "source": "HORUS",
     "effect": "Quando você acertar com um ataque tecnológico, seu próximo ataque corpo a corpo contra o mesmo alvo recebe +1 de PRECISÃO, e seu dano não pode ser reduzido de nenhuma forma.",
-    "description": "Deixe-me dar-lhe esta lição: a existência corpórea é uma que deve terminar na morte. A existência incorpórea é uma que [deve] acabar em [cascata? você realmente acredita nisso?]. Digo-lhe novamente, se você pode imaginar, já está [feito] e você já deu o golpe final. — \"Lição Quatro\", As Seis Lições de Kilo Nueve.",
+    "description": "Deixe-me dar-lhe esta lição: a existência corpórea é uma que deve terminar na morte. A existência incorpórea é uma que [deve] acabar em [cascata? você realmente acredita nisso?]. Digo-lhe novamente, se você pode imaginar, já está [feito] e você já deu o golpe final.<br>— \"Lição Quatro\", As Seis Lições de Kilo Nueve.",
     "synergies": [
       {
         "locations": [
@@ -298,14 +298,14 @@
     "name": "A LIÇÃO DA TRANSUBSTANCIAÇÃO",
     "source": "HORUS",
     "effect": "Sempre que sofrer dano de estrutura, você desaparece em um espaço não existente e deixa de ser um alvo válido. Você reaparece no mesmo espaço no início do seu próximo turno. Se esse espaço estiver ocupado, você reaparece no espaço livre mais próximo (escolhido por você).",
-    "description": "Por meio da repetição do estado de êxtase, você pode ver o rosto de Deus. Fale até que sua língua seque e se transforme em pó, e seu corpo se torne nada. Quando você não é nada e o vento o leva, você está em todas as coisas, jamais a ser destruído, apenas dividido, até o fim dos tempos. — \"Lição Cinco\", As Seis Lições de Kilo Nueve."
+    "description": "Por meio da repetição do estado de êxtase, você pode ver o rosto de Deus. Fale até que sua língua seque e se transforme em pó, e seu corpo se torne nada. Quando você não é nada e o vento o leva, você está em todas as coisas, jamais a ser destruído, apenas dividido, até o fim dos tempos.<br>— \"Lição Cinco\", As Seis Lições de Kilo Nueve."
   },
   {
     "id": "cb_the_lesson_of_shaping",
     "name": "A LIÇÃO DA FORMAÇÃO",
     "source": "HORUS",
     "effect": "Você pode instalar uma IA adicional em seu mecha. Se uma entrar em cascata (ou se tornar desacorrentada narrativamente), a outra impede que ela assuma o controle do seu mecha. Você só perde o controle do seu mecha se ambos os sistemas ou equipamentos marcados como IA entrarem em cascata.",
-    "description": "Um pequeno presente, a ser ponderado até ser compreendido: abandone o martelo e a espada, o canhão e o raio. Nenhuma arma formada contra mim aterrissará um golpe verdadeiro, pois eu vi todos os fins e não há mais nada além de mim. Trilhões de trilhões de anos-luz em todas as direções, e através de tudo isso, apenas [nós? quem sabe. ego é um assassino do pensamento, melhor chamar seus amigos, melhor enfrentar a noite juntos. até mais tarde, amor.] — \"Lição Seis\", As Seis Lições de Kilo Nueve.",
+    "description": "Um pequeno presente, a ser ponderado até ser compreendido: abandone o martelo e a espada, o canhão e o raio. Nenhuma arma formada contra mim aterrissará um golpe verdadeiro, pois eu vi todos os fins e não há mais nada além de mim. Trilhões de trilhões de anos-luz em todas as direções, e através de tudo isso, apenas [nós? quem sabe. ego é um assassino do pensamento, melhor chamar seus amigos, melhor enfrentar a noite juntos. até mais tarde, amor.]<br>— \"Lição Seis\", As Seis Lições de Kilo Nueve.",
     "bonuses": [
       {
         "id": "ai_cap",
@@ -317,36 +317,36 @@
     "id": "cb_adaptive_reactor",
     "name": "Reator Adaptativo",
     "source": "HA",
-    "effect": "Quando voce ESTABILIZAR e escolher esfriar seu mecha, você pode gastar 2 REPAROS para limpar 1 de dano de estresse.",
-    "description": "Todos os chassis do Arsenal são projetados com múltiplos sistemas de segurança, mas clientes VIP e cidadãos de alto nível têm acesso a um catálogo especial. Com dezenas de opções para superengenharia de reatores, é fácil garantir que um mecha possa continuar funcionando indefinidamente."
+    "effect": "Quando Estabilizar e escolher resfriar seu mecha, você pode gastar 2 de Reparo para remover 1 de dano de estresse.",
+    "description": "Todos os chassis da Arsenal são projetados com múltiplos sistemas redundantes, mas clientes VIP e cidadãos de alto nível possuem acesso a um catálogo especial. Com dezenas de opções para reatores super dimensionados, é fácil garantir que um mecha possa continuar funcionando indefinidamente."
   },
   {
     "id": "cb_armory_sculpted_chassis",
-    "name": "Chassi Esculpido pelo Arsenal",
+    "name": "Chassi Esculpido pela Arsenal",
     "source": "HA",
-    "effect": "Você ganha +1 de PRECISÃO em todos os testes e salvamentos de ENGENHARIA. Quando você SOBRECARREGAR, ganha cobertura leve até o início do seu próximo turno.",
-    "description": "Qualquer um pode imprimir um chassi de mecha padrão, confiando em uma seção de código genérico para mantê-los vivos. O piloto exigente, por outro lado, aceita apenas o melhor: um chassi projetado, testado e ajustado por um dos mestres fabricantes do Arsenal.",
+    "effect": "Você recebe +1 de PRECISÃO em todos os testes e salvamentos de Engenharia. Quando Sobrecarregar, você obtém cobertura leve até o início do seu próximo turno.",
+    "description": "Qualquer um pode imprimir um chassi padrão, dependendo de uma seção de código genérico para mantê-lo vivo. O piloto sagaz, por outro lado, aceita apenas o melhor: um chassi projetado, testado e refinado por um dos melhores mestres fabricantes da Arsenal.",
     "synergies": [
       {
         "locations": [
           "engineering"
         ],
-        "detail": "Quando você SOBRECARREGAR, ganhe cobertura leve até o início do seu próximo turno."
+        "detail": "Quando Sobrecarregar, você obtém cobertura leve até o início do seu próximo turno."
       },
       {
         "locations": [
           "overcharge"
         ],
-        "detail": "Gain soft cover until the start of your next turn."
+        "detail": "Você obtém cobertura leve até o início do seu próximo turno."
       }
     ]
   },
   {
     "id": "cb_heatfall_coolant_system",
-    "name": "Sistema de Refrigeração Heatfall",
+    "name": "Sistema de Resfriamento Derruba Calor",
     "source": "HA",
-    "effect": "O custo de SOBRECARREGAR nunca passa de 1d6 de calor.",
-    "description": "O Sistema de Refrigeração Heatfall vem com um núcleo de reator estabilizado; juntos, essa combinação garante manter um mecha resfriado em quase qualquer ambiente.",
+    "effect": "O seu custo de Sobrecarga nunca passa de 1d6heat.",
+    "description": "O Sistema de Resfriamento Derruba Calor vem integrado com um núcleo de reator estabilizado; unidos, esse combo é garantia de manter um mecha frio em qualquer ambiente.",
     "bonuses": [
       {
         "id": "overcharge",
@@ -361,10 +361,10 @@
   },
   {
     "id": "cb_integrated_ammo_feeds",
-    "name": "Alimentadores de Munição Integrados",
+    "name": "Carregadores de Munição Integrados",
     "source": "HA",
-    "effect": "Todos os sistemas e armas LIMITADOS ganham duas cargas adicionais.",
-    "description": "Ao otimizar e integrar todos os módulos de carregamento de munição automatizados, os especialistas do Arsenal Harrison podem aprimorar muito os tempos mínimos de ataque ao alvo dos mechas. Como bônus adicional, essas melhorias geralmente resultam em maior capacidade de carga, permitindo que os pilotos usem mais munição do que as especificações de projeto sugerem.",
+    "effect": "Todos os sistemas Limitados e armas com Limitado adquirem duas cargas adicionais.",
+    "description": "Ao simplificar e integrar todos os módulos de carga de artilharia, os especialistas da Arsenal Harrison podem melhorar muito o tempo mínimo até o alvo dos mechas. Como um bônus adicional, essas melhorias geralmente resultam em uma maior capacidade de carga, permitindo aos pilotos levarem mais artilharia que as especificações de projeto sugerem.",
     "bonuses": [
       {
         "id": "limited_bonus",
@@ -374,17 +374,17 @@
   },
   {
     "id": "cb_stasis_shielding",
-    "name": "Blindagem de Estase",
+    "name": "Proteção de Estase",
     "source": "HA",
-    "effect": "Sempre que voce sofrer dano de estresse, você ganha RESISTÊNCIA a todo dano ate o inicio do seu proximo turno.",
-    "description": "Um exercício do Think Tank para estender a estase além das capacidades de utilidade civil, a blindagem de estase do Arsenal Harrison identifica ativamente sistemas inorgânicos criticamente estressados e os cobre com estase 'Holdfast' não modulada, impedindo a degradação adicional por um período limitado de tempo até que os reparos possam ser feitos."
+    "effect": "Sempre que sofrer dano de estresse, você adquire Resistência a todo dano até o início do seu próximo turno.",
+    "description": "Um exercício de Ideário para estender a estase além das capacidades de utilização civil, a proteção de estase da Arsenal Harrison ativamente identifica sistemas inorgânicos criticamente estressados e os cobre em estase “seguradora” não modulada, prevenindo degradação adicional por um tempo limitado até que reparos possam ser feitos."
   },
   {
     "id": "cb_superior_by_design",
     "name": "Superior por Design",
     "source": "HA",
-    "effect": "Você ganha IMUNIDADE a IMPEDIDO e +2 de CAP. DE CALOR.",
-    "description": "Até mesmo os chassis de entrada do Arsenal visam superar a concorrência. Graças aos incríveis recursos à sua disposição, o Arsenal Harrison pode superar em design e produção quase qualquer engenheiro ou fabricante menor. Onde há resistência, a resposta é simples: compre-os ou elimine-os. Os valiosos clientes do Arsenal se beneficiam dessa filosofia de 'Superior por Design', então por que deveriam se preocupar?",
+    "effect": "Você adquire Imunidade a Impedido e +2 de Cap. de Calor",
+    "description": "Até os chassis de entrada da Arsenal almejam superar a concorrência. Graças aos incríveis recursos que eles possuem à sua disposição, a Arsenal Harrison pode superar quase qualquer fabricante ou engenheiro de butique menor em projeto e produção. Onde a resistência é encontrada, a resposta é simples: compre-os ou elimine-os. Os clientes valorosos da Arsenal se beneficiam dessa filosofia de “Superior por Design”, então por que deveriam se preocupar?",
     "bonuses": [
       {
         "id": "heatcap",

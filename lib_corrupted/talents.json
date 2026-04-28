@@ -8,11 +8,11 @@
         "ranks": [
             {
                 "name": "Acrobacias",
-                "description": "Ao voar, você obtém os seguintes benefícios:<ul><li>Você faz todos os testes e salvamentos de AGILIDADE com +1 de PRECISÃƒO.</li><li>Sempre que um ataque o errar, você pode voar até 2 espaços em qualquer direção como uma reação.</li></ul>",
+                "description": "Ao voar, você obtém os seguintes benefícios:<ul><li>Você faz todos os testes e salvamentos de AGILIDADE com +1 de PRECISÃO.</li><li>Sempre que um ataque o errar, você pode voar até 2 espaços em qualquer direção como uma reação.</li></ul>",
                 "active_effects": [
                     {
                         "name": "Acrobatics",
-                        "detail": "Faça todos os testes e salvamentos de AGILIDADE com +1 de PRECISÃƒO."
+                        "detail": "Faça todos os testes e salvamentos de AGILIDADE com +1 de PRECISÃO."
                     }
                 ],
                 "actions": [
@@ -78,16 +78,16 @@
         "ranks": [
             {
                 "name": "Seu Parceiro Ideal",
-                "description": "Ao adquirir este talento, escolha outro piloto (de preferência um PJ, mas PNJs são aceitáveis se o seu MJ permitir) para ser seu Companheiro de Vínculo. Quaisquer testes de perícia e salvamentos de mecha que qualquer um dos personagens faça enquanto estiverem adjacentes ganham +1 de PRECISÃƒO. Se ambos os personagens tiverem este talento, isso aumenta para +2 de PRECISÃƒO, mas personagens adicionais com este talento não podem aumentá-lo ainda mais.<br>Entre as missões, você pode substituir seu Companheiro de Vínculo por um novo, mas apenas se seu relacionamento com ele tiver mudado.",
+                "description": "Ao adquirir este talento, escolha outro piloto (de preferência um PJ, mas PNJs são aceitáveis se o seu MJ permitir) para ser seu Companheiro de Vínculo. Quaisquer testes de perícia e salvamentos de mecha que qualquer um dos personagens faça enquanto estiverem adjacentes ganham +1 de PRECISÃO. Se ambos os personagens tiverem este talento, isso aumenta para +2 de PRECISÃO, mas personagens adicionais com este talento não podem aumentá-lo ainda mais.<br>Entre as missões, você pode substituir seu Companheiro de Vínculo por um novo, mas apenas se seu relacionamento com ele tiver mudado.",
                 "active_effects": [
                     {
                         "name": "Eu Sou o Seu Companheiro",
-                        "detail": "Quaisquer testes de perícia e salvamentos de mecha que você ou seu Companheiro de Vínculo façam enquanto estiverem adjacentes ganham +1 de PRECISÃƒO. Se ambos os personagens tiverem este talento, isso aumenta para +2 de PRECISÃƒO.",
+                        "detail": "Quaisquer testes de perícia e salvamentos de mecha que você ou seu Companheiro de Vínculo façam enquanto estiverem adjacentes ganham +1 de PRECISÃO. Se ambos os personagens tiverem este talento, isso aumenta para +2 de PRECISÃO.",
                         "add_special": [
                             {
                                 "attribute": "Bondmate",
                                 "target": "ally",
-                                "detail": "Quaisquer testes e salvamentos de perícia de mecha que você ou seu Vínculo fizerem enquanto estiverem adjacentes ganham +1 de PRECISÃƒO. Se ambos os personagens tiverem este talento, isso aumenta para +2 de PRECISÃƒO."
+                                "detail": "Quaisquer testes e salvamentos de perícia de mecha que você ou seu Vínculo fizerem enquanto estiverem adjacentes ganham +1 de PRECISÃO. Se ambos os personagens tiverem este talento, isso aumenta para +2 de PRECISÃO."
                             }
                         ]
                     }
@@ -135,7 +135,7 @@
         "ranks": [
             {
                 "name": "Imobilizar e Travar",
-                "description": "Você recebe +1 de PRECISÃƒO em todos os ataques corpo a corpo contra alvos que você está AGARRANDO."
+                "description": "Você recebe +1 de PRECISÃO em todos os ataques corpo a corpo contra alvos que você está AGARRANDO."
             },
             {
                 "name": "Marreta",
@@ -240,11 +240,11 @@
             },
             {
                 "name": "Implacável",
-                "description": "Quando fizer uma rolagem de ataque e errar, sua próxima rolagem de ataque recebe +1 de PRECISÃƒO. Esse efeito se acumula e persiste até você acertar.",
+                "description": "Quando fizer uma rolagem de ataque e errar, sua próxima rolagem de ataque recebe +1 de PRECISÃO. Esse efeito se acumula e persiste até você acertar.",
                 "active_effects": [
                     {
                         "name": "Relentless",
-                        "detail": "Ao errar, sua próxima rolagem de ataque recebe +1 de PRECISÃƒO. Esse efeito se acumula e persiste até você acertar."
+                        "detail": "Ao errar, sua próxima rolagem de ataque recebe +1 de PRECISÃO. Esse efeito se acumula e persiste até você acertar."
                     }
                 ],
                 "counters": [
@@ -268,12 +268,12 @@
         "ranks": [
             {
                 "name": "Estável, Firme",
-                "description": "Como um protocolo, você pode <b>firmar sua mira</b>. Se o fizer, você fica IMOBILIZADO até o início de seu próximo turno, mas ganha +1 de PRECISÃƒO em todos os ataques que fizer com Fuzis.",
+                "description": "Como um protocolo, você pode <b>firmar sua mira</b>. Se o fizer, você fica IMOBILIZADO até o início de seu próximo turno, mas ganha +1 de PRECISÃO em todos os ataques que fizer com Fuzis.",
                 "actions": [
                     {
                         "name": "Firmar Mira",
                         "activation": "Protocol",
-                        "detail": "Fique IMOBILIZADO até o início de seu próximo turno, mas ganhe +1 de PRECISÃƒO em todos os ataques que fizer com Fuzis.",
+                        "detail": "Fique IMOBILIZADO até o início de seu próximo turno, mas ganhe +1 de PRECISÃO em todos os ataques que fizer com Fuzis.",
                         "add_status": [
                             {
                                 "id": "immobilized",
@@ -283,7 +283,7 @@
                         "add_special": [
                             {
                                 "attribute": "Steadying Aim",
-                                "detail": "Você ganha +1 de PRECISÃƒO em todos os ataques que fizer com Fuzis."
+                                "detail": "Você ganha +1 de PRECISÃO em todos os ataques que fizer com Fuzis."
                             }
                         ]
                     }
@@ -292,7 +292,7 @@
                     {
                         "name": "Stable, Steady",
                         "condition": "Steadying Aim is active",
-                        "detail": "Ganhe +1 de PRECISÃƒO em todos os ataques que fizer com Fuzis."
+                        "detail": "Ganhe +1 de PRECISÃO em todos os ataques que fizer com Fuzis."
                     }
                 ],
                 "synergies": [
@@ -306,7 +306,7 @@
                         "weapon_sizes": [
                             "any"
                         ],
-                        "detail": "Ganhe +1 de PRECISÃƒO em todos os ataques que fizer com esta arma se tiver usado o <b>Protocolo Firmar Mira</b> neste turno."
+                        "detail": "Ganhe +1 de PRECISÃO em todos os ataques que fizer com esta arma se tiver usado o <b>Protocolo Firmar Mira</b> neste turno."
                     }
                 ]
             },
@@ -555,12 +555,12 @@
             },
             {
                 "name": "Tempestade de Violência",
-                "description": "Sempre que acertar um personagem com um ataque corpo a corpo, você recebe +1 de PRECISÃƒO em seu próximo ataque à distância contra ele; e, sempre que atingir um personagem com um ataque à distância, você recebe +1 de PRECISÃƒO em seu próximo ataque corpo a corpo contra ele. Esse efeito não se acumula.",
+                "description": "Sempre que acertar um personagem com um ataque corpo a corpo, você recebe +1 de PRECISÃO em seu próximo ataque à distância contra ele; e, sempre que atingir um personagem com um ataque à distância, você recebe +1 de PRECISÃO em seu próximo ataque corpo a corpo contra ele. Esse efeito não se acumula.",
                 "active_effects": [
                     {
                         "name": "Storm of Violence",
                         "condition": "You have hit a character with a melee or ranged attack",
-                        "detail": "Sempre que você acertar um personagem com um ataque corpo a corpo, você ganha +1 de PRECISÃƒO em seu próximo ataque à distância contra ele; e, sempre que você acertar um personagem com um ataque à distância, você ganha +1 de PRECISÃƒO em seu próximo ataque corpo a corpo contra ele."
+                        "detail": "Sempre que você acertar um personagem com um ataque corpo a corpo, você ganha +1 de PRECISÃO em seu próximo ataque à distância contra ele; e, sempre que você acertar um personagem com um ataque à distância, você ganha +1 de PRECISÃO em seu próximo ataque corpo a corpo contra ele."
                     }
                 ],
                 "synergies": [
@@ -568,7 +568,7 @@
                         "locations": [
                             "weapon"
                         ],
-                        "detail": "Sempre que acertar um personagem com um ataque corpo a corpo, você recebe +1 de PRECISÃƒO em seu próximo ataque à distância contra ele; e, sempre que atingir um personagem com um ataque à distância, você recebe +1 de PRECISÃƒO em seu próximo ataque corpo a corpo contra ele. Esse efeito não se acumula."
+                        "detail": "Sempre que acertar um personagem com um ataque corpo a corpo, você recebe +1 de PRECISÃO em seu próximo ataque à distância contra ele; e, sempre que atingir um personagem com um ataque à distância, você recebe +1 de PRECISÃO em seu próximo ataque corpo a corpo contra ele. Esse efeito não se acumula."
                     }
                 ]
             }
@@ -583,12 +583,12 @@
         "ranks": [
             {
                 "name": "Guerrilheiro",
-                "description": "Receba +1 de PRECISÃƒO no primeiro ataque corpo a corpo que você fizer com uma arma PRINCIPAL CORPO A CORPO no seu turno.",
+                "description": "Receba +1 de PRECISÃO no primeiro ataque corpo a corpo que você fizer com uma arma PRINCIPAL CORPO A CORPO no seu turno.",
                 "active_effects": [
                     {
                         "name": "Partisan",
                         "condition": "The first melee attack you make with a Main Melee weapon on your turn",
-                        "detail": "Ganhe +1 de PRECISÃƒO no primeiro ataque corpo a corpo que você fizer com uma arma Corpo a Corpo Principal em seu turno.",
+                        "detail": "Ganhe +1 de PRECISÃO no primeiro ataque corpo a corpo que você fizer com uma arma Corpo a Corpo Principal em seu turno.",
                         "frequency": "1/turn"
                     }
                 ],
@@ -603,7 +603,7 @@
                         "weapon_sizes": [
                             "Main"
                         ],
-                        "detail": "Receba +1 de PRECISÃƒO no primeiro ataque corpo a corpo que você fizer com uma arma PRINCIPAL CORPO A CORPO no seu turno."
+                        "detail": "Receba +1 de PRECISÃO no primeiro ataque corpo a corpo que você fizer com uma arma PRINCIPAL CORPO A CORPO no seu turno."
                     }
                 ]
             },
@@ -792,7 +792,7 @@
             },
             {
                 "name": "Revisão",
-                "description": "Você pode ajustar os componentes essenciais do seu protótipo de arma para aumentar sua eficácia. Ao realizar um REPARO COMPLETO, escolha dois:<ul><li><b>Ã“TICA AJUSTADA:</b> Seu protótipo de arma sempre recebe +1 de PRECISÃƒO nos ataques.</li><li><b>COMPUTADOR AJUSTADO:</b> Seu protótipo de arma é INTELIGENTE.</li><li><b>PROTEÃ‡ÃƒO DO REATOR REMOVIDA:</b> Sempre que atacar com sua arma protótipo, você pode escolher, ao custo de 2 de CALOR, atacar com uma das seguintes opções, dependendo do tipo de arma:<ul><li><b>Arma à Distância:</b> Cone 3, Linha 5, ou [Explosão 1, Alcance 10].</li><li><b>Arma Corpo a Corpo:</b> Emanação 1.</li></ul></li></ul>",
+                "description": "Você pode ajustar os componentes essenciais do seu protótipo de arma para aumentar sua eficácia. Ao realizar um REPARO COMPLETO, escolha dois:<ul><li><b>Ã“TICA AJUSTADA:</b> Seu protótipo de arma sempre recebe +1 de PRECISÃO nos ataques.</li><li><b>COMPUTADOR AJUSTADO:</b> Seu protótipo de arma é INTELIGENTE.</li><li><b>PROTEÃ‡ÃƒO DO REATOR REMOVIDA:</b> Sempre que atacar com sua arma protótipo, você pode escolher, ao custo de 2 de CALOR, atacar com uma das seguintes opções, dependendo do tipo de arma:<ul><li><b>Arma à Distância:</b> Cone 3, Linha 5, ou [Explosão 1, Alcance 10].</li><li><b>Arma Corpo a Corpo:</b> Emanação 1.</li></ul></li></ul>",
                 "integrated": [
                     "mw_prototype_2"
                 ],
@@ -917,7 +917,7 @@
                 "active_effects": [
                     {
                         "name": "Assign Exemplar's Mark",
-                        "detail": "A primeira vez no seu turno que você atacar um personagem hostil dentro do Alcance 3, acertando ou errando, você pode dar a ele a Marca do Exemplar como uma ação livre. Personagens só podem ter uma Marca por vez. Você ou qualquer aliado que ataque o personagem Marcado pode consumir a Marca para ganhar +1 de PRECISÃƒO no ataque.",
+                        "detail": "A primeira vez no seu turno que você atacar um personagem hostil dentro do Alcance 3, acertando ou errando, você pode dar a ele a Marca do Exemplar como uma ação livre. Personagens só podem ter uma Marca por vez. Você ou qualquer aliado que ataque o personagem Marcado pode consumir a Marca para ganhar +1 de PRECISÃO no ataque.",
                         "condition": "The first time on your turn that you attack a hostile character within Range 3",
                         "frequency": "1/turn",
                         "add_special": [
@@ -981,12 +981,12 @@
         "ranks": [
             {
                 "name": "Argumento Inicial",
-                "description": "Ganhe +1 de PRECISÃƒO na primeira rolagem de ataque que você fizer com uma arma à distância AUXILIAR em seu turno.",
+                "description": "Ganhe +1 de PRECISÃO na primeira rolagem de ataque que você fizer com uma arma à distância AUXILIAR em seu turno.",
                 "active_effects": [
                     {
                         "name": "Opening Argument",
                         "condition": "The first attack roll you make with an Auxiliary ranged weapon on your turn",
-                        "detail": "Ganhe +1 de PRECISÃƒO no primeiro rolamento de ataque que você fizer com uma arma à distância Auxiliar no seu turno.",
+                        "detail": "Ganhe +1 de PRECISÃO no primeiro rolamento de ataque que você fizer com uma arma à distância Auxiliar no seu turno.",
                         "frequency": "1/turn"
                     }
                 ],
@@ -1005,7 +1005,7 @@
                         "weapon_sizes": [
                             "Auxiliary"
                         ],
-                        "detail": "Ganhe +1 de PRECISÃƒO na primeira rolagem de ataque que você fizer com uma arma à distância AUXILIAR em seu turno."
+                        "detail": "Ganhe +1 de PRECISÃO na primeira rolagem de ataque que você fizer com uma arma à distância AUXILIAR em seu turno."
                     }
                 ]
             },
@@ -1428,11 +1428,11 @@
         "ranks": [
             {
                 "name": "Momentum",
-                "description": "Quando você IMPULSIONAR, o seu próximo EMPURRÃƒO antes do início do seu próximo turno ganha +1 de PRECISÃƒO e afasta seu alvo 2 espaços adicionais.",
+                "description": "Quando você IMPULSIONAR, o seu próximo EMPURRÃƒO antes do início do seu próximo turno ganha +1 de PRECISÃO e afasta seu alvo 2 espaços adicionais.",
                 "active_effects": [
                     {
                         "name": "Momentum",
-                        "detail": "Quando você IMPULSIONAR, o seu próximo EMPURRÃƒO antes do início do seu próximo turno ganha +1 de PRECISÃƒO e afasta seu alvo 2 espaços adicionais.",
+                        "detail": "Quando você IMPULSIONAR, o seu próximo EMPURRÃƒO antes do início do seu próximo turno ganha +1 de PRECISÃO e afasta seu alvo 2 espaços adicionais.",
                         "condition": "You Boost",
                         "frequency": "1/turn"
                     }
@@ -1442,13 +1442,13 @@
                         "locations": [
                             "boost"
                         ],
-                        "detail": "Quando você IMPULSIONAR, o seu próximo EMPURRÃƒO antes do início do seu próximo turno ganha +1 de PRECISÃƒO e afasta seu alvo 2 espaços adicionais."
+                        "detail": "Quando você IMPULSIONAR, o seu próximo EMPURRÃƒO antes do início do seu próximo turno ganha +1 de PRECISÃO e afasta seu alvo 2 espaços adicionais."
                     },
                     {
                         "locations": [
                             "ram"
                         ],
-                        "detail": "Se você IMPULSIONOU neste turno, um EMPURRÃƒO antes do início do seu próximo turno ganha +1 de PRECISÃƒO e afasta seu alvo 2 espaços adicionais."
+                        "detail": "Se você IMPULSIONOU neste turno, um EMPURRÃƒO antes do início do seu próximo turno ganha +1 de PRECISÃO e afasta seu alvo 2 espaços adicionais."
                     }
                 ]
             },
@@ -1542,7 +1542,7 @@
                         "name": "Emitir Ordem",
                         "activation": "Free",
                         "frequency": "1/turn",
-                        "detail": "1/turno, no seu turno como uma ação livre, você pode emitir uma ordem a um PJ aliado com quem possa se comunicar, descrevendo um curso de ação, e dando a ele um Dado de Liderança. Ele pode gastar o dado para ganhar +1 de PRECISÃƒO na próxima ação, salvamento ou ataque que estiver na ordem de comando."
+                        "detail": "1/turno, no seu turno como uma ação livre, você pode emitir uma ordem a um PJ aliado com quem possa se comunicar, descrevendo um curso de ação, e dando a ele um Dado de Liderança. Ele pode gastar o dado para ganhar +1 de PRECISÃO na próxima ação, salvamento ou ataque que estiver na ordem de comando."
                     }
                 ],
                 "counters": [
@@ -1563,7 +1563,7 @@
                         "name": "Emitir Comando",
                         "activation": "Reaction",
                         "trigger": "Outro jogador começa o turno dele.",
-                        "detail": "Você pode emitir um comando a um PJ aliado com quem possa se comunicar, descrevendo um curso de ação, e dar a ele um Dado de Liderança. Ele pode gastar para ganhar +1 de PRECISÃƒO."
+                        "detail": "Você pode emitir um comando a um PJ aliado com quem possa se comunicar, descrevendo um curso de ação, e dar a ele um Dado de Liderança. Ele pode gastar para ganhar +1 de PRECISÃO."
                     }
                 ]
             },
@@ -1990,11 +1990,11 @@
         "ranks": [
             {
                 "name": "Oportunista",
-                "description": "1/rodada, ganhe +1 de PRECISÃƒO em qualquer ataque corpo a corpo se pelo menos um personagem aliado estiver ENGAJADO com seu alvo.",
+                "description": "1/rodada, ganhe +1 de PRECISÃO em qualquer ataque corpo a corpo se pelo menos um personagem aliado estiver ENGAJADO com seu alvo.",
                 "active_effects": [
                     {
                         "name": "Opportunist",
-                        "detail": "1/rodada, ganhe +1 de PRECISÃƒO em qualquer ataque corpo a corpo se pelo menos um personagem aliado estiver ENGAJADO com seu alvo.",
+                        "detail": "1/rodada, ganhe +1 de PRECISÃO em qualquer ataque corpo a corpo se pelo menos um personagem aliado estiver ENGAJADO com seu alvo.",
                         "condition": "You make a melee attack and at least one allied character is Engaged with your target",
                         "frequency": "1/round"
                     }
@@ -2010,17 +2010,17 @@
                         "weapon_sizes": [
                             "any"
                         ],
-                        "detail": "1/rodada, ganhe +1 de PRECISÃƒO em qualquer ataque corpo a corpo se pelo menos um personagem aliado estiver ENGAJADO com seu alvo."
+                        "detail": "1/rodada, ganhe +1 de PRECISÃO em qualquer ataque corpo a corpo se pelo menos um personagem aliado estiver ENGAJADO com seu alvo."
                     }
                 ]
             },
             {
                 "name": "Cenário Solar",
-                "description": "1/rodada, ganhe +1 de PRECISÃƒO em qualquer ataque à distância feito enquanto você estiver em uma elevação maior que a do seu alvo.",
+                "description": "1/rodada, ganhe +1 de PRECISÃO em qualquer ataque à distância feito enquanto você estiver em uma elevação maior que a do seu alvo.",
                 "active_effects": [
                     {
                         "name": "Solar Backdrop",
-                        "detail": "1/rodada, ganhe +1 de PRECISÃƒO em qualquer ataque à distância feito enquanto você estiver em uma elevação maior que seu alvo.",
+                        "detail": "1/rodada, ganhe +1 de PRECISÃO em qualquer ataque à distância feito enquanto você estiver em uma elevação maior que seu alvo.",
                         "condition": "You make a ranged attack while you are at a higher elevation than your target",
                         "frequency": "1/round"
                     }
@@ -2040,7 +2040,7 @@
                         "weapon_sizes": [
                             "any"
                         ],
-                        "detail": "1/rodada, ganhe +1 de PRECISÃƒO em qualquer ataque à distância feito enquanto você estiver em uma elevação maior que a do seu alvo."
+                        "detail": "1/rodada, ganhe +1 de PRECISÃO em qualquer ataque à distância feito enquanto você estiver em uma elevação maior que a do seu alvo."
                     }
                 ]
             },
@@ -2112,11 +2112,11 @@
         "ranks": [
             {
                 "name": "Etiqueta do Aperto de Mão",
-                "description": "Receba +1 de PRECISÃƒO ao usar armas de CQR para atacar alvos dentro do ALCANCE 3.",
+                "description": "Receba +1 de PRECISÃO ao usar armas de CQR para atacar alvos dentro do ALCANCE 3.",
                 "active_effects": [
                     {
                         "name": "Handshake Etiquette",
-                        "detail": "Ganhe +1 de PRECISÃƒO ao usar armas CQB para atacar alvos dentro de Alcance 3.",
+                        "detail": "Ganhe +1 de PRECISÃO ao usar armas CQB para atacar alvos dentro de Alcance 3.",
                         "condition": "You attack with a CQB weapon at a target within Range 3",
                         "frequency": "1/round"
                     }
@@ -2132,7 +2132,7 @@
                         "weapon_sizes": [
                             "any"
                         ],
-                        "detail": "Receba +1 de PRECISÃƒO com esta arma ao atacar alvos dentro do ALCANCE 3."
+                        "detail": "Receba +1 de PRECISÃO com esta arma ao atacar alvos dentro do ALCANCE 3."
                     }
                 ]
             },

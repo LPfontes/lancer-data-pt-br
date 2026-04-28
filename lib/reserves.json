@@ -185,7 +185,15 @@
         "name": "Escudo Posicionável (Reserva)",
         "type": "Deployable",
         "size": 1,
-        "detail": "Concede cobertura leve para todos os personagens amigáveis em uma área de EMANAÇÃO 2."
+        "detail": "Concede cobertura leve para todos os personagens amigáveis em uma área de EMANAÇÃO 2.",
+        "stats": {
+          "size": 1,
+          "hp": 5,
+          "evasion": 5,
+          "edef": 5,
+          "speed": 0,
+          "armor": 0
+        }
       }
     ]
   },
@@ -214,7 +222,7 @@
         "locations": [
           "hase"
         ],
-        "detail": "+1 ACCURACY to skill checks made with one skill – HULL, AGILITY, SYSTEMS or ENGINEERING."
+        "detail": "+1 de PRECISÃO em testes de perícia feitos com uma perícia – CASCO, AGILIDADE, SISTEMAS ou ENGENHARIA."
       }
     ]
   },
@@ -244,7 +252,7 @@
         "locations": [
           "move"
         ],
-        "detail": "Your mech has IMMUNITY to the SLOWED condition."
+        "detail": "Seu mecha tem IMUNIDADE à condição LENTO."
       }
     ]
   },

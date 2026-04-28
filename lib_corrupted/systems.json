@@ -270,7 +270,7 @@
         "source": "GMS",
         "license": "GMS",
         "license_level": 0,
-        "effect": "Você ganha +2 PV e, em consulta com o Mestre, pode estabelecer uma modificação menor que fez em seu mecha.<br>Esta modificação não tem benefício numérico além dos PV adicionais que concede, mas pode proporcionar outros efeitos úteis. Se o Mestre concordar que esta modificação ajudaria em um teste de perícia de piloto ou mecha, você ganha +1 de PRECISÃƒO para aquele teste.",
+        "effect": "Você ganha +2 PV e, em consulta com o Mestre, pode estabelecer uma modificação menor que fez em seu mecha.<br>Esta modificação não tem benefício numérico além dos PV adicionais que concede, mas pode proporcionar outros efeitos úteis. Se o Mestre concordar que esta modificação ajudaria em um teste de perícia de piloto ou mecha, você ganha +1 de PRECISÃO para aquele teste.",
         "bonuses": [
             {
                 "id": "hp",
@@ -280,7 +280,7 @@
         "active_effects": [
             {
                 "name": "Personalizações",
-                "detail": "Suas personalizações relevantes para um teste de perícia de piloto ou mecha recebem +1 de PRECISÃƒO (a critério do Mestre)."
+                "detail": "Suas personalizações relevantes para um teste de perícia de piloto ou mecha recebem +1 de PRECISÃO (a critério do Mestre)."
             }
         ]
     },
@@ -296,11 +296,11 @@
         "source": "GMS",
         "license": "GMS",
         "license_level": 0,
-        "effect": "Você ganha +1 de PRECISÃƒO em salvamentos para evitar PROSTRADO ou Repulsão.",
+        "effect": "Você ganha +1 de PRECISÃO em salvamentos para evitar PROSTRADO ou Repulsão.",
         "active_effects": [
             {
                 "name": "Estrutura Estável",
-                "detail": "+1 de PRECISÃƒO em salvamentos para evitar PROSTRADO ou Repulsão."
+                "detail": "+1 de PRECISÃO em salvamentos para evitar PROSTRADO ou Repulsão."
             }
         ]
     },
@@ -1426,11 +1426,11 @@
         "actions": [
             {
                 "activation": "Protocol",
-                "detail": "Ao ativar este protocolo, você recebe +1 de PRECISÃƒO em sua primeira rolagem de ataque neste turno, mas recebe +1 de DIFICULDADE em todas as outras rolagens de ataque até o final do turno.",
+                "detail": "Ao ativar este protocolo, você recebe +1 de PRECISÃO em sua primeira rolagem de ataque neste turno, mas recebe +1 de DIFICULDADE em todas as outras rolagens de ataque até o final do turno.",
                 "active_effects": [
                     {
                         "name": "Sifão de Núcleo Ativo",
-                        "detail": "Você ganha +1 de PRECISÃƒO em sua primeira rolagem de ataque neste turno, mas sofre +1 de DIFICULDADE em todas as outras rolagens de ataque até o final do turno."
+                        "detail": "Você ganha +1 de PRECISÃO em sua primeira rolagem de ataque neste turno, mas sofre +1 de DIFICULDADE em todas as outras rolagens de ataque até o final do turno."
                     }
                 ]
             }
@@ -1450,11 +1450,11 @@
         "source": "SSC",
         "license": "Deathâ€™s Head",
         "license_level": 3,
-        "effect": "Quando você erra uma rolagem de ataque à distância, sua próxima rolagem de ataque à distância recebe +1 de PRECISÃƒO.",
+        "effect": "Quando você erra uma rolagem de ataque à distância, sua próxima rolagem de ataque à distância recebe +1 de PRECISÃO.",
         "active_effects": [
             {
                 "name": "Compensador Cinético",
-                "detail": "Quando você errar uma rolagem de ataque à distância, sua próxima rolagem de ataque à distância recebe +1 de PRECISÃƒO."
+                "detail": "Quando você errar uma rolagem de ataque à distância, sua próxima rolagem de ataque à distância recebe +1 de PRECISÃO."
             }
         ],
         "synergies": [
@@ -1469,7 +1469,7 @@
                     "CQB",
                     "Nexus"
                 ],
-                "detail": "Quando você errar uma rolagem de ataque à distância, sua próxima rolagem de ataque à distância recebe +1 de PRECISÃƒO."
+                "detail": "Quando você errar uma rolagem de ataque à distância, sua próxima rolagem de ataque à distância recebe +1 de PRECISÃO."
             }
         ],
         "description": "Compensadores cinéticos são aprimoramentos populares, fornecendo uma estrutura subsuperficial de giroscópios modulados eletronicamente e compensadores hidráulicos que trabalham em conjunto para absorver e dispersar o recuo causado pelo disparo de armas pesadas.",
@@ -2150,11 +2150,11 @@
         "source": "HORUS",
         "license": "Balor",
         "license_level": 1,
-        "effect": "Você ganha +1 de PRECISÃƒO em ataques tecnológicos contra personagens adjacentes.",
+        "effect": "Você ganha +1 de PRECISÃO em ataques tecnológicos contra personagens adjacentes.",
         "active_effects": [
             {
                 "name": "Enxame de Escaneres Ativo",
-                "detail": "Você ganha +1 de PRECISÃƒO em ataques tecnológicos contra personagens adjacentes."
+                "detail": "Você ganha +1 de PRECISÃO em ataques tecnológicos contra personagens adjacentes."
             }
         ],
         "synergies": [
@@ -2162,7 +2162,7 @@
                 "locations": [
                     "tech_attack"
                 ],
-                "detail": "Você ganha +1 de PRECISÃƒO em ataques tecnológicos contra personagens adjacentes."
+                "detail": "Você ganha +1 de PRECISÃO em ataques tecnológicos contra personagens adjacentes."
             }
         ],
         "description": "Enxames de escaneres codificados pela HÃ“RUS estabelecem protocolos de nanitas em forma de oculus em torno de objetos ou áreas definidas, garantindo circulação constante e captura de dados. Os nanitas ingerem e processam informações de espectro completo, retransmitindo-as de volta ao seu piloto/pai em troca de um impulso de código endórfico que solicita a continuação da varredura.",
