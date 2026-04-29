@@ -1,0 +1,102 @@
+[
+    {
+        "id": "env_dangerousflorafauna",
+        "name": "Flora ou Fauna Perigosa",
+        "description": "Uma proporção anormalmente grande da vida animal ou vegetal deste planeta é perigosa; parte da flora e fauna pode ser predatória, particularmente hostil, ou até mesmo de tamanho titânico. Use o tipo de PNJ Monstruosidade para gerar encontros com a vida selvagem. A flora hostil pode aparecer no campo de batalha como personagens imóveis com TAMANHO 1–2, 5 PV e EVASÃO 10; alvos que se movem adjacentes a eles devem ter sucesso em um salvamento de CASCO ou sofrem 3 de Dano Cinético e ficam IMOBILIZADOS até que a flora seja destruída, pois ela os prende com seiva pegajosa, teias, um poço ou algo semelhante."
+    },
+    {
+        "id": "env_extremecold",
+        "name": "Frio Extremo",
+        "description": "As culturas locais se adaptaram ao clima congelante, mas mechas e pilotos congelam rapidamente sem uma fonte de calor próxima. Mechas que não se movem ou IMPULSIONAM em seu turno ficam IMOBILIZADOS no final do turno. Isso dura até que eles se libertem com um salvamento de CASCO bem-sucedido como uma ação rápida. Além disso, todos os mechas adquirem RESISTÊNCIA a calor."
+    },
+    {
+        "id": "env_extremeheat",
+        "name": "Calor Extremo",
+        "description": "A sociedade recuou principalmente para o subsolo para escapar da atmosfera escaldante deste mundo. Todo o calor infligido (ao usuário ou a outros) por sistemas ou armas é aumentado em +1."
+    },
+    {
+        "id": "env_thinatmosphere",
+        "name": "Atmosfera Rarefeita",
+        "description": "Todos os personagens adquirem RESISTÊNCIA a Dano Explosivo."
+    },
+    {
+        "id": "env_extremesun",
+        "name": "Sol Extremo",
+        "description": "Personagens sofrem 1d6 de calor sempre que não estão na sombra no final de um turno."
+    },
+    {
+        "id": "env_corrosiveatmosphere",
+        "name": "Atmosfera Corrosiva",
+        "description": "A atmosfera densa deste mundo corrói a blindagem. Todas as armas recebem a tag PF (Perfurante)."
+    },
+    {
+        "id": "env_particulatestorms",
+        "name": "Tempestades de Partículas",
+        "description": "Este planeta é varrido por tempestades brutais e abrasivas de areia, rocha ou metal. Durante as tempestades, os mechas sempre têm cobertura leve. Pilotos que saem de seus mechas sofrem 1 de Dano Cinético (PF) a cada turno que estão do lado de fora."
+    },
+    {
+        "id": "env_electricalstorms",
+        "name": "Tempestades Elétricas",
+        "description": "Este planeta é varrido por tempestades elétricas anormalmente fortes. Durante as tempestades, escolha um personagem aleatoriamente no final de cada rodada: ele deve ter sucesso em um salvamento de ENGENHARIA com +1 de DIFICULDADE por nível de TAMANHO ou ficará ATORDOADO até o final de seu próximo turno por um raio."
+    },
+    {
+        "id": "env_disruptivestorms",
+        "name": "Tempestades Disruptivas",
+        "description": "As tempestades neste planeta são tão carregadas que os sistemas eletrônicos não conseguem funcionar. Todas as ações tecnológicas, ataques e testes e salvamentos de SISTEMAS recebem +1 de DIFICULDADE."
+    },
+    {
+        "id": "env_dangeroustorms",
+        "name": "Tempestades Perigosas",
+        "description": "Tempestades de fogo, meteoros, chuva ácida, gelo ou outras partículas destrutivas varrem este planeta. Durante as tempestades, todos os personagens sofrem 2 de Dano Energético (PF) no final de seus turnos, a menos que estejam adjacentes a um objeto que conceda cobertura pesada."
+    },
+    {
+        "id": "env_oceanworld",
+        "name": "Mundo Oceânico",
+        "description": "Menos de cinco por cento da superfície deste mundo se eleva acima do oceano. Mechas afundam até o fundo e se movem como se estivessem em terreno difícil, a menos que estejam voando ou tenham um Módulo AEV. Mechas podem andar (lentamente) no fundo e geralmente são capazes de funcionar em ambientes de pressão extremamente alta."
+    },
+    {
+        "id": "env_earthquakes",
+        "name": "Terremotos",
+        "description": "Este mundo é regularmente abalado por terremotos. Durante os terremotos, role 1d6 no final de cada rodada: com 1, todos os mechas devem ter sucesso em um salvamento de CASCO ou serão derrubados (PROSTRADOS), a menos que estejam voando."
+    },
+    {
+        "id": "env_moltenworld",
+        "name": "Mundo Derretido",
+        "description": "Partes da crosta deste mundo se projetam através da superfície em chuvas e poças de rocha líquida. Quando personagens se movem para áreas de rocha derretida ou lava pela primeira vez em seu turno ou começam seu turno lá, eles sofrem 5 de Dano Energético (PF) e 3 de calor."
+    },
+    {
+        "id": "env_primordealworld",
+        "name": "Mundo Primordial",
+        "description": "Este mundo é uma sopa borbulhante de lama e gases semi-orgânicos. Humanos devem usar aparelhos de respiração ou trajes selados fora de seus mechas para sobreviver à atmosfera tóxica, e a lama fervente cria numerosas áreas de terreno difícil e perigoso."
+    },
+    {
+        "id": "env_lowgravity",
+        "name": "Baixa Gravidade",
+        "description": "Mechas contam como voando quando IMPULSIONAM, mas devem pousar após se moverem. Personagens nunca sofrem dano de queda."
+    },
+    {
+        "id": "env_highgravity",
+        "name": "Alta Gravidade",
+        "description": "Mechas não podem IMPULSIONAR e ficam IMOBILIZADOS sempre que ficariam LENTOS."
+    },
+    {
+        "id": "env_tombworld",
+        "name": "Mundo Tumba",
+        "description": "Este mundo tem níveis extremamente altos de radiação ambiente, possivelmente devido a uma guerra nuclear, degradação atmosférica ou algo mais sinistro. Fora dos mechas, humanos sem proteção ambiental diminuem temporariamente seus PV máximos em 1 por hora de exposição. Se chegarem a 0 PV desta forma, morrem. Eles podem recuperar seus PV máximos realizando um REPARO COMPLETO em um ambiente seguro."
+    },
+    {
+        "id": "env_spireworld",
+        "name": "Mundo de Pináculos",
+        "description": "Em vez de uma superfície, este mundo é composto por inúmeras ilhas ou pináculos flutuantes, cada um suspenso em um substrato gasoso e mantido no ar por força magnética. Talvez a crosta tenha sido estilhaçada por uma superarma ou desastre natural. A maior parte da massa de terra restante está desconectada, embora algumas ilhas sejam grandes o suficiente para abrigar cidades. Os sistemas de navegação são quase inúteis aqui."
+    },
+    {
+        "id": "env_sinkingworld",
+        "name": "Mundo Movediço",
+        "description": "A superfície deste mundo é coberta por areia fina ou lama espessa. Mechas que se movem 1 espaço ou less durante seu turno ficam LENTOS. Mechas LENTOS que se movem 1 espaço ou menos são IMOBILIZADOS e começam a afundar, eventualmente sendo completamente engolidos. Este efeito dura até que um mecha afetado (ou um adjacente a ele) tenha sucesso em um salvamento de CASCO como uma ação completa."
+    },
+    {
+        "id": "env_holyworld",
+        "name": "Mundo Sagrado",
+        "description": "Este mundo é belo e carece de características especialmente perigosas, mas a população local o considera sacrossanto. Danificar qualquer objeto natural – rochas, árvores e pastagens imaculadas, por exemplo – atrai a ira dos residentes."
+    }
+]

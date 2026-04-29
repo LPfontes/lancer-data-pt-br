@@ -1,0 +1,755 @@
+[
+    {
+        "id": "pg_archaic_melee",
+        "name": "Arma Arcaica (Corpo a Corpo)",
+        "type": "Weapon",
+        "description": "Essas armas foram feitas com ligas e tecnologia pré-União e podem ser qualquer coisa, desde espadas de aço da era industrial até machados de pedra. Embora permaneçam amplamente utilizadas em alguns mundos, as armas arcaicas usadas por pilotos são geralmente relíquias, heranças de família ou armas cerimoniais.",
+        "tags": [
+            {
+                "id": "tg_archaic"
+            },
+            {
+                "id": "tg_pilot_weapon"
+            }
+        ],
+        "range": [
+            {
+                "type": "Threat",
+                "val": 1
+            }
+        ],
+        "damage": [
+            {
+                "type": "Kinetic",
+                "val": 1
+            }
+        ]
+    },
+    {
+        "id": "pg_archaic_ranged",
+        "name": "Arma Arcaica (Ã€ Distância)",
+        "type": "Weapon",
+        "description": "Essas armas são dispositivos pré-modernos como mosquetes e arcos, todos ainda utilizados em algumas sociedades.",
+        "tags": [
+            {
+                "id": "tg_archaic"
+            },
+            {
+                "id": "tg_pilot_weapon"
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 5
+            }
+        ],
+        "damage": [
+            {
+                "type": "Kinetic",
+                "val": 1
+            }
+        ]
+    },
+    {
+        "id": "pg_light_a_c",
+        "name": "Arma de L/C Leve",
+        "type": "Weapon",
+        "description": "Armas de L/C leves podem ser facas, baionetas, adagas de soco e espadas curtas.",
+        "tags": [
+            {
+                "id": "tg_sidearm"
+            },
+            {
+                "id": "tg_pilot_weapon"
+            }
+        ],
+        "range": [
+            {
+                "type": "Threat",
+                "val": 1
+            }
+        ],
+        "damage": [
+            {
+                "type": "Kinetic",
+                "val": 1
+            }
+        ]
+    },
+    {
+        "id": "pg_medium_a_c",
+        "name": "Arma de L/C Média",
+        "type": "Weapon",
+        "description": "Armas de L/C médias são tipicamente espadas, sabres de oficial e machados de trincheira.",
+        "tags": [
+            {
+                "id": "tg_pilot_weapon"
+            }
+        ],
+        "range": [
+            {
+                "type": "Threat",
+                "val": 1
+            }
+        ],
+        "damage": [
+            {
+                "type": "Kinetic",
+                "val": 2
+            }
+        ]
+    },
+    {
+        "id": "pg_heavy_a_c",
+        "name": "Arma de L/C Pesada",
+        "type": "Weapon",
+        "description": "Armas pesadas são projetadas com a força aumentada dos trajes reforçados em mente e incluem martelos de guerra, malhos, aríetes, piques e espadas de assalto pesadas de duas mãos.",
+        "tags": [
+            {
+                "id": "tg_inaccurate"
+            },
+            {
+                "id": "tg_pilot_weapon"
+            }
+        ],
+        "range": [
+            {
+                "type": "Threat",
+                "val": 1
+            }
+        ],
+        "damage": [
+            {
+                "type": "Kinetic",
+                "val": 3
+            }
+        ]
+    },
+    {
+        "id": "pg_light_signature",
+        "name": "Arma Emblemática Leve",
+        "type": "Weapon",
+        "description": "Armas emblemáticas leves podem ser revólveres superdimensionados, pares de pistolas e submetralhadoras.",
+        "tags": [
+            {
+                "id": "tg_sidearm"
+            },
+            {
+                "id": "tg_set_damage_type"
+            },
+            {
+                "id": "tg_pilot_weapon"
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 3
+            }
+        ],
+        "damage": [
+            {
+                "type": "variable",
+                "val": 1
+            }
+        ],
+        "effect": "Quando uma arma emblemática é adquirida, escolha seu tipo de dano â€“ Explosivo, Energético ou Cinético."
+    },
+    {
+        "id": "pg_medium_signature",
+        "name": "Arma Emblemática Média",
+        "type": "Weapon",
+        "description": "Armas emblemáticas médias são fuzis de assalto, escopetas, lasers alimentados por mochila ou armas de disrupção.",
+        "tags": [
+            {
+                "id": "tg_set_damage_type"
+            },
+            {
+                "id": "tg_pilot_weapon"
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 5
+            }
+        ],
+        "damage": [
+            {
+                "type": "variable",
+                "val": 2
+            }
+        ],
+        "effect": "Quando uma arma emblemática é adquirida, escolha seu tipo de dano â€“ Explosivo, Energético ou Cinético."
+    },
+    {
+        "id": "pg_heavy_signature",
+        "name": "Arma Emblemática Pesada",
+        "type": "Weapon",
+        "description": "Armas emblemáticas pesadas são tubos de mísseis, lasers pesados, metralhadoras leves ou fuzis exóticos.",
+        "tags": [
+            {
+                "id": "tg_ordnance"
+            },
+            {
+                "id": "tg_loading"
+            },
+            {
+                "id": "tg_set_damage_type"
+            },
+            {
+                "id": "tg_pilot_weapon"
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 10
+            }
+        ],
+        "damage": [
+            {
+                "type": "variable",
+                "val": 4
+            }
+        ],
+        "effect": "Quando uma arma emblemática é adquirida, escolha seu tipo de dano â€“ Explosivo, Energético ou Cinético."
+    },
+    {
+        "id": "pg_light_hardsuit",
+        "name": "Traje Reforçado Leve",
+        "type": "Armor",
+        "description": "Trajes reforçados leves são geralmente feitos de tramas reativas, semelhantes a tecido, com blindagem limitada e poucos componentes energizados para maximizar a mobilidade. Como outros trajes reforçados, eles podem ser selados contra o vácuo e protegem contra uma quantidade decente de radiação e outras partículas nocivas.",
+        "bonuses": [
+            {
+                "id": "pilot_hp",
+                "val": 3
+            },
+            {
+                "id": "pilot_evasion",
+                "val": 10,
+                "replace": true
+            },
+            {
+                "id": "pilot_edef",
+                "val": 10,
+                "replace": true
+            },
+            {
+                "id": "pilot_speed",
+                "val": 4,
+                "replace": true
+            }
+        ],
+        "tags": [
+            {
+                "id": "tg_personal_armor"
+            }
+        ]
+    },
+    {
+        "id": "pg_assault_hardsuit",
+        "name": "Traje Reforçado de Assalto",
+        "type": "Armor",
+        "description": "Esses trajes reforçados, comuns entre unidades militares, apresentam blindagem mais pesada que os trajes reforçados leves, mas mais mobilidade que os trajes reforçados pesados. Eles são energizados, aumentando a força do usuário, e tipicamente apresentam um computador de bordo, conjunto de sensores, ar integrado, sistema de AEV de rajada e sistemas de reciclagem de resíduos.",
+        "bonuses": [
+            {
+                "id": "pilot_hp",
+                "val": 3
+            },
+            {
+                "id": "pilot_armor",
+                "val": 1
+            },
+            {
+                "id": "pilot_evasion",
+                "val": 8,
+                "replace": true
+            },
+            {
+                "id": "pilot_edef",
+                "val": 8,
+                "replace": true
+            },
+            {
+                "id": "pilot_speed",
+                "val": 4,
+                "replace": true
+            }
+        ],
+        "tags": [
+            {
+                "id": "tg_personal_armor"
+            }
+        ]
+    },
+    {
+        "id": "pg_heavy_hardsuit",
+        "name": "Traje Reforçado Pesado",
+        "type": "Armor",
+        "description": "Os trajes reforçados mais pesados. São sempre energizados e superblindados com uma espessa blindagem compósita. Os trajes reforçados pesados frequentemente apresentam armas integradas, poderosos conjuntos de mobilidade e â€“ ao aumentar a força do usuário â€“ permitem que ele utilize armas muito mais pesadas do que a infantaria normal pode carregar. Os trajes reforçados pesados estão em declínio agora que os chassis de meio-tamanho são populares, mas ainda são comuns entre militares privados e forças armadas diaspóricas de nível médio.",
+        "bonuses": [
+            {
+                "id": "pilot_hp",
+                "val": 3
+            },
+            {
+                "id": "pilot_armor",
+                "val": 2
+            },
+            {
+                "id": "pilot_evasion",
+                "val": 6,
+                "replace": true
+            },
+            {
+                "id": "pilot_edef",
+                "val": 8,
+                "replace": true
+            },
+            {
+                "id": "pilot_speed",
+                "val": 3,
+                "replace": true
+            }
+        ],
+        "tags": [
+            {
+                "id": "tg_personal_armor"
+            }
+        ]
+    },
+    {
+        "id": "pg_mobility_hardsuit",
+        "name": "Traje Reforçado de Mobilidade",
+        "type": "Armor",
+        "effect": "Esses trajes reforçados possuem sistemas de voo integrados, permitindo que os pilotos voem ao se moverem ou IMPULSIONAREM. Pilotos voando devem terminar seu turno no chão (ou em outra superfície) ou começarão a cair.",
+        "bonuses": [
+            {
+                "id": "pilot_evasion",
+                "val": 10,
+                "replace": true
+            },
+            {
+                "id": "pilot_edef",
+                "val": 10,
+                "replace": true
+            },
+            {
+                "id": "pilot_speed",
+                "val": 5,
+                "replace": true
+            }
+        ],
+        "tags": [
+            {
+                "id": "tg_personal_armor"
+            }
+        ]
+    },
+    {
+        "id": "pg_stealth_hardsuit",
+        "name": "Traje Reforçado Furtivo",
+        "type": "Armor",
+        "effect": "Como uma ação rápida, pilotos usando trajes reforçados furtivos podem se tornar INVISÍVEIS. Eles deixam de ser INVISÍVEIS se sofrerem qualquer dano.",
+        "bonuses": [
+            {
+                "id": "pilot_evasion",
+                "val": 8,
+                "replace": true
+            },
+            {
+                "id": "pilot_edef",
+                "val": 8,
+                "replace": true
+            },
+            {
+                "id": "pilot_speed",
+                "val": 4,
+                "replace": true
+            }
+        ],
+        "tags": [
+            {
+                "id": "tg_personal_armor"
+            }
+        ],
+        "actions": [
+            {
+                "name": "Ativar Traje Furtivo",
+                "activation": "Quick",
+                "detail": "Torne-se INVISÍVEL. Você deixará de ser INVISÍVEL se sofrer qualquer dano."
+            }
+        ]
+    },
+    {
+        "id": "pg_corrective",
+        "name": "Corretivo",
+        "type": "Gear",
+        "effect": "Gaste uma carga para aplicar corretivos a pilotos Caídos e Apagados, trazendo-os imediatamente de volta à consciência com 1 PV.",
+        "description": "Esta folha transparente, semelhante a plástico, pode ser colocada sobre os ferimentos de pilotos gravemente feridos. Ela começa a estabilizá-los instantaneamente, injetando medicamentos e implantando nanites para suturar os ferimentos.",
+        "actions": [
+            {
+                "name": "Usar Corretivo",
+                "activation": "Full",
+                "detail": "Gaste uma carga para aplicar corretivos a pilotos CAÍDOS E APAGADOS, trazendo-os imediatamente de volta à consciência com 1 PV."
+            }
+        ],
+        "tags": [
+            {
+                "id": "tg_limited",
+                "val": 1
+            },
+            {
+                "id": "tg_gear"
+            }
+        ]
+    },
+    {
+        "id": "pg_frag_grenades",
+        "name": "Granadas de Fragmentação",
+        "type": "Gear",
+        "effect": "Gaste uma carga para o seguinte efeito:<ul><li><b>Granada de Fragmentação</b> (Granada, Alcance 5, Explosão 1): Personagens afetados devem ter sucesso em um salvamento de Agilidade ou sofrem 2 de dano Explosivo.</li></ul>",
+        "actions": [
+            {
+                "name": "Usar Granada de Fragmentação",
+                "activation": "Quick",
+                "range": [
+                    {
+                        "type": "Range",
+                        "val": 5
+                    },
+                    {
+                        "type": "Blast",
+                        "val": 1
+                    }
+                ],
+                "damage": [
+                    {
+                        "type": "Explosive",
+                        "val": 2
+                    }
+                ],
+                "detail": "Arremesse uma granada dentro do Alcance 5. Personagens afetados dentro de uma Explosão 1 devem ter sucesso em um salvamento de AGILIDADE ou sofrem 2 de Dano Explosivo."
+            }
+        ],
+        "tags": [
+            {
+                "id": "tg_limited",
+                "val": 2
+            },
+            {
+                "id": "tg_grenade"
+            },
+            {
+                "id": "tg_gear"
+            }
+        ]
+    },
+    {
+        "id": "pg_patch",
+        "name": "Curativo",
+        "type": "Gear",
+        "effect": "Gaste uma carga para aplicar um curativo em si mesmo ou em um piloto adjacente, restaurando metade de seus PV máximos. Curativos não têm efeito em pilotos Caídos e Apagados.",
+        "description": "'Curativo' é a gíria dos pilotos para qualquer tipo de equipamento de primeiros socorros moderno, incluindo medi-gel em spray e curativos médicos de ação instantânea.",
+        "actions": [
+            {
+                "name": "Usar Curativo",
+                "activation": "Full",
+                "detail": "Gaste uma carga para aplicar um curativo em si mesmo ou em um piloto adjacente, restaurando metade de seus PV máximos. Os curativos não têm efeito em pilotos CAÍDOS E APAGADOS."
+            }
+        ],
+        "tags": [
+            {
+                "id": "tg_limited",
+                "val": 1
+            },
+            {
+                "id": "tg_gear"
+            }
+        ]
+    },
+    {
+        "id": "pg_stims",
+        "name": "Estimulantes",
+        "type": "Gear",
+        "effect": "Gaste uma carga para um dos seguintes efeitos:<ul><li><b>Chute:</b> Mantém um piloto acordado e alerta por até 30 horas.</li><li><b>Gelo:</b> Mantém um piloto calmo e emocionalmente estável; amortece o medo e outras reações fortes.</li><li><b>Suco:</b> Aumenta os sentidos e o estado de alerta, reduz a fadiga e encurta os tempos de reação. O Suco ocasionalmente provoca raiva em alguns usuários.</li></ul>",
+        "description": "Esses estimulantes químicos às vezes são administrados automaticamente por injetores embutidos no traje de um piloto, ou mesmo implantados em seu corpo. O uso descontrolado pode ser viciante e perigoso para a saúde a longo prazo e é um problema para alguns pilotos.",
+        "actions": [
+            {
+                "name": "Usar Estimulante",
+                "activation": "Quick",
+                "detail": "Gaste uma carga para um dos seguintes efeitos:<ul><li><b>Chute:</b> Mantém um piloto acordado e alerta por até 30 horas.</li><li><b>Gelo:</b> Mantém um piloto calmo e emocionalmente estável; amortece o medo e outras reações fortes.</li><li><b>Suco:</b> Aumenta os sentidos e o estado de alerta, reduz a fadiga e encurta os tempos de reação. O Suco ocasionalmente provoca raiva em alguns usuários.</li></ul>"
+            }
+        ],
+        "tags": [
+            {
+                "id": "tg_limited",
+                "val": 3
+            },
+            {
+                "id": "tg_gear"
+            }
+        ]
+    },
+    {
+        "id": "pg_thermite_charge",
+        "name": "Carga de Térmita",
+        "type": "Gear",
+        "effect": "Gaste uma carga para o seguinte efeito:<ul><li><b>Carga de Térmita</b> (Mina, Emanação 1): Esta carga deve ser detonada remotamente como uma ação rápida. Personagens afetados devem ter sucesso em um salvamento de Engenharia ou sofrem 3 de dano Energético PF. Cargas térmicas atingem objetos automaticamente, causando 10 de dano Energético PF.",
+        "deployables": [
+            {
+                "name": "Carga de Térmita",
+                "type": "Mine",
+                "detail": "Esta carga deve ser detonada remotamente como uma ação rápida. Personagens afetados devem ter sucesso em um salvamento de ENGENHARIA ou sofrem 3 de Dano Energético PF. Cargas de térmita atingem objetos automaticamente, causando 10 de Dano Energético PF.",
+                "actions": [
+                    {
+                        "name": "Detonate",
+                        "activation": "Quick",
+                        "detail": "Personagens afetados devem ser bem-sucedidos em um salvamento de ENGENHARIA ou receber 3 de Energia PA.",
+                        "damage": [
+                            {
+                                "type": "Energy",
+                                "val": 3,
+                                "ap": true,
+                                "save": "eng"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Detonate (vs. Object)",
+                        "activation": "Quick",
+                        "detail": "Thermal charges automatically hit objects, dealing 10 Energy AP.",
+                        "damage": [
+                            {
+                                "type": "Energy",
+                                "val": 10,
+                                "ap": true
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "tags": [
+            {
+                "id": "tg_limited",
+                "val": 1
+            },
+            {
+                "id": "tg_gear"
+            }
+        ]
+    },
+    {
+        "id": "pg_antiphoton_visor",
+        "name": "Visor Antifóton",
+        "type": "Gear",
+        "description": "Projetados para proteger os olhos do usuário de intensas rajadas de luz, os visores antifóton são comumente encontrados entre equipes de invasão e operadores voltados para o sol. São eficazes contra armas de flash, luz UV intensa e cargas incidentais de armas de energia.",
+        "tags": [
+            {
+                "id": "tg_gear"
+            }
+        ]
+    },
+    {
+        "id": "pg_camo_cloth",
+        "name": "Tecido de Camuflagem",
+        "type": "Gear",
+        "description": "Um quadrado de material reativo que muda lentamente para refletir o ambiente circundante, o suficiente para cobrir um humano confortavelmente. A transição leva cerca de 10 segundos e torna qualquer coisa escondida por baixo muito difícil de localizar.",
+        "tags": [
+            {
+                "id": "tg_gear"
+            }
+        ]
+    },
+    {
+        "id": "pg_dataplating",
+        "name": "Placa de Dados",
+        "type": "Gear",
+        "description": "Placa de Dados é um termo geral para qualquer joia com link de comunicação, rede subdermal, placas vestíveis para mandíbula, sobrancelha ou maxilar, etc., que permite comunicação subvocal e exibições persistentes de heads-up e realidade aumentada sem usar um capacete. As placas de dados podem traduzir rapidamente quase qualquer idioma e permitir que os usuários se comuniquem uns com os outros quase em silêncio.",
+        "tags": [
+            {
+                "id": "tg_gear"
+            }
+        ]
+    },
+    {
+        "id": "pg_extra_rations",
+        "name": "Rações Extras",
+        "type": "Gear",
+        "description": "As rações de piloto não são muito melhores que suas precursoras náuticas â€“ ambas são variantes de biscoito duro e pasta de nutrientes. Os pilotos costumam carregar um estoque de comida extra ou luxos como chocolate, café, álcool ou produtos preservados de seu mundo natal. Essas rações podem ser usadas para barganhar ou aumentar o moral.",
+        "tags": [
+            {
+                "id": "tg_gear"
+            }
+        ]
+    },
+    {
+        "id": "pg_flexsuit",
+        "name": "Traje Flexível",
+        "type": "Gear",
+        "description": "Um traje de camada base forte que recicla água, gera nutrientes e se adapta muito rapidamente a ambientes hostis, mantendo uma condição estável e estendendo a capacidade de sobrevivência. Os usuários de trajes flexíveis podem ficar cerca de uma semana sem comer ou beber graças à pasta de ambrósia gerada por seu traje antes que seus sistemas se esgotem; no entanto, eles não evitam a sensação de fome. Remover o traje por um dia ou dois é o suficiente para reabastecer suas reservas. Os trajes flexíveis também mantêm uma temperatura estável dentro de parâmetros aceitáveis.",
+        "tags": [
+            {
+                "id": "tg_gear"
+            }
+        ]
+    },
+    {
+        "id": "pg_handheld_printer",
+        "name": "Impressora Portátil",
+        "type": "Gear",
+        "description": "Uma versão miniaturizada das impressoras de grande escala da União, as impressoras portáteis podem ser usadas para fazer objetos simples de plástico flexível e durável â€“ desde que você tenha o chip de padrão correto.",
+        "tags": [
+            {
+                "id": "tg_gear"
+            }
+        ]
+    },
+    {
+        "id": "pg_subjectivity_enhancement_suite",
+        "name": "Conjunto de Aprimoramento de Subjetividade",
+        "type": "Gear",
+        "description": "Um conjunto de aprimoramento de subjetividade é um conjunto de implantes cibernéticos que permite aos usuários hackear sistemas sem um equipamento. Os usuários desses conjuntos misturam o orgânico com o sintético, ganhando a capacidade de extrudir cabos de plugue universal implantados de dentro de seus corpos para fazer conexões diretas com terminais. Quando conectados, os usuários podem acessar uma interface de realidade alternativa abrangente e totalmente interativa com acesso direto à omninet, tornando a navegação â€“ ou o hackeamento â€“ de sistemas locais e em rede tão fácil quanto desejar (claro, você deve ter cuidado: ao abrir sua mente para o digital, você pode enfrentar perigos dos quais pessoas menos aprimoradas ignoram).",
+        "tags": [
+            {
+                "id": "tg_gear"
+            }
+        ]
+    },
+    {
+        "id": "pg_infoskin",
+        "name": "Infopel",
+        "type": "Gear",
+        "description": "Um polímero sintético reativo com qualidades avançadas, a infopel se liga rapidamente à pele e ao cabelo reais. Uma vez aplicada, ela responde a sinais eletrônicos enviados por software vinculado, mudando rapidamente sua cor e textura â€“ até mesmo contorcendo e distorcendo sua forma â€“ permitindo que os usuários façam pequenas alterações em sua aparência. Com a infopel, é uma questão simples alterar características faciais, cor de cabelo ou padrões de maquiagem.",
+        "tags": [
+            {
+                "id": "tg_gear"
+            }
+        ]
+    },
+    {
+        "id": "pg_mag_clamps",
+        "name": "Grampos Magnéticos",
+        "type": "Gear",
+        "description": "Esses grampos se prendem facilmente a qualquer superfície metálica, melhorando a manobrabilidade em ambientes de gravidade zero ou ao reparar mechas. Podem ser carregados ou ajustados às botas.",
+        "tags": [
+            {
+                "id": "tg_gear"
+            }
+        ]
+    },
+    {
+        "id": "pg_nanite_spray",
+        "name": "Spray de Nanites",
+        "type": "Gear",
+        "description": "Uma tinta em spray que pode ser aplicada a qualquer superfície. O spray de nanites é invisível a olho nu, mas capaz de transmitir mensagens simples ou pequenos pacotes de dados quando escaneado.",
+        "tags": [
+            {
+                "id": "tg_gear"
+            }
+        ]
+    },
+    {
+        "id": "pg_omnihook",
+        "name": "Omnigancho",
+        "type": "Gear",
+        "description": "Um terminal de omninet portátil â€“ embora volumoso â€“ que permite comunicação, transferência de dados e hotspotting limitado. Os omniganchos são extremamente valiosos, embora a maioria dos esquadrões de mechas tenha pelo menos um. Sintonizar um omnigancho requer um alto nível de habilidade, então eles geralmente são montados ou carregados por operadores designados.",
+        "tags": [
+            {
+                "id": "tg_gear"
+            }
+        ]
+    },
+    {
+        "id": "pg_personal_drone",
+        "name": "Drone Pessoal",
+        "type": "Gear",
+        "description": "Drones pequenos e não combatentes são uma visão comum no campo. São bastante barulhentos, mas podem voar cerca de oitocentos metros com boa manobrabilidade antes de perder o sinal, retransmitindo informações de áudio e visual à medida que avançam.",
+        "tags": [
+            {
+                "id": "tg_gear"
+            }
+        ]
+    },
+    {
+        "id": "pg_prosocollar",
+        "name": "Prosocolar",
+        "type": "Gear",
+        "description": "Um dispositivo semelhante a um colar que se ajusta confortavelmente ao pescoço do usuário, projetando uma imagem holográfica sobre seu rosto e cabeça. Os prosocolares podem alterar a voz do usuário e embaralhar ou mudar sua aparência. A projeção não resistirá a uma inspeção próxima, mas pode facilmente enganar sistemas eletrônicos e observadores distantes.",
+        "tags": [
+            {
+                "id": "tg_gear"
+            }
+        ]
+    },
+    {
+        "id": "pg_smart_scope",
+        "name": "Mira Inteligente",
+        "type": "Gear",
+        "description": "Uma poderosa mira eletrônica que fornece ampliação de alta resolução de até três quilômetros e ajusta automaticamente sua retícula para vento, gravidade e pressão. As miras inteligentes podem projetar seu campo de visão e todos os dados para o HUD de qualquer usuário em rede. Elas também podem ser pareadas com outros dispositivos de visão térmica, óptica ou simulada para aprimorar ainda mais a mira.",
+        "tags": [
+            {
+                "id": "tg_gear"
+            }
+        ]
+    },
+    {
+        "id": "pg_sleeping_bag",
+        "name": "Saco de Dormir",
+        "type": "Gear",
+        "effect": "Você pode entrar em seu saco de dormir, ganhando Imunidade a queimadura, proteção contra vácuo e ar suficiente para durar uma hora; no entanto, enquanto estiver no saco de dormir, você está ATORDOADO e não pode realizar outras ações além de sair do saco como uma ação completa.",
+        "description": "Disponíveis em vários tamanhos, os sacos de dormir são uma necessidade em campo. São projetados para se desdobrar de um traje reforçado, caber dentro da cabine de um mecha, resistir ao fogo e a mudanças de temperatura e â€“ quando necessário â€“ selar contra o vácuo.",
+        "tags": [
+            {
+                "id": "tg_gear"
+            }
+        ]
+    },
+    {
+        "id": "pg_ssc_sylph_undersuit",
+        "name": "Traje Interno Sylph da SSC",
+        "type": "Gear",
+        "description": "Descoberto em Acrimea IV, um mundo de cultivo de biomas controlado pela Smith-Shimano Corp (SSC), o sylph é uma forma de vida orgânica que aparentemente pode sobreviver em quase qualquer ambiente. Usando métodos análogos à criação definidos por doutrinas de bioengenharia estabelecidas, a SSC desenvolveu o traje interno sylph â€“ sylphs estéreis e vivos, cultivados como envelopes e ajustados a seus donos. O sylph se liga ao seu usuário, formando uma relação simbiótica: o sylph é sustentado pelos produtos residuais do hospedeiro, em troca protegendo o hospedeiro de uma gama de fatores ambientais hostis.<br>Esses trajes internos semi-biológicos e justos podem ser usados por longos períodos. São translúcidos, semi-líquidos e podem ser armazenados quando não estão em uso, conformando-se a qualquer recipiente em que são colocados. Eles limpam o corpo do hospedeiro, auxiliam nos processos de cura natural e eliminam resíduos. Conforme desejado, segmentos podem se tornar opacos, mudar de cor ou assumir uma nova textura. Os trajes internos sylph podem cobrir a cabeça do hospedeiro, selando contra o vácuo, fornecendo proteção contra radiação e filtrando ar ou líquidos, até mesmo fornecendo a capacidade de respirar água por um tempo limitado.",
+        "tags": [
+            {
+                "id": "tg_gear"
+            }
+        ]
+    },
+    {
+        "id": "pg_sound_system",
+        "name": "Sistema de Som",
+        "type": "Gear",
+        "description": "Embora sua utilidade tática seja questionável, muitos pilotos instalam sistemas de alto-falantes internos em suas cabines. Isso lhes dá uma linha clara com seus compatriotas durante o combate, além da capacidade de tocar música.",
+        "tags": [
+            {
+                "id": "tg_gear"
+            }
+        ]
+    },
+    {
+        "id": "pg_tertiary_arm",
+        "name": "Braço Terciário",
+        "type": "Gear",
+        "description": "Um terceiro braço energizado montado em um suporte no traje reforçado. Os braços terciários são energizados e controlados usando os mesmos processos de ponte neural que permitem que os trajes reforçados respondam à entrada do usuário. Eles podem ser equipados com manipuladores para permitir controle motor fino, armas para aumentar a eficácia em combate ou ferramentas especializadas.",
+        "tags": [
+            {
+                "id": "tg_gear"
+            }
+        ]
+    },
+    {
+        "id": "pg_wilderness_survival_kit",
+        "name": "Kit de Sobrevivência na Natureza",
+        "type": "Gear",
+        "description": "Este kit contém muitos itens essenciais para sobreviver em ambientes hostis: um rebreather, filtros de água, remendos para traje reforçado, sistemas térmicos de reserva, um kit de bivaque, e assim por diante.",
+        "tags": [
+            {
+                "id": "tg_gear"
+            }
+        ]
+    }
+]

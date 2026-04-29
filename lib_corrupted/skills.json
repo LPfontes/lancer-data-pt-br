@@ -1,0 +1,156 @@
+[
+    {
+        "id": "sk_act_unseen_or_unheard",
+        "name": "Agir Sem Ser Visto ou Ouvido",
+        "description": "Ir a algum lugar ou fazer algo sem ser detectado.",
+        "detail": "Ir a algum lugar ou fazer algo sem ser detectado, mas não necessariamente rápido. Esconder-se, esgueirar-se ou mover-se silenciosamente. Infiltrar-se em uma instalação evitando segurança, patrulhas ou câmeras. Realizar uma ação ou manobra rápida sem ser visto ou ouvido, como bater uma carteira, sacar sua arma do coldre ou trapacear em jogos de cartas. Usar um disfarce.",
+        "family": "dex"
+    },
+    {
+        "id": "sk_apply_fists_to_faces",
+        "name": "Conduzir Punhos a Faces",
+        "description": "Lutar em combate desarmado, franco e brutal.",
+        "detail": "Socar alguém no rosto ou, alternativamente, lutar em combate desarmado, franco e brutal, seja uma briga de socos, um duelo de artes marciais ou uma enorme confusão. Isso nunca é sutil, nunca é limpo e provavelmente causa muito barulho.",
+        "family": "str"
+    },
+    {
+        "id": "sk_assault",
+        "name": "Confrontar",
+        "description": "Participar de combate direto e explícito.",
+        "detail": "Tomar parte explicitamente em combate direto: lutar abrindo caminho através de um prédio cheio de mercenários hostis, trocar tiros por cima de trincheiras escorregadias na chuva, lutar em caótica microgravidade como parte de uma ação de abordagem em transporte ou engajar com um inimigo nos destroços urbanos esfumaçados de uma cidade sob bombardeio orbital — Quando você confronta, você está sempre confrontando algo (uma posição, um piloto rival, uma força inimiga, um grupo de guardas), e é sempre uma ação ruidosa, aberta e direta.",
+        "family": "str"
+    },
+    {
+        "id": "sk_blow_something_up",
+        "name": "Explodir Algo",
+        "description": "Usar explosivos para destruir totalmente alguma coisa ou transformá-la em uma enorme bola de fogo.",
+        "detail": "Usar explosivos (improvisados ou não), armas ou talvez apenas a boa e velha força bruta para destruir totalmente alguma coisa ou transformá-la em uma enorme bola de fogo (talvez uma parede, um conjunto de sensores, um posto avançado, um núcleo de reator - as coisas boas). Provavelmente não deve ser usado contra pessoas, a menos que elas estejam incidentalmente no caminho.",
+        "family": "str"
+    },
+    {
+        "id": "sk_charm",
+        "name": "Persuadir",
+        "description": "Convencer uma plateia receptiva ou usar influência (dinheiro, poder, benefício pessoal) para conseguir o que quer.",
+        "detail": "Para persuadir, você precisa de uma plateia receptiva ou de algum tipo de promessa de vantagem (dinheiro, poder, benefício pessoal, etc.). Você pode usar isso ao tentar passar por guardas com lábia, trazer alguém para o seu lado, influenciar um potencial benfeitor, acalmar alguém, mediar entre duas partes ou mentir descaradamente para alguém. Você também pode usar ao tentar se passar por outra pessoa. A persuasão não funcionará com pessoas que não são receptivas (como soldados com quem você está em um tiroteio) ou sobre as quais você não tem influência (promessas de segurança, dinheiro, poder, recompensa, ajuda, etc.). Essas promessas não precisam ser necessariamente verdadeiras, mas precisam ter algum peso para o seu alvo.",
+        "family": "cha"
+    },
+    {
+        "id": "sk_get_a_hold_of_something",
+        "name": "Arranjar Algo",
+        "description": "Adquirir aliados, benefícios ou conexões, temporários ou permanentes, através de riqueza ou influência social.",
+        "detail": "Adquirir aliados, benefícios ou conexões úteis através de riqueza ou influência social. Isso pode ser permanente (comprando ou recebendo) ou temporário (alugando ou pegando emprestado ajuda ou suprimentos, etc.), e pode ser mais difícil ou mais fácil dependendo do quanto você quer usar. Isso não pode ser usado para algo que normalmente é limitado por nível de licença (como peças de mecha), mas pode ser usado para ajuda, suprimentos, informações, materiais, comida, soldados ou qualquer outra coisa que tenha mais impacto narrativo. Tipicamente, isso é adquirido comprando em um mercado ou requisitando de uma organização matriz.",
+        "family": "cha"
+    },
+    {
+        "id": "sk_get_somewhere_quickly",
+        "name": "Ir Rápido a Algum Lugar",
+        "description": "Ir rápido a algum lugar e sem sofrer complicações.",
+        "detail": "Ir a algum lugar sem complicações e com velocidade, mas não necessariamente de forma furtiva. Escalar, nadar ou realizar manobras acrobáticas na tentativa de alcançar um destino mais rápido do que pelo caminho 'seguro'. Cair em segurança de uma grande altura. Mover-se graciosamente em gravidade zero. Perseguir ou fugir, correr mais rápido ou superar um alvo. Chegar a algum lugar mais rápido que qualquer outra pessoa. Você também pode usar isso quando quiser dirigir ou pilotar um veículo.",
+        "family": "dex"
+    },
+    {
+        "id": "sk_hack_or_fix",
+        "name": "Hackear ou Consertar",
+        "description": "Consertar um dispositivo ou sistema com defeito; alternativamente, invadi-lo, ou destruí-lo totalmente, desativando-o ou sabotando-o.",
+        "detail": "Consertar um dispositivo ou sistema com defeito. Alternativamente, invadi-lo, ou destruí-lo totalmente, desativando-o ou sabotando-o. Você pode usar isso para hackear ou proteger sistemas eletrônicos, como fechaduras eletrônicas, sistemas de computador, redes da omninet ou caixões de PNH.",
+        "family": "int"
+    },
+    {
+        "id": "sk_invent_or_create",
+        "name": "Inventar ou Criar",
+        "description": "Inventar novos dispositivos, ferramentas ou abordagens para problemas.",
+        "detail": "De modo geral, você precisa de ferramentas e suprimentos para inventar ou criar algo com sucesso. Use isso com muitas ações de recesso para trabalhar em projetos. Você também pode usar no calor do momento para inventar novos dispositivos, ferramentas ou abordagens para algo (explosivos improvisados, equipamentos, disfarces ou algo semelhante).",
+        "family": "int"
+    },
+    {
+        "id": "sk_investigate",
+        "name": "Investigar",
+        "description": "Pesquisar um tópico, ou estudar algo em grande detalhe.",
+        "detail": "Pesquisar um tópico ou observar algo em grande detalhe. Se você não conseguir encontrar informações diretamente, você aprende como pode obter acesso a essa informação. Aprender sobre um tópico de relevância histórica ou se tornar bem versado em um assunto. Investigar um mistério ou resolver um quebra-cabeça. Localizar uma pessoa ou objeto através de pesquisa ou investigação.",
+        "family": "int"
+    },
+    {
+        "id": "sk_lead_or_inspire",
+        "name": "Liderar ou Inspirar",
+        "description": "Fazer um discurso inspirador ou motivar um grupo de pessoas à ação.",
+        "detail": "Dar um discurso inspirador ou motivar um grupo de pessoas à ação. Administrar ou gerir uma organização de forma eficiente ou eficaz, como uma companhia, a tripulação de uma nave, um grupo de colonos ou um empreendimento de mineração. Comandar efetivamente um pelotão de soldados em batalha, ou (talvez) um exército inteiro.",
+        "family": "cha"
+    },
+    {
+        "id": "sk_patch",
+        "name": "Remendar",
+        "description": "Aplicar conhecimento médico para medicar ou diagnosticar.",
+        "detail": "Aplicar seu conhecimento médico para administrar medicamentos, enfaixar um ferimento, estancar sangramento, suturar, cauterizar, neutralizar venenos ou ressuscitar. Alternativamente, você poderia usá-lo para diagnosticar ou estudar doenças, patógenos ou enfermidades.",
+        "family": "int"
+    },
+    {
+        "id": "sk_pull_rank",
+        "name": "Dar Carteirada",
+        "description": "Obter informações, recursos ou ajuda de um subordinado.",
+        "detail": "Dar carteirada em um subordinado, obtendo informações, recursos ou ajuda deles, mesmo que contra a vontade. Você pode usar isso com qualquer pessoa sobre a qual seu status social (nobre, celebridade, etc.) ou patente militar teria peso. Falhar nisso pode ser arriscado e pode ser visto como abusivo. Você tipicamente não pode dar carteirada em alvos hostis. Você também pode usar isso para fingir ter uma patente que não possui, mas é definitivamente arriscado.",
+        "family": "cha"
+    },
+    {
+        "id": "sk_read_a_situation",
+        "name": "Ler Situação",
+        "description": "Procurar por subtextos, motivos ou ameaças em uma situação ou pessoa.",
+        "detail": "Procurar por subtextos, motivos ou ameaças em uma situação ou pessoa, muitas vezes em situações sociais. Usar sua intuição para discernir a motivação de alguém, descobrir quem está realmente no comando ou quem está prestes a fazer algo precipitado ou estúpido. Ter um pressentimento sobre uma situação ou pessoa. Sentir se alguém está mentindo para você.",
+        "family": "int"
+    },
+    {
+        "id": "sk_show_off",
+        "name": "Se Exibir",
+        "description": "Fazer algo chamativo, maneiro ou impressionante, geralmente – mas não exclusivamente – com sua arma.",
+        "detail": "Fazer algo chamativo, maneiro ou impressionante, geralmente (mas não exclusivamente) com sua arma, como atirar em um alvo muito pequeno ou em movimento rápido, atirar para tirar o chapéu de alguém ou a arma de sua mão, nocautear alguém jogando uma arma nele, realizar um floreio acrobático com uma espada, jogar uma lança para prender um alvo em fuga no chão, e assim por diante.",
+        "family": "dex"
+    },
+    {
+        "id": "sk_spot",
+        "name": "Localizar",
+        "description": "Localizar detalhes, objetos ou pessoas que estão escondidos ou difíceis de se ver.",
+        "detail": "Localizar detalhes, objetos ou pessoas escondidos ou difíceis de ver. Notar emboscadas, compartimentos escondidos ou indivíduos disfarçados. Espionar um alvo à distância, ou distinguir os detalhes, forma e número de objetos, veículos, mechas ou pessoas claramente à distância. Rastrear pessoas ou veículos.",
+        "family": "int"
+    },
+    {
+        "id": "sk_stay_cool",
+        "name": "Ficar Frio",
+        "description": "Realizar uma tarefa que requer concentração, destreza, velocidade ou precisão sob pressão.",
+        "detail": "Fazer algo que requer concentração, velocidade ou precisão intensa sob pressão, como arrombar uma fechadura enquanto seu esquadrão troca tiros com guardas que se aproximam, evitar um código memético hostil ao hackear um console seguro, desarmar cuidadosamente um explosivo ou destravar uma arma sob fogo. Se você precisa fazer algo complicado em uma situação de alto estresse sem errar (e possivelmente sem nem suar), esta é a ação a ser usada.",
+        "family": "dex"
+    },
+    {
+        "id": "sk_survive",
+        "name": "Sobreviver",
+        "description": "Persistir através de um ambiente duro, hostil ou implacável.",
+        "detail": "Persistir através de ambientes duros, hostis ou implacáveis, como o vácuo do espaço, tundra congelada, um enclave pirata, uma colônia dominada pelo crime, natureza selvagem ou deserto escaldante. Você geralmente usa sobreviver quando quer fazer uma jornada por ambientes selvagens, navegar ou evitar perigos naturais como fauna carnívora, deslizamentos de rochas, gelo fino ou campos de lava. Alternativamente, você pode usá-lo para evitar perigos criados pelo homem, como navegar por uma cidade com segurança ou evitar áreas perigosas de uma estação espacial. Você também pode usá-lo ao testar a resistência pessoal, como se livrar de veneno ou álcool.",
+        "family": "str"
+    },
+    {
+        "id": "sk_take_control",
+        "name": "Tomar Controle",
+        "description": "Usar força, violência, presença de vontade ou ação direta para tomar o controle de algo.",
+        "detail": "Usar força, violência, presença de vontade ou ação direta para tomar o controle de algo. Isso geralmente é algo concreto, como um objeto que alguém está segurando. Você pode tomar o controle da arma de alguém ou de um cartão-chave que eles tenham consigo. Adicionalmente, você pode tomar o controle de uma situação para forçar os presentes a ouvir, se acalmar, parar de se mover ou parar o que estão fazendo (talvez para o bem deles), embora não possa necessariamente forçá-los a fazer mais nada sem ameaçá-los. Tomar o controle nunca é sutil.",
+        "family": "str"
+    },
+    {
+        "id": "sk_take_someone_out",
+        "name": "Apagar Alguém",
+        "description": "Matar ou incapacitar alguém rápida e silenciosamente.",
+        "detail": "Matar ou incapacitar alguém rápida e silenciosamente, de perto e pessoalmente ou à distância, provavelmente antes mesmo que percebam. Isso provavelmente é uma única pessoa, mas poderiam ser duas pessoas relativamente próximas (mais do que isso é forçar a barra e definitivamente arriscado). Se você está olhando por uma mira de sniper para um alvo, se preparando para aplicar um aperto de nervo em um guarda para nocauteá-lo instantaneamente, sacando rápido durante um duelo de armas ou caindo de um teto para cortar uma garganta, esta é a ação a ser usada.",
+        "family": "dex"
+    },
+    {
+        "id": "sk_threaten",
+        "name": "Ameaçar",
+        "description": "Usar força ou ameaças para obrigar alguém a fazer o que você quer.",
+        "detail": "Usar força ou ameaças de força para fazer alguém fazer o que você quer que ele faça. Diga o que você quer que alguém faça e o que você vai fazer com ele se não obedecer. Isso também pode ser chantagem, influência ou algo igualmente desagradável. Ameaçar alguém pode ser de altíssimo risco, mas muito eficaz se bem-sucedido - de qualquer forma, provavelmente não há como reparar o relacionamento depois. Se você ameaçar alguém sem sucesso, suas ameaças não terão mais efeito sobre ele, a menos que você mude algo na situação (como em todos os outros testes de perícia).",
+        "family": "str"
+    },
+    {
+        "id": "sk_word_on_the_street",
+        "name": "Coletar Rumores",
+        "description": "Pegar fofocas, notícias ou boatos das ruas ou de uma cena social particular.",
+        "detail": "Pegar fofocas, notícias ou boatos das ruas. O que você obtém depende de quais 'ruas' você está obtendo a informação (alta sociedade, baixa sociedade, boatos, conversas militares, etc.). Isso provavelmente leva muito menos tempo do que investigar algo em detalhes, mas a informação pode ser mais qualitativa ou colorida pela opinião (às vezes isso pode ser útil). Você sempre pode descobrir de onde veio a informação ou a quem procurar em seguida.",
+        "family": "cha"
+    }
+]

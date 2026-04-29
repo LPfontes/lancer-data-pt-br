@@ -1,63 +1,63 @@
 [
   {
     "name": "Armadura",
-    "description": "A ARMADURA de um mecha reduz todo o dano recebido por esse valor, excluindo alguns tipos especiais de dano. A ARMADURA depende principalmente do CHASSI do seu mecha e nunca ultrapassa quatro."
+    "description": "Todo dano cinético, energético e explosivo é reduzido por uma quantidade igual à Armadura do personagem. Mechas não podem ter mais que 4 de Armadura."
   },
   {
     "name": "Pontos de Sistema",
     "description": "CHASSIS de mecha também possuem um número definido de PONTOS DE SISTEMA (SP). SP podem ser gastos para adicionar sistemas extras ao seu mecha, e algumas armas mais pesadas exigem tanto suportes quanto SP. Você não pode adicionar sistemas ao seu mecha que excedam seus SP disponíveis. O Brio do seu piloto, igual à metade do seu LL, é adicionado ao seu total de SP, e você ganha um SP adicional para cada dois pontos de SISTEMAS."
   },
   {
-    "name": "Dano de Bônus",
-    "description": "Dano extra — cinético, energético ou explosivo — que é adicionado a ataques corpo a corpo ou à distância. Ataques que visam mais de um personagem causam apenas metade do dano de bônus."
+    "name": "Dano Bônus",
+    "description": "Dano extra — cinético, energético ou explosivo — adicionado a ataques corpo a corpo ou à distância. Ataques que atingem mais de um personagem causam apenas metade do dano bônus."
   },
   {
     "name": "Personagem",
-    "description": "Um personagem do jogador (PJ), personagem não-jogador (PNJ) ou qualquer outra entidade capaz de agir (ou reagir) independentemente, como DRONES."
+    "description": "Um personagem jogador (PJ), personagem não jogador (PNJ) ou qualquer outra entidade capaz de agir (ou reagir) independentemente, como Drones."
   },
   {
     "name": "Dano",
-    "description": "O dano recebido é subtraído dos PV e é cinético, explosivo, energético ou de calor (queimadura)."
+    "description": "O dano sofrido é subtraído dos Pontos de Vida (PV), e pode ser cinético, energético, explosivo ou de queimadura."
   },
   {
-    "name": "Defesa Eletrônica",
-    "description": "DEFESA-E é o quão difícil é para armas e sistemas eletrônicos e guiados atingirem você."
+    "name": "Defesa-E",
+    "description": "A estatística usada para se defender contra ataques tecnológicos."
   },
   {
     "name": "Evasão",
-    "description": "EVASÃO é o quão difícil é para ataques à distância e corpo a corpo atingirem você."
+    "description": "A estatística usada para se defender contra a maioria dos ataques corpo a corpo e à distância."
   },
   {
     "name": "Brio",
-    "description": "Metade do Nível do Piloto (NL) de um personagem (arredondado para cima), representando sua experiênca em combate. Brio fornece bônus para algumas rolagens e características."
+    "description": "Metade do NL (arredondada para cima) do personagem, representando sua experiência em combate. Brio fornece bônus para algumas rolagens e características."
   },
   {
     "name": "Calor",
-    "description": "O calor recebido por um alvo representa danos aos sistemas internos e à blindagem do reator. Ele preenche o CAP. DE CALOR. O calor ignora ARMADURA e não conta como dano."
+    "description": "O Calor sofrido por um alvo representa dano aos sistemas internos e blindagem do reator. Ele suporta até Cap. de Calor."
   },
   {
-    "name": "Capacidade de Calor",
-    "description": "Seu mecha pode receber calor de ataques tecnológicos e de alguns de seus próprios sistemas. Se receber mais calor do que seu CAP. DE CALOR, ele superaquece. Mechas também têm ESTRESSE, que é semelhante à ESTRUTURA — quando excedem seu CAP. DE CALOR, recebem 1 de ESTRESSE e limpam todo o calor. Quando perdem ESTRESSE dessa forma, os mechas precisam fazer um teste de dano de estresse especial e receber uma consequência baseada na rolagem. A maioria dos mechas tem 4 de ESTRESSE e são destruídos quando chegam a 0 de ESTRESSE.<br><br>Se um personagem sem CAP. DE CALOR receber calor, ele recebe uma quantidade equivalente de dano energético."
+    "name": "Cap. de Calor",
+    "description": "A quantidade de calor que um mecha pode suportar antes de correr o risco de superaquecimento."
   },
   {
-    "name": "PV",
-    "description": "A quantidade de dano que um piloto pode receber antes de ficar FORA DE COMBATE e a quantidade de dano que um mecha pode receber antes de sofrer dano de estrutura. Quando os mechas chegam a 0 PV, eles sofrem 1 de dano de estrutura e seus PV são resetados. Quando perdem ESTRUTURA dessa forma, os mechas precisam fazer um teste de dano de estrutura especial e receber uma consequência baseada na rolagem. A maioria dos mechas tem 4 de ESTRUTURA e são destruídos quando chegam a 0 de ESTRUTURA."
+    "name": "Pontos de Vida (PV)",
+    "description": "A quantidade de dano que um piloto pode receber antes de ficar Caído e Apagado, e a quantidade de dano que um mecha pode receber antes de sofrer dano estrutural."
   },
   {
     "name": "Imunidade",
-    "description": "Personagens com IMUNIDADE ignoram todo o dano e efeitos daquilo que são imunes."
+    "description": "Um personagem com Imunidade ignora todo o dano e efeitos do que é imune."
   },
   {
     "name": "Alcance",
     "description": "O alcance máximo em que uma arma pode ser usada para ataques à distância, medido a partir do personagem que ataca."
   },
   {
-    "name": "Capacidade de Reparo",
-    "description": "REPAROS são um tipo de moeda que você pode usar para curar e consertar seu mecha. Se o seu mecha ficar sem REPAROS, você não poderá mais recuperar PV ou consertar sistemas danificados em campo."
+    "name": "Cap. de Reparo",
+    "description": "A quantidade de vezes que um mecha pode ser reparado por missão."
   },
   {
     "name": "Resistência",
-    "description": "Personagens com RESISTÊNCIA reduzem o dano, calor ou um tipo de dano pela metade, após a ARMADURA ter sido aplicada. RESISTÊNCIA ao mesmo tipo de dano não se acumula."
+    "description": "Um personagem com Resistência reduz pela metade o dano, calor ou outro tipo de dano depois da Armadura ser aplicada. Resistência ao mesmo tipo de dano não se acumula, aplica-se somente a maior."
   },
   {
     "name": "Alvo de Salvamento",
@@ -65,31 +65,31 @@
   },
   {
     "name": "Estresse",
-    "description": "Todos os mechas de PJs (e alguns PNJs) têm uma certa quantidade de ESTRESSE — geralmente 4 de ESTRESSE para PJs. Esta é a quantidade de dano de estresse que eles podem suportar antes de sofrerem um derretimento do reator. Quando os mechas excedem seu CAP. DE CALOR, eles sofrem 1 de dano de estresse e fazem um teste de superaquecimento."
+    "description": "Todos os mechas dos PJs (e alguns PNJs) têm uma quantidade de Estresse, (geralmente 4 para PJs). Esta é a quantidade de dano de estresse que eles podem sofrer antes de ocorrer um derretimento do reator. Quando os mechas excedem sua Cap. de Calor, eles sofrem 1 de dano de estresse e fazem um teste de superaquecimento."
   },
   {
     "name": "Estrutura",
-    "description": "Todos os mechas de PJs (e alguns PNJs) têm uma certa quantidade de ESTRUTURA — geralmente 4 de ESTRUTURA para PJs. Esta é a quantidade de dano de estrutura que eles podem suportar antes de serem destruídos. Quando os mechas chegam a 0 PV, eles sofrem 1 de dano de estrutura e fazem um teste de estrutura."
+    "description": "Todos os mechas dos PJs (e alguns PNJs) têm uma certa quantidade de Estrutura (geralmente 4 para PJs). Esta é a quantidade de dano de estrutura que eles podem sofrer antes de serem destruídos. Quando os mechas atingem 0 PV, eles sofrem 1 de dano de estrutura e fazem um teste de estrutura."
   },
   {
     "name": "Sensores",
-    "description": "Os SENSORES do seu mecha são a distância máxima (em espaços) em que um mecha pode detectar inimigos, usar sistemas tecnológicos e fazer ataques tecnológicos. Se um personagem estiver dentro dos seus SENSORES e não estiver se escondendo, você sabe que ele está lá — mesmo que não consiga vê-lo diretamente."
+    "description": "A distância máxima em que você pode detectar outros personagens, fazer ataques tecnológicos, Travar Mira e usar alguns sistemas."
   },
   {
     "name": "Tamanho",
-    "description": "Todos os mechas, personagens e objetos no campo de batalha têm um TAMANHO que descreve o quão grandes são, em espaços de grade, de cada lado (arredondado para 1 se for menor, então um personagem de TAMANHO 1/2 e TAMANHO 1 ocupam o mesmo espaço). TAMANHO é uma medida abstrata — não descreve uma altura e largura precisas em metros, mas o espaço que um personagem controla ao seu redor. Humanos e os menores mechas são TAMANHO 1/2. A maioria dos mechas é TAMANHO 1, mas alguns chegam a ser TAMANHO 3."
+    "description": "A quantidade de espaços ocupados ou controlados por um personagem ou objeto. Por exemplo, mechas de Tamanho 2 ocupam uma área de 2 espaços em cada lado e 2 espaços de altura. Tamanho não necessariamente representa dimensões físicas precisas."
   },
   {
     "name": "Velocidade",
-    "description": "A VELOCIDADE do seu mecha determina o quão longe você pode se mover no seu turno, em espaços, quando faz um movimento padrão ou IMPULSIONA."
+    "description": "A quantidade de espaços que um personagem pode se mover com um movimento padrão ou com Impulsionar"
   },
   {
     "name": "Ataque Tecnológico",
-    "description": "Você adiciona o ATAQUE TECNOLÓGICO do seu mecha como um bônus em vez de Brio quando conduz guerra eletrônica"
+    "description": "A estatística usada para fazer ataques tecnológicos e realizar a maioria das ações de programar."
   },
   {
     "name": "Ameaça",
-    "description": "O alcance máximo em que ataques corpo a corpo e de vigilância podem ser feitos com certas armas, medido a partir do personagem que ataca. Todas as armas têm AMEAÇA 1, a menos que especificado de outra forma."
+    "description": "A distância máxima na qual ataques corpo a corpo e de retaliar podem ser realizados com certas armas, medida a partir do personagem atacante. Todas as armas têm Ameaça 1, exceto se especificado o contrário."
   },
   {
     "name": "Linha",
