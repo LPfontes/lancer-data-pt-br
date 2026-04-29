@@ -152,7 +152,7 @@
     "description": "O dano é calculado nesta ordem:<br>1) O atacante rola o dano e aplica quaisquer reduções ou aumentos relevantes (ex: Exposto, metade do dano de Heavy Gunner)<br>2) A armadura do alvo é subtraída do dano total<br>3) Quaisquer outras deduções do defensor são subtraídas do dano restante; isso inclui reduções de Resistência, sistemas, talentos, etc."
   },
   {
-    "name": "Calor (Queimadura)",
-    "description": "Quando personagens recebem CALOR (Burn), isso tem dois efeitos: primeiro, eles recebem imediatamente dano de CALOR, ignorando ARMADURA, e então o personagem marca o calor que acabou de receber. No final do seu turno, personagens com calor marcado devem rolar um teste de ENGENHARIA. Em um sucesso, eles limpam todo o calor marcado atualmente; caso contrário, recebem dano de CALOR igual à quantidade de calor marcada atualmente.<br><br>Falhar no teste de ENGENHARIA não aumenta a quantidade de calor marcada, apenas impede que o calor marcado atualmente seja limpo. Além disso, se um personagem for atingido por múltiplas fontes de CALOR, ele ainda faz apenas um teste de ENGENHARIA."
+    "name": "Queimadura",
+    "description": "Quando personagens sofrem Queimadura, são afetados por dois efeitos: primeiro, imediatamente sofrem dano de Queimadura, ignorando Armadura, e então eles recebem um marcador de queimadura em suas fichas para cada Queimadura sofrido nesse ataque. No final do seu turno, personagens com marcadores de queimadura precisam fazer um teste de Engenharia. Em caso de sucesso, eles removem todos os marcadores de queimadura; em uma falha, sofrem dano de Queimadura igual à quantidade atual de marcadores de queimadura"
   }
 ]
