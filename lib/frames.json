@@ -329,7 +329,7 @@
           ],
           "add_special": [
             {
-              "attribute": "Immune to involuntary movement",
+              "attribute": "Imune a movimento involuntário",
               "target": "self"
             }
           ],
@@ -512,7 +512,7 @@
           {
             "name": "Ímpeto",
             "frequency": "1/round",
-            "condition": "After you Boost",
+            "condition": "Após você IMPULSIONAR",
             "detail": "Seu próximo ataque corpo a corpo causa +1d6 de dano bônus no acerto.",
             "bonus_damage": {
               "detail": "+1d6 de dano bônus no acerto após você IMPULSIONAR, uma vez por rodada como uma Ação Livre.",
@@ -539,7 +539,7 @@
           {
             "name": "Escaramuçador",
             "activation": "Free",
-            "trigger": "Immediately after attacking",
+            "trigger": "Imediatamente após atacar",
             "detail": "Mova 1 espaço em qualquer direção, desde que não esteja IMOBILIZADO ou LENTO. Este movimento ignora engajamento e não provoca reações."
           }
         ]
@@ -554,7 +554,7 @@
         {
           "name": "Escaramuçador Potencializado",
           "activation": "Free",
-          "trigger": "Immediately after attacking",
+          "trigger": "Imediatamente após atacar",
           "detail": "Mova 4 espaços em qualquer direção, desde que não esteja IMOBILIZADO ou LENTO. Este movimento ignora engajamento e não provoca reações."
         }
       ],
@@ -709,7 +709,7 @@
         {
           "name": "Imobilizar Hiper-Reflexo",
           "detail": "Qualquer personagem que você acertar com RETALIAR fica IMOBILIZADO até o final do próximo turno dele.",
-          "condition": "You hit a character with Overwatch",
+          "condition": "Você acerta um personagem com Vigilância",
           "add_status": [
             {
               "id": "immobilized",
@@ -771,7 +771,7 @@
         "active_effects": [
           {
             "name": "Desmembramento",
-            "condition": "You inflict Immobilize on another character",
+            "condition": "Você aplica Imobilizado em outro personagem",
             "detail": "Você imobiliza o alvo. O alvo também fica DILACERADO pela mesma duração.",
             "add_status": [
               {
@@ -983,7 +983,7 @@
         {
           "name": "Foco: Marcado para a Morte",
           "detail": "Cause dano bônus ao seu alvo Marcado para a Morte com base no tamanho da arma (auxiliar: 1d6, principal: 2d6, pesada: 3d6, superpesada: 4d6). Este dano bônus não pode ser reduzido de forma alguma.",
-          "condition": "You are focusing on a target (Marked for Death)"
+          "condition": "Você está focando em um alvo (Marcado para a Morte)"
         }
       ],
       "active_actions": [
@@ -1174,7 +1174,7 @@
         "active_effects": [
           {
             "name": "Adaptação de Carapaça",
-            "condition": "You are in soft cover",
+            "condition": "Você está em cobertura leve",
             "detail": "Atacantes à distância sofrem +2difficulty em vez de +1difficulty."
           }
         ]
@@ -1387,8 +1387,8 @@
       ],
       "use": "Encounter",
       "activation": "Protocol",
-      "passive_name": "Blinkspace Jump",
-      "passive_effect": "Gain the Blinkspace Jump Full Action.",
+      "passive_name": "Salto de Lampejo",
+      "passive_effect": "Ganhe a Ação Completa Salto de Lampejo.",
       "passive_actions": [
         {
           "name": "Salto de Lampejo",
@@ -1456,7 +1456,7 @@
           {
             "name": "Escaneres Proféticos",
             "frequency": "1/round",
-            "condition": "You inflict Lock On on a target",
+            "condition": "Você aplica Travado em Mira em um alvo",
             "add_status": [
               {
                 "id": "shredded",
@@ -1533,7 +1533,7 @@
         "active_effects": [
           {
             "name": "Enxame Purificador",
-            "condition": "A character starts their turn grappled by or adjacent to you",
+            "condition": "Um personagem começa o turno agarrado por você ou adjacente a você",
             "detail": "Você causa 2 Cinético a esse personagem.",
             "damage": [
               {
@@ -1754,7 +1754,7 @@
         {
           "name": "Expelir Basilisco",
           "detail": "Personagens hostis devem obter sucesso em um salvamento de Sistemas antes de atacar você ou qualquer aliado a até Alcance 3. Em caso de falha, o ataque erra automaticamente e eles ficam Atordoados até o final do próximo turno deles.",
-          "condition": "You or an adjacent allied character is attacked by a hostile character within Alcance 3",
+          "condition": "Você ou um aliado adjacente é atacado por um personagem hostil dentro de Alcance 3",
           "add_status": [
             {
               "id": "stunned",
