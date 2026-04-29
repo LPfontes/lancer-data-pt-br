@@ -2801,14 +2801,14 @@
       "source_id": "SUPERAR LIMITAÇÃO",
       "data": {
         "name": "SUPERAR LIMITAÇÃO",
-        "description": "Quando o Tokugawa estiver Exposto, seus ataques corpo a corpo e à distância causam +3 de Energia de dano bônus ao acertar, todas suas armas que causariam  Cinético ou  Explosivo causam  de Energia no lugar, armas à distância recebem +5line e armas corpo a corpo recebem +1threat."
+        "description": "Quando o Tokugawa estiver Exposto, seus ataques corpo a corpo e à distância causam +3 de Energia de dano bônus ao acertar, todas suas armas que causariam  Cinético ou  Explosivo causam  de Energia no lugar, armas à distância recebem +5line e armas corpo a corpo recebem 1+ ameaça"
       }
     },
     {
       "source_id": "SUPERAR LIMITAÇÃO",
       "data": {
         "name": "SUPERAR LIMITAÇÃO",
-        "detail": "Quando o Tokugawa estiver Exposto, seus ataques corpo a corpo e à distância causam +3 de Energia de dano bônus ao acertar, todas suas armas que causariam  Cinético ou  Explosivo causam  de Energia no lugar, armas à distância recebem +5line e armas corpo a corpo recebem +1threat.",
+        "detail": "Quando o Tokugawa estiver Exposto, seus ataques corpo a corpo e à distância causam +3 de Energia de dano bônus ao acertar, todas suas armas que causariam  Cinético ou  Explosivo causam  de Energia no lugar, armas à distância recebem +5line e armas corpo a corpo recebem 1+ ameaça",
         "condition": "Você está Exposto."
       }
     },
@@ -2875,7 +2875,7 @@
       "source_id": "Pontos de Sistema",
       "data": {
         "name": "Pontos de Sistema",
-        "description": "CHASSIS de mecha também possuem um número definido de PONTOS DE SISTEMA (SP). SP podem ser gastos para adicionar sistemas extras ao seu mecha, e algumas armas mais pesadas exigem tanto suportes quanto SP. Você não pode adicionar sistemas ao seu mecha que excedam seus SP disponíveis. O Brio do seu piloto, igual à metade do seu LL, é adicionado ao seu total de SP, e você ganha um SP adicional para cada dois pontos de SISTEMAS."
+        "description": "CHASSIS de mecha também possuem um número definido de PONTOS DE SISTEMA (SP). SP podem ser gastos para adicionar sistemas extras ao seu mecha, e algumas armas mais pesadas exigem tanto suportes quanto SP. Você não pode adicionar sistemas ao seu mecha que excedam seus SP disponíveis. O Brio do seu piloto, igual à metade do seu NL, é adicionado ao seu total de SP, e você ganha um SP adicional para cada dois pontos de SISTEMAS."
       }
     },
     {

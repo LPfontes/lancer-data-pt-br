@@ -120,18 +120,18 @@
     },
     "traits": [
       {
-        "name": "Cabo de Arpeu",
+        "name": "Arpeu",
         "description": "O Barba Negra pode AGARRAR alvos dentro de ALCANCE 5. Se o AGARRÃO for bem-sucedido, o Barba Negra é imediatamente puxado para um espaço adjacente ao alvo pelo caminho mais direto. Se não houver espaços adequados, o agarrão se quebra e o Barba Negra não se move.",
         "active_actions": [
           {
-            "name": "Cabo de Arpeu",
-            "condition": "You successfully grapple a target within Alcance 5.",
+            "name": "Arpeu",
+            "condition": "Você agarra com sucesso um alvo em Alcance 5.",
             "detail": "Você é puxado para adjacente ao seu alvo pelo caminho mais direto. Se não houver espaços adequados, o agarrão quebra e você não se move."
           }
         ],
         "active_effects": [
           {
-            "name": "Cabo de Arpeu",
+            "name": "Arpeu",
             "detail": "Você pode AGARRAR alvos dentro do Alcance 5. Se o Agarrão for bem-sucedido, você é imediatamente puxado para adjacente ao alvo pelo caminho mais direto. Se não houver espaços adequados, o agarrão quebra e você não se move."
           }
         ],
@@ -166,8 +166,8 @@
       }
     ],
     "core_system": {
-      "name": "Arpéus de Assalto",
-      "description": "O Sistema de Arpéu de Assalto da marca EIP-EN é uma tecnologia líder de classe, classificada para içar, suportar e prender chassis de tamanhos até Escala 4. As cabeças de arpéu são intercambiáveis e podem ser trocadas para engajamento com alvos macios ou duros – eletrificadas ou carregadas com sistemas de codespike para incapacitação à longa distância.",
+      "name": "Arpãos de Assalto",
+      "description": "O Sistema de Arpãos de Assalto da marca EIP-EN é uma tecnologia líder de classe, classificada para içar, suportar e prender chassis de tamanhos até Escala 4. As cabeças de arpéu são intercambiáveis e podem ser trocadas para engajamento com alvos macios ou duros – eletrificadas ou carregadas com sistemas de codespike para incapacitação à longa distância.",
       "active_name": "Omniarpão",
       "active_effect": "Este sistema dispara arpões de agarrão em qualquer número de alvos dentro de ALCANCE 5 e na linha de visão. Personagens afetados devem ter sucesso em um salvamento de CASCO ou sofrem 2d6 de dano cinético e ficam PROSTRADOS, e então são puxados para um espaço adjacente a você, ou o mais perto possível. Eles ficam IMOBILIZADOS até o final do próximo turno deles. Em um sucesso, eles sofrem metade do dano e não são afetados de outra forma.",
       "activation": "Quick",
@@ -709,7 +709,7 @@
         {
           "name": "Imobilizar Hiper-Reflexo",
           "detail": "Qualquer personagem que você acertar com RETALIAR fica IMOBILIZADO até o final do próximo turno dele.",
-          "condition": "Você acerta um personagem com Vigilância",
+          "condition": "Você acerta um personagem com Retaliar",
           "add_status": [
             {
               "id": "immobilized",
@@ -771,7 +771,7 @@
         "active_effects": [
           {
             "name": "Desmembramento",
-            "condition": "Você aplica Imobilizado em outro personagem",
+            "condition": "Você inflige IMOBILIZADO em outro personagem",
             "detail": "Você imobiliza o alvo. O alvo também fica DILACERADO pela mesma duração.",
             "add_status": [
               {
@@ -787,7 +787,7 @@
         "active_effects": [
           {
             "name": "Blindagem Pícaro",
-            "condition": "A character within Alcance 3 attacks you",
+            "condition": "Um personagem em Alcance 3 ataca você",
             "detail": "O atacante primeiro sofre 1 de dano cinético PA.",
             "damage": [
               {
@@ -819,7 +819,7 @@
         {
           "name": "Blindagem Pícaro (Espinhos Atormentadores)",
           "detail": "A Blindagem Pícaro causa 3 de dano cinético (PA) em vez de 1.",
-          "condition": "A character within Alcance 3 attacks you",
+          "condition": "Um personagem em Alcance 3 ataca você",
           "damage": [
             {
               "val": 3,
@@ -917,7 +917,7 @@
     "id": "mf_deaths_head",
     "license_level": 2,
     "source": "SSC",
-    "name": "Death’s Head",
+    "name": "Cabeça da Morte",
     "mechtype": [
       "Artillery"
     ],
@@ -983,7 +983,7 @@
         {
           "name": "Foco: Marcado para a Morte",
           "detail": "Cause dano bônus ao seu alvo Marcado para a Morte com base no tamanho da arma (auxiliar: 1d6, principal: 2d6, pesada: 3d6, superpesada: 4d6). Este dano bônus não pode ser reduzido de forma alguma.",
-          "condition": "Você está focando em um alvo (Marcado para a Morte)"
+          "condition": "Você está focando em um alvo (Marcado para Morrer)"
         }
       ],
       "active_actions": [
@@ -1170,12 +1170,12 @@
       },
       {
         "name": "Adaptação de Carapaça",
-        "description": "Quando o Marco Metálico está com cobertura leve, os atacantes à distância sofrem +2difficulty em vez de +1difficulty.",
+        "description": "Quando o Marco Metálico está com cobertura leve, os atacantes à distância sofrem +2 de Dificuldade em vez de +1 de Dificuldade.",
         "active_effects": [
           {
             "name": "Adaptação de Carapaça",
             "condition": "Você está em cobertura leve",
-            "detail": "Atacantes à distância sofrem +2difficulty em vez de +1difficulty."
+            "detail": "Atacantes à distância sofrem +2 de Dificuldade em vez de +1 de Dificuldade."
           }
         ]
       }
@@ -1647,7 +1647,7 @@
       },
       {
         "name": "Frágil",
-        "description": "O Goblin sofre +1difficulty em testes e salvamentos de Casco.",
+        "description": "O Goblin sofre +1 de Dificuldade em testes e salvamentos de Casco.",
         "bonuses": [
           {
             "id": "hull",
@@ -1754,7 +1754,7 @@
         {
           "name": "Expelir Basilisco",
           "detail": "Personagens hostis devem obter sucesso em um salvamento de Sistemas antes de atacar você ou qualquer aliado a até Alcance 3. Em caso de falha, o ataque erra automaticamente e eles ficam Atordoados até o final do próximo turno deles.",
-          "condition": "Você ou um aliado adjacente é atacado por um personagem hostil dentro de Alcance 3",
+          "condition": "Você ou um personagem aliado adjacente é atacado por um personagem hostil em Alcance 3",
           "add_status": [
             {
               "id": "stunned",
@@ -1843,7 +1843,7 @@
         {
           "name": "Drone OROCHI Guardião",
           "type": "Drone",
-          "detail": "Este drone projeta um escudo. Ataques à distância contra personagens aliados adjacentes sofrem +1difficulty.",
+          "detail": "Este drone projeta um escudo. Ataques à distância contra personagens aliados adjacentes sofrem +1 de Dificuldade.",
           "activation": "Free",
           "recall": "Quick",
           "redeploy": "Quick",
@@ -2042,7 +2042,7 @@
         {
           "name": "Exoesqueleto Energizado",
           "frequency": "1/round",
-          "condition": "You take Calor.",
+          "condition": "Você sofre Calor.",
           "detail": "Você pode causar 2 de Energia(PA) a um personagem a até Alcance 3.",
           "damage": [
             {
@@ -2139,7 +2139,7 @@
       "name": "Labirinto de Metadobra",
       "description": "\"Nenhum labirinto é mais terrível do que aquele que eu crio. Eu conheço todas as saídas e as escondo dentro desse perfeito construto. O que é a mente humana senão um programa de certa forma, um sistema que busca ordem e narrativa em uma bagunça que lhes é dada?<br>Eu organizo isso para eles. Eu. Eu organizo isso para eles e os coloco na tarefa de resolver tudo. Quando emergem, choram de alegria, pela descoberta. Eu os salvo, eu lhes mostro que eles são seus próprios redentores (e, no entanto, não sou eu igualmente culpável — igualmente merecedor de crédito?).<br>“Então, agora vá. Entre. Liberte-se.\"",
       "active_name": "Labirinto",
-      "active_effect": "Escolha um personagem ao alcance dos Sensores: ele fica Atordoado enquanto você lança seus sistemas em uma armadilha de informações metafísicas tão emaranhadas que ele não pode fazer nada além de tentar escapar. No final do próximo turno dele, ele pode fazer um salvamento de Sistemas com +3difficulty. Em caso de sucesso, ele não está mais Atordoado. Esse salvamento pode ser repetido no final de cada um dos turnos dele, recebendo +1 de PRECISÃO a cada vez até obter sucesso.",
+      "active_effect": "Escolha um personagem ao alcance dos Sensores: ele fica Atordoado enquanto você lança seus sistemas em uma armadilha de informações metafísicas tão emaranhadas que ele não pode fazer nada além de tentar escapar. No final do próximo turno dele, ele pode fazer um salvamento de Sistemas com +3 de Dificuldade. Em caso de sucesso, ele não está mais Atordoado. Esse salvamento pode ser repetido no final de cada um dos turnos dele, recebendo +1 de PRECISÃO a cada vez até obter sucesso.",
       "active_effects": [
         {
           "name": "Labirinto",
@@ -2338,7 +2338,7 @@
       },
       {
         "name": "Lento",
-        "description": "O Barbarossa sofre +1difficulty em testes e salvamentos de Agilidade.",
+        "description": "O Barbarossa sofre +1 de Dificuldade em testes e salvamentos de Agilidade.",
         "bonuses": [
           {
             "id": "agility",
@@ -2403,11 +2403,11 @@
     "traits": [
       {
         "name": "Isolado",
-        "description": "O Gengis tem Imunidade a  de Queimadura.",
+        "description": "O Gengis tem Imunidade a de Queimadura.",
         "active_effects": [
           {
             "name": "Isolado",
-            "detail": "Você tem Imunidade a  de Queimadura.",
+            "detail": "Você tem Imunidade a de Queimadura.",
             "add_immunity": [
               {
                 "immunity": "burn",
@@ -2419,7 +2419,7 @@
       },
       {
         "name": "Ventilação Emergencial",
-        "description": "Quando o Gengis sofrer dano de estrutura, ele remove todo o  de Calor.",
+        "description": "Quando o Gengis sofrer dano de estrutura, ele remove todo o de Calor.",
         "active_effects": [
           {
             "name": "Ventilação Emergencial",
@@ -2689,14 +2689,14 @@
       },
       {
         "name": "Escudo de Dobra",
-        "description": "1/rodada, o Saladino pode impor +1difficulty a qualquer ataque contra ele ou um personagem aliado ao alcance dos Sensores como uma reação antes da rolagem ser feita.",
+        "description": "1/rodada, o Saladino pode impor +1 de Dificuldade a qualquer ataque contra ele ou um personagem aliado ao alcance dos Sensores como uma reação antes da rolagem ser feita.",
         "actions": [
           {
             "name": "Escudo de Dobra",
             "activation": "Reaction",
             "frequency": "1/round",
             "trigger": "Antes de uma rolagem de ataque ser feita contra você ou um personagem aliado ao alcance dos Sensores.",
-            "detail": "Imponha +1difficulty a esse ataque."
+            "detail": "Imponha +1 de Dificuldade a esse ataque."
           }
         ],
         "use": "Rodada"
@@ -2874,12 +2874,12 @@
     "traits": [
       {
         "name": "SUPERAR LIMITAÇÃO",
-        "description": "Quando o Tokugawa estiver Exposto, seus ataques corpo a corpo e à distância causam +3 de Energia de dano bônus ao acertar, todas suas armas que causariam  Cinético ou  Explosivo causam  de Energia no lugar, armas à distância recebem +5line e armas corpo a corpo recebem +1threat.",
+        "description": "Quando o Tokugawa estiver Exposto, seus ataques corpo a corpo e à distância causam +3 de Energia de dano bônus ao acertar, todas suas armas que causariam  Cinético ou  Explosivo causam  de Energia no lugar, armas à distância recebem +5line e armas corpo a corpo recebem 1+ ameaça",
         "active_effects": [
           {
             "name": "SUPERAR LIMITAÇÃO",
             "condition": "Você está Exposto.",
-            "detail": "Quando o Tokugawa estiver Exposto, seus ataques corpo a corpo e à distância causam +3 de Energia de dano bônus ao acertar, todas suas armas que causariam  Cinético ou  Explosivo causam  de Energia no lugar, armas à distância recebem +5line e armas corpo a corpo recebem +1threat.",
+            "detail": "Quando o Tokugawa estiver Exposto, seus ataques corpo a corpo e à distância causam +3 de Energia de dano bônus ao acertar, todas suas armas que causariam  Cinético ou  Explosivo causam  de Energia no lugar, armas à distância recebem +5line e armas corpo a corpo recebem 1+ ameaça",
             "bonuses": [
               {
                 "id": "damage",

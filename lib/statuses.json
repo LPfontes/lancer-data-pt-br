@@ -5,7 +5,7 @@
     "type": "Status",
     "terse": "Nível de calor em metade da capacidade ou mais.",
     "exclusive": "Mech",
-    "effects": "Personagens estão na ZONA DE PERIGO quando metade ou mais de seu calor está preenchido. Eles estão fumegando, o que ativa alguns ataques, talentos e efeitos."
+    "effects": "Personagens estão na ZONA DE PERIGO quando metade ou mais do seu calor está preenchido. Eles estão fervendo, o que habilita alguns ataques, talentos e efeitos."
   },
   {
     "name": "Caído e Apagado",
@@ -13,14 +13,14 @@
     "type": "Status",
     "terse": "Piloto está inconsciente; qualquer dano adicional o mata.",
     "exclusive": "Pilot",
-    "effects": "Pilotos que estão CAÍDOS E APAGADOS estão inconscientes e ATORDOADOS – se receberem mais algum dano, morrem. Eles recuperarão a consciência e metade de seus PV quando descansarem."
+    "effects": "Pilotos que estão CAÍDOS E APAGADOS estão inconscientes e ATORDOADOS – se sofrerem qualquer dano adicional, eles morrem. Eles recuperarão a consciência e metade de seus PV quando descansarem."
   },
   {
     "name": "Engajado",
     "icon": "engaged",
     "type": "Status",
     "terse": "Ataques à distância feitos por este personagem recebem +1 de dificuldade. Todo movimento adicional é perdido se ENGAJADO por um alvo de tamanho igual ou maior.",
-    "effects": "Se um personagem se mover para um espaço adjacente a um personagem hostil, ambos ganham o status ENGAJADO enquanto permanecerem adjacentes um ao outro. Ataques à distância feitos por um personagem ENGAJADO recebem +1 de dificuldade. Além disso, personagens que ficam ENGAJADOS por alvos de TAMANHO igual ou maior durante um movimento param imediatamente e perdem qualquer movimento não utilizado."
+    "effects": "Se um personagem se mover para um espaço adjacente a um personagem hostil, ambos ganham o status de ENGAJADO enquanto permanecerem adjacentes um ao outro. Ataques à distância feitos por um personagem ENGAJADO recebem +1 de dificuldade. Além disso, personagens que ficarem ENGAJADOS por alvos de TAMANHO igual ou maior durante o curso de um movimento param de se mover imediatamente e perdem qualquer movimento não utilizado."
   },
   {
     "name": "Exposto",
@@ -28,28 +28,28 @@
     "type": "Status",
     "terse": "Todo o dano cinético, explosivo ou energético recebido por este personagem é dobrado.",
     "exclusive": "Mech",
-    "effects": "Personagens ficam EXPOSTOS quando lidam com acúmulo de calor descontrolado – sua armadura é enfraquecida pelo superaquecimento, suas saídas de ventilação estão abertas e suas armas estão desacelerando, fornecendo muitos pontos fracos. Todo o dano cinético, explosivo ou energético recebido por personagens EXPOSTOS é dobrado, antes de aplicar quaisquer reduções. Um mecha pode limpar EXPOSTO realizando a ação ESTABILIZAR."
+    "effects": "Personagens ficam EXPOSTOS quando estão lidando com um acúmulo descontrolado de calor – sua armadura é enfraquecida pelo superaquecimento, suas aberturas estão abertas e suas armas estão desacelerando, fornecendo muitos pontos fracos. Todo dano cinético, explosivo ou energético sofrido por personagens EXPOSTOS é dobrado, antes de aplicar qualquer redução. Um mecha pode limpar EXPOSTO ao realizar a ação ESTABILIZAR."
   },
   {
     "name": "Escondido",
     "icon": "hidden",
     "type": "Status",
     "terse": "Este personagem não pode ser alvo de ataques ou ações hostis, não causa engajamento e inimigos só conhecem sua localização aproximada.",
-    "effects": "Personagens ESCONDIDOS não podem ser alvos de ataques ou ações hostis, não causam engajamento e inimigos só conhecem sua localização aproximada. Atacar, forçar salvamentos, realizar reações, usar IMPULSIONAR e perder cobertura removem ESCONDIDO após serem resolvidos. Personagens podem encontrar personagens ESCONDIDOS com BUSCA."
+    "effects": "Personagens ESCONDIDOS não podem ser alvo de ataques ou ações hostis, não causam engajamento e os inimigos apenas conhecem sua localização aproximada. Atacar, forçar salvamentos, realizar reações, usar IMPULSIONAR e perder cobertura removem ESCONDIDO após serem resolvidos. Personagens podem encontrar personagens ESCONDIDOS com PROCURAR."
   },
   {
     "name": "Invisível",
     "icon": "invisible",
     "type": "Status",
     "terse": "Todos os ataques contra personagens INVISÍVEIS têm 50% de chance de errar antes de uma rolagem de ataque. Personagens INVISÍVEIS podem sempre se ESCONDER, mesmo sem cobertura.",
-    "effects": "Todos os ataques contra personagens INVISÍVEIS, independente do tipo, têm 50% de chance de errar automaticamente, antes de qualquer rolagem de ataque. Role um dado ou jogue uma moeda para determinar se o ataque erra.<br>Além disso, personagens INVISÍVEIS podem sempre se ESCONDER, mesmo sem cobertura."
+    "effects": "Todos os ataques contra personagens INVISÍVEIS, independentemente do tipo, têm 50% de chance de errar completamente, antes que uma rolagem de ataque seja feita. Role um dado ou jogue uma moeda para determinar se o ataque erra.<br>Além disso, personagens INVISÍVEIS podem sempre se ESCONDER, mesmo sem cobertura."
   },
   {
     "name": "Prostrado",
     "icon": "prone",
     "type": "Status",
     "terse": "Ataques contra alvos PROSTRADOS recebem +1 de precisão. Personagens PROSTRADOS são LENTOS e contam como se movendo em terreno difícil.",
-    "effects": "Ataques contra alvos PROSTRADOS recebem +1 de precisão.<br>Além disso, personagens PROSTRADOS são LENTOS e contam como se movendo em terreno difícil. Personagens podem remover PROSTRADO levantando-se no lugar do movimento padrão, a não ser que estejam IMOBILIZADOS. Levantar-se não conta como movimento, portanto não aciona VIGILÂNCIA nem outros efeitos."
+    "effects": "Ataques contra alvos PROSTRADOS recebem +1 de precisão.<br>Além disso, personagens PROSTRADOS ficam LENTOS e contam como se movendo em terreno difícil. Personagens podem remover PROSTRADO ao se levantarem em vez de realizarem seu movimento padrão, a menos que estejam IMOBILIZADOS. Levantar-se não conta como movimento, portanto não ativa RETALIAR ou outros efeitos."
   },
   {
     "name": "Desligado",
@@ -57,7 +57,7 @@
     "type": "Status",
     "terse": "Enquanto DESLIGADO, mechas são ATORDOADOS indefinidamente.",
     "exclusive": "Mech",
-    "effects": "Quando um mecha é DESLIGADO:<br>• todo o calor é eliminado e o status EXPOSTO é removido;<br>• quaisquer PNHs em cascata são estabilizadas e não estão mais em cascata;<br>• quaisquer status e condições que afetam o mecha causados por ações tecnológicas, como TRAVADO EM MIRA, terminam imediatamente.<br>Mechas DESLIGADOS têm IMUNIDADE a todas as ações e ataques tecnológicos, incluindo os de personagens aliados.<br>Enquanto DESLIGADOS, mechas ficam ATORDOADOS indefinidamente. Nada pode impedir essa condição, e ela permanece até que o mecha deixe de estar DESLIGADO."
+    "effects": "Quando um mecha está DESLIGADO:<br>• todo calor é limpo e o status EXPOSTO é removido;<br>• quaisquer PNHs em cascata são estabilizados e não estão mais em cascata;<br>• quaisquer status e condições que afetem o mecha causados por ações tecnológicas, como TRAVADO EM MIRA, terminam imediatamente.<br>Mechas DESLIGADOS têm IMUNIDADE a todas as ações e ataques tecnológicos, incluindo quaisquer de personagens aliados.<br>Enquanto estiverem DESLIGADOS, os mechas ficam ATORDOADOS indefinidamente. Nada pode impedir essa condição, e ela permanece até que o mecha deixe de estar DESLIGADO."
   },
   {
     "name": "Imobilizado",
@@ -78,14 +78,14 @@
     "icon": "jammed",
     "type": "Condition",
     "terse": "Personagens BLOQUEADOS não podem usar comunicações, fazer ataques além de IMPROVISAR ATAQUE, AGARRAR e EMPURRAR, tomar reações, ou se beneficiar de ações tecnológicas.",
-    "effects": "Personagens BLOQUEADOS não podem:<br>• usar comunicações para falar com outros personagens;<br>• realizar ataques, exceto IMPROVISAR ATAQUE, AGARRAR e EMPURRAR;<br>• realizar reações, nem realizar ou se beneficiar de ações tecnológicas."
+    "effects": "Personagens BLOQUEADOS não podem:<br>• usar comunicações para falar com outros personagens;<br>• fazer ataques, exceto IMPROVISAR ATAQUE, AGARRAR e EMPURRAR;<br>• realizar reações, ou realizar ou se beneficiar de ações tecnológicas."
   },
   {
     "name": "Travado em Mira",
     "icon": "lock-on",
     "type": "Condition",
     "terse": "Personagens hostis podem consumir TRAVADO EM MIRA para +1 de precisão em seu próximo ataque contra este personagem.",
-    "effects": "Personagens hostis podem optar por consumir a condição TRAVADO EM MIRA de um personagem em troca de +1 de precisão em seu próximo ataque contra esse personagem.<br>TRAVADO EM MIRA também é necessário para usar alguns talentos e sistemas."
+    "effects": "Personagens hostis podem escolher consumir a condição TRAVADO EM MIRA de um personagem em troca de +1 de precisão em seu próximo ataque contra esse personagem.<br>TRAVADO EM MIRA também é necessário para usar alguns talentos e sistemas."
   },
   {
     "name": "Dilacerado",
@@ -99,13 +99,13 @@
     "icon": "slow",
     "type": "Condition",
     "terse": "Este personagem não pode IMPULSIONAR ou fazer quaisquer movimentos especiais concedidos por talentos, sistemas ou armas.",
-    "effects": "O único movimento que personagens LENTOS podem fazer é seu movimento padrão, em seu próprio turno – eles não podem IMPULSIONAR nem fazer movimentos especiais concedidos por talentos, sistemas ou armas."
+    "effects": "O único movimento que personagens LENTOS podem fazer é o seu movimento padrão, em seu próprio turno – eles não podem usar IMPULSIONAR ou fazer quaisquer movimentos especiais concedidos por talentos, sistemas ou armas."
   },
   {
     "name": "Atordoado",
     "icon": "stunned",
     "type": "Condition",
     "terse": "Mechas ATORDOADOS não podem SOBRECARREGAR, mover-se ou realizar quaisquer ações.",
-    "effects": "Mechas ATORDOADOS não podem SOBRECARREGAR, mover-se ou realizar quaisquer ações – incluindo ações livres e reações. Pilotos ainda podem MONTAR, DESMONTAR ou EJETAR de mechas ATORDOADOS, e podem realizar ações normalmente.<br>Mechas ATORDOADOS têm no máximo 5 de EVASÃO e falham automaticamente em todos os testes e salvamentos de CASCO e AGILIDADE."
+    "effects": "Mechas ATORDOADOS não podem SOBRECARREGAR, mover-se ou realizar quaisquer ações – incluindo ações livres e reações. Pilotos ainda podem MONTAR, DESMONTAR ou EJETAR de mechas ATORDOADOS e podem realizar ações normalmente.<br>Mechas ATORDOADOS têm no máximo 5 de EVASÃO e falham automaticamente em todos os testes e salvamentos de CASCO e AGILIDADE."
   }
 ]
