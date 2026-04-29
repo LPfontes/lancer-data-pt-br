@@ -120,18 +120,18 @@
     },
     "traits": [
       {
-        "name": "Cabo de Arpeu",
+        "name": "Arpeu",
         "description": "O Barba Negra pode AGARRAR alvos dentro de ALCANCE 5. Se o AGARRÃO for bem-sucedido, o Barba Negra é imediatamente puxado para um espaço adjacente ao alvo pelo caminho mais direto. Se não houver espaços adequados, o agarrão se quebra e o Barba Negra não se move.",
         "active_actions": [
           {
-            "name": "Cabo de Arpeu",
+            "name": "Arpeu",
             "condition": "Você agarra com sucesso um alvo em Alcance 5.",
             "detail": "Você é puxado para adjacente ao seu alvo pelo caminho mais direto. Se não houver espaços adequados, o agarrão quebra e você não se move."
           }
         ],
         "active_effects": [
           {
-            "name": "Cabo de Arpeu",
+            "name": "Arpeu",
             "detail": "Você pode AGARRAR alvos dentro do Alcance 5. Se o Agarrão for bem-sucedido, você é imediatamente puxado para adjacente ao alvo pelo caminho mais direto. Se não houver espaços adequados, o agarrão quebra e você não se move."
           }
         ],
@@ -166,8 +166,8 @@
       }
     ],
     "core_system": {
-      "name": "Arpéus de Assalto",
-      "description": "O Sistema de Arpéu de Assalto da marca EIP-EN é uma tecnologia líder de classe, classificada para içar, suportar e prender chassis de tamanhos até Escala 4. As cabeças de arpéu são intercambiáveis e podem ser trocadas para engajamento com alvos macios ou duros – eletrificadas ou carregadas com sistemas de codespike para incapacitação à longa distância.",
+      "name": "Arpãos de Assalto",
+      "description": "O Sistema de Arpãos de Assalto da marca EIP-EN é uma tecnologia líder de classe, classificada para içar, suportar e prender chassis de tamanhos até Escala 4. As cabeças de arpéu são intercambiáveis e podem ser trocadas para engajamento com alvos macios ou duros – eletrificadas ou carregadas com sistemas de codespike para incapacitação à longa distância.",
       "active_name": "Omniarpão",
       "active_effect": "Este sistema dispara arpões de agarrão em qualquer número de alvos dentro de ALCANCE 5 e na linha de visão. Personagens afetados devem ter sucesso em um salvamento de CASCO ou sofrem 2d6 de dano cinético e ficam PROSTRADOS, e então são puxados para um espaço adjacente a você, ou o mais perto possível. Eles ficam IMOBILIZADOS até o final do próximo turno deles. Em um sucesso, eles sofrem metade do dano e não são afetados de outra forma.",
       "activation": "Quick",
