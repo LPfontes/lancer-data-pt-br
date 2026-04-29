@@ -2874,12 +2874,12 @@
     "traits": [
       {
         "name": "SUPERAR LIMITAÇÃO",
-        "description": "Quando o Tokugawa estiver Exposto, seus ataques corpo a corpo e à distância causam +3 de Energia de dano bônus ao acertar, todas suas armas que causariam  Cinético ou  Explosivo causam  de Energia no lugar, armas à distância recebem +5line e armas corpo a corpo recebem +1threat.",
+        "description": "Quando o Tokugawa estiver Exposto, seus ataques corpo a corpo e à distância causam +3 de Energia de dano bônus ao acertar, todas suas armas que causariam  Cinético ou  Explosivo causam  de Energia no lugar, armas à distância recebem +5line e armas corpo a corpo recebem 1+ ameaça",
         "active_effects": [
           {
             "name": "SUPERAR LIMITAÇÃO",
             "condition": "Você está Exposto.",
-            "detail": "Quando o Tokugawa estiver Exposto, seus ataques corpo a corpo e à distância causam +3 de Energia de dano bônus ao acertar, todas suas armas que causariam  Cinético ou  Explosivo causam  de Energia no lugar, armas à distância recebem +5line e armas corpo a corpo recebem +1threat.",
+            "detail": "Quando o Tokugawa estiver Exposto, seus ataques corpo a corpo e à distância causam +3 de Energia de dano bônus ao acertar, todas suas armas que causariam  Cinético ou  Explosivo causam  de Energia no lugar, armas à distância recebem +5line e armas corpo a corpo recebem 1+ ameaça",
             "bonuses": [
               {
                 "id": "damage",

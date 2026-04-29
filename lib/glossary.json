@@ -5,7 +5,7 @@
   },
   {
     "name": "Pontos de Sistema",
-    "description": "CHASSIS de mecha também possuem um número definido de PONTOS DE SISTEMA (SP). SP podem ser gastos para adicionar sistemas extras ao seu mecha, e algumas armas mais pesadas exigem tanto suportes quanto SP. Você não pode adicionar sistemas ao seu mecha que excedam seus SP disponíveis. O Brio do seu piloto, igual à metade do seu LL, é adicionado ao seu total de SP, e você ganha um SP adicional para cada dois pontos de SISTEMAS."
+    "description": "CHASSIS de mecha também possuem um número definido de PONTOS DE SISTEMA (SP). SP podem ser gastos para adicionar sistemas extras ao seu mecha, e algumas armas mais pesadas exigem tanto suportes quanto SP. Você não pode adicionar sistemas ao seu mecha que excedam seus SP disponíveis. O Brio do seu piloto, igual à metade do seu LN, é adicionado ao seu total de SP, e você ganha um SP adicional para cada dois pontos de SISTEMAS."
   },
   {
     "name": "Dano Bônus",
