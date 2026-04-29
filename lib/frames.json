@@ -329,7 +329,7 @@
           ],
           "add_special": [
             {
-              "attribute": "Immune to involuntary movement",
+              "attribute": "Imune a movimento involuntário",
               "target": "self"
             }
           ],
@@ -512,7 +512,7 @@
           {
             "name": "Ímpeto",
             "frequency": "1/round",
-            "condition": "Após você Impulsionar",
+            "condition": "Após você IMPULSIONAR",
             "detail": "Seu próximo ataque corpo a corpo causa +1d6 de dano bônus no acerto.",
             "bonus_damage": {
               "detail": "+1d6 de dano bônus no acerto após você IMPULSIONAR, uma vez por rodada como uma Ação Livre.",
@@ -539,7 +539,7 @@
           {
             "name": "Escaramuçador",
             "activation": "Free",
-            "trigger": "Immediately after attacking",
+            "trigger": "Imediatamente após atacar",
             "detail": "Mova 1 espaço em qualquer direção, desde que não esteja IMOBILIZADO ou LENTO. Este movimento ignora engajamento e não provoca reações."
           }
         ]
@@ -554,7 +554,7 @@
         {
           "name": "Escaramuçador Potencializado",
           "activation": "Free",
-          "trigger": "Immediately after attacking",
+          "trigger": "Imediatamente após atacar",
           "detail": "Mova 4 espaços em qualquer direção, desde que não esteja IMOBILIZADO ou LENTO. Este movimento ignora engajamento e não provoca reações."
         }
       ],
@@ -1387,8 +1387,8 @@
       ],
       "use": "Encounter",
       "activation": "Protocol",
-      "passive_name": "Blinkspace Jump",
-      "passive_effect": "Gain the Blinkspace Jump Full Action.",
+      "passive_name": "Salto de Lampejo",
+      "passive_effect": "Ganhe a Ação Completa Salto de Lampejo.",
       "passive_actions": [
         {
           "name": "Salto de Lampejo",
@@ -1533,7 +1533,7 @@
         "active_effects": [
           {
             "name": "Enxame Purificador",
-            "condition": "Um personagem começa o turno dele agarrado ou adjacente a você",
+            "condition": "Um personagem começa o turno agarrado por você ou adjacente a você",
             "detail": "Você causa 2 Cinético a esse personagem.",
             "damage": [
               {
