@@ -1,6 +1,6 @@
 {
   "name": "lancer-data-pt-br",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "type": "module",
   "description": "Dados do compêndio LANCER RPG traduzidos para Português do Brasil (pt-BR)",
   "main": "index.js",
