@@ -1,19 +1,5 @@
 [
   {
-    "id": "missing_mechweapon",
-    "name": "Fuzil Antimaterial",
-    "mount": "Main",
-    "type": "Rifle",
-    "damage": [],
-    "range": [],
-    "tags": [],
-    "source": "GMS",
-    "license": "GMS",
-    "license_level": 0,
-    "description": "Assim como os mechas da SMG, as armas da SMG são padrões galácticos confiáveis, feitas com peças intercambiáveis e construídas para suportar quase todas as condições. Existem três linhas atualmente em produção.<br>A linha Tipo-III (T-3) é composta por armas pesadas, artilharia e outras armas exóticas, especializadas ou massivas. Uma classificação ampla, a gama T-3 inclui fuzis antimaterial Cinéticos convencionais, fuzis de pulso de ciclagem super-rápida, racks de mísseis, canhões e nexos de drones – lançadores estilo 'colmeia' que servem como fábrica, hangar e sistemas de implantação em miniatura para drones portáteis. A classificação também inclui a temível 'faca de segmento', um sistema que usa impressão-relâmpago para produzir armas de lâmina descartáveis nas proximidades do usuário.",
-    "license_id": ""
-  },
-  {
     "id": "mw_anti_materiel_rifle",
     "name": "Fuzil Antimaterial",
     "mount": "Heavy",
