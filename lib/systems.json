@@ -1,17 +1,5 @@
 [
   {
-    "id": "missing_mechsystem",
-    "name": "Unidade Assistente Classe Comp/Con",
-    "sp": 1,
-    "source": "GMS",
-    "license": "GMS",
-    "license_level": 0,
-    "effect": "Seu mecha tem uma unidade básica de comp/con, concedendo a ele a tag IA. A comp/con pode falar com você e tem uma personalidade, mas, ao contrário de uma PNH, não é realmente capaz de pensar de forma independente. Ela obedece apenas a você.<br>Você pode conceder o controle do seu mecha à sua comp/con como um protocolo, permitindo que seu mecha aja de forma independente durante seu turno com seu próprio conjunto de ações. Ao contrário de outras IAs, um mecha controlado por uma comp/con não tem iniciativa independente e requer comando direto. Seu mecha seguirá cursos básicos de ação (defenda esta área, ataque este inimigo, me proteja etc.) da melhor maneira possível, ou agirá para se defender se as suas instruções forem concluídas ou se não receber mais orientações. Você pode dar novos comandos no início do seu turno, desde que esteja a até Alcance 50 e tenha os meios para se comunicar com seu mecha. As unidades comp/con não são verdadeiras PNHs e, portanto, não podem entrar em cascata.",
-    "description": "A Unidade Assistente GMS Classe Companheiro/Concierge está em conformidade com os padrões de toda a galáxia. Estas assistentes virtuais passam pelos critérios mais rigorosos da Avaliação de Turing-Null e são aprovadas para operar mesmo na ausência de um piloto.",
-    "tags": [],
-    "license_id": ""
-  },
-  {
     "id": "ms_comp_con_class_assistant_unit",
     "name": "Unidade Assistente Classe Comp/Con",
     "type": "AI",
