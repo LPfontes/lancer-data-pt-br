@@ -58,7 +58,7 @@
     "source": "IPS-N",
     "license": "Raleigh",
     "license_level": 3,
-    "effect": "A sua comp/con classe TIO controla essa arma e seus sistemas associados.<br>1/turno, você pode atacar com +2difficulty usando a arma de TIO como uma ação livre. TIO não pode usar armas que já foram usadas neste turno, e qualquer arma que TIO usar para atacar não pode ser usada novamente até o início do seu próximo turno.<br>TIO não é uma PNH completa, então não pode entrar em cascata.",
+    "effect": "A sua comp/con classe TIO controla essa arma e seus sistemas associados.<br>1/turno, você pode atacar com +2 de dificuldade usando a arma de TIO como uma ação livre. TIO não pode usar armas que já foram usadas neste turno, e qualquer arma que TIO usar para atacar não pode ser usada novamente até o início do seu próximo turno.<br>TIO não é uma PNH completa, então não pode entrar em cascata.",
     "description": "O sistema comp/con TIO da EIP-EN é o resultado do programa ESTRELANEGRA-2, um projeto temporário que buscava desenvolver armas inteligentes mais avançadas. Os primeiros protótipos foram prejudicados por uma combinação de alto consumo de energia, condicionamento instável e orientação frustrante para tarefas únicas, o que eventualmente levou ao encerramento do projeto.<br>Embora a EIP-EN não esteja mais desenvolvendo novas versões da TIO, eles ainda possuem um estoque de sistemas antigos aprovados pelo Controle de Qualidade acessíveis a pilotos qualificados.<br>Pilotos sortudos o suficiente para testar os modelos juram ao falar bem da eficiência e raciocínio paralelo da TIO, embora as comp/cons desatualizadas sejam conhecidas por suas personalidades um tanto instáveis.",
     "tags": [
       {

@@ -344,7 +344,7 @@
       {
         "name": "Projetar Escudo",
         "activation": "Protocol",
-        "detail": "Declare um personagem na linha de visão: todos os ataques à distância ou corpo a corpo que ele fizer contra você ou que você fizer contra ele sofrem +2difficulty até o início do seu próximo turno."
+        "detail": "Declare um personagem na linha de visão: todos os ataques à distância ou corpo a corpo que ele fizer contra você ou que você fizer contra ele sofrem +2 de dificuldade até o início do seu próximo turno."
       }
     ],
     "description": "O Escudo Projetado SMG Tipo-3 interrompe e impede a entrada de projéteis levantando uma poderosa barreira sobreposta antibalística.",
@@ -1139,7 +1139,7 @@
     "source": "SSC",
     "license": "Black Witch",
     "license_level": 3,
-    "effect": "Ataques Tecnológicos contra você ou personagens aliados adjacentes sofrem +1 Dificuldade. Cada ataque tecnológico subsequente contra você ou um personagem aliado adjacente sofre um adicional de +1 Dificuldade, até um máximo de +3difficulty. Suas penalidades de GELO Negro retornam ao padrão (reiniciando para +1 Dificuldade) quando aumentariam para +4difficulty ou no final da cena. Personagens aliados perdem esse benefício quando deixam de estar adjacentes.",
+    "effect": "Ataques Tecnológicos contra você ou personagens aliados adjacentes sofrem +1 de Dificuldade. Cada ataque tecnológico subsequente contra você ou um personagem aliado adjacente sofre um adicional de +1 de Dificuldade, até um máximo de +3 de Dificuldade. Suas penalidades de GELO Negro retornam ao padrão (reiniciando para +1 de Dificuldade) quando aumentariam para +4 de Dificuldade ou no final da cena. Personagens aliados perdem esse benefício quando deixam de estar adjacentes.",
     "description": "Módulos de GELO Negro são sistemas defensivos do pacote padrão com as frotas de Bruxa Negra usadas pelas forças de segurança interna da SSC. Eles projetam uma bolha de código CÉLULABRANCA que analisa a chegada de códigos e estruturas inoculantes hostis para sistemas amigáveis em tempo real.",
     "counters": [
       {

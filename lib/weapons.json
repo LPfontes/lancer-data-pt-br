@@ -2412,7 +2412,7 @@
     "source": "HA",
     "license": "Saladin",
     "license_level": 1,
-    "effect": "A rolagem de ataque final desta arma nunca pode ser afetada por difficulty.",
+    "effect": "A rolagem de ataque final desta arma nunca pode ser afetada por dificuldade.",
     "description": "Desenvolvido seguindo custosas batalhas urbanas e navais na Guerra dos Interesses, Mísseis de Colônia Rompe-Cabeça são agora item padrão do armamento de campo para Equipes de Interdição da Arsenal. Quando atingem uma distância ótima, os Rompe-Cabeça se abrem em uma explosão de combustível de alta catalisação que revela um conjunto de pastilhas termobáricas que se espalham e se inflamam, sufocando a área afetada com chamas. O efeito sobrecarrega os escudos de Energia e satura as coberturas, mas apenas uma pequena porcentagem dos projéteis realmente atinge seu alvo.",
     "sp": 1,
     "license_id": "mf_saladin"
