@@ -9,7 +9,7 @@
     "source": "GMS",
     "license": "GMS",
     "license_level": 1,
-    "effect": "Em um acerto com a arma à qual este mod é aplicado, gaste uma carga como uma ação livre para ativar seu detonador e causar +1d6 de dano explosivo de bônus.",
+    "effect": "Em um acerto com a arma à qual este mod é aplicado, gaste uma carga como uma ação livre para ativar seu detonador e causar +1d6 de <b>DANO EXPLOSIVO</b> de bônus.",
     "description": "Uma modificação popular da clássica lança de guerra envolve a substituição da longa ponta perfurante da lança por uma carga explosiva descartável acionada por impacto. Na penetração, a ponta da lança é separada do cabo – momentos depois, a ponta embutida detona em uma explosão cônica a partir do ponto de impacto. As cargas térmicas sobressalentes são estáveis e transportadas em carregadores tubulares externos.<br>A EIP-EN também fabrica cargas térmicas compatíveis com a linha de lâminas, martelos e picaretas da SMG.",
     "tags": [],
     "license_id": ""
@@ -58,7 +58,7 @@
     "source": "IPS-N",
     "license": "Raleigh",
     "license_level": 3,
-    "effect": "A sua comp/con classe TIO controla essa arma e seus sistemas associados.<br>1/turno, você pode atacar com +2 de dificuldade usando a arma de TIO como uma ação livre. TIO não pode usar armas que já foram usadas neste turno, e qualquer arma que TIO usar para atacar não pode ser usada novamente até o início do seu próximo turno.<br>TIO não é uma PNH completa, então não pode entrar em cascata.",
+    "effect": "A sua comp/con classe <b>TIO</b> controla essa arma e seus sistemas associados.<br>1/turno, você pode atacar com +2 de <b>DIFICULDADE</b> usando a arma de <b>TIO</b> como uma ação livre. <b>TIO</b> não pode usar armas que já foram usadas neste turno, e qualquer arma que <b>TIO</b> usar para atacar não pode ser usada novamente até o início do seu próximo turno.<br>TIO não é uma <b>PNH</b> completa, então não pode entrar em cascata.",
     "description": "O sistema comp/con TIO da EIP-EN é o resultado do programa ESTRELANEGRA-2, um projeto temporário que buscava desenvolver armas inteligentes mais avançadas. Os primeiros protótipos foram prejudicados por uma combinação de alto consumo de energia, condicionamento instável e orientação frustrante para tarefas únicas, o que eventualmente levou ao encerramento do projeto.<br>Embora a EIP-EN não esteja mais desenvolvendo novas versões da TIO, eles ainda possuem um estoque de sistemas antigos aprovados pelo Controle de Qualidade acessíveis a pilotos qualificados.<br>Pilotos sortudos o suficiente para testar os modelos juram ao falar bem da eficiência e raciocínio paralelo da TIO, embora as comp/cons desatualizadas sejam conhecidas por suas personalidades um tanto instáveis.",
     "tags": [
       {
@@ -88,7 +88,7 @@
     "source": "IPS-N",
     "license": "Tortuga",
     "license_level": 3,
-    "effect": "Escolha entre CQR, Canhão ou Fuzil: Ao atacar com uma dessas armas, você pode disparar uma munição de penetração profunda em vez de atacar normalmente. Trace um caminho de line3 a partir de você, passando por terreno ou outros obstáculos — qualquer personagem ou objeto no caminho sofre 2kinetic PF conforme o projétil perfura através deles e sai do outro lado. A Distância, cobertura e linha de visão para o ataque são então medidas a partir do final deste caminho, continuando na mesma direção.",
+    "effect": "Escolha entre <b>CQR</b>, Canhão ou Fuzil: Ao atacar com uma dessas armas, você pode disparar uma munição de penetração profunda em vez de atacar normalmente. Trace um caminho de <b>LINHA 3</b> a partir de você, passando por terreno ou outros obstáculos — qualquer personagem ou objeto no caminho sofre 2kinetic PF conforme o projétil perfura através deles e sai do outro lado. A Distância, cobertura e <b>LINHA</b> de visão para o ataque são então medidas a partir do final deste caminho, continuando na mesma direção.",
     "description": "As munição de penetração profunda são uma invenção antiarmadura patenteada da EIP-EN. Quando disparadas, as munições inflamam e projetam um cone superaquecido de plasma à sua frente, criando um efeito como uma lança em miniatura que penetra facilmente em múltiplos alvos — até mesmo através de superfícies duras.",
     "tags": [
       {
@@ -107,12 +107,12 @@
     "source": "SSC",
     "license": "Metalmark",
     "license_level": 3,
-    "effect": "além do seu dano usual, 1/rodada você pode ativar a coroa como uma ação rápida quando acertar um personagem com esta arma para fazê-lo sofrer 1d6 de queimadura. Se ele já estiver sofrendo de queimadura, adicionalmente ele só pode ter linha de visão para espaços adjacentes até o final do próximo turno dele.",
+    "effect": "além do seu dano usual, 1/rodada você pode ativar a coroa como uma ação rápida quando acertar um personagem com esta arma para fazê-lo sofrer 1d6 de <b>QUEIMADURA</b>. Se ele já estiver sofrendo de <b>QUEIMADURA</b>, adicionalmente ele só pode ter <b>LINHA</b> de visão para espaços adjacentes até o final do próximo turno dele.",
     "actions": [
       {
         "name": "Ativar Coroa de Choque",
         "activation": "Quick",
-        "detail": "1/rodada você pode ativar a Coroa de Choque como uma ação rápida quando acertar um personagem com a arma à qual este mod está aplicado para fazê-lo sofrer 1d6 de queimadura. Se ele já estiver sofrendo de queimadura, adicionalmente ele só pode ter linha de visão para espaços adjacentes até o final do próximo turno dele."
+        "detail": "1/rodada você pode ativar a Coroa de Choque como uma ação rápida quando acertar um personagem com a arma à qual este mod está aplicado para fazê-lo sofrer 1d6 de <b>QUEIMADURA</b>. Se ele já estiver sofrendo de <b>QUEIMADURA</b>, adicionalmente ele só pode ter <b>LINHA</b> de visão para espaços adjacentes até o final do próximo turno dele."
       }
     ],
     "description": "Uma modificação pós-fábrica popular entre especialistas em combate corpo a corpo, as Coroas de Choque integram um feixe de filamentos condutores dentro da lâmina, ponta ou superfície de uma arma de combate próximo. Combinadas com uma fonte de energia — tipicamente no cabo ou metade inferior de uma arma, mas às vezes externa — as Coroas de Choque conferem às armas cinéticas uma vantagem térmica e um marcador visual distinto: finas linhas de luz branca quente como filigrana, envolvendo a arma modificada em calor cintilante.",
@@ -191,7 +191,7 @@
     "source": "HA",
     "license": "Napoleon",
     "license_level": 2,
-    "effect": "Escolha uma arma: Enquanto você souber o local aproximado do seu alvo, ela pode atacar através de paredes sólidas e obstruções, não requer linha de visão e ignora toda cobertura, mas os alvos contam como Invisíveis.",
+    "effect": "Escolha uma arma: Enquanto você souber o local aproximado do seu alvo, ela pode atacar através de paredes sólidas e obstruções, não requer <b>LINHA</b> de visão e ignora toda cobertura, mas os alvos contam como Invisíveis.",
     "description": "Assim como foi batizada depois de seu primeiro uso durante as hostilidades civis em Luna de Oro, a munição de pronta-para-fase é a “bala do diabo”. Cada cartucho tem um pacote de nanoprocessadores em rede com sua arma de origem que calcula e traduz a natureza específica da relação superposicional do cartucho com uma duplicata projetada no futuro que se manifesta no espaço imediatamente antes de seu alvo pretendido. Em palavras simples, quando atirados, os cartuchos de pronta-para-fase existem em dois lugares ao mesmo tempo: no caño da arma de onde foram disparados e diretamente na frente do alvo, antes do impacto. O cartucho primário pode nunca acertar seu alvo, mas dado que ele já existe no momento do impacto, o cartucho duplicata atingirá o alvo de forma confiável.",
     "license_id": "mf_napoleon"
   },
@@ -210,7 +210,7 @@
     "source": "HA",
     "license": "Saladin",
     "license_level": 3,
-    "effect": "Escolha uma arma: ela recebe Exagerado e seu dano não pode ser reduzido de forma alguma, incluindo por outros efeitos e sistemas (como Resistência, Armadura etc.).",
+    "effect": "Escolha uma arma: ela recebe Exagerado e seu dano não pode ser reduzido de forma alguma, incluindo por outros efeitos e sistemas (como Resistência, <b>ARMADURA</b> etc.).",
     "description": "Armas paracausais são uma dor de cabeça para planejadores militares; suas funções de A a Z geralmente são obscuras, apesar de elas consistentemente produzirem a mesma saída \"Z\" pela entrada \"A\".<br>Os primeiros registros de armas paracausais não registradas ocorreram durante os conflitos civis em Tian Shen. Forças locais do sistema receberam pentes selados com instruções para serem carregados e disparados normalmente, embora a inspeção dos conteúdos dos pentes tenha sido proibida enquanto em campo, porque iria \"danificar a carga\". Gravações de capacetes e armas provam os efeitos anômalos dessa munição, apesar de que relatórios de pós-ação descobriram um aparentemente pequeno, porém incrível fato: cada um dos soldados equipados com a munição paracausal atingiu uma taxa de impacto positivo de 100%.<br>A União marcou todas as armas e munições paracausais não reguladas para serem recolhidas, e o departamento está atualmente investigando a Arsenal Harrison por seu papel em desenvolver a tecnologia. Apesar disso, munição paracausal ainda está em uso, com cargas e códigos vazando para partes interessadas.",
     "added_tags": [
       {

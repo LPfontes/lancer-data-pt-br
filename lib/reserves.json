@@ -185,7 +185,7 @@
         "name": "Escudo Posicionável (Reserva)",
         "type": "Deployable",
         "size": 1,
-        "detail": "Concede cobertura leve para todos os personagens amigáveis em uma área de EMANAÇÃO 2.",
+        "detail": "Concede cobertura leve para todos os personagens amigáveis em uma área de <b>EMANAÇÃO</b> 2.",
         "stats": {
           "size": 1,
           "hp": 5,
@@ -207,7 +207,7 @@
       {
         "name": "Reparo Redundante",
         "activation": "Free",
-        "detail": "ESTABILIZAR como uma ação livre."
+        "detail": "<b>ESTABILIZAR</b> como uma ação livre."
       }
     ]
   },
@@ -324,7 +324,7 @@
       {
         "name": "Bombardeio",
         "activation": "Full",
-        "detail": "Convocar artilharia ou bombardeio orbital:<br>ALCANCE 30 na linha de visão, EXPLOSÃO 2, 3d6 de dano explosivo",
+        "detail": "Convocar artilharia ou bombardeio orbital:<br>ALCANCE 30 na <b>LINHA</b> de visão, <b>EXPLOSÃO</b> 2, 3d6 de <b>DANO EXPLOSIVO</b>",
         "range": [
           {
             "type": "Range",

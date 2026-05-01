@@ -676,7 +676,7 @@
     "source": "IPS-N",
     "license": "Blackbeard",
     "license_level": 2,
-    "effect": "Esta arma ignora as penalidades de distância quando você estiver Engajado e causa 3 de dano Cinético (em vez de 1) em alvos Agarrados ou Biológicos.",
+    "effect": "Esta arma ignora as penalidades de distância quando você estiver <b>ENGAJADO</b> e causa 3 de <b>DANO CINÉTICO</b> (em vez de 1) em alvos Agarrados ou Biológicos.",
     "description": "O Lançador Flechete Coroa da EIP-EN usa um mecanismo análogo à colmeia para projetar uma zona de morte de alvos vulneráveis em uma cúpula ao redor do usuário, negando proativamente ações hostis do nível de infantaria.",
     "license_id": "mf_blackbeard"
   },
@@ -737,7 +737,7 @@
           {
             "name": "Girar Canhão de Assalto",
             "activation": "Quick",
-            "detail": "Gire os canos do Canhão de Assalto, deixando seu mecha Lento e permitindo o uso de seu perfil 'Modo Girando'."
+            "detail": "Gire os canos do Canhão de Assalto, deixando seu mecha <b>LENTO</b> e permitindo o uso de seu perfil 'Modo Girando'."
           }
         ],
         "tags": [
@@ -764,12 +764,12 @@
             "val": 8
           }
         ],
-        "effect": "Enquanto estiver girando, esta arma recebe Confiável 3, mas você fica Lento.<br>Você pode encerrar esse efeito como um protocolo.",
+        "effect": "Enquanto estiver girando, esta arma recebe Confiável 3, mas você fica <b>LENTO</b>.<br>Você pode encerrar esse efeito como um protocolo.",
         "actions": [
           {
             "name": "Cessar Giro",
             "activation": "Protocol",
-            "detail": "Encerre o 'Modo Girando' do Canhão de Assalto, encerrando a condição Lento e permitindo que o Canhão de Assalto seja usado com seu perfil 'Padrão'."
+            "detail": "Encerre o 'Modo Girando' do Canhão de Assalto, encerrando a condição <b>LENTO</b> e permitindo que o Canhão de Assalto seja usado com seu perfil 'Padrão'."
           }
         ],
         "tags": [
@@ -849,7 +849,7 @@
           {
             "name": "Girar Leviatã",
             "activation": "Quick",
-            "detail": "Gire os canos do Canhão de Assalto Pesado Leviatã, deixando seu mecha Lento e permitindo o uso de seu perfil 'Modo Girando'."
+            "detail": "Gire os canos do Canhão de Assalto Pesado Leviatã, deixando seu mecha <b>LENTO</b> e permitindo o uso de seu perfil 'Modo Girando'."
           }
         ]
       },
@@ -867,12 +867,12 @@
             "val": 8
           }
         ],
-        "effect": "Enquanto estiver girando, esta arma recebe Confiável 5 e 2 de Calor (Autoinfligido), e seu dano aumenta para 4d6+4 Cinético; no entanto, você fica Lento e não pode mais usar o Leviatã para Alvejar.<br>Você pode interromper esse efeito como um protocolo.",
+        "effect": "Enquanto estiver girando, esta arma recebe Confiável 5 e 2 de <b>CALOR</b> (Autoinfligido), e seu dano aumenta para 4d6+4 Cinético; no entanto, você fica <b>LENTO</b> e não pode mais usar o Leviatã para Alvejar.<br>Você pode interromper esse efeito como um protocolo.",
         "actions": [
           {
             "name": "Cessar Giro do Leviatã",
             "activation": "Protocol",
-            "detail": "Interrompa o 'Modo Girando' do Canhão de Assalto Pesado Leviatã, encerrando a condição Lento e permitindo que o Leviatã seja usado com seu perfil 'Padrão'."
+            "detail": "Interrompa o 'Modo Girando' do Canhão de Assalto Pesado Leviatã, encerrando a condição <b>LENTO</b> e permitindo que o Leviatã seja usado com seu perfil 'Padrão'."
           }
         ],
         "tags": [
@@ -1267,7 +1267,7 @@
     "source": "IPS-N",
     "license": "Vlad",
     "license_level": 3,
-    "effect": "Ao atacar um personagem que está Prostrado, Imobilizado ou Atordoado, a tag Exagerado desta arma causa +1d6 dano bônus sempre que for ativada. Isso pode ser ativado indefinidamente se o novo resultado do dado bônus for um 1, acionando Exagerado novamente.",
+    "effect": "Ao atacar um personagem que está <b>PROSTRADO</b>, <b>IMOBILIZADO</b> ou <b>ATORDOADO</b>, a tag Exagerado desta arma causa +1d6 dano bônus sempre que for ativada. Isso pode ser ativado indefinidamente se o novo resultado do dado bônus for um 1, acionando Exagerado novamente.",
     "description": "A broca de combate é uma arma brutal de combate próximo, alimentada por um grande pacote de catalisador externo. A ponta é equipada com projetores microplasmáticos projetados para garantir a penetração da broca.",
     "license_id": "mf_vlad"
   },
@@ -1593,7 +1593,7 @@
     "source": "SSC",
     "license": "Monarch",
     "license_level": 3,
-    "effect": "Ataques com esta arma criam até duas áreas de EXPLOSÃO 1, que não podem se sobrepor.<br>Você também pode atrasar o impacto dos ataques feitos com esta arma. Escolha a(s) área(s) alvo, que se tornam visíveis para todos os personagens: os mísseis aterrissam no final da próxima rodada, após todos os personagens terem agido, e causam 3d6 de dano Explosivo em vez de 2d6, mas você fica LENTO até o final de seu próximo turno.",
+    "effect": "Ataques com esta arma criam até duas áreas de <b>EXPLOSÃO</b> 1, que não podem se sobrepor.<br>Você também pode atrasar o impacto dos ataques feitos com esta arma. Escolha a(s) área(s) alvo, que se tornam visíveis para todos os personagens: os mísseis aterrissam no final da próxima rodada, após todos os personagens terem agido, e causam 3d6 de <b>DANO EXPLOSIVO</b> em vez de 2d6, mas você fica <b>LENTO</b> até o final de seu próximo turno.",
     "description": "Os mísseis Pinaka são mísseis maciços de dois estágios, tipicamente montados ao longo da espinha de um mecha ou transportados, desmontados, para serem lançados de uma montagem braquial. O Pinaka foi originalmente adaptado de mísseis de nave para nave; como tal, seu segundo estágio usa reposicionamento assistido por jato para orientação em voo.",
     "license_id": "mf_monarch"
   },
@@ -1844,7 +1844,7 @@
     "source": "HORUS",
     "license": "Gorgon",
     "license_level": 3,
-    "effect": "Ganhe a reação VAPT-VUPT, que é a única maneira que você pode atacar com essa arma.",
+    "effect": "Ganhe a reação <b>VAPT</b>-<b>VUPT</b>, que é a única maneira que você pode atacar com essa arma.",
     "actions": [
       {
         "name": "VAPT-VUPT",
@@ -1927,7 +1927,7 @@
         "armor": 2,
         "edef": 10,
         "evasion": 10,
-        "detail": "O Nexo Lívido pode ser posicionado em um espaço livre ao alcance dos Sensores e na linha de visão como uma ação livre, onde se torna um Drone estacionário e flutuante. Uma vez posicionado, você ainda pode usá-lo para Alvejar e usar Barragem como se ainda fosse uma arma, mas com linha de visão e Alcance a partir da localização do Nexo.<br>Você pode recolher ou reposicionar o Nexo Lívido como uma ação rápida. Até ser recolhido ou destruído, ele permanece posicionado até o final da cena. Se for destruído, ele segue as regras para Drones destruídos e não pode ser usado até que seja reparado.",
+        "detail": "O Nexo Lívido pode ser posicionado em um espaço livre ao <b>ALCANCE</b> dos <b>SENSORES</b> e na <b>LINHA</b> de visão como uma ação livre, onde se torna um Drone estacionário e flutuante. Uma vez posicionado, você ainda pode usá-lo para Alvejar e usar Barragem como se ainda fosse uma arma, mas com <b>LINHA</b> de visão e <b>ALCANCE</b> a partir da localização do Nexo.<br>Você pode recolher ou reposicionar o Nexo Lívido como uma ação rápida. Até ser recolhido ou destruído, ele permanece posicionado até o final da cena. Se for destruído, ele segue as regras para Drones destruídos e não pode ser usado até que seja reparado.",
         "stats": {
           "size": 1,
           "hp": 5,
@@ -2102,7 +2102,7 @@
     "source": "HORUS",
     "license": "Pegasus",
     "license_level": 2,
-    "effect": "Esta arma horripilante não possui forma básica; ela se contorce constantemente em diferentes formas, imitando as armas de outros combatentes. Ela conta como todos os tipos de armas à distância simultaneamente (ex: PAP, Fuzil, etc.), mas não pode aceitar Modificações ou se beneficiar de bônus de núcleo, embora ainda se beneficie de talentos normalmente.<br>No início do combate, role 3d20 e anote os resultados em ordem: X, Y e Z. X é o seu Alcance base inicial (antes das modificações dos talentos). No início de cada um de seus turnos após o primeiro, a pistola mímica cicla para o próximo resultado, assumindo-o como seu Alcance base. Após Z, ela volta para X.<br>A pistola mímica causa dano Cinético igual a 1 + metade do seu Alcance base atual.<br>Você pode provocar a pistola mímica como uma ação completa, rolando um novo conjunto de 3d20.",
+    "effect": "Esta arma horripilante não possui forma básica; ela se contorce constantemente em diferentes formas, imitando as armas de outros combatentes. Ela conta como todos os tipos de armas à distância simultaneamente (ex: <b>PAP</b>, Fuzil, etc.), mas não pode aceitar Modificações ou se beneficiar de bônus de núcleo, embora ainda se beneficie de talentos normalmente.<br>No início do combate, role 3d20 e anote os resultados em ordem: X, Y e Z. X é o seu <b>ALCANCE</b> base inicial (antes das modificações dos talentos). No início de cada um de seus turnos após o primeiro, a pistola mímica cicla para o próximo resultado, assumindo-o como seu <b>ALCANCE</b> base. Após Z, ela volta para X.<br>A pistola mímica causa <b>DANO CINÉTICO</b> igual a 1 + metade do seu <b>ALCANCE</b> base atual.<br>Você pode provocar a pistola mímica como uma ação completa, rolando um novo conjunto de 3d20.",
     "actions": [
       {
         "name": "Provoke Mimic Gun",
@@ -2139,7 +2139,7 @@
       {
         "name": "Disparar Autoarma",
         "activation": "Free",
-        "detail": "Esta arma não pode fazer ataques normais. Em vez disso, você pode atacar com ela como uma ação livre ao final de qualquer movimento seu, desde que o alvo esteja dentro do Alcance e da linha de visão."
+        "detail": "Esta arma não pode fazer ataques normais. Em vez disso, você pode atacar com ela como uma ação livre ao final de qualquer movimento seu, desde que o alvo esteja dentro do <b>ALCANCE</b> e da <b>LINHA</b> de visão."
       }
     ],
     "effect": "Esta arma não pode fazer ataques normais. Em vez disso, você pode atacar com ela como uma ação livre no final do seu turno. Ela não se beneficia nem aciona seus talentos.",
@@ -2282,7 +2282,7 @@
     "source": "HA",
     "license": "Genghis",
     "license_level": 3,
-    "effect": "Pode ser disparado como Cone 7 <i>ou</i> Linha 10",
+    "effect": "Pode ser disparado como <b>CONE 7</b> <i>ou</i> <b>LINHA</b> 10",
     "on_attack": "Chamas brancas de Calor continuam a queimar em 3 espaços livres à sua escolha na área afetada, durando pelo resto da cena. Quando personagens começarem os turnos deles em algum desses espaços ou entrarem neles pela primeira vez em uma rodada, sofrem 1d6 de Energia.",
     "description": "O lança-plasma emergiu tarde demais na Crise Hercyniana para ser usado amplamente no campo. Os poucos dados obtidos dos esquadrões FEF que o utilizaram sugerem que os lança-plasma teriam feito um tremendo impacto nas resoluções de diversas batalhas importantes que ocorreram durante a fase mais sangrenta da Crise.",
     "license_id": "mf_genghis"
@@ -2412,7 +2412,7 @@
     "source": "HA",
     "license": "Saladin",
     "license_level": 1,
-    "effect": "A rolagem de ataque final desta arma nunca pode ser afetada por dificuldade.",
+    "effect": "A rolagem de ataque final desta arma nunca pode ser afetada por <b>DIFICULDADE</b>.",
     "description": "Desenvolvido seguindo custosas batalhas urbanas e navais na Guerra dos Interesses, Mísseis de Colônia Rompe-Cabeça são agora item padrão do armamento de campo para Equipes de Interdição da Arsenal. Quando atingem uma distância ótima, os Rompe-Cabeça se abrem em uma explosão de combustível de alta catalisação que revela um conjunto de pastilhas termobáricas que se espalham e se inflamam, sufocando a área afetada com chamas. O efeito sobrecarrega os escudos de Energia e satura as coberturas, mas apenas uma pequena porcentagem dos projéteis realmente atinge seu alvo.",
     "sp": 1,
     "license_id": "mf_saladin"
@@ -2675,7 +2675,7 @@
     "talent_item": true,
     "talent_id": "t_engineer",
     "talent_rank": 1,
-    "effect": "Esta arma é um protótipo experimental, personalizado de acordo com seus requisitos específicos.<br>Quando você a instala, ou durante um Reparo Completo, você pode escolher um novo tipo de arma, tipo de dano e Ameaça 1 (corpo a corpo) ou Alcance 10 (todos os outros tipos). Adicionalmente, cada vez que você realizar um Reparo Completo, role novamente 1d6+2 para determinar os usos Limitados desta arma.",
+    "effect": "Esta arma é um protótipo experimental, personalizado de acordo com seus requisitos específicos.<br>Quando você a instala, ou durante um <b>REPARO</b> Completo, você pode escolher um novo tipo de arma, tipo de dano e <b>AMEAÇA</b> 1 (corpo a corpo) ou <b>ALCANCE</b> 10 (todos os outros tipos). Adicionalmente, cada vez que você realizar um <b>REPARO</b> Completo, role novamente 1d6+2 para determinar os usos Limitados desta arma.",
     "description": "Obtido pelo Talento <i>\"Engenheiro\" Rank I</i>",
     "license_id": ""
   },
@@ -2721,7 +2721,7 @@
     "talent_item": true,
     "talent_id": "t_engineer",
     "talent_rank": 2,
-    "effect": "Esta arma é um protótipo experimental, personalizado de acordo com seus requisitos específicos.<br>Quando você a instala, ou durante um Reparo Completo, você pode escolher um novo tipo de arma, tipo de dano e Ameaça 1 (corpo a corpo) ou Alcance 10 (todos os outros tipos). Adicionalmente, cada vez que você realizar um Reparo Completo, role novamente 1d6+2 para determinar os usos Limitados desta arma e escolha dois:<ul><li><b>Ópticas Ajustadas:</b> Sua arma protótipo sempre ganha +1 de Precisão nos ataques.</li><li><b>Computador Ajustado:</b> Sua arma protótipo é Inteligente.</li><li><b>Blindagem de reator removida:</b> Cada vez que você atacar com sua arma protótipo, você pode escolher – ao custo de 2 de Calor – atacar com uma das seguintes opções, dependendo do seu tipo de arma:<ul><li><b>Arma à distância:</b> Cone 3, Linha 5 ou [Explosão 1, Alcance 10].</li><li><b>Arma corpo a corpo:</b> Emanação 1.</li></li></ul></ul>",
+    "effect": "Esta arma é um protótipo experimental, personalizado de acordo com seus requisitos específicos.<br>Quando você a instala, ou durante um <b>REPARO</b> Completo, você pode escolher um novo tipo de arma, tipo de dano e <b>AMEAÇA</b> 1 (corpo a corpo) ou <b>ALCANCE</b> 10 (todos os outros tipos). Adicionalmente, cada vez que você realizar um <b>REPARO</b> Completo, role novamente 1d6+2 para determinar os usos Limitados desta arma e escolha dois:<ul><ul><li><b>Ópticas Ajustadas:</b> Sua arma protótipo sempre ganha +1 de <b>PRECISÃO</b> nos ataques.</li></ul><ul><li><b>Computador Ajustado:</b> Sua arma protótipo é Inteligente.</li></ul><ul><li><b>Blindagem de reator removida:</b> Cada vez que você atacar com sua arma protótipo, você pode escolher – ao custo de 2 de <b>CALOR</b> – atacar com uma das seguintes opções, dependendo do seu tipo de arma:<ul><li><b>Arma à distância:</b> <b>CONE 3</b>, <b>LINHA</b> 5 ou [<b>EXPLOSÃO</b> 1, <b>ALCANCE</b> 10].</li></ul><ul><li><b>Arma corpo a corpo:</b> <b>EMANAÇÃO</b> 1.</li></ul></li></ul></ul>",
     "description": "Obtido pelo Talento <i>\"Engenheiro\" Rank II</i>",
     "license_id": ""
   },
@@ -2767,7 +2767,7 @@
     "talent_item": true,
     "talent_id": "t_engineer",
     "talent_rank": 3,
-    "effect": "Esta arma é um protótipo experimental, personalizado de acordo com seus requisitos específicos.<br>Quando você a instala, ou durante um Reparo Completo, você pode escolher um novo tipo de arma, tipo de dano e Ameaça 1 (corpo a corpo) ou Alcance 10 (todos os outros tipos). Adicionalmente, cada vez que você realizar um Reparo Completo, role novamente 2d6 para determinar os usos Limitados desta arma e escolha dois:<ul><li><b>Ópticas Ajustadas:</b> Sua arma protótipo sempre ganha +1 de Precisão nos ataques.</li><li><b>Computador Ajustado:</b> Sua arma protótipo é Inteligente.</li><li><b>Blindagem de reator removida:</b> Cada vez que você atacar com sua arma protótipo, você pode escolher – ao custo de 2 de Calor – atacar com uma das seguintes opções, dependendo do seu tipo de arma:<ul><li><b>Arma à distância:</b> Cone 3, Linha 5 ou [Explosão 1, Alcance 10].</li><li><b>Arma corpo a corpo:</b> Emanação 1.</li></li></ul></ul>",
+    "effect": "Esta arma é um protótipo experimental, personalizado de acordo com seus requisitos específicos.<br>Quando você a instala, ou durante um <b>REPARO</b> Completo, você pode escolher um novo tipo de arma, tipo de dano e <b>AMEAÇA</b> 1 (corpo a corpo) ou <b>ALCANCE</b> 10 (todos os outros tipos). Adicionalmente, cada vez que você realizar um <b>REPARO</b> Completo, role novamente 2d6 para determinar os usos Limitados desta arma e escolha dois:<ul><ul><li><b>Ópticas Ajustadas:</b> Sua arma protótipo sempre ganha +1 de <b>PRECISÃO</b> nos ataques.</li></ul><ul><li><b>Computador Ajustado:</b> Sua arma protótipo é Inteligente.</li></ul><ul><li><b>Blindagem de reator removida:</b> Cada vez que você atacar com sua arma protótipo, você pode escolher – ao custo de 2 de <b>CALOR</b> – atacar com uma das seguintes opções, dependendo do seu tipo de arma:<ul><li><b>Arma à distância:</b> <b>CONE 3</b>, <b>LINHA</b> 5 ou [<b>EXPLOSÃO</b> 1, <b>ALCANCE</b> 10].</li></ul><ul><li><b>Arma corpo a corpo:</b> <b>EMANAÇÃO</b> 1.</li></ul></li></ul></ul>",
     "description": "Obtido pelo Talento <i>\"Engenheiro\" Rank III</i>",
     "license_id": ""
   },
@@ -2783,7 +2783,7 @@
         "val": 8
       }
     ],
-    "effect": "Esta arma não pode realizar ataques normais. Em vez disso, escolha um mecha aliado que esteja na linha de visão e dentro do Alcance e faça um ataque à distância contra Evasão 8. Em um acerto, você ou seu alvo podem gastar 1 de Reparo para restaurar metade dos PV do seu alvo.",
+    "effect": "Esta arma não pode realizar ataques normais. Em vez disso, escolha um mecha aliado que esteja na <b>LINHA</b> de visão e dentro do <b>ALCANCE</b> e faça um ataque à distância contra <b>EVASÃO</b> 8. Em um acerto, você ou seu alvo podem gastar 1 de <b>REPARO</b> para restaurar metade dos PV do seu alvo.",
     "license_id": "mf_lancaster"
   },
   {
@@ -2817,7 +2817,7 @@
     "type": "Spool Weapon",
     "skirmish": false,
     "barrage": false,
-    "effect": "O Canhão do Apocalipse deve ser carregado antes de poder ser disparado, usando o Poder de NÚCLEO Carregar Canhão.<br>Esta arma tem perfis diferentes determinados pelo valor atual do DADO DE APOCALIPSE quando você a dispara. Cada perfil substitui o anterior. O Canhão do Apocalipse não pode ser disparado contra alvos a até Alcance 5.<br>Depois de um ataque com o Canhão do Apocalipse, o Dado de Apocalipse reinicia para 4.",
+    "effect": "O Canhão do Apocalipse deve ser carregado antes de poder ser disparado, usando o Poder de <b>NÚCLEO</b> Carregar Canhão.<br>Esta arma tem perfis diferentes determinados pelo valor atual do <b>DADO</b> DE <b>APOCALIPSE</b> quando você a dispara. Cada perfil substitui o anterior. O Canhão do Apocalipse não pode ser disparado contra alvos a até <b>ALCANCE</b> 5.<br>Depois de um ataque com o Canhão do Apocalipse, o Dado de Apocalipse reinicia para 4.",
     "actions": [
       {
         "name": "Disparar Canhão do Apocalipse",
@@ -2861,7 +2861,7 @@
             "val": "2d6"
           }
         ],
-        "effect": "Objetos na área afetada automaticamente sofrem 20 Explosivo(PA). Depois do ataque, a nuvem da explosão permanece, dando cobertura leve para personagens na área afetada até o final do seu próximo turno."
+        "effect": "Objetos na área afetada automaticamente sofrem 20 Explosivo(PA). Depois do ataque, a nuvem da <b>EXPLOSÃO</b> permanece, dando cobertura leve para personagens na área afetada até o final do seu próximo turno."
       },
       {
         "name": "Charge Rail: 2",
@@ -2881,7 +2881,7 @@
             "val": "3d6"
           }
         ],
-        "effect": "Objetos e terreno na área automaticamente sofrem 40 Explosivo(PA) e, em caso de acerto, personagens ficam Dilacerados e Impedidos até o final do próximo turno deles. A nuvem da explosão é uma tempestade ardente: até o final do seu próximo turno, personagens dentro da área afetada obtêm cobertura leve, e personagens que começarem o turno deles na área ou se moverem para ela pela primeira vez em uma rodada sofrem 4 de Queimadura."
+        "effect": "Objetos e terreno na área automaticamente sofrem 40 Explosivo(PA) e, em caso de acerto, personagens ficam Dilacerados e Impedidos até o final do próximo turno deles. A nuvem da <b>EXPLOSÃO</b> é uma tempestade ardente: até o final do seu próximo turno, personagens dentro da área afetada obtêm cobertura leve, e personagens que começarem o turno deles na área ou se moverem para ela pela primeira vez em uma rodada sofrem 4 de <b>QUEIMADURA</b>."
       },
       {
         "name": "Charge Rail: 1",
@@ -2901,7 +2901,7 @@
             "val": "4d6"
           }
         ],
-        "effect": "Objetos e terrenos na área automaticamente sofrem 100 Explosivo(PA) e personagens que forem acertados ficam Dilacerados e Impedidos até o final do próximo turno deles. O chão da área afetada é vaporizado no impacto: pelo restante da cena, ele é terreno difícil, personagens dentro da área afetada obtêm cobertura leve, e personagens que começam o turno deles na área ou se moverem para ela pela primeira vez em uma rodada sofrem 4 de Queimadura."
+        "effect": "Objetos e terrenos na área automaticamente sofrem 100 Explosivo(PA) e personagens que forem acertados ficam Dilacerados e Impedidos até o final do próximo turno deles. O chão da área afetada é vaporizado no impacto: pelo restante da cena, ele é terreno difícil, personagens dentro da área afetada obtêm cobertura leve, e personagens que começam o turno deles na área ou se moverem para ela pela primeira vez em uma rodada sofrem 4 de <b>QUEIMADURA</b>."
       }
     ],
     "license_id": ""
@@ -2926,7 +2926,7 @@
             "val": "1d6"
           }
         ],
-        "effect": "O perfil desta arma é determinado pela quantidade de Cargas que ela carrega. Ela começa com 1 Carga, causando 1d6 de Energia com Linha 4. Sempre que Estabilizar, você recebe 1 Carga adicional, até um máximo de 4. O ZF4 recebe um adicional +Linha 4 e +1d6 de Energia por cada carga, e reinicia para 1 Carga depois de cada ataque. As Cargas persistem durante as cenas, mas são perdidas durante um reparo completo."
+        "effect": "O perfil desta arma é determinado pela quantidade de Cargas que ela carrega. Ela começa com 1 Carga, causando 1d6 de Energia com <b>LINHA</b> 4. Sempre que Estabilizar, você recebe 1 Carga adicional, até um máximo de 4. O ZF4 recebe um adicional +<b>LINHA</b> 4 e +1d6 de Energia por cada carga, e reinicia para 1 Carga depois de cada ataque. As Cargas persistem durante as cenas, mas são perdidas durante um <b>REPARO</b> completo."
       },
       {
         "name": "2 Cargas",
@@ -2942,7 +2942,7 @@
             "val": "2d6"
           }
         ],
-        "effect": "O perfil desta arma é determinado pela quantidade de Cargas que ela carrega. Ela começa com 1 Carga, causando 1d6 de Energia com Linha 4. Sempre que Estabilizar, você recebe 1 Carga adicional, até um máximo de 4. O ZF4 recebe um adicional +Linha 4 e +1d6 de Energia por cada carga, e reinicia para 1 Carga depois de cada ataque. As Cargas persistem durante as cenas, mas são perdidas durante um reparo completo."
+        "effect": "O perfil desta arma é determinado pela quantidade de Cargas que ela carrega. Ela começa com 1 Carga, causando 1d6 de Energia com <b>LINHA</b> 4. Sempre que Estabilizar, você recebe 1 Carga adicional, até um máximo de 4. O ZF4 recebe um adicional +<b>LINHA</b> 4 e +1d6 de Energia por cada carga, e reinicia para 1 Carga depois de cada ataque. As Cargas persistem durante as cenas, mas são perdidas durante um <b>REPARO</b> completo."
       },
       {
         "name": "3 Cargas",
@@ -2958,7 +2958,7 @@
             "val": "3d6"
           }
         ],
-        "effect": "O perfil desta arma é determinado pela quantidade de Cargas que ela carrega. Ela começa com 1 Carga, causando 1d6 de Energia com Linha 4. Sempre que Estabilizar, você recebe 1 Carga adicional, até um máximo de 4. O ZF4 recebe um adicional +Linha 4 e +1d6 de Energia por cada carga, e reinicia para 1 Carga depois de cada ataque. As Cargas persistem durante as cenas, mas são perdidas durante um reparo completo."
+        "effect": "O perfil desta arma é determinado pela quantidade de Cargas que ela carrega. Ela começa com 1 Carga, causando 1d6 de Energia com <b>LINHA</b> 4. Sempre que Estabilizar, você recebe 1 Carga adicional, até um máximo de 4. O ZF4 recebe um adicional +<b>LINHA</b> 4 e +1d6 de Energia por cada carga, e reinicia para 1 Carga depois de cada ataque. As Cargas persistem durante as cenas, mas são perdidas durante um <b>REPARO</b> completo."
       },
       {
         "name": "4 Cargas",
@@ -2974,7 +2974,7 @@
             "val": "4d6"
           }
         ],
-        "effect": "O perfil desta arma é determinado pela quantidade de Cargas que ela carrega. Ela começa com 1 Carga, causando 1d6 de Energia com Linha 4. Sempre que Estabilizar, você recebe 1 Carga adicional, até um máximo de 4. O ZF4 recebe um adicional +Linha 4 e +1d6 de Energia por cada carga, e reinicia para 1 Carga depois de cada ataque. As Cargas persistem durante as cenas, mas são perdidas durante um reparo completo."
+        "effect": "O perfil desta arma é determinado pela quantidade de Cargas que ela carrega. Ela começa com 1 Carga, causando 1d6 de Energia com <b>LINHA</b> 4. Sempre que Estabilizar, você recebe 1 Carga adicional, até um máximo de 4. O ZF4 recebe um adicional +<b>LINHA</b> 4 e +1d6 de Energia por cada carga, e reinicia para 1 Carga depois de cada ataque. As Cargas persistem durante as cenas, mas são perdidas durante um <b>REPARO</b> completo."
       }
     ],
     "tags": [

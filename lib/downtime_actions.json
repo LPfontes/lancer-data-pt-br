@@ -3,7 +3,7 @@
     "id": "dt_buy_some_time",
     "name": "Ganhar Tempo",
     "terse": "Tente adiar um acerto de contas ou estender sua janela de oportunidade.",
-    "detail": "Quando você GANHA TEMPO, tenta adiar um acerto de contas, estender uma janela de oportunidade ou meramente ganhar algum tempo e fôlego para você e seu grupo. Você pode estar tentando evitar problemas, sobreviver perdido na selva ou causar uma distração para que outro plano alcance seu ápice. Você pode usar essa distração ou o tempo ganho como RESERVAS para a próxima missão.",
+    "detail": "Descreva seu plano e role",
     "table": {
       "detail": "Descreva seu plano e role",
       "die": "1d20",
@@ -30,7 +30,7 @@
     "id": "dt_gather_information",
     "name": "Coletar Informações",
     "terse": "Investigue, faça pesquisas ou fique de olho em algo.",
-    "detail": "Quando você COLETA INFORMAÇÕES, bisbilhota por aí, talvez onde não deveria, e investiga algo — conduzindo pesquisas, seguindo um mistério, rastreando um alvo ou vigiando algo. Você pode ir a uma biblioteca ou agir disfarçado para aprender o que puder. Seja o que for, você está tentando COLETAR INFORMAÇÕES sobre um assunto de sua escolha. Você pode usar as informações obtidas como RESERVAS.",
+    "detail": "Descreva seu assunto e método",
     "table": {
       "detail": "Descreva seu assunto e método",
       "die": "1d20",
@@ -57,7 +57,7 @@
     "id": "dt_get_a_damn_drink",
     "name": "Beber um Trago",
     "terse": "Desopilar e geralmente se meter em problemas.",
-    "detail": "Quando você BEBE UM TRAGO, você desopila, festeja e geralmente se meter em problemas. Você pode estar tentando fazer conexões, coletar fofocas, forjar uma reputação ou até mesmo apenas esquecer o que aconteceu na última missão. Geralmente há problemas.",
+    "detail": "Declare sua intenção",
     "table": {
       "detail": "Declare sua intenção",
       "die": "1d20",
@@ -84,7 +84,7 @@
     "id": "dt_get_connected",
     "name": "Conectar-se",
     "terse": "Faça conexões, peça ajuda ou mobilize apoio.",
-    "detail": "Quando você se CONECTA, faz conexões, cobra favores, pede ajuda ou mobiliza apoio para um curso de ação. Você pode usar os recursos ou a ajuda de seus contatos como RESERVAS para a próxima missão.<br>Para realizar esta ação, você precisa estar dentro do alcance de comunicações ou em algum lugar onde possa ter uma boa e velha conversa cara a cara.",
+    "detail": "Nomeie seu contato",
     "table": {
       "detail": "Nomeie seu contato",
       "die": "1d20",
@@ -111,7 +111,7 @@
     "id": "dt_get_creative",
     "name": "Criar Algo",
     "terse": "Ajuste algo ou tente criar algo novo.",
-    "detail": "Quando você CRIA ALGO, ajusta algo ou tenta fazer algo novo — seja um item físico ou um software. Uma vez terminado, você pode usar sua nova criação como RESERVAS.<br>Seu projeto não precisa ser algo da lista de equipamentos, mas geralmente não pode ser tão impactante quanto um equipamento de mecha.",
+    "detail": "Descreva seu projeto",
     "table": {
       "detail": "Descreva seu projeto",
       "die": "1d20",
@@ -138,13 +138,13 @@
     "id": "dt_get_focused",
     "name": "Ficar Focado",
     "terse": "Pratique, aprenda, medite ou recorra a um mentor.",
-    "detail": "Quando você FICA FOCADO, concentra-se em aumentar suas próprias habilidades, treinamento e autoaperfeiçoamento. Você pode praticar, aprender, meditar ou recorrer a um mentor.<br>Nomeie o que deseja aprender ou melhorar (ex: um gatilho, técnica, assunto acadêmico ou idioma). O MJ dará ao seu piloto um novo gatilho +2 baseado na sua prática e treinamento. Por exemplo, o gatilho poderia ser +2 Jogar Xadrez ou +2 Dançar. Você também pode melhorar um gatilho de +2 para +4 ou de +4 para +6 ao realizar esta ação de recesso.<br>Esta ação pode ser usada para aprender coisas como pilotagem de naves, culinária, xadrez, boxe, história ou etiqueta. Geralmente deve ser uma perícia não marcial específica ou algo pessoal para o seu personagem."
+    "detail": "Quando você <b>FICA FOCADO</b>, concentra-se em aumentar suas próprias habilidades, treinamento e autoaperfeiçoamento. Você pode praticar, aprender, meditar ou recorrer a um mentor.<br>Nomeie o que deseja aprender ou melhorar (ex: um gatilho, técnica, assunto acadêmico ou idioma). O MJ dará ao seu piloto um novo gatilho +2 baseado na sua prática e treinamento. Por exemplo, o gatilho poderia ser +2 Jogar Xadrez ou +2 Dançar. Você também pode melhorar um gatilho de +2 para +4 ou de +4 para +6 ao realizar esta ação de recesso.<br>Esta ação pode ser usada para aprender coisas como pilotagem de naves, culinária, xadrez, boxe, história ou etiqueta. Geralmente deve ser uma perícia não marcial específica ou algo pessoal para o seu personagem."
   },
   {
     "id": "dt_get_organized",
     "name": "Organizar-se",
     "terse": "Inicie, gerencie ou melhore uma organização.",
-    "detail": "Quando você se ORGANIZA, inicia, gerencia ou melhora uma organização, negócio ou outro empreendimento.<br>Declare o propósito ou objetivo da sua organização e escolha um FOCO: militar, científico, acadêmico, criminoso, humanitário, industrial, entretenimento ou político. Ela começa com +2 em EFICIÊNCIA ou INFLUÊNCIA e +0 na outra, com um máximo de +6. <br/>EFICIÊNCIA determina quão efetivamente sua organização conduz atividades dentro do seu escopo (ex: uma organização militar com alta eficiência seria boa em combate). <br/>INFLUÊNCIA é seu tamanho, alcance, riqueza e reputação.<br>Quando sua organização auxilia diretamente em uma atividade, você pode adicionar sua EFICIÊNCIA ou INFLUÊNCIA como um bônus de estatística ao seu teste de perícia. EFICIÊNCIA é usada ao realizar atividades relacionadas ao FOCO da sua organização. INFLUÊNCIA é usada ao adquirir ativos, criar oportunidades ou influenciar a opinião pública. Vantagens ganhas com a ajuda de sua organização podem ser usadas como RESERVAS.",
+    "detail": "Você deve rolar pela sua organização a cada recesso após iniciar uma, mas a rolagem não conta como uma ação de recesso.",
     "table": {
       "detail": "Você deve rolar pela sua organização a cada recesso após iniciar uma, mas a rolagem não conta como uma ação de recesso.",
       "die": "1d20",
@@ -171,13 +171,13 @@
     "id": "dt_power_at_a_cost",
     "name": "Poder a um Custo",
     "terse": "Ganhe recompensas, oportunidades ou recursos.",
-    "detail": "Quando você busca PODER A UM CUSTO, está tentando colocar as mãos em algo.<br />Nomeie o que você quer. Você definitivamente conseguirá, mas dependendo do quão extravagante for o pedido, o MJ escolhe um ou dois: <ul> <li>Vai levar muito mais tempo do que você pensava.</li> <li>Vai ser perigoso pra caramba.</li> <li>Você terá que abrir mão de algo ou deixar algo para trás (ex: riqueza, recursos, aliados).</li> <li>Você vai irritar alguém ou algo importante e poderoso.</li> <li>As coisas vão sair totalmente do plano.</li> <li>Você precisará de mais informações para prosseguir com segurança.</li> <li>Isso vai desmoronar muito em breve.</li> <li>Você precisará de mais recursos, mas sabe onde encontrá-los.</li> <li>Você consegue algo quase certo: uma versão menor, ou menos disso.</li> </ul> Esta é uma maneira direta de adquirir RESERVAS, oportunidades e recursos adicionais. Você pode querer algo diretamente útil para uma missão; algo mais abstrato, como tempo, segurança, informação, aliados ou apoio; algo prático, como uma base de operações, materiais, abrigo ou comida; ou até mesmo algo tão simples quanto um maldito maço de cigarros.<br />Você também pode usar PODER A UM CUSTO durante missões para efeitos semelhantes. Outras ações de recesso geralmente não podem ser usadas durante missões, mas seu grupo pode adaptá-las se desejar."
+    "detail": "Quando você busca <b>PODER</b> A UM <b>CUSTO</b>, está tentando colocar as mãos em algo.<br />Nomeie o que você quer. Você definitivamente conseguirá, mas dependendo do quão extravagante for o pedido, o MJ escolhe um ou dois: <ul> <ul><li>Vai levar muito mais tempo do que você pensava.</li></ul> <ul><li>Vai ser perigoso pra caramba.</li></ul> <ul><li>Você terá que abrir mão de algo ou deixar algo para trás (ex: riqueza, recursos, aliados).</li></ul> <ul><li>Você vai irritar alguém ou algo importante e poderoso.</li></ul> <ul><li>As coisas vão sair totalmente do plano.</li></ul> <ul><li>Você precisará de mais informações para prosseguir com segurança.</li></ul> <ul><li>Isso vai desmoronar muito em breve.</li></ul> <ul><li>Você precisará de mais recursos, mas sabe onde encontrá-los.</li></ul> <ul><li>Você consegue algo quase certo: uma versão menor, ou menos disso.</li></ul> </ul> Esta é uma maneira direta de adquirir <b>RESERVAS</b>, oportunidades e recursos adicionais. Você pode querer algo diretamente útil para uma missão; algo mais abstrato, como tempo, segurança, informação, aliados ou apoio; algo prático, como uma base de operações, materiais, abrigo ou comida; ou até mesmo algo tão simples quanto um maldito maço de cigarros.<br />Você também pode usar <b>PODER</b> A UM <b>CUSTO</b> durante missões para efeitos semelhantes. Outras ações de recesso geralmente não podem ser usadas durante missões, mas seu grupo pode adaptá-las se desejar."
   },
   {
     "id": "dt_scrounge_and_barter",
     "name": "Pechinchar e Barganhar",
     "terse": "Tente colocar as mãos em algum equipamento ou ativo.",
-    "detail": "Quando você PECHINCHA E BARGANHA, tenta colocar as mãos em algum equipamento ou ativo vasculhando o ferro-velho, perseguindo rumores, barganhando no mercado local ou caçando por aí.<br>Você pode querer algum equipamento de piloto melhor, um veículo, narcóticos, mercadorias ou outros itens diversos. Precisa ser algo físico, mas não necessariamente precisa estar na lista de equipamentos. Se conseguir, você pode levá-lo na próxima missão como RESERVAS.",
+    "detail": "Nomeie o que você quer e role",
     "table": {
       "detail": "Nomeie o que você quer e role",
       "die": "1d20",

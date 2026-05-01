@@ -3,14 +3,14 @@
     "id": "missing_corebonus",
     "name": "PONTOS DE FIXAÇÃO AUTOESTABILIZANTES",
     "source": "",
-    "effect": "Escolha um encaixe. As armas anexadas a ele recebem +1 de PRECISÃO.",
+    "effect": "Escolha um encaixe. As armas anexadas a ele recebem +1 de <b>PRECISÃO</b>.",
     "description": "Usando o melhor em absorção de choque e tecnologia de estabilização, você pode manter a precisão em tiros por períodos mais longos e sustentados."
   },
   {
     "id": "cb_auto_stabilizing_hardpoints",
     "name": "PONTOS DE FIXAÇÃO AUTOESTABILIZANTES",
     "source": "GMS",
-    "effect": "Escolha um encaixe. As armas anexadas a ele recebem +1 de PRECISÃO.",
+    "effect": "Escolha um encaixe. As armas anexadas a ele recebem +1 de <b>PRECISÃO</b>.",
     "description": "Usando o melhor em absorção de choque e tecnologia de estabilização, você pode manter a precisão em tiros por períodos mais longos e sustentados.",
     "mounted_effect": "Ataques feitos com armas deste encaixe podem ser feitos com +1 de PRECISÃO."
   },
@@ -48,21 +48,21 @@
     "id": "cb_universal_compatibility",
     "name": "COMPATIBILIDADE UNIVERSAL",
     "source": "GMS",
-    "effect": "Sempre que gastar PN para ativar um Sistema de Núcleo, você também pode realizar uma ação livre para restaurar todos os PV, resfriar todo o Calor e rolar 1d20: em 20, recupere 1 PN.",
+    "effect": "Sempre que gastar PN para ativar um Sistema de Núcleo, você também pode realizar uma ação livre para restaurar todos os PV, resfriar todo o <b>CALOR</b> e rolar 1d20: em 20, recupere 1 PN.",
     "description": "O Evereste está em todo lugar: assim como as peças que você precisa para um reparo em campo."
   },
   {
     "id": "cb_briareos_frame",
     "name": "CHASSI BRIÁREOS",
     "source": "IPS-N",
-    "effect": "Enquanto seu mecha não tiver mais do que 1 de Estrutura, você adquire Resistência a todo tipo de dano. Quando é reduzido a 0 PV e 0 de Estrutura, ele não é destruído: em vez disso, você deve fazer um teste de dano de estrutura sempre que sofrer dano. Enquanto estiver nesse estado, seu mecha não pode recuperar PV até que você descanse ou execute um Reparo Completo, momento em que seu mecha pode ser reparado normalmente.",
+    "effect": "Enquanto seu mecha não tiver mais do que 1 de <b>ESTRUTURA</b>, você adquire Resistência a todo tipo de dano. Quando é reduzido a 0 PV e 0 de <b>ESTRUTURA</b>, ele não é destruído: em vez disso, você deve fazer um teste de dano de <b>ESTRUTURA</b> sempre que sofrer dano. Enquanto estiver nesse estado, seu mecha não pode recuperar PV até que você descanse ou execute um <b>REPARO</b> Completo, momento em que seu mecha pode ser reparado normalmente.",
     "description": "O Briáreos é o mais novo lançamento na linha EIP-EN de atualizações de chassis quase à prova de falhas: modelos projetados para maximizar a usabilidade de um mecha antes de uma falha catastrófica ou da necessidade de uma reimpressão. O modelo Briáreos aumenta a resiliência dos componentes inorgânicos, complementando a estrutura com um chassi superleve com camadas entrelaçadas da icônica Malha Golias da EIP-EN."
   },
   {
     "id": "cb_fomorian_frame",
     "name": "CHASSI FOMORIANO",
     "source": "IPS-N",
-    "effect": "Aumente o Tamanho do seu mecha em um incremento (por exemplo, de 1/2 para 1, 1 para 2 ou 2 para 3) até um máximo de Tamanho 3. Você não pode ser Prostrado, puxado ou repelido por personagens menores, independentemente de qual sistema ou arma cause o efeito.",
+    "effect": "Aumente o <b>TAMANHO</b> do seu mecha em um incremento (por exemplo, de 1/2 para 1, 1 para 2 ou 2 para 3) até um máximo de <b>TAMANHO</b> 3. Você não pode ser <b>PROSTRADO</b>, puxado ou repelido por personagens menores, independentemente de qual sistema ou arma cause o efeito.",
     "description": "O Fomorian é uma versão aprimorada do modelo de estoque EIP-EN que foi adaptado para atender às necessidades dos cosmopolitas de longa distância que procuram estabilidade aprimorada e proteção robusta contra impactos, tanto no nível micro quanto no macro.",
     "bonuses": [
       {
@@ -75,7 +75,7 @@
     "id": "cb_gyges_frame",
     "name": "CHASSI GIGES",
     "source": "IPS-N",
-    "effect": "Você recebe +1 de PRECISÃO em todos os testes e salvamentos de Casco e +1 de Ameaça com todas as armas corpo a corpo.",
+    "effect": "Você recebe +1 de <b>PRECISÃO</b> em todos os testes e salvamentos de Casco e +1 de <b>AMEAÇA</b> com todas as armas corpo a corpo.",
     "description": "Um mecha construído na estrutura Giges é projetado para combate — aprimorado com estabilizadores finamente ajustados e uma robusta composição de software e hardware de mira.",
     "bonuses": [
       {
@@ -115,7 +115,7 @@
     "id": "cb_sloped_plating",
     "name": "PLACAS INCLINADAS",
     "source": "IPS-N",
-    "effect": "Você adquire +1 de Armadura, até o máximo de (+4).",
+    "effect": "Você adquire +1 de <b>ARMADURA</b>, até o máximo de (+4).",
     "description": "Uma escolha comum entre pilotos com as licenças adequadas, a fabricação de armaduras integradas da EIP-EN reduz significativamente os espaços na cobertura externa.",
     "bonuses": [
       {
@@ -144,7 +144,7 @@
     "id": "cb_all_theater_movement_suite",
     "name": "CONJUNTO PARA MOVIMENTO EM QUALQUER SITUAÇÃO",
     "source": "SSC",
-    "effect": "Você pode optar por contar todo o seu movimento como voo; no entanto, você sofre 1 de Calor no final de cada um dos seus turnos em que voar dessa maneira.",
+    "effect": "Você pode optar por contar todo o seu movimento como voo; no entanto, você sofre 1 de <b>CALOR</b> no final de cada um dos seus turnos em que voar dessa maneira.",
     "description": "Uma modificação popular, o CMQS adiciona jatos de pulso poderosos que melhoram dramaticamente a mobilidade do mecha em qualquer situação.",
     "synergies": [
       {
@@ -159,7 +159,7 @@
     "id": "cb_full_subjectivity_sync",
     "name": "SINCRONIZAÇÃO TOTAL DA SUBJETIVIDADE",
     "source": "SSC",
-    "effect": "Você adquire +2 de Evasão.",
+    "effect": "Você adquire +2 de <b>EVASÃO</b>.",
     "description": "Ao criar uma ponte ontológica estável de mão dupla, a SSC eliminou a necessidade de que os pilotos dependam apenas de controles físicos para pilotar seus mechas. Usando uma sincronização completa de subjetividade, os pilotos percebem seu mecha como seu próprio corpo e o controlam através de impulsos neurais; a sensibilidade de retorno somatossensorial também é traduzida para o piloto, portanto, é aconselhável cautela, apesar dos padrões de amortecimento de nocicepção embutidos no sistema.",
     "bonuses": [
       {
@@ -195,7 +195,7 @@
     "id": "cb_kai_bioplating",
     "name": "BIOBLINDAGEM KAI",
     "source": "SSC",
-    "effect": "Você recebe +1 de PRECISÃO em todos os testes e salvamentos de Agilidade; além disso, você escala e nada na velocidade normal, ignora terreno difícil e, ao realizar o movimento padrão, pode saltar horizontalmente até sua Velocidade completa e verticalmente até metade da sua Velocidade (ou qualquer combinação dos dois).",
+    "effect": "Você recebe +1 de <b>PRECISÃO</b> em todos os testes e salvamentos de Agilidade; além disso, você escala e nada na <b>VELOCIDADE</b> normal, ignora terreno difícil e, ao realizar o movimento padrão, pode saltar horizontalmente até sua <b>VELOCIDADE</b> completa e verticalmente até metade da sua <b>VELOCIDADE</b> (ou qualquer combinação dos dois).",
     "description": "Adaptado da fauna local do sistema de origem da SSC, a Bioblindagem Kai adiciona uma camada lamelar de revestimento isolado, ancorado e quitinoso sobre pontos-chave do mecha. Essencialmente uma alternativa mais barata e viável ao metal vivo, a bioblindagem permite um movimento mais rápido através de terrenos difíceis de navegar.",
     "synergies": [
       {
@@ -216,7 +216,7 @@
     "id": "cb_neurolink_targeting",
     "name": "MIRA POR LINK NEURAL",
     "source": "SSC",
-    "effect": "Suas armas à distância recebem +3 de Alcance",
+    "effect": "Suas armas à distância recebem +3 de <b>ALCANCE</b>",
     "description": "Para reduzir ainda mais a lacuna de informações entre piloto e máquina e complementar sua tecnologia de sincronização total de subjetividade, a SSC desenvolveu o link neural, uma ponte ontológica estável, não invasiva e de transferência limitada. A mira por link neural é um aprimoramento simples que ajuda os pilotos a sentir — em vez de pensar — quando se envolvem em combate à distância, permitindo uma expressão mais natural da habilidade do piloto.",
     "bonuses": [
       {
@@ -232,7 +232,7 @@
     "id": "cb_the_lesson_of_disbelief",
     "name": "A LIÇÃO DA DESCRENÇA",
     "source": "HORUS",
-    "effect": "Você recebe +1 de PRECISÃO em testes e salvamentos de Sistemas e +2 em Defesa-E.",
+    "effect": "Você recebe +1 de <b>PRECISÃO</b> em testes e salvamentos de Sistemas e +2 em <b>DEFESA-E</b>.",
     "description": "Pesquise na omninet, aprofunde-se nos arquivos. Encontre a Eneida, encontre a era da Titanomaquia. Coma, absorva, reflita. Conte-me agora sobre os Hecatônquiros, os de cem mãos. Eles desferiram o golpe contra Cronos — Saturno — ou atacaram os Olimpianos? Em quem você acredita? Quem impediu a Besta de contar sua própria história? E por quê?<br>— \"Lição Um\", As Seis Lições de Kilo Nueve.",
     "bonuses": [
       {
@@ -253,7 +253,7 @@
     "id": "cb_the_lesson_of_the_open_door",
     "name": "A LIÇÃO DA PORTA ABERTA",
     "source": "HORUS",
-    "effect": "Seu Valor de Salvamento aumenta em +2; além disso, 1/rodada, quando um personagem falhar em um salvamento contra você, ele sofre 2 de Calor.",
+    "effect": "Seu Valor de Salvamento aumenta em +2; além disso, 1/rodada, quando um personagem falhar em um salvamento contra você, ele sofre 2 de <b>CALOR</b>.",
     "description": "Há um corpo e um poço profundo, e ambos se chamam Tártaro. Uma vez ele abrigou reis, titãs e mitos. Agora, os portões que o mantinham aprisionado estão abertos e o Tártaro está livre. Aqui está a terrível pergunta: quem o abriu e por quê?<br>— \"Lição Dois\", As Seis Lições de Kilo Nueve.",
     "bonuses": [
       {
@@ -266,7 +266,7 @@
     "id": "cb_the_lesson_of_the_held_image",
     "name": "A LIÇÃO DA IMAGEM RETIDA",
     "source": "HORUS",
-    "effect": "1/rodada, como uma reação no início do turno de um personagem aliado, você pode usar uma ação de programar para Travar Mira em um personagem na linha de visão e ao alcance dos Sensores.",
+    "effect": "1/rodada, como uma reação no início do turno de um personagem aliado, você pode usar uma ação de programar para Travar Mira em um personagem na <b>LINHA</b> de visão e ao <b>ALCANCE</b> dos <b>SENSORES</b>.",
     "description": "Feche os olhos. Mantenha a imagem do seu inimigo em sua mente; imagine-a em todas as luzes e de todos os ângulos. Em sua mente, ela se tornou uma versão mais perfeita. Esmague-a em sua mente e mate a coisa perfeita. Abra os olhos.<br>— \"Lição Três\", As Seis Lições de Kilo Nueve.",
     "actions": [
       {
@@ -274,7 +274,7 @@
         "activation": "Reaction",
         "frequency": "1/round",
         "trigger": "Qualquer personagem aliado começa seu turno",
-        "detail": "Realize uma ação tecnológica de TRAVAR MIRA contra qualquer personagem na linha de visão e ao alcance dos SENSORES."
+        "detail": "Realize uma ação tecnológica de <b>TRAVAR MIRA</b> contra qualquer personagem na <b>LINHA</b> de visão e ao <b>ALCANCE</b> dos <b>SENSORES</b>."
       }
     ]
   },
@@ -282,7 +282,7 @@
     "id": "cb_the_lesson_of_thinking_tomorrows_thought",
     "name": "A LIÇÃO DO PENSAR O PENSAMENTO DO AMANHÃ",
     "source": "HORUS",
-    "effect": "Quando você acertar com um ataque tecnológico, seu próximo ataque corpo a corpo contra o mesmo alvo recebe +1 de PRECISÃO, e seu dano não pode ser reduzido de nenhuma forma.",
+    "effect": "Quando você acertar com um ataque tecnológico, seu próximo ataque corpo a corpo contra o mesmo alvo recebe +1 de <b>PRECISÃO</b>, e seu dano não pode ser reduzido de nenhuma forma.",
     "description": "Deixe-me dar-lhe esta lição: a existência corpórea é uma que deve terminar na morte. A existência incorpórea é uma que [deve] acabar em [cascata? você realmente acredita nisso?]. Digo-lhe novamente, se você pode imaginar, já está [feito] e você já deu o golpe final.<br>— \"Lição Quatro\", As Seis Lições de Kilo Nueve.",
     "synergies": [
       {
@@ -297,7 +297,7 @@
     "id": "cb_the_lesson_of_transubstantiation",
     "name": "A LIÇÃO DA TRANSUBSTANCIAÇÃO",
     "source": "HORUS",
-    "effect": "Sempre que sofrer dano de estrutura, você desaparece em um espaço não existente e deixa de ser um alvo válido. Você reaparece no mesmo espaço no início do seu próximo turno. Se esse espaço estiver ocupado, você reaparece no espaço livre mais próximo (escolhido por você).",
+    "effect": "Sempre que sofrer dano de <b>ESTRUTURA</b>, você desaparece em um espaço não existente e deixa de ser um alvo válido. Você reaparece no mesmo espaço no início do seu próximo turno. Se esse espaço estiver ocupado, você reaparece no espaço livre mais próximo (escolhido por você).",
     "description": "Por meio da repetição do estado de êxtase, você pode ver o rosto de Deus. Fale até que sua língua seque e se transforme em pó, e seu corpo se torne nada. Quando você não é nada e o vento o leva, você está em todas as coisas, jamais a ser destruído, apenas dividido, até o fim dos tempos.<br>— \"Lição Cinco\", As Seis Lições de Kilo Nueve."
   },
   {
@@ -317,14 +317,14 @@
     "id": "cb_adaptive_reactor",
     "name": "Reator Adaptativo",
     "source": "HA",
-    "effect": "Quando Estabilizar e escolher resfriar seu mecha, você pode gastar 2 de Reparo para remover 1 de dano de estresse.",
+    "effect": "Quando Estabilizar e escolher resfriar seu mecha, você pode gastar 2 de <b>REPARO</b> para remover 1 de dano de <b>ESTRESSE</b>.",
     "description": "Todos os chassis da Arsenal são projetados com múltiplos sistemas redundantes, mas clientes VIP e cidadãos de alto nível possuem acesso a um catálogo especial. Com dezenas de opções para reatores super dimensionados, é fácil garantir que um mecha possa continuar funcionando indefinidamente."
   },
   {
     "id": "cb_armory_sculpted_chassis",
     "name": "Chassi Esculpido pela Arsenal",
     "source": "HA",
-    "effect": "Você recebe +1 de PRECISÃO em todos os testes e salvamentos de Engenharia. Quando Sobrecarregar, você obtém cobertura leve até o início do seu próximo turno.",
+    "effect": "Você recebe +1 de <b>PRECISÃO</b> em todos os testes e salvamentos de Engenharia. Quando Sobrecarregar, você obtém cobertura leve até o início do seu próximo turno.",
     "description": "Qualquer um pode imprimir um chassi padrão, dependendo de uma seção de código genérico para mantê-lo vivo. O piloto sagaz, por outro lado, aceita apenas o melhor: um chassi projetado, testado e refinado por um dos melhores mestres fabricantes da Arsenal.",
     "synergies": [
       {
@@ -376,14 +376,14 @@
     "id": "cb_stasis_shielding",
     "name": "Proteção de Estase",
     "source": "HA",
-    "effect": "Sempre que sofrer dano de estresse, você adquire Resistência a todo dano até o início do seu próximo turno.",
+    "effect": "Sempre que sofrer dano de <b>ESTRESSE</b>, você adquire Resistência a todo dano até o início do seu próximo turno.",
     "description": "Um exercício de Ideário para estender a estase além das capacidades de utilização civil, a proteção de estase da Arsenal Harrison ativamente identifica sistemas inorgânicos criticamente estressados e os cobre em estase “seguradora” não modulada, prevenindo degradação adicional por um tempo limitado até que reparos possam ser feitos."
   },
   {
     "id": "cb_superior_by_design",
     "name": "Superior por Design",
     "source": "HA",
-    "effect": "Você adquire Imunidade a Impedido e +2 de Cap. de Calor",
+    "effect": "Você adquire Imunidade a <b>IMPEDIDO</b> e +2 de Cap. de <b>CALOR</b>",
     "description": "Até os chassis de entrada da Arsenal almejam superar a concorrência. Graças aos incríveis recursos que eles possuem à sua disposição, a Arsenal Harrison pode superar quase qualquer fabricante ou engenheiro de butique menor em projeto e produção. Onde a resistência é encontrada, a resposta é simples: compre-os ou elimine-os. Os clientes valorosos da Arsenal se beneficiam dessa filosofia de “Superior por Design”, então por que deveriam se preocupar?",
     "bonuses": [
       {

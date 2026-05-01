@@ -1615,7 +1615,7 @@
     "ranks": [
       {
         "name": "Armamento",
-        "description": "Você carrega um suprimento de munição personalizada que pode ser usada com todas as suas armas à distância PRINCIPAIS. Adquira o sistema Caixa de Munição.<br> Uma vez por turno, ao atacar com uma arma à distância PRINCIPAL, você pode gastar uma carga para aplicar um dos seguintes efeitos ao seu ataque: <ul><li> BATEDOR: O ataque recebe REPELIR 1 e causa dano Explosivo.</li><li>CHOQUE: O ataque causa dano Energético. Escolha um personagem visado pelo seu ataque; personagens adjacentes sofrem 1 de Dano Energético PF, independentemente de o resultado ser um acerto ou um erro.</li><li>MAGNÃ‰TICA: O ataque recebe ARCO e causa dano Cinético.</li></ul>",
+        "description": "Você carrega um suprimento de munição personalizada que pode ser usada com todas as suas armas à distância PRINCIPAIS. Adquira o sistema Caixa de Munição.<br> Uma vez por turno, ao atacar com uma arma à distância PRINCIPAL, você pode gastar uma carga para aplicar um dos seguintes efeitos ao seu ataque: <ul><li> BATEDOR: O ataque recebe REPELIR 1 e causa dano Explosivo.</li><li>CHOQUE: O ataque causa dano Energético. Escolha um personagem visado pelo seu ataque; personagens adjacentes sofrem 1 de Dano Energético PF, independentemente de o resultado ser um acerto ou um erro.</li><li>MAGNÉTICA: O ataque recebe ARCO e causa dano Cinético.</li></ul>",
         "integrated": [
           "ms_walking_armory_1"
         ],

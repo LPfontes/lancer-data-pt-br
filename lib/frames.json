@@ -66,7 +66,7 @@
           "name": "Impulsionar (Injetor de Combustível Hiperespec)",
           "activation": "Free",
           "trigger": "1/turn",
-          "detail": "Você pode IMPULSIONAR como uma ação livre."
+          "detail": "Você pode <b>IMPULSIONAR</b> como uma ação livre."
         }
       ],
       "active_bonuses": [
@@ -126,13 +126,13 @@
           {
             "name": "Arpeu",
             "condition": "Você agarra com sucesso um alvo em Alcance 5.",
-            "detail": "Você é puxado para adjacente ao seu alvo pelo caminho mais direto. Se não houver espaços adequados, o agarrão quebra e você não se move."
+            "detail": "O Barba Negra pode <b>AGARRAR</b> alvos dentro de <b>ALCANCE</b> 5. Se o <b>AGARRÃO</b> for bem-sucedido, o Barba Negra é imediatamente puxado para um espaço adjacente ao alvo pelo caminho mais direto. Se não houver espaços adequados, o agarrão se quebra e o Barba Negra não se move."
           }
         ],
         "active_effects": [
           {
             "name": "Arpeu",
-            "detail": "Você pode AGARRAR alvos dentro do Alcance 5. Se o Agarrão for bem-sucedido, você é imediatamente puxado para adjacente ao alvo pelo caminho mais direto. Se não houver espaços adequados, o agarrão quebra e você não se move."
+            "detail": "O Barba Negra pode <b>AGARRAR</b> alvos dentro de <b>ALCANCE</b> 5. Se o <b>AGARRÃO</b> for bem-sucedido, o Barba Negra é imediatamente puxado para um espaço adjacente ao alvo pelo caminho mais direto. Se não houver espaços adequados, o agarrão se quebra e o Barba Negra não se move."
           }
         ],
         "synergies": [
@@ -150,7 +150,7 @@
         "active_effects": [
           {
             "name": "Subsistema de Trava/Abate",
-            "detail": "Enquanto agarra, o Barba Negra pode IMPULSIONAR e usar reações."
+            "detail": "Enquanto agarra, o Barba Negra pode <b>IMPULSIONAR</b> e usar reações."
           }
         ]
       },
@@ -177,7 +177,7 @@
           "name": "Omniarpão",
           "activation": "Quick",
           "trigger": "Você dispara arpões de amarração em qualquer número de alvos dentro do Alcance 5 e linha de visão.",
-          "detail": "Personagens afetados devem ser bem-sucedidos em um salvamento de CASCO ou sofrer 2d6 de dano Cinético e ser derrubados PROSTRADOS, e então puxados para adjacente a você, ou o mais próximo possível. Eles ficam IMOBILIZADOS até o final de seus próximos turnos.",
+          "detail": "Personagens afetados devem ser bem-sucedidos em um salvamento de <b>CASCO</b> ou sofrer 2d6 de <b>DANO CINÉTICO</b> e ser derrubados <b>PROSTRADOS</b>, e então puxados para adjacente a você, ou o mais próximo possível. Eles ficam <b>IMOBILIZADOS</b> até o final de seus próximos turnos.",
           "range": [
             {
               "type": "Burst",
@@ -250,7 +250,7 @@
         "active_effects": [
           {
             "name": "Chassi Pesado",
-            "detail": "Você não pode ser empurrado, puxado, derrubado PROSTRADO ou repelido por personagens menores.",
+            "detail": "Você não pode ser empurrado, puxado, derrubado <b>PROSTRADO</b> ou repelido por personagens menores.",
             "add_status": [
               {
                 "id": "immunity",
@@ -314,7 +314,7 @@
       "active_effects": [
         {
           "name": "Protocolo Fortaleza",
-          "detail": "Você se beneficia de cobertura pesada, mesmo a céu aberto, e ganha Imunidade a Repulsão, PROSTRADO, e todo movimento involuntário.",
+          "detail": "Quando você <b>SUPORTAR</b>, você pode realizar uma ação completa no seu próximo turno em vez de apenas uma ação rápida.",
           "add_resist": [
             {
               "immunity": "prone",
@@ -343,11 +343,11 @@
         },
         {
           "name": "Protocolo Fortaleza",
-          "detail": "Qualquer personagem que ganhar cobertura pesada de você ou de suas seções de cobertura ganha Imunidade a Repulsão, PROSTRADO e todo movimento involuntário, e ganha os benefícios da Blindagem contra Explosão."
+          "detail": "Quando você <b>SUPORTAR</b>, você pode realizar uma ação completa no seu próximo turno em vez de apenas uma ação rápida."
         },
         {
           "name": "Protocolo Fortaleza",
-          "detail": "Quando você SUPORTAR, você pode realizar uma ação completa no seu próximo turno em vez de apenas uma ação rápida."
+          "detail": "Quando você <b>SUPORTAR</b>, você pode realizar uma ação completa no seu próximo turno em vez de apenas uma ação rápida."
         }
       ],
       "active_synergies": [
@@ -412,7 +412,7 @@
           {
             "name": "Reparo de Combate",
             "activation": "Full",
-            "detail": "Use 4 REPAROS para reparar um mecha destruído como uma ação completa, retornando-o a 1 de ESTRUTURA, 1 de ESTRESSE e 1 PV."
+            "detail": "Use 4 <b>REPAROS</b> para reparar um mecha destruído como uma ação completa, retornando-o a 1 de <b>ESTRUTURA</b>, 1 de <b>ESTRESSE</b> e 1 PV."
           }
         ]
       },
@@ -422,7 +422,7 @@
         "active_effects": [
           {
             "name": "Sistemas Redundantes",
-            "detail": "Outros personagens adjacentes ao seu Lancaster podem gastar os REPAROS dele como se fossem seus próprios."
+            "detail": "Outros personagens adjacentes ao seu Lancaster podem gastar os <b>REPAROS</b> dele como se fossem seus próprios."
           }
         ]
       }
@@ -435,7 +435,7 @@
       "active_effects": [
         {
           "name": "Supercompressor",
-          "detail": "Seu alvo ganha +1 de PRECISÃO em todos os ataques, testes e salvamentos, e Imunidade às condições IMPEDIDO, TRAVADO EM MIRA, LENTO, DILACERADO e IMOBILIZADO de personagens que não sejam ele próprio. Esse efeito termina quando você for atordoado, e só pode ser aplicado em um alvo por vez.",
+          "detail": "Seu alvo ganha +1 de <b>PRECISÃO</b> em todos os ataques, testes e salvamentos, e Imunidade às condições <b>IMPEDIDO</b>, <b>TRAVADO</b> EM <b>MIRA</b>, <b>LENTO</b>, <b>DILACERADO</b> e <b>IMOBILIZADO</b> de personagens que não sejam ele próprio. Esse efeito termina quando você for <b>ATORDOADO</b>, e só pode ser aplicado em um alvo por vez.",
           "duration": "next_turn_start_self",
           "add_status": [
             {
@@ -513,7 +513,7 @@
             "name": "Ímpeto",
             "frequency": "1/round",
             "condition": "Após você IMPULSIONAR",
-            "detail": "Seu próximo ataque corpo a corpo causa +1d6 de dano bônus no acerto.",
+            "detail": "1/rodada, após <b>IMPULSIONAR</b>, o próximo ataque corpo a corpo do Nelson causa +1d6 de dano bônus ao acertar.",
             "bonus_damage": {
               "detail": "+1d6 de dano bônus no acerto após você IMPULSIONAR, uma vez por rodada como uma Ação Livre.",
               "val": "1d6",
@@ -540,7 +540,7 @@
             "name": "Escaramuçador",
             "activation": "Free",
             "trigger": "Imediatamente após atacar",
-            "detail": "Mova 1 espaço em qualquer direção, desde que não esteja IMOBILIZADO ou LENTO. Este movimento ignora engajamento e não provoca reações."
+            "detail": "Mova 1 espaço em qualquer direção, desde que não esteja <b>IMOBILIZADO</b> ou <b>LENTO</b>. Este movimento ignora engajamento e não provoca reações."
           }
         ]
       }
@@ -555,7 +555,7 @@
           "name": "Escaramuçador Potencializado",
           "activation": "Free",
           "trigger": "Imediatamente após atacar",
-          "detail": "Mova 4 espaços em qualquer direção, desde que não esteja IMOBILIZADO ou LENTO. Este movimento ignora engajamento e não provoca reações."
+          "detail": "Mova 4 espaços em qualquer direção, desde que não esteja <b>IMOBILIZADO</b> ou <b>LENTO</b>. Este movimento ignora engajamento e não provoca reações."
         }
       ],
       "use": "Encounter",
@@ -673,7 +673,7 @@
         "active_effects": [
           {
             "name": "Sentinela",
-            "detail": "Você ganha +1 de PRECISÃO em todos os ataques feitos como reações (ex: RETALIAR).",
+            "detail": "Você ganha +1 de <b>PRECISÃO</b> em todos os ataques feitos como reações (ex: <b>RETALIAR</b>).",
             "condition": "Você faz um ataque como reação"
           }
         ]
@@ -703,12 +703,12 @@
       "active_effects": [
         {
           "name": "Retaliar Hiper-Reflexo",
-          "detail": "1/rodada, você pode realizar uma reação de RETALIAR adicional.",
+          "detail": "1/rodada, você pode realizar uma reação de <b>RETALIAR</b> adicional.",
           "frequency": "1/round"
         },
         {
           "name": "Imobilizar Hiper-Reflexo",
-          "detail": "Qualquer personagem que você acertar com RETALIAR fica IMOBILIZADO até o final do próximo turno dele.",
+          "detail": "Qualquer personagem que você acertar com <b>RETALIAR</b> fica <b>IMOBILIZADO</b> até o final do próximo turno dele.",
           "condition": "Você acerta um personagem com Retaliar",
           "add_status": [
             {
@@ -772,7 +772,7 @@
           {
             "name": "Desmembramento",
             "condition": "Você inflige IMOBILIZADO em outro personagem",
-            "detail": "Você imobiliza o alvo. O alvo também fica DILACERADO pela mesma duração.",
+            "detail": "Você imobiliza o alvo. O alvo também fica <b>DILACERADO</b> pela mesma duração.",
             "add_status": [
               {
                 "id": "shredded"
@@ -788,7 +788,7 @@
           {
             "name": "Blindagem Pícaro",
             "condition": "Um personagem em Alcance 3 ataca você",
-            "detail": "O atacante primeiro sofre 1 de dano cinético PA.",
+            "detail": "O atacante primeiro sofre 1 de <b>DANO CINÉTICO</b> PA.",
             "damage": [
               {
                 "val": 1,
@@ -814,11 +814,11 @@
       "active_effects": [
         {
           "name": "Resistência dos Espinhos Atormentadores",
-          "detail": "Você ganha RESISTÊNCIA a todo dano originado dentro do alcance 3."
+          "detail": "Você ganha <b>RESISTÊNCIA</b> a todo dano originado dentro do <b>ALCANCE</b> 3."
         },
         {
           "name": "Blindagem Pícaro (Espinhos Atormentadores)",
-          "detail": "A Blindagem Pícaro causa 3 de dano cinético (PA) em vez de 1.",
+          "detail": "A Blindagem Pícaro causa 3 de <b>DANO CINÉTICO</b> (PA) em vez de 1.",
           "condition": "Um personagem em Alcance 3 ataca você",
           "damage": [
             {
@@ -878,7 +878,7 @@
         "active_effects": [
           {
             "name": "Campo Repulsor",
-            "detail": "Você tem RESISTÊNCIA a Dano Cinético.",
+            "detail": "Você tem <b>RESISTÊNCIA</b> a <b>DANO CINÉTICO</b>.",
             "add_resist": [
               {
                 "resist": "Kinetic",
@@ -897,7 +897,7 @@
             "activation": "Reaction",
             "frequency": "1/round",
             "trigger": "Um ataque recebido causará Dano Cinético a você ou a um personagem aliado adjacente",
-            "detail": "Role 1d6: com 5+, o ataque erra. Este efeito não se acumula com INVISÍVEL."
+            "detail": "Role 1d6: com 5+, o ataque erra. Este efeito não se acumula com <b>INVISÍVEL</b>."
           }
         ]
       }
@@ -982,7 +982,7 @@
       "active_effects": [
         {
           "name": "Foco: Marcado para a Morte",
-          "detail": "Cause dano bônus ao seu alvo Marcado para a Morte com base no tamanho da arma (auxiliar: 1d6, principal: 2d6, pesada: 3d6, superpesada: 4d6). Este dano bônus não pode ser reduzido de forma alguma.",
+          "detail": "Cause dano bônus ao seu alvo Marcado para a Morte com base no <b>TAMANHO</b> da arma (auxiliar: 1d6, principal: 2d6, pesada: 3d6, superpesada: 4d6). Este dano bônus não pode ser reduzido de forma alguma.",
           "condition": "Você está focando em um alvo (Marcado para Morrer)"
         }
       ],
@@ -990,7 +990,7 @@
         {
           "name": "Marcar para Morrer",
           "activation": "Full",
-          "detail": "Escolha um personagem dentro de um alcance de 30, mas além do alcance 5, para focar; enquanto foca, você fica IMOBILIZADO e não pode usar reações, mas causa dano bônus com base no tamanho da arma (AUXILIAR: 1d6, PRINCIPAL: 2d6, PESADA ou maior: 3d6) em acertos críticos à distância contra ele, desde que ele não esteja em cobertura ou dentro do alcance 5.<br>Você só pode focar em um personagem por vez. Como um protocolo, você pode deixar de focar em um alvo.",
+          "detail": "Escolha um personagem dentro de um <b>ALCANCE</b> de 30, mas além do <b>ALCANCE</b> 5, para focar; enquanto foca, você fica <b>IMOBILIZADO</b> e não pode usar reações, mas causa dano bônus com base no <b>TAMANHO</b> da arma (<b>AUXILIAR</b>: 1d6, <b>PRINCIPAL</b>: 2d6, <b>PESADA</b> ou maior: 3d6) em acertos críticos à distância contra ele, desde que ele não esteja em cobertura ou dentro do <b>ALCANCE</b> 5.<br>Você só pode focar em um personagem por vez. Como um protocolo, você pode deixar de focar em um alvo.",
           "range": [
             {
               "type": "Burst",
@@ -1071,7 +1071,7 @@
           {
             "name": "Manto Arlequim",
             "condition": "Durante o seu turno",
-            "detail": "Durante seu turno, a Asa Crepuscular fica INVISÍVEL; ela reaparece no final do turno.",
+            "detail": "Durante seu turno, a Asa Crepuscular fica <b>INVISÍVEL</b>; ela reaparece no final do turno.",
             "add_status": [
               {
                 "id": "invisible",
@@ -1102,7 +1102,7 @@
         {
           "name": "Teleporte Holográfico",
           "activation": "Quick",
-          "detail": "Você pode se teletransportar instantaneamente para a localização de qualquer holograma dentro do alcance 50 como uma ação rápida. Ao fazer isso, todos os hologramas existentes detonam – criando explosões de ESTOURO 1 que causam 1d6 de Dano Energético (salvamento de AGILIDADE para metade) – e você não pode criar nenhum novo holograma até o início de seu próximo turno",
+          "detail": "Você pode se teletransportar instantaneamente para a localização de qualquer holograma dentro do <b>ALCANCE</b> 50 como uma ação rápida. Ao fazer isso, todos os hologramas existentes detonam – criando explosões de <b>ESTOURO</b> 1 que causam 1d6 de <b>DANO ENERGÉTICO</b> (salvamento de <b>AGILIDADE</b> para metade) – e você não pode criar nenhum novo holograma até o início de seu próximo turno",
           "damage": [
             {
               "val": "1d6",
@@ -1175,7 +1175,7 @@
           {
             "name": "Adaptação de Carapaça",
             "condition": "Você está em cobertura leve",
-            "detail": "Atacantes à distância sofrem +2 de Dificuldade em vez de +1 de Dificuldade."
+            "detail": "Atacantes à distância sofrem +2 de <b>DIFICULDADE</b> em vez de +1 de <b>DIFICULDADE</b>."
           }
         ]
       }
@@ -1244,7 +1244,7 @@
             "activation": "Reaction",
             "frequency": "1/round",
             "trigger": "Você acerta um golpe crítico com uma arma à distância.",
-            "detail": "Cause 3 de dano explosivo a um personagem diferente de sua escolha dentro do alcance 15 e da linha de visão.",
+            "detail": "Cause 3 de <b>DANO EXPLOSIVO</b> a um personagem diferente de sua escolha dentro do <b>ALCANCE</b> 15 e da <b>LINHA</b> de visão.",
             "damage": [
               {
                 "val": 3,
@@ -1288,7 +1288,7 @@
         {
           "name": "Punição Divina",
           "activation": "Full",
-          "detail": "Escolha qualquer número de personagens dentro do alcance 50: seus alvos devem ter sucesso em um salvamento de AGILIDADE ou sofrem 1d6+4 de dano explosivo. Em um sucesso, eles sofrem metade do dano. Estes mísseis autoguiados podem alcançar qualquer alvo, desde que haja um caminho para fazê-lo.",
+          "detail": "Escolha qualquer número de personagens dentro do <b>ALCANCE</b> 50: seus alvos devem ter sucesso em um salvamento de <b>AGILIDADE</b> ou sofrem 1d6+4 de <b>DANO EXPLOSIVO</b>. Em um sucesso, eles sofrem metade do dano. Estes mísseis autoguiados podem alcançar qualquer alvo, desde que haja um caminho para fazê-lo.",
           "damage": [
             {
               "val": "1d6+4",
@@ -1374,7 +1374,7 @@
       "active_effects": [
         {
           "name": "Estabilizar Singularidade",
-          "detail": "Você se teleporta ao IMPULSIONAR ou fazer um movimento padrão."
+          "detail": "Você se teleporta ao <b>IMPULSIONAR</b> ou fazer um movimento padrão."
         }
       ],
       "active_synergies": [
@@ -1393,7 +1393,7 @@
         {
           "name": "Salto de Lampejo",
           "activation": "Full",
-          "detail": "Você se teletransporta para um espaço a até Alcance 3d6. Você não precisa de linha de visão, mas tentativas de teletransporte para espaços ocupados fazem com que você permaneça estacionário e perca esta ação. Se rolar o mesmo número nos três dados, você desaparece até que seu grupo descanse, momento em que você reaparece nas proximidades."
+          "detail": "Você se teletransporta para um espaço a até <b>ALCANCE</b> 3d6. Você não precisa de <b>LINHA</b> de visão, mas tentativas de teletransporte para espaços ocupados fazem com que você permaneça estacionário e perca esta ação. Se rolar o mesmo número nos três dados, você desaparece até que seu grupo descanse, momento em que você reaparece nas proximidades."
         }
       ]
     },
@@ -1437,7 +1437,7 @@
         "active_effects": [
           {
             "name": "Manto Integrado",
-            "detail": "No final do seu turno, você se torna INVISÍVEL se não tiver se movido naquele turno. Isso termina imediatamente se você se mover ou realizar qualquer ação hostil.",
+            "detail": "No final do seu turno, você se torna <b>INVISÍVEL</b> se não tiver se movido naquele turno. Isso termina imediatamente se você se mover ou realizar qualquer ação hostil.",
             "condition": "Final do seu turno, se você não tiver se movido neste turno",
             "add_status": [
               {
@@ -1464,7 +1464,7 @@
                 "duration": "turn_end_target"
               }
             ],
-            "detail": "1/rodada, quando o Papilionídeo aplica Travado em Mira, o alvo também fica Dilacerado até o final do próximo turno dele."
+            "detail": "1/rodada, quando o Papilionídeo aplica <b>TRAVADO EM MIRA</b>, o alvo também fica Dilacerado até o final do próximo turno dele."
           }
         ],
         "use": "Rodada"
@@ -1552,7 +1552,7 @@
           {
             "name": "Regeneração",
             "condition": "Seu turno termina e você não sofreu dano de estresse ou estrutura desde o início do seu turno",
-            "detail": "Você recupera 1/4 do total de seus PV. Quando você sofrer dano de estresse ou estrutura, este efeito cessa até o final de seu próximo turno."
+            "detail": "Você recupera 1/4 do total de seus PV. Quando você sofrer dano de <b>ESTRESSE</b> ou <b>ESTRUTURA</b>, este efeito cessa até o final de seu próximo turno."
           }
         ]
       },
@@ -1569,7 +1569,7 @@
       "active_effects": [
         {
           "name": "Frenesi do Enxame",
-          "detail": "Seus nanitas entram em modo hiperativo, causando os seguintes efeitos até o final da cena: aliados adjacentes e você ganham cobertura leve; Enxame Purificador causa 4 Cinético; Regeneração restaura 1/2; em dano de estrutura role 1d6, em 6 evite o dano e ganhe Imunidade a dano; você fica Dilacerado e não pode remover a condição pela duração.",
+          "detail": "Seus nanitas entram em modo hiperativo, causando os seguintes efeitos até o final da cena: aliados adjacentes e você ganham cobertura leve; Enxame Purificador causa 4 Cinético; Regeneração restaura 1/2; em dano de <b>ESTRUTURA</b> role 1d6, em 6 evite o dano e ganhe Imunidade a dano; você fica Dilacerado e não pode remover a condição pela duração.",
           "add_status": [
             {
               "id": "shredded",
@@ -1707,7 +1707,7 @@
           {
             "name": "Paralisia Metastática",
             "condition": "Uma rolagem de ataque contra o Górgona resultar em 1 ou 2",
-            "detail": "O ataque erra automaticamente e o atacante fica Atordoado até o final do próximo turno dele.",
+            "detail": "O ataque erra automaticamente e o atacante fica <b>ATORDOADO</b> até o final do próximo turno dele.",
             "add_status": [
               {
                 "id": "stunned",
@@ -1753,7 +1753,7 @@
       "active_effects": [
         {
           "name": "Expelir Basilisco",
-          "detail": "Personagens hostis devem obter sucesso em um salvamento de Sistemas antes de atacar você ou qualquer aliado a até Alcance 3. Em caso de falha, o ataque erra automaticamente e eles ficam Atordoados até o final do próximo turno deles.",
+          "detail": "Personagens hostis devem obter sucesso em um salvamento de Sistemas antes de atacar você ou qualquer aliado a até <b>ALCANCE</b> 3. Em caso de falha, o ataque erra automaticamente e eles ficam Atordoados até o final do próximo turno deles.",
           "condition": "Você ou um personagem aliado adjacente é atacado por um personagem hostil em Alcance 3",
           "add_status": [
             {
@@ -1843,7 +1843,7 @@
         {
           "name": "Drone OROCHI Guardião",
           "type": "Drone",
-          "detail": "Este drone projeta um escudo. Ataques à distância contra personagens aliados adjacentes sofrem +1 de Dificuldade.",
+          "detail": "Este drone projeta um escudo. Ataques à distância contra personagens aliados adjacentes sofrem +1 de <b>DIFICULDADE</b>.",
           "activation": "Free",
           "recall": "Quick",
           "redeploy": "Quick",
@@ -1967,7 +1967,7 @@
         "active_effects": [
           {
             "name": "Casco de Escória",
-            "detail": "Você tem Resistência a Dano de Energia e Dano de Queimadura.",
+            "detail": "Você tem Resistência a Dano de Energia e Dano de <b>QUEIMADURA</b>.",
             "add_resist": [
               {
                 "resist": "energy",
@@ -1993,7 +1993,7 @@
             "name": "Castigue os Inimigos da Divindade",
             "activation": "Free",
             "trigger": "O Mantícora foi colocado em um instável Estado de Castigo durante um descanso ou Reparo Completo. Enquanto neste estado, ele é destruído por dano ou fusão de reator.",
-            "detail": "O Mantícora explode imediatamente quando for destruído devido a dano ou fusão de reator, vaporizando-o e matando instantaneamente você e quaisquer outros passageiros presentes. Personagens a até Emanação 2 devem obter sucesso em um salvamento de Agilidade ou sofrem 8d6 Explosivo. Em caso de sucesso, eles sofrem metade do dano.",
+            "detail": "O Mantícora explode imediatamente quando for destruído devido a dano ou fusão de reator, vaporizando-o e matando instantaneamente você e quaisquer outros passageiros presentes. Personagens a até <b>EMANAÇÃO</b> 2 devem obter sucesso em um salvamento de Agilidade ou sofrem 8d6 Explosivo. Em caso de sucesso, eles sofrem metade do dano.",
             "damage": [
               {
                 "val": "8d6",
@@ -2017,7 +2017,7 @@
       "active_effects": [
         {
           "name": "Destruição do Templo dos Inimigos de RÁ",
-          "detail": "Ganhe Resistência a Calor pelo restante da cena e um Dado de Energia — 1d6 — que começa em 1. Sempre que sofrer Calor ou Energia, inclusive de você mesmo, aumente o valor do Dado de Energia em 1. Quando o Dado de Energia atingir 6, a energia absorvida é descarregada em uma conflagração de Emanação 2. Personagens dentro da área afetada devem ser bem-sucedidos em um salvamento de Engenharia ou sofrem 6d6 de Energia(PA) (metade em um sucesso). Objetos na área afetada são automaticamente atingidos. Uma vez descarregado, esse efeito termina.",
+          "detail": "Ganhe Resistência a <b>CALOR</b> pelo restante da cena e um Dado de Energia — 1d6 — que começa em 1. Sempre que sofrer <b>CALOR</b> ou Energia, inclusive de você mesmo, aumente o valor do Dado de Energia em 1. Quando o Dado de Energia atingir 6, a energia absorvida é descarregada em uma conflagração de <b>EMANAÇÃO</b> 2. Personagens dentro da área afetada devem ser bem-sucedidos em um salvamento de Engenharia ou sofrem 6d6 de Energia(PA) (metade em um sucesso). Objetos na área afetada são automaticamente atingidos. Uma vez descarregado, esse efeito termina.",
           "add_resist": [
             {
               "resist": "heat",
@@ -2043,7 +2043,7 @@
           "name": "Exoesqueleto Energizado",
           "frequency": "1/round",
           "condition": "Você sofre Calor.",
-          "detail": "Você pode causar 2 de Energia(PA) a um personagem a até Alcance 3.",
+          "detail": "Você pode causar 2 de Energia(PA) a um personagem a até <b>ALCANCE</b> 3.",
           "damage": [
             {
               "val": 2,
@@ -2130,7 +2130,7 @@
         "active_effects": [
           {
             "name": "Labirinto Localizado",
-            "detail": "Personagens hostis não podem passar por um espaço ocupado por você por nenhum motivo, e devem sempre parar de se mover quando ficarem ENGAJADOS com você, independentemente do Tamanho."
+            "detail": "Personagens hostis não podem passar por um espaço ocupado por você por nenhum motivo, e devem sempre parar de se mover quando ficarem <b>ENGAJADOS</b> com você, independentemente do <b>TAMANHO</b>."
           }
         ]
       }
@@ -2143,7 +2143,7 @@
       "active_effects": [
         {
           "name": "Labirinto",
-          "detail": "Escolha um personagem dentro dos SENSORES: ele fica ATORDOADO enquanto você joga seus sistemas em uma armadilha de informações metafísica tão emaranhada que ele não pode fazer nada além de tentar escapar. No final do próximo turno dele, ele deve ser bem-sucedido em um salvamento de SISTEMAS ou continuar ATORDOADO. Ele pode repetir o salvamento ao final de cada turno.",
+          "detail": "Escolha um personagem dentro dos <b>SENSORES</b>: ele fica <b>ATORDOADO</b> enquanto você joga seus sistemas em uma armadilha de informações metafísica tão emaranhada que ele não pode fazer nada além de tentar escapar. No final do próximo turno dele, ele deve ser bem-sucedido em um salvamento de <b>SISTEMAS</b> ou continuar <b>ATORDOADO</b>. Ele pode repetir o salvamento ao final de cada turno.",
           "add_status": [
             {
               "id": "stunned",
@@ -2160,7 +2160,7 @@
           "name": "Labirinto de Metadobra",
           "activation": "Quick",
           "trigger": "Você acerta com um ataque tecnológico.",
-          "detail": "Quando acertar com um ataque tecnológico, você pode ativar este sistema, fazendo com que o alvo fique Lento até o final do seu próximo turno. Se ele já estiver Lento, fica Imobilizado até o final do seu próximo turno; se já estiver Imobilizado, ele fica Atordoado até o final do seu próximo turno. Cada personagem só pode ficar Atordoado por esse efeito uma vez por combate, mas pode ficar Lento ou Imobilizado qualquer quantidade de vezes.",
+          "detail": "Quando acertar com um ataque tecnológico, você pode ativar este sistema, fazendo com que o alvo fique <b>LENTO</b> até o final do seu próximo turno. Se ele já estiver <b>LENTO</b>, fica <b>IMOBILIZADO</b> até o final do seu próximo turno; se já estiver <b>IMOBILIZADO</b>, ele fica <b>ATORDOADO</b> até o final do seu próximo turno. Cada personagem só pode ficar <b>ATORDOADO</b> por esse efeito uma vez por combate, mas pode ficar <b>LENTO</b> ou <b>IMOBILIZADO</b> qualquer quantidade de vezes.",
           "add_status": [
             {
               "id": "slow",
@@ -2219,7 +2219,7 @@
         "active_effects": [
           {
             "name": "¿%:?EXPEL!R ARMA",
-            "detail": "ARMA: ARMA"
+            "detail": "<b>ARMA</b>: <b>ARMA</b>"
           }
         ]
       },
@@ -2261,7 +2261,7 @@
               "val": 15
             }
           ],
-          "detail": "1/rodada, como uma ação livre durante o seu turno, você pode usá-la para causar 1 Cinético(PA) a um personagem a até Alcance 15 e na linha de visão. Isso não conta como um ataque, acerta automaticamente, ignora cobertura, ultrapassa Imunidade e seu dano não pode ser reduzido ou ignorado de qualquer maneira. Nenhuma regra neste livro ou em qualquer outro substitui isso."
+          "detail": "1/rodada, como uma ação livre durante o seu turno, você pode usá-la para causar 1 Cinético(PA) a um personagem a até <b>ALCANCE</b> 15 e na <b>LINHA</b> de visão. Isso não conta como um ataque, acerta automaticamente, ignora cobertura, ultrapassa Imunidade e seu dano não pode ser reduzido ou ignorado de qualquer maneira. Nenhuma regra neste livro ou em qualquer outro substitui isso."
         }
       ]
     },
@@ -2306,7 +2306,7 @@
         "active_effects": [
           {
             "name": "Chassi Pesado",
-            "detail": "O Barbarossa não pode ser empurrado, puxado, Prostrado ou repelido por personagens menores."
+            "detail": "O Barbarossa não pode ser empurrado, puxado, <b>PROSTRADO</b> ou repelido por personagens menores."
           }
         ]
       },
@@ -2316,7 +2316,7 @@
         "active_effects": [
           {
             "name": "Armadura Contra Explosão",
-            "detail": "Você tem Resistência a Dano Explosivo.",
+            "detail": "Você tem Resistência a <b>DANO EXPLOSIVO</b>.",
             "add_resist": [
               {
                 "resist": "explosive",
@@ -2407,7 +2407,7 @@
         "active_effects": [
           {
             "name": "Isolado",
-            "detail": "Você tem Imunidade a de Queimadura.",
+            "detail": "Você tem Imunidade a de <b>QUEIMADURA</b>.",
             "add_immunity": [
               {
                 "immunity": "burn",
@@ -2424,7 +2424,7 @@
           {
             "name": "Ventilação Emergencial",
             "trigger": "Você sofre dano de estrutura.",
-            "detail": "Remova todo o  de Calor."
+            "detail": "Remova todo o  de <b>CALOR</b>."
           }
         ]
       }
@@ -2438,7 +2438,7 @@
         {
           "name": "Expor Células de Energia",
           "condition": "Nesta cena, se em algum momento você exceder sua Capac. de Calor",
-          "detail": "Nesta cena, se em algum momento você excederia sua Capac. de Calor, em vez disso você remove todo o  de Calor e ventila uma nuvem de Emanação 3 de matéria ardente do seu mecha.<br>Até o início do seu próximo turno, todos os personagens dentro da área afetada contam como Invisíveis para todos, exceto você. Personagens que não sejam você sofrem 2 de Queimadura e 2 de Calor quando começarem os turnos deles na área ou entrarem nela pela primeira vez na rodada. Quando o efeito for encerrado, personagens na área afetada obtêm cobertura leve (que você ignora) até o início do seu próximo turno, quando a nuvem se dispersa.",
+          "detail": "Nesta cena, se em algum momento você excederia sua Capac. de <b>CALOR</b>, em vez disso você remove todo o  de <b>CALOR</b> e ventila uma nuvem de <b>EMANAÇÃO</b> 3 de matéria ardente do seu mecha.<br>Até o início do seu próximo turno, todos os personagens dentro da área afetada contam como Invisíveis para todos, exceto você. Personagens que não sejam você sofrem 2 de <b>QUEIMADURA</b> e 2 de <b>CALOR</b> quando começarem os turnos deles na área ou entrarem nela pela primeira vez na rodada. Quando o efeito for encerrado, personagens na área afetada obtêm cobertura leve (que você ignora) até o início do seu próximo turno, quando a nuvem se dispersa.",
           "damage": [
             {
               "val": 2,
@@ -2607,7 +2607,7 @@
           {
             "name": "Égide Rápida",
             "condition": "Você Suportar.",
-            "detail": "Reduza o dano recebido para 1 em vez de ganhar Resistência."
+            "detail": "Quando o Napoleão Suportar, ele reduz o dano recebido para 1 em vez de ganhar Resistência."
           }
         ],
         "synergies": [
@@ -2696,7 +2696,7 @@
             "activation": "Reaction",
             "frequency": "1/round",
             "trigger": "Antes de uma rolagem de ataque ser feita contra você ou um personagem aliado ao alcance dos Sensores.",
-            "detail": "Imponha +1 de Dificuldade a esse ataque."
+            "detail": "Imponha +1 de <b>DIFICULDADE</b> a esse ataque."
           }
         ],
         "use": "Rodada"
@@ -2713,13 +2713,13 @@
           "name": "Pulso Defensivo",
           "activation": "Reaction",
           "trigger": "Seu alvo é atacado.",
-          "detail": "Você fortalece o escudo de táquions do alvo com um pulso de energia. Ele ganha Resistência a todos os danos do ataque e, se o ataque errar, você pode forçar o atacante a rolar novamente contra um personagem ou objeto à sua escolha, checando a linha de visão e Alcance do seu alvo no lugar do alvo do atacante. Se o ataque era parte de um efeito em área, o novo alvo deve estar dentro da mesma área que o ataque original.",
+          "detail": "Você fortalece o escudo de táquions do alvo com um pulso de energia. Ele ganha Resistência a todos os danos do ataque e, se o ataque errar, você pode forçar o atacante a rolar novamente contra um personagem ou objeto à sua escolha, checando a <b>LINHA</b> de visão e <b>ALCANCE</b> do seu alvo no lugar do alvo do atacante. Se o ataque era parte de um efeito em área, o novo alvo deve estar dentro da mesma área que o ataque original.",
           "init": "Este sistema projeta um escudo de táquions acelerados sobre um personagem aliado ao alcance dos Sensores. Você pode decidir um novo alvo como uma ação rápida."
         },
         {
           "name": "Redirecionar Escudo de Táquions",
           "activation": "Quick",
-          "detail": "Mude o alvo do seu Escudo de Táquions para outro personagem aliado ao alcance dos Sensores."
+          "detail": "Mude o alvo do seu Escudo de Táquions para outro personagem aliado ao <b>ALCANCE</b> dos <b>SENSORES</b>."
         }
       ],
       "activation": "Quick"
@@ -2777,7 +2777,7 @@
           {
             "name": "Parada de Mathur",
             "trigger": "Você remove todo o  de Calor.",
-            "detail": "Você pode escolher sofrer  de Calor igual a metade da sua Cap. de Calor, colocando-o na Zona de Perigo."
+            "detail": "Quando o Sherman remover todo o  de <b>CALOR</b>, você pode escolher sofrer  de <b>CALOR</b> igual a metade da sua Cap. de <b>CALOR</b>, colocando-o na Zona de Perigo."
           }
         ],
         "synergies": [
@@ -2797,7 +2797,7 @@
           {
             "name": "Ventilar Calor",
             "condition": "Você Estabiliza ou excede sua Cap. de Calor.",
-            "detail": "Você obtém cobertura leve até o final do seu próximo turno.",
+            "detail": "Quando você Estabilizar o Sherman ou ele exceder sua Cap. de <b>CALOR</b>, ele obtém cobertura leve até o final do seu próximo turno.",
             "add_other": [
               {
                 "type": "cover",
@@ -2879,7 +2879,7 @@
           {
             "name": "SUPERAR LIMITAÇÃO",
             "condition": "Você está Exposto.",
-            "detail": "Quando o Tokugawa estiver Exposto, seus ataques corpo a corpo e à distância causam +3 de Energia de dano bônus ao acertar, todas suas armas que causariam  Cinético ou  Explosivo causam  de Energia no lugar, armas à distância recebem +5line e armas corpo a corpo recebem 1+ ameaça",
+            "detail": "Quando o Tokugawa estiver <b>EXPOSTO</b>, seus ataques corpo a corpo e à distância causam +3 de Energia de dano bônus ao acertar, todas suas armas que causariam  Cinético ou  Explosivo causam  de Energia no lugar, armas à distância recebem +5line e armas corpo a corpo recebem 1+ <b>AMEAÇA</b>",
             "bonuses": [
               {
                 "id": "damage",
@@ -2913,7 +2913,7 @@
           {
             "name": "BAINHA DE PLASMA",
             "condition": "Você está na Zona de Perigo e ataca com uma arma que causa qualquer quantidade de energia.",
-            "detail": "Todos os danos bônus se tornam  de Queimadura."
+            "detail": "Todos os danos bônus se tornam  de <b>QUEIMADURA</b>."
           }
         ],
         "synergies": []
@@ -2931,7 +2931,7 @@
         {
           "name": "Exceder Os Parâmetros",
           "activation": "Protocol",
-          "detail": "Você fica Exposto até o final do seu próximo turno.",
+          "detail": "Você fica <b>EXPOSTO</b> até o final do seu próximo turno.",
           "add_status": [
             {
               "id": "exposed",
@@ -2944,7 +2944,7 @@
       "active_effects": [
         {
           "name": "Radiância",
-          "detail": "Pelo resto desta cena, armas que causam qualquer energia ganham +5 de alcance se forem à distância ou +2 de Ameaça se forem corpo a corpo.<br>Enquanto você estiver EXPOSTO, Limite de Ruptura se acumula com esses bônus para um incremento total de +10 alcance (armas à distância) ou +4 Ameaça (armas corpo a corpo).",
+          "detail": "Pelo resto desta cena, armas que causam qualquer energia ganham +5 de <b>ALCANCE</b> se forem à distância ou +2 de <b>AMEAÇA</b> se forem corpo a corpo.<br>Enquanto você estiver <b>EXPOSTO</b>, Limite de Ruptura se acumula com esses bônus para um incremento total de +10 <b>ALCANCE</b> (armas à distância) ou +4 <b>AMEAÇA</b> (armas corpo a corpo).",
           "bonuses": [
             {
               "id": "range",

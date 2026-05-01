@@ -24,7 +24,7 @@
     "id": "sk_blow_something_up",
     "name": "Explodir Algo",
     "description": "Usar explosivos para destruir totalmente alguma coisa ou transformá-la em uma enorme bola de fogo.",
-    "detail": "Usar explosivos (improvisados ou não), armas ou talvez apenas a boa e velha força bruta para destruir totalmente alguma coisa ou transformá-la em uma enorme bola de fogo (talvez uma parede, um conjunto de sensores, um posto avançado, um núcleo de reator - as coisas boas). Provavelmente não deve ser usado contra pessoas, a menos que elas estejam incidentalmente no caminho.",
+    "detail": "Usar explosivos (improvisados ou não), armas ou talvez apenas a boa e velha força bruta para destruir totalmente alguma coisa ou transformá-la em uma enorme bola de fogo (talvez uma parede, um conjunto de <b>SENSORES</b>, um posto avançado, um núcleo de reator - as coisas boas). Provavelmente não deve ser usado contra pessoas, a menos que elas estejam incidentalmente no caminho.",
     "family": "str"
   },
   {
@@ -45,21 +45,21 @@
     "id": "sk_get_somewhere_quickly",
     "name": "Ir Rápido a Algum Lugar",
     "description": "Ir rápido a algum lugar e sem sofrer complicações.",
-    "detail": "Ir a algum lugar sem complicações e com velocidade, mas não necessariamente de forma furtiva. Escalar, nadar ou realizar manobras acrobáticas na tentativa de alcançar um destino mais rápido do que pelo caminho 'seguro'. Cair em segurança de uma grande altura. Mover-se graciosamente em gravidade zero. Perseguir ou fugir, correr mais rápido ou superar um alvo. Chegar a algum lugar mais rápido que qualquer outra pessoa. Você também pode usar isso quando quiser dirigir ou pilotar um veículo.",
+    "detail": "Ir a algum lugar sem complicações e com <b>VELOCIDADE</b>, mas não necessariamente de forma furtiva. Escalar, nadar ou realizar manobras acrobáticas na tentativa de alcançar um destino mais rápido do que pelo caminho 'seguro'. Cair em segurança de uma grande altura. Mover-se graciosamente em gravidade zero. Perseguir ou fugir, correr mais rápido ou superar um alvo. Chegar a algum lugar mais rápido que qualquer outra pessoa. Você também pode usar isso quando quiser dirigir ou pilotar um veículo.",
     "family": "dex"
   },
   {
     "id": "sk_hack_or_fix",
     "name": "Hackear ou Consertar",
     "description": "Consertar um dispositivo ou sistema com defeito; alternativamente, invadi-lo, ou destruí-lo totalmente, desativando-o ou sabotando-o.",
-    "detail": "Consertar um dispositivo ou sistema com defeito. Alternativamente, invadi-lo, ou destruí-lo totalmente, desativando-o ou sabotando-o. Você pode usar isso para hackear ou proteger sistemas eletrônicos, como fechaduras eletrônicas, sistemas de computador, redes da omninet ou caixões de PNH.",
+    "detail": "Consertar um dispositivo ou sistema com defeito. Alternativamente, invadi-lo, ou destruí-lo totalmente, desativando-o ou sabotando-o. Você pode usar isso para hackear ou proteger sistemas eletrônicos, como fechaduras eletrônicas, sistemas de computador, redes da omninet ou caixões de <b>PNH</b>.",
     "family": "int"
   },
   {
     "id": "sk_invent_or_create",
     "name": "Inventar ou Criar",
     "description": "Inventar novos dispositivos, ferramentas ou abordagens para problemas.",
-    "detail": "De modo geral, você precisa de ferramentas e suprimentos para inventar ou criar algo com sucesso. Use isso com muitas ações de recesso para trabalhar em projetos. Você também pode usar no calor do momento para inventar novos dispositivos, ferramentas ou abordagens para algo (explosivos improvisados, equipamentos, disfarces ou algo semelhante).",
+    "detail": "De modo geral, você precisa de ferramentas e suprimentos para inventar ou criar algo com sucesso. Use isso com muitas ações de recesso para trabalhar em projetos. Você também pode usar no <b>CALOR</b> do momento para inventar novos dispositivos, ferramentas ou abordagens para algo (explosivos improvisados, equipamentos, disfarces ou algo semelhante).",
     "family": "int"
   },
   {
@@ -115,7 +115,7 @@
     "id": "sk_stay_cool",
     "name": "Ficar Frio",
     "description": "Realizar uma tarefa que requer concentração, destreza, velocidade ou precisão sob pressão.",
-    "detail": "Fazer algo que requer concentração, velocidade ou precisão intensa sob pressão, como arrombar uma fechadura enquanto seu esquadrão troca tiros com guardas que se aproximam, evitar um código memético hostil ao hackear um console seguro, desarmar cuidadosamente um explosivo ou destravar uma arma sob fogo. Se você precisa fazer algo complicado em uma situação de alto estresse sem errar (e possivelmente sem nem suar), esta é a ação a ser usada.",
+    "detail": "Fazer algo que requer concentração, <b>VELOCIDADE</b> ou <b>PRECISÃO</b> intensa sob pressão, como arrombar uma fechadura enquanto seu esquadrão troca tiros com guardas que se aproximam, evitar um código memético hostil ao hackear um console seguro, desarmar cuidadosamente um explosivo ou destravar uma arma sob fogo. Se você precisa fazer algo complicado em uma situação de alto <b>ESTRESSE</b> sem errar (e possivelmente sem nem suar), esta é a ação a ser usada.",
     "family": "dex"
   },
   {

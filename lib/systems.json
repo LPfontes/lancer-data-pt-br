@@ -1171,7 +1171,7 @@
     "actions": [
       {
         "activation": "Quick",
-        "detail": "Este sistema cria um campo de força de line4, com 4 espaços de altura — com pelo menos 1 espaço adjacente a você — que é um obstáculo para mechas e personagens feitos pelo menos parcialmente de metal. Ele dura pelo restante da cena, e se um novo for colocado, o antigo é desativado.<br>O campo de força não bloqueia linha de visão, mas fornece cobertura leve. Personagens adquirem Resistência a danos de  Cinético e  Explosivo enquanto se beneficiam dessa cobertura."
+        "detail": "Este sistema cria um campo de força de linha de 4, com 4 espaços de altura — com pelo menos 1 espaço adjacente a você — que é um obstáculo para mechas e personagens feitos pelo menos parcialmente de metal. Ele dura pelo restante da cena, e se um novo for colocado, o antigo é desativado.<br>O campo de força não bloqueia linha de visão, mas fornece cobertura leve. Personagens adquirem Resistência a danos de  Cinético e  Explosivo enquanto se beneficiam dessa cobertura."
       }
     ],
     "description": "O escudo magnético da SSC utiliza a mesma tecnologia que seu broquel magnético patenteado e aplica-a a um sistema de projeção de campo maciço.",
@@ -2597,7 +2597,7 @@
             "val": "1d6+3"
           }
         ],
-        "detail": "No lugar de jogar uma granada, ela rola por um caminho de line10 a partir de você, pulando sobre obstruções e objetos de até Tamanho 1 e passando por buracos e vãos de até Tamanho 1/2. Ela detona quando se mover por um espaço ocupado por qualquer personagem ou um espaço adjacente a eles: a vítima deve obter sucesso em um salvamento de Agilidade ou sofre 1d6+3 Explosivo e é repelida 3 espaços na direção em que a granada foi rolada. Em um sucesso, ela sofre metade do dano e não é repelida."
+        "detail": "No lugar de jogar uma granada, ela rola por um caminho de linha de 10 a partir de você, pulando sobre obstruções e objetos de até Tamanho 1 e passando por buracos e vãos de até Tamanho 1/2. Ela detona quando se mover por um espaço ocupado por qualquer personagem ou um espaço adjacente a eles: a vítima deve obter sucesso em um salvamento de Agilidade ou sofre 1d6+3 Explosivo e é repelida 3 espaços na direção em que a granada foi rolada. Em um sucesso, ela sofre metade do dano e não é repelida."
       }
     ],
     "deployables": [
@@ -3087,14 +3087,14 @@
     "source": "HA",
     "license": "Napoleon",
     "license_level": 2,
-    "effect": "Gaste uma carga para ativar a barreira de estase, gerando uma barreira de line4 e 4 espaços de altura em espaços livres, com pelos menos um espaço adjacente a você. Ela conta como uma obstrução e fornece cobertura leve, mas não bloqueia linha de visão.<br>Quando um ataque for feito contra um personagem que se beneficia da cobertura leve dessa barreira, role 1d6: em 4 ou mais, o ataque é consumido pela barreira e não tem nenhum efeito. A barreira dura pelo restante da cena ou até você desativá-la como uma ação rápida. Esse efeito não se acumula com Invisível.",
+    "effect": "Gaste uma carga para ativar a barreira de estase, gerando uma barreira de linha de 4 com 4 espaços de altura em espaços livres, com pelos menos um espaço adjacente a você. Ela conta como uma obstrução e fornece cobertura leve, mas não bloqueia linha de visão.<br>Quando um ataque for feito contra um personagem que se beneficia da cobertura leve dessa barreira, role 1d6: em 4 ou mais, o ataque é consumido pela barreira e não tem nenhum efeito. A barreira dura pelo restante da cena ou até você desativá-la como uma ação rápida. Esse efeito não se acumula com Invisível.",
     "deployables": [
       {
         "type": "Deployable",
         "name": "Barreira de Estase",
         "activation": "Quick",
         "deactivation": "Quick",
-        "detail": "Gere uma barreira de line4 com 4 espaços de altura em espaços livres com pelo menos um espaço adjacente a você. Conta como obstrução e fornece cobertura leve, mas não bloqueia linha de visão. Quando um ataque for feito contra um personagem que se beneficia da cobertura leve dessa barreira, role 1d6: em 4 ou mais, o ataque é consumido pela barreira e não tem nenhum efeito.",
+        "detail": "Gere uma barreira de linha de 4 com 4 espaços de altura em espaços livres com pelo menos um espaço adjacente a você. Conta como obstrução e fornece cobertura leve, mas não bloqueia linha de visão. Quando um ataque for feito contra um personagem que se beneficia da cobertura leve dessa barreira, role 1d6: em 4 ou mais, o ataque é consumido pela barreira e não tem nenhum efeito.",
         "tags": [
           {
             "id": "tg_invulnerable"

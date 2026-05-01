@@ -348,7 +348,7 @@
     "id": "pg_mobility_hardsuit",
     "name": "Traje Reforçado de Mobilidade",
     "type": "Armor",
-    "effect": "Esses trajes reforçados possuem sistemas de voo integrados, permitindo que os pilotos voem ao se moverem ou IMPULSIONAREM. Pilotos voando devem terminar seu turno no chão (ou em outra superfície) ou começarão a cair.",
+    "effect": "Esses trajes reforçados possuem sistemas de voo integrados, permitindo que os pilotos voem ao se moverem ou <b>IMPULSIONAREM</b>. Pilotos voando devem terminar seu turno no chão (ou em outra superfície) ou começarão a cair.",
     "bonuses": [
       {
         "id": "pilot_evasion",
@@ -376,7 +376,7 @@
     "id": "pg_stealth_hardsuit",
     "name": "Traje Reforçado Furtivo",
     "type": "Armor",
-    "effect": "Como uma ação rápida, pilotos usando trajes reforçados furtivos podem se tornar INVISÍVEIS. Eles deixam de ser INVISÍVEIS se sofrerem qualquer dano.",
+    "effect": "Como uma ação rápida, pilotos usando trajes reforçados furtivos podem se tornar <b>INVISÍVEIS</b>. Eles deixam de ser <b>INVISÍVEIS</b> se sofrerem qualquer dano.",
     "bonuses": [
       {
         "id": "pilot_evasion",
@@ -403,7 +403,7 @@
       {
         "name": "Ativar Traje Furtivo",
         "activation": "Quick",
-        "detail": "Torne-se INVISÍVEL. Você deixará de ser INVISÍVEL se sofrer qualquer dano.",
+        "detail": "Torne-se <b>INVISÍVEL</b>. Você deixará de ser <b>INVISÍVEL</b> se sofrer qualquer dano.",
         "pilot": true
       }
     ]
@@ -447,7 +447,7 @@
     "id": "pg_frag_grenades",
     "name": "Granadas de Fragmentação",
     "type": "Gear",
-    "effect": "Gaste uma carga para o seguinte efeito:<ul><li><b>Granada de Fragmentação</b> (Granada, range5, blast 1): Personagens afetados devem obter sucesso em um salvamento de Agilidade ou sofrem 2explosive.</li></ul>",
+    "effect": "Gaste uma carga para o seguinte efeito:<ul><ul><li><b>Granada de Fragmentação</b> (Granada, <b>ALCANCE 5</b>, <b>EXPLOSÃO 1</b>): Personagens afetados devem obter sucesso em um salvamento de Agilidade ou sofrem 2explosive.</li></ul></ul>",
     "actions": [
       {
         "name": "Lançar Granada de Fragmentação",
@@ -468,7 +468,7 @@
             "val": 2
           }
         ],
-        "detail": "Gaste uma carga para lançar uma Granada de Fragmentação em até range 5. Personagens afetados dentro da área de blast 1 devem obter sucesso em um salvamento de Agilidade ou sofrem 2 de dano explosivo.",
+        "detail": "Gaste uma carga para lançar uma Granada de Fragmentação em até <b>ALCANCE 5</b>. Personagens afetados dentro da área de <b>EXPLOSÃO 1</b> devem obter sucesso em um salvamento de Agilidade ou sofrem 2 de <b>DANO EXPLOSIVO</b>.",
         "pilot": true
       }
     ],
@@ -513,13 +513,13 @@
     "id": "pg_stims",
     "name": "Estimulantes",
     "type": "Gear",
-    "effect": "Gaste uma carga para um dos seguintes efeitos:<ul><li><b>Despertar:</b> Mantém um piloto acordado e alerta por até 30 horas.</li><li><b>Acalmar:</b> Mantém um piloto calmo e emocionalmente estável; diminui o medo e outras reações fortes.</li><li><b>Aguçar:</b> Aumenta os sentidos e a vigilância, reduz a fadiga e diminui os tempos de reação. Aguçar ocasionalmente provoca um surto de raiva em alguns usuários.</li></ul>",
+    "effect": "Gaste uma carga para um dos seguintes efeitos:<ul><ul><li><b>Despertar:</b> Mantém um piloto acordado e alerta por até 30 horas.</li></ul><ul><li><b>Acalmar:</b> Mantém um piloto calmo e emocionalmente estável; diminui o medo e outras reações fortes.</li></ul><ul><li><b>Aguçar:</b> Aumenta os sentidos e a vigilância, reduz a fadiga e diminui os tempos de reação. Aguçar ocasionalmente provoca um surto de raiva em alguns usuários.</li></ul></ul>",
     "description": "Estes estimulantes químicos são às vezes administrados automaticamente por injetores incorporados ao traje de um piloto, ou até mesmo implantados em seu corpo. O uso descontrolado pode ser viciante e prejudicial à saúde a longo prazo e é um problema para alguns pilotos.",
     "actions": [
       {
         "name": "Usar Estimulante",
         "activation": "Quick",
-        "detail": "Gaste uma carga para um dos seguintes efeitos:<ul><li><b>Despertar:</b> Mantém um piloto acordado e alerta por até 30 horas.</li><li><b>Acalmar:</b> Mantém um piloto calmo e emocionalmente estável; diminui o medo e outras reações fortes.</li><li><b>Aguçar:</b> Aumenta os sentidos e a vigilância, reduz a fadiga e diminui os tempos de reação.</li></ul>",
+        "detail": "Gaste uma carga para um dos seguintes efeitos:<ul><ul><li><b>Despertar:</b> Mantém um piloto acordado e alerta por até 30 horas.</li></ul><ul><li><b>Acalmar:</b> Mantém um piloto calmo e emocionalmente estável; diminui o medo e outras reações fortes.</li></ul><ul><li><b>Aguçar:</b> Aumenta os sentidos e a vigilância, reduz a fadiga e diminui os tempos de reação.</li></ul></ul>",
         "pilot": true
       }
     ],
@@ -537,18 +537,18 @@
     "id": "pg_thermite_charge",
     "name": "Carga de Termita",
     "type": "Gear",
-    "effect": "Gaste uma carga para o seguinte efeito:<ul><li><b>Carga de Termita</b> (Mina, burst1): Esta carga precisa ser detonada remotamente como uma ação rápida. Personagens afetados devem obter sucesso em um salvamento de Engenharia ou sofrem 3 energy PF. Cargas de termita atingem automaticamente objetos, causando 10 energy PF.</li></ul>",
+    "effect": "Gaste uma carga para o seguinte efeito:<ul><ul><li><b>Carga de Termita</b> (Mina, <b>ESTOURO 1</b>): Esta carga precisa ser detonada remotamente como uma ação rápida. Personagens afetados devem obter sucesso em um salvamento de Engenharia ou sofrem 3 <b>DANO ENERGÉTICO</b> PF. Cargas de termita atingem automaticamente objetos, causando 10 <b>DANO ENERGÉTICO</b> PF.</li></ul></ul>",
     "deployables": [
       {
         "name": "Carga de Termita",
         "type": "Mine",
-        "detail": "Esta carga precisa ser detonada remotamente como uma ação rápida. Personagens afetados devem obter sucesso em um salvamento de Engenharia ou sofrem 3 energy PF. Cargas de termita atingem automaticamente objetos, causando 10 energy PF.",
+        "detail": "Esta carga precisa ser detonada remotamente como uma ação rápida. Personagens afetados devem obter sucesso em um salvamento de Engenharia ou sofrem 3 <b>DANO ENERGÉTICO</b> PF. Cargas de termita atingem automaticamente objetos, causando 10 <b>DANO ENERGÉTICO</b> PF.",
         "pilot": true,
         "actions": [
           {
             "name": "Detonar",
             "activation": "Quick",
-            "detail": "Personagens afetados devem obter sucesso em um salvamento de Engenharia ou sofrem 3 energy PF.",
+            "detail": "Personagens afetados devem obter sucesso em um salvamento de Engenharia ou sofrem 3 <b>DANO ENERGÉTICO</b> PF.",
             "pilot": true
           }
         ],
@@ -730,7 +730,7 @@
     "id": "pg_sleeping_bag",
     "name": "Saco de Dormir",
     "type": "Gear",
-    "effect": "Você pode entrar em seu saco de dormir, recebendo Imunidade a burnout, proteção contra o vácuo e ar suficiente para durar uma hora; no entanto, enquanto estiver no saco de dormir, você fica Atordoado e não pode realizar ações além de sair do saco como uma ação completa.",
+    "effect": "Você pode entrar em seu saco de dormir, recebendo Imunidade a burnout, proteção contra o vácuo e ar suficiente para durar uma hora; no entanto, enquanto estiver no saco de dormir, você fica <b>ATORDOADO</b> e não pode realizar ações além de sair do saco como uma ação completa.",
     "description": "Disponível em uma variedade de tamanhos, os sacos de dormir são uma necessidade no campo. Eles são projetados para serem desdobrados de um traje reforçado, caber na cabine de um mecha, resistir ao fogo e a mudanças de temperatura e, quando necessário, vedar contra o vácuo.",
     "tags": [
       {

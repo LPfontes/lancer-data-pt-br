@@ -1,5 +1,19 @@
+# Scripts utilitários de tradução e localização
+extract_descriptions.cjs
+apply_base_html.cjs
+split_chunks.cjs
+find_english.cjs
+apply_patches.cjs
+
+# Arquivos temporários de processamento e chunks
+extracted_descriptions.json
+extracted_descriptions_auto.json
+english_findings.json
+chunks/
+
+# Dependências e Logs
 node_modules/
-*.htm
-*.pdf
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 .DS_Store
-Thumbs.db
