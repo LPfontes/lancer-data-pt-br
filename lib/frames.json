@@ -2973,5 +2973,476 @@
     },
     "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_tokugawa.png",
     "license_id": "mf_tokugawa"
+  },
+  {
+    "id": "mf_atlas",
+    "source": "SSC",
+    "name": "Atlas",
+    "mechtype": [
+      "Striker"
+    ],
+    "y_pos": 14,
+    "license_level": 2,
+    "description": "<p>Originalmente encomendado como um mecha de duelo pelas Casas Barônicas da Fumaça e da Ordem, o Atlas atenua a linha que separa chassi mecanizado de trajes pessoais reforçados. Graças a um projeto de pesquisa de longa duração do Grupo de Materiais Exóticos da SSC, os designers puderam empregar o que há de mais avançado em miniaturização de reatores; o resultado foi um chassi que se assemelha a um grande e elegante traje reforçado, justo ao corpo em alguns pontos. Embora o Atlas sacrifique a durabilidade de uma estrutura maior, seus sistemas essenciais são tão intimamente integrados aos movimentos do usuário que oferecem uma manobrabilidade sem igual.</p> <p>Embora o Atlas tenha sido licenciado inicialmente apenas para clientes barônicos, seu projeto foi vazado quando um grupo de funcionários da GME perdeu um traje para um espada sparri durante uma intensa partida de Kapkat. Apesar da tentativa inicial de recuperar o traje, a SSC cedeu, citando a alta demanda dos grupos sparri por acesso à licença completa. </p> <p>Considerado o chassi de guerreiro perfeito para caçar a megafauna nativa de Sparr, o Atlas agora goza de uma reputação dupla entre os povos sparri e a nobreza karrakina. Para os sparri, o Atlas &ndash; além de sua eficácia em combate &ndash; é altamente valorizado pelo acesso direto que seus sistemas permitem à memória ancestral; chassis Atlas em Sparr são relíquias de grandes guerreiros, ligadas à família (de sangue ou escolhida) e mantidas manualmente. Cada traje em Sparr carrega a história de seus pilotos anteriores tanto nas decorações quanto no aprendizado de máquina em conformidade com a metodologia analítica de APC (Acordos de Primeiro Contato), o que permite aos caçadores sparri quase literalmente invocar seus ancestrais em batalha. O Atlas se tornou tão popular entre os sparri que eles desenvolveram uma nova arte marcial baseada no chassi: Jäger Kunst. </p> <p>A nobreza karrakina, por outro lado, considera o Atlas a máquina perfeita para o heroísmo nobre &ndash; o fato dos sparri terem afinidade com ele só torna o chassi ainda mais desejável entre os karrakinos que estudam os sparri. Frequentemente decorados com discos de saga sparri comprados, peles de Vast e linhas de saga, os trajes karrakinos misturam perfis imaginados de heróis das eras Annorum Passacaglia e Annorum Tyrannus com perfis de guerreiros sparri, desafiadores, caçadores de vasts e espadas.</p>",
+    "mounts": [
+      "Flex",
+      "Main"
+    ],
+    "stats": {
+      "size": 0.5,
+      "stress": 4,
+      "structure": 4,
+      "armor": 0,
+      "hp": 6,
+      "evasion": 12,
+      "edef": 6,
+      "heatcap": 4,
+      "repcap": 2,
+      "sensor_range": 3,
+      "tech_attack": -2,
+      "save": 10,
+      "speed": 6,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Matador de Gigantes",
+        "description": "O Atlas conta como TAMANHO 1 para EMPURRÃO e AGARRÃO. Ele ignora o engajamento de personagens maiores e pode se mover livremente através dos espaços que eles ocupam (mesmo que sejam hostis). Enquanto ocupar os mesmos espaços de qualquer personagem, o Atlas ganha cobertura leve, até mesmo desse personagem que ele compartilha o espaço.",
+        "synergies": [
+          {
+            "locations": [
+              "ram",
+              "grapple"
+            ],
+            "detail": "O Atlas conta como tamanho 1 para fins de empurrão e agarrão."
+          },
+          {
+            "locations": [
+              "active_effects"
+            ],
+            "detail": "O Atlas ignora o engajamento de personagens maiores que ele e pode se mover livremente através dos espaços que eles ocupam (mesmo que sejam hostis). Enquanto ocupar os mesmos espaços de qualquer personagem, o Atlas ganha cobertura leve, até mesmo desse personagem que ele compartilha o espaço."
+          }
+        ]
+      },
+      {
+        "name": "Esquiva Jäger",
+        "description": "1/rodada, quando sofre dano de um personagem maior, você ganha RESISTÊNCIA a esse dano e se mova 3 espaços em qualquer direção como uma reação. Isso ignora engajamento e não provoca reações.",
+        "actions": [
+          {
+            "name": "Esquiva Jäger",
+            "activation": "Reaction",
+            "trigger": "You take damage from a character larger than yourself",
+            "detail": "Ganhe resistência a esse dano e mova-se 3 espaços em qualquer direção, ignorando engajamento e reações."
+          }
+        ]
+      },
+      {
+        "name": "Golpe Final",
+        "description": "1/rodada, causa +1d6 de dano bônus em um ataque corpo a corpo bem-sucedido contra um alvo PROSTRADO.",
+        "synergies": [
+          {
+            "locations": [
+              "weapon"
+            ],
+            "weapon_types": [
+              "Melee"
+            ],
+            "weapon_sizes": [
+              "any"
+            ],
+            "detail": "1/rodada, o Atlas pode causar +1d6 de dano bônus com um ataque corpo a corpo bem-sucedido contra um alvo prostrado."
+          }
+        ]
+      },
+      {
+        "name": "Reator Exposto",
+        "description": "O Atlas recebe +1 de DIFICULDADE em testes e salvamentos de ENGENHARIA.",
+        "synergies": [
+          {
+            "locations": [
+              "engineering",
+              "skill_check"
+            ],
+            "detail": "O Atlas recebe +1 de dificuldade em testes e salvamentos de Engenharia."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Assistência Ativa da Linhagem Sanguínea",
+      "description": "O ATLAS estende microagulhas na musculatura e no sistema nervoso auxiliar de seu piloto, fundindo carne, máquina e a memória de todos que o usaram antes.",
+      "active_name": "Caçada Final",
+      "active_effect": "<p>Pelo resto da cena, você:</p> <ul> <li>Se move 1 espaço adicional sempre que se mover voluntariamente por qualquer motivo (exemplo: movimento padrão, IMPULSIONAR, movimento de sistemas ou talentos).</li> <li>Beneficia-se de cobertura leve o tempo todo, independentemente de onde estiver.</li> <li>Pode se ESCONDER até mesmo em campo aberto, sem precisar de cobertura.</li> </ul> <p> A única forma de revelá-lo é outro personagem PROCURAR por você ou você perder o status de Escondido como de costume &ndash; ao usar IMPULSIONAR, atacar, forçar um teste de resistência, entre outros. Quando ativo, 1/rodada, ao fazer um ataque corpo a corpo ou a distância enquanto estiver ESCONDIDO, seu alvo também deve ter sucesso em um teste de CASCO ou é derrubado e fica prostrado. Isso ocorre antes de o ataque ser rolado. </p>",
+      "activation": "Quick"
+    },
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_atlas.png",
+    "license_id": "mf_atlas"
+  },
+  {
+    "id": "mf_caliban",
+    "source": "IPS-N",
+    "name": "Calibã",
+    "mechtype": [
+      "Striker",
+      "Controller"
+    ],
+    "license_level": 2,
+    "y_pos": 12.5,
+    "description": "<p>O chassi Calibã é uma nova encomenda popular entre as forças antipirataria e de fuzileiros estelares. Ao contrário de muitos dos chassis modernos da EIP-EN, o Calibã foi projetado desde o início para ser uma máquina militar. </p> <p>O Calibã é a solução da EIP-EN para o Problema “Yemanova”, mais corretamente conhecido como o Problema de Sobreposição de Impacto. O problema sugere que as naves capitais são incrivelmente caras, exigem um tempo tremendo para que corporações e estados Diaspóricos as produzam e mantenham, e estão cada vez mais ultrapassadas pelas armas antinave. Em um duelo capital convencional, uma destruição bem-sucedida significaria a morte de milhares de tripulantes e a perda de milhões de unidades de mana; isso torna muitos comandantes hesitantes, levando-os a confiar em embarcações de sublinha e caças para alcançar os objetivos de batalha em vez de arriscar suas grandes naves. Essa estratégia tende a ser igualmente cara: em vez de uma ou um pequeno número de grandes naves serem destruídas, significando o fim de uma batalha, os combates podem se arrastar por semanas, com esquadrões de naves menores engajando uns outros dentro da zona de imprevisibilidade, avançando lentamente para a vitória. </p> <p>A EIP-EN foi a primeira a solucionar o Problema Yemanova. Os projetistas da corporação identificaram a necessidade de uma arma direcionada, de rápida implantação e assinatura reduzida. Ela precisava ser bem armada e bem blindada, pequena o suficiente para entrar em uma nave e neutralizar sua tripulação de forma eficiente para garantir a vitória. IPS-N criou o Calibã para atender a essa necessidade. </p> <p>Críticos culturais argumentam que chassis mecanizados veneram a forma de uma humanidade específica; que são um aceno inconsciente às raízes antrochauvinistas da máquina entre os principais projetistas e fabricantes. O Calibã não é isso. Ele nunca foi pensado como uma imagem ampliada do homem, marchando heroicamente pelo campo de batalha para cumprir um propósito maior. </p> <p>Ao contrário de muitos chassis da EIP-EN, o Calibã não tem raízes nas primeiras tentativas de autodefesa de tripulações de cargueiros e mineradores de asteroides. Ele não nasceu da engenhosidade — não há um legado de resiliência, heroísmo ou espírito pioneiro para encobrir o propósito de sua criação. Ele não tem aplicações civis em assistência, socorro a desastres, construção ou agricultura; ele não constrói, não protege, não inspira — ele foi projetado para resolver um problema numérico em um balanço financeiro. </p> <p>Ele é uma ferramenta feita para matar seres humanos muito, muito rápido. </p>",
+    "mounts": [
+      "Heavy"
+    ],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 6,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 5,
+      "repcap": 5,
+      "sensor_range": 3,
+      "tech_attack": -2,
+      "save": 11,
+      "speed": 3,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Esfera de Demolição",
+        "description": "O Calibã é considerado TAMANHO 3 ao causar Repulsão com a ação EMPURRÃO ou qualquer ataque corpo a corpo ou à distância.",
+        "synergies": [
+          {
+            "locations": [
+              "weapon"
+            ],
+            "weapon_types": [
+              "any"
+            ],
+            "weapon_sizes": [
+              "any"
+            ],
+            "detail": "O Calibã conta como tamanho 3 ao causar repulsão com qualquer ataque à distância ou corpo a corpo."
+          }
+        ]
+      },
+      {
+        "name": "Perseguir Presa",
+        "description": "Quando o Calibã causa Repulsão como parte de qualquer ação, ele pode se mover o mesmo número de espaços em direção ao alvo pela rota mais direta possível. Esse movimento faz parte da mesma ação, ignora engajamento e não provoca reações."
+      },
+      {
+        "name": "Impacto",
+        "description": "1/rodada, quando o Calibã empurra um personagem contra uma parede, mecha ou outro obstáculo que interromperia seu movimento, o alvo deve obter sucesso em um salvamento de CASCO ou sofre 1d6 de dano cinético e fica IMPEDIDO até o final de seu próximo turno."
+      },
+      {
+        "name": "Computador Fraco",
+        "description": "O Calibã recebe +1 de DIFICULDADE em todos os testes e salvamentos de SISTEMAS.",
+        "synergies": [
+          {
+            "locations": [
+              "systems",
+              "skill_check"
+            ],
+            "detail": "O Calibã recebe +1 de Dificuldade em todos os testes e salvamentos de sistemas."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Espingarda Devoradora",
+      "description": "A “Devoradora” — oficialmente chamada de Espingarda-Obus Pesada 075 — é uma versão compacta e formalizada da popular “Cortadora Margarida”, a espingarda-obus utilizada pela Segurança do Porta-Malas e outras forças estelares de fuzileiros. Capaz de aceitar chumbo, cartucho ou projéteis sabot, a Devoradora sacrifica parte do poder bruto da Cortadora Margarida em favor de maior controle e uma cadência de tiro significativamente melhorada.",
+      "active_name": "Equipar Estrangulador Automático",
+      "active_effect": "A Devoradora vem equipada de fábrica com um estrangulador automático montado no cano, permitindo ao usuário ajustar melhor a dispersão do tiro disparado pela arma. O calor extremo gerado pelo uso do estrangulador faz com que ele se degrade rapidamente, tornando-o inutilizável após um curto período e exigindo seu descarte.<br>Pelo resto da cena, a EOP-075 “Devoradora” ganha o seguinte perfil:<br>CQR Principal, Preciso, Repulsão 5<br>[Cone 3] [Threat 3] [1d6+2 dano cinético]",
+      "activation": "Protocol",
+      "integrated": [
+        "mw_caliban_integrated"
+      ]
+    },
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/caliban.png",
+    "license_id": "mf_caliban"
+  },
+  {
+    "id": "mf_kobold",
+    "source": "HORUS",
+    "name": "Kobold",
+    "mechtype": [
+      "Controller"
+    ],
+    "y_pos": 25,
+    "license_level": 2,
+    "description": "<p>O grupo-modelo Kobold surgiu pela primeira vez entre os revolucionários Ingratos que trabalhavam sob condições brutais em Bo, o mundo-capital da Casa do Pó. Ele se manifestou como um conjunto engenhoso de hardware e software, compatível com uma ampla variedade de mechas de mineração e indústria pesada. O resultado da exposição ao GM-K é uma aberração fumegante e trêmula: uma máquina que transformou o arado em lâmina por meio de um poderoso código litúrgico morfoviral, quase impossível de ser detectado por análises convencionais para obter os dados de pré-impressão. </p> <p>Os mecanismos clandestinos pelos quais o Kobold é transmitido e aplicado o tornam a máquina perfeita para combater as forças de repressão Barônicas. Os trabalhadores desesperados que imprimiram os primeiros Kobolds descobriram que eram infinitamente adaptáveis. Quando carregado em seus exoesqueletos e chassis de mineração, o código GM-K redirecionava reatores e ferramentas industriais, tornando-os armas letais que usavam os próprios materiais e superestruturas que os alimentavam. O processo de fusão instantânea, processamento e extrusão de matéria-prima em partículas de múltiplos estados fundidas é extremamente perigoso — muitas vezes tão letal para o piloto quanto para o alvo. </p> <p>Apesar dos riscos operacionais, os Ingratos que adotaram o GM-K surpreenderam seus supervisores Barônicos com uma série de vitórias rápidas e absolutas, libertando grandes extensões de minas lunares de hélio-3. Embora a insurgência tenha sido eventualmente contida em Bo, ela continua, forçando a Casa do Pó a destacar, além das forças de segurança locais, a sua Companhia Estandarte dos Nascidos do Túmulo para operações de contra insurgências. </p> <p>Os agentes da HÓRUS na Grande Orla continuam semeando o código litúrgico do GM-K. A Casa do Pó contratou a Mastodonte para rastrear e eliminar os agentes da HÓRUS na região; enquanto isso, a Arsenal Harrison entrou em contato com a Brigada-Legião para contra-atacar os esforços da Casa do Pó. </p>",
+    "mounts": [
+      "Main/Aux"
+    ],
+    "stats": {
+      "size": 0.5,
+      "stress": 4,
+      "structure": 4,
+      "armor": 1,
+      "hp": 6,
+      "evasion": 10,
+      "edef": 10,
+      "heatcap": 6,
+      "repcap": 2,
+      "sensor_range": 8,
+      "tech_attack": 1,
+      "save": 11,
+      "speed": 4,
+      "sp": 8
+    },
+    "traits": [
+      {
+        "name": "Carapaça Mímica",
+        "description": "Quando o Kobold começa seu turno adjacente a um terreno ou cobertura pesada de TAMANHO 1 ou maior, ele se torna INVISÍVEL enquanto permanecer adjacente. Ele deixa de ser Invisível se atacar ou sofrer dano."
+      },
+      {
+        "name": "Borrifador de Detritos",
+        "description": "1/rodada, como uma ação rápida, o Kobold pode criar um monte de polímero semifundido de TAMANHO 1 em um espaço livre a até ALCANCE 3 e na linha de visão. Esse terreno tem 10 PV, EVASÃO 5 e concede cobertura pesada.",
+        "deployables": [
+          {
+            "name": "Borrifador de Detritos",
+            "type": "Deployable",
+            "size": 1,
+            "hp": 10,
+            "evasion": 5,
+            "activation": "Quick",
+            "detail": "Este polímero semifundido concede cobertura pesada."
+          }
+        ]
+      },
+      {
+        "name": "Reator Exposto",
+        "description": "O Kobold recebe +1 de DIFICULDADE em testes e salvamentos de ENGENHARIA.",
+        "synergies": [
+          {
+            "locations": [
+              "engineering",
+              "skill_check"
+            ],
+            "detail": "O Kobold recebe +1 de dificuldade em testes e salvamentos de Engenharia."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Terraformar",
+      "description": "Rangendo e expelindo vapor, o Kobold cava o solo. Momentos depois, a própria terra se dobra à vontade do piloto, enquanto o ar grita de agonia — o lamento de todos os mortos Ingratos, martirizados ou levados pelos homens de pó.",
+      "active_name": "Terraformar",
+      "active_effect": "Seu mecha expele uma quantidade massiva de polímero, criando até 10 cubos de TAMANHO 1 em espaços livres a até ALCANCE 5. Esses cubos podem ser separados ou conectados e podem ser empilhados em até 5 espaços de altura. Se conectados, formam uma superfície contínua que pode bloquear a linha de visão. Durante o turno de extrusão, os cubos concedem cobertura leve e possuem EVASÃO 5 e 10 PV. No início do seu próximo turno, os cubos endurecem, concedendo cobertura pesada e ganhando +10 PV (mas mantendo qualquer dano já sofrido).",
+      "activation": "Full"
+    },
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_kobold.png",
+    "license_id": "mf_kobold"
+  },
+  {
+    "id": "mf_lich",
+    "source": "HORUS",
+    "name": "Lich",
+    "mechtype": [
+      "Support"
+    ],
+    "license_level": 2,
+    "y_pos": 8,
+    "description": "<p>>//TRANSCRIÇÃO: M.A2_Recuperado[EIU:::MEGERA]<br>>//ACESSO: Tangente Real<br>>//verificando…<br>>//TRC_ACEITO. ABRIR DOC:::S<br>>//INICIAR TRANSCRIÇÃO:::<br>CALÍGULA: Então, o que é isso?<br>CÃOAMIGO_68: queria poder te dizer, cara, só apareceu no terminal. tudo em um único ping — é tipo uns malditos 1 ou 2 mil exabytes. Tentou se autofabricar, mas cancelei por precaução.<br>CALÍGULA: Deve ser uma brincadeira da Ash — ela está tentando derrubar nosso equipamento de novo, não deixa imprimir.<br>CÃOAMIGO_68: de jeito nenhum<br>CÃOAMIGO_68: você acha que eu quero morrer?<br>CALÍGULA: Sim.<br>CALÍGULA: Bom, quem enviou? Quem é o autor?<br>CALÍGULA: Alô?<br>CALÍGULA: [esperando.omif]<br>CÃOAMIGO_68: uh<br>CALÍGULA: Quem?<br>CÃOAMIGO_68: nós<br>CALÍGULA: Nós o quê?<br>CÃOAMIGO_68: veio do nosso terminal — fomos nós que fizemos.<br>CALÍGULA: Tenho quase certeza de que lembraria se tivesse escrito 1-2k exabytes de fabricação sozinho.<br>CÃOAMIGO_68: é, mas é o nosso código, cara, as linhas de impressão digital dizem beaucop-sigma<br>CÃOAMIGO_68: tá, também a Mamãezona está me dizendo que a gente na verdade não recebeu nada vindo de fora, o que significa que foi só local, mas isso é impossível, não temos tanto armazenamento.<br>CALÍGULA: Deixa eu ver o arquivo.<br>CALÍGULA: Está datado como 15005U<br>CÃOAMIGO_68: [kkkrl.omif]<br>CALÍGULA: Tem uma faixa de áudio escondida aqui. Devo tocar?<br>CÃOAMIGO_68: queria dizer não, mas dane-se, tô curioso.<br>>//TRANSCRIÇÃO TERMINA</p>",
+    "mounts": [
+      "Main/Aux"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 4,
+      "evasion": 8,
+      "edef": 12,
+      "heatcap": 3,
+      "repcap": 5,
+      "sensor_range": 15,
+      "tech_attack": 1,
+      "save": 11,
+      "speed": 5,
+      "sp": 8
+    },
+    "traits": [
+      {
+        "name": "Receptáculo de Alma",
+        "description": "No início do turno do Lich, coloque um Receptáculo de Alma na sua localização atual (substituindo qualquer marcador anterior). 1/rodada, como uma reação quando o Lich for atingido por um ataque, falhar em um teste ou salvamento, ou sofrer dano ou Calor de qualquer fonte (até mesmo de si próprio), ele pode imediatamente ganhar IMUNIDADE a todo dano, calor ou condições daquele efeito. Em seguida, ele se teletransporta para o marcador ou o mais próximo possível. O Lich também pode realizar essa reação no final de qualquer turno, incluindo o seu próprio, mas se o fizer, apenas se teletransporta e não ganha IMUNIDADE. Ele não pode realizar essa reação se estiver BLOQUEADO, ATORDOADO, AGARRADO ou incapaz de realizar reações por qualquer motivo."
+      },
+      {
+        "name": "Imortal",
+        "description": "1/cena, na rodada após o Lich ter sido destruído, ele pode retornar à localização do seu Receptáculo de Alma como uma reação no final de qualquer turno. Isso conta como teletransporte; além disso, o Lich aparece com PV cheio, sem Calor, 1 de ESTRUTURA e 1 de ESTRESSE (mesmo que tivesse mais quando foi destruído). Se o seu piloto morreu na mesma cena, ele também retorna à vida. Se o Lich não realizar essa reação nessa rodada, ele permanece destruído e o piloto continua morto."
+      }
+    ],
+    "core_system": {
+      "name": "Tremorcrono",
+      "description": "“Beba tudo e afunde.”",
+      "active_name": "Falha Temporal",
+      "active_effect": "<p>Você ganha a habilidade de perturbar o tempo pelo resto desta cena. 1/rodada, quando qualquer personagem atacar, afetar ou realizar uma ação contra outro personagem dentro de SENSORES com sucesso, você pode interrompê-la antes que se resolva, com os seguintes efeitos:</p> <ul> <li>O personagem que realizou a ação é empurrado até 3 espaços em uma direção à sua escolha, mesmo que tenha IMUNIDADE a movimento involuntário.</li> <li>Você se teletransporta para um dos espaços originalmente ocupados por aquele personagem, ou o mais próximo possível, não importando a distância.</li> <li>O ataque, efeito ou ação inicial se resolve tendo você como alvo em vez do alvo original.</li> </ul> <p>Você sofre todo o dano, condições, estados e efeitos, e a ação deve ser realizada sem alterações. Por exemplo, se o efeito fosse teletransportar um personagem aliado para um determinado espaço, você é teletransportado para aquele espaço em vez do aliado; se o efeito fosse reparar um aliado, você é reparado em vez do aliado; se o efeito fosse causar dano e REPULSÃO, você sofre o dano (usando sua Armadura, Resistência etc.) e é empurrado na mesma direção que o alvo original seria; if o efeito fosse causar uma condição ou estado, você recebe essa condição ou estado em vez do alvo original. Iniciar esta interrupção não conta como uma reação. Efeitos que têm o próprio personagem como alvo não podem ser interrompidos dessa forma.</p>",
+      "activation": "Quick"
+    },
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_lich.png",
+    "license_id": "mf_lich"
+  },
+  {
+    "id": "mf_sunzi",
+    "source": "HA",
+    "name": "Sunzi",
+    "mechtype": [
+      "Support",
+      "Controller"
+    ],
+    "license_level": 2,
+    "y_pos": 23,
+    "description": "<p>O Sunzi representa o auge da pesquisa da Arsenal Harrison em tecnologia de lampejo armamentizada. Pilotos aprovados para fabricar e testar em campo componentes do Sunzi são monitorados remotamente pelo Grupo de Projetos Especiais da Arsenal, que possui ampla liberdade para coletar dados de telemetria e biometria. A plataforma Sunzi ainda é considerada pela Arsenal Harrison como estando em desenvolvimento, e não disponível para contratos de frota.</p> <p>Assim como o chassi anterior da Arsenal, o Napoleão, o Sunzi utiliza o substrato interdérmico da Arsenal de malha recursiva derivado do H-GOBLIN, permitindo-lhe montar armas e sistemas desproporcionais em um chassi com pouco mais de três metros de altura. Onde ele difere é em sua herança tecnológica. O Napoleão foi em grande parte produto dos grupos internos de pesquisa e desenvolvimento da Arsenal voltados para o espaço paralelo/paracausal; já o Sunzi é supostamente derivado de tecnologia dos Voladores roubada e extraída. Isso pode explicar porque a Grande Orla e a Costa da Linha do Amanhecer são os principais campos de teste da plataforma — longe da supervisão mais direta da União, a Arsenal pode ter mais tempo para fazer o progresso que conseguir antes que o impulso regulatório da União os alcance.</p> <p>De acordo com relatórios da IntNav da União sobre o Sunzi, as emissões não blindadas da plataforma são condizentes com assinaturas conhecidas de espaço lampejo; informações corroboradas por agentes infiltrados no campus principal do programa em Ras Shamra mostram que o desenvolvimento do Sunzi foi acelerado para responder à situação evolutiva na Costa da Linha do Amanhecer. Tanto como uma ferramenta de multiplicação de força para apoiar a presença legionária da Arsenal através da Costa, quanto especificamente para enfrentar a nova arma dos Ingratos ali, o Objeto L (ver Relatório UNI PORTÃO MORTO para mais informações).</p>",
+    "mounts": [
+      "Main/Aux"
+    ],
+    "stats": {
+      "size": 1,
+      "armor": 1,
+      "stress": 4,
+      "structure": 4,
+      "hp": 7,
+      "evasion": 7,
+      "edef": 8,
+      "heatcap": 7,
+      "repcap": 3,
+      "sensor_range": 15,
+      "tech_attack": 1,
+      "save": 11,
+      "speed": 4,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "Porto Seguro",
+        "description": "Quando personagens aliados a até RANGE 50 do Sunzi se teletransportam ou são teletransportados, espaços livres adjacentes ao Sunzi são sempre destinos válidos."
+      },
+      {
+        "name": "Âncora",
+        "description": "O Sunzi tem IMUNIDADE a movimento involuntário causado por outros personagens."
+      },
+      {
+        "name": "Escorregar",
+        "description": "1/rodada, o Sunzi pode se teletransportar 2 espaços como uma ação livre.",
+        "actions": [
+          {
+            "name": "Escorregar",
+            "frequency": "1/Round",
+            "activation": "Free",
+            "detail": "1/rodada, o Sunzi pode se teletransportar 2 espaços como uma ação livre."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Escultor de Realidade",
+      "description": "(TT_AUTORIZAÇÃO_01): SÓ UM AVISO, VOCÊ VAI LER ALGUMAS COISAS OBSCURAS AQUI. TRANSCREVI APENAS AS PARTES ÚTEIS DO QUE OS VOLS DISSERAM. CONSULTE O VISUAL PARA OS SINAIS MANUAIS CORRESPONDENTES. CONSULTE OS RELATÓRIOS: RECIPIENTE-PILOTO-PORTA",
+      "active_name": "Arte da Guerra",
+      "activation": "Free",
+      "active_effect": "Pelo resto da cena, este sistema ganha 6 cargas (você pode usar um dado para acompanhar isso). Como uma reação no início ou no final do turno de qualquer personagem hostil ou aliado dentro de SENSORES e na linha de visão, você gasta uma carga para teletransportá-lo a até 3 espaços em qualquer direção, desde que ele termine em um espaço livre onde possa ficar em pé.",
+      "passive_name": "Âncora de Lampejo",
+      "passive_effect": "Âncora de Lampejo (TAMANHO 1/2, Tag: POSICIONÁVEL, IMUNIDADE a todo dano e efeitos, LIMITADO 3)<br>Você carrega uma única âncora de lampejo que pode posicionar como uma ação rápida. Quando qualquer personagem se teletransportar dentro da sua linha de visão, você pode forçá-lo a aparecer em um espaço livre adjacente à âncora de teletransporte em vez do destino original, desde que ele possa ficar em pé com segurança ali. Se o alvo for hostil, isso consome uma carga.<br>Iniciar essa interrupção não conta como uma reação. Uma vez implantada, você ou qualquer personagem aliado pode pegá-la ou colocá-la no chão enquanto estiver adjacente a ela como uma ação rápida.",
+      "counters": [
+        {
+          "id": "ctr_art_of_war",
+          "name": "Art of War",
+          "default_value": 6,
+          "min": 0,
+          "max": 6
+        }
+      ]
+    },
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_sunzi.png",
+    "license_id": "mf_sunzi"
+  },
+  {
+    "id": "mf_zheng",
+    "source": "IPS-N",
+    "name": "Zheng",
+    "mechtype": [
+      "Striker"
+    ],
+    "license_level": 2,
+    "y_pos": 30,
+    "description": "<p>O Zheng é um novo modelo na linha da EIP-EN e é incomum, pois seu desenvolvimento pode ser atribuído quase completamente a uma única piloto de mecha — Xiong Xiaoli, uma mercenária da Cortina de Fumaça que operava na Grande Orla, protegendo carregamentos pesados com tripulação reduzida para as primeiras colônias da Costa da Linha do Amanhecer. Relativamente desconhecida antes do incidente, a documentação da CMCF da época indica que seu comboio foi atacado pelo conglomerado pirata Tigre Branco, e toda a sua companhia foi morta em ação. O diário pessoal de Xiong, recuperado postumamente, expande o relatório da CMCF. </p> <p>Em seu diário, Xiong relatou que seu chassi, um EIP-EN Raleigh de fábrica, foi quase totalmente destruído no caos do ataque do Tigre Branco. Lançada para fora de sua nave cargueira após a colisão com uma embarcação de ataque do Tigre Branco, Xiong conseguiu sobreviver pelos 45 dias seguintes saqueando os destroços à deriva da CMCF-S Não Diga Mais Nada, o cruzador de escolta que protegia a colônia de suprimentos. Em desvantagem numérica e caçada pelos piratas que patrulhavam o comboio arruinado, Xiong tomou medidas drásticas para modificar seu Raleigh para combate corpo a corpo. Nos ambientes escuros e claustrofóbicos da Não Diga Mais Nada e dos cargueiros destruídos que os Tigres Brancos haviam capturado, Xiong transformou seu chassi em uma máquina rolante de morte. </p> <p>Xiong provavelmente não sobreviveu ao longo combate. Presume-se que ela tenha perished poucos dias antes da chegada de uma patrulha da Segurança do Porta-Malas da EIP-EN, que respondeu ao sinal de socorro inicial do comboio. A Segurança do Porta-Malas descobriu que Xiong havia eliminado todos os piratas designados para o comboio; seu chassi, diário e vestígios de seu corpo foram encontrados na embarcação de guerra com o núcleo arrancado dos Tigres Brancos e recuperados pela EIP-EN. Graças aos seus esforços, a Segurança do Porta-Malas e a CMCF conseguiram caçar o restante da gangue Tigre Branco e eliminá-los. A EIP-EN e a CMCF então se envolveram em uma longa negociação sobre os planos do Raleigh modificado, eventualmente chegando a um acordo de licenciamento misto que beneficia ambas. O modelo resultante, o Zheng, é agora uma escolha popular entre pilotos da CMCF e da Segurança do Porta-Malas operando pela Orla. </p> <p>Xiong Xiaoli é amplamente considerada uma bodisatva pela Grande Orla; mercenários da CMCF criaram vários jogos de bebida em sua homenagem, e pilotos da CMCF em contratos de combate frequentemente competem para atingir o “Limite de Xiong” de mais de 45 mortes confirmadas. </p>",
+    "mounts": [
+      "Main",
+      "Main",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 10,
+      "evasion": 9,
+      "edef": 6,
+      "heatcap": 6,
+      "repcap": 6,
+      "sensor_range": 3,
+      "tech_attack": -2,
+      "save": 10,
+      "speed": 3,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Golpes Destrutivos",
+        "description": "No final do turno do Zheng, se ele realizou pelo menos um ataque corpo a corpo contra um personagem hostil, a força de seus golpes cria uma peça de terreno de TAMANHO 1 que concede cobertura pesada em um espaço livre adjacente. Essa peça tem 10 PV e EVASÃO 5.",
+        "deployables": [
+          {
+            "name": "Cobertura de Golpes Destrutivos",
+            "type": "Deployable",
+            "activation": "Free",
+            "hp": 10,
+            "evasion": 5,
+            "size": 1,
+            "detail": "Este terreno concede cobertura pesada."
+          }
+        ]
+      },
+      {
+        "name": "Computador Fraco",
+        "description": "O Zheng recebe +1 de DIFICULDADE em todos os salvamentos e testes de SISTEMAS.",
+        "synergies": [
+          {
+            "locations": [
+              "systems",
+              "skill_check"
+            ],
+            "detail": "O Zheng recebe +1 de Dificuldade em todos os salvamentos e testes de sistemas."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Traje CQR Tipo Xiong",
+      "description": "Sobrevivendo principalmente com rações coloniais e um suprimento de air cada vez mais radioativo, Xiaoli saqueou materiais de uma nave moribunda para criar modificações que deram ao seu mecha um poder de golpe desarmado sem precedentes.",
+      "active_name": "Engenhosidade de Xiaoli",
+      "active_effect": "Pelo resto da cena, este sistema ganha 6 cargas (você pode usar um dado para acompanhar isso). Gaste uma carga para usar a TENACIDADE DE XIAOLI novamente, ignorando o limite de 1/turno. Você pode gastar qualquer quantidade de cargas por turno. No final de cada turno, você recupera uma carga para cada alvo único (personagem, objeto ou peça de terreno) que você tenha causado dano com esta ação, até um máximo de 6.",
+      "activation": "Protocol",
+      "passive_name": "Tenacidade de Xiaoli",
+      "passive_actions": [
+        {
+          "name": "Tenacidade de Xiaoli",
+          "activation": "Free",
+          "detail": "1/Turno, como uma ação livre, você pode se mover até 3 espaços e então causar 2 de dano cinético a qualquer personagem adjacente ou 10 de dano cinético PF a um objeto ou peça de terreno. Este movimento provoca engajamento e não ignora reações.<br>Se este dano destruir um objeto ou peça de terreno, ele explode, causando 1d6 de dano cinético a todos os personagens adjacentes, exceto você, e os empurrando 1 espaço para trás."
+        }
+      ],
+      "counters": [
+        {
+          "id": "ctr_xiaoli_type_cqb_suite",
+          "name": "Xiaoli Die",
+          "default_value": 6,
+          "min": 0,
+          "max": 6
+        }
+      ]
+    },
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_zheng.png",
+    "license_id": "mf_zheng"
   }
 ]
