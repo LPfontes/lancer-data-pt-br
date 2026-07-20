@@ -3,28 +3,28 @@
     "id": "sk_act_unseen_or_unheard",
     "name": "Agir Sem Ser Visto ou Ouvido",
     "description": "Ir a algum lugar ou fazer algo sem ser detectado.",
-    "detail": "Ir a algum lugar ou fazer algo sem ser detectado, mas não necessariamente rápido. Esconder-se, esgueirar-se ou mover-se silenciosamente. Infiltrar-se em uma instalação evitando segurança, patrulhas ou câmeras. Realizar uma ação ou manobra rápida sem ser visto ou ouvido, como bater uma carteira, sacar sua arma do coldre ou trapacear em jogos de cartas. Usar um disfarce.",
+    "detail": "Ir a algum lugar ou fazer algo sem ser detectado, mas não necessariamente rápido. <b>Esconder-se</b>, esgueirar-se ou mover-se silenciosamente. Infiltrar-se em uma instalação evitando segurança, patrulhas ou câmeras. Realizar uma ação ou manobra rápida sem ser visto ou ouvido, como bater uma carteira, sacar sua arma do coldre ou trapacear em jogos de cartas. Usar um disfarce.",
     "family": "dex"
   },
   {
     "id": "sk_apply_fists_to_faces",
     "name": "Conduzir Punhos a Faces",
-    "description": "Lutar em combate desarmado, franco e brutal.",
-    "detail": "Socar alguém no rosto ou, alternativamente, lutar em combate desarmado, franco e brutal, seja uma briga de socos, um duelo de artes marciais ou uma enorme confusão. Isso nunca é sutil, nunca é limpo e provavelmente causa muito barulho.",
+    "description": "<b>Lutar</b> em combate desarmado, franco e brutal.",
+    "detail": "Socar alguém no rosto ou, alternativamente, <b>Lutar</b> em combate desarmado, franco e brutal, seja uma briga de socos, um duelo de artes marciais ou uma enorme confusão. Isso nunca é sutil, nunca é limpo e provavelmente causa muito barulho.",
     "family": "str"
   },
   {
     "id": "sk_assault",
     "name": "Confrontar",
     "description": "Participar de combate direto e explícito.",
-    "detail": "Tomar parte explicitamente em combate direto: lutar abrindo caminho através de um prédio cheio de mercenários hostis, trocar tiros por cima de trincheiras escorregadias na chuva, lutar em caótica microgravidade como parte de uma ação de abordagem em transporte ou engajar com um inimigo nos destroços urbanos esfumaçados de uma cidade sob bombardeio orbital — Quando você confronta, você está sempre confrontando algo (uma posição, um piloto rival, uma força inimiga, um grupo de guardas), e é sempre uma ação ruidosa, aberta e direta.",
+    "detail": "Tomar parte explicitamente em combate direto: <b>Lutar</b> abrindo caminho através de um prédio cheio de mercenários hostis, trocar tiros por cima de trincheiras escorregadias na chuva, <b>Lutar</b> em caótica microgravidade como parte de uma ação de abordagem em transporte ou engajar com um inimigo nos destroços urbanos esfumaçados de uma cidade sob bombardeio orbital — Quando você confronta, você está sempre confrontando algo (uma posição, um piloto rival, uma força inimiga, um grupo de guardas), e é sempre uma ação ruidosa, aberta e direta.",
     "family": "str"
   },
   {
     "id": "sk_blow_something_up",
     "name": "Explodir Algo",
     "description": "Usar explosivos para destruir totalmente alguma coisa ou transformá-la em uma enorme bola de fogo.",
-    "detail": "Usar explosivos (improvisados ou não), armas ou talvez apenas a boa e velha força bruta para destruir totalmente alguma coisa ou transformá-la em uma enorme bola de fogo (talvez uma parede, um conjunto de <b>SENSORES</b>, um posto avançado, um núcleo de reator - as coisas boas). Provavelmente não deve ser usado contra pessoas, a menos que elas estejam incidentalmente no caminho.",
+    "detail": "Usar explosivos (improvisados ou não), armas ou talvez apenas a boa e velha força bruta para destruir totalmente alguma coisa ou transformá-la em uma enorme bola de fogo (talvez uma parede, um conjunto de <b>Sensores</b>, um posto avançado, um Núcleo de reator - as coisas boas). Provavelmente não deve ser usado contra pessoas, a menos que elas estejam incidentalmente no caminho.",
     "family": "str"
   },
   {
@@ -38,28 +38,28 @@
     "id": "sk_get_a_hold_of_something",
     "name": "Arranjar Algo",
     "description": "Adquirir aliados, benefícios ou conexões, temporários ou permanentes, através de riqueza ou influência social.",
-    "detail": "Adquirir aliados, benefícios ou conexões úteis através de riqueza ou influência social. Isso pode ser permanente (comprando ou recebendo) ou temporário (alugando ou pegando emprestado ajuda ou suprimentos, etc.), e pode ser mais difícil ou mais fácil dependendo do quanto você quer usar. Isso não pode ser usado para algo que normalmente é limitado por nível de licença (como peças de mecha), mas pode ser usado para ajuda, suprimentos, informações, materiais, comida, soldados ou qualquer outra coisa que tenha mais impacto narrativo. Tipicamente, isso é adquirido comprando em um mercado ou requisitando de uma organização matriz.",
+    "detail": "Adquirir aliados, benefícios ou conexões úteis através de riqueza ou influência social. Isso pode ser permanente (comprando ou recebendo) ou temporário (alugando ou pegando emprestado ajuda ou suprimentos, etc.), e pode ser mais difícil ou mais fácil dependendo do quanto você quer usar. Isso não pode ser usado para algo que normalmente é Limitado por nível de licença (como peças de mecha), mas pode ser usado para ajuda, suprimentos, informações, materiais, comida, soldados ou qualquer outra coisa que tenha mais impacto narrativo. Tipicamente, isso é adquirido comprando em um mercado ou requisitando de uma organização matriz.",
     "family": "cha"
   },
   {
     "id": "sk_get_somewhere_quickly",
     "name": "Ir Rápido a Algum Lugar",
     "description": "Ir rápido a algum lugar e sem sofrer complicações.",
-    "detail": "Ir a algum lugar sem complicações e com <b>VELOCIDADE</b>, mas não necessariamente de forma furtiva. Escalar, nadar ou realizar manobras acrobáticas na tentativa de alcançar um destino mais rápido do que pelo caminho 'seguro'. Cair em segurança de uma grande altura. Mover-se graciosamente em gravidade zero. Perseguir ou fugir, correr mais rápido ou superar um alvo. Chegar a algum lugar mais rápido que qualquer outra pessoa. Você também pode usar isso quando quiser dirigir ou pilotar um veículo.",
+    "detail": "Ir a algum lugar sem complicações e com <b>Velocidade</b>, mas não necessariamente de forma furtiva. Escalar, nadar ou realizar manobras acrobáticas na tentativa de alcançar um destino mais rápido do que pelo caminho 'seguro'. Cair em segurança de uma grande altura. Mover-se graciosamente em <b>gravidade zero</b>. Perseguir ou fugir, correr mais rápido ou superar um alvo. Chegar a algum lugar mais rápido que qualquer outra pessoa. Você também pode usar isso quando quiser dirigir ou pilotar um veículo.",
     "family": "dex"
   },
   {
     "id": "sk_hack_or_fix",
     "name": "Hackear ou Consertar",
     "description": "Consertar um dispositivo ou sistema com defeito; alternativamente, invadi-lo, ou destruí-lo totalmente, desativando-o ou sabotando-o.",
-    "detail": "Consertar um dispositivo ou sistema com defeito. Alternativamente, invadi-lo, ou destruí-lo totalmente, desativando-o ou sabotando-o. Você pode usar isso para hackear ou proteger sistemas eletrônicos, como fechaduras eletrônicas, sistemas de computador, redes da omninet ou caixões de <b>PNH</b>.",
+    "detail": "Consertar um dispositivo ou sistema com defeito. Alternativamente, invadi-lo, ou destruí-lo totalmente, desativando-o ou sabotando-o. Você pode usar isso para hackear ou proteger Sistemas eletrônicos, como fechaduras eletrônicas, Sistemas de computador, redes da omninet ou caixões de PNH.",
     "family": "int"
   },
   {
     "id": "sk_invent_or_create",
     "name": "Inventar ou Criar",
     "description": "Inventar novos dispositivos, ferramentas ou abordagens para problemas.",
-    "detail": "De modo geral, você precisa de ferramentas e suprimentos para inventar ou criar algo com sucesso. Use isso com muitas ações de recesso para trabalhar em projetos. Você também pode usar no <b>CALOR</b> do momento para inventar novos dispositivos, ferramentas ou abordagens para algo (explosivos improvisados, equipamentos, disfarces ou algo semelhante).",
+    "detail": "De modo geral, você precisa de ferramentas e suprimentos para inventar ou criar algo com sucesso. Use isso com muitas ações de recesso para trabalhar em projetos. Você também pode usar no <b>Calor</b> do momento para inventar novos dispositivos, ferramentas ou abordagens para algo (explosivos improvisados, equipamentos, disfarces ou algo semelhante).",
     "family": "int"
   },
   {
@@ -93,8 +93,8 @@
   {
     "id": "sk_read_a_situation",
     "name": "Ler Situação",
-    "description": "Procurar por subtextos, motivos ou ameaças em uma situação ou pessoa.",
-    "detail": "Procurar por subtextos, motivos ou ameaças em uma situação ou pessoa, muitas vezes em situações sociais. Usar sua intuição para discernir a motivação de alguém, descobrir quem está realmente no comando ou quem está prestes a fazer algo precipitado ou estúpido. Ter um pressentimento sobre uma situação ou pessoa. Sentir se alguém está mentindo para você.",
+    "description": "<b>Procurar</b> por subtextos, motivos ou  <b>Ameaça<b> s em uma situação ou pessoa.",
+    "detail": "<b>Procurar</b> por subtextos, motivos ou  <b>Ameaça<b> s em uma situação ou pessoa, muitas vezes em situações sociais. Usar sua intuição para discernir a motivação de alguém, descobrir quem está realmente no comando ou quem está prestes a fazer algo precipitado ou estúpido. Ter um pressentimento sobre uma situação ou pessoa. Sentir se alguém está mentindo para você.",
     "family": "int"
   },
   {
@@ -107,22 +107,22 @@
   {
     "id": "sk_spot",
     "name": "Localizar",
-    "description": "Localizar detalhes, objetos ou pessoas que estão escondidos ou difíceis de se ver.",
-    "detail": "Localizar detalhes, objetos ou pessoas escondidos ou difíceis de ver. Notar emboscadas, compartimentos escondidos ou indivíduos disfarçados. Espionar um alvo à distância, ou distinguir os detalhes, forma e número de objetos, veículos, mechas ou pessoas claramente à distância. Rastrear pessoas ou veículos.",
+    "description": "Localizar detalhes, objetos ou pessoas que estão <b>Escondido</b>s ou difíceis de se ver.",
+    "detail": "Localizar detalhes, objetos ou pessoas <b>Escondido</b>s ou difíceis de ver. Notar emboscadas, compartimentos <b>Escondido</b>s ou indivíduos disfarçados. Espionar um alvo à distância, ou distinguir os detalhes, forma e número de objetos, veículos, mechas ou pessoas claramente à distância. Rastrear pessoas ou veículos.",
     "family": "int"
   },
   {
     "id": "sk_stay_cool",
     "name": "Ficar Frio",
-    "description": "Realizar uma tarefa que requer concentração, destreza, velocidade ou precisão sob pressão.",
-    "detail": "Fazer algo que requer concentração, <b>VELOCIDADE</b> ou <b>PRECISÃO</b> intensa sob pressão, como arrombar uma fechadura enquanto seu esquadrão troca tiros com guardas que se aproximam, evitar um código memético hostil ao hackear um console seguro, desarmar cuidadosamente um explosivo ou destravar uma arma sob fogo. Se você precisa fazer algo complicado em uma situação de alto <b>ESTRESSE</b> sem errar (e possivelmente sem nem suar), esta é a ação a ser usada.",
+    "description": "Realizar uma tarefa que requer concentração, destreza, <b>Velocidade</b> ou Precisão sob pressão.",
+    "detail": "Fazer algo que requer concentração, <b>Velocidade</b> ou Precisão intensa sob pressão, como arrombar uma fechadura enquanto seu esquadrão troca tiros com guardas que se aproximam, evitar um código memético hostil ao hackear um console seguro, desarmar cuidadosamente um explosivo ou destravar uma arma sob fogo. Se você precisa fazer algo complicado em uma situação de alto <b>Estresse</b> sem errar (e possivelmente sem nem suar), esta é a ação a ser usada.",
     "family": "dex"
   },
   {
     "id": "sk_survive",
     "name": "Sobreviver",
     "description": "Persistir através de um ambiente duro, hostil ou implacável.",
-    "detail": "Persistir através de ambientes duros, hostis ou implacáveis, como o vácuo do espaço, tundra congelada, um enclave pirata, uma colônia dominada pelo crime, natureza selvagem ou deserto escaldante. Você geralmente usa sobreviver quando quer fazer uma jornada por ambientes selvagens, navegar ou evitar perigos naturais como fauna carnívora, deslizamentos de rochas, gelo fino ou campos de lava. Alternativamente, você pode usá-lo para evitar perigos criados pelo homem, como navegar por uma cidade com segurança ou evitar áreas perigosas de uma estação espacial. Você também pode usá-lo ao testar a resistência pessoal, como se livrar de veneno ou álcool.",
+    "detail": "Persistir através de ambientes duros, hostis ou implacáveis, como o vácuo do espaço, tundra congelada, um enclave pirata, uma colônia dominada pelo crime, natureza selvagem ou deserto escaldante. Você geralmente usa sobreviver quando quer fazer uma jornada por ambientes selvagens, navegar ou evitar perigos naturais como fauna carnívora, deslizamentos de rochas, gelo fino ou campos de lava. Alternativamente, você pode usá-lo para evitar perigos criados pelo homem, como navegar por uma cidade com segurança ou evitar áreas perigosas de uma estação espacial. Você também pode usá-lo ao testar a <b>Resistência</b> pessoal, como se livrar de veneno ou álcool.",
     "family": "str"
   },
   {
@@ -142,15 +142,15 @@
   {
     "id": "sk_threaten",
     "name": "Ameaçar",
-    "description": "Usar força ou ameaças para obrigar alguém a fazer o que você quer.",
-    "detail": "Usar força ou ameaças de força para fazer alguém fazer o que você quer que ele faça. Diga o que você quer que alguém faça e o que você vai fazer com ele se não obedecer. Isso também pode ser chantagem, influência ou algo igualmente desagradável. Ameaçar alguém pode ser de altíssimo risco, mas muito eficaz se bem-sucedido - de qualquer forma, provavelmente não há como reparar o relacionamento depois. Se você ameaçar alguém sem sucesso, suas ameaças não terão mais efeito sobre ele, a menos que você mude algo na situação (como em todos os outros testes de perícia).",
+    "description": "Usar força ou  <b>Ameaça<b> s para obrigar alguém a fazer o que você quer.",
+    "detail": "Usar força ou  <b>Ameaça<b> s de força para fazer alguém fazer o que você quer que ele faça. Diga o que você quer que alguém faça e o que você vai fazer com ele se não obedecer. Isso também pode ser chantagem, influência ou algo igualmente desagradável.  <b>Ameaça<b> r alguém pode ser de altíssimo risco, mas muito eficaz se bem-sucedido - de qualquer forma, provavelmente não há como reparar o relacionamento depois. Se você  <b>Ameaça<b> r alguém sem sucesso, suas  <b>Ameaça<b> s não terão mais efeito sobre ele, a menos que você mude algo na situação (como em todos os outros testes de perícia).",
     "family": "str"
   },
   {
     "id": "sk_word_on_the_street",
     "name": "Coletar Rumores",
     "description": "Pegar fofocas, notícias ou boatos das ruas ou de uma cena social particular.",
-    "detail": "Pegar fofocas, notícias ou boatos das ruas. O que você obtém depende de quais 'ruas' você está obtendo a informação (alta sociedade, baixa sociedade, boatos, conversas militares, etc.). Isso provavelmente leva muito menos tempo do que investigar algo em detalhes, mas a informação pode ser mais qualitativa ou colorida pela opinião (às vezes isso pode ser útil). Você sempre pode descobrir de onde veio a informação ou a quem procurar em seguida.",
+    "detail": "Pegar fofocas, notícias ou boatos das ruas. O que você obtém depende de quais 'ruas' você está obtendo a informação (alta sociedade, baixa sociedade, boatos, conversas militares, etc.). Isso provavelmente leva muito menos tempo do que investigar algo em detalhes, mas a informação pode ser mais qualitativa ou colorida pela opinião (às vezes isso pode ser útil). Você sempre pode descobrir de onde veio a informação ou a quem <b>Procurar</b> em seguida.",
     "family": "cha"
   }
 ]

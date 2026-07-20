@@ -9,7 +9,7 @@
   {
     "id": "sitrep_control",
     "name": "Controle",
-    "description": "Missões de CONTROLE exigem que os PJs mantenham o controle de quatro Zonas de Controle por seis rodadas. As zonas podem conter locais importantes como torres de transmissão, baterias de artilharia, terminais ou hangares. No final de cada rodada, cada lado ganha 1 ponto para cada Zona de Controle que controla. Se um lado controlar todas as quatro Zonas de Controle, ele ganha +1 ponto adicional.",
+    "description": "Missões de CONTROLE exigem que os PJs mantenham o controle de quatro Zonas de Controle por seis rodadas. As zonas podem conter locais importantes como torres de transmissão, baterias de  <b>Artilharia<b> , terminais ou hangares. No final de cada rodada, cada lado ganha 1 ponto para cada Zona de Controle que controla. Se um lado controlar todas as quatro Zonas de Controle, ele ganha +1 ponto adicional.",
     "pcVictory": "Os PJs têm a maior pontuação ao final da sexta rodada",
     "enemyVictory": "A força inimiga tem a maior pontuação ao final da sexta rodada.",
     "noVictory": "Se ambos os lados tiverem pontuação igual ao final da sexta rodada, não há vencedor e ambos os lados devem se retirar.",
@@ -24,7 +24,7 @@
     "enemyVictory": "O Objetivo não foi extraído ao final da oitava rodada. Se houver algum PJ restante em campo quando isso ocorrer, eles são capturados ou esmagados.",
     "noVictory": "O Objetivo é destruído.",
     "deployment": "Os PJs posicionam primeiro, escolhendo posições para seus personagens e o Objetivo na Zona de Posicionamento Aliada; então o Mestre posiciona as forças inimigas na ZPE.",
-    "extraction": "Enquanto na Zona de Extração, os PJs podem extrair como uma ação livre ao final de seu turno. PJs extraídos são removidos do campo de batalha. Se o Objetivo estiver adjacente a um PJ quando eles extraem e não estiver contestado por nenhum personagem do lado oposto, ele é extraído em segurança."
+    "extraction": "Enquanto na Zona de Extração, os PJs podem extrair como uma <b>Ação Livre</b> ao final de seu turno. PJs extraídos são removidos do campo de batalha. Se o Objetivo estiver adjacente a um PJ quando eles extraem e não estiver contestado por nenhum personagem do lado oposto, ele é extraído em segurança."
   },
   {
     "id": "sitrep_extraction",
@@ -35,7 +35,7 @@
     "noVictory": "O Objetivo é destruído.",
     "deployment": "Os PJs posicionam primeiro, escolhendo posições para seus personagens na Zona de Posicionamento Aliada; em seguida, o Mestre posiciona o Objetivo na Zona do Objetivo.",
     "objective": "Um objeto ou pessoa de Tamanho 1/2–2. O Objetivo tem 10 PV por nível de Tamanho, Evasão 10, Defesa-E 10 e nenhuma Armadura. As forças inimigas querem o Objetivo e não o danificarão voluntariamente. Quando um personagem começa seu turno adjacente ao Objetivo, este se move com eles durante o movimento regular. Se o Objetivo estiver adjacente a dois personagens de lados opostos, ele para de se mover e não pode se mover até que esteja adjacente apenas a personagens de um lado. O Objetivo não se move sozinho.",
-    "extraction": "Enquanto na Zona de Extração/Zona de Posicionamento Aliada, os PJs podem extrair como uma ação livre ao final de seu turno. PJs extraídos são removidos do campo de batalha. Se o Objetivo estiver adjacente a um PJ quando eles extraem e não estiver contestado por nenhum personagem do lado oposto, ele é extraído em segurança."
+    "extraction": "Enquanto na Zona de Extração/Zona de Posicionamento Aliada, os PJs podem extrair como uma <b>Ação Livre</b> ao final de seu turno. PJs extraídos são removidos do campo de batalha. Se o Objetivo estiver adjacente a um PJ quando eles extraem e não estiver contestado por nenhum personagem do lado oposto, ele é extraído em segurança."
   },
   {
     "id": "sitrep_gauntlet",
@@ -49,7 +49,7 @@
   {
     "id": "sitrep_holdout",
     "name": "Resistência",
-    "description": "Missões de RESISTÊNCIA são empreendimentos desesperados. Elas exigem que os PJs defendam uma área contra um ataque maciço de inimigos. No melhor cenário, isso compra tempo para que aliados completem um objetivo em outro lugar; no pior, é sobreviver ou morrer. Os PJs começam com 4 pontos. No final da sexta rodada, os pontos são contados: os PJs perdem um ponto para cada inimigo dentro da Zona de Controle. Isso pode resultar em uma pontuação negativa.",
+    "description": "Missões de <b>Resistência</b> são empreendimentos desesperados. Elas exigem que os PJs defendam uma área contra um ataque maciço de inimigos. No melhor cenário, isso compra tempo para que aliados completem um objetivo em outro lugar; no pior, é sobreviver ou morrer. Os PJs começam com 4 pontos. No final da sexta rodada, os pontos são contados: os PJs perdem um ponto para cada inimigo dentro da Zona de Controle. Isso pode resultar em uma pontuação negativa.",
     "pcVictory": "Ao final da sexta rodada, os PJs têm uma pontuação de 1 ou mais.",
     "enemyVictory": "Ao final da sexta rodada, os PJs têm uma pontuação menor que 1. Se houver algum PJ restante em campo quando isso ocorrer, eles são capturados ou esmagados.",
     "controlZone": "Uma área tipicamente de 10 espaços por 5 espaços no centro do mapa, ou posicionada conforme necessário. A área ao redor da Zona de Controle deve ser fortificada com cobertura sólida de Tamanho 1–2.",

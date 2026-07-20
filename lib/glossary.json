@@ -1,23 +1,23 @@
 [
   {
     "name": "Armadura",
-    "description": "Todo dano cinético, energético e explosivo é reduzido por uma quantidade igual à Armadura do personagem. Mechas não podem ter mais que 4 de Armadura."
+    "description": "Todo <b>Dano</b> <b>Cinético</b>, <b>Energético</b> e <b>explosivo</b> é reduzido por uma quantidade igual à <b>Armadura</b> do personagem. Mechas não podem ter mais que <b>4</b> de <b>Armadura</b>."
   },
   {
     "name": "Pontos de Sistema",
-    "description": "CHASSIS de mecha também possuem um número definido de PONTOS DE SISTEMA (SP). SP podem ser gastos para adicionar sistemas extras ao seu mecha, e algumas armas mais pesadas exigem tanto suportes quanto SP. Você não pode adicionar sistemas ao seu mecha que excedam seus SP disponíveis. O Brio do seu piloto, igual à metade do seu LN, é adicionado ao seu total de SP, e você ganha um SP adicional para cada dois pontos de SISTEMAS."
+    "description": "Chassis de mecha também possuem um número definido de <b>Pontos de Sistema (SP)</b>. SP podem ser gastos para adicionar <b>Sistemas</b> extras ao seu mecha, e algumas armas mais pesadas exigem tanto suportes quanto SP. Você não pode adicionar <b>Sistemas</b> ao seu mecha que excedam seus SP disponíveis. O <b>Brio<b> do seu piloto, igual à metade do seu LN, é adicionado ao seu total de SP, e você ganha um SP adicional para cada dois Pontos de Sistemas."
   },
   {
     "name": "Dano Bônus",
-    "description": "Dano extra — cinético, energético ou explosivo — adicionado a ataques corpo a corpo ou à distância. Ataques que atingem mais de um personagem causam apenas metade do dano bônus."
+    "description": "Dano extra — <b>Cinético</b>, <b>Energético</b> ou <b>explosivo</b> — adicionado a ataques corpo a corpo ou à distância. Ataques que atingem mais de um personagem causam apenas metade do <b>Dano bônus</b>."
   },
   {
     "name": "Personagem",
-    "description": "Um personagem jogador (PJ), personagem não jogador (PNJ) ou qualquer outra entidade capaz de agir (ou reagir) independentemente, como Drones."
+    "description": "Um personagem jogador (PJ), personagem não jogador (PNJ) ou qualquer outra entidade capaz de agir (ou reagir) independentemente, como <b>Drones</b>."
   },
   {
     "name": "Dano",
-    "description": "O dano sofrido é subtraído dos Pontos de Vida (PV), e pode ser cinético, energético, explosivo ou de queimadura."
+    "description": "O <b>Dano</b> sofrido é subtraído dos <b>Pontos de Vida (PV)</b>, e pode ser <b>Cinético</b>, <b>Energético</b>, <b>explosivo</b> ou de <b>Queimadura<b> ."
   },
   {
     "name": "Defesa-E",
@@ -29,27 +29,27 @@
   },
   {
     "name": "Brio",
-    "description": "Metade do NL (arredondada para cima) do personagem, representando sua experiência em combate. Brio fornece bônus para algumas rolagens e características."
+    "description": "Metade do NL (arredondada para cima) do personagem, representando sua experiência em combate. <b>Brio<b> fornece bônus para algumas rolagens e características."
   },
   {
     "name": "Calor",
-    "description": "O Calor sofrido por um alvo representa dano aos sistemas internos e blindagem do reator. Ele suporta até Cap. de Calor."
+    "description": "O <b>Calor</b> sofrido por um alvo representa <b>Dano</b> aos Sistemas internos e blindagem do reator. Ele suporta até Cap. de <b>Calor</b> ."
   },
   {
     "name": "Cap. de Calor",
-    "description": "A quantidade de calor que um mecha pode suportar antes de correr o risco de superaquecimento."
+    "description": "A quantidade de <b>Calor</b> que um mecha pode <b>Suportar</b> antes de correr o risco de superaquecimento."
   },
   {
     "name": "Pontos de Vida (PV)",
-    "description": "A quantidade de dano que um piloto pode receber antes de ficar Caído e Apagado, e a quantidade de dano que um mecha pode receber antes de sofrer dano estrutural."
+    "description": "A quantidade de Dano que um piloto pode receber antes de ficar Caídos e Apagados, e a quantidade de Dano que um mecha pode receber antes de sofrer Dano estrutural."
   },
   {
     "name": "Imunidade",
-    "description": "Um personagem com Imunidade ignora todo o dano e efeitos do que é imune."
+    "description": "Um personagem com<b>Imunidade</b> ignora todo o <b>Dano</b> e efeitos do que é imune."
   },
   {
     "name": "Alcance",
-    "description": "O alcance máximo em que uma arma pode ser usada para ataques à distância, medido a partir do personagem que ataca."
+    "description": "O <b>Alcance</b> máximo em que uma arma pode ser usada para ataques à distância, medido a partir do personagem que ataca."
   },
   {
     "name": "Cap. de Reparo",
@@ -57,23 +57,23 @@
   },
   {
     "name": "Resistência",
-    "description": "Um personagem com Resistência reduz pela metade o dano, calor ou outro tipo de dano depois da Armadura ser aplicada. Resistência ao mesmo tipo de dano não se acumula, aplica-se somente a maior."
+    "description": "Um personagem com Resistência reduz pela metade o <b>Dano</b>, <b>Calor</b> ou outro tipo de <b>Dano</b> depois da <b>Armadura</b> ser aplicada. Resistência ao mesmo tipo de <b>Dano</b> não se acumula, aplica-se somente a maior."
   },
   {
     "name": "Alvo de Salvamento",
-    "description": "Quando você força outro personagem a fazer um salvamento, ele deve igualar ou superar o ALVO DE SALVAMENTO do seu mecha ou sofrer as consequências."
+    "description": "Quando você força outro personagem a fazer um salvamento, ele deve igualar ou superar o <b>Alvo de Salvamento</b> do seu mecha ou sofrer as consequências."
   },
   {
     "name": "Estresse",
-    "description": "Todos os mechas dos PJs (e alguns PNJs) têm uma quantidade de Estresse, (geralmente 4 para PJs). Esta é a quantidade de dano de estresse que eles podem sofrer antes de ocorrer um derretimento do reator. Quando os mechas excedem sua Cap. de Calor, eles sofrem 1 de dano de estresse e fazem um teste de superaquecimento."
+    "description": "Todos os mechas dos PJs (e alguns PNJs) têm uma quantidade de <b>Estresse</b>, (geralmente 4 para PJs). Esta é a quantidade de <b>Dano de Estresse</b> que eles podem sofrer antes de ocorrer um derretimento do reator. Quando os mechas excedem sua Cap. de <b>Calor</b>  , eles sofrem <b>1 de Dano de Estresse</b> e fazem um teste de superaquecimento."
   },
   {
     "name": "Estrutura",
-    "description": "Todos os mechas dos PJs (e alguns PNJs) têm uma certa quantidade de Estrutura (geralmente 4 para PJs). Esta é a quantidade de dano de estrutura que eles podem sofrer antes de serem destruídos. Quando os mechas atingem 0 PV, eles sofrem 1 de dano de estrutura e fazem um teste de estrutura."
+    "description": "Todos os mechas dos PJs (e alguns PNJs) têm uma certa quantidade de <b>Estrutura</b> (geralmente 4 para PJs). Esta é a quantidade de <b>Dano de Estrutura</b> que eles podem sofrer antes de serem destruídos. Quando os mechas atingem 0 PV, eles sofrem <b>1 de Dano de Estrutura</b> e fazem um teste de Estrutura."
   },
   {
     "name": "Sensores",
-    "description": "A distância máxima em que você pode detectar outros personagens, fazer ataques tecnológicos, Travar Mira e usar alguns sistemas."
+    "description": "A distância máxima em que você pode detectar outros personagens, fazer ataques tecnológicos, <b>Travar Mira</b> e usar alguns Sistemas."
   },
   {
     "name": "Tamanho",
@@ -81,7 +81,7 @@
   },
   {
     "name": "Velocidade",
-    "description": "A quantidade de espaços que um personagem pode se mover com um movimento padrão ou com Impulsionar"
+    "description": "A quantidade de espaços que um personagem pode se mover com um movimento padrão ou com <b>Impulsionar</b>"
   },
   {
     "name": "Ataque Tecnológico",
@@ -89,70 +89,70 @@
   },
   {
     "name": "Ameaça",
-    "description": "A distância máxima na qual ataques corpo a corpo e de retaliar podem ser realizados com certas armas, medida a partir do personagem atacante. Todas as armas têm Ameaça 1, exceto se especificado o contrário."
+    "description": "A distância máxima na qual ataques corpo a corpo e de <b>Retaliar</b> podem ser realizados com certas armas, medida a partir do personagem atacante. Todas as armas têm  <b>Ameaça<b>  1, exceto se especificado o contrário."
   },
   {
     "name": "Linha",
-    "description": "Equipamentos com padrão de ataque de LINHA afetam todos os alvos dentro de uma linha reta, com X espaços de comprimento. Uma rolagem de ataque separada é feita para cada alvo, mas o dano é rolado apenas uma vez e o dano de bônus é reduzido à metade se houver vários personagens afetados. Para qualquer habilidade ou efeito que exija que você escolha um alvo ou alvos dentro do ALCANCE, este equipamento pode escolher qualquer alvo que possa ser atingido pelo seu padrão.<br><br>Adicionalmente, alguns ataques de LINHA, CONE, EMANAÇÃO e EXPLOSÃO listam um ALCANCE. Nesses casos, o ponto de origem do ataque pode ser traçado a partir de um ponto dentro do alcance especificado e na linha de visão. Por exemplo, um ataque com Linha 5 e Alcance 10 afetaria uma área de LINHA 5 começando em qualquer ponto dentro do ALCANCE 10."
+    "description": "Equipamentos com padrão de ataque de Linha afetam todos os alvos dentro de uma Linha reta, com X espaços de comprimento. Uma rolagem de ataque separada é feita para cada alvo, mas o Dano é rolado apenas uma vez e o Dano de bônus é reduzido à metade se houver vários personagens afetados. Para qualquer habilidade ou efeito que exija que você escolha um alvo ou alvos dentro do <b>Alcance<b>, este equipamento pode escolher qualquer alvo que possa ser atingido pelo seu padrão.<br><br>Adicionalmente, alguns ataques de Linha, Cone, <b>Emanação<b> e <b>Explosão<b> listam um <b>Alcance<b>. Nesses casos, o ponto de origem do ataque pode ser traçado a partir de um ponto dentro do <b>Alcance</b> especificado e na linha de visão. Por exemplo, um ataque com <b>Linha 5</b> e <b>Alcance 10</b> afetaria uma área de <b>Linha 5</b> começando em qualquer ponto dentro do <b>Alcance 10</b>."
   },
   {
     "name": "Cone",
-    "description": "Equipamentos com padrão de ataque de CONE afetam personagens dentro de um cone com X espaços de comprimento e X espaços de largura em seu ponto mais distante. O cone começa com um espaço de largura. Uma rolagem de ataque separada é feita para cada alvo, mas o dano é rolado apenas uma vez e o dano de bônus é reduzido à metade se houver vários personagens afetados. Para qualquer habilidade ou efeito que exija que você escolha um alvo ou alvos dentro do ALCANCE, este equipamento pode escolher qualquer alvo que possa ser atingido pelo seu padrão.<br><br>Adicionalmente, alguns ataques de LINHA, CONE, EMANAÇÃO e EXPLOSÃO listam um ALCANCE. Nesses casos, o ponto de origem do ataque pode ser traçado a partir de um ponto dentro do alcance especificado e na linha de visão. Por exemplo, um ataque com Cone 3 e Alcance 10 afetaria uma área de CONE 3 começando em qualquer ponto dentro do ALCANCE 10. "
+    "description": "Equipamentos com padrão de ataque de Cone afetam personagens dentro de um Cone com X espaços de comprimento e X espaços de largura em seu ponto mais distante. O Cone começa com um espaço de largura. Uma rolagem de ataque separada é feita para cada alvo, mas o Dano é rolado apenas uma vez e o Dano de bônus é reduzido à metade se houver vários personagens afetados. Para qualquer habilidade ou efeito que exija que você escolha um alvo ou alvos dentro do <b>Alcance<b>, este equipamento pode escolher qualquer alvo que possa ser atingido pelo seu padrão.<br><br>Adicionalmente, alguns ataques de <b>Linha</b>, <b>Cone</b>, <b>Emanação<b> e <b>Explosão<b> listam um <b>Alcance<b>. Nesses casos, o ponto de origem do ataque pode ser traçado a partir de um ponto dentro do <b>Alcance</b> especificado e na linha de visão. Por exemplo, um ataque com <b>Cone 3</b> e <b>Alcance 10</b> afetaria uma área de <b>Cone 3</b> começando em qualquer ponto dentro do <b>Alcance 10</b>. "
   },
   {
     "name": "Explosão",
-    "description": "Equipamentos com padrão de ataque de EXPLOSÃO afetam personagens dentro de um raio de X espaços, traçado a partir de um ponto dentro do ALCANCE e na linha de visão. Cobertura e linha de visão para os ataques são calculadas com base no centro da explosão, em vez da posição do atacante. Uma rolagem de ataque separada é feita para cada alvo, mas o dano é rolado apenas uma vez e o dano de bônus é reduzido à metade se houver vários personagens afetados. Para qualquer habilidade ou efeito que exija que você escolha um alvo ou alvos dentro do ALCANCE, este equipamento pode escolher qualquer alvo que possa ser atingido pelo seu padrão.<br><br>Adicionalmente, alguns ataques de LINHA, CONE, EMANAÇÃO e EXPLOSÃO listam um ALCANCE. Nesses casos, o ponto de origem do ataque pode ser traçado a partir de um ponto dentro do alcance especificado e na linha de visão. Por exemplo, um ataque com Explosão 3 e Alcance 10 afetaria uma área de EXPLOSÃO 3 começando em qualquer ponto dentro do ALCANCE 10."
+    "description": "Equipamentos com padrão de ataque de <b>Explosão<b> afetam personagens dentro de um raio de X espaços, traçado a partir de um ponto dentro do <b>Alcance</b> e na linha de visão. Cobertura e linha de visão para os ataques são calculadas com base no centro da  <b>Explosão<b> , em vez da posição do atacante. Uma rolagem de ataque separada é feita para cada alvo, mas o Dano é rolado apenas uma vez e o Dano de bônus é reduzido à metade se houver vários personagens afetados. Para qualquer habilidade ou efeito que exija que você escolha um alvo ou alvos dentro do <b>Alcance<b>, este equipamento pode escolher qualquer alvo que possa ser atingido pelo seu padrão.<br>Adicionalmente, alguns ataques de <b>Linha</b>, <b>Cone</b>, <b>Emanação<b> e <b>Explosão<b> listam um <b>Alcance</b>. Nesses casos, o ponto de origem do ataque pode ser traçado a partir de um ponto dentro do <b>Alcance</b> especificado e na linha de visão. Por exemplo, um ataque com <b>Explosão 3<b> e <b>Alcance 10</b> afetaria uma área de <b>Explosão 3<b> começando em qualquer ponto dentro do <b>Alcance 10</b>."
   },
   {
     "name": "Emanação",
-    "description": "Equipamentos com padrão de ataque de EMANAÇÃO afetam personagens dentro de um raio de X espaços, centrado e incluindo o espaço ocupado pelo usuário (ou alvo). Se a Emanação for um ataque, o usuário ou alvo não é afetado pelo ataque, a menos que especificado. Cobertura e linha de visão são calculadas a partir do personagem. Se um efeito de EMANAÇÃO for contínuo, ele se move com o personagem em seu centro. Uma rolagem de ataque separada é feita para cada alvo, mas o dano é rolado apenas uma vez e o dano de bônus é reduzido à metade se houver vários personagens afetados. Para qualquer habilidade ou efeito que exija que você escolha um alvo ou alvos dentro do ALCANCE, este equipamento pode escolher qualquer alvo que possa ser atingido pelo seu padrão.<br><br>Adicionalmente, alguns ataques de LINHA, CONE, EMANAÇÃO e EXPLOSÃO listam um ALCANCE. Nesses casos, o ponto de origem do ataque pode ser traçado a partir de um ponto dentro do alcance especificado e na linha de visão. Por exemplo, um ataque com Emanação 2 e Alcance 10 afetaria uma área de EMANAÇÃO 2 começando em qualquer ponto dentro do ALCANCE 10."
+    "description": "Equipamentos com padrão de ataque de <b>Emanação<b> afetam personagens dentro de um raio de X espaços, centrado e incluindo o espaço ocupado pelo usuário (ou alvo). Se a <b>Emanação<b> for um ataque, o usuário ou alvo não é afetado pelo ataque, a menos que especificado. Cobertura e linha de visão são calculadas a partir do personagem. Se um efeito de <b>Emanação<b> for contínuo, ele se move com o personagem em seu centro. Uma rolagem de ataque separada é feita para cada alvo, mas o Dano é rolado apenas uma vez e o Dano de bônus é reduzido à metade se houver vários personagens afetados. Para qualquer habilidade ou efeito que exija que você escolha um alvo ou alvos dentro do <b>Alcance<b>, este equipamento pode escolher qualquer alvo que possa ser atingido pelo seu padrão.<br>Adicionalmente, alguns ataques de <b>Linha</b>, <b>Cone</b>, <b>Emanação<b> e <b>Explosão<b> listam um <b>Alcance</b>. Nesses casos, o ponto de origem do ataque pode ser traçado a partir de um ponto dentro do <b>Alcance</b> especificado e na linha de visão. Por exemplo, um ataque com <b>Emanação 2<b> e <b>Alcance 10</b> afetaria uma área de <b>Emanação 2<b> começando em qualquer ponto dentro do <b>Alcance 10</b>."
   },
   {
     "name": "Movimento Involuntário",
-    "description": "Quando personagens são empurrados, puxados ou derrubados em certas direções, isso é chamado de movimento involuntário. O movimento involuntário força o personagem afetado a se mover em linha reta, em uma direção especificada. Ao se mover involuntariamente, os mechas não provocam reações ou engajamento, a menos que especificado de outra forma, mas ainda são bloqueados por obstruções."
+    "description": "Quando personagens são empurrados, puxados ou derrubados em certas direções, isso é chamado de movimento involuntário. O movimento involuntário força o personagem afetado a se mover em Linha reta, em uma direção especificada. Ao se mover involuntariamente, os mechas não provocam reações ou engajamento, a menos que especificado de outra forma, mas ainda são Bloqueados por obstruções."
   },
   {
     "name": "Terreno Difícil",
-    "description": "Todo movimento através de terreno difícil é feito com metade da velocidade — cada espaço de terreno difícil em que se entra equivale a dois espaços de movimento."
+    "description": "Todo movimento através de terreno difícil é feito com metade da Velocidade — cada espaço de terreno difícil em que se entra equivale a dois espaços de movimento."
   },
   {
     "name": "Terreno Perigoso",
-    "description": "Quando personagens terminam seu turno em terreno perigoso ou entram nele pela primeira vez em uma rodada, devem fazer um teste de ENGENHARIA. Em uma falha, eles recebem 5 de dano — cinético, energético, explosivo ou de calor, dependendo do perigo. Cada personagem só precisa fazer um teste desse tipo por rodada."
+    "description": "Quando personagens terminam seu turno em terreno perigoso ou entram nele pela primeira vez em uma rodada, devem fazer um teste de ENGENHARIA. Em uma falha, eles recebem 5 de Dano — Cinético, Energético, explosivo ou de <b>Calor</b>  , dependendo do perigo. Cada personagem só precisa fazer um teste desse tipo por rodada."
   },
   {
     "name": "Levantar e Arrastar",
-    "description": "Mechas podem arrastar personagens ou objetos de até o dobro do seu TAMANHO, mas ficam LENTOS enquanto o fazem. Eles também podem levantar personagens ou objetos de TAMANHO igual ou menor sobre a cabeça, mas ficam IMOBILIZADOS enquanto o fazem. Enquanto arrastam ou levantam, os personagens não podem realizar reações. As mesmas regras se aplicam a pilotos e outros personagens a pé, mas eles não podem arrastar ou levantar nada acima do TAMANHO 1/2.<br><br>Enquanto voam, os mechas não podem carregar personagens ou objetos com um TAMANHO total superior a TAMANHO 1/2 — simplesmente não há empuxo suficiente."
+    "description": "Mechas podem arrastar personagens ou objetos de até o dobro do seu Tamanho, mas ficam Lentos enquanto o fazem. Eles também podem levantar personagens ou objetos de Tamanho igual ou menor sobre a cabeça, mas ficam Imobilizados enquanto o fazem. Enquanto arrastam ou levantam, os personagens não podem realizar reações. As mesmas regras se aplicam a pilotos e outros personagens a pé, mas eles não podem arrastar ou levantar nada acima do Tamanho 1/2.<br><br>Enquanto voam, os mechas não podem carregar personagens ou objetos com um Tamanho total superior a Tamanho 1/2 — simplesmente não há empuxo suficiente."
   },
   {
     "name": "Pular e Escalar",
-    "description": "Personagens com pernas podem pular em vez de seu movimento padrão. Eles podem pular horizontalmente, movendo metade de sua velocidade em linha reta e ignorando obstruções ao nível do solo que poderiam pular (como fossos ou vãos), ou podem pular verticalmente, movendo-se 1 espaço adjacente e subindo espaços equivalentes ao seu TAMANHO. Por exemplo, um mecha de TAMANHO 1 poderia pular até 1 espaço de altura e 1 espaço de distância. Personagens que pulam e terminam o pulo no ar caem automaticamente ao final do movimento (veja abaixo).<br><br>Assim como mover-se através de terreno difícil, os personagens escalam com metade de sua VELOCIDADE usual — cada espaço movido equivale a mover 2 espaços normalmente. Um teste bem-sucedido de CASCO ou AGILIDADE pode ser exigido para escalar superfícies particularmente difíceis sem cair."
+    "description": "Personagens com pernas podem pular em vez de seu movimento padrão. Eles podem pular horizontalmente, movendo metade de sua Velocidade em Linha reta e ignorando obstruções ao nível do solo que poderiam pular (como fossos ou vãos), ou podem pular verticalmente, movendo-se 1 espaço adjacente e subindo espaços equivalentes ao seu Tamanho. Por exemplo, um mecha de Tamanho 1 poderia pular até 1 espaço de altura e 1 espaço de distância. Personagens que pulam e terminam o pulo no ar caem automaticamente ao final do movimento (veja abaixo).<br><br>Assim como mover-se através de terreno difícil, os personagens escalam com metade de sua Velocidade usual — cada espaço movido equivale a mover 2 espaços normalmente. Um teste bem-sucedido de <b>Casco</b> ou Agilidade pode ser exigido para escalar superfícies particularmente difíceis sem cair."
   },
   {
     "name": "Queda/Dano de Queda",
-    "description": "A menos que especificado de outra forma, os personagens começam a cair no final do turno atual e caem no final de cada um de seus turnos subsequentes. Eles recebem 3 de dano cinético PA para cada três espaços caídos, até um máximo de 9. Cair conta como movimento involuntário."
+    "description": "A menos que especificado de outra forma, os personagens começam a cair no final do turno atual e caem no final de cada um de seus turnos subsequentes. Eles recebem <b>3 de Dano Cinético<b> PF para cada três espaços caídos, até um máximo de 9. Cair conta como movimento involuntário."
   },
   {
     "name": "Gravidade Zero",
-    "description": "Mechas operando sob a água, em gravidade zero ou no espaço ficam LENTOS, a menos que tenham um sistema de propulsão ou voo; no entanto, eles não podem cair e podem voar ao se mover, independentemente de terem um sistema de voo."
+    "description": "Mechas operando sob a água, em gravidade zero ou no espaço ficam Lentos, a menos que tenham um sistema de propulsão ou voo; no entanto, eles não podem cair e podem voar ao se mover, independentemente de terem um sistema de voo."
   },
   {
     "name": "Voo/Pairar",
-    "description": "Personagens voadores podem se mover vertical e horizontalmente até sua VELOCIDADE. Por exemplo, um mecha com um sistema de voo e VELOCIDADE 6 poderia terminar seu movimento em qualquer lugar dentro de seis espaços de sua localização inicial, até um máximo de 6 espaços de altura. Ao voar, os personagens devem se mover pelo menos 1 espaço em seu turno ou começar a cair. O movimento de voo deve seguir uma linha reta; no entanto, se um personagem realizar ações de movimento adicionais, como IMPULSIONAR, estas podem ser usadas para se mover em uma direção diferente. <br><br>Personagens voadores têm IMUNIDADE a CAÍDO. Personagens voadores começam a cair se ficarem IMOBILIZADOS, ATORDOADOS ou de outra forma não puderem se mover. Personagens voadores que sofrem dano de estrutura ou estresse devem ser bem-sucedidos em um salvamento de AGILIDADE ou começarão a cair. <br><br>Alguns mechas avançados podem PAIRAR. PAIRAR é uma forma avançada de VOO. Personagens que pairam não precisam voar em linha reta e podem permanecer estacionários enquanto estão no ar sem cair."
+    "description": "Personagens voadores podem se mover vertical e horizontalmente até sua Velocidade. Por exemplo, um mecha com um sistema de voo e Velocidade 6 poderia terminar seu movimento em qualquer lugar dentro de seis espaços de sua localização inicial, até um máximo de 6 espaços de altura. Ao voar, os personagens devem se mover pelo menos 1 espaço em seu turno ou começar a cair. O movimento de voo deve seguir uma Linha reta; no entanto, se um personagem realizar ações de movimento adicionais, como <b>Impulsionar</b>, estas podem ser usadas para se mover em uma direção diferente. <br><br>Personagens voadores têm<b>Imunidade</b> a CAÍDO. Personagens voadores começam a cair se ficarem Imobilizados, <b>Atordoado</b>s ou de outra forma não puderem se mover. Personagens voadores que sofrem <b>Dano de Estrutura</b> ou Estresse devem ser bem-sucedidos em um <b>salvamento de Agilidade</b> ou começarão a cair. <br><br>Alguns mechas avançados podem PAIRAR. PAIRAR é uma forma avançada de VOO. Personagens que pairam não precisam voar em Linha reta e podem permanecer estacionários enquanto estão no ar sem cair."
   },
   {
     "name": "Teletransporte",
-    "description": "Personagens devem começar e terminar um teletransporte em uma superfície na qual possam se mover normalmente; por exemplo, um personagem que não pode voar não pode se teletransportar no ar. O teletransporte ignora obstruções, não exige linha de visão, ignora engajamento e não provoca reações; no entanto, ainda conta como movimento e, portanto, é afetado por condições como IMOBILIZADO. Um personagem que se teletransporta conta como tendo se movido 1 espaço, não importa o quão longe viaje. Personagens podem tentar se teletransportar para espaços que não podem ver, mas se um espaço já estiver ocupado, o teletransporte falha."
+    "description": "Personagens devem começar e terminar um teletransporte em uma superfície na qual possam se mover normalmente; por exemplo, um personagem que não pode voar não pode se teletransportar no ar. O teletransporte ignora obstruções, não exige linha de visão, ignora engajamento e não provoca reações; no entanto, ainda conta como movimento e, portanto, é afetado por condições como Imobilizado. Um personagem que se teletransporta conta como tendo se movido 1 espaço, não importa o quão longe viaje. Personagens podem tentar se teletransportar para espaços que não podem ver, mas se um espaço já estiver ocupado, o teletransporte falha."
   },
   {
     "name": "Acertos Críticos",
-    "description": "Um 20+ em um ataque corpo a corpo ou à distância causa um acerto crítico. Em um acerto crítico, todos os dados de dano são rolados duas vezes (incluindo o dano de bônus) e o resultado mais alto de cada fonte de dano é usado. Por exemplo, se um jogador conseguisse um acerto crítico em um ataque que normalmente causaria 2d6 de dano, ele rolaria 4d6 e escolheria os dois resultados mais altos."
+    "description": "Um 20+ em um ataque corpo a corpo ou à distância causa um acerto crítico. Em um acerto crítico, todos os dados de Dano são rolados duas vezes (incluindo o Dano de bônus) e o resultado mais alto de cada fonte de Dano é usado. Por exemplo, se um jogador conseguisse um acerto crítico em um ataque que normalmente causaria 2d6 de Dano, ele rolaria 4d6 e escolheria os dois resultados mais altos."
   },
   {
     "name": "Dano/Calculando o Dano",
-    "description": "O dano é calculado nesta ordem:<br>1) O atacante rola o dano e aplica quaisquer reduções ou aumentos relevantes (ex: Exposto, metade do dano de Heavy Gunner)<br>2) A armadura do alvo é subtraída do dano total<br>3) Quaisquer outras deduções do defensor são subtraídas do dano restante; isso inclui reduções de Resistência, sistemas, talentos, etc."
+    "description": "O Dano é calculado nesta ordem:<br>1) O atacante rola o Dano e aplica quaisquer reduções ou aumentos relevantes (ex: Exposto, metade do Dano de Heavy Gunner)<br>2) A Armadura do alvo é subtraída do Dano total<br>3) Quaisquer outras deduções do defensor são subtraídas do Dano restante; isso inclui reduções de Resistência, Sistemas, talentos, etc."
   },
   {
     "name": "Queimadura",
-    "description": "Quando personagens sofrem Queimadura, são afetados por dois efeitos: primeiro, imediatamente sofrem dano de Queimadura, ignorando Armadura, e então eles recebem um marcador de queimadura em suas fichas para cada Queimadura sofrido nesse ataque. No final do seu turno, personagens com marcadores de queimadura precisam fazer um teste de Engenharia. Em caso de sucesso, eles removem todos os marcadores de queimadura; em uma falha, sofrem dano de Queimadura igual à quantidade atual de marcadores de queimadura"
+    "description": "Quando personagens sofrem <b>Queimadura<b>, são afetados por dois efeitos: primeiro, imediatamente sofrem Dano de <b>Queimadura<b>, ignorando Armadura, e então eles recebem um marcador de <b>Queimadura<b> em suas fichas para cada <b>Queimadura<b> sofrido nesse ataque. No final do seu turno, personagens com marcadores de <b>Queimadura<b> precisam fazer um teste de Engenharia. Em caso de sucesso, eles removem todos os marcadores de <b>Queimadura<b> ; em uma falha, sofrem Dano de <b>Queimadura<b> igual à quantidade atual de marcadores de <b>Queimadura<b> "
   }
 ]

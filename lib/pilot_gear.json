@@ -42,7 +42,7 @@
     "id": "pg_archaic_ranged",
     "name": "Arma Arcaica (À Distância)",
     "type": "Weapon",
-    "description": "Essas armas são dispositivos pré-modernos como mosquetes e arcos, todos ainda utilizados em algumas sociedades.",
+    "description": "Essas armas são dispositivos pré-modernos como mosquetes e  <b>Arco<b> s, todos ainda utilizados em algumas sociedades.",
     "tags": [
       {
         "id": "tg_archaic"
@@ -167,7 +167,7 @@
         "val": 1
       }
     ],
-    "effect": "Quando uma arma emblemática é adquirida, escolha seu tipo de dano â€“ Explosivo, Energético ou Cinético."
+    "effect": "Quando uma arma emblemática é adquirida, escolha seu tipo de <b>Dano</b> â€“ Explosivo, Energético ou Cinético."
   },
   {
     "id": "pg_medium_signature",
@@ -194,13 +194,13 @@
         "val": 2
       }
     ],
-    "effect": "Quando uma arma emblemática é adquirida, escolha seu tipo de dano â€“ Explosivo, Energético ou Cinético."
+    "effect": "Quando uma arma emblemática é adquirida, escolha seu tipo de <b>Dano</b> â€“ Explosivo, Energético ou Cinético."
   },
   {
     "id": "pg_heavy_signature",
     "name": "Arma Emblemática Pesada",
     "type": "Weapon",
-    "description": "Armas emblemáticas pesadas são tubos de mísseis, lasers pesados, metralhadoras leves ou fuzis exóticos.",
+    "description": "Armas emblemáticas pesadas são tubos de mísseis, lasers Pesados, metralhadoras leves ou fuzis exóticos.",
     "tags": [
       {
         "id": "tg_ordnance"
@@ -227,13 +227,13 @@
         "val": 4
       }
     ],
-    "effect": "Quando uma arma emblemática é adquirida, escolha seu tipo de dano â€“ Explosivo, Energético ou Cinético."
+    "effect": "Quando uma arma emblemática é adquirida, escolha seu tipo de <b>Dano</b> â€“ Explosivo, Energético ou Cinético."
   },
   {
     "id": "missing_pilotarmor",
     "name": "Traje Reforçado de Assalto",
     "type": "Armor",
-    "description": "Esses trajes reforçados, comuns entre unidades militares, apresentam blindagem mais pesada que os trajes reforçados leves, mas mais mobilidade que os trajes reforçados pesados. Eles são energizados, aumentando a força do usuário, e tipicamente apresentam um computador de bordo, conjunto de sensores, ar integrado, sistema de AEV de rajada e sistemas de reciclagem de resíduos.",
+    "description": "Esses trajes reforçados, comuns entre unidades militares, apresentam blindagem mais pesada que os trajes reforçados leves, mas mais mobilidade que os trajes reforçados Pesados. Eles são energizados, aumentando a força do usuário, e tipicamente apresentam um computador de bordo, conjunto de <b>Sensores</b>, ar integrado, sistema de AEV de rajada e Sistemas de reciclagem de resíduos.",
     "tags": [
       {
         "id": "tg_personal_armor"
@@ -276,7 +276,7 @@
     "id": "pg_assault_hardsuit",
     "name": "Traje Reforçado de Assalto",
     "type": "Armor",
-    "description": "Esses trajes reforçados, comuns entre unidades militares, apresentam blindagem mais pesada que os trajes reforçados leves, mas mais mobilidade que os trajes reforçados pesados. Eles são energizados, aumentando a força do usuário, e tipicamente apresentam um computador de bordo, conjunto de sensores, ar integrado, sistema de AEV de rajada e sistemas de reciclagem de resíduos.",
+    "description": "Esses trajes reforçados, comuns entre unidades militares, apresentam blindagem mais pesada que os trajes reforçados leves, mas mais mobilidade que os trajes reforçados Pesados. Eles são energizados, aumentando a força do usuário, e tipicamente apresentam um computador de bordo, conjunto de <b>Sensores</b>, ar integrado, sistema de AEV de rajada e Sistemas de reciclagem de resíduos.",
     "bonuses": [
       {
         "id": "pilot_hp",
@@ -312,7 +312,7 @@
     "id": "pg_heavy_hardsuit",
     "name": "Traje Reforçado Pesado",
     "type": "Armor",
-    "description": "Os trajes reforçados mais pesados. São sempre energizados e superblindados com uma espessa blindagem compósita. Os trajes reforçados pesados frequentemente apresentam armas integradas, poderosos conjuntos de mobilidade e â€“ ao aumentar a força do usuário â€“ permitem que ele utilize armas muito mais pesadas do que a infantaria normal pode carregar. Os trajes reforçados pesados estão em declínio agora que os chassis de meio-tamanho são populares, mas ainda são comuns entre militares privados e forças armadas diaspóricas de nível médio.",
+    "description": "Os trajes reforçados mais Pesados. São sempre energizados e superblindados com uma espessa blindagem compósita. Os trajes reforçados Pesados frequentemente apresentam armas integradas, poderosos conjuntos de mobilidade e â€“ ao aumentar a força do usuário â€“ permitem que ele utilize armas muito mais pesadas do que a infantaria normal pode carregar. Os trajes reforçados Pesados estão em declínio agora que os Chassis de meio-<b>Tamanho</b> são populares, mas ainda são comuns entre militares privados e forças armadas diaspóricas de nível médio.",
     "bonuses": [
       {
         "id": "pilot_hp",
@@ -348,7 +348,7 @@
     "id": "pg_mobility_hardsuit",
     "name": "Traje Reforçado de Mobilidade",
     "type": "Armor",
-    "effect": "Esses trajes reforçados possuem sistemas de voo integrados, permitindo que os pilotos voem ao se moverem ou <b>IMPULSIONAREM</b>. Pilotos voando devem terminar seu turno no chão (ou em outra superfície) ou começarão a cair.",
+    "effect": "Esses trajes reforçados possuem Sistemas de voo integrados, permitindo que os pilotos voem ao se moverem ou <b>Impulsionar</b>EM. Pilotos voando devem terminar seu turno no chão (ou em outra superfície) ou começarão a cair.",
     "bonuses": [
       {
         "id": "pilot_evasion",
@@ -376,7 +376,7 @@
     "id": "pg_stealth_hardsuit",
     "name": "Traje Reforçado Furtivo",
     "type": "Armor",
-    "effect": "Como uma ação rápida, pilotos usando trajes reforçados furtivos podem se tornar <b>INVISÍVEIS</b>. Eles deixam de ser <b>INVISÍVEIS</b> se sofrerem qualquer dano.",
+    "effect": "Como uma ação rápida, pilotos usando trajes reforçados furtivos podem se tornar Invisíveis. Eles deixam de ser Invisíveis se sofrerem qualquer <b>Dano</b>.",
     "bonuses": [
       {
         "id": "pilot_evasion",
@@ -403,7 +403,7 @@
       {
         "name": "Ativar Traje Furtivo",
         "activation": "Quick",
-        "detail": "Torne-se <b>INVISÍVEL</b>. Você deixará de ser <b>INVISÍVEL</b> se sofrer qualquer dano.",
+        "detail": "Torne-se <b>invisível</b>. Você deixará de ser <b>invisível</b> se sofrer qualquer <b>Dano</b>.",
         "pilot": true
       }
     ]
@@ -447,7 +447,7 @@
     "id": "pg_frag_grenades",
     "name": "Granadas de Fragmentação",
     "type": "Gear",
-    "effect": "Gaste uma carga para o seguinte efeito:<ul><ul><li><b>Granada de Fragmentação</b> (Granada, <b>ALCANCE 5</b>, <b>EXPLOSÃO 1</b>): Personagens afetados devem obter sucesso em um salvamento de Agilidade ou sofrem 2explosive.</li></ul></ul>",
+    "effect": "Gaste uma carga para o seguinte efeito:<ul><ul><li>Granada de Fragmentação (Granada, <b>Alcance 5</b>, <b>Explosão</b> 1): Personagens afetados devem obter sucesso em um <b>salvamento de Agilidade</b> ou sofrem 2explosive.</li></ul></ul>",
     "actions": [
       {
         "name": "Lançar Granada de Fragmentação",
@@ -468,7 +468,7 @@
             "val": 2
           }
         ],
-        "detail": "Gaste uma carga para lançar uma Granada de Fragmentação em até <b>ALCANCE 5</b>. Personagens afetados dentro da área de <b>EXPLOSÃO 1</b> devem obter sucesso em um salvamento de Agilidade ou sofrem 2 de <b>DANO EXPLOSIVO</b>.",
+        "detail": "Gaste uma carga para lançar uma Granada de Fragmentação em até <b>Alcance 5</b>. Personagens afetados dentro da área de <b>Explosão</b> 1 devem obter sucesso em um <b>salvamento de Agilidade</b> ou sofrem 2 de <b>Dano</b> EXPLOSIVO.",
         "pilot": true
       }
     ],
@@ -513,13 +513,13 @@
     "id": "pg_stims",
     "name": "Estimulantes",
     "type": "Gear",
-    "effect": "Gaste uma carga para um dos seguintes efeitos:<ul><ul><li><b>Despertar:</b> Mantém um piloto acordado e alerta por até 30 horas.</li></ul><ul><li><b>Acalmar:</b> Mantém um piloto calmo e emocionalmente estável; diminui o medo e outras reações fortes.</li></ul><ul><li><b>Aguçar:</b> Aumenta os sentidos e a vigilância, reduz a fadiga e diminui os tempos de reação. Aguçar ocasionalmente provoca um surto de raiva em alguns usuários.</li></ul></ul>",
+    "effect": "Gaste uma carga para um dos seguintes efeitos:<ul><ul><li>Despertar: Mantém um piloto acordado e alerta por até 30 horas.</li></ul><ul><li>Acalmar: Mantém um piloto calmo e emocionalmente estável; diminui o medo e outras reações fortes.</li></ul><ul><li>Aguçar: Aumenta os sentidos e a vigilância, reduz a fadiga e diminui os tempos de <b>reação</b>. Aguçar ocasionalmente provoca um surto de raiva em alguns usuários.</li></ul></ul>",
     "description": "Estes estimulantes químicos são às vezes administrados automaticamente por injetores incorporados ao traje de um piloto, ou até mesmo implantados em seu corpo. O uso descontrolado pode ser viciante e prejudicial à saúde a longo prazo e é um problema para alguns pilotos.",
     "actions": [
       {
         "name": "Usar Estimulante",
         "activation": "Quick",
-        "detail": "Gaste uma carga para um dos seguintes efeitos:<ul><ul><li><b>Despertar:</b> Mantém um piloto acordado e alerta por até 30 horas.</li></ul><ul><li><b>Acalmar:</b> Mantém um piloto calmo e emocionalmente estável; diminui o medo e outras reações fortes.</li></ul><ul><li><b>Aguçar:</b> Aumenta os sentidos e a vigilância, reduz a fadiga e diminui os tempos de reação.</li></ul></ul>",
+        "detail": "Gaste uma carga para um dos seguintes efeitos:<ul><ul><li>Despertar: Mantém um piloto acordado e alerta por até 30 horas.</li></ul><ul><li>Acalmar: Mantém um piloto calmo e emocionalmente estável; diminui o medo e outras reações fortes.</li></ul><ul><li>Aguçar: Aumenta os sentidos e a vigilância, reduz a fadiga e diminui os tempos de <b>reação</b>.</li></ul></ul>",
         "pilot": true
       }
     ],
@@ -537,18 +537,18 @@
     "id": "pg_thermite_charge",
     "name": "Carga de Termita",
     "type": "Gear",
-    "effect": "Gaste uma carga para o seguinte efeito:<ul><ul><li><b>Carga de Termita</b> (Mina, <b>ESTOURO 1</b>): Esta carga precisa ser detonada remotamente como uma ação rápida. Personagens afetados devem obter sucesso em um salvamento de Engenharia ou sofrem 3 <b>DANO ENERGÉTICO</b> PF. Cargas de termita atingem automaticamente objetos, causando 10 <b>DANO ENERGÉTICO</b> PF.</li></ul></ul>",
+    "effect": "Gaste uma carga para o seguinte efeito:<ul><ul><li>Carga de Termita (Mina, ESTOURO 1): Esta carga precisa ser detonada remotamente como uma ação rápida. Personagens afetados devem obter sucesso em um salvamento de Engenharia ou sofrem 3 <b>Dano</b> Energético PF. <b>Cargas<b>. de termita atingem automaticamente objetos, causando 10 <b>Dano</b> Energético PF.</li></ul></ul>",
     "deployables": [
       {
         "name": "Carga de Termita",
         "type": "Mine",
-        "detail": "Esta carga precisa ser detonada remotamente como uma ação rápida. Personagens afetados devem obter sucesso em um salvamento de Engenharia ou sofrem 3 <b>DANO ENERGÉTICO</b> PF. Cargas de termita atingem automaticamente objetos, causando 10 <b>DANO ENERGÉTICO</b> PF.",
+        "detail": "Esta carga precisa ser detonada remotamente como uma ação rápida. Personagens afetados devem obter sucesso em um salvamento de Engenharia ou sofrem 3 <b>Dano</b> Energético PF. <b>Cargas<b>. de termita atingem automaticamente objetos, causando 10 <b>Dano</b> Energético PF.",
         "pilot": true,
         "actions": [
           {
             "name": "Detonar",
             "activation": "Quick",
-            "detail": "Personagens afetados devem obter sucesso em um salvamento de Engenharia ou sofrem 3 <b>DANO ENERGÉTICO</b> PF.",
+            "detail": "Personagens afetados devem obter sucesso em um salvamento de Engenharia ou sofrem 3 <b>Dano</b> Energético PF.",
             "pilot": true
           }
         ],
@@ -576,7 +576,7 @@
     "id": "pg_antiphoton_visor",
     "name": "Visor Antifótons",
     "type": "Gear",
-    "description": "Projetado para proteger os olhos do usuário de intensas explosões de luz, os visores antifótons costumam ser encontrados em equipes de invasão e operadores que trabalham próximos a fontes solares. Eles são eficazes contra armas de clarão, luz UV intensa e cargas acidentais de armas de energia",
+    "description": "Projetado para proteger os olhos do usuário de intensas explosões de luz, os visores antifótons costumam ser encontrados em equipes de invasão e operadores que trabalham próximos a fontes solares. Eles são eficazes contra armas de clarão, luz UV intensa e <b>Cargas<b>. acidentais de armas de <b>Energia</b>",
     "tags": [
       {
         "id": "tg_gear"
@@ -620,7 +620,7 @@
     "id": "pg_flexsuit",
     "name": "Traje Multifunção",
     "type": "Gear",
-    "description": "Uma segunda-pele resistente que recicla água, gera nutrientes e se adapta rapidamente a ambientes hostis, mantendo uma condição estável e estendendo a sobrevivência. Quem usa o traje Multifunção pode passar aproximadamente uma semana sem comer ou beber, graças à pasta ambrosia gerada por seu traje antes que seus sistemas se esgotem; no entanto, isso não impede a sensação de fome. Retirar o traje por um dia ou dois é suficiente para recarregar suas reservas. Os trajes multifunção também mantêm uma temperatura estável dentro de parâmetros aceitáveis.",
+    "description": "Uma segunda-pele resistente que recicla água, gera nutrientes e se adapta rapidamente a ambientes hostis, mantendo uma condição estável e estendendo a sobrevivência. Quem usa o traje Multifunção pode passar aproximadamente uma semana sem comer ou beber, graças à pasta ambrosia gerada por seu traje antes que seus Sistemas se esgotem; no entanto, isso não impede a sensação de fome. Retirar o traje por um dia ou dois é suficiente para <b>Recarregar</b> suas reservas. Os trajes multifunção também mantêm uma temperatura estável dentro de parâmetros aceitáveis.",
     "tags": [
       {
         "id": "tg_gear"
@@ -631,7 +631,7 @@
     "id": "pg_handheld_printer",
     "name": "Impressora Portátil",
     "type": "Gear",
-    "description": "Uma versão miniaturizada das impressoras em tamanho real da União, as impressoras portáteis podem ser usadas para criar objetos simples feitos de plástico flexível e durável, desde que você tenha o chip correto do modelo do objeto.",
+    "description": "Uma versão miniaturizada das impressoras em <b>Tamanho</b> real da União, as impressoras portáteis podem ser usadas para criar objetos simples feitos de plástico flexível e durável, desde que você tenha o chip correto do modelo do objeto.",
     "tags": [
       {
         "id": "tg_gear"
@@ -642,7 +642,7 @@
     "id": "pg_subjectivity_enhancement_suite",
     "name": "Conjunto de Aprimoramento de Subjetividade",
     "type": "Gear",
-    "description": "Um conjunto de implantes cibernéticos que permite aos usuários hackear sistemas sem um terminal. Os usuários desses conjuntos mesclam o orgânico com o sintético, adquirindo a capacidade de extrair cabos universais implantados de dentro de seus corpos para fazer conexões físicas com terminais. Quando conectados, os usuários podem acessar uma interface de realidade alternativa abrangente e totalmente interativa, com acesso direto à omninet, tornando a navegação — ou hackeamento — de sistemas locais e em rede tão fácil quanto desejar (é claro, é preciso ter cuidado: ao abrir sua mente ao digital, você pode enfrentar perigos dos quais outras pessoas, menos capacitadas, não conhecem).",
+    "description": "Um conjunto de implantes cibernéticos que permite aos usuários hackear Sistemas sem um terminal. Os usuários desses conjuntos mesclam o orgânico com o sintético, adquirindo a capacidade de extrair cabos universais implantados de dentro de seus corpos para fazer conexões físicas com terminais. Quando conectados, os usuários podem acessar uma interface de realidade alternativa abrangente e totalmente interativa, com acesso direto à omninet, tornando a navegação — ou hackeamento — de Sistemas locais e em rede tão fácil quanto desejar (é claro, é preciso ter cuidado: ao abrir sua mente ao digital, você pode enfrentar perigos dos quais outras pessoas, menos capacitadas, não conhecem).",
     "tags": [
       {
         "id": "tg_gear"
@@ -651,9 +651,9 @@
   },
   {
     "id": "pg_infoskin",
-    "name": "Pele Inteligente",
+    "name": "Pele  <b>Inteligente<b> ",
     "type": "Gear",
-    "description": "Um polímero sintético reativo com qualidades avançadas, a pele inteligente se une rapidamente à pele e aos cabelos reais. Uma vez aplicada, ela responde a sinais eletrônicos enviados por softwares vinculados, mudando rapidamente de cor e textura — até mesmo distorcendo sua forma, permitindo que os usuários façam mudanças menores em sua aparência. Com a pele inteligente, é fácil alterar características faciais, cor do cabelo ou padrões de maquiagem.",
+    "description": "Um polímero sintético reativo com qualidades avançadas, a pele  <b>Inteligente<b>  se une rapidamente à pele e aos cabelos reais. Uma vez aplicada, ela responde a sinais eletrônicos enviados por softwares vinculados, mudando rapidamente de cor e textura — até mesmo distorcendo sua forma, permitindo que os usuários façam mudanças menores em sua aparência. Com a pele  <b>Inteligente<b> , é fácil alterar características faciais, cor do cabelo ou padrões de maquiagem.",
     "tags": [
       {
         "id": "tg_gear"
@@ -664,7 +664,7 @@
     "id": "pg_mag_clamps",
     "name": "Grampos Magnéticos",
     "type": "Gear",
-    "description": "Estes grampos se prendem facilmente a qualquer superfície metálica, melhorando a manobrabilidade em ambientes de gravidade zero ou durante a manutenção de mechas. Eles podem ser carregados ou acoplados a botas.",
+    "description": "Estes grampos se prendem facilmente a qualquer superfície metálica, melhorando a manobrabilidade em ambientes de <b>gravidade zero</b> ou durante a manutenção de mechas. Eles podem ser carregados ou acoplados a botas.",
     "tags": [
       {
         "id": "tg_gear"
@@ -675,7 +675,7 @@
     "id": "pg_nanite_spray",
     "name": "Spray de Nanorrobôs",
     "type": "Gear",
-    "description": "Uma tinta spray que pode ser aplicada em qualquer superfície. O spray de nanorrobôs é invisível a olho nu, mas capaz de transmitir mensagens simples ou pequenos pacotes de dados quando escaneado.",
+    "description": "Uma tinta spray que pode ser aplicada em qualquer superfície. O spray de nanorrobôs é <b>invisível</b> a olho nu, mas capaz de transmitir mensagens simples ou pequenos pacotes de dados quando escaneado.",
     "tags": [
       {
         "id": "tg_gear"
@@ -686,7 +686,7 @@
     "id": "pg_omnihook",
     "name": "Omniconector",
     "type": "Gear",
-    "description": "Um terminal portátil para a omninet, embora volumoso, permite comunicação, transferência de dados e criação de pontos de acesso limitados. Os omniconectores são extremamente valiosos, embora a maioria dos esquadrões de mechas tenha pelo menos um. Sintonizar um omniconector requer um alto nível de habilidade, então eles geralmente são montados ou carregados por operadores designados.",
+    "description": "Um terminal portátil para a omninet, embora volumoso, permite comunicação, transferência de dados e criação de pontos de acesso Limitados. Os omniconectores são extremamente valiosos, embora a maioria dos esquadrões de mechas tenha pelo menos um. Sintonizar um omniconector requer um alto nível de habilidade, então eles geralmente são montados ou carregados por operadores designados.",
     "tags": [
       {
         "id": "tg_gear"
@@ -697,7 +697,7 @@
     "id": "pg_personal_drone",
     "name": "Drone Pessoal",
     "type": "Gear",
-    "description": "Pequenos drones não combatentes são uma visão comum no campo. Eles são bastante barulhentos, mas podem voar cerca de oitocentos metros com boa manobrabilidade antes de perder o sinal, transmitindo informações visuais e de áudio enquanto se movem.",
+    "description": "Pequenos <b>Drones</b> não combatentes são uma visão comum no campo. Eles são bastante barulhentos, mas podem voar cerca de oitocentos metros com boa manobrabilidade antes de perder o sinal, transmitindo informações visuais e de áudio enquanto se movem.",
     "tags": [
       {
         "id": "tg_gear"
@@ -708,7 +708,7 @@
     "id": "pg_prosocollar",
     "name": "Holocolar",
     "type": "Gear",
-    "description": "Um dispositivo em forma de colar que se ajusta firmemente ao redor do pescoço do usuário, projetando uma imagem holográfica sobre seu rosto e cabeça. Os holocolares podem alterar a voz do usuário e embaralhar ou modificar sua aparência. A projeção não resistirá a uma inspeção minuciosa, mas pode facilmente enganar sistemas eletrônicos e observadores distantes.",
+    "description": "Um dispositivo em forma de colar que se ajusta firmemente ao redor do pescoço do usuário, projetando uma imagem holográfica sobre seu rosto e cabeça. Os holocolares podem alterar a voz do usuário e embaralhar ou modificar sua aparência. A projeção não resistirá a uma inspeção minuciosa, mas pode facilmente enganar Sistemas eletrônicos e observadores distantes.",
     "tags": [
       {
         "id": "tg_gear"
@@ -717,9 +717,9 @@
   },
   {
     "id": "pg_smart_scope",
-    "name": "Luneta Inteligente",
+    "name": "Luneta  <b>Inteligente<b> ",
     "type": "Gear",
-    "description": "Uma luneta eletrônica poderosa que oferece ampliação de alta resolução de cerca de três quilômetros e ajusta automaticamente sua lente para vento, gravidade e pressão. As lunetas inteligentes podem projetar seu campo de visão e todos os dados para a interface de usuário na rede. Elas também podem se conectar a outros dispositivos térmicos, óticos ou de visão simulada para melhorar ainda mais o direcionamento.",
+    "description": "Uma luneta eletrônica poderosa que oferece ampliação de alta resolução de cerca de três quilômetros e ajusta automaticamente sua lente para vento, gravidade e pressão. As lunetas  <b>Inteligente<b> s podem projetar seu campo de visão e todos os dados para a interface de usuário na rede. Elas também podem se conectar a outros dispositivos térmicos, óticos ou de visão simulada para melhorar ainda mais o direcionamento.",
     "tags": [
       {
         "id": "tg_gear"
@@ -730,7 +730,7 @@
     "id": "pg_sleeping_bag",
     "name": "Saco de Dormir",
     "type": "Gear",
-    "effect": "Você pode entrar em seu saco de dormir, recebendo Imunidade a burnout, proteção contra o vácuo e ar suficiente para durar uma hora; no entanto, enquanto estiver no saco de dormir, você fica <b>ATORDOADO</b> e não pode realizar ações além de sair do saco como uma ação completa.",
+    "effect": "Você pode entrar em seu saco de dormir, recebendo <b>Imunidade</b> a burnout, proteção contra o vácuo e ar suficiente para durar uma hora; no entanto, enquanto estiver no saco de dormir, você fica <b>Atordoado</b> e não pode realizar ações além de sair do saco como uma ação completa.",
     "description": "Disponível em uma variedade de tamanhos, os sacos de dormir são uma necessidade no campo. Eles são projetados para serem desdobrados de um traje reforçado, caber na cabine de um mecha, resistir ao fogo e a mudanças de temperatura e, quando necessário, vedar contra o vácuo.",
     "tags": [
       {
@@ -742,7 +742,7 @@
     "id": "pg_ssc_sylph_undersuit",
     "name": "Traje Sílfide da SSC",
     "type": "Gear",
-    "description": "Descoberto em Acrimea IV, um mundo cultivado biologicamente, controlado pela Smith-Shimano Corp (SSC), o sílfide é uma forma de vida orgânica que aparentemente pode sobreviver em quase qualquer ambiente. Usando métodos de reprodução análogos aos de criação definidos por doutrinas de bioengenharia estabelecidas, a SSC desenvolveu esses trajes com sílfides estéreis, vivos e cultivados como envoltórios ajustados aos seus donos. O sílfide se une ao seu usuário, formando uma relação simbiótica: o sílfide é sustentado pelos resíduos do hospedeiro e, em troca, protege o hospedeiro de uma série de fatores ambientais hostis.<br>Esses trajes semibiológicos, justos ao corpo, podem ser usados por períodos prolongados. Eles são translúcidos, semilíquidos e podem ser armazenados quando não estão em uso, se adaptando ao recipiente em que são colocados. Eles limpam o corpo do hospedeiro, auxiliam nos processos de cicatrização natural e eliminam resíduos. Conforme desejado, segmentos podem se tornar opacos, mudar de cor ou adquirir uma nova textura. Os trajes sílfides podem cobrir a cabeça do hospedeiro, vedando contra o vácuo, proporcionando proteção contra radiação e filtrando ar ou líquidos, inclusive fornecendo a capacidade de respirar água por um tempo limitado.",
+    "description": "Descoberto em Acrimea IV, um mundo cultivado biologicamente, controlado pela Smith-Shimano Corp (SSC), o sílfide é uma forma de vida orgânica que aparentemente pode sobreviver em quase qualquer ambiente. Usando métodos de reprodução análogos aos de criação definidos por doutrinas de bioengenharia estabelecidas, a SSC desenvolveu esses trajes com sílfides estéreis, vivos e cultivados como envoltórios ajustados aos seus donos. O sílfide se une ao seu usuário, formando uma relação simbiótica: o sílfide é sustentado pelos resíduos do hospedeiro e, em troca, protege o hospedeiro de uma série de fatores ambientais hostis.<br>Esses trajes semibiológicos, justos ao corpo, podem ser usados por períodos prolongados. Eles são translúcidos, semilíquidos e podem ser armazenados quando não estão em uso, se adaptando ao recipiente em que são colocados. Eles limpam o corpo do hospedeiro, auxiliam nos processos de cicatrização natural e eliminam resíduos. Conforme desejado, segmentos podem se tornar opacos, mudar de cor ou adquirir uma nova textura. Os trajes sílfides podem cobrir a cabeça do hospedeiro, vedando contra o vácuo, proporcionando proteção contra radiação e filtrando ar ou líquidos, inclusive fornecendo a capacidade de respirar água por um tempo Limitado.",
     "tags": [
       {
         "id": "tg_gear"
@@ -753,7 +753,7 @@
     "id": "pg_sound_system",
     "name": "Sistema de Som",
     "type": "Gear",
-    "description": "Embora sua utilidade tática seja questionável, muitos pilotos instalam sistemas de alto-falantes internos em suas cabines. Isso lhes permite uma comunicação clara com seus companheiros durante o combate, além de ter a capacidade de reproduzir música.",
+    "description": "Embora sua utilidade tática seja questionável, muitos pilotos instalam Sistemas de alto-falantes internos em suas cabines. Isso lhes permite uma comunicação clara com seus companheiros durante o combate, além de ter a capacidade de reproduzir música.",
     "tags": [
       {
         "id": "tg_gear"
@@ -775,7 +775,7 @@
     "id": "pg_wilderness_survival_kit",
     "name": "Kit de Sobrevivência em Ambientes Selvagens",
     "type": "Gear",
-    "description": "Este kit contém muitos itens essenciais para sobreviver em ambientes hostis: um respirador, filtros de água, remendos para o traje reforçado, bolsas de calor instantâneo, um kit de acampamento, entre outros.",
+    "description": "Este kit contém muitos itens essenciais para sobreviver em ambientes hostis: um respirador, filtros de água, remendos para o traje reforçado, bolsas de <b>Calor</b> instantâneo, um kit de acampamento, entre outros.",
     "tags": [
       {
         "id": "tg_gear"

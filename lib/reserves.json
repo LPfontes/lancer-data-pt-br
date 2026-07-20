@@ -17,7 +17,7 @@
     "name": "Ponto de Perícia de Mecha",
     "type": "Bonus",
     "label": "Bonus",
-    "description": "Adicione um Ponto de Perícia de Mecha para aumentar a classificação de CASCO, AGILIDADE, SISTEMAS ou ENGENHARIA do seu Piloto.",
+    "description": "Adicione um Ponto de Perícia de Mecha para aumentar a classificação de <b>Casco</b>, Agilidade, Sistemas ou ENGENHARIA do seu Piloto.",
     "bonuses": [
       {
         "id": "mech_skill_point",
@@ -139,7 +139,7 @@
     "name": "Munição",
     "type": "Mech",
     "label": "Ammo",
-    "description": "Uso extra (+1 ou +2) de uma arma ou sistema LIMITADO."
+    "description": "Uso extra (+1 ou +2) de uma arma ou sistema Limitado."
   },
   {
     "id": "reserve_rented_gear",
@@ -153,7 +153,7 @@
     "name": "Reparos Extras",
     "type": "Mech",
     "label": "Resource",
-    "description": "Suprimentos que dão ao mecha +2 de CAP. DE REPARO.",
+    "description": "Suprimentos que dão ao mecha +2 de <b>CAP. DE Reparo</b>.",
     "bonuses": [
       {
         "id": "repcap",
@@ -166,7 +166,7 @@
     "name": "Bateria Principal",
     "type": "Mech",
     "label": "Battery",
-    "description": "Você tem acesso a uma bateria de núcleo — um pacote de energia concentrada que pode recarregar os sistemas de núcleo de um mecha. Como uma ação rápida, você pode usar esta reserva para recuperar 1 PONTO DE NÚCLEO. Esta reserva é consumida quando usada.",
+    "description": "Você tem acesso a uma bateria de Núcleo — um pacote de <b>Energia</b> concentrada que pode <b>Recarregar</b> os Sistemas de Núcleo de um mecha. Como uma ação rápida, você pode usar esta reserva para recuperar 1 PONTO DE Núcleo. Esta reserva é consumida quando usada.",
     "bonuses": [
       {
         "id": "core_power",
@@ -179,13 +179,13 @@
     "name": "Escudo Posicionável",
     "type": "Mech",
     "label": "Shield",
-    "description": "Um gerador de escudo posicionável de uso único com TAMANHO 1 que concede cobertura leve para todos os personagens amigáveis em uma área de EMANAÇÃO 2.",
+    "description": "Um gerador de escudo posicionável de uso único com <b>Tamanho 1</b> que concede <b>cobertura leve<b>. para todos os personagens amigáveis em uma área de <b>Emanação</b> 2.",
     "deployables": [
       {
         "name": "Escudo Posicionável (Reserva)",
         "type": "Deployable",
         "size": 1,
-        "detail": "Concede cobertura leve para todos os personagens amigáveis em uma área de <b>EMANAÇÃO</b> 2.",
+        "detail": "Concede <b>cobertura leve<b>. para todos os personagens amigáveis em uma área de <b>Emanação</b> 2.",
         "stats": {
           "size": 1,
           "hp": 5,
@@ -202,12 +202,12 @@
     "name": "Reparo Redundante",
     "type": "Mech",
     "label": "Resource",
-    "description": "A capacidade de ESTABILIZAR como uma ação gratuita uma vez por missão.",
+    "description": "A capacidade de <b>Estabilizar</b> como uma ação gratuita uma vez por missão.",
     "actions": [
       {
         "name": "Reparo Redundante",
         "activation": "Free",
-        "detail": "<b>ESTABILIZAR</b> como uma ação livre."
+        "detail": "<b>Estabilizar</b> como uma <b>Ação Livre</b>."
       }
     ]
   },
@@ -216,28 +216,28 @@
     "name": "Reforços de Sistemas",
     "type": "Mech",
     "label": "Resource",
-    "description": "+1 de PRECISÃO para testes de perícia feitos com uma perícia – CASCO, AGILIDADE, SISTEMAS ou ENGENHARIA.",
+    "description": "<b>+1 de Precisão</b> para testes de perícia feitos com uma perícia – <b>Casco</b>, Agilidade, Sistemas ou ENGENHARIA.",
     "synergies": [
       {
         "locations": [
           "hase"
         ],
-        "detail": "+1 de PRECISÃO em testes de perícia feitos com uma perícia – CASCO, AGILIDADE, SISTEMAS ou ENGENHARIA."
+        "detail": "<b>+1 de Precisão</b> em testes de perícia feitos com uma perícia – <b>Casco</b>, Agilidade, Sistemas ou ENGENHARIA."
       }
     ]
   },
   {
     "id": "reserve_smart_ammo",
-    "name": "Munição Inteligente",
+    "name": "Munição  <b>Inteligente<b> ",
     "type": "Mech",
     "label": "Ammo",
-    "description": "Todas as armas à sua escolha podem ser disparadas como se fossem INTELIGENTES.",
+    "description": "Todas as armas à sua escolha podem ser disparadas como se fossem  <b>Inteligente<b> S.",
     "synergies": [
       {
         "locations": [
           "weapon"
         ],
-        "detail": "Todas as armas à sua escolha podem ser disparadas como se fossem INTELIGENTES."
+        "detail": "Todas as armas à sua escolha podem ser disparadas como se fossem  <b>Inteligente<b> S."
       }
     ]
   },
@@ -246,13 +246,13 @@
     "name": "Servomecanismos",
     "type": "Mech",
     "label": "Resource",
-    "description": "IMUNIDADE à condição LENTO.",
+    "description": "<b>Imunidade</b> à condição Lento.",
     "synergies": [
       {
         "locations": [
           "move"
         ],
-        "detail": "Seu mecha tem IMUNIDADE à condição LENTO."
+        "detail": "Seu mecha tem <b>Imunidade</b> à condição Lento."
       }
     ]
   },
@@ -276,7 +276,7 @@
     "name": "Exploração",
     "type": "Tactical",
     "label": "Location",
-    "description": "Informações detalhadas sobre os tipos de mechas e ameaças que você enfrentará na missão, como quantidade, tipo e estatísticas."
+    "description": "Informações detalhadas sobre os tipos de mechas e  <b>Ameaça<b> s que você enfrentará na missão, como quantidade, tipo e estatísticas."
   },
   {
     "id": "reserve_vehicle",
@@ -297,20 +297,20 @@
     "name": "Blindagem Ambiental",
     "type": "Tactical",
     "label": "Environment",
-    "description": "Equipamento que permite ignorar um determinado perigo no campo de batalha ou terreno, como calor ou frio extremos."
+    "description": "Equipamento que permite ignorar um determinado perigo no campo de batalha ou terreno, como <b>Calor</b> ou frio extremos."
   },
   {
     "id": "reserve_accuracy",
     "name": "Precisão",
     "type": "Tactical",
     "label": "Skill/Action",
-    "description": "Treinamento ou aprimoramento que fornece +1 de PRECISÃO para uma perícia de mecha ou ação específica durante esta missão.",
+    "description": "Treinamento ou aprimoramento que fornece <b>+1 de Precisão</b> para uma perícia de mecha ou ação específica durante esta missão.",
     "synergies": [
       {
         "locations": [
           "other"
         ],
-        "detail": "+1 de PRECISÃO para uma perícia de mecha ou ação específica durante esta missão."
+        "detail": "<b>+1 de Precisão</b> para uma perícia de mecha ou ação específica durante esta missão."
       }
     ]
   },
@@ -319,12 +319,12 @@
     "name": "Bombardeio",
     "type": "Tactical",
     "label": "Resource",
-    "description": "Você tem acesso a suporte de bombardeio de fogo à distância. Uma vez durante a próxima missão, você pode chamar um bombardeio como uma ação rápida. Escolha um ponto dentro da linha de visão: todos os personagens em Explosão 2 desse ponto devem fazer um salvamento de AGILIDADE ou receber 3d6 de dano explosivo PA, ou metade em um sucesso.",
+    "description": "Você tem acesso a suporte de bombardeio de fogo à distância. Uma vez durante a próxima missão, você pode chamar um bombardeio como uma ação rápida. Escolha um ponto dentro da linha de visão: todos os personagens em <b>Explosão</b> 2 desse ponto devem fazer um <b>salvamento de Agilidade</b> ou receber 3d6 de <b>Dano</b> explosivo PF, ou metade em um sucesso.",
     "actions": [
       {
         "name": "Bombardeio",
         "activation": "Full",
-        "detail": "Convocar artilharia ou bombardeio orbital:<br>ALCANCE 30 na <b>LINHA</b> de visão, <b>EXPLOSÃO</b> 2, 3d6 de <b>DANO EXPLOSIVO</b>",
+        "detail": "Convocar  <b>Artilharia<b>  ou bombardeio orbital:<br><b>Alcance 3</b>0 na linha de visão, <b>Explosão</b> 2, 3d6 de <b>Dano</b> EXPLOSIVO",
         "range": [
           {
             "type": "Range",
