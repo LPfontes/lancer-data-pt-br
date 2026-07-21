@@ -22,7 +22,7 @@
   {
     "id": "env_extremesun",
     "name": "Sol Extremo",
-    "description": "Personagens sofrem 1d6 de <b>Calor</b> sempre que não estão na sombra no final de um turno."
+    "description": "Personagens sofrem <b>1d6 de Calor</b> sempre que não estão na sombra no final de um turno."
   },
   {
     "id": "env_corrosiveatmosphere",

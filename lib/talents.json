@@ -95,14 +95,14 @@
       },
       {
         "name": "Me Dê Cobertura!",
-        "description": "Se um personagem na sua linha de visão tentar atacar seu Vínculo, você pode gastar seu <b>Retaliar</b> para  <b>Ameaça<b> r o atacante, forçando-o a escolher um alvo diferente ou atacar de qualquer maneira: se ele atacar um alvo diferente, seu <b>Retaliar</b> é gasto sem efeito; se ele escolher atacar de qualquer maneira, você pode atacá-lo imediatamente com <b>Retaliar</b>, desde que esteja dentro do seu <b>Alcance</b> e na linha de visão. Esse ataque se resolve antes do ataque acionador.",
+        "description": "Se um personagem na sua linha de visão tentar atacar seu Vínculo, você pode gastar seu <b>Retaliar</b> para <b>Ameaçar</b> o atacante, forçando-o a escolher um alvo diferente ou atacar de qualquer maneira: se ele atacar um alvo diferente, seu <b>Retaliar</b> é gasto sem efeito; se ele escolher atacar de qualquer maneira, você pode atacá-lo imediatamente com <b>Retaliar</b>, desde que esteja dentro do seu <b>Alcance</b> e na linha de visão. Esse ataque se resolve antes do ataque acionador.",
         "synergies": [
           {
             "locations": [
               "overwatch",
               "active_effects"
             ],
-            "detail": "Se um personagem na sua linha de visão tentar atacar seu Vínculo, você pode gastar seu <b>Retaliar</b> para  <b>Ameaça<b> r o atacante, forçando-o a escolher um alvo diferente ou atacar de qualquer maneira: se ele escolher atacar de qualquer maneira, você pode atacá-lo imediatamente com <b>Retaliar</b>, desde que esteja dentro do seu <b>Alcance</b> e na linha de visão. Esse ataque se resolve antes do ataque acionador."
+            "detail": "Se um personagem na sua linha de visão tentar atacar seu Vínculo, você pode gastar seu <b>Retaliar</b> para <b>Ameaçar</b> o atacante, forçando-o a escolher um alvo diferente ou atacar de qualquer maneira: se ele escolher atacar de qualquer maneira, você pode atacá-lo imediatamente com <b>Retaliar</b>, desde que esteja dentro do seu <b>Alcance</b> e na linha de visão. Esse ataque se resolve antes do ataque acionador."
           }
         ]
       }
@@ -135,19 +135,19 @@
       },
       {
         "name": "Marreta",
-        "description": "Quando <b>Improvisar Ataque</b>, essa ação recebe  <b>Repulsão<b>  2 e causa 2d6+2 de <b>Dano</b> Cinético.",
+        "description": "Quando <b>Improvisar Ataque</b>, essa ação recebe <b>Repulsão</b> 2 e causa 2d6+2 de <b>Dano</b> Cinético.",
         "synergies": [
           {
             "locations": [
               "improvised_attack"
             ],
-            "detail": "Quando <b>Improvisar Ataque</b>, essa ação recebe  <b>Repulsão<b>  2 e causa 2d6+2 de <b>Dano</b> Cinético."
+            "detail": "Quando <b>Improvisar Ataque</b>, essa ação recebe <b>Repulsão</b> 2 e causa 2d6+2 de <b>Dano</b> Cinético."
           }
         ]
       },
       {
         "name": "Golpe Nocauteador",
-        "description": "Ganhe um Dado de Lutador — 1d6 — que começa em 6. Sempre que você <b>Agarrar</b>, <b>Empurrar</b> ou <b>Improvisar Ataque</b>, diminua o valor do Dado de Lutador em 1. Quando o Dado de Lutador atingir 1, você pode redefini-lo para 6 e, como uma ação completa, fazer um golpe nocau-teador contra um personagem adjacente. Ele deve obter sucesso em um salvamento de <b>Casco</b>, ou sofre 2d6+2 de <b>Dano</b> Cinético e fica <b>Atordoado</b> até o final do próximo turno dele. O valor do seu Dado de Lutador persiste entre as cenas, mas é redefinido para 6 quando você descansar ou fizer um Reparo Completo.",
+        "description": "Ganhe um Dado de Lutador — 1d6 — que começa em 6. Sempre que você <b>Agarrar</b>, <b>Empurrar</b> ou <b>Improvisar Ataque</b>, diminua o valor do Dado de Lutador em 1. Quando o Dado de Lutador atingir 1, você pode redefini-lo para 6 e, como uma ação completa, fazer um golpe nocauteador contra um personagem adjacente. Ele deve obter sucesso em um salvamento de <b>Casco</b>, ou sofre 2d6+2 de <b>Dano</b> Cinético e fica <b>Atordoado</b> até o final do próximo turno dele. O valor do seu Dado de Lutador persiste entre as cenas, mas é redefinido para 6 quando você descansar ou fizer um Reparo Completo.",
         "synergies": [
           {
             "locations": [
@@ -198,13 +198,13 @@
       },
       {
         "name": "Separar o Rebanho",
-        "description": "Seus <b>acertos críticos</b> recebem  <b>Repulsão<b>  1.",
+        "description": "Seus <b>acertos críticos</b> recebem <b>Repulsão</b> 1.",
         "synergies": [
           {
             "locations": [
               "weapon"
             ],
-            "detail": "Inflija  <b>Repulsão<b>  1 em um acerto crítico."
+            "detail": "Inflija <b>Repulsão</b> 1 em um acerto crítico."
           }
         ]
       },
@@ -236,7 +236,7 @@
     "name": "Tiro Exímio",
     "icon": "CRACK SHOT",
     "terse": "Firme sua mira para ganhar Precisão, <b>Dano bônus</b> e aplicar debuffs.",
-    "description": "Graças à tecnologia moderna, qualquer um pode acertar qualquer coisa hoje em dia. Assistência de mira. Armas  <b>Inteligente<b> s. IAs sussurrando nos ouvidos das pessoas, movendo suas mãos, apertando o gatilho para elas: fazendo tudo, menos levando o crédito pela morte. Mas Strymon Bulis é diferente. Ele descobriu que atingir um alvo é tão fácil quanto olhar para ele, dentro e fora de seu mecha. Ele não precisa de assistência de mira; nenhuma IA é necessária. Tudo o que ele precisa é de uma mira limpa, um cartucho cheio e um alvo para apontar…",
+    "description": "Graças à tecnologia moderna, qualquer um pode acertar qualquer coisa hoje em dia. Assistência de mira. Armas <b>Inteligentes</b>. IAs sussurrando nos ouvidos das pessoas, movendo suas mãos, apertando o gatilho para elas: fazendo tudo, menos levando o crédito pela morte. Mas Strymon Bulis é diferente. Ele descobriu que atingir um alvo é tão fácil quanto olhar para ele, dentro e fora de seu mecha. Ele não precisa de assistência de mira; nenhuma IA é necessária. Tudo o que ele precisa é de uma mira limpa, um cartucho cheio e um alvo para apontar…",
     "ranks": [
       {
         "name": "Estável, Firme",
@@ -377,7 +377,7 @@
     "ranks": [
       {
         "name": "Escudo de Lâminas",
-        "description": "Enquanto estiver Engajado, você e quaisquer aliados adjacentes a você contam como tendo <b>cobertura leve<b>..",
+        "description": "Enquanto estiver Engajado, você e quaisquer aliados adjacentes a você contam como tendo <b>cobertura leve</b>",
         "synergies": [
           {
             "locations": [
@@ -387,7 +387,7 @@
             "weapon_types": [
               "any"
             ],
-            "detail": "Enquanto estiver Engajado, você e quaisquer aliados adjacentes a você contam como tendo <b>cobertura leve<b>.."
+            "detail": "Enquanto estiver Engajado, você e quaisquer aliados adjacentes a você contam como tendo <b>cobertura leve</b>"
           }
         ]
       },
@@ -522,7 +522,7 @@
     "name": "Comandante de Drone",
     "icon": "DRONE COMMANDER",
     "terse": "Melhore e capacite seus Sistemas de <b>Drones</b> para ajudar aliados e ferir inimigos.",
-    "description": "Para um piloto recém-saído da formação, manter um enxame de <b>Drones</b> na <b>Linha</b> é como tentar carregar água com uma rede. Se eles parecem ter vontade própria, é porque têm, e não são tão  <b>Inteligente<b> s assim. A frustração inicial de Clymene Kanalakos foi suficiente para fazê-la praticar, e a prática compensa. Agora, seu enxame obedece quase antes que ela ordene — um avanço preocupante, mas útil. O enxame é dela.",
+    "description": "Para um piloto recém-saído da formação, manter um enxame de <b>Drones</b> na <b>Linha</b> é como tentar carregar água com uma rede. Se eles parecem ter vontade própria, é porque têm, e não são tão <b>Inteligentes</b> assim. A frustração inicial de Clymene Kanalakos foi suficiente para fazê-la praticar, e a prática compensa. Agora, seu enxame obedece quase antes que ela ordene — um avanço preocupante, mas útil. O enxame é dela.",
     "ranks": [
       {
         "name": "Pastor",
@@ -569,12 +569,12 @@
       },
       {
         "name": "Revigorar",
-        "description": "Como uma ação rápida, você pode enviar um pulso de <b>Energia</b> para um personagem aliado (incluindo <b>Drones</b>) dentro de <b>Alcance 3</b>, desenhando uma <b>Linha</b> até ele. Você pode estender o pulso de seu alvo para outro personagem aliado, estendendo a <b>Linha</b> até ele, desde que estejam dentro de <b>Alcance 3</b>, e você pode continuar estendendo o pulso (e a <b>Linha</b>) assim, desde que não mire o mesmo personagem duas vezes. Personagens aliados que forem usados como alvos de pulso ou estiverem no caminho da <b>Linha</b> recebem  <b>Blindagem<b>  4; personagens hostis no caminho da <b>Linha</b> sofrem 2 de <b>Dano</b> Energético em vez disso.",
+        "description": "Como uma ação rápida, você pode enviar um pulso de <b>Energia</b> para um personagem aliado (incluindo <b>Drones</b>) dentro de <b>Alcance 3</b>, desenhando uma <b>Linha</b> até ele. Você pode estender o pulso de seu alvo para outro personagem aliado, estendendo a <b>Linha</b> até ele, desde que estejam dentro de <b>Alcance 3</b>, e você pode continuar estendendo o pulso (e a <b>Linha</b>) assim, desde que não mire o mesmo personagem duas vezes. Personagens aliados que forem usados como alvos de pulso ou estiverem no caminho da <b>Linha</b> recebem <b>Blindagem</b> 4; personagens hostis no caminho da <b>Linha</b> sofrem 2 de <b>Dano</b> Energético em vez disso.",
         "actions": [
           {
             "name": "Revigorar",
             "activation": "Quick",
-            "detail": "Como uma ação rápida, envie um pulso de <b>Energia</b> para um personagem aliado (incluindo <b>Drones</b>) dentro de <b>Alcance 3</b>, desenhando uma <b>Linha</b> até ele. Você pode estender o pulso de seu alvo para outro personagem aliado, estendendo a <b>Linha</b> até ele, desde que estejam dentro de <b>Alcance 3</b>, e você pode continuar estendendo o pulso (e a <b>Linha</b>) assim, desde que não mire o mesmo personagem duas vezes. Personagens aliados que forem usados como alvos de pulso ou estiverem no caminho da <b>Linha</b> recebem  <b>Blindagem<b>  4; personagens hostis no caminho da <b>Linha</b> sofrem 2 de <b>Dano</b> Energético em vez disso."
+            "detail": "Como uma ação rápida, envie um pulso de <b>Energia</b> para um personagem aliado (incluindo <b>Drones</b>) dentro de <b>Alcance 3</b>, desenhando uma <b>Linha</b> até ele. Você pode estender o pulso de seu alvo para outro personagem aliado, estendendo a <b>Linha</b> até ele, desde que estejam dentro de <b>Alcance 3</b>, e você pode continuar estendendo o pulso (e a <b>Linha</b>) assim, desde que não mire o mesmo personagem duas vezes. Personagens aliados que forem usados como alvos de pulso ou estiverem no caminho da <b>Linha</b> recebem <b>Blindagem</b> 4; personagens hostis no caminho da <b>Linha</b> sofrem 2 de <b>Dano</b> Energético em vez disso."
           }
         ]
       }
@@ -597,7 +597,7 @@
       },
       {
         "name": "Revisão",
-        "description": "Você pode ajustar os componentes essenciais do seu protótipo de arma para aumentar sua eficácia. Ao realizar um Reparo Completo, escolha dois:<ul><li>Ótica Ajustada: Seu protótipo de arma sempre recebe <b>+1 de Precisão</b> nos ataques.</li><li>Computador Ajustado: Seu protótipo de arma é  <b>Inteligente<b> .</li><li>Proteção do Reator Removida: Sempre que atacar com sua arma protótipo, você pode escolher, ao custo de 2 de <b>Calor</b>, atacar com uma das seguintes opções, dependendo do tipo de arma:<ul><li>Arma à Distância: <b>Cone</b> 3, <b>Linha</b> 5 ou [<b>Explosão</b> 1, <b>Alcance 10</b>].</li><li>Arma Corpo a Corpo: <b>Emanação</b> 1.</li></ul></li></ul>",
+        "description": "Você pode ajustar os componentes essenciais do seu protótipo de arma para aumentar sua eficácia. Ao realizar um Reparo Completo, escolha dois:<ul><li>Ótica Ajustada: Seu protótipo de arma sempre recebe <b>+1 de Precisão</b> nos ataques.</li><li>Computador Ajustado: Seu protótipo de arma é <b>Inteligente</b>.</li><li>Proteção do Reator Removida: Sempre que atacar com sua arma protótipo, você pode escolher, ao custo de 2 de <b>Calor</b>, atacar com uma das seguintes opções, dependendo do tipo de arma:<ul><li>Arma à Distância: <b>Cone</b> 3, <b>Linha</b> 5 ou [<b>Explosão</b> 1, <b>Alcance 10</b>].</li><li>Arma Corpo a Corpo: <b>Emanação</b> 1.</li></ul></li></ul>",
         "integrated": [
           "mw_prototype_2"
         ],
@@ -622,7 +622,7 @@
     "ranks": [
       {
         "name": "Corte Oscilante",
-        "description": "1/rodada, quando acertar com uma arma corpo a corpo Pesada ou <b>Superpesada<b>, como uma <b>Ação Livre</b>, você pode fazer outro ataque corpo a corpo com a mesma arma contra um personagem diferente na linha de visão e dentro da <b>Ameaça</b>. Esse ataque causa metade do <b>Dano</b>, se for bem-sucedido.",
+        "description": "1/rodada, quando acertar com uma arma corpo a corpo Pesada ou <b>Superpesada</b>, como uma <b>Ação Livre</b>, você pode fazer outro ataque corpo a corpo com a mesma arma contra um personagem diferente na linha de visão e dentro da <b>Ameaça</b>. Esse ataque causa metade do <b>Dano</b>, se for bem-sucedido.",
         "synergies": [
           {
             "locations": [
@@ -640,8 +640,8 @@
         ]
       },
       {
-        "name": "Golpe em  <b>Arco<b>  Ampliado",
-        "description": "Na primeira vez em uma rodada que você realizar um acerto crítico com uma arma corpo a corpo Pesada ou <b>Superpesada<b>, você causa 3 de <b>Dano</b> Cinético a todos os personagens e objetos à sua escolha que estiverem dentro da <b>Ameaça</b>, exceto aquele que você acabou de atacar.",
+        "name": "Golpe em <b>Arco</b> Ampliado",
+        "description": "Na primeira vez em uma rodada que você realizar um acerto crítico com uma arma corpo a corpo Pesada ou <b>Superpesada</b>, você causa 3 de <b>Dano</b> Cinético a todos os personagens e objetos à sua escolha que estiverem dentro da <b>Ameaça</b>, exceto aquele que você acabou de atacar.",
         "synergies": [
           {
             "locations": [
@@ -654,7 +654,7 @@
               "Heavy",
               "Superheavy"
             ],
-            "detail": "Na primeira vez em uma rodada que você realizar um acerto crítico com esta ou qualquer outra arma corpo a corpo Pesada ou <b>Superpesada<b> equipada, você causa 3 de <b>Dano</b> Cinético a todos os personagens e objetos à sua escolha que estiverem dentro da <b>Ameaça</b>, exceto aquele que você acabou de atacar."
+            "detail": "Na primeira vez em uma rodada que você realizar um acerto crítico com esta ou qualquer outra arma corpo a corpo Pesada ou <b>Superpesada</b> equipada, você causa 3 de <b>Dano</b> Cinético a todos os personagens e objetos à sua escolha que estiverem dentro da <b>Ameaça</b>, exceto aquele que você acabou de atacar."
           }
         ]
       },
@@ -727,12 +727,12 @@
     "id": "t_gunslinger",
     "name": "Pistoleiro",
     "icon": "GUNSLINGER",
-    "terse": "Torne suas armas <br>Auxiliar</b>es à distância mais mortais e ganhe o poderoso Dado de Pistoleiro.",
+    "terse": "Torne suas armas Auxiliares à distância mais mortais e ganhe o poderoso Dado de Pistoleiro.",
     "description": "Em uma galáxia delimitada por fronteiras, não há lei senão aquela respaldada pela arma. O Sargento Stev Ansahok empunha a humilde pistola com um talento nunca visto nesta era, seu ferro é uma extensão de seu próprio corpo. Tão fácil quanto apontar um dedo, o velho sargento atira com Precisão inigualável pela máquina. Ele é um pistoleiro: a justiça completa, com seu instrumento sagrado indo até a fronteira cruel para domá-la.",
     "ranks": [
       {
         "name": "Argumento de Abertura",
-        "description": "Receba <b>+1 de Precisão</b> na primeira rolagem de ataque que você fizer com uma arma <br>Auxiliar</b> à distância no seu turno.",
+        "description": "Receba <b>+1 de Precisão</b> na primeira rolagem de ataque que você fizer com uma arma Auxiliar à distância no seu turno.",
         "synergies": [
           {
             "locations": [
@@ -746,28 +746,28 @@
               "Nexus"
             ],
             "weapon_sizes": [
-              "<br>Auxiliar</b>y"
+              "Auxiliary"
             ],
-            "detail": "Receba <b>+1 de Precisão</b> na primeira rolagem de ataque que você fizer com uma arma <br>Auxiliar</b> à distância no seu turno."
+            "detail": "Receba <b>+1 de Precisão</b> na primeira rolagem de ataque que você fizer com uma arma Auxiliar à distância no seu turno."
           }
         ]
       },
       {
         "name": "Do Quadril",
-        "description": "Você adquire a seguinte <b>reação</b>:<ul><li>Retornar Fogo (<b>reação</b>, 1/rodada): Um personagem atinge você com um ataque à distância. Efeito: Você pode atacá-lo imediatamente com uma única arma <br>Auxiliar</b> à distância se ele estiver dentro do <b>Alcance</b>.</li></ul>",
+        "description": "Você adquire a seguinte <b>reação</b>:<ul><li>Retornar Fogo (<b>reação</b>, 1/rodada): Um personagem atinge você com um ataque à distância. Efeito: Você pode atacá-lo imediatamente com uma única arma Auxiliar à distância se ele estiver dentro do <b>Alcance</b>.</li></ul>",
         "actions": [
           {
             "name": "Retornar Fogo",
             "activation": "Reaction",
             "frequency": "1/round",
             "trigger": "Um personagem atinge você com um ataque à distância.",
-            "detail": "Você pode atacá-lo imediatamente com uma única arma <br>Auxiliar</b> à distância se ele estiver dentro do <b>Alcance</b>."
+            "detail": "Você pode atacá-lo imediatamente com uma única arma Auxiliar à distância se ele estiver dentro do <b>Alcance</b>."
           }
         ]
       },
       {
         "name": "Eu Mato Com o Coração",
-        "description": "Você ganha um Dado de Pistoleiro — 1d6 — começando em 6. Sempre que você acertar com uma arma <br>Auxiliar</b> à distância, reduza o valor do Dado de Pistoleiro em 1. Quando o Dado de Pistoleiro atingir 1, você pode redefinir para 6 para dar +2d6 de <b>Dano bônus</b> ao acertar e tornar o <b>Dano</b> PF para seu próximo ataque com uma arma <br>Auxiliar</b> à distância. Esse ataque também ignora cobertura. O valor do seu Dado de Pistoleiro persiste entre as cenas, mas é redefinido para 6 quando você descansar ou fizer um Reparo Completo.",
+        "description": "Você ganha um Dado de Pistoleiro — 1d6 — começando em 6. Sempre que você acertar com uma arma Auxiliar à distância, reduza o valor do Dado de Pistoleiro em 1. Quando o Dado de Pistoleiro atingir 1, você pode redefinir para 6 para dar +2d6 de <b>Dano bônus</b> ao acertar e tornar o <b>Dano</b> PF para seu próximo ataque com uma arma Auxiliar à distância. Esse ataque também ignora cobertura. O valor do seu Dado de Pistoleiro persiste entre as cenas, mas é redefinido para 6 quando você descansar ou fizer um Reparo Completo.",
         "synergies": [
           {
             "locations": [
@@ -781,7 +781,7 @@
               "Nexus"
             ],
             "weapon_sizes": [
-              "<br>Auxiliar</b>y"
+              "Auxiliary"
             ],
             "detail": "Cada vez que você acertar com esta arma, reduza o valor do Dado de Pistoleiro em 1."
           }
@@ -832,13 +832,13 @@
       },
       {
         "name": "Amigos em Lugares Importantes",
-        "description": "Uma vez por missão, enquanto descansa, você pode pedir uma entrega de suprimentos. Você e seus aliados podem reabastecer 1 uso de todas as armas e Sistemas com Limitado e restaurar 1 de <b>Estrutura</b>. Isso não requer nenhum Reparo e pode ser usado mesmo que você tenha atingido sua <b>Cap. de Reparo</b>.",
+        "description": "Uma vez por missão, enquanto descansa, você pode pedir uma entrega de suprimentos. Você e seus aliados podem reabastecer 1 uso de todas as armas e Sistemas com Limitado e restaurar <b>1 de Estrutura</b>. Isso não requer nenhum Reparo e pode ser usado mesmo que você tenha atingido sua <b>Cap. de Reparo</b>.",
         "synergies": [
           {
             "locations": [
               "rest"
             ],
-            "detail": "Uma vez por missão, você pode pedir uma entrega de suprimentos para reabastecer 1 uso de armas/Sistemas com Limitado e restaurar 1 de <b>Estrutura</b> para você e seus aliados."
+            "detail": "Uma vez por missão, você pode pedir uma entrega de suprimentos para reabastecer 1 uso de armas/Sistemas com Limitado e restaurar <b>1 de Estrutura</b> para você e seus aliados."
           }
         ]
       }
@@ -903,7 +903,7 @@
     "name": "Artilheiro Pesado",
     "icon": "HEAVY GUNNER",
     "terse": "Imobilize inimigos com armas de Longo <b>Alcance</b> PESADAS.",
-    "description": "Atrás da <b>Linha</b> de frente, Mike Manfrin não tem muito o que fazer a não ser esperar e se <b>Preparar</b>. Ele mantém os canhões limpos; faz fileiras organizadas de suas munições e cartuchos. Ele empacota sacos de areia em calçadas de terra e costura com firmeza rasgos nas bainhas sobre as juntas de seu chassi.<br>Em um instante, tudo muda. Conversa sobre a omni local. O pulsar do medivac repercute do outro lado da base. Em algum lugar, um tiroteio. Essa é sua música de entrada, seu chamado para <b>Lutar</b>: um grito desesperado por ajuda de um amigo distante enquanto o inimigo se aproxima. Hora de trabalhar.<br>Sua chegada é conhecida pelo voo de seus projéteis pelo céu, pela terra trêmula e pela poeira que sobe.",
+    "description": "Atrás da <b>Linha</b> de frente, Mike Manfrin não tem muito o que fazer a não ser esperar e se <b>Preparar</b>. Ele mantém os canhões limpos; faz fileiras organizadas de suas munições e cartuchos. Ele empacota sacos de areia em calçadas de terra e costura com firmeza rasgos nas bainhas sobre as juntas de seu chassi.<br>Em um instante, tudo muda. Conversa sobre a omni local. O pulsar do medivac repercute do outro lado da base. Enfim, um tiroteio. Essa é sua música de entrada, seu chamado para <b>Lutar</b>: um grito desesperado por ajuda de um amigo distante enquanto o inimigo se aproxima. Hora de trabalhar.<br>Sua chegada é conhecida pelo voo de seus projéteis pelo céu, pela terra trêmula e pela poeira que sobe.",
     "ranks": [
       {
         "name": "Fogo de Cobertura",
@@ -912,7 +912,7 @@
           {
             "name": "Fogo de Cobertura",
             "activation": "Quick",
-            "detail": "Escolha um personagem dentro da linha de visão e do <b>Alcance</b> de uma de suas armas à distância PESADAS, e a até 10 espaços: ele fica Impedido até o início de seu próximo turno. Pela duração, se seu alvo se mover mais de 1 espaço, ele remove Impedido, mas você pode atacá-lo como uma <b>reação</b> com uma arma à distância PESADA pela metade do <b>Dano</b>, <b>Calor</b> ou <b>Queimadura</b>, e então este efeito termina. Você pode fazer este ataque em qualquer ponto durante o movimento dele (por exemplo, esperando até que ele saia da cobertura).<br>Fogo de Cobertura só pode afetar um personagem por vez â€“ usos subsequentes substituem os anteriores â€“ e termina imediatamente se seu alvo causar <b>Dano</b> a você."
+            "detail": "Escolha um personagem dentro da linha de visão e do <b>Alcance</b> de uma de suas armas à distância PESADAS, e a até 10 espaços: ele fica Impedido até o início de seu próximo turno. Pela duração, se seu alvo se mover mais de 1 espaço, ele remove Impedido, mas você pode atacá-lo como uma <b>reação</b> com uma arma à distância PESADA pela metade do <b>Dano</b>, <b>Calor</b> ou <b>Queimadura</b>, e então este efeito termina. Você pode fazer este ataque em qualquer ponto durante o movimento dele (por exemplo, esperando até que ele saia da cobertura).<br>Fogo de Cobertura só pode afetar um personagem por vez – usos subsequentes substituem os anteriores – e termina imediatamente se seu alvo causar <b>Dano</b> a você."
           },
           {
             "name": "Ataque de Fogo de Cobertura",
@@ -953,12 +953,12 @@
     "id": "t_hunter",
     "name": "Caçador",
     "icon": "HUNTER",
-    "terse": "Ganhe mobilidade e <b>Alcance</b> ao usar armas corpo a corpo <br>Auxiliar</b>es.",
+    "terse": "Ganhe mobilidade e <b>Alcance</b> ao usar armas corpo a corpo Auxiliares.",
     "description": "O campo de batalha é o campo de caça de Edith Eidelen, seu domínio. É apenas através de um verdadeiro teste de força e astúcia que será determinado quem é o predador e quem é a presa. Seu movimento pelo campo é uma ronda: silenciosa, rápida e controlada. Em um chassi, ela se destaca no combate corpo a corpo, diminuindo a distância entre ela e seus alvos antes que eles possam usar suas armas.",
     "ranks": [
       {
         "name": "Bote",
-        "description": "1/rodada, quando atacar com uma arma corpo a corpo <br>Auxiliar</b>, você pode voar até 3 espaços diretamente em direção a um personagem-alvo antes do ataque. Esse movimento ignora o engajamento e não provoca reações.",
+        "description": "1/rodada, quando atacar com uma arma corpo a corpo Auxiliar, você pode voar até 3 espaços diretamente em direção a um personagem-alvo antes do ataque. Esse movimento ignora o engajamento e não provoca reações.",
         "synergies": [
           {
             "locations": [
@@ -968,15 +968,15 @@
               "Melee"
             ],
             "weapon_sizes": [
-              "<br>Auxiliar</b>y"
+              "Auxiliary"
             ],
-            "detail": "1/rodada, quando atacar com uma arma corpo a corpo <br>Auxiliar</b>, você pode voar até 3 espaços diretamente em direção a um personagem-alvo antes do ataque. Esse movimento ignora o engajamento e não provoca reações."
+            "detail": "1/rodada, quando atacar com uma arma corpo a corpo Auxiliar, você pode voar até 3 espaços diretamente em direção a um personagem-alvo antes do ataque. Esse movimento ignora o engajamento e não provoca reações."
           }
         ]
       },
       {
         "name": "Malabarista de Facas",
-        "description": "Todas as suas armas corpo a corpo <br>Auxiliar</b>es recebem Arremessável 5, se ainda não tiverem essa tag — se já tiverem Arremessável, elas aumentam para Arremessável 5. No final do seu turno, todas as armas que você arremessou neste turno voltam automaticamente para você.",
+        "description": "Todas as suas armas corpo a corpo Auxiliares recebem Arremessável 5, se ainda não tiverem essa tag — se já tiverem Arremessável, elas aumentam para Arremessável 5. No final do seu turno, todas as armas que você arremessou neste turno voltam automaticamente para você.",
         "synergies": [
           {
             "locations": [
@@ -986,7 +986,7 @@
               "Melee"
             ],
             "weapon_sizes": [
-              "<br>Auxiliar</b>y"
+              "Auxiliary"
             ],
             "detail": "Esta arma recebe Arremessável 5 e voltará para você no final do seu turno se arremessada."
           }
@@ -994,7 +994,7 @@
       },
       {
         "name": "Lâmina Desdenhada",
-        "description": "1/rodada, quando acertar um personagem com um ataque corpo a corpo, você também pode lançar uma arma corpo a corpo <br>Auxiliar</b> como um ataque contra qualquer personagem dentro do <b>Alcance</b> usando uma <b>Ação Livre</b>. Esse ataque não causa <b>Dano bônus</b>.",
+        "description": "1/rodada, quando acertar um personagem com um ataque corpo a corpo, você também pode lançar uma arma corpo a corpo Auxiliar como um ataque contra qualquer personagem dentro do <b>Alcance</b> usando uma <b>Ação Livre</b>. Esse ataque não causa <b>Dano bônus</b>.",
         "synergies": [
           {
             "locations": [
@@ -1006,7 +1006,7 @@
             "weapon_sizes": [
               "any"
             ],
-            "detail": "1/rodada, quando acertar um personagem com um ataque corpo a corpo, você também pode lançar uma arma corpo a corpo <br>Auxiliar</b> como um ataque contra qualquer personagem dentro do <b>Alcance</b> usando uma <b>Ação Livre</b>. Esse ataque não causa <b>Dano bônus</b>."
+            "detail": "1/rodada, quando acertar um personagem com um ataque corpo a corpo, você também pode lançar uma arma corpo a corpo Auxiliar como um ataque contra qualquer personagem dentro do <b>Alcance</b> usando uma <b>Ação Livre</b>. Esse ataque não causa <b>Dano bônus</b>."
           }
         ]
       }
@@ -1021,7 +1021,7 @@
     "ranks": [
       {
         "name": "Esgueirar-se",
-        "description": "Durante o seu turno, você recebe os seguintes benefícios:<ul><li>Entrar na linha de visão de personagens hostis ou sair de uma cobertura não impede que você fique <b>Escondido</b>.</li><li>Você pode passar livremente por espaços inimigos, mas não terminar seu turno neles.</li><li>Você pode se <b>Esconder-se</b> mesmo à vista dos inimigos.</li></ul>Esses efeitos encerram imediatamente quando seu turno termina (então você perde <b>Escondido</b> se ainda estiver na linha de visão ou fora de cobertura naquele momento).",
+        "description": "Durante o seu turno, você recebe os seguintes benefícios:<ul><li>Entrar na linha de visão de personagens hostis ou sair de uma cobertura não impede que você fique <b>Escondido</b>.</li><li>Você pode passar livremente por espaços inimigos, mas não terminar seu turno neles.</li><li>Você pode se <b>Esconder</b> mesmo à vista dos inimigos.</li></ul>Esses efeitos encerram imediatamente quando seu turno termina (então você perde <b>Escondido</b> se ainda estiver na linha de visão ou fora de cobertura naquele momento).",
         "synergies": [
           {
             "locations": [
@@ -1039,7 +1039,7 @@
             "locations": [
               "active_effects"
             ],
-            "detail": "Você pode se <b>Esconder-se</b> mesmo à vista dos inimigos."
+            "detail": "Você pode se <b>Esconder</b> mesmo à vista dos inimigos."
           }
         ]
       },
@@ -1178,30 +1178,30 @@
     "id": "t_nuclear_cavalier",
     "name": "Cavaleiro Nuclear",
     "icon": "NUCLEAR CAVALIER",
-    "terse": "Cause <b>Dano</b> aprimorado na <b>Zona de Perigo<b>  e lance seus bastões de combustível superaquecidos como arma.",
+    "terse": "Cause <b>Dano</b> aprimorado na <b>Zona de Perigo</b> e lance seus bastões de combustível superaquecidos como arma.",
     "description": "Pouco depois de se tornar piloto, você percebeu uma coisa: aquela máquina que você pilota é movida por uma série de reações nucleares em cascata. Por que não abrir esse compartimento e ver que tipo de <b>Dano</b> ele pode causar?",
     "ranks": [
       {
         "name": "Sangramento de <b>Calor</b> Agressivo",
-        "description": "A primeira rolagem de ataque que você fizer no seu turno enquanto estiver na <b>Zona de Perigo<b>  causa +2 de <b>Calor</b> em um acerto. Se você entrar na <b>Zona de Perigo<b>  durante o seu turno, este talento terá efeito no seu próximo ataque.",
+        "description": "A primeira rolagem de ataque que você fizer no seu turno enquanto estiver na <b>Zona de Perigo</b> causa +2 de <b>Calor</b> em um acerto. Se você entrar na <b>Zona de Perigo</b> durante o seu turno, este talento terá efeito no seu próximo ataque.",
         "synergies": [
           {
             "locations": [
               "weapon"
             ],
-            "detail": "A primeira rolagem de ataque que você fizer no seu turno enquanto estiver na <b>Zona de Perigo<b>  causa +2 de <b>Calor</b> em um acerto."
+            "detail": "A primeira rolagem de ataque que você fizer no seu turno enquanto estiver na <b>Zona de Perigo</b> causa +2 de <b>Calor</b> em um acerto."
           }
         ]
       },
       {
         "name": "Hemorragia de Fusão",
-        "description": "A primeira rolagem de ataque à distância ou corpo a corpo que você fizer no seu turno enquanto estiver na <b>Zona de Perigo<b>  causa <b>Dano</b> Energético, em vez de Cinético ou explosivo, e adicionalmente causa <b>+1d6 de Dano bônus</b> Energético em um acerto.",
+        "description": "A primeira rolagem de ataque à distância ou corpo a corpo que você fizer no seu turno enquanto estiver na <b>Zona de Perigo</b> causa <b>Dano</b> Energético, em vez de Cinético ou explosivo, e adicionalmente causa <b>+1d6 de Dano bônus</b> Energético em um acerto.",
         "synergies": [
           {
             "locations": [
               "weapon"
             ],
-            "detail": "A primeira rolagem de ataque à distância ou corpo a corpo que você fizer no seu turno enquanto estiver na <b>Zona de Perigo<b>  causa <b>Dano</b> Energético, em vez de Cinético ou explosivo, e adicionalmente causa <b>+1d6 de Dano bônus</b> Energético em um acerto."
+            "detail": "A primeira rolagem de ataque à distância ou corpo a corpo que você fizer no seu turno enquanto estiver na <b>Zona de Perigo</b> causa <b>Dano</b> Energético, em vez de Cinético ou explosivo, e adicionalmente causa <b>+1d6 de Dano bônus</b> Energético em um acerto."
           }
         ]
       },
@@ -1280,13 +1280,13 @@
     "ranks": [
       {
         "name": "Lançadores de Obstrução Integrados",
-        "description": "No início do seu turno, você obtém <b>cobertura leve<b>.. Você perde essa cobertura se atacar ou forçar outro personagem a fazer um salvamento.",
+        "description": "No início do seu turno, você obtém <b>cobertura leve</b> Você perde essa cobertura se atacar ou forçar outro personagem a fazer um salvamento.",
         "synergies": [
           {
             "locations": [
               "active_effects"
             ],
-            "detail": "No início do seu turno, você obtém <b>cobertura leve<b>.. Você perde essa cobertura se atacar ou forçar outro personagem a fazer um salvamento."
+            "detail": "No início do seu turno, você obtém <b>cobertura leve</b> Você perde essa cobertura se atacar ou forçar outro personagem a fazer um salvamento."
           }
         ]
       },
@@ -1387,7 +1387,7 @@
       },
       {
         "name": "Domínio da Tempestade",
-        "description": "Você personalizou seu mecha com Sistemas <br>Auxiliar</b>es de mísseis de concussão. 1/rodada, ao atingir um personagem ou objeto com um Lançador, você pode escolher um dos seguintes efeitos:<ul><li>Relâmpago: Você dispara uma rajada concentrada de mísseis naquele personagem. Ele deve obter sucesso em um salvamento de <b>Casco</b> ou é repelido de você por 3 espaços; a força do tiro então te joga para trás em 3 espaços, para um lado oposto à direção do tiro.</li><li>Trovão: Você dispara uma rajada de mísseis em uma área de <b>Emanação</b> 2 ao redor do alvo. Os personagens na área devem obter sucesso em um <b>salvamento de Agilidade</b> ou são repelidos para longe do alvo por 1 espaço. O alvo primário não é afetado.</li></ul>",
+        "description": "Você personalizou seu mecha com Sistemas Auxiliares de mísseis de concussão. 1/rodada, ao atingir um personagem ou objeto com um Lançador, você pode escolher um dos seguintes efeitos:<ul><li>Relâmpago: Você dispara uma rajada concentrada de mísseis naquele personagem. Ele deve obter sucesso em um salvamento de <b>Casco</b> ou é repelido de você por 3 espaços; a força do tiro então te joga para trás em 3 espaços, para um lado oposto à direção do tiro.</li><li>Trovão: Você dispara uma rajada de mísseis em uma área de <b>Emanação</b> 2 ao redor do alvo. Os personagens na área devem obter sucesso em um <b>salvamento de Agilidade</b> ou são repelidos para longe do alvo por 1 espaço. O alvo primário não é afetado.</li></ul>",
         "synergies": [
           {
             "locations": [
@@ -1399,7 +1399,7 @@
             "weapon_sizes": [
               "any"
             ],
-            "detail": "1/rodada, ao atingir um personagem ou objeto com um Lançador, você pode escolher um dos seguintes efeitos: Relâmpago (Repulsão 3 e Auto-Repulsão 3) ou Trovão (<b>Emanação</b> 2,  <b>Repulsão<b>  1)."
+            "detail": "1/rodada, ao atingir um personagem ou objeto com um Lançador, você pode escolher um dos seguintes efeitos: Relâmpago (Repulsão 3 e Auto-Repulsão 3) ou Trovão (<b>Emanação</b> 2, <b>Repulsão</b> 1)."
           }
         ]
       },
@@ -1444,7 +1444,7 @@
     "name": "Estrategista",
     "icon": "TACTICIAN",
     "terse": "Ganhe vantagem ao atacar inimigos ocupados ou atirar de um terreno mais alto.",
-    "description": "Existem dois tipos de soldados: os que morrem por uma causa e os que matam por ela. A enigmática piloto conhecida apenas como “Gail” foi uma das que mataram por uma causa. Ela demonstrou sua habilidade sempre que se aproximou do campo: terreno alto, cobertura, o sol nos olhos do inimigo, fogo e movimento. Mais do que apenas uma veterana experiente, ela era uma pessoa  <b>Inteligente<b>  que podia ler o campo tão facilmente quanto um livro, e que viveu o suficiente para desaparecer.",
+    "description": "Existem dois tipos de soldados: os que morrem por uma causa e os que matam por ela. A enigmática piloto conhecida apenas como “Gail” foi uma das que mataram por uma causa. Ela demonstrou sua habilidade sempre que se aproximou do campo: terreno alto, cobertura, o sol nos olhos do inimigo, fogo e movimento. Mais do que apenas uma veterana experiente, ela era uma pessoa <b>Inteligente</b> que podia ler o campo tão facilmente quanto um livro, e que viveu o suficiente para desaparecer.",
     "ranks": [
       {
         "name": "Oportunista",
@@ -1575,7 +1575,7 @@
       },
       {
         "name": "Ver Através",
-        "description": "Você modificou seus <b>Sensores</b> e munição para atravessar, desconsiderar ou ignorar de alguma forma a cobertura próxima. Desde que tenha linha de visão, você ignora <b>cobertura leve<b>. e pesada ao usar armas CQR para atacar alvos dentro de <b>Alcance 3</b>.",
+        "description": "Você modificou seus <b>Sensores</b> e munição para atravessar, desconsiderar ou ignorar de alguma forma a cobertura próxima. Desde que tenha linha de visão, você ignora <b>cobertura leve</b> e pesada ao usar armas CQR para atacar alvos dentro de <b>Alcance 3</b>.",
         "synergies": [
           {
             "locations": [
@@ -1587,7 +1587,7 @@
             "weapon_sizes": [
               "any"
             ],
-            "detail": "Desde que tenha linha de visão, você ignora <b>cobertura leve<b>. e pesada ao usar esta arma para atacar alvos dentro de <b>Alcance 3</b>."
+            "detail": "Desde que tenha linha de visão, você ignora <b>cobertura leve</b> e pesada ao usar esta arma para atacar alvos dentro de <b>Alcance 3</b>."
           }
         ]
       },
@@ -1615,7 +1615,7 @@
     "ranks": [
       {
         "name": "Armamento",
-        "description": "Você carrega um suprimento de munição personalizada que pode ser usada com todas as suas armas à distância Principais. Adquira o sistema Caixa de Munição.<br> Uma vez por turno, ao atacar com uma arma à distância PRINCIPAL, você pode gastar uma carga para aplicar um dos seguintes efeitos ao seu ataque: <ul><li> BATEDOR: O ataque recebe Repelir 1 e causa <b>Dano</b> Explosivo.</li><li>CHOQUE: O ataque causa <b>Dano</b> Energético. Escolha um personagem visado pelo seu ataque; personagens adjacentes sofrem 1 de <b>Dano</b> Energético PF, independentemente de o resultado ser um acerto ou um erro.</li><li>MAGNÉTICA: O ataque recebe  <b>Arco<b>  e causa <b>Dano</b> Cinético.</li></ul>",
+        "description": "Você carrega um suprimento de munição personalizada que pode ser usada com todas as suas armas à distância Principais. Adquira o sistema Caixa de Munição.<br> Uma vez por turno, ao atacar com uma arma à distância PRINCIPAL, você pode gastar uma carga para aplicar um dos seguintes efeitos ao seu ataque: <ul><li> BATEDOR: O ataque recebe Repelir 1 e causa <b>Dano</b> Explosivo.</li><li>CHOQUE: O ataque causa <b>Dano</b> Energético. Escolha um personagem visado pelo seu ataque; personagens adjacentes sofrem 1 de <b>Dano</b> Energético PF, independentemente de o resultado ser um acerto ou um erro.</li><li>MAGNÉTICA: O ataque recebe <b>Arco</b> e causa <b>Dano</b> Cinético.</li></ul>",
         "integrated": [
           "ms_walking_armory_1"
         ],
@@ -1623,7 +1623,7 @@
       },
       {
         "name": "Portfólio Expandido",
-        "description": "Melhore sua Caixa de Munição, ganhando novos tipos de munição, cada um dos quais custa duas <b>Cargas<b>. em vez de uma.<br><ul><li>FOGO DO INFERNO (2 <b>Cargas<b>.): O ataque causa <b>Dano</b> Energético e causa qualquer <b>Dano bônus</b> como <b>Queimadura</b>.</li><li>JAGER (2 <b>Cargas<b>.): O ataque recebe Repelir 2, causa <b>Dano</b> Explosivo, e um personagem atingido pelo ataque â€“ à sua escolha â€“ deve ter sucesso em um salvamento de <b>Casco</b> ou fica Prostrado.</li><li>SABOT (2 <b>Cargas<b>.): O ataque recebe PF e causa <b>Dano</b> Cinético.</li></ul>",
+        "description": "Melhore sua Caixa de Munição, ganhando novos tipos de munição, cada um dos quais custa duas <b>Cargas</b> em vez de uma.<br><ul><li>FOGO DO INFERNO (2 <b>Cargas</b>): O ataque causa <b>Dano</b> Energético e causa qualquer <b>Dano bônus</b> como <b>Queimadura</b>.</li><li>JAGER (2 <b>Cargas</b>): O ataque recebe Repelir 2, causa <b>Dano</b> Explosivo, e um personagem atingido pelo ataque â€“ à sua escolha â€“ deve ter sucesso em um salvamento de <b>Casco</b> ou fica Prostrado.</li><li>SABOT (2 <b>Cargas</b>): O ataque recebe PF e causa <b>Dano</b> Cinético.</li></ul>",
         "integrated": [
           "ms_walking_armory_2"
         ],

@@ -105,7 +105,7 @@
             "val": 2
           }
         ],
-        "detail": "Gaste uma carga para lançar uma Granada de Fumaça em até <b>Alcance 5</b>.<br>Todos os personagens e objetos dentro da área de <b>Explosão</b> 2 se beneficiam de <b>cobertura leve<b>. até o final do seu próximo turno, quando a fumaça se dispersa."
+        "detail": "Gaste uma carga para lançar uma Granada de Fumaça em até <b>Alcance 5</b>.<br>Todos os personagens e objetos dentro da área de <b>Explosão 2</b>  se beneficiam de <b>cobertura leve<b>. até o final do seu próximo turno, quando a fumaça se dispersa."
       }
     ],
     "deployables": [
@@ -272,8 +272,8 @@
     "license_id": ""
   },
   {
-    "id": "ms_turret_<b>Drones</b>",
-    "name": "<b>Drones</b>-Torretas",
+    "id": "ms_turret_Drones",
+    "name": "Drones-Torretas",
     "type": "Drone",
     "sp": 2,
     "tags": [
@@ -829,7 +829,7 @@
   },
   {
     "id": "ms_bb_breach_blast_charges",
-    "name": "<b>Cargas<b>. de Arrombamento/Explosão AE",
+    "name": "Cargas de Arrombamento/Explosão AE",
     "type": "Deployable",
     "sp": 2,
     "tags": [
@@ -1380,7 +1380,7 @@
   },
   {
     "id": "ms_flash_charges",
-    "name": "<b>Cargas<b>. de Clarão",
+    "name": "Cargas de Clarão",
     "type": "Deployable",
     "sp": 2,
     "tags": [
@@ -2172,7 +2172,7 @@
     "source": "HORUS",
     "license": "Hydra",
     "license_level": 3,
-    "effect": "Este Drone Assassino pode ser posicionado em qualquer espaço livre adjacente.<br>Após posicionamento, ele afeta uma área de <b>Explosão</b> 2 à sua escolha ao <b>Alcance</b> dos <b>Sensores</b> e na linha de visão, e você ganha a <b>reação</b> Negação de Área (utilizável qualquer quantidade de vezes por rodada).<br>Você pode recolher ou posicionar o Drone Assassino como uma ação rápida.<br>A menos que seja recolhido ou destruído, ele permanece posicionado até o final da cena.",
+    "effect": "Este Drone Assassino pode ser posicionado em qualquer espaço livre adjacente.<br>Após posicionamento, ele afeta uma área de <b>Explosão 2</b>  à sua escolha ao <b>Alcance</b> dos <b>Sensores</b> e na linha de visão, e você ganha a <b>reação</b> Negação de Área (utilizável qualquer quantidade de vezes por rodada).<br>Você pode recolher ou posicionar o Drone Assassino como uma ação rápida.<br>A menos que seja recolhido ou destruído, ele permanece posicionado até o final da cena.",
     "deployables": [
       {
         "type": "Drone",
@@ -2181,7 +2181,7 @@
         "hp": 5,
         "edef": 10,
         "evasion": 10,
-        "detail": "Após posicionamento em um espaço livre adjacente, ele afeta uma área de <b>Explosão</b> 2 à sua escolha ao <b>Alcance</b> dos <b>Sensores</b> e na linha de visão, e você ganha a <b>reação</b> Negação de Área (utilizável qualquer quantidade de vezes por rodada).",
+        "detail": "Após posicionamento em um espaço livre adjacente, ele afeta uma área de <b>Explosão 2</b>  à sua escolha ao <b>Alcance</b> dos <b>Sensores</b> e na linha de visão, e você ganha a <b>reação</b> Negação de Área (utilizável qualquer quantidade de vezes por rodada).",
         "recall": "Quick",
         "redeploy": "Quick",
         "actions": [
@@ -2570,7 +2570,7 @@
   },
   {
     "id": "ms_roller_directed_payload_charges",
-    "name": "<b>Cargas<b>. Direcionadas \"Rolantes\"",
+    "name": "Cargas Direcionadas \"Rolantes\"",
     "type": "Deployable",
     "sp": 2,
     "tags": [
@@ -2753,7 +2753,7 @@
   },
   {
     "id": "ms_havok_charges",
-    "name": "<b>Cargas<b>. HAVOK",
+    "name": "Cargas HAVOK",
     "type": "Deployable",
     "sp": 2,
     "tags": [
@@ -2871,7 +2871,7 @@
   },
   {
     "id": "ms_grounding_charges",
-    "name": "<b>Cargas<b>. de Aterramento",
+    "name": "Cargas de Aterramento",
     "type": "Deployable",
     "sp": 2,
     "tags": [
@@ -3395,7 +3395,7 @@
   },
   {
     "id": "ms_deep_well_heat_sink",
-    "name": "Dissipador de <b>Calor</b> Poço Fundo",
+    "name": "Dissipador de Calor Poço Fundo",
     "sp": 4,
     "tags": [
       {
@@ -3466,7 +3466,7 @@
     "actions": [
       {
         "activation": "Quick",
-        "detail": "Este sistema só pode ser usado na <b>Zona de Perigo<b>.<br>Gaste uma carga e escolha um personagem adjacente a você: ele deve obter sucesso em um <b>salvamento de Agilidade</b> ou sofre 4d6 de <b>Energia</b>(PF) e fica Prostrado.<br>Em um sucesso, ele sofre metade do <b>Dano</b> e não fica Prostrado.<br>Você sofre metade do <b>Dano</b> causado — antes das reduções — como  de <b>Calor</b> e fica <b>Atordoado</b> até o final do seu próximo turno."
+        "detail": "Este sistema só pode ser usado na <b>Zona de Perigo</b>.<br>Gaste uma carga e escolha um personagem adjacente a você: ele deve obter sucesso em um <b>salvamento de Agilidade</b> ou sofre <b>4d6 de Dano de Energia</b> (PF) e fica Prostrado.<br>Em um sucesso, ele sofre metade do <b>Dano</b> e não fica Prostrado.<br>Você sofre metade do <b>Dano</b> causado — antes das reduções — como <b>Calor</b> e fica <b>Atordoado</b> até o final do seu próximo turno."
       }
     ],
     "description": "Esta manopla cravejada utiliza um pulso do Núcleo do reator para superaquecer momentaneamente o ar em volta do manipulador do mecha, criando um campo de plasma mais quente que a superfície do sol.<br>Golpeando um chassi de um oponente, manoplas de plasma dão a mechas a capacidade de dobrar armaduras, vaporizar escudos e destroçar Sistemas internos com suas mãos nuas — se eles mesmos não forem destruídos primeiro.",
@@ -3565,11 +3565,11 @@
     "source": "",
     "license": "GMS",
     "license_level": 0,
-    "effect": "1/turno, quando você atacar com uma arma à distância Principal, você pode gastar <b>Cargas<b>. para aplicar um dos seguintes efeitos ao seu ataque pelo custo listado.",
+    "effect": "1/turno, quando você atacar com uma arma à distância Principal, você pode gastar <b>Cargas</b> para aplicar um dos seguintes efeitos ao seu ataque pelo custo listado.",
     "ammo": [
       {
         "name": "Thumper",
-        "detail": "Ataque ganha  <b>Repulsão<b>  1 e <b>Dano</b> Explosivo.",
+        "detail": "Ataque ganha <b>Repulsão</b> 1 e <b>Dano</b> Explosivo.",
         "allowed_sizes": [
           "Main"
         ],
@@ -3597,7 +3597,7 @@
       },
       {
         "name": "Mag",
-        "detail": "Ganha Em  <b>Arco<b>  e <b>Dano</b> Cinético.",
+        "detail": "Ganha Em <b>Arco</b> e <b>Dano</b> Cinético.",
         "allowed_sizes": [
           "Main"
         ],
@@ -3633,11 +3633,11 @@
     "source": "",
     "license": "GMS",
     "license_level": 0,
-    "effect": "1/turno, quando você atacar com uma arma à distância Principal, você pode gastar <b>Cargas<b>. para aplicar um dos seguintes efeitos ao seu ataque pelo custo listado.",
+    "effect": "1/turno, quando você atacar com uma arma à distância Principal, você pode gastar <b>Cargas</b> para aplicar um dos seguintes efeitos ao seu ataque pelo custo listado.",
     "ammo": [
       {
         "name": "Tambor",
-        "detail": "Ataque ganha  <b>Repulsão<b>  1 e <b>Dano</b> Explosivo.",
+        "detail": "Ataque ganha <b>Repulsão</b> 1 e <b>Dano</b> Explosivo.",
         "allowed_sizes": [
           "Main"
         ],
@@ -3665,7 +3665,7 @@
       },
       {
         "name": "Cartucho",
-        "detail": "Ganha Em  <b>Arco<b>  e <b>Dano</b> Cinético.",
+        "detail": "Ganha Em <b>Arco</b> e <b>Dano</b> Cinético.",
         "allowed_sizes": [
           "Main"
         ],
@@ -3746,11 +3746,11 @@
     "source": "",
     "license": "GMS",
     "license_level": 0,
-    "effect": "1/turno, quando você atacar com uma arma à distância Principal, você pode gastar <b>Cargas<b>. para aplicar um dos seguintes efeitos ao seu ataque pelo custo listado.<br>Se você realizar um acerto crítico usando munição de seu Estojo de Munição, você não gasta nenhuma carga.<br>Se o seu ataque tiver mais de um alvo, este efeito se aplica apenas à primeira rolagem de ataque que você fizer.",
+    "effect": "1/turno, quando você atacar com uma arma à distância Principal, você pode gastar <b>Cargas</b> para aplicar um dos seguintes efeitos ao seu ataque pelo custo listado.<br>Se você realizar um acerto crítico usando munição de seu Estojo de Munição, você não gasta nenhuma carga.<br>Se o seu ataque tiver mais de um alvo, este efeito se aplica apenas à primeira rolagem de ataque que você fizer.",
     "ammo": [
       {
         "name": "Tambor",
-        "detail": "Ataque ganha  <b>Repulsão<b>  1 e <b>Dano</b> Explosivo.",
+        "detail": "Ataque ganha <b>Repulsão</b> 1 e <b>Dano</b> Explosivo.",
         "allowed_sizes": [
           "Main"
         ],
@@ -3778,7 +3778,7 @@
       },
       {
         "name": "Cartucho",
-        "detail": "Ganha Em  <b>Arco<b>  e <b>Dano</b> Cinético.",
+        "detail": "Ganha Em <b>Arco</b> e <b>Dano</b> Cinético.",
         "allowed_sizes": [
           "Main"
         ],

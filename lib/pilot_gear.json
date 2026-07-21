@@ -42,7 +42,7 @@
     "id": "pg_archaic_ranged",
     "name": "Arma Arcaica (À Distância)",
     "type": "Weapon",
-    "description": "Essas armas são dispositivos pré-modernos como mosquetes e  <b>Arco<b> s, todos ainda utilizados em algumas sociedades.",
+    "description": "Essas armas são dispositivos pré-modernos como mosquetes e <b>Arcos</b>, todos ainda utilizados em algumas sociedades.",
     "tags": [
       {
         "id": "tg_archaic"
@@ -167,7 +167,7 @@
         "val": 1
       }
     ],
-    "effect": "Quando uma arma emblemática é adquirida, escolha seu tipo de <b>Dano</b> â€“ Explosivo, Energético ou Cinético."
+    "effect": "Quando uma arma emblemática é adquirida, escolha seu tipo de <b>Dano</b> – Explosivo, Energético ou Cinético."
   },
   {
     "id": "pg_medium_signature",
@@ -194,7 +194,7 @@
         "val": 2
       }
     ],
-    "effect": "Quando uma arma emblemática é adquirida, escolha seu tipo de <b>Dano</b> â€“ Explosivo, Energético ou Cinético."
+    "effect": "Quando uma arma emblemática é adquirida, escolha seu tipo de <b>Dano</b> – Explosivo, Energético ou Cinético."
   },
   {
     "id": "pg_heavy_signature",
@@ -227,7 +227,7 @@
         "val": 4
       }
     ],
-    "effect": "Quando uma arma emblemática é adquirida, escolha seu tipo de <b>Dano</b> â€“ Explosivo, Energético ou Cinético."
+    "effect": "Quando uma arma emblemática é adquirida, escolha seu tipo de <b>Dano</b> – Explosivo, Energético ou Cinético."
   },
   {
     "id": "missing_pilotarmor",
@@ -312,7 +312,7 @@
     "id": "pg_heavy_hardsuit",
     "name": "Traje Reforçado Pesado",
     "type": "Armor",
-    "description": "Os trajes reforçados mais Pesados. São sempre energizados e superblindados com uma espessa blindagem compósita. Os trajes reforçados Pesados frequentemente apresentam armas integradas, poderosos conjuntos de mobilidade e â€“ ao aumentar a força do usuário â€“ permitem que ele utilize armas muito mais pesadas do que a infantaria normal pode carregar. Os trajes reforçados Pesados estão em declínio agora que os Chassis de meio-<b>Tamanho</b> são populares, mas ainda são comuns entre militares privados e forças armadas diaspóricas de nível médio.",
+    "description": "Os trajes reforçados mais Pesados. São sempre energizados e superblindados com uma espessa blindagem compósita. Os trajes reforçados Pesados frequentemente apresentam armas integradas, poderosos conjuntos de mobilidade e — ao aumentar a força do usuário — permitem que ele utilize armas muito mais pesadas do que a infantaria normal pode carregar. Os trajes reforçados Pesados estão em declínio agora que os Chassis de meio-<b>Tamanho</b> são populares, mas ainda são comuns entre militares privados e forças armadas diaspóricas de nível médio.",
     "bonuses": [
       {
         "id": "pilot_hp",
@@ -348,7 +348,7 @@
     "id": "pg_mobility_hardsuit",
     "name": "Traje Reforçado de Mobilidade",
     "type": "Armor",
-    "effect": "Esses trajes reforçados possuem Sistemas de voo integrados, permitindo que os pilotos voem ao se moverem ou <b>Impulsionar</b>EM. Pilotos voando devem terminar seu turno no chão (ou em outra superfície) ou começarão a cair.",
+    "effect": "Esses trajes reforçados possuem Sistemas de voo integrados, permitindo que os pilotos voem ao se moverem ou <b>Impulsionarem</b>. Pilotos voando devem terminar seu turno no chão (ou em outra superfície) ou começarão a cair.",
     "bonuses": [
       {
         "id": "pilot_evasion",
@@ -447,7 +447,7 @@
     "id": "pg_frag_grenades",
     "name": "Granadas de Fragmentação",
     "type": "Gear",
-    "effect": "Gaste uma carga para o seguinte efeito:<ul><ul><li>Granada de Fragmentação (Granada, <b>Alcance 5</b>, <b>Explosão</b> 1): Personagens afetados devem obter sucesso em um <b>salvamento de Agilidade</b> ou sofrem 2explosive.</li></ul></ul>",
+    "effect": "Gaste uma carga para o seguinte efeito:<ul><li>Granada de Fragmentação (Granada, <b>Alcance 5</b>, <b>Explosão</b> 1): Personagens afetados devem obter sucesso em um <b>salvamento de Agilidade</b> ou sofrem 2 de <b>Dano Explosivo</b>.</li></ul>",
     "actions": [
       {
         "name": "Lançar Granada de Fragmentação",
@@ -468,7 +468,7 @@
             "val": 2
           }
         ],
-        "detail": "Gaste uma carga para lançar uma Granada de Fragmentação em até <b>Alcance 5</b>. Personagens afetados dentro da área de <b>Explosão</b> 1 devem obter sucesso em um <b>salvamento de Agilidade</b> ou sofrem 2 de <b>Dano</b> EXPLOSIVO.",
+        "detail": "Gaste uma carga para lançar uma Granada de Fragmentação em até <b>Alcance 5</b>. Personagens afetados dentro da área de <b>Explosão</b> 1 devem obter sucesso em um <b>salvamento de Agilidade</b> ou sofrem 2 de <b>Dano Explosivo</b>.",
         "pilot": true
       }
     ],
@@ -513,13 +513,13 @@
     "id": "pg_stims",
     "name": "Estimulantes",
     "type": "Gear",
-    "effect": "Gaste uma carga para um dos seguintes efeitos:<ul><ul><li>Despertar: Mantém um piloto acordado e alerta por até 30 horas.</li></ul><ul><li>Acalmar: Mantém um piloto calmo e emocionalmente estável; diminui o medo e outras reações fortes.</li></ul><ul><li>Aguçar: Aumenta os sentidos e a vigilância, reduz a fadiga e diminui os tempos de <b>reação</b>. Aguçar ocasionalmente provoca um surto de raiva em alguns usuários.</li></ul></ul>",
+    "effect": "Gaste uma carga para um dos seguintes efeitos:<ul><li>Despertar: Mantém um piloto acordado e alerta por até 30 horas.</li><li>Acalmar: Mantém um piloto calmo e emocionalmente estável; diminui o medo e outras reações fortes.</li><li>Aguçar: Aumenta os sentidos e a vigilância, reduz a fadiga e diminui os tempos de <b>reação</b>.</li></ul>",
     "description": "Estes estimulantes químicos são às vezes administrados automaticamente por injetores incorporados ao traje de um piloto, ou até mesmo implantados em seu corpo. O uso descontrolado pode ser viciante e prejudicial à saúde a longo prazo e é um problema para alguns pilotos.",
     "actions": [
       {
         "name": "Usar Estimulante",
         "activation": "Quick",
-        "detail": "Gaste uma carga para um dos seguintes efeitos:<ul><ul><li>Despertar: Mantém um piloto acordado e alerta por até 30 horas.</li></ul><ul><li>Acalmar: Mantém um piloto calmo e emocionalmente estável; diminui o medo e outras reações fortes.</li></ul><ul><li>Aguçar: Aumenta os sentidos e a vigilância, reduz a fadiga e diminui os tempos de <b>reação</b>.</li></ul></ul>",
+        "detail": "Gaste uma carga para um dos seguintes efeitos:<ul><li>Despertar: Mantém um piloto acordado e alerta por até 30 horas.</li><li>Acalmar: Mantém um piloto calmo e emocionalmente estável; diminui o medo e outras reações fortes.</li><li>Aguçar: Aumenta os sentidos e a vigilância, reduz a fadiga e diminui os tempos de <b>reação</b>.</li></ul>",
         "pilot": true
       }
     ],
@@ -537,18 +537,18 @@
     "id": "pg_thermite_charge",
     "name": "Carga de Termita",
     "type": "Gear",
-    "effect": "Gaste uma carga para o seguinte efeito:<ul><ul><li>Carga de Termita (Mina, ESTOURO 1): Esta carga precisa ser detonada remotamente como uma ação rápida. Personagens afetados devem obter sucesso em um salvamento de Engenharia ou sofrem 3 <b>Dano</b> Energético PF. <b>Cargas<b>. de termita atingem automaticamente objetos, causando 10 <b>Dano</b> Energético PF.</li></ul></ul>",
+    "effect": "Gaste uma carga para o seguinte efeito:<ul><li>Carga de Termita (Mina, ESTOURO 1): Esta carga precisa ser detonada remotamente como uma ação rápida. Personagens afetados devem obter sucesso em um salvamento de Engenharia ou sofrem <b>3 de Dano de Energia</b> (PF). <b>Cargas</b> de termita atingem automaticamente objetos, causando <b>10 de Dano de Energia</b> (PF).</li></ul>",
     "deployables": [
       {
         "name": "Carga de Termita",
         "type": "Mine",
-        "detail": "Esta carga precisa ser detonada remotamente como uma ação rápida. Personagens afetados devem obter sucesso em um salvamento de Engenharia ou sofrem 3 <b>Dano</b> Energético PF. <b>Cargas<b>. de termita atingem automaticamente objetos, causando 10 <b>Dano</b> Energético PF.",
+        "detail": "Esta carga precisa ser detonada remotamente como uma ação rápida. Personagens afetados devem obter sucesso em um salvamento de Engenharia ou sofrem <b>3 de Dano de Energia</b> (PF). <b>Cargas</b> de termita atingem automaticamente objetos, causando <b>10 de Dano de Energia</b> (PF).",
         "pilot": true,
         "actions": [
           {
             "name": "Detonar",
             "activation": "Quick",
-            "detail": "Personagens afetados devem obter sucesso em um salvamento de Engenharia ou sofrem 3 <b>Dano</b> Energético PF.",
+            "detail": "Personagens afetados devem obter sucesso em um salvamento de Engenharia ou sofrem <b>3 de Dano de Energia</b> (PF).",
             "pilot": true
           }
         ],
@@ -576,7 +576,7 @@
     "id": "pg_antiphoton_visor",
     "name": "Visor Antifótons",
     "type": "Gear",
-    "description": "Projetado para proteger os olhos do usuário de intensas explosões de luz, os visores antifótons costumam ser encontrados em equipes de invasão e operadores que trabalham próximos a fontes solares. Eles são eficazes contra armas de clarão, luz UV intensa e <b>Cargas<b>. acidentais de armas de <b>Energia</b>",
+    "description": "Projetado para proteger os olhos do usuário de intensas explosões de luz, os visores antifótons costumam ser encontrados em equipes de invasão e operadores que trabalham próximos a fontes solares. Eles são eficazes contra armas de clarão, luz UV intensa e <b>Cargas</b> acidentais de armas de <b>Energia</b>.",
     "tags": [
       {
         "id": "tg_gear"
@@ -651,9 +651,9 @@
   },
   {
     "id": "pg_infoskin",
-    "name": "Pele  <b>Inteligente<b> ",
+    "name": "Pele Inteligente",
     "type": "Gear",
-    "description": "Um polímero sintético reativo com qualidades avançadas, a pele  <b>Inteligente<b>  se une rapidamente à pele e aos cabelos reais. Uma vez aplicada, ela responde a sinais eletrônicos enviados por softwares vinculados, mudando rapidamente de cor e textura — até mesmo distorcendo sua forma, permitindo que os usuários façam mudanças menores em sua aparência. Com a pele  <b>Inteligente<b> , é fácil alterar características faciais, cor do cabelo ou padrões de maquiagem.",
+    "description": "Um polímero sintético reativo com qualidades avançadas, a pele inteligente se une rapidamente à pele e aos cabelos reais. Uma vez aplicada, ela responde a sinais eletrônicos enviados por softwares vinculados, mudando rapidamente de cor e textura — até mesmo distorcendo sua forma, permitindo que os usuários façam mudanças menores em sua aparência. Com a pele inteligente, é fácil alterar características faciais, cor do cabelo ou padrões de maquiagem.",
     "tags": [
       {
         "id": "tg_gear"
@@ -717,9 +717,9 @@
   },
   {
     "id": "pg_smart_scope",
-    "name": "Luneta  <b>Inteligente<b> ",
+    "name": "Luneta Inteligente",
     "type": "Gear",
-    "description": "Uma luneta eletrônica poderosa que oferece ampliação de alta resolução de cerca de três quilômetros e ajusta automaticamente sua lente para vento, gravidade e pressão. As lunetas  <b>Inteligente<b> s podem projetar seu campo de visão e todos os dados para a interface de usuário na rede. Elas também podem se conectar a outros dispositivos térmicos, óticos ou de visão simulada para melhorar ainda mais o direcionamento.",
+    "description": "Uma luneta eletrônica poderosa que oferece ampliação de alta resolução de cerca de três quilômetros e ajusta automaticamente sua lente para vento, gravidade e pressão. As lunetas inteligentes podem projetar seu campo de visão e todos os dados para a interface de usuário na rede. Elas também podem se conectar a outros dispositivos térmicos, óticos ou de visão simulada para melhorar ainda mais o direcionamento.",
     "tags": [
       {
         "id": "tg_gear"

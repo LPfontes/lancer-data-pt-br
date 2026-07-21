@@ -10,7 +10,7 @@
     "license": "GMS",
     "license_level": 1,
     "effect": "Em um acerto com a arma à qual este mod é aplicado, gaste uma carga como uma <b>Ação Livre</b> para ativar seu detonador e causar +1d6 de <b>Dano</b> EXPLOSIVO de bônus.",
-    "description": "Uma modificação popular da clássica lança de guerra envolve a substituição da longa ponta perfurante da lança por uma carga explosiva descartável acionada por impacto. Na penetração, a ponta da lança é separada do cabo – momentos depois, a ponta embutida detona em uma <b>Explosão</b> cônica a partir do ponto de impacto. As <b>Cargas<b>. térmicas sobressalentes são estáveis e transportadas em carregadores tubulares externos.<br>A EIP-EN também fabrica <b>Cargas<b>. térmicas compatíveis com a <b>Linha</b> de lâminas, martelos e picaretas da SMG.",
+    "description": "Uma modificação popular da clássica lança de guerra envolve a substituição da longa ponta perfurante da lança por uma carga explosiva descartável acionada por impacto. Na penetração, a ponta da lança é separada do cabo – momentos depois, a ponta embutida detona em uma <b>Explosão</b> cônica a partir do ponto de impacto. As <b>Cargas</b> térmicas sobressalentes são estáveis e transportadas em carregadores tubulares externos.<br>A EIP-EN também fabrica <b>Cargas</b> térmicas compatíveis com a <b>Linha</b> de lâminas, martelos e picaretas da SMG.",
     "tags": [],
     "license_id": ""
   },
@@ -25,7 +25,7 @@
     "license": "Nelson",
     "license_level": 2,
     "effect": "Ao acertar com essa arma, gaste uma carga como uma <b>Ação Livre</b> para ativar seu detonador e causar +1d6explosive de <b>Dano bônus</b>.",
-    "description": "Uma modificação popular no clássico pique de guerra envolve substituir a longa ponta perfurante por uma carga explosiva descartável, acionada por impacto. Na penetração, a ponta do pique é separada do cabo — momentos depois, a ponta embutida detona em uma <b>Explosão</b> cônica para frente. <b>Cargas<b>. térmicas sobressalentes são estáveis e transportadas em tubos externos.<br>A EIP-EN também fabrica <b>Cargas<b>. térmicas compatíveis com a <b>Linha</b> de lâminas, martelos e picaretas da SMG.",
+    "description": "Uma modificação popular no clássico pique de guerra envolve substituir a longa ponta perfurante por uma carga explosiva descartável, acionada por impacto. Na penetração, a ponta do pique é separada do cabo — momentos depois, a ponta embutida detona em uma <b>Explosão</b> cônica para frente. <b>Cargas</b> térmicas sobressalentes são estáveis e transportadas em tubos externos.<br>A EIP-EN também fabrica <b>Cargas</b> térmicas compatíveis com a <b>Linha</b> de lâminas, martelos e picaretas da SMG.",
     "tags": [
       {
         "id": "tg_limited",
@@ -59,7 +59,7 @@
     "license": "Raleigh",
     "license_level": 3,
     "effect": "A sua comp/con classe TIO controla essa arma e seus Sistemas associados.<br>1/turno, você pode atacar com +2 de Dificuldade usando a arma de TIO como uma <b>Ação Livre</b>. TIO não pode usar armas que já foram usadas neste turno, e qualquer arma que TIO usar para atacar não pode ser usada novamente até o início do seu próximo turno.<br>TIO não é uma PNH completa, então não pode entrar em cascata.",
-    "description": "O sistema comp/con TIO da EIP-EN é o resultado do programa ESTRELANEGRA-2, um projeto temporário que buscava desenvolver armas  <b>Inteligente<b> s mais avançadas. Os primeiros protótipos foram prejudicados por uma combinação de alto consumo de <b>Energia</b>, condicionamento instável e orientação frustrante para tarefas únicas, o que eventualmente levou ao encerramento do projeto.<br>Embora a EIP-EN não esteja mais desenvolvendo novas versões da TIO, eles ainda possuem um estoque de Sistemas antigos aprovados pelo Controle de Qualidade acessíveis a pilotos qualificados.<br>Pilotos sortudos o suficiente para testar os modelos juram ao falar bem da eficiência e raciocínio paralelo da TIO, embora as comp/cons desatualizadas sejam conhecidas por suas personalidades um tanto instáveis.",
+    "description": "O sistema comp/con TIO da EIP-EN é o resultado do programa ESTRELANEGRA-2, um projeto temporário que buscava desenvolver armas <b>Inteligentes</b> mais avançadas. Os primeiros protótipos foram prejudicados por uma combinação de alto consumo de <b>Energia</b>, condicionamento instável e orientação frustrante para tarefas únicas, o que eventualmente levou ao encerramento do projeto.<br>Embora a EIP-EN não esteja mais desenvolvendo novas versões da TIO, eles ainda possuem um estoque de Sistemas antigos aprovados pelo Controle de Qualidade acessíveis a pilotos qualificados.<br>Pilotos sortudos o suficiente para testar os modelos juram ao falar bem da eficiência e raciocínio paralelo da TIO, embora as comp/cons desatualizadas sejam conhecidas por suas personalidades um tanto instáveis.",
     "tags": [
       {
         "id": "tg_unique"
@@ -134,7 +134,7 @@
     "source": "SSC",
     "license": "Monarch",
     "license_level": 2,
-    "effect": "Escolha um Lançador ou Canhão: ele adquire +5 de <b>Alcance</b> e  <b>Artilharia<b> .",
+    "effect": "Escolha um Lançador ou Canhão: ele adquire +5 de <b>Alcance</b> e <b>Artilharia</b>.",
     "description": "Modificações de estabilização aprimoram encaixes físicos e softwares de mira, garantindo que as armas permaneçam niveladas, firmes e em ângulo apropriado independentemente do terreno ou das manobras do piloto.",
     "added_range": [
       {
@@ -164,7 +164,7 @@
     "source": "HORUS",
     "license": "Balor",
     "license_level": 2,
-    "effect": "Escolha uma arma: Ela adquire  <b>Inteligente<b>  e Guiado.",
+    "effect": "Escolha uma arma: Ela adquire <b>Inteligente</b> e Guiado.",
     "description": "As armas nanocompósitas condensam enxames agressivos de <b>Drones</b> em projéteis individuais, um feixe contínuo ou a borda de uma lâmina.<br>As armas de projéteis adaptadas disparam projéteis em formato de COLMEIA/CONSUMO que se despedaçam ao impacto, liberando sua carga: uma porção de nanitas autônomos. Após serem libertados, os nanitas começam a consumir tecido ou superestrutura circundante. Eles continuam até se esgotarem ou consumirem totalmente o alvo, o que ocorrer primeiro. Em voo, a porção é capaz de se <b>Ligar</b> à colmeia e fazer pequenos ajustes na trajetória do projétil, garantindo um impacto positivo.<br>As armas de feixe contínuo transportam porções diretamente, enquanto as armas corpo a corpo convencionais são substituídas por análogos compostos inteiramente por nanorrobôs.",
     "added_tags": [
       {
@@ -211,7 +211,7 @@
     "license": "Saladin",
     "license_level": 3,
     "effect": "Escolha uma arma: ela recebe Exagerado e seu <b>Dano</b> não pode ser reduzido de forma alguma, incluindo por outros efeitos e Sistemas (como <b>Resistência</b>, <b>Armadura</b> etc.).",
-    "description": "Armas paracausais são uma dor de cabeça para planejadores militares; suas funções de A a Z geralmente são obscuras, apesar de elas consistentemente produzirem a mesma saída \"Z\" pela entrada \"A\".<br>Os primeiros registros de armas paracausais não registradas ocorreram durante os conflitos civis em Tian Shen. Forças locais do sistema receberam pentes selados com instruções para serem carregados e disparados normalmente, embora a inspeção dos conteúdos dos pentes tenha sido proibida enquanto em campo, porque iria \"danificar a carga\". Gravações de capacetes e armas provam os efeitos anômalos dessa munição, apesar de que relatórios de pós-ação descobriram um aparentemente pequeno, porém incrível fato: cada um dos soldados equipados com a munição paracausal atingiu uma taxa de impacto positivo de 100%.<br>A União marcou todas as armas e munições paracausais não reguladas para serem recolhidas, e o departamento está atualmente investigando a Arsenal Harrison por seu papel em desenvolver a tecnologia. Apesar disso, munição paracausal ainda está em uso, com <b>Cargas<b>. e códigos vazando para partes interessadas.",
+    "description": "Armas paracausais são uma dor de cabeça para planejadores militares; suas funções de A a Z geralmente são obscuras, apesar de elas consistentemente produzirem a mesma saída \"Z\" pela entrada \"A\".<br>Os primeiros registros de armas paracausais não registradas ocorreram durante os conflitos civis em Tian Shen. Forças locais do sistema receberam pentes selados com instruções para serem carregados e disparados normalmente, embora a inspeção dos conteúdos dos pentes tenha sido proibida enquanto em campo, porque iria \"danificar a carga\". Gravações de capacetes e armas provam os efeitos anômalos dessa munição, apesar de que relatórios de pós-ação descobriram um aparentemente pequeno, porém incrível fato: cada um dos soldados equipados com a munição paracausal atingiu uma taxa de impacto positivo de 100%.<br>A União marcou todas as armas e munições paracausais não reguladas para serem recolhidas, e o departamento está atualmente investigando a Arsenal Harrison por seu papel em desenvolver a tecnologia. Apesar disso, munição paracausal ainda está em uso, com <b>Cargas</b> e códigos vazando para partes interessadas.",
     "added_tags": [
       {
         "id": "tg_overkill"

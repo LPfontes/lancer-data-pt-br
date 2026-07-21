@@ -283,11 +283,11 @@
       },
       {
         "name": "Guardião",
-        "description": "Personagens aliados adjacentes podem usar o Drake como <b>cobertura pesada<b>.",
+        "description": "Personagens aliados adjacentes podem usar o Drake como <b>cobertura pesada</b>.",
         "active_effects": [
           {
             "name": "Guardião",
-            "detail": "Personagens aliados adjacentes podem usar você como <b>cobertura pesada<b>."
+            "detail": "Personagens aliados adjacentes podem usar você como <b>cobertura pesada</b>."
           }
         ]
       }
@@ -295,7 +295,7 @@
     "core_system": {
       "name": "Fortaleza",
       "active_name": "Protocolo Fortaleza",
-      "active_effect": "Você implanta estabilizadores Pesados e seu mecha se torna mais um posto fortificado do que um veículo. Quando ativado, duas seções de <b>cobertura pesada</b>. (Linha 2, Tamanho 1) se desdobram de seu mecha, em qualquer direção. Essas seções de cobertura têm<b>Imunidade</b> a todos os danos.<br>Adicionalmente, os seguintes efeitos se aplicam enquanto ativo:<ul><li>Você fica <b>Imobilizado</b>. </li><li>Você se beneficia de <b>cobertura pesada</b>, mesmo em campo aberto, e adquire<b>Imunidade</b> a Repelir, Prostrado e a todo movimento involuntário. </li><li>Ao <b>Suportar</b>, você pode realizar uma ação completa em seu próximo turno, em vez de apenas uma ação rápida. </li><li>Qualquer personagem que receba <b>cobertura pesada</b> de você ou de suas seções de cobertura adquire<b>Imunidade</b> a Repelir, Prostrado e a todo movimento involuntário, e recebe os benefícios da blindagem anti-explosão. </li></ul>Este sistema pode ser desativado como um protocolo. Caso contrário, dura até o final da cena atual.",
+      "active_effect": "Você implanta estabilizadores Pesados e seu mecha se torna mais um posto fortificado do que um veículo. Quando ativado, duas seções de <b>cobertura pesada</b> (Linha 2, Tamanho 1) se desdobram de seu mecha, em qualquer direção. Essas seções de cobertura têm <b>Imunidade</b> a todos os danos.<br>Adicionalmente, os seguintes efeitos se aplicam enquanto ativo:<ul><li>Você fica <b>Imobilizado</b>. </li><li>Você se beneficia de <b>cobertura pesada</b>, mesmo em campo aberto, e adquire <b>Imunidade</b> a Repelir, Prostrado e a todo movimento involuntário. </li><li>Ao <b>Suportar</b>, você pode realizar uma ação completa em seu próximo turno, em vez de apenas uma ação rápida. </li><li>Qualquer personagem que receba <b>cobertura pesada</b> de você ou de suas seções de cobertura adquire <b>Imunidade</b> a Repelir, Prostrado e a todo movimento involuntário, e recebe os benefícios da blindagem anti-explosão. </li></ul>Este sistema pode ser desativado como um protocolo. Caso contrário, dura até o final da cena atual.",
       "active_deployables": [
         {
           "name": "Cobertura da Fortaleza",
@@ -407,12 +407,12 @@
       },
       {
         "name": "Reparo de Combate",
-        "description": "Em combate, o Lancaster pode usar 4 Reparos para reparar um mecha destruído como uma ação completa, retornando-o a 1 de <b>Estrutura</b>, 1 de <b>Estresse</b> e 1 PV.",
+        "description": "Em combate, o Lancaster pode usar 4 Reparos para reparar um mecha destruído como uma ação completa, retornando-o a <b>1 de Estrutura</b>, 1 de <b>Estresse</b> e 1 PV.",
         "actions": [
           {
             "name": "Reparo de Combate",
             "activation": "Full",
-            "detail": "Use 4 Reparos para reparar um mecha destruído como uma ação completa, retornando-o a 1 de <b>Estrutura</b>, 1 de <b>Estresse</b> e 1 PV."
+            "detail": "Use 4 Reparos para reparar um mecha destruído como uma ação completa, retornando-o a <b>1 de Estrutura</b>, 1 de <b>Estresse</b> e 1 PV."
           }
         ]
       },
@@ -431,7 +431,7 @@
       "name": "Drone de Acoplamento",
       "description": "Conhecidos coloquialmente como 'Wingman', os <b>Drones</b> de acoplamento são <b>Drones</b> companheiros transportados e implantados a partir de um chassi. Recomenda-se que os pilotos não desenvolvam apegos emocionais a esses <b>Drones</b> devido à sua alta taxa de baixas.",
       "active_name": "Supercompressor",
-      "active_effect": "Seu Drone de Acoplamento se prende a um mecha aliado dentro de seu <b>Alcance<b>. Pelo resto da cena, você sofre 1 de <b>Calor</b> no início de cada um de seus turnos, mas seu alvo recebe <b>+1 de Precisão</b> em todos os ataques, testes e salvamentos, e<b>Imunidade</b> às condições Impedido, Bloqueado, Lento, <b>Dilacerado</b> e Imobilizado de personagens que não sejam ele mesmo. Este efeito termina se qualquer um dos personagens ficar <b>Atordoado</b>.<br>Enquanto este sistema estiver ativo, você não pode usar o Drone de Acoplamento para qualquer outro propósito.",
+      "active_effect": "Seu Drone de Acoplamento se prende a um mecha aliado dentro de seu <b>Alcance</b>. Pelo resto da cena, você sofre 1 de <b>Calor</b> no início de cada um de seus turnos, mas seu alvo recebe <b>+1 de Precisão</b> em todos os ataques, testes e salvamentos, e <b>Imunidade</b> às condições Impedido, Bloqueado, Lento, <b>Dilacerado</b> e Imobilizado de personagens que não sejam ele mesmo. Este efeito termina se qualquer um dos personagens ficar <b>Atordoado</b>.<br>Enquanto este sistema estiver ativo, você não pode usar o Drone de Acoplamento para qualquer outro propósito.",
       "active_effects": [
         {
           "name": "Supercompressor",
@@ -598,13 +598,13 @@
     "traits": [
       {
         "name": "Nascido para Matar",
-        "description": "No final de seu turno, se o Raleigh não tiver feito nenhum ataque ou forçado nenhum salvamento, ele pode <b>Recarregar</b> todas as armas com <b>Recarga<b> como uma <b>Ação Livre</b>.",
+        "description": "No final de seu turno, se o Raleigh não tiver feito nenhum ataque ou forçado nenhum salvamento, ele pode <b>Recarregar</b> todas as armas com <b>Recarga</b> como uma <b>Ação Livre</b>.",
         "actions": [
           {
             "name": "Nascido para Matar",
             "activation": "Free",
             "trigger": "Seu turno termina",
-            "detail": "Recarregue todas as armas com <b>Recarga<b> se você não fez nenhum ataque ou forçou nenhum salvamento."
+            "detail": "Recarregue todas as armas com <b>Recarga</b> se você não fez nenhum ataque ou forçou nenhum salvamento."
           }
         ]
       },
@@ -623,9 +623,9 @@
     ],
     "core_system": {
       "name": "Canhão M35 'Mjolnir'",
-      "description": "O canhão M35 Mjolnir da EIP-EN é uma herança da linha de armas defensivas Watchman da Estrela do Norte, retrabalhado para combate na linha de frente. O Mjolnir é um canhão <br>Auxiliar</b> multi-canos de montagem fixa que usa aceleração magnética para disparar pilhas de projéteis de <b>Explosão</b> aérea em seu alvo. É uma arma de impulso, ligada aos processos neurais de segunda camada do piloto com mediação de um COMP/CON ou PNH; mesmo na morte, o Mjolnir de um piloto continuará a identificar e atacar alvos hostis até atingir a falha sistêmica total. Por essa razão, o Mjolnir é frequentemente referido como uma arma-morta – uma das muitas armas desse tipo a serem encontradas entre os pilotos orientados para CQB.",
+      "description": "O canhão M35 Mjolnir da EIP-EN é uma herança da linha de armas defensivas Watchman da Estrela do Norte, retrabalhado para combate na linha de frente. O Mjolnir é um canhão Auxiliar multi-canos de montagem fixa que usa aceleração magnética para disparar pilhas de projéteis de <b>Explosão</b> aérea em seu alvo. É uma arma de impulso, ligada aos processos neurais de segunda camada do piloto com mediação de um COMP/CON ou PNH; mesmo na morte, o Mjolnir de um piloto continuará a identificar e atacar alvos hostis até atingir a falha sistêmica total. Por essa razão, o Mjolnir é frequentemente referido como uma arma-morta – uma das muitas armas desse tipo a serem encontradas entre os pilotos orientados para CQB.",
       "active_name": "Deus do Trovão",
-      "active_effect": "Você começa a girar seu M35 Mjolnir, começando sem nenhuma munição na câmara. Pelo resto da cena, você carrega duas munições nas câmaras no final de qualquer um de seus turnos em que não tenha disparado o M35 Mjolnir. Ele pode conter um máximo de seis munições.<br>Quando você dispara o M35 Mjolnir, todas as câmaras disparam simultaneamente, causando <b>4 de Dano Cinético<b> por munição carregada. Se você disparar quatro ou mais munições de uma vez, o ataque recebe (PF) e, em um acerto, seu alvo fica <b>Dilacerado</b> até o final do próximo turno dele.",
+      "active_effect": "Você começa a girar seu M35 Mjolnir, começando sem nenhuma munição na câmara. Pelo resto da cena, você carrega duas munições nas câmaras no final de qualquer um de seus turnos em que não tenha disparado o M35 Mjolnir. Ele pode conter um máximo de seis munições.<br>Quando você dispara o M35 Mjolnir, todas as câmaras disparam simultaneamente, causando <b>4 de Dano Cinético</b> por munição carregada. Se você disparar quatro ou mais munições de uma vez, o ataque recebe (PF) e, em um acerto, seu alvo fica <b>Dilacerado</b> até o final do próximo turno dele.",
       "activation": "Protocol",
       "use": "Encounter",
       "integrated": [
@@ -680,20 +680,20 @@
       },
       {
         "name": "Guardião",
-        "description": "Personagens aliados adjacentes podem usar o Tortuga como <b>cobertura pesada<b>.",
+        "description": "Personagens aliados adjacentes podem usar o Tortuga como <b>cobertura pesada</b>.",
         "active_effects": [
           {
             "name": "Guardião",
-            "detail": "Personagens aliados adjacentes podem usar você como <b>cobertura pesada<b>."
+            "detail": "Personagens aliados adjacentes podem usar você como <b>cobertura pesada</b>."
           }
         ]
       }
     ],
     "core_system": {
       "name": "Copiloto WATCHDOG",
-      "description": "As equipes de segurança da EIP-EN não são estranhas aos perigos das ações de abordagem de nave para nave ou de nave para estação. Corredores apertados, gravidade instável, ambientes escuros, vácuo absoluto e a potencial <b>Ameaça</b> dupla de oposição orgânica e inorgânica tornam as ações de abordagem alguns dos combates estatisticamente mais mortais – de acordo com as métricas internas da EIP-EN, até mesmo o lado vencedor deve esperar pelo menos 30% de baixas. Esperando diminuir a carga cognitiva sobre os pilotos e quaisquer PNHs ou COMP/CONs instalados em seus Chassis, a EIP-EN desenvolveu o copiloto WATCHDOG. O WATCHDOG é uma partição subsenciente simples: um homúnculo-relâmpago de inteligência agregada gerado a partir de milhares de relatórios pós-ação de ações de abordagem, interrogatórios e doadores voluntários. Não é uma PNH, nem mesmo um COMP/CON, o WATCHDOG é um programa tático robusto semelhante a uma arma  <b>Inteligente<b> . Dito isso, sua capacidade de operar sem ciclagem apresenta certas vantagens: a saber, esses copilotos têm alguma capacidade de aprender e fazer previsões com base na análise de seus pilotos. Os WATCHDOGs tendem a ter personalidades simples – na medida em que se pode dizer que têm uma – e são os favoritos dos pilotos que procuram uma atitude pragmática e conselhos nítidos e eficientes.<br>O sistema WATCHDOG está atualmente sob revisão por uma comissão conjunta USB/UDoJ-HR, mas ainda não foi emitida nenhuma suspensão formal da produção.",
+      "description": "As equipes de segurança da EIP-EN não são estranhas aos perigos das ações de abordagem de nave para nave ou de nave para estação. Corredores apertados, gravidade instável, ambientes escuros, vácuo absoluto e a potencial <b>Ameaça</b> dupla de oposição orgânica e inorgânica tornam as ações de abordagem alguns dos combates estatisticamente mais mortais – de acordo com as métricas internas da EIP-EN, até mesmo o lado vencedor deve esperar pelo menos 30% de baixas. Esperando diminuir a carga cognitiva sobre os pilotos e quaisquer PNHs ou COMP/CONs instalados em seus Chassis, a EIP-EN desenvolveu o copiloto WATCHDOG. O WATCHDOG é uma partição subsenciente simples: um homúnculo-relâmpago de inteligência agregada gerado a partir de milhares de relatórios pós-ação de ações de abordagem, interrogatórios e doadores voluntários. Não é uma PNH, nem mesmo um COMP/CON, o WATCHDOG é um programa tático robusto semelhante a uma arma <b>Inteligente</b>. Dito isso, sua capacidade de operar sem ciclagem apresenta certas vantagens: a saber, esses copilotos têm alguma capacidade de aprender e fazer previsões com base na análise de seus pilotos. Os WATCHDOGs tendem a ter personalidades simples – na medida em que se pode dizer que têm uma – e são os favoritos dos pilotos que procuram uma atitude pragmática e conselhos nítidos e eficientes.<br>O sistema WATCHDOG está atualmente sob revisão por uma comissão conjunta USB/UDoJ-HR, mas ainda não foi emitida nenhuma suspensão formal da produção.",
       "active_name": "Modo Hiper-Reflexo",
-      "active_effect": "Pelo resto desta cena:<ul><li>Se você tiver menos de 3 de  <b>Ameaça<b>  com uma arma à distância, ela aumenta para 3. </li><li>1/rodada, você pode realizar uma <b>reação</b> de <b>Retaliar</b> adicional. </li><li>Qualquer personagem que você acertar com <b>Retaliar</b> fica Imobilizado até o final do próximo turno dele. </li></ul>",
+      "active_effect": "Pelo resto desta cena:<ul><li>Se você tiver menos de 3 de <b>Ameaça</b> com uma arma à distância, ela aumenta para 3. </li><li>1/rodada, você pode realizar uma <b>reação</b> de <b>Retaliar</b> adicional. </li><li>Qualquer personagem que você acertar com <b>Retaliar</b> fica Imobilizado até o final do próximo turno dele. </li></ul>",
       "active_bonuses": [
         {
           "id": "min_range",
@@ -808,9 +808,9 @@
     ],
     "core_system": {
       "name": "Blindagem Pícaro",
-      "description": "Principalmente uma modificação defensiva, a  <b>Blindagem<b>  Pícaro é eriçada de espigões de cromo-tungstênio endurecido – uma referência ao homônimo histórico do Vlad. As pontas Pícaro são estrategicamente colocadas em áreas com alta probabilidade de encontros cinéticos: manoplas, articulações de manipuladores, placas de ombro e assim por diante. A blindagem Pícaro é incomum entre os pilotos do Núcleo e é considerada uma marca de táticas subdesenvolvidas – embora aterrorizantes.",
+      "description": "Principalmente uma modificação defensiva, a <b>Blindagem</b> Pícaro é eriçada de espigões de cromo-tungstênio endurecido – uma referência ao homônimo histórico do Vlad. As pontas Pícaro são estrategicamente colocadas em áreas com alta probabilidade de encontros cinéticos: manoplas, articulações de manipuladores, placas de ombro e assim por diante. A blindagem Pícaro é incomum entre os pilotos do Núcleo e é considerada uma marca de táticas subdesenvolvidas – embora aterrorizantes.",
       "active_name": "Espinhos Atormentadores",
-      "active_effect": "Pelo resto da cena, você adquire Resistência a todos os danos originados dentro do <b>Alcance 3</b>, e a  <b>Blindagem<b>  Pícaro causa <b>3 de Dano Cinético<b> (PF) em vez de 1.",
+      "active_effect": "Pelo resto da cena, você adquire Resistência a todos os danos originados dentro do <b>Alcance 3</b>, e a <b>Blindagem</b> Pícaro causa <b>3 de Dano Cinético</b> (PF) em vez de 1.",
       "active_effects": [
         {
           "name": "Resistência dos Espinhos Atormentadores",
@@ -818,7 +818,7 @@
         },
         {
           "name": "Blindagem Pícaro (Espinhos Atormentadores)",
-          "detail": "A  <b>Blindagem<b>  Pícaro causa 3 de <b>Dano</b> Cinético (PF) em vez de 1.",
+          "detail": "A <b>Blindagem</b> Pícaro causa 3 de <b>Dano</b> Cinético (PF) em vez de 1.",
           "condition": "Um personagem em <b>Alcance 3</b> ataca você",
           "damage": [
             {
@@ -851,7 +851,7 @@
       "Support"
     ],
     "y_pos": 12.5,
-    "description": "A Bruxa Negra é o modelo principal da linha de Chassis LUX-Iconic da SSC, no papel destinada a competir com o domínio do Arsenal Harrison no campo da manipulação de gravidade e eletromagnética de ponta. Utilizando as mais novas tecnologias desenvolvidas pelo Grupo de Materiais Exóticos da SSC, a Bruxa Negra é uma temível plataforma de controle de área, frequentemente utilizada em apoio a mechas mais Pesados <br>Engajados</b> em combate direto.<br>Com um perfil fino e Sistemas defensivos fortes, a Bruxa Negra é especialmente popular entre as casas mais ricas dos Baronatos Comerciais Karrakin, que frequentemente fazem múltiplos pedidos para equipar suas guardas pessoais e oficiais de companhia da casa. Ao lado dos Chassis Barônicos de produção interna, a Bruxa Negra (juntamente com outros modelos LUX-Iconic da SSC) é o chassi da SSC mais popular em todo o espaço nobre Karrakin.",
+    "description": "A Bruxa Negra é o modelo principal da linha de Chassis LUX-Iconic da SSC, no papel destinada a competir com o domínio do Arsenal Harrison no campo da manipulação de gravidade e eletromagnética de ponta. Utilizando as mais novas tecnologias desenvolvidas pelo Grupo de Materiais Exóticos da SSC, a Bruxa Negra é uma temível plataforma de controle de área, frequentemente utilizada em apoio a mechas mais Pesados <b>Engajados</b> em combate direto.<br>Com um perfil fino e Sistemas defensivos fortes, a Bruxa Negra é especialmente popular entre as casas mais ricas dos Baronatos Comerciais Karrakin, que frequentemente fazem múltiplos pedidos para equipar suas guardas pessoais e oficiais de companhia da casa. Ao lado dos Chassis Barônicos de produção interna, a Bruxa Negra (juntamente com outros modelos LUX-Iconic da SSC) é o chassi da SSC mais popular em todo o espaço nobre Karrakin.",
     "mounts": [
       "Main/Aux"
     ],
@@ -906,7 +906,7 @@
       "name": "Projetor de Campo Magnético",
       "description": "Geradores de campo magnético são uma variação portátil e implantável em campo das tecnologias de defesa magnética típicas. Quando ativados, eles criam uma bolha magnética que aprisiona todos os projéteis ferrosos recebidos. A força do campo é tão grande que pode até mesmo atrair mechas para seu centro. Quando o campo é disperso ou sua bateria de estado sólido se esgota – uma característica, não uma falha – o campo sofre uma súbita implosão catastrófica, atraindo todos os projéteis capturados para um ponto no centro da bolha.",
       "active_name": "Campo Magnético",
-      "active_effect": "Este sistema projeta um campo magnético de <b>Explosão 3<b> com pelo menos um espaço adjacente a você, causando os seguintes efeitos até o final de seu próximo turno:<ul><li>A área afetada é terreno difícil. </li><li>Ataques à distância que causam Dano Cinético ou explosivo não podem entrar ou sair da área afetada – os projéteis param na borda, sem causar Dano. Registre cada ataque parado desta forma. </li><li>Mechas e outros personagens feitos pelo menos parcialmente de metal que começam seu turno na área afetada ou entram nela pela primeira vez em uma rodada devem ter sucesso em um salvamento de <b>Casco</b> ou são puxados o mais perto possível do centro e ficam Imobilizados. </li></ul>Quando o efeito termina, quaisquer ataques à distância que foram parados retomam sua trajetória – em direção ao centro da área afetada. O MJ rola ataques contra cada personagem dentro, recebendo <b>+1 de Precisão</b> por ataque Bloqueado (até um máximo de +6). Em um acerto, esses ataques causam 1d6 de Dano Cinético por ataque Bloqueado (até um máximo de 6d6 de Dano Cinético).",
+      "active_effect": "Este sistema projeta um campo magnético de <b>Explosão 3</b> com pelo menos um espaço adjacente a você, causando os seguintes efeitos até o final de seu próximo turno:<ul><li>A área afetada é terreno difícil.</li><li>Ataques à distância que causam Dano Cinético ou explosivo não podem entrar ou sair da área afetada – os projéteis param na borda, sem causar Dano. Registre cada ataque parado desta forma.</li><li>Mechas e outros personagens feitos pelo menos parcialmente de metal que começam seu turno na área afetada ou entram nela pela primeira vez em uma rodada devem ter sucesso em um salvamento de <b>Casco</b> ou são puxados o mais perto possível do centro e ficam Imobilizados.</li></ul>Quando o efeito termina, quaisquer ataques à distância que foram parados retomam sua trajetória – em direção ao centro da área afetada. O MJ rola ataques contra cada personagem dentro, recebendo <b>+1 de Precisão</b> por ataque Bloqueado (até um máximo de +6). Em um acerto, esses ataques causam 1d6 de Dano Cinético por ataque Bloqueado (até um máximo de 6d6 de Dano Cinético).",
       "activation": "Full",
       "use": "Próximo Turno"
     },
@@ -982,7 +982,7 @@
       "active_effects": [
         {
           "name": "Foco: Marcado para a Morte",
-          "detail": "Cause <b>Dano bônus</b> ao seu alvo Marcado para a Morte com base no <b>Tamanho</b> da arma (<br>Auxiliar</b>: 1d6, principal: 2d6, pesada: 3d6, <b>Superpesada<b>: 4d6). Este <b>Dano bônus</b> não pode ser reduzido de forma alguma.",
+          "detail": "Cause <b>Dano bônus</b> ao seu alvo Marcado para a Morte com base no <b>Tamanho</b> da arma (Auxiliar: 1d6, principal: 2d6, pesada: 3d6, <b>Superpesada</b>: 4d6). Este <b>Dano bônus</b> não pode ser reduzido de forma alguma.",
           "condition": "Você está focando em um alvo (Marcado para Morrer)"
         }
       ],
@@ -990,7 +990,7 @@
         {
           "name": "Marcar para Morrer",
           "activation": "Full",
-          "detail": "Escolha um personagem dentro de um b>Alcance 30</b>, mas além do <b>Alcance 5</b>, para focar; enquanto foca, você fica Imobilizado e não pode usar reações, mas causa <b>Dano bônus</b> com base no <b>Tamanho</b> da arma (<br>Auxiliar</b>: 1d6, PRINCIPAL: 2d6, PESADA ou maior: 3d6) em <b>acertos críticos</b> à distância contra ele, desde que ele não esteja em cobertura ou dentro do <b>Alcance 5</b>.<br>Você só pode focar em um personagem por vez. Como um protocolo, você pode deixar de focar em um alvo.",
+          "detail": "Escolha um personagem dentro de um <b>Alcance 30</b>, mas além do <b>Alcance 5</b>, para focar; enquanto foca, você fica Imobilizado e não pode usar reações, mas causa <b>Dano bônus</b> com base no <b>Tamanho</b> da arma (Auxiliar: 1d6, PRINCIPAL: 2d6, PESADA ou maior: 3d6) em <b>acertos críticos</b> à distância contra ele, desde que ele não esteja em cobertura ou dentro do <b>Alcance 5</b>.<br>Você só pode focar em um personagem por vez. Como um protocolo, você pode deixar de focar em um alvo.",
           "range": [
             {
               "type": "Burst",
@@ -1013,7 +1013,7 @@
       ],
       "active_synergies": [
         {
-          "detail": "Enquanto focado (Marcado para a Morte) em um alvo, você causa <b>Dano bônus</b> com base no <b>Tamanho</b> da arma (<br>Auxiliar</b>: 1d6, principal: 2d6, pesada: 3d6, <b>Superpesada<b>: 4d6). Este <b>Dano bônus</b> não pode ser reduzido."
+          "detail": "Enquanto focado (Marcado para a Morte) em um alvo, você causa <b>Dano bônus</b> com base no <b>Tamanho</b> da arma (Auxiliar: 1d6, principal: 2d6, pesada: 3d6, <b>Superpesada</b>: 4d6). Este <b>Dano bônus</b> não pode ser reduzido."
         }
       ],
       "use": "Encounter",
@@ -1095,14 +1095,14 @@
     ],
     "core_system": {
       "name": "Articulação DHIYED",
-      "description": "“A crença no que podíamos ver, no que podíamos tocar – no que nossos COMP/CONs nos asseguravam que estava lá, em nossa própria subjetividade e memória. A crença na realidade se tornou uma arma. Abordamos o metacofre sabendo que enfrentaríamos um inimigo desconhecido, mas abordamos com a vantagem de números e força mecânica.<br>“DHIYED nos ensinou enquanto nos matava: através de conversas de comunicação embaralhadas, através dos gritos dos moribundos, através das gargalhadas de nossos eus-espelho enquanto nos matavam. Cada assinatura falsificada, cada salto temporal, cada memético, cada não-Euclidiano – eram lições.<br>“Você entende?<br>“DHIYED o Professor. DHIYED o Monstro. Enquanto o matávamos, DHIYED nos ensinou o que temer e como enfrentá-lo.<br>“O que eu temo agora? Essa é uma boa pergunta. O que o piloto que abriu o caixão de DHIYED teme?<br>“Eu não acho que o matamos. Acho que ele quer que acreditemos que o matamos – e não consigo imaginar o que ele tem feito enquanto nos consideramos seguros. ”",
+      "description": "“A crença no que podíamos ver, no que podíamos tocar – no que nossos COMP/CONs nos asseguravam que estava lá, em nossa própria subjetividade e memória. A crença na realidade se tornou uma arma. Abordamos o metacofre sabendo que enfrentaríamos um inimigo desconhecido, mas abordamos com a vantagem de números e força mecânica.<br>“DHIYED nos ensinou enquanto nos matava: através de conversas de comunicação embaralhadas, através dos gritos dos moribundos, através das gargalhadas de nossos eus-espelho enquanto nos matavam. Cada assinatura falsificada, cada salto temporal, cada memético, cada não-Euclidiano – eram lições.<br>“Você entende?<br>“DHIYED o Professor. DHIYED o Monstro. Enquanto o matávamos, DHIYED nos ensinou o que temer e como enfrentá-lo.<br>“O que eu temo agora? Essa é uma boa pergunta. O que o piloto que abriu o caixão de DHIYED teme?<br>“Eu não acho que o matamos. Acho que ele quer que acreditemos que o matamos – e não consigo imaginar o que ele tem feito enquanto nos consideramos seguros.”",
       "active_name": "Salão de Espelhos",
-      "active_effect": "Pelo resto da cena, sempre que você iniciar um movimento único durante seu turno (por exemplo, um movimento padrão, <b>Impulsionar</b>, ou movimento concedido por talentos ou Sistemas), você deixa uma impressão holográfica de si mesmo no espaço de onde começou. Estes são objetos ilusórios do mesmo Tamanho que você, que têm<b>Imunidade</b> a todos os danos e efeitos e não são obstruções.<br>Quando personagens hostis começam seu turno em, se movem através de, ou se movem adjacentes ao espaço ocupado por um holograma, ele detona. Eles devem ter sucesso em um <b>salvamento de Agilidade</b> ou sofrem 1d6 de Dano Energético. Em um sucesso, eles sofrem metade do Dano.<br>Você também adquire a Ação Rápida Teleporte Holográfico.",
+      "active_effect": "Pelo resto da cena, sempre que você iniciar um movimento único durante seu turno (por exemplo, um movimento padrão, <b>Impulsionar</b>, ou movimento concedido por talentos ou Sistemas), você deixa uma impressão holográfica de si mesmo no espaço de onde começou. Estes são objetos ilusórios do mesmo Tamanho que você, que têm <b>Imunidade</b> a todos os danos e efeitos e não são obstruções.<br>Quando personagens hostis começam seu turno em, se movem através de, ou se movem adjacentes ao espaço ocupado por um holograma, ele detona. Eles devem ter sucesso em um <b>salvamento de Agilidade</b> ou sofrem 1d6 de Dano Energético. Em um sucesso, eles sofrem metade do Dano.<br>Você também adquire a Ação Rápida Teleporte Holográfico.",
       "active_actions": [
         {
           "name": "Teleporte Holográfico",
           "activation": "Quick",
-          "detail": "Você pode se teletransportar instantaneamente para a localização de qualquer holograma dentro do <b>Alcance 5</b>0 como uma ação rápida. Ao fazer isso, todos os hologramas existentes detonam – criando explosões de <b>Emanação</b> 1 que causam 1d6 de <b>Dano</b> Energético (<b>salvamento de Agilidade</b> para metade) – e você não pode criar nenhum novo holograma até o início de seu próximo turno",
+          "detail": "Você pode se teletransportar instantaneamente para a localização de qualquer holograma dentro do <b>Alcance 50</b> como uma ação rápida. Ao fazer isso, todos os hologramas existentes detonam – criando explosões de <b>Emanação</b> 1 que causam 1d6 de <b>Dano</b> Energético (<b>salvamento de Agilidade</b> para metade) – e você não pode criar nenhum novo holograma até o início de seu próximo turno.",
           "damage": [
             {
               "val": "1d6",
@@ -1170,11 +1170,11 @@
       },
       {
         "name": "Adaptação de Carapaça",
-        "description": "Quando o Marco Metálico está com <b>cobertura leve<b>., os atacantes à distância sofrem +2 de Dificuldade em vez de <b>+1 de Dificuldade</b>.",
+        "description": "Quando o Marco Metálico está com <b>cobertura leve</b>, os atacantes à distância sofrem +2 de Dificuldade em vez de <b>+1 de Dificuldade</b>.",
         "active_effects": [
           {
             "name": "Adaptação de Carapaça",
-            "condition": "Você está em <b>cobertura leve<b>.",
+            "condition": "Você está em <b>cobertura leve</b>",
             "detail": "Atacantes à distância sofrem +2 de Dificuldade em vez de <b>+1 de Dificuldade</b>."
           }
         ]
@@ -1262,7 +1262,7 @@
       },
       {
         "name": "Carga Guiada",
-        "description": "O Monarca pode usar uma arma <b>Lançadora</b> para atacar um personagem com a condição <b><b>Travado em Mira</b></b> como se sua arma tivesse <b>Guiada</b>, mas deve consumir o <b><b>Travado em Mira</b></b> durante o ataque. Ao fazer isso, o <b>Dano</b> do ataque não pode ser reduzido de forma alguma.",
+        "description": "O Monarca pode usar uma arma <b>Lançadora</b> para atacar um personagem com a condição <b>Travado em Mira</b> como se sua arma tivesse <b>Guiada</b>, mas deve consumir o <b>Travado em Mira</b> durante o ataque. Ao fazer isso, o <b>Dano</b> do ataque não pode ser reduzido de forma alguma.",
         "synergies": [
           {
             "locations": [
@@ -1274,7 +1274,7 @@
             "weapon_sizes": [
               "any"
             ],
-            "detail": "O Monarca pode usar uma arma <b>Lançadora</b> para atacar um personagem com a condição <b><b>Travado em Mira</b></b> como se sua arma tivesse <b>Guiada</b>, mas deve consumir o <b><b>Travado em Mira</b></b> durante o ataque. Ao fazer isso, o <b>Dano</b> do ataque não pode ser reduzido de forma alguma."
+            "detail": "O Monarca pode usar uma arma <b>Lançadora</b> para atacar um personagem com a condição <b>Travado em Mira</b> como se sua arma tivesse <b>Guiada</b>, mas deve consumir o <b>Travado em Mira</b> durante o ataque. Ao fazer isso, o <b>Dano</b> do ataque não pode ser reduzido de forma alguma."
           }
         ]
       }
@@ -1320,7 +1320,7 @@
       "Striker"
     ],
     "y_pos": 62,
-    "description": "O Manto do Luto é um modelo completamente novo da linha LUX-Icônica da SSC e o mais recente especialista em combate próximo com armas corpo a corpo da fabricante. O Manto do Luto enfatiza o combate corpo a corpo de Precisão e é comumente equipado com um complemento de fios microfilamentados com blindagem projetados para agir como uma arma cortante antiarmadura.<br>Projetado pelo Grupo de Materiais Exóticos da SSC com base em dados de engajamentos iniciais contra a Ascendência Áunica no Jardim da Fronteira, o Manto do Luto combina extratos colhidos pela SSC do paracódigo DHIYED com tecnologia de Manipulação de Firmamento Áunica adaptada. O Manto do Luto fornece uma opção prestigiada e tática para situações onde o uso de armas de fogo são impraticáveis e  <b>Artilharia<b>  está indisponível. Como parte da linha LUX-Icônica, o Manto do Luto é um pedido popular nos Baronatos e entre várias empresas de segurança VIP de alta mana.",
+    "description": "O Manto do Luto é um modelo completamente novo da linha LUX-Icônica da SSC e o mais recente especialista em combate próximo com armas corpo a corpo da fabricante. O Manto do Luto enfatiza o combate corpo a corpo de Precisão e é comumente equipado com um complemento de fios microfilamentados com blindagem projetados para agir como uma arma cortante antiarmadura.<br>Projetado pelo Grupo de Materiais Exóticos da SSC com base em dados de engajamentos iniciais contra a Ascendência Áunica no Jardim da Fronteira, o Manto do Luto combina extratos colhidos pela SSC do paracódigo DHIYED com tecnologia de Manipulação de Firmamento Áunica adaptada. O Manto do Luto fornece uma opção prestigiada e tática para situações onde o uso de armas de fogo são impraticáveis e <b>Artilharia</b> está indisponível. Como parte da linha LUX-Icônica, o Manto do Luto é um pedido popular nos Baronatos e entre várias empresas de segurança VIP de alta mana.",
     "mounts": [
       "Flex",
       "Main/Aux"
@@ -1481,7 +1481,7 @@
           "activation": "Reaction",
           "frequency": "1/round",
           "trigger": "Um personagem aliado na linha de visão sofre Dano de outro personagem na linha de visão.",
-          "detail": "Efeito: Role 1d6. Em 4 ou mais, o ataque na verdade foi uma simulação prevista pelo seu processador — seu aliado adquire <b>Resistência</b> a todo o <b>Dano</b> causado pelo ataque e pode se teletransportar até 3 espaços, representando sua \"verdadeira\" localização.Em 3 ou menos, há uma falha — seu aliado não adquire <b>Resistência</b>, mas pode se teletransportar até 6 espaços.",
+          "detail": "Efeito: Role 1d6. Em 4 ou mais, o ataque na verdade foi uma simulação prevista pelo seu processador — seu aliado adquire <b>Resistência</b> a todo o <b>Dano</b> causado pelo ataque e pode se teletransportar até 3 espaços, representando sua \"verdadeira\" localização. Em 3 ou menos, há uma falha — seu aliado não adquire <b>Resistência</b>, mas pode se teletransportar até 6 espaços.",
           "add_resist": [
             {
               "resist": "all"
@@ -1505,7 +1505,7 @@
       "Defender"
     ],
     "y_pos": 27,
-    "description": "Como acontece com a maioria dos grupos-modelo Hórus, o Balor tem mil faces. O grupo-modelo Balor, assim como todos os grupos-modelo Hórus, não descreve uma única silhueta reconhecível, mas aponta para uma combinação de esboços que desempenham um papel no combate. Esses esboços podem ser impressos de acordo com as especificações do piloto e aplicados a uma <b>Estrutura</b> física totalmente personalizada. É importante destacar que o grupo-modelo Balor é estável apenas em plataformas grandes (Escala 2 ou superior) que sejam capazes de fornecer a saída de <b>Energia</b> bruta que ele exige — de preferência aquelas com várias redundâncias, em caso de falha catastrófica do sistema.<br>O GM Balor foi encontrado pela primeira vez durante a perseguição conjunta de Albatroz-DJ/DH ao Mandíbula — uma Empresa Livre transformada em uma entidade-enxame descentralizada — pelo Deserto de Blanca em Khayradin após o fim da Rebelião Sanjak. Foi lá que a força conjunta encontrou, engajou e, em última análise, derrotou o Mandíbula e seus Balors — e onde a CentCom da União esperava que o surto de nanolavagem pudesse ser contido. É claro que subsequentes surtos de Balor em Khayradin provaram que essa esperança foi em vão, e o grupo-modelo continua a aterrorizar os comandantes Karrakinos por todo o espaço barônico.<br>No campo de batalha, a enxurrada neurossincronizada do Balor e os nanitas de cinzamento formam um véu ondulante que pode sair de seu chassi a qualquer momento, girando em padrões enlouquecedores para formar Sistemas defensivos e ofensivos catastróficos. Um Balor em seu estado mais ativo é mantido unido por massas ondulantes semelhantes a chamas feitas de enxames de nanitas mais do que por qualquer <b>Estrutura</b> física. Isso tem o efeito de distribuir a <b>Energia</b> cinética de coerência de partículas por todo o chassi — tornando os ataques contra um Balor semelhante a “atirar em água agitada\", como escrito em um relatório pós-ação.",
+    "description": "Como acontece com a maioria dos grupos-modelo Hórus, o Balor tem mil faces. O grupo-modelo Balor, assim como todos os grupos-modelo Hórus, não descreve uma única silhueta reconhecível, mas aponta para uma combinação de esboços que desempenham um papel no combate. Esses esboços podem ser impressos de acordo com as especificações do piloto e aplicados a uma <b>Estrutura</b> física totalmente personalizada. É importante destacar que o grupo-modelo Balor é estável apenas em plataformas grandes (Escala 2 ou superior) que sejam capazes de fornecer a saída de <b>Energia</b> bruta que ele exige — de preferência aquelas com várias redundâncias, em caso de falha catastrófica do sistema.<br>O GM Balor foi encontrado pela primeira vez durante a perseguição conjunta de Albatroz-DJ/DH ao Mandíbula — uma Empresa Livre transformada em uma entidade-enxame descentralizada — pelo Deserto de Blanca em Khayradin após o fim da Rebelião Sanjak. Foi lá que a força conjunta encontrou, engajou e, em última análise, derrotou o Mandíbula e seus Balors — e onde a CentCom da União esperava que o surto de nanolavagem pudesse ser contido. É claro que subsequentes surtos de Balor em Khayradin provaram que essa esperança foi em vão, e o grupo-modelo continua a aterrorizar os comandantes Karrakinos por todo o espaço barônico.<br>No campo de batalha, a enxurrada neurossincronizada do Balor e os nanitas de cinzamento formam um véu ondulante que pode sair de seu chassi a qualquer momento, girando em padrões enlouquecedores para formar Sistemas defensivos e ofensivos catastróficos. Um Balor em seu estado mais ativo é mantido unido por massas ondulantes semelhantes a chamas feitas de enxames de nanitas mais do que por qualquer <b>Estrutura</b> física. Isso tem o efeito de distribuir a <b>Energia</b> cinética de coerência de partículas por todo o chassi — tornando os ataques contra um Balor semelhante a 'atirar em água agitada', como escrito em um relatório pós-ação.",
     "mounts": [
       "Main",
       "Heavy"
@@ -1565,11 +1565,11 @@
       "name": "Enxame Infernal",
       "description": "Em um instante, apenas ao desejar, o piloto de um Balor pode imprimir rapidamente um manto composto por incontáveis <b>Drones</b> minúsculos: um manto de enxame infernal — escudo vivo e faca fluidodinâmica, cortando e protegendo em uma única onda cintilante. Ele se torna Mestre do Enxame, e sua vontade é obedecida por milhões.",
       "active_name": "Frenesi do Enxame",
-      "active_effect": "Seus nanitas entram em modo hiperativo, causando os seguintes efeitos até o final da cena:<ul><li>Você e aliados adjacentes obtêm <b>cobertura leve<b>.. </li><li>Enxame Purificador causa 4 Cinético, em vez de 2. </li><li>Regeneração restaura 1/2 de seus PV totais, em vez de 1/4. </li><li>Se você fosse sofrer <b>Dano de Estrutura</b>, role 1d6: em 6, seus nanitas te reconstituem, permitindo você não sofrer <b>Dano de Estrutura</b>, retornando a 1 PV e ganhando<b>Imunidade</b> a todo Dano até o final do turno atual. </li><li>Você fica <b>Dilacerado</b> e não pode remover essa condição pela duração. </li></ul>",
+      "active_effect": "Seus nanitas entram em modo hiperativo, causando os seguintes efeitos até o final da cena:<ul><li>Você e aliados adjacentes obtêm <b>cobertura leve</b> </li><li>Enxame Purificador causa 4 Cinético, em vez de 2. </li><li>Regeneração restaura 1/2 de seus PV totais, em vez de 1/4. </li><li>Se você fosse sofrer <b>Dano de Estrutura</b>, role 1d6: em 6, seus nanitas te reconstituem, permitindo você não sofrer <b>Dano de Estrutura</b>, retornando a 1 PV e ganhando <b>Imunidade</b> a todo Dano até o final do turno atual. </li><li>Você fica <b>Dilacerado</b> e não pode remover essa condição pela duração. </li></ul>",
       "active_effects": [
         {
           "name": "Frenesi do Enxame",
-          "detail": "Seus nanitas entram em modo hiperativo, causando os seguintes efeitos até o final da cena: aliados adjacentes e você ganham <b>cobertura leve<b>.; Enxame Purificador causa 4 Cinético; Regeneração restaura 1/2; em <b>Dano de Estrutura</b> role 1d6, em 6 evite o <b>Dano</b> e ganhe <b>Imunidade</b> a <b>Dano</b>; você fica <b>Dilacerado</b> e não pode remover a condição pela duração.",
+          "detail": "Seus nanitas entram em modo hiperativo, causando os seguintes efeitos até o final da cena: aliados adjacentes e você ganham <b>cobertura leve</b>; Enxame Purificador causa 4 Cinético; Regeneração restaura 1/2; em <b>Dano de Estrutura</b> role 1d6, em 6 evite o <b>Dano</b> e ganhe <b>Imunidade</b> a <b>Dano</b>; você fica <b>Dilacerado</b> e não pode remover a condição pela duração.",
           "add_status": [
             {
               "id": "shredded",
@@ -1601,7 +1601,7 @@
       "Support"
     ],
     "y_pos": 12.5,
-    "description": "O Goblin foi o primeiro chassi identificado da Hórus e provavelmente é o chassi mais antigo antes da transição da Hórus para os grupos-modelo. Registros de transmissão rastreados até o modelo zero do Goblin indicam que o primeiro chassi vazou para a omninet em 4900u. Esse ano serve como o \"dia da fundação\" assumido da Hórus para a maioria dos estudiosos e oficiais de inteligência que estudam o grupo, embora assinaturas contraditórias indiquem que 4900u é muito tarde para marcar como seu nascimento.<br>O Goblin é um mecha pequeno, pouco maior do que um traje reforçado, que depende de seu <b>Tamanho</b> reduzido e excelente manobrabilidade para proteger seu piloto. Ele possui uma malha de processamento recursivo interessante que melhora as capacidades de guerra eletrônica além dos parâmetros teóricos.<br>Mais de um século depois, os técnicos da SMG ainda estão trabalhando em Engenharia reversa do Goblin e sua malha de processamento. As investigações mais recentes sugerem que ele utiliza tecnologia compatível com inscrições hieroglíficas observadas em LRA7726235-B e corroboradas por tabuletas transmitidas pelo UIB-GÓRGONA do Metacofre XOLOTL antes do desaparecimento do cofre.",
+    "description": "O Goblin foi o primeiro chassi identificado da Hórus e provavelmente é o chassi mais antigo antes da transição da Hórus para os grupos-modelo. Registros de transmissão rastreados até o modelo zero do Goblin indicam que o primeiro chassi vazou para a omninet em 4900u. Esse ano serve como o 'dia da fundação' assumido da Hórus para a maioria dos estudiosos e oficiais de inteligência que estudam o grupo, embora assinaturas contraditórias indiquem que 4900u é muito tarde para marcar como seu nascimento.<br>O Goblin é um mecha pequeno, pouco maior do que um traje reforçado, que depende de seu <b>Tamanho</b> reduzido e excelente manobrabilidade para proteger seu piloto. Ele possui uma malha de processamento recursivo interessante que melhora as capacidades de guerra eletrônica além dos parâmetros teóricos.<br>Mais de um século depois, os técnicos da SMG ainda estão trabalhando em Engenharia reversa do Goblin e sua malha de processamento. As investigações mais recentes sugerem que ele utiliza tecnologia compatível com inscrições hieroglíficas observadas em LRA7726235-B e corroboradas por tabuletas transmitidas pelo UIB-GÓRGONA do Metacofre XOLOTL antes do desaparecimento do cofre.",
     "mounts": [
       "Flex"
     ],
@@ -1658,9 +1658,9 @@
     ],
     "core_system": {
       "name": "Plataforma Instinto",
-      "description": "Um dos primeiros Sistemas do modelo Goblin descobertos pelos técnicos da SMG foi uma plataforma de invasão de guerra eletrônica, embora as capacidades avançadas e a arquitetura do sistema permaneçam impenetráveis. Quando instalado, o sistema manifesta uma inteligência subsenciente — designada INSTINTO — que auxilia nas tentativas de invasão contra Sistemas-alvo usando uma mistura de Sistemas físicos e sistemáticas parasimbióticas. Invasões tentadas enquanto o INSTINTO está ativo não são percebidas pelo usuário como código e roteiro, mas como um ataque à matéria orgânica. O INSTINTO mostrou capacidade de agir de forma independente, muitas vezes antecipando seu usuário, mas geralmente com o mesmo interesse. A documentação \"Leia-me\" incluída em algumas manifestações do Goblin recomenda que os pilotos reiniciem os núcleos de seus mechas pelo menos uma vez por mês para evitar o despertar espontâneo, embora a maioria não dê atenção a essa advertência.",
+      "description": "Um dos primeiros Sistemas do modelo Goblin descobertos pelos técnicos da SMG foi uma plataforma de invasão de guerra eletrônica, embora as capacidades avançadas e a arquitetura do sistema permaneçam impenetráveis. Quando instalado, o sistema manifesta uma inteligência subsenciente — designada INSTINTO — que auxilia nas tentativas de invasão contra Sistemas-alvo usando uma mistura de Sistemas físicos e sistemáticas parasimbióticas. Invasões tentadas enquanto o INSTINTO está ativo não são percebidas pelo usuário como código e roteiro, mas como um ataque à matéria orgânica. O INSTINTO mostrou capacidade de agir de forma independente, muitas vezes antecipando seu usuário, mas geralmente com o mesmo interesse. A documentação 'Leia-me' incluída em algumas manifestações do Goblin recomenda que os pilotos reiniciem os núcleos de seus mechas pelo menos uma vez por mês para evitar o despertar espontâneo, embora a maioria não dê atenção a essa advertência.",
       "active_name": "Simbiose",
-      "active_effect": "O mecha retrai seus Principais Sistemas e se conecta a outro mecha, se tornando mais como uma parte irrelevante e discreta do mecha do que uma entidade separada. O hospedeiro deve ser um mecha aliado e voluntário que ainda não esteja hospedando outro Goblin, maior que você e adjacente a você. Enquanto estiver conectado, você ocupa o espaço do hospedeiro, se move com ele e se beneficia de <b>cobertura pesada<b>., mas ainda pode ser atacado e marcado como alvo separadamente. Você também sofre quaisquer condições e <b>Calor</b> sofridos pelo seu hospedeiro.<br>Seu hospedeiro pode usar seus Sistemas, Defesa-E e Ataque Tecnológico em vez dos próprios. Além disso, a partir do início da próxima rodada, você não faz mais seus próprios turnos; em vez disso, você pode realizar duas ações rápidas ou uma ação completa em qualquer momento durante o turno do seu hospedeiro. Você não pode <b>Sobrecarregar</b> ou se mover, mas ainda pode realizar reações e ações livres normalmente. O turno do seu hospedeiro conta como seu turno para efeitos que se referem ao início ou ao final do turno de um personagem.<br>Esse efeito dura até o final da cena, até que você se desconecte como uma ação rápida ou até você ou seu hospedeiro fiquem <b>Atordoado</b>s. Quando o efeito terminar, você não ganha um turno até a próxima rodada.",
+      "active_effect": "O mecha retrai seus Principais Sistemas e se conecta a outro mecha, se tornando mais como uma parte irrelevante e discreta do mecha do que uma entidade separada. O hospedeiro deve ser um mecha aliado e voluntário que ainda não esteja hospedando outro Goblin, maior que você e adjacente a você. Enquanto estiver conectado, você ocupa o espaço do hospedeiro, se move com ele e se beneficia de <b>cobertura pesada</b>, mas ainda pode ser atacado e marcado como alvo separadamente. Você também sofre quaisquer condições e <b>Calor</b> sofridos pelo seu hospedeiro.<br>Seu hospedeiro pode usar seus Sistemas, Defesa-E e Ataque Tecnológico em vez dos próprios. Além disso, a partir do início da próxima rodada, você não faz mais seus próprios turnos; em vez disso, você pode realizar duas ações rápidas ou uma ação completa em qualquer momento durante o turno do seu hospedeiro. Você não pode <b>Sobrecarregar</b> ou se mover, mas ainda pode realizar reações e ações livres normalmente. O turno do seu hospedeiro conta como seu turno para efeitos que se referem ao início ou ao final do turno de um personagem.<br>Esse efeito dura até o final da cena, até que você se desconecte como uma ação rápida ou até você ou seu hospedeiro fiquem <b>Atordoado</b>s. Quando o efeito terminar, você não ganha um turno até a próxima rodada.",
       "activation": "Quick",
       "deactivation": "Quick",
       "use": "Encounter"
@@ -1677,7 +1677,7 @@
       "Defender"
     ],
     "y_pos": 5,
-    "description": "O Górgona é único entre os grupos-modelo da Hórus, pois prioriza Sistemas defensivos destinados a garantir a sobrevivência pessoal e de aliados; caso contrário, ele emprega um complemento típico de armas aterrorizantes, confusas e estranhas.<br>O Górgona normalmente possui múltiplos Sistemas de armas destinados a identificar e interceptar inimigos que se aproximam, permitindo que os pilotos projetem uma zona de controle ao seu redor e ao redor de seus aliados. O Górgona é temido por sua capacidade de expelir um perigoso \"basilisco\" conhecido de histórias antigas, um <b>Cone</b> de luz projetado de dados visuais anticognitivos e hiperfractais que é mortal para seres ontológicos e sencientes.",
+    "description": "O Górgona é único entre os grupos-modelo da Hórus, pois prioriza Sistemas defensivos destinados a garantir a sobrevivência pessoal e de aliados; caso contrário, ele emprega um complemento típico de armas aterrorizantes, confusas e estranhas.<br>O Górgona normalmente possui múltiplos Sistemas de armas destinados a identificar e interceptar inimigos que se aproximam, permitindo que os pilotos projetem uma zona de controle ao seu redor e ao redor de seus aliados. O Górgona é temido por sua capacidade de expelir um perigoso 'basilisco' conhecido de histórias antigas, um <b>Cone</b> de luz projetado de dados visuais anticognitivos e hiperfractais que é mortal para seres ontológicos e sencientes.",
     "mounts": [
       "Flex",
       "Main",
@@ -1736,18 +1736,18 @@
       },
       {
         "name": "Guardião",
-        "description": "Personagens aliados adjacentes podem usar o Górgona para obter <b>cobertura pesada<b>.",
+        "description": "Personagens aliados adjacentes podem usar o Górgona para obter <b>cobertura pesada</b>.",
         "active_effects": [
           {
             "name": "Guardião",
-            "detail": "Personagens aliados adjacentes podem usar você para obter <b>cobertura pesada<b>."
+            "detail": "Personagens aliados adjacentes podem usar você para obter <b>cobertura pesada</b>."
           }
         ]
       }
     ],
     "core_system": {
       "name": "Basilisco Hiperfractal Anticognição Direcionado",
-      "description": "O BASILISCO é uma arma memética perigosa derivada do Código Litúrgico DHIYED, traduzida para uso em engajamentos em escala de mecha. Normalmente projetados a partir de um laser de comunicações, os BASILISCOS criam padrões hiperfractais — interrupções meméticas que afetam todos os observadores sencientes, orgânicos ou não. A exposição a um basilisco normalmente causa encefalite imediata, hemorragia ocular e craniana maciça e morte — a sobrevivência é possível como uso de displays interdito-res de cabeça resistentes, mas mesmo assim dores de cabeça, náuseas e confusão por um curto período após a visualização são possíveis. A longo prazo, sobreviventes frequentemente exibem sintomas de \"flashback\": paralisia momentânea, alienação corpórea e desestabilização da consciência. Hiperfractais anticognitivos são classificados como armas paracausais — devido à natureza não compreendida de seu espectro de luz visível, alguém pensaria que eles representariam um risco para o usuário, no entanto, por alguma razão, eles não o fazem.",
+      "description": "O BASILISCO é uma arma memética perigosa derivada do Código Litúrgico DHIYED, traduzida para uso em engajamentos em escala de mecha. Normalmente projetados a partir de um laser de comunicações, os BASILISCOS criam padrões hiperfractais — interrupções meméticas que afetam todos os observadores sencientes, orgânicos ou não. A exposição a um basilisco normalmente causa encefalite imediata, hemorragia ocular e craniana maciça e morte — a sobrevivência é possível como uso de displays interdito-res de cabeça resistentes, mas mesmo assim dores de cabeça, náuseas e confusão por um curto período após a visualização são possíveis. A longo prazo, sobreviventes frequentemente exibem sintomas de 'flashback': paralisia momentânea, alienação corpórea e desestabilização da consciência. Hiperfractais anticognitivos são classificados como armas paracausais — devido à natureza não compreendida de seu espectro de luz visível, alguém pensaria que eles representariam um risco para o usuário, no entanto, por alguma razão, eles não o fazem.",
       "active_name": "Expelir Basilisco",
       "active_effect": "Você projeta um basilisco horrível, um padrão de dados visuais que é incrivelmente prejudicial para PNHs e Sistemas eletrônicos e difícil de ser olhado, mesmo para humanos. Pelo restante da cena, personagens hostis devem obter sucesso em um salvamento de Sistemas antes de atacar você ou qualquer personagem aliado a até <b>Alcance 3</b>. Em caso de falha, eles ficam <b>Atordoado</b>s até o final do próximo turno deles. Cada personagem só pode ficar <b>Atordoado</b> por esse efeito uma vez por cena.",
       "active_effects": [
@@ -1781,7 +1781,7 @@
       "Controller"
     ],
     "y_pos": 20,
-    "description": "Como muitos dos 'Chassis' mais novos da Hórus, não existe um modelo padrão de Hidra. Em vez disso, a designação é um título dado aos Chassis que atendem às especificações do grupo de padrões Hidra – conforme descrito no Manual Universal de Avaliação de  <b>Ameaça<b> s da União. A Hidra, como muitos outros mechas de grupo de padrões da Hórus, é particularmente perigosa em campo, pois sua função precisa fica oculta até que as hostilidades comecem para valer.<br>A Hidra é capaz de se desmembrar taticamente em múltiplos <b>Drones</b> controlados independentemente, um fenômeno desconcertante frequentemente utilizado com efeito mortal. Com a manifestação do grupo de padrões Balor da Hórus, o lugar da Hidra na história da Hórus é claro: um precursor do vírus Balor, a Hidra depende de seções maiores de chassi desarticulado em vez de nuvens de nanitas para sua vantagem diferenciada no campo de batalha. Apesar de sua aparência mais convencional, a Hidra representa uma <b>Ameaça</b> séria para pilotos não-Hórus, pois seus <b>Drones</b> desarticulados utilizam um complemento de poderosas armas anti-blindagem.",
+    "description": "Como muitos dos 'Chassis' mais novos da Hórus, não existe um modelo padrão de Hidra. Em vez disso, a designação é um título dado aos Chassis que atendem às especificações do grupo de padrões Hidra – conforme descrito no Manual Universal de Avaliação de <b>Ameaça</b>s da União. A Hidra, como muitos outros mechas de grupo de padrões da Hórus, é particularmente perigosa em campo, pois sua função precisa fica oculta até que as hostilidades comecem para valer.<br>A Hidra é capaz de se desmembrar taticamente em múltiplos <b>Drones</b> controlados independentemente, um fenômeno desconcertante frequentemente utilizado com efeito mortal. Com a manifestação do grupo de padrões Balor da Hórus, o lugar da Hidra na história da Hórus é claro: um precursor do vírus Balor, a Hidra depende de seções maiores de chassi desarticulado em vez de nuvens de nanitas para sua vantagem diferenciada no campo de batalha. Apesar de sua aparência mais convencional, a Hidra representa uma <b>Ameaça</b> séria para pilotos não-Hórus, pois seus <b>Drones</b> desarticulados utilizam um complemento de poderosas armas anti-blindagem.",
     "mounts": [
       "Main",
       "Heavy"
@@ -1883,7 +1883,7 @@
           }
         },
         {
-          "name": "Drone OROCHI <b>Dilacerado</b>r",
+          "name": "Drone OROCHI <b>Dilacerador</b>",
           "type": "Drone",
           "detail": "Como uma <b>reação</b>, você pode forçar personagens que iniciarem o turno deles adjacentes ou se moverem para ficar adjacentes a este drone pela primeira vez em uma rodada a fazer um salvamento de <b>Casco</b>. Em caso de falha, eles sofrem 1 Cinético e ficam <b>Dilacerado</b>s até o final do próximo turno deles.",
           "activation": "Free",
@@ -1939,7 +1939,7 @@
       "Striker"
     ],
     "y_pos": 49,
-    "description": "O Manual de Avaliação Universal de ameaças identifica o grupo-modelo Mantícora como uma \"experiência na doutrina de combate 'quebra-Núcleo' da HÓRUS”. O GM-Mantícora é especializado em usar projetores eletromagnéticos focados para neutralizar os núcleos dos reatores inimigos sem munição convencional, enquanto também possui um conjunto de armas de <b>Energia</b> de feixe contínuo. Um Mantícora totalmente carregado é uma visão impressionante, envolto em redes de plasma com luzes brilhantes que atacam alvos próximos.<br>Se há algo que entrega um mecha GM-Mantícora, são as longas espinhas que se projetam do gerador de relâmpagos característico do GM. As espinhas atuam como Sistemas de dispersão de <b>Calor</b> para esta arma rudimentar, fornecendo um canal para a incrível quantidade de <b>Calor</b> que é gerado, sendo liberado do corpo do mecha como a projeção de um arco voltaico de curto alcance. Esse sistema não é um mecanismo de dispersão de calor perfeito e, como resultado, os Mantícoras muitas vezes podem ser identificados por um chassi coberto de metal derretido em resfriamento.<br>O Mantícora apareceu apenas recentemente na omninet, e sua eficácia em combate levou outros fabricantes galáticos a correr para encontrar uma resposta. Análises de relatórios pós-ação de pilotos que se envolveram com esse grupo-modelo no campo de batalha observam um aumento significativo em certos índices de relação sinal-ruído da omninet: recitações não originárias de passagens do Livro dos Mortos da Antiga Humanidade, mosaicos deturpados de antigas obras de arte apocalíptica e outras representações cataclísmicas, todos apontando para uma tática emergente de guerra psicológica.",
+    "description": "O Manual de Avaliação Universal de Ameaças identifica o grupo-modelo Mantícora como uma 'experiência na doutrina de combate \"quebra-núcleo\" da Hórus'. O GM-Mantícora é especializado em usar projetores eletromagnéticos focados para neutralizar os núcleos dos reatores inimigos sem munição convencional, enquanto também possui um conjunto de armas de <b>Energia</b> de feixe contínuo. Um Mantícora totalmente carregado é uma visão impressionante, envolto em redes de plasma com luzes brilhantes que atacam alvos próximos.<br>Se há algo que entrega um mecha GM-Mantícora, são as longas espinhas que se projetam do gerador de relâmpagos característico do GM. As espinhas atuam como Sistemas de dispersão de <b>Calor</b> para esta arma rudimentar, fornecendo um canal para a incrível quantidade de <b>Calor</b> que é gerado, sendo liberado do corpo do mecha como a projeção de um arco voltaico de curto alcance. Esse sistema não é um mecanismo de dispersão de calor perfeito e, como resultado, os Mantícoras muitas vezes podem ser identificados por um chassi coberto de metal derretido em resfriamento.<br>O Mantícora apareceu apenas recentemente na omninet, e sua eficácia em combate levou outros fabricantes galáticos a correr para encontrar uma resposta. Análises de relatórios pós-ação de pilotos que se envolveram com esse grupo-modelo no campo de batalha observam um aumento significativo em certos índices de relação sinal-ruído da omninet: recitações não originárias de passagens do Livro dos Mortos da Antiga Humanidade, mosaicos deturpados de antigas obras de arte apocalíptica e outras representações cataclísmicas, todos apontando para uma tática emergente de guerra psicológica.",
     "mounts": [
       "Flex",
       "Heavy"
@@ -1962,12 +1962,12 @@
     },
     "traits": [
       {
-        "name": "<b>Casco</b> de Escória",
-        "description": "O Mantícora tem <b>Resistência</b> a <b>Dano</b> de <b>Energia</b> e <b>Dano</b> de <b>Queimadura</b>.",
+        "name": "Casco de Escória",
+        "description": "O Mantícora tem <b>Resistência</b> a <b>Dano de Energia</b> e <b>Dano de Queimadura</b>.",
         "active_effects": [
           {
-            "name": "<b>Casco</b> de Escória",
-            "detail": "Você tem <b>Resistência</b> a <b>Dano</b> de <b>Energia</b> e <b>Dano</b> de <b>Queimadura</b>.",
+            "name": "Casco de Escória",
+            "detail": "Você tem <b>Resistência</b> a <b>Dano de Energia</b> e <b>Dano de Queimadura</b>.",
             "add_resist": [
               {
                 "resist": "energy",
@@ -1987,13 +1987,13 @@
       },
       {
         "name": "Castigue os Inimigos da Divindade",
-        "description": "Quando descansar ou realizar um Reparo Completo, você pode colocar o Mantícora em um instável Estado de Castigo (ou retirá-lo de um). Nesse estado, o Mantícora explode imediatamente quando for destruído devido a <b>Dano</b> ou fusão de reator, vaporizando-o e matando instantaneamente você e quaisquer outros passageiros presentes. Personagens a até <b>Emanação</b> 2 devem obter sucesso em um <b>salvamento de Agilidade</b> ou sofrem 8d6 Explosivo. Em caso de sucesso, eles sofrem metade do <b>Dano</b>. Isso só acontece se você estiver fisicamente presente no Mantícora.",
+        "description": "Quando descansar ou realizar um Reparo Completo, você pode colocar o Mantícora em um instável Estado de Castigo (ou retirá-lo de um). Nesse estado, o Mantícora explode imediatamente quando for destruído devido a <b>Dano</b> ou fusão de reator, vaporizando-o e matando instantaneamente você e quaisquer outros passageiros presentes. Personagens a até <b>Emanação 2</b> devem obter sucesso em um <b>salvamento de Agilidade</b> ou sofrem <b>8d6 de Dano Explosivo</b>. Em caso de sucesso, eles sofrem metade do <b>Dano</b>. Isso só acontece se você estiver fisicamente presente no Mantícora.",
         "actions": [
           {
             "name": "Castigue os Inimigos da Divindade",
             "activation": "Free",
             "trigger": "O Mantícora foi colocado em um instável Estado de Castigo durante um descanso ou Reparo Completo. Enquanto neste estado, ele é destruído por Dano ou fusão de reator.",
-            "detail": "O Mantícora explode imediatamente quando for destruído devido a <b>Dano</b> ou fusão de reator, vaporizando-o e matando instantaneamente você e quaisquer outros passageiros presentes. Personagens a até <b>Emanação</b> 2 devem obter sucesso em um <b>salvamento de Agilidade</b> ou sofrem 8d6 Explosivo. Em caso de sucesso, eles sofrem metade do <b>Dano</b>.",
+            "detail": "O Mantícora explode imediatamente quando for destruído devido a <b>Dano</b> ou fusão de reator, vaporizando-o e matando instantaneamente você e quaisquer outros passageiros presentes. Personagens a até <b>Emanação 2</b> devem obter sucesso em um <b>salvamento de Agilidade</b> ou sofrem <b>8d6 de Dano Explosivo</b>. Em caso de sucesso, eles sofrem metade do <b>Dano</b>.",
             "damage": [
               {
                 "val": "8d6",
@@ -2011,13 +2011,13 @@
       "name": "Exoesqueleto Energizado",
       "description": "E RÁ Disse A Si Mesmo:<br><code class='horus'>DEIXE MEU NOME TE ENVOLVER. NÃO BUSQUE ABRIGO DAS CHAMAS OU DOS DENTES DA BESTA. CUBRA-SE COM O FOGO DE MINHAS PALAVRAS E REJEITE AOS SEUS INIMIGOS AQUELE QUE DESTRUIRIA SUA FORMA. </code>",
       "passive_name": "Exoesqueleto Energizado",
-      "passive_effect": "1/rodada, quando sofrer <b>Calor</b> , você pode causar 2 de <b>Energia</b>(PF) a um personagem a até <b>Alcance 3</b>.",
+      "passive_effect": "1/rodada, quando sofrer <b>Calor</b>, você pode causar <b>2 de Dano de Energia</b> (PF) a um personagem a até <b>Alcance 3</b>.",
       "active_name": "Destruição do Templo dos Inimigos de RÁ",
-      "active_effect": "Seu mecha crepita com <b>Energia</b>: adquira Resistência a <b>Calor</b> pelo restante da cena e um Dado de <b>Energia</b> — 1d6 — que começa em 1. Sempre que sofrer <b>Calor</b> ou <b>Energia</b>, inclusive de você mesmo, aumente o valor do Dado de <b>Energia</b> em 1. Quando o Dado de <b>Energia</b> atingir 6, a <b>Energia</b> absorvida é descarregada em uma conflagração de <b>Emanação 2<b>. Personagens dentro da área afetada devem ser bem-sucedidos em um salvamento de Engenharia ou sofrem 6d6 de <b>Energia</b>(PF). Em caso de sucesso, eles sofrem metade do Dano. Objetos na área afetada são automaticamente atingidos. Uma vez descarregado, esse efeito termina.",
+      "active_effect": "Seu mecha crepita com <b>Energia</b>: adquira <b>Resistência</b> a <b>Calor</b> pelo restante da cena e um Dado de <b>Energia</b> — 1d6 — que começa em 1. Sempre que sofrer <b>Calor</b> ou <b>Dano de Energia</b>, inclusive de você mesmo, aumente o valor do Dado de <b>Energia</b> em 1. Quando o Dado de <b>Energia</b> atingir 6, a <b>Energia</b> absorvida é descarregada em uma conflagração de <b>Emanação 2</b>. Personagens dentro da área afetada devem ser bem-sucedidos em um salvamento de Engenharia ou sofrem <b>6d6 de Dano de Energia</b> (PF). Em caso de sucesso, eles sofrem metade do <b>Dano</b>. Objetos na área afetada são automaticamente atingidos. Uma vez descarregado, esse efeito termina.",
       "active_effects": [
         {
           "name": "Destruição do Templo dos Inimigos de RÁ",
-          "detail": "Ganhe <b>Resistência</b> a <b>Calor</b> pelo restante da cena e um Dado de <b>Energia</b> — 1d6 — que começa em 1. Sempre que sofrer <b>Calor</b> ou <b>Energia</b>, inclusive de você mesmo, aumente o valor do Dado de <b>Energia</b> em 1. Quando o Dado de <b>Energia</b> atingir 6, a <b>Energia</b> absorvida é descarregada em uma conflagração de <b>Emanação</b> 2. Personagens dentro da área afetada devem ser bem-sucedidos em um salvamento de Engenharia ou sofrem 6d6 de <b>Energia</b>(PF) (metade em um sucesso). Objetos na área afetada são automaticamente atingidos. Uma vez descarregado, esse efeito termina.",
+          "detail": "Ganhe <b>Resistência</b> a <b>Calor</b> pelo restante da cena e um Dado de <b>Energia</b> — 1d6 — que começa em 1. Sempre que sofrer <b>Calor</b> ou <b>Dano de Energia</b>, inclusive de você mesmo, aumente o valor do Dado de <b>Energia</b> em 1. Quando o Dado de <b>Energia</b> atingir 6, a <b>Energia</b> absorvida é descarregada em uma conflagração de <b>Emanação 2</b>. Personagens dentro da área afetada devem ser bem-sucedidos em um salvamento de Engenharia ou sofrem <b>6d6 de Dano de Energia</b> (PF) (metade em um sucesso). Objetos na área afetada são automaticamente atingidos. Uma vez descarregado, esse efeito termina.",
           "add_resist": [
             {
               "resist": "heat",
@@ -2042,8 +2042,8 @@
         {
           "name": "Exoesqueleto Energizado",
           "frequency": "1/round",
-          "condition": "Você sofre <b>Calor</b> .",
-          "detail": "Você pode causar 2 de <b>Energia</b>(PF) a um personagem a até <b>Alcance 3</b>.",
+          "condition": "Você sofre <b>Calor</b>.",
+          "detail": "Você pode causar <b>2 de Dano de Energia</b> (PF) a um personagem a até <b>Alcance 3</b>.",
           "damage": [
             {
               "val": 2,
@@ -2126,11 +2126,11 @@
       },
       {
         "name": "Labirinto Localizado",
-        "description": "Personagens hostis não podem atravessar um espaço ocupado pelo Minotauro por qualquer motivo, e sempre devem parar de se mover quando <br>Engajados</b> com ele, independentemente do <b>Tamanho</b>.",
+        "description": "Personagens hostis não podem atravessar um espaço ocupado pelo Minotauro por qualquer motivo, e sempre devem parar de se mover quando <b>Engajados</b> com ele, independentemente do <b>Tamanho</b>.",
         "active_effects": [
           {
             "name": "Labirinto Localizado",
-            "detail": "Personagens hostis não podem passar por um espaço ocupado por você por nenhum motivo, e devem sempre parar de se mover quando ficarem <br>Engajados</b> com você, independentemente do <b>Tamanho</b>."
+            "detail": "Personagens hostis não podem passar por um espaço ocupado por você por nenhum motivo, e devem sempre parar de se mover quando ficarem <b>Engajados</b> com você, independentemente do <b>Tamanho</b>."
           }
         ]
       }
@@ -2242,7 +2242,7 @@
       "use": "Encounter",
       "activation": "Protocol",
       "passive_name": "Omniarma Ushabti",
-      "passive_effect": "A omniarma do seu mecha é um hardware experimental tão avançado que desafia a física: ela não requer um encaixe, nem tem um tipo ou Tamanho de arma — o que significa que não pode ser modificada ou se beneficiar dos seus talentos.<br>Você não pode atacar normalmente com esta arma. Em vez disso, 1/rodada, como uma <b>Ação Livre</b> durante o seu turno, você pode usá-la para causar 1 Dano Cinético(PF) a um personagem a até o <b>Alcance</b> e na linha de visão. Isso não conta como um ataque, acerta automaticamente, ignora cobertura, ultrapassa<b>Imunidade</b> e seu Dano não pode ser reduzido ou ignorado de qualquer maneira. Nenhuma regra neste livro ou em qualquer outro substitui isso.",
+      "passive_effect": "A omniarma do seu mecha é um hardware experimental tão avançado que desafia a física: ela não requer um encaixe, nem tem um tipo ou Tamanho de arma — o que significa que não pode ser modificada ou se beneficiar dos seus talentos.<br>Você não pode atacar normalmente com esta arma. Em vez disso, 1/rodada, como uma <b>Ação Livre</b> durante o seu turno, você pode usá-la para causar <b>1 de Dano Cinético</b> (PF) a um personagem a até o <b>Alcance</b> e na linha de visão. Isso não conta como um ataque, acerta automaticamente, ignora cobertura, ultrapassa <b>Imunidade</b> e seu Dano não pode ser reduzido ou ignorado de qualquer maneira. Nenhuma regra neste livro ou em qualquer outro substitui isso.",
       "passive_actions": [
         {
           "name": "Disparar Omniarma",
@@ -2261,7 +2261,7 @@
               "val": 15
             }
           ],
-          "detail": "1/rodada, como uma <b>Ação Livre</b> durante o seu turno, você pode usá-la para causar 1 Cinético(PF) a um personagem a até <b>Alcance 15</b> e na linha de visão. Isso não conta como um ataque, acerta automaticamente, ignora cobertura, ultrapassa <b>Imunidade</b> e seu <b>Dano</b> não pode ser reduzido ou ignorado de qualquer maneira. Nenhuma regra neste livro ou em qualquer outro substitui isso."
+          "detail": "1/rodada, como uma <b>Ação Livre</b> durante o seu turno, você pode usá-la para causar <b>1 de Dano Cinético</b> (PF) a um personagem a até <b>Alcance 15</b> e na linha de visão. Isso não conta como um ataque, acerta automaticamente, ignora cobertura, ultrapassa <b>Imunidade</b> e seu <b>Dano</b> não pode ser reduzido ou ignorado de qualquer maneira. Nenhuma regra neste livro ou em qualquer outro substitui isso."
         }
       ]
     },
@@ -2311,11 +2311,11 @@
         ]
       },
       {
-        "name": "Armadura Contra  <b>Explosão<b> ",
+        "name": "Armadura Contra Explosão",
         "description": "O Barbarossa tem <b>Resistência</b> a <b>Dano</b> Explosivo.",
         "active_effects": [
           {
-            "name": "Armadura Contra  <b>Explosão<b> ",
+            "name": "Armadura Contra Explosão",
             "detail": "Você tem <b>Resistência</b> a <b>Dano</b> Explosivo.",
             "add_resist": [
               {
@@ -2328,11 +2328,11 @@
       },
       {
         "name": "Colosso",
-        "description": "Personagens adjacentes podem usar o Barbarossa como <b>cobertura pesada<b>.",
+        "description": "Personagens adjacentes podem usar o Barbarossa como <b>cobertura pesada</b>.",
         "active_effects": [
           {
             "name": "Colosso",
-            "detail": "Personagens adjacentes podem usar o Barbarossa como <b>cobertura pesada<b>."
+            "detail": "Personagens adjacentes podem usar o Barbarossa como <b>cobertura pesada</b>."
           }
         ]
       },
@@ -2351,7 +2351,7 @@
       "name": "Canhão do Apocalipse",
       "description": "Diretamente do campus diurno de pesquisa e desenvolvimento da Arsenal, o LGC-04 “Canhão do Apocalipse” é uma catapulta gravitacional exponencial, um produto de teste em escala enviado para pilotos licenciados para testes de campo como parte do, em andamento, Projeto de Testes de Armas de Magnitude da Praia do Plenário.<br>Diferente das atuais armas nave a nave de carretel logarítmico curto ou longo (cinética ou energética/particular), essa nova plataforma advém da pesquisa gravitacional atual da Arsenal para carregar exponencialmente e lançar uma carga cinética para sua trajetória. Esse aumento no carregamento de <b>Energia</b> potencial e diminuição do tempo total de carga vem ao custo de estabilidade: onde o canhão de carretel logarítmico é estável e resistente a choque, a catapulta gravitacional exponencial tende a desestabilização. Por enquanto, redundâncias intrínsecas disparam quando uma desestabilização traumática eventualmente ocorre para prevenir detonação dos Sistemas, resetando qualquer processo de carga em andamento no momento do choque.<br>O sistema LGC-04 “Canhão do Apocalipse” foi diminuído consideravelmente do seu papel operacional entendido originalmente, isso é, substituir canhões de carretel espinhal de naves capitanias, para que possam trabalhar no acúmulo de dados em tempo real para serem usados em aprimoramentos do sistema antes da adoção de abordagem naval",
       "active_name": "Carregar Canhão",
-      "active_effect": "Quando ativado, você começa a carregar o Canhão do Apocalipse do Barbarossa, um poderoso sistema de armas de carretel longo nave a nave que requer calibração de alvo. Receba um Dado de Apocalipse — 1d6 — que começa em 4. No início de cada um dos seus turnos, diminua o valor do Dado de Apocalipse em 1, até um mínimo de 1. Se você se mover (mesmo que involuntariamente), ficar <b>Atordoado</b> ou Bloqueado, o Dado de Apocalipse reinicia para 4 e então continua a diminuir normalmente.<br>Se o valor do Dado de Apocalipse for 1 a 3, você pode atacar no seu turno com o Canhão do Apocalipse como uma ação completa, mas não pode se mover nem usar nenhuma ação no mesmo turno. O Canhão do Apocalipse é uma arma à distância com uma área de <b>Explosão<b> 2 e um perfil determinado pelo valor atual do Dado de Apocalipse:<br>3. [<b>Alcance 20</b>, 2d6 Explosivo] Objetos na área afetada automaticamente sofrem 20 Explosivo(PF). Depois do ataque, a nuvem da <b>Explosão<b> permanece, dando <b>cobertura leve<b>. para personagens na área afetada até o final do seu próximo turno.<br>2. [b>Alcance 2</b>5, 3d6 Explosivo] Objetos e terreno na área automaticamente sofrem 40 Explosivo(PF) e, em caso de acerto, personagens ficam <b>Dilacerado</b>s e Impedidos até o final do próximo turno deles. A nuvem da <b>Explosão<b> é uma tempestade ardente: até o final do seu próximo turno, personagens dentro da área afetada obtêm <b>cobertura leve<b>., e personagens que começarem o turno deles na área ou se moverem para ela pela primeira vez em uma rodada sofrem 4 de <b>Queimadura<b> .<br>1. [<b>Alcance 3</b>0, 4d6 Explosivo] Objetos e terrenos na área automaticamente sofrem 100 Explosivo(PF) e personagens que forem acertados ficam <b>Dilacerado</b>s e Impedidos até o final do próximo turno deles. O chão da área afetada é vaporizado no impacto: pelo restante da cena, ele é terreno difícil, personagens dentro da área afetada obtêm <b>cobertura leve<b>., e personagens que começam o turno deles na área ou se moverem para ela pela primeira vez em uma rodada sofrem 4 de <b>Queimadura<b> .<br>O Canhão do Apocalipse não pode ser disparado contra alvos a até <b>Alcance 5</b>.<br>Depois de um ataque com o Canhão do Apocalipse, o Dado de Apocalipse reinicia para 4. Se você chegar no final da cena sem usá-lo, você reganha 1 PN.<br>No final da cena, você perde o Dado de Apocalipse e o Canhão do Apocalipse para de carregar.",
+      "active_effect": "Quando ativado, você começa a carregar o Canhão do Apocalipse do Barbarossa, um poderoso sistema de armas de carretel longo nave a nave que requer calibração de alvo. Receba um Dado de Apocalipse — 1d6 — que começa em 4. No início de cada um dos seus turnos, diminua o valor do Dado de Apocalipse em 1, até um mínimo de 1. Se você se mover (mesmo que involuntariamente), ficar <b>Atordoado</b> ou Bloqueado, o Dado de Apocalipse reinicia para 4 e então continua a diminuir normalmente.<br>Se o valor do Dado de Apocalipse for 1 a 3, você pode atacar no seu turno com o Canhão do Apocalipse como uma ação completa, mas não pode se mover nem usar nenhuma ação no mesmo turno. O Canhão do Apocalipse é uma arma à distância com uma área de <b>Explosão 2</b>  e um perfil determinado pelo valor atual do Dado de Apocalipse:<br>3. [<b>Alcance 20</b>, <b>2d6 de Dano Explosivo</b>] Objetos na área afetada automaticamente sofrem <b>20 de Dano Explosivo</b> (PF). Depois do ataque, a nuvem da <b>Explosão</b> permanece, dando <b>cobertura leve</b> para personagens na área afetada até o final do seu próximo turno.<br>2. [<b>Alcance 25</b>, <b>3d6 de Dano Explosivo</b>] Objetos e terreno na área automaticamente sofrem <b>40 de Dano Explosivo</b> (PF) e, em caso de acerto, personagens ficam <b>Dilacerado</b>s e Impedidos até o final do próximo turno deles. A nuvem da <b>Explosão</b> é uma tempestade ardente: até o final do seu próximo turno, personagens dentro da área afetada obtêm <b>cobertura leve</b>, e personagens que começarem o turno deles na área ou se moverem para ela pela primeira vez em uma rodada sofrem <b>4 de Queimadura</b>.<br>1. [<b>Alcance 30</b>, <b>4d6 de Dano Explosivo</b>] Objetos e terrenos na área automaticamente sofrem <b>100 de Dano Explosivo</b> (PF) e personagens que forem acertados ficam <b>Dilacerado</b>s e Impedidos até o final do próximo turno deles. O chão da área afetada é vaporizado no impacto: pelo restante da cena, ele é terreno difícil, personagens dentro da área afetada obtêm <b>cobertura leve</b>, e personagens que começam o turno deles na área ou se moverem para ela pela primeira vez em uma rodada sofrem <b>4 de Queimadura</b>.<br>O Canhão do Apocalipse não pode ser disparado contra alvos a até <b>Alcance 5</b>.<br>Depois de um ataque com o Canhão do Apocalipse, o Dado de Apocalipse reinicia para 4. Se você chegar no final da cena sem usá-lo, você reganha 1 PN.<br>No final da cena, você perde o Dado de Apocalipse e o Canhão do Apocalipse para de carregar.",
       "activation": "Quick",
       "integrated": [
         "mw_barbarossa_integrated"
@@ -2403,11 +2403,11 @@
     "traits": [
       {
         "name": "Isolado",
-        "description": "O Gengis tem <b>Imunidade</b> a de <b>Queimadura</b>.",
+        "description": "O Gengis tem <b>Imunidade</b> a <b>Queimadura</b>.",
         "active_effects": [
           {
             "name": "Isolado",
-            "detail": "Você tem <b>Imunidade</b> a de <b>Queimadura</b>.",
+            "detail": "Você tem <b>Imunidade</b> a <b>Queimadura</b>.",
             "add_immunity": [
               {
                 "immunity": "burn",
@@ -2419,12 +2419,12 @@
       },
       {
         "name": "Ventilação Emergencial",
-        "description": "Quando o Gengis sofrer <b>Dano de Estrutura</b>, ele remove todo o de <b>Calor</b>.",
+        "description": "Quando o Gengis sofrer <b>Dano de Estrutura</b>, ele remove todo o <b>Calor</b>.",
         "active_effects": [
           {
             "name": "Ventilação Emergencial",
             "trigger": "Você sofre <b>Dano de Estrutura</b>.",
-            "detail": "Remova todo o  de <b>Calor</b>."
+            "detail": "Remova todo o <b>Calor</b>."
           }
         ]
       }
@@ -2433,12 +2433,12 @@
       "name": "Pacote de Sustentação MTB",
       "description": "Para melhor gerenciar a tremenda demanda de <b>Energia</b> do Gengis e acelerar rapidamente sua dispersão de <b>Calor</b>, o Ideário desenvolveu um pacote de mecanismos de gerenciamento de <b>Energia</b>. Depois de testes de campo extensivos, os pilotos descobriram que o Pacote de Sustentação MTB pode ser usado tanto como um dissipador de <b>Calor</b> quanto uma arma de negação de área.",
       "active_name": "Expor Células de <b>Energia</b>",
-      "active_effect": "Nesta cena, se em algum momento você excederia sua Capac. de <b>Calor</b>  , em vez disso você remove todo o  de <b>Calor</b> e ventila uma nuvem de <b>Emanação<b> 3 de matéria ardente do seu mecha.<br>Até o início do seu próximo turno, todos os personagens dentro da área afetada contam como Invisíveis para todos, exceto você. Personagens que não sejam você sofrem 2 de <b>Queimadura<b> e 2 de <b>Calor</b> quando começarem os turnos deles na área ou entrarem nela pela primeira vez na rodada. Quando o efeito for encerrado, personagens na área afetada obtêm <b>cobertura leve<b>. (que você ignora) até o início do seu próximo turno, quando a nuvem se dispersa.",
+      "active_effect": "Nesta cena, se em algum momento você exceder sua Cap. de <b>Calor</b>, em vez disso você remove todo o <b>Calor</b> e ventila uma nuvem de <b>Emanação</b> 3 de matéria ardente do seu mecha.<br>Até o início do seu próximo turno, todos os personagens dentro da área afetada contam como Invisíveis para todos, exceto você. Personagens que não sejam você sofrem <b>2 de Queimadura</b> e <b>2 de Calor</b> quando começarem os turnos deles na área ou entrarem nela pela primeira vez na rodada. Quando o efeito for encerrado, personagens na área afetada obtêm <b>cobertura leve</b> (que você ignora) até o início do seu próximo turno, quando a nuvem se dispersa.",
       "active_effects": [
         {
           "name": "Expor Células de <b>Energia</b>",
-          "condition": "Nesta cena, se em algum momento você exceder sua Capac. de <b>Calor</b>  ",
-          "detail": "Nesta cena, se em algum momento você excederia sua Capac. de <b>Calor</b>, em vez disso você remove todo o  de <b>Calor</b> e ventila uma nuvem de <b>Emanação</b> 3 de matéria ardente do seu mecha.<br>Até o início do seu próximo turno, todos os personagens dentro da área afetada contam como Invisíveis para todos, exceto você. Personagens que não sejam você sofrem 2 de <b>Queimadura</b> e 2 de <b>Calor</b> quando começarem os turnos deles na área ou entrarem nela pela primeira vez na rodada. Quando o efeito for encerrado, personagens na área afetada obtêm <b>cobertura leve<b>. (que você ignora) até o início do seu próximo turno, quando a nuvem se dispersa.",
+          "condition": "Nesta cena, se em algum momento você exceder sua Cap. de <b>Calor</b>",
+          "detail": "Nesta cena, se em algum momento você exceder sua Cap. de <b>Calor</b>, em vez disso você remove todo o <b>Calor</b> e ventila uma nuvem de <b>Emanação</b> 3 de matéria ardente do seu mecha.<br>Até o início do seu próximo turno, todos os personagens dentro da área afetada contam como Invisíveis para todos, exceto você. Personagens que não sejam você sofrem <b>2 de Queimadura</b> e <b>2 de Calor</b> quando começarem os turnos deles na área ou entrarem nela pela primeira vez na rodada. Quando o efeito for encerrado, personagens na área afetada obtêm <b>cobertura leve</b> (que você ignora) até o início do seu próximo turno, quando a nuvem se dispersa.",
           "damage": [
             {
               "val": 2,
@@ -2473,7 +2473,7 @@
       "Controller"
     ],
     "y_pos": 22,
-    "description": "Desenvolvido nos campos de testes do Ideário da Arsenal, o Iskander é um novo chassi especialista projetado para trazer controle de área tecgrav e capacidade de irromper plataformas mecanizadas.<br>Um chassi robusto, o Iskander emprega uma mistura de Sistemas de <b>Energia</b> cinética e causal que empodera pilotos a triunfar em um abrangente portfólio de cenários. A plataforma Iskander não possui contraparte civil: ele é pensado para ser usado como comando de <b>Linha</b> de frente e plataforma de controle, com ênfase em identificar e eliminar  <b>Ameaça<b> s estáticas explosivas.",
+    "description": "Desenvolvido nos campos de testes do Ideário da Arsenal, o Iskander é um novo chassi especialista projetado para trazer controle de área tecgrav e capacidade de irromper plataformas mecanizadas.<br>Um chassi robusto, o Iskander emprega uma mistura de Sistemas de <b>Energia</b> cinética e causal que empodera pilotos a triunfar em um abrangente portfólio de cenários. A plataforma Iskander não possui contraparte civil: ele é pensado para ser usado como comando de <b>Linha</b> de frente e plataforma de controle, com ênfase em identificar e eliminar <b>Ameaças</b> estáticas explosivas.",
     "mounts": [
       "Flex",
       "Heavy"
@@ -2534,14 +2534,14 @@
     ],
     "core_system": {
       "name": "Semeador de Varredura Ampla",
-      "description": "O Semeador de Varredura Ampla é um aparato patenteado desenvolvido durante a Ocupação Orrugi, quando os legionários da Arsenal <b>Lutar</b>am contra um movimento guerrilheiro rancoroso e obstinado. Artefatos explosivos improvisados, incluindo em carros e <b>Drones</b> subalternos, eram empregados com frequência pela <b>Resistência</b>; para opor essa <b>Ameaça</b>, a Arsenal Harrison desenvolveu o Semeador para simultaneamente <b>Escanear</b>, identificar e eliminar  <b>Ameaça<b> s explosivas em proximidade com unidades estacionárias. A tecnologia se provou um sucesso e, com pequenos ajustes, foi adotada para instalação nos Chassis da Arsenal.<br>O Semeador de Varredura Ampla emite um <b>Cone</b> colmeia de detecção variada de luz para marcar alvos em potencial: se uma identificação positiva ocorrer, o alvo é neutralizado com um spray de flechetes opacos acelerados magneticamente. O Semeador pode também carregar minas colmeia.",
+      "description": "O Semeador de Varredura Ampla é um aparato patenteado desenvolvido durante a Ocupação Orrugi, quando os legionários da Arsenal lutaram contra um movimento guerrilheiro rancoroso e obstinado. Artefatos explosivos improvisados, incluindo em carros e <b>Drones</b> subalternos, eram empregados com frequência pela <b>Resistência</b>; para opor essa <b>Ameaça</b>, a Arsenal Harrison desenvolveu o Semeador para simultaneamente <b>Escanear</b>, identificar e eliminar <b>Ameaças</b> explosivas em proximidade com unidades estacionárias. A tecnologia se provou um sucesso e, com pequenos ajustes, foi adotada para instalação nos Chassis da Arsenal.<br>O Semeador de Varredura Ampla emite um <b>Cone</b> colmeia de detecção variada de luz para marcar alvos em potencial: se uma identificação positiva ocorrer, o alvo é neutralizado com um spray de flechetes opacos acelerados magneticamente. O Semeador pode também carregar minas colmeia.",
       "active_name": "Nuvem da Morte",
-      "active_effect": "O sistema dispara uma enorme nuvem de microminas que se expande por todo o campo de batalha, afetando todos os personagens hostis a até <b>Alcance 5</b>0. Pelo restante da cena, quando personagens hostis fizerem qualquer movimento que não seja seu movimento padrão (incluindo movimento involuntário) eles sofrem 3 Explosivo(PF). Esse efeito pode disparar qualquer quantidade de vezes, mas apenas 1/rodada para cada personagem.",
+      "active_effect": "O sistema dispara uma enorme nuvem de microminas que se expande por todo o campo de batalha, afetando todos os personagens hostis a até <b>Alcance 50</b>. Pelo restante da cena, quando personagens hostis fizerem qualquer movimento que não seja seu movimento padrão (incluindo movimento involuntário) eles sofrem <b>3 de Dano Explosivo</b> (PF). Esse efeito pode disparar qualquer quantidade de vezes, mas apenas 1/rodada para cada personagem.",
       "active_effects": [
         {
           "name": "Nuvem da Morte",
-          "condition": "Qualquer personagem hostil a até <b>Alcance 5</b>0 fizer qualquer movimento que não seja seu movimento padrão (incluindo movimento involuntário).",
-          "detail": "Pelo restante da cena, quando personagens hostis fizerem qualquer movimento que não seja seu movimento padrão (incluindo <b>movimento involuntário</b>) eles sofrem 3 Explosivo(PF). Esse efeito pode disparar qualquer quantidade de vezes, mas apenas 1/rodada para cada personagem.",
+          "condition": "Qualquer personagem hostil a até <b>Alcance 50</b> fizer qualquer movimento que não seja seu movimento padrão (incluindo movimento involuntário).",
+          "detail": "Pelo restante da cena, quando personagens hostis fizerem qualquer movimento que não seja seu movimento padrão (incluindo <b>movimento involuntário</b>) eles sofrem <b>3 de Dano Explosivo</b> (PF). Esse efeito pode disparar qualquer quantidade de vezes, mas apenas 1/rodada para cada personagem.",
           "damage": [
             {
               "val": 3,
@@ -2624,7 +2624,7 @@
       "name": "Égide Negra Verdadeira",
       "description": "A Égide Negra Verdadeira é um avanço em blindagem pessoal desenvolvido pelo Think Tank do Arsenal. Como as outras tecnologias derivadas de PNH do Arsenal, a Égide é uma tecnologia de 'caixa-preta': seu código e funcionamento interno são altamente confidenciais, e geralmente só pode ser requisitada por pilotos de alto escalão ou posição dentro do Arsenal Harrison. Alguns pilotos Cosmopolitas descreveram a aparência da Égide como semelhante ao vazio – ou cegueira – que veem ao olhar para o espaço-lampejo. É seguro assumir que o dispositivo aproveita a tecnologia instável de campo-lampejo para manifestar uma fina bolha de espaço-lampejo dentro de parâmetros definidos. O campo-lampejo só pode manter a coerência por um breve momento, mas pode ser ligado e Desligado para criar uma cúpula total de espaço-lampejo.",
       "active_name": "Ativar Égide",
-      "active_effect": "Um campo cintilante e totalmente negro envolve rapidamente seu mecha, cobrindo-o como uma segunda pele. Pelo resto da cena, você:<ul><li>reduz todo o Dano para 1, exceto por Dano que ignora redução;</li><li>adquire<b>Imunidade</b> a todas as ações tecnológicas, incluindo as benéficas, e quaisquer efeitos ou condições tecnológicas atuais em você terminam;</li><li>só pode usar Sistemas com a tag Escudo – quaisquer outros desativam imediatamente (Sistemas que não requerem ativação não são afetados);</li><li>não pode realizar ações rápidas, completas ou reações, exceto por movimentos padrão, <b>Agarrar</b>, <b>Empurrar</b>, <b>Improvisar Ataque</b>, ATIVAR (apenas Sistemas de Escudo), <b>Teste de Perícia</b> e <b>Impulsionar</b>;</li><li>não pode <b>Sobrecarregar</b>;</li><li>não pode usar comunicações para falar com outros personagens (pois o som não sai do escudo). </li></ul>Você ainda pode receber estados e <b>Calor</b>  , e pode ser afetado por movimento involuntário. Você pode interagir normalmente com o mundo de outras maneiras, incluindo pegar e arrastar itens, e assim por diante.",
+      "active_effect": "Um campo cintilante e totalmente negro envolve rapidamente seu mecha, cobrindo-o como uma segunda pele. Pelo resto da cena, você:<ul><li>reduz todo o Dano para 1, exceto por Dano que ignora redução;</li><li>adquire <b>Imunidade</b> a todas as ações tecnológicas, incluindo as benéficas, e quaisquer efeitos ou condições tecnológicas atuais em você terminam;</li><li>só pode usar Sistemas com a tag Escudo – quaisquer outros desativam imediatamente (Sistemas que não requerem ativação não são afetados);</li><li>não pode realizar ações rápidas, completas ou reações, exceto por movimentos padrão, <b>Agarrar</b>, <b>Empurrar</b>, <b>Improvisar Ataque</b>, ATIVAR (apenas Sistemas de Escudo), <b>Teste de Perícia</b> e <b>Impulsionar</b>;</li><li>não pode <b>Sobrecarregar</b>;</li><li>não pode usar comunicações para falar com outros personagens (pois o som não sai do escudo). </li></ul>Você ainda pode receber estados e <b>Calor</b>, e pode ser afetado por movimento involuntário. Você pode interagir normalmente com o mundo de outras maneiras, incluindo pegar e arrastar itens, e assim por diante.",
       "use": "Encounter",
       "activation": "Quick"
     },
@@ -2640,7 +2640,7 @@
       "Defender"
     ],
     "y_pos": 17,
-    "description": "O Saladino é uma plataforma robusta e eficiente para suporte e proteção de todo esquadrão. Baseado em uma versão anterior orientada à defesa do Gengis, o Saladino se tornou matéria de lendas da Arsenal depois das façanhas de Harrison I \"Matador do Medo\" durante a Guerra dos Interesses.<br>Desde sua primeira versão, o Saladino se provou um sucesso em um papel defensivo e de suporte; ele até se tornou um pilar em meio aos times de Libertadores da DJ/DH <br>Engajados</b> em emancipação e missões de escolta de refugiados, apesar dos atritos ideológicos entre a DJ/DH e a Arsenal. Registros desses combates indicam que o volume enorme do Saladino era um conforto e um aumento de moral para as tropas do DJ/DH e seus protegidos, em que muitos o chamavam de \"Grande Sal\". Os pilotos do Saladino da União reportam contas zeradas em bares após batalhas em Sistemas emancipados.",
+    "description": "O Saladino é uma plataforma robusta e eficiente para suporte e proteção de todo esquadrão. Baseado em uma versão anterior orientada à defesa do Gengis, o Saladino se tornou matéria de lendas da Arsenal depois das façanhas de Harrison I \"Matador do Medo\" durante a Guerra dos Interesses.<br>Desde sua primeira versão, o Saladino se provou um sucesso em um papel defensivo e de suporte; ele até se tornou um pilar em meio aos times de Libertadores da DJ/DH <b>Engajados</b> em emancipação e missões de escolta de refugiados, apesar dos atritos ideológicos entre a DJ/DH e a Arsenal. Registros desses combates indicam que o volume enorme do Saladino era um conforto e um aumento de moral para as tropas do DJ/DH e seus protegidos, em que muitos o chamavam de \"Grande Sal\". Os pilotos do Saladino da União reportam contas zeradas em bares após batalhas em Sistemas emancipados.",
     "mounts": [
       "Flex"
     ],
@@ -2679,11 +2679,11 @@
       },
       {
         "name": "Guardião",
-        "description": "Personagens aliados adjacentes podem usar o Saladino como <b>cobertura pesada<b>.",
+        "description": "Personagens aliados adjacentes podem usar o Saladino como <b>cobertura pesada</b>.",
         "active_effects": [
           {
             "name": "Guardião",
-            "detail": "Aliados adjacentes podem usar o Saladino para <b>cobertura pesada<b>."
+            "detail": "Aliados adjacentes podem usar o Saladino para <b>cobertura pesada</b>."
           }
         ]
       },
@@ -2772,12 +2772,12 @@
       },
       {
         "name": "Parada de Mathur",
-        "description": "Quando o Sherman remover todo o <b>Calor</b>, você pode escolher sofrer <b>Calor</b> igual metade da sua <b>Cap. de Calor</b>, colocando-o na <b>Zona de Perigo<b>.",
+        "description": "Quando o Sherman remover todo o <b>Calor</b>, você pode escolher sofrer <b>Calor</b> igual metade da sua <b>Cap. de Calor</b>, colocando-o na <b>Zona de Perigo</b>.",
         "active_effects": [
           {
             "name": "Parada de Mathur",
-            "trigger": "Você remove todo o <b>Calor</b> .",
-            "detail": "Quando o Sherman remover todo o <b>Calor</b>, você pode escolher sofrer <b>Calor</b> igual a metade da sua <b>Cap. de Calor</b>, colocando-o na <b>Zona de Perigo<b>."
+            "trigger": "Você remove todo o <b>Calor</b>.",
+            "detail": "Quando o Sherman remover todo o <b>Calor</b>, você pode escolher sofrer <b>Calor</b> igual a metade da sua <b>Cap. de Calor</b>, colocando-o na <b>Zona de Perigo</b>."
           }
         ],
         "synergies": [
@@ -2785,19 +2785,19 @@
             "locations": [
               "heat"
             ],
-            "detail": "Quando o Sherman remover todo o <b>Calor</b>, você pode escolher sofrer <b>Calor</b> igual a metade da sua <b>Cap. de Calor</b>, colocando-o na <b>Zona de Perigo<b>."
+            "detail": "Quando o Sherman remover todo o <b>Calor</b>, você pode escolher sofrer <b>Calor</b> igual a metade da sua <b>Cap. de Calor</b>, colocando-o na <b>Zona de Perigo</b>."
           }
         ],
         "use": "Livre"
       },
       {
-        "name": "Ventilar <b>Calor</b>  ",
-        "description": "Quando você <b>Estabilizar</b> o Sherman ou ele exceder sua <b>Cap. de Calor</b>, ele obtém <b>cobertura leve<b>. até o final do seu próximo turno.",
+        "name": "Ventilar Calor",
+        "description": "Quando você <b>Estabilizar</b> o Sherman ou ele exceder sua <b>Cap. de Calor</b>, ele obtém <b>cobertura leve</b> até o final do seu próximo turno.",
         "active_effects": [
           {
-            "name": "Ventilar <b>Calor</b>  ",
-            "condition": "Você Estabiliza ou excede sua Cap. de <b>Calor</b> .",
-            "detail": "Quando você <b>Estabilizar</b> o Sherman ou ele exceder sua <b>Cap. de Calor</b>, ele obtém <b>cobertura leve<b>. até o final do seu próximo turno.",
+            "name": "Ventilar Calor",
+            "condition": "Você Estabiliza ou excede sua Cap. de <b>Calor</b>.",
+            "detail": "Quando você <b>Estabilizar</b> o Sherman ou ele exceder sua <b>Cap. de Calor</b>, ele obtém <b>cobertura leve</b> até o final do seu próximo turno.",
             "add_other": [
               {
                 "type": "cover",
@@ -2813,7 +2813,7 @@
               "stabilize",
               "heat"
             ],
-            "detail": "Quando você <b>Estabilizar</b> o Sherman ou ele exceder sua <b>Cap. de Calor</b>, ele obtém <b>cobertura leve<b>. até o final do seu próximo turno."
+            "detail": "Quando você <b>Estabilizar</b> o Sherman ou ele exceder sua <b>Cap. de Calor</b>, ele obtém <b>cobertura leve</b> até o final do seu próximo turno."
           }
         ]
       }
@@ -2822,7 +2822,7 @@
       "name": "Zona de Foco Mk IV Núcleo-Sólido",
       "description": "O ZF4 Núcleo-SÓLIDO é uma arma de feixe de <b>Energia</b> de dupla-origem de encaixe fixo. Alimentado por um sistema de gerador de <b>Energia</b> de milidobras, o ZF4 tem um carregador secundário alimentado por correia de baterias de Núcleo sólido que podem ser utilizadas para <b>Sobrecarregar</b> um único feixe de impulso, estendendo o <b>Alcance</b> da arma e seu poder destrutivo.",
       "active_name": "Protocolo QUEIMA DE Núcleo",
-      "active_effect": "Seu ZF4 Núcleo-SÓLIDO imediatamente recebe 3 <b>Cargas<b>., até um máximo de 4; adicionalmente, pelo restante desta cena, <b>Estabilizar</b> gera 2 <b>Cargas<b>. no lugar de 1, e todo terreno, objeto e <b>Posicionáveis</b> sofrem <b>10 de Dano Explosivo(PF)</b> por carga ao serem atingidos.",
+      "active_effect": "Seu ZF4 Núcleo-SÓLIDO imediatamente recebe <b>3 Cargas</b>, até um máximo de 4; adicionalmente, pelo restante desta cena, <b>Estabilizar</b> gera <b>2 Cargas</b> no lugar de 1, e todo terreno, objeto e <b>Posicionáveis</b> sofrem <b>10 de Dano Explosivo</b> (PF) por carga ao serem atingidos.",
       "activation": "Protocol",
       "integrated": [
         "mw_sherman_integrated"
@@ -2831,7 +2831,7 @@
     "counters": [
       {
         "id": "ctr_zf4_solidcore",
-        "name": "<b>Cargas<b>. ZF4",
+        "name": "<b>Cargas</b> ZF4",
         "default_value": 1,
         "min": 1,
         "max": 4
@@ -2874,12 +2874,12 @@
     "traits": [
       {
         "name": "SUPERAR LIMITAÇÃO",
-        "description": "Quando o Tokugawa estiver Exposto, seus ataques corpo a corpo e à distância causam +3 de <b>Energia</b> de <b>Dano bônus</b> ao acertar, todas suas armas que causariam  Cinético ou  Explosivo causam  de <b>Energia</b> no lugar, armas à distância recebem +5 <b>Linha</b> e armas corpo a corpo recebem 1+ <b>Ameaça</b>.",
+        "description": "Quando o Tokugawa estiver Exposto, seus ataques corpo a corpo e à distância causam <b>+3 de Dano de Energia bônus</b> ao acertar, todas suas armas que causariam Dano Cinético ou Explosivo causam <b>Dano de Energia</b> no lugar, armas à distância recebem +5 de <b>Linha</b> e armas corpo a corpo recebem +1 de <b>Ameaça</b>.",
         "active_effects": [
           {
             "name": "SUPERAR LIMITAÇÃO",
             "condition": "Você está Exposto.",
-            "detail": "Quando o Tokugawa estiver Exposto, seus ataques corpo a corpo e à distância causam +3 de <b>Energia</b> de <b>Dano bônus</b> ao acertar, todas suas armas que causariam  Cinético ou  Explosivo causam  de <b>Energia</b> no lugar, armas à distância recebem +5 <b>Linha</b> e armas corpo a corpo recebem 1+ <b>Ameaça</b>.",
+            "detail": "Quando o Tokugawa estiver Exposto, seus ataques corpo a corpo e à distância causam <b>+3 de Dano de Energia bônus</b> ao acertar, todas suas armas que causariam Dano Cinético ou Explosivo causam <b>Dano de Energia</b> no lugar, armas à distância recebem +5 de <b>Linha</b> e armas corpo a corpo recebem +1 de <b>Ameaça</b>.",
             "bonuses": [
               {
                 "id": "damage",
@@ -2908,12 +2908,12 @@
       },
       {
         "name": "BAINHA DE PLASMA",
-        "description": "Quando o Tokugawa estiver na <b>Zona de Perigo<b>  e atacar com uma arma que causa qualquer quantidade de  de <b>Energia</b>, todos os danos bônus se tornam  de <b>Queimadura</b>.",
+        "description": "Quando o Tokugawa estiver na <b>Zona de Perigo</b> e atacar com uma arma que causa qualquer quantidade de <b>Dano de Energia</b>, todos os danos bônus se tornam <b>Dano de Queimadura</b>.",
         "active_effects": [
           {
             "name": "BAINHA DE PLASMA",
-            "condition": "Você está na <b>Zona de Perigo<b>  e ataca com uma arma que causa qualquer quantidade de <b>Energia</b>.",
-            "detail": "Todos os danos bônus se tornam  de <b>Queimadura</b>."
+            "condition": "Você está na <b>Zona de Perigo</b> e ataca com uma arma que causa qualquer quantidade de <b>Dano de Energia</b>.",
+            "detail": "Todos os danos bônus se tornam <b>Dano de Queimadura</b>."
           }
         ],
         "synergies": []
@@ -2923,7 +2923,7 @@
       "name": "ALIMENTADOR DE REATOR SUPERAQUECIDO",
       "description": "Pilotos de uma certa estirpe prosperam à beira da catástrofe, arriscando glorioso sucesso ou total fracasso a cada momento. Essas pessoas audaciosas estão acostumadas com o uivo de avisos de aquecimento crítico — o canto de gorjeio das sirenes de destruição e alimentadores de reator superaquecidos. Pilotos dos Tokugawa são notórios por <b>Sobrecarregar</b> suas armas com <b>Energia</b> em excesso, forçando seu marcador de <b>Calor</b> ao máximo. Aproveitando o reator único do Tokugawa, esses pilotos despejam <b>Dano</b> e não fazem amigos no compartimento de Engenharia — assumindo que eles não se transformem em uma pilha de destroços antes de voltar da linha de frente.",
       "active_name": "Resplendor",
-      "active_effect": "Pelo restante da cena, armas que causam qualquer  de <b>Energia</b> recebem +5range se elas forem à distância ou +2threat se forem corpo a corpo.<br>Enquanto estiver Exposto, Superar Limitação combina com esses bônus para um aumento total de +10range e +3threat.",
+      "active_effect": "Pelo restante da cena, armas que causam qualquer <b>Dano de Energia</b> recebem +5 de <b>Alcance</b> se elas forem à distância ou +2 de <b>Ameaça</b> se forem corpo a corpo.<br>Enquanto estiver Exposto, Superar Limitação combina com esses bônus para um aumento total de +10 de <b>Alcance</b> e +3 de <b>Ameaça</b>.",
       "use": "Encounter",
       "activation": "Protocol",
       "passive_name": "Exceder Os Parâmetros",
@@ -2944,7 +2944,7 @@
       "active_effects": [
         {
           "name": "Radiância",
-          "detail": "Pelo resto desta cena, armas que causam qualquer <b>Energia</b> ganham +5 de <b>Alcance</b> se forem à distância ou +2 de <b>Ameaça</b> se forem corpo a corpo.<br>Enquanto você estiver Exposto, Limite de Ruptura se acumula com esses bônus para um incremento total de +10 <b>Alcance</b> (armas à distância) ou +4 <b>Ameaça</b> (armas corpo a corpo).",
+          "detail": "Pelo resto desta cena, armas que causam qualquer <b>Dano de Energia</b> ganham +5 de <b>Alcance</b> se forem à distância ou +2 de <b>Ameaça</b> se forem corpo a corpo.<br>Enquanto você estiver Exposto, Limite de Ruptura se acumula com esses bônus para um incremento total de +10 de <b>Alcance</b> (armas à distância) ou +4 de <b>Ameaça</b> (armas corpo a corpo).",
           "bonuses": [
             {
               "id": "range",
@@ -3007,7 +3007,7 @@
     "traits": [
       {
         "name": "Matador de Gigantes",
-        "description": "O Atlas conta como <b>Tamanho 1</b> para Empurrão e Agarrão. Ele ignora o engajamento de personagens maiores e pode se mover livremente através dos espaços que eles ocupam (mesmo que sejam hostis). Enquanto ocupar os mesmos espaços de qualquer personagem, o Atlas ganha <b>cobertura leve<b>., até mesmo desse personagem que ele compartilha o espaço.",
+        "description": "O Atlas conta como <b>Tamanho 1</b> para Empurrão e Agarrão. Ele ignora o engajamento de personagens maiores e pode se mover livremente através dos espaços que eles ocupam (mesmo que sejam hostis). Enquanto ocupar os mesmos espaços de qualquer personagem, o Atlas ganha <b>cobertura leve</b>, até mesmo desse personagem que ele compartilha o espaço.",
         "synergies": [
           {
             "locations": [
@@ -3020,7 +3020,7 @@
             "locations": [
               "active_effects"
             ],
-            "detail": "O Atlas ignora o engajamento de personagens maiores que ele e pode se mover livremente através dos espaços que eles ocupam (mesmo que sejam hostis). Enquanto ocupar os mesmos espaços de qualquer personagem, o Atlas ganha <b>cobertura leve<b>., até mesmo desse personagem que ele compartilha o espaço."
+            "detail": "O Atlas ignora o engajamento de personagens maiores que ele e pode se mover livremente através dos espaços que eles ocupam (mesmo que sejam hostis). Enquanto ocupar os mesmos espaços de qualquer personagem, o Atlas ganha <b>cobertura leve</b>, até mesmo desse personagem que ele compartilha o espaço."
           }
         ]
       },
@@ -3070,9 +3070,9 @@
     ],
     "core_system": {
       "name": "Assistência Ativa da Linhagem Sanguínea",
-      "description": "O Atlas estende microagulhas na musculatura e no sistema nervoso <br>Auxiliar</b> de seu piloto, fundindo carne, máquina e a memória de todos que o usaram antes.",
+      "description": "O Atlas estende microagulhas na musculatura e no sistema nervoso Auxiliar de seu piloto, fundindo carne, máquina e a memória de todos que o usaram antes.",
       "active_name": "Caçada Final",
-      "active_effect": "<p>Pelo resto da cena, você:</p><ul><li>Se move 1 espaço adicional sempre que se mover voluntariamente por qualquer motivo (exemplo: movimento padrão, <b>Impulsionar</b>, movimento de Sistemas ou talentos). </li> <li>Beneficia-se de <b>cobertura leve<b>. o tempo todo, independentemente de onde estiver. </li> <li>Pode se ESCONDER até mesmo em campo aberto, sem precisar de cobertura. </li> </ul> <p> A única forma de revelá-lo é outro personagem <b>Procurar</b> por você ou você perder o status de <b>Escondido</b> como de costume &ndash; ao usar <b>Impulsionar</b>, atacar, forçar um teste de Resistência, entre outros. Quando ativo, 1/rodada, ao fazer um ataque corpo a corpo ou a distância enquanto estiver <b>Escondido</b>, seu alvo também deve ter sucesso em um teste de <b>Casco</b> ou é derrubado e fica Prostrado. Isso ocorre antes de o ataque ser rolado. </p>",
+      "active_effect": "<p>Pelo resto da cena, você:</p><ul><li>Se move 1 espaço adicional sempre que se mover voluntariamente por qualquer motivo (exemplo: movimento padrão, <b>Impulsionar</b>, movimento de Sistemas ou talentos). </li> <li>Beneficia-se de <b>cobertura leve</b> o tempo todo, independentemente de onde estiver. </li> <li>Pode se ESCONDER até mesmo em campo aberto, sem precisar de cobertura. </li> </ul> <p> A única forma de revelá-lo é outro personagem <b>Procurar</b> por você ou você perder o status de <b>Escondido</b> como de costume &ndash; ao usar <b>Impulsionar</b>, atacar, forçar um teste de Resistência, entre outros. Quando ativo, 1/rodada, ao fazer um ataque corpo a corpo ou a distância enquanto estiver <b>Escondido</b>, seu alvo também deve ter sucesso em um teste de <b>Casco</b> ou é derrubado e fica Prostrado. Isso ocorre antes de o ataque ser rolado. </p>",
       "activation": "Quick"
     },
     "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_atlas.png",
@@ -3111,7 +3111,7 @@
     "traits": [
       {
         "name": "Esfera de Demolição",
-        "description": "O Calibã é considerado <b>Tamanho 3</b> ao causar  <b>Repulsão<b>  com a ação Empurrão ou qualquer ataque corpo a corpo ou à distância.",
+        "description": "O Calibã é considerado <b>Tamanho 3</b> ao causar <b>Repulsão</b> com a ação Empurrão ou qualquer ataque corpo a corpo ou à distância.",
         "synergies": [
           {
             "locations": [
@@ -3123,13 +3123,13 @@
             "weapon_sizes": [
               "any"
             ],
-            "detail": "O Calibã conta como <b>Tamanho 3</b> ao causar  <b>Repulsão<b>  com qualquer ataque à distância ou corpo a corpo."
+            "detail": "O Calibã conta como <b>Tamanho 3</b> ao causar <b>Repulsão</b> com qualquer ataque à distância ou corpo a corpo."
           }
         ]
       },
       {
         "name": "Perseguir Presa",
-        "description": "Quando o Calibã causa  <b>Repulsão<b>  como parte de qualquer ação, ele pode se mover o mesmo número de espaços em direção ao alvo pela rota mais direta possível. Esse movimento faz parte da mesma ação, ignora engajamento e não provoca reações."
+        "description": "Quando o Calibã causa <b>Repulsão</b> como parte de qualquer ação, ele pode se mover o mesmo número de espaços em direção ao alvo pela rota mais direta possível. Esse movimento faz parte da mesma ação, ignora engajamento e não provoca reações."
       },
       {
         "name": "Impacto",
@@ -3153,7 +3153,7 @@
       "name": "Espingarda Devoradora",
       "description": "A “Devoradora” — oficialmente chamada de Espingarda-Obus Pesada 075 — é uma versão compacta e formalizada da popular “Cortadora Margarida”, a espingarda-obus utilizada pela Segurança do Porta-Malas e outras forças estelares de fuzileiros. Capaz de aceitar chumbo, cartucho ou projéteis sabot, a Devoradora sacrifica parte do poder bruto da Cortadora Margarida em favor de maior controle e uma cadência de tiro significativamente melhorada.",
       "active_name": "Equipar Estrangulador Automático",
-      "active_effect": "A Devoradora vem equipada de fábrica com um estrangulador automático montado no cano, permitindo ao usuário ajustar melhor a dispersão do tiro disparado pela arma. O <b>Calor</b> extremo gerado pelo uso do estrangulador faz com que ele se degrade rapidamente, tornando-o inutilizável após um curto período e exigindo seu descarte.<br>Pelo resto da cena, a EOP-075 “Devoradora” ganha o seguinte perfil:<br>CQR Principal, Preciso,  <b>Repulsão<b>  5<br>[Cone 3] [Threat 3] [1d6+2 Dano Cinético]",
+      "active_effect": "A Devoradora vem equipada de fábrica com um estrangulador automático montado no cano, permitindo ao usuário ajustar melhor a dispersão do tiro disparado pela arma. O <b>Calor</b> extremo gerado pelo uso do estrangulador faz com que ele se degrade rapidamente, tornando-o inutilizável após um curto período e exigindo seu descarte.<br>Pelo resto da cena, a EOP-075 “Devoradora” ganha o seguinte perfil:<br>CQR Principal, Preciso, <b>Repulsão</b> 5<br>[Cone 3] [Threat 3] [1d6+2 Dano Cinético]",
       "activation": "Protocol",
       "integrated": [
         "mw_caliban_integrated"
@@ -3194,11 +3194,11 @@
     "traits": [
       {
         "name": "Carapaça Mímica",
-        "description": "Quando o Kobold começa seu turno adjacente a um terreno ou <b>cobertura pesada<b>. de <b>Tamanho 1</b> ou maior, ele se torna <b>invisível</b> enquanto permanecer adjacente. Ele deixa de ser <b>invisível</b> se atacar ou sofrer <b>Dano</b>."
+        "description": "Quando o Kobold começa seu turno adjacente a um terreno ou <b>cobertura pesada</b> de <b>Tamanho 1</b> ou maior, ele se torna <b>invisível</b> enquanto permanecer adjacente. Ele deixa de ser <b>invisível</b> se atacar ou sofrer <b>Dano</b>."
       },
       {
         "name": "Borrifador de Detritos",
-        "description": "1/rodada, como uma ação rápida, o Kobold pode criar um monte de polímero semifundido de <b>Tamanho 1</b> em um espaço livre a até <b>Alcance 3</b> e na linha de visão. Esse terreno tem 10 PV, <b>Evasão</b> 5 e concede <b>cobertura pesada<b>.",
+        "description": "1/rodada, como uma ação rápida, o Kobold pode criar um monte de polímero semifundido de <b>Tamanho 1</b> em um espaço livre a até <b>Alcance 3</b> e na linha de visão. Esse terreno tem 10 PV, <b>Evasão</b> 5 e concede <b>cobertura pesada</b>.",
         "deployables": [
           {
             "name": "Borrifador de Detritos",
@@ -3207,7 +3207,7 @@
             "hp": 10,
             "evasion": 5,
             "activation": "Quick",
-            "detail": "Este polímero semifundido concede <b>cobertura pesada<b>."
+            "detail": "Este polímero semifundido concede <b>cobertura pesada</b>."
           }
         ]
       },
@@ -3229,7 +3229,7 @@
       "name": "Terraformar",
       "description": "Rangendo e expelindo vapor, o Kobold cava o solo. Momentos depois, a própria terra se dobra à vontade do piloto, enquanto o ar grita de agonia — o lamento de todos os mortos Ingratos, martirizados ou levados pelos homens de pó.",
       "active_name": "Terraformar",
-      "active_effect": "Seu mecha expele uma quantidade massiva de polímero, criando até 10 cubos de Tamanho 1 em espaços livres a até <b>Alcance 5</b>. Esses cubos podem ser separados ou conectados e podem ser empilhados em até 5 espaços de altura. Se conectados, formam uma superfície contínua que pode bloquear a linha de visão. Durante o turno de extrusão, os cubos concedem <b>cobertura leve<b>. e possuem Evasão 5 e 10 PV. No início do seu próximo turno, os cubos endurecem, concedendo <b>cobertura pesada<b>. e ganhando +10 PV (mas mantendo qualquer Dano já sofrido).",
+      "active_effect": "Seu mecha expele uma quantidade massiva de polímero, criando até 10 cubos de Tamanho 1 em espaços livres a até <b>Alcance 5</b>. Esses cubos podem ser separados ou conectados e podem ser empilhados em até 5 espaços de altura. Se conectados, formam uma superfície contínua que pode bloquear a linha de visão. Durante o turno de extrusão, os cubos concedem <b>cobertura leve</b> e possuem Evasão 5 e 10 PV. No início do seu próximo turno, os cubos endurecem, concedendo <b>cobertura pesada</b> e ganhando +10 PV (mas mantendo qualquer Dano já sofrido).",
       "activation": "Full"
     },
     "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_kobold.png",
@@ -3271,14 +3271,14 @@
       },
       {
         "name": "Imortal",
-        "description": "1/cena, na rodada após o Lich ter sido destruído, ele pode retornar à localização do seu Receptáculo de Alma como uma <b>reação</b> no final de qualquer turno. Isso conta como <b>teletransporte</b>; além disso, o Lich aparece com PV cheio, sem <b>Calor</b>, 1 de <b>Estrutura</b> e 1 de <b>Estresse</b> (mesmo que tivesse mais quando foi destruído). Se o seu piloto morreu na mesma cena, ele também retorna à vida. Se o Lich não realizar essa <b>reação</b> nessa rodada, ele permanece destruído e o piloto continua morto."
+        "description": "1/cena, na rodada após o Lich ter sido destruído, ele pode retornar à localização do seu Receptáculo de Alma como uma <b>reação</b> no final de qualquer turno. Isso conta como <b>teletransporte</b>; além disso, o Lich aparece com PV cheio, sem <b>Calor</b>, <b>1 de Estrutura</b> e 1 de <b>Estresse</b> (mesmo que tivesse mais quando foi destruído). Se o seu piloto morreu na mesma cena, ele também retorna à vida. Se o Lich não realizar essa <b>reação</b> nessa rodada, ele permanece destruído e o piloto continua morto."
       }
     ],
     "core_system": {
       "name": "Tremorcrono",
       "description": "“Beba tudo e afunde. ”",
       "active_name": "Falha Temporal",
-      "active_effect": "<p>Você ganha a habilidade de perturbar o tempo pelo resto desta cena. 1/rodada, quando qualquer personagem atacar, afetar ou realizar uma ação contra outro personagem dentro de Sensores com sucesso, você pode interrompê-la antes que se resolva, com os seguintes efeitos:</p> <ul> <li>O personagem que realizou a ação é empurrado até 3 espaços em uma direção à sua escolha, mesmo que tenha<b>Imunidade</b> a movimento involuntário. </li> <li>Você se teletransporta para um dos espaços originalmente ocupados por aquele personagem, ou o mais próximo possível, não importando a distância. </li> <li>O ataque, efeito ou ação inicial se resolve tendo você como alvo em vez do alvo original. </li> </ul> <p>Você sofre todo o Dano, condições, estados e efeitos, e a ação deve ser realizada sem alterações. Por exemplo, se o efeito fosse teletransportar um personagem aliado para um determinado espaço, você é teletransportado para aquele espaço em vez do aliado; se o efeito fosse reparar um aliado, você é reparado em vez do aliado; se o efeito fosse causar Dano e  <b>Repulsão<b> , você sofre o Dano (usando sua Armadura, Resistência etc. ) e é empurrado na mesma direção que o alvo original seria; if o efeito fosse causar uma condição ou estado, você recebe essa condição ou estado em vez do alvo original. Iniciar esta interrupção não conta como uma <b>reação</b>. Efeitos que têm o próprio personagem como alvo não podem ser interrompidos dessa forma. </p>",
+      "active_effect": "<p>Você ganha a habilidade de perturbar o tempo pelo resto desta cena. 1/rodada, quando qualquer personagem atacar, afetar ou realizar uma ação contra outro personagem dentro de Sensores com sucesso, você pode interrompê-la antes que se resolva, com os seguintes efeitos:</p> <ul> <li>O personagem que realizou a ação é empurrado até 3 espaços em uma direção à sua escolha, mesmo que tenha <b>Imunidade</b> a movimento involuntário. </li> <li>Você se teletransporta para um dos espaços originalmente ocupados por aquele personagem, ou o mais próximo possível, não importando a distância. </li> <li>O ataque, efeito ou ação inicial se resolve tendo você como alvo em vez do alvo original. </li> </ul> <p>Você sofre todo o Dano, condições, estados e efeitos, e a ação deve ser realizada sem alterações. Por exemplo, se o efeito fosse teletransportar um personagem aliado para um determinado espaço, você é teletransportado para aquele espaço em vez do aliado; se o efeito fosse reparar um aliado, você é reparado em vez do aliado; se o efeito fosse causar Dano e <b>Repulsão</b>, você sofre o Dano (usando sua Armadura, Resistência etc.) e é empurrado na mesma direção que o alvo original seria; se o efeito fosse causar uma condição ou estado, você recebe essa condição ou estado em vez do alvo original. Iniciar esta interrupção não conta como uma <b>reação</b>. Efeitos que têm o próprio personagem como alvo não podem ser interrompidos dessa forma. </p>",
       "activation": "Quick"
     },
     "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_lich.png",
@@ -3317,7 +3317,7 @@
     "traits": [
       {
         "name": "Porto Seguro",
-        "description": "Quando personagens aliados a até <b>Alcance 5</b>0 do Sunzi se teletransportam ou são teletransportados, espaços livres adjacentes ao Sunzi são sempre destinos válidos."
+        "description": "Quando personagens aliados a até <b>Alcance 50</b> do Sunzi se teletransportam ou são teletransportados, espaços livres adjacentes ao Sunzi são sempre destinos válidos."
       },
       {
         "name": "Âncora",
@@ -3341,9 +3341,9 @@
       "description": "(TT_AUTORIZAÇÃO_01): SÓ UM AVISO, VOCÊ VAI LER ALGUMAS COISAS OBSCURAS AQUI. TRANSCREVI APENAS AS PARTES ÚTEIS DO QUE OS VOLS DISSERAM. CONSULTE O VISUAL PARA OS SINAIS MANUAIS CORRESPONDENTES. CONSULTE OS RELATÓRIOS: RECIPIENTE-PILOTO-PORTA",
       "active_name": "Arte da Guerra",
       "activation": "Free",
-      "active_effect": "Pelo resto da cena, este sistema ganha 6 <b>Cargas<b>. (você pode usar um dado para acompanhar isso). Como uma <b>reação</b> no início ou no final do turno de qualquer personagem hostil ou aliado dentro de Sensores e na linha de visão, você gasta uma carga para teletransportá-lo a até 3 espaços em qualquer direção, desde que ele termine em um espaço livre onde possa ficar em pé.",
+      "active_effect": "Pelo resto da cena, este sistema ganha <b>6 Cargas</b> (você pode usar um dado para acompanhar isso). Como uma <b>reação</b> no início ou no final do turno de qualquer personagem hostil ou aliado dentro de Sensores e na linha de visão, você gasta uma carga para teletransportá-lo a até 3 espaços em qualquer direção, desde que ele termine em um espaço livre onde possa ficar em pé.",
       "passive_name": "Âncora de Lampejo",
-      "passive_effect": "Âncora de Lampejo (Tamanho 1/2, Tag: POSICIONÁVEL,<b>Imunidade</b> a todo Dano e efeitos, Limitado 3)<br>Você carrega uma única âncora de lampejo que pode posicionar como uma ação rápida. Quando qualquer personagem se teletransportar dentro da sua linha de visão, você pode forçá-lo a aparecer em um espaço livre adjacente à âncora de teletransporte em vez do destino original, desde que ele possa ficar em pé com segurança ali. Se o alvo for hostil, isso consome uma carga.<br>Iniciar essa interrupção não conta como uma <b>reação</b>. Uma vez implantada, você ou qualquer personagem aliado pode pegá-la ou colocá-la no chão enquanto estiver adjacente a ela como uma ação rápida.",
+      "passive_effect": "Âncora de Lampejo (Tamanho 1/2, Tag: POSICIONÁVEL, <b>Imunidade</b> a todo Dano e efeitos, Limitado 3)<br>Você carrega uma única âncora de lampejo que pode posicionar como uma ação rápida. Quando qualquer personagem se teletransportar dentro da sua linha de visão, você pode forçá-lo a aparecer em um espaço livre adjacente à âncora de teletransporte em vez do destino original, desde que ele possa ficar em pé com segurança ali. Se o alvo for hostil, isso consome uma carga.<br>Iniciar essa interrupção não conta como uma <b>reação</b>. Uma vez implantada, você ou qualquer personagem aliado pode pegá-la ou colocá-la no chão enquanto estiver adjacente a ela como uma ação rápida.",
       "counters": [
         {
           "id": "ctr_art_of_war",
@@ -3391,7 +3391,7 @@
     "traits": [
       {
         "name": "Golpes Destrutivos",
-        "description": "No final do turno do Zheng, se ele realizou pelo menos um ataque corpo a corpo contra um personagem hostil, a força de seus golpes cria uma peça de terreno de <b>Tamanho 1</b> que concede <b>cobertura pesada<b>. em um espaço livre adjacente. Essa peça tem 10 PV e <b>Evasão</b> 5.",
+        "description": "No final do turno do Zheng, se ele realizou pelo menos um ataque corpo a corpo contra um personagem hostil, a força de seus golpes cria uma peça de terreno de <b>Tamanho 1</b> que concede <b>cobertura pesada</b> em um espaço livre adjacente. Essa peça tem 10 PV e <b>Evasão</b> 5.",
         "deployables": [
           {
             "name": "Cobertura de Golpes Destrutivos",
@@ -3400,7 +3400,7 @@
             "hp": 10,
             "evasion": 5,
             "size": 1,
-            "detail": "Este terreno concede <b>cobertura pesada<b>."
+            "detail": "Este terreno concede <b>cobertura pesada</b>."
           }
         ]
       },
@@ -3422,14 +3422,14 @@
       "name": "Traje CQR Tipo Xiong",
       "description": "Sobrevivendo principalmente com rações coloniais e um suprimento de air cada vez mais radioativo, Xiaoli saqueou materiais de uma nave moribunda para criar modificações que deram ao seu mecha um poder de golpe desarmado sem precedentes.",
       "active_name": "Engenhosidade de Xiaoli",
-      "active_effect": "Pelo resto da cena, este sistema ganha 6 <b>Cargas<b>. (você pode usar um dado para acompanhar isso). Gaste uma carga para usar a TENACIDADE DE XIAOLI novamente, ignorando o limite de 1/turno. Você pode gastar qualquer quantidade de <b>Cargas<b>. por turno. No final de cada turno, você recupera uma carga para cada alvo único (personagem, objeto ou peça de terreno) que você tenha causado Dano com esta ação, até um máximo de 6.",
+      "active_effect": "Pelo resto da cena, este sistema ganha <b>6 Cargas</b> (você pode usar um dado para acompanhar isso). Gaste uma carga para usar a TENACIDADE DE XIAOLI novamente, ignorando o limite de 1/turno. Você pode gastar qualquer quantidade de <b>Cargas</b> por turno. No final de cada turno, você recupera uma carga para cada alvo único (personagem, objeto ou peça de terreno) que você tenha causado Dano com esta ação, até um máximo de 6.",
       "activation": "Protocol",
       "passive_name": "Tenacidade de Xiaoli",
       "passive_actions": [
         {
           "name": "Tenacidade de Xiaoli",
           "activation": "Free",
-          "detail": "1/Turno, como uma <b>Ação Livre</b>, você pode se mover até 3 espaços e então causar 2 de <b>Dano</b> Cinético a qualquer personagem adjacente ou 10 de <b>Dano</b> Cinético PF a um objeto ou peça de terreno. Este movimento provoca engajamento e não ignora reações.<br>Se este <b>Dano</b> destruir um objeto ou peça de terreno, ele explode, causando 1d6 de <b>Dano</b> Cinético a todos os personagens adjacentes, exceto você, e os empurrando 1 espaço para trás."
+          "detail": "1/Turno, como uma <b>Ação Livre</b>, você pode se mover até 3 espaços e então causar <b>2 de Dano Cinético</b> a qualquer personagem adjacente ou <b>10 de Dano Cinético</b> (PF) a um objeto ou peça de terreno. Este movimento provoca engajamento e não ignora reações.<br>Se este <b>Dano</b> destruir um objeto ou peça de terreno, ele explode, causando <b>1d6 de Dano Cinético</b> a todos os personagens adjacentes, exceto você, e os empurrando 1 espaço para trás."
         }
       ],
       "counters": [

@@ -4,7 +4,7 @@
     "name": "Ponto de Gatilho",
     "type": "Bonus",
     "label": "Bonus",
-    "description": "Adicione um Ponto de Gatilho para ganhar ou melhorar um gatilho, tipicamente como parte da Ação de Recesso 'Ficar Focado'.",
+    "description": "Adicione um Ponto de <b>Gatilho</b> para ganhar ou melhorar um gatilho, tipicamente como parte da <b>Ação de Recesso</b> 'Ficar Focado'.",
     "bonuses": [
       {
         "id": "skill_point",
@@ -17,7 +17,7 @@
     "name": "Ponto de Perícia de Mecha",
     "type": "Bonus",
     "label": "Bonus",
-    "description": "Adicione um Ponto de Perícia de Mecha para aumentar a classificação de <b>Casco</b>, Agilidade, Sistemas ou ENGENHARIA do seu Piloto.",
+    "description": "Adicione um Ponto de <b>Perícia de Mecha</b> para aumentar a classificação de <b>Casco</b>, <b>Agilidade</b>, <b>Sistemas</b> ou <b>Engenharia</b> do seu Piloto.",
     "bonuses": [
       {
         "id": "mech_skill_point",
@@ -30,7 +30,7 @@
     "name": "Ponto de Talento",
     "type": "Bonus",
     "label": "Bonus",
-    "description": "Adicione um Ponto de Talento para ganhar ou melhorar um Talento de Piloto.",
+    "description": "Adicione um Ponto de <b>Talento</b> para ganhar ou melhorar um <b>Talento de Piloto</b>.",
     "bonuses": [
       {
         "id": "talent_point",
@@ -43,7 +43,7 @@
     "name": "Ponto de Licença",
     "type": "Bonus",
     "label": "Bonus",
-    "description": "Adicione um Ponto de Licença para avançar ou desbloquear uma nova Licença.",
+    "description": "Adicione um <b>Ponto de Licença</b> para avançar ou desbloquear uma nova <b>Licença</b>.",
     "bonuses": [
       {
         "id": "license_point",
@@ -56,7 +56,7 @@
     "name": "Bônus de Núcleo Extra",
     "type": "Bonus",
     "label": "Bonus",
-    "description": "Adicione um Bônus de Núcleo adicional.",
+    "description": "Adicione um <b>Bônus de Núcleo</b> adicional.",
     "bonuses": [
       {
         "id": "cb_point",
@@ -139,7 +139,7 @@
     "name": "Munição",
     "type": "Mech",
     "label": "Ammo",
-    "description": "Uso extra (+1 ou +2) de uma arma ou sistema Limitado."
+    "description": "Uso extra (+1 ou +2) de uma arma ou <b>Sistema Limitado</b>."
   },
   {
     "id": "reserve_rented_gear",
@@ -153,7 +153,7 @@
     "name": "Reparos Extras",
     "type": "Mech",
     "label": "Resource",
-    "description": "Suprimentos que dão ao mecha +2 de <b>CAP. DE Reparo</b>.",
+    "description": "Suprimentos que dão ao mecha <b>+2 de Cap. de Reparo</b>.",
     "bonuses": [
       {
         "id": "repcap",
@@ -166,7 +166,7 @@
     "name": "Bateria Principal",
     "type": "Mech",
     "label": "Battery",
-    "description": "Você tem acesso a uma bateria de Núcleo — um pacote de <b>Energia</b> concentrada que pode <b>Recarregar</b> os Sistemas de Núcleo de um mecha. Como uma ação rápida, você pode usar esta reserva para recuperar 1 PONTO DE Núcleo. Esta reserva é consumida quando usada.",
+    "description": "Você tem acesso a uma bateria de Núcleo — um pacote de energia concentrada que pode <b>Recarregar</b> os Sistemas de Núcleo de um mecha. Como uma ação rápida, você pode usar esta reserva para recuperar 1 Ponto de Núcleo. Esta reserva é consumida quando usada.",
     "bonuses": [
       {
         "id": "core_power",
@@ -179,13 +179,13 @@
     "name": "Escudo Posicionável",
     "type": "Mech",
     "label": "Shield",
-    "description": "Um gerador de escudo posicionável de uso único com <b>Tamanho 1</b> que concede <b>cobertura leve<b>. para todos os personagens amigáveis em uma área de <b>Emanação</b> 2.",
+    "description": "Um gerador de escudo posicionável de uso único com <b>Tamanho 1</b> que concede <b>cobertura leve</b> para todos os personagens amigáveis em uma área de <b>Emanação 2</b>.",
     "deployables": [
       {
         "name": "Escudo Posicionável (Reserva)",
         "type": "Deployable",
         "size": 1,
-        "detail": "Concede <b>cobertura leve<b>. para todos os personagens amigáveis em uma área de <b>Emanação</b> 2.",
+        "detail": "Concede <b>cobertura leve</b> para todos os personagens amigáveis em uma área de <b>Emanação</b> 2.",
         "stats": {
           "size": 1,
           "hp": 5,
@@ -216,28 +216,28 @@
     "name": "Reforços de Sistemas",
     "type": "Mech",
     "label": "Resource",
-    "description": "<b>+1 de Precisão</b> para testes de perícia feitos com uma perícia – <b>Casco</b>, Agilidade, Sistemas ou ENGENHARIA.",
+    "description": "<b>+1 de Precisão</b> para testes de perícia feitos com uma perícia – <b>Casco</b>, <b>Agilidade</b>, <b>Sistemas</b> ou <b>Engenharia</b>.",
     "synergies": [
       {
         "locations": [
           "hase"
         ],
-        "detail": "<b>+1 de Precisão</b> em testes de perícia feitos com uma perícia – <b>Casco</b>, Agilidade, Sistemas ou ENGENHARIA."
+        "detail": "<b>+1 de Precisão</b> em testes de perícia feitos com uma perícia – <b>Casco</b>, <b>Agilidade</b>, <b>Sistemas</b> ou <b>Engenharia</b>."
       }
     ]
   },
   {
     "id": "reserve_smart_ammo",
-    "name": "Munição  <b>Inteligente<b> ",
+    "name": "Munição Inteligente",
     "type": "Mech",
     "label": "Ammo",
-    "description": "Todas as armas à sua escolha podem ser disparadas como se fossem  <b>Inteligente<b> S.",
+    "description": "Todas as armas à sua escolha podem ser disparadas como se fossem <b>Inteligentes</b>.",
     "synergies": [
       {
         "locations": [
           "weapon"
         ],
-        "detail": "Todas as armas à sua escolha podem ser disparadas como se fossem  <b>Inteligente<b> S."
+        "detail": "Todas as armas à sua escolha podem ser disparadas como se fossem <b>Inteligentes</b>."
       }
     ]
   },
@@ -246,13 +246,13 @@
     "name": "Servomecanismos",
     "type": "Mech",
     "label": "Resource",
-    "description": "<b>Imunidade</b> à condição Lento.",
+    "description": "<b>Imunidade à condição Lento</b>.",
     "synergies": [
       {
         "locations": [
           "move"
         ],
-        "detail": "Seu mecha tem <b>Imunidade</b> à condição Lento."
+        "detail": "Seu mecha tem <b>Imunidade à condição Lento</b>."
       }
     ]
   },
@@ -261,13 +261,13 @@
     "name": "Jatos de Salto",
     "type": "Mech",
     "label": "Resource",
-    "description": "Durante esta missão, seu mecha pode VOAR ao se mover, mas deve terminar o movimento em terra.",
+    "description": "Durante esta missão, seu mecha pode Voar ao se mover, mas deve terminar o movimento em terra.",
     "synergies": [
       {
         "locations": [
           "move"
         ],
-        "detail": "Seu mecha pode VOAR ao se mover, mas deve terminar o movimento em terra."
+        "detail": "Seu mecha pode Voar ao se mover, mas deve terminar o movimento em terra."
       }
     ]
   },
@@ -276,7 +276,7 @@
     "name": "Exploração",
     "type": "Tactical",
     "label": "Location",
-    "description": "Informações detalhadas sobre os tipos de mechas e  <b>Ameaça<b> s que você enfrentará na missão, como quantidade, tipo e estatísticas."
+    "description": "Informações detalhadas sobre os tipos de mechas e ameaças que você enfrentará na missão, como quantidade, tipo e estatísticas."
   },
   {
     "id": "reserve_vehicle",
@@ -297,7 +297,7 @@
     "name": "Blindagem Ambiental",
     "type": "Tactical",
     "label": "Environment",
-    "description": "Equipamento que permite ignorar um determinado perigo no campo de batalha ou terreno, como <b>Calor</b> ou frio extremos."
+    "description": "Equipamento que permite ignorar um determinado perigo no campo de batalha ou terreno, como calor ou frio extremos."
   },
   {
     "id": "reserve_accuracy",
@@ -319,12 +319,12 @@
     "name": "Bombardeio",
     "type": "Tactical",
     "label": "Resource",
-    "description": "Você tem acesso a suporte de bombardeio de fogo à distância. Uma vez durante a próxima missão, você pode chamar um bombardeio como uma ação rápida. Escolha um ponto dentro da linha de visão: todos os personagens em <b>Explosão</b> 2 desse ponto devem fazer um <b>salvamento de Agilidade</b> ou receber 3d6 de <b>Dano</b> explosivo PF, ou metade em um sucesso.",
+    "description": "Você tem acesso a suporte de bombardeio de fogo à distância. Uma vez durante a próxima missão, você pode chamar um bombardeio como uma ação rápida. Escolha um ponto dentro da linha de visão: todos os personagens em <b>Explosão 2</b>  desse ponto devem fazer um <b>salvamento de Agilidade</b> ou receber <b>3d6 de Dano explosivo PF</b>, ou metade em um sucesso.",
     "actions": [
       {
         "name": "Bombardeio",
         "activation": "Full",
-        "detail": "Convocar  <b>Artilharia<b>  ou bombardeio orbital:<br><b>Alcance 3</b>0 na linha de visão, <b>Explosão</b> 2, 3d6 de <b>Dano</b> EXPLOSIVO",
+        "detail": "Convocar artilharia ou bombardeio orbital:<br><b>Alcance 30</b> na linha de visão, <b>Explosão 2</b> , 3d6 de <b>Dano Explosivo</b>.",
         "range": [
           {
             "type": "Range",

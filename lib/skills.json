@@ -93,22 +93,22 @@
   {
     "id": "sk_read_a_situation",
     "name": "Ler Situação",
-    "description": "<b>Procurar</b> por subtextos, motivos ou  <b>Ameaça<b> s em uma situação ou pessoa.",
-    "detail": "<b>Procurar</b> por subtextos, motivos ou  <b>Ameaça<b> s em uma situação ou pessoa, muitas vezes em situações sociais. Usar sua intuição para discernir a motivação de alguém, descobrir quem está realmente no comando ou quem está prestes a fazer algo precipitado ou estúpido. Ter um pressentimento sobre uma situação ou pessoa. Sentir se alguém está mentindo para você.",
+    "description": "<b>Procurar</b> por subtextos, motivos ou <b>Ameaças</b> em uma situação ou pessoa.",
+    "detail": "<b>Procurar</b> por subtextos, motivos ou <b>Ameaças</b> em uma situação ou pessoa, muitas vezes em situações sociais. Usar sua intuição para discernir a motivação de alguém, descobrir quem está realmente no comando ou quem está prestes a fazer algo precipitado ou estúpido. Ter um pressentimento sobre uma situação ou pessoa. Sentir se alguém está mentindo para você.",
     "family": "int"
   },
   {
     "id": "sk_show_off",
     "name": "Se Exibir",
-    "description": "Fazer algo chamativo, maneiro ou impressionante, geralmente – mas não exclusivamente – com sua arma.",
+    "description": "Fazer algo chamativo, maneiro ou impressionante, geralmente – mais não exclusivamente – com sua arma.",
     "detail": "Fazer algo chamativo, maneiro ou impressionante, geralmente (mas não exclusivamente) com sua arma, como atirar em um alvo muito pequeno ou em movimento rápido, atirar para tirar o chapéu de alguém ou a arma de sua mão, nocautear alguém jogando uma arma nele, realizar um floreio acrobático com uma espada, jogar uma lança para prender um alvo em fuga no chão, e assim por diante.",
     "family": "dex"
   },
   {
     "id": "sk_spot",
     "name": "Localizar",
-    "description": "Localizar detalhes, objetos ou pessoas que estão <b>Escondido</b>s ou difíceis de se ver.",
-    "detail": "Localizar detalhes, objetos ou pessoas <b>Escondido</b>s ou difíceis de ver. Notar emboscadas, compartimentos <b>Escondido</b>s ou indivíduos disfarçados. Espionar um alvo à distância, ou distinguir os detalhes, forma e número de objetos, veículos, mechas ou pessoas claramente à distância. Rastrear pessoas ou veículos.",
+    "description": "Localizar detalhes, objetos ou pessoas que estão <b>Escondidos</b> ou difíceis de se ver.",
+    "detail": "Localizar detalhes, objetos ou pessoas <b>Escondidos</b> ou difíceis de ver. Notar emboscadas, compartimentos <b>Escondidos</b> ou indivíduos disfarçados. Espionar um alvo à distância, ou distinguir os detalhes, forma e número de objetos, veículos, mechas ou pessoas claramente à distância. Rastrear pessoas ou veículos.",
     "family": "int"
   },
   {
@@ -142,8 +142,8 @@
   {
     "id": "sk_threaten",
     "name": "Ameaçar",
-    "description": "Usar força ou  <b>Ameaça<b> s para obrigar alguém a fazer o que você quer.",
-    "detail": "Usar força ou  <b>Ameaça<b> s de força para fazer alguém fazer o que você quer que ele faça. Diga o que você quer que alguém faça e o que você vai fazer com ele se não obedecer. Isso também pode ser chantagem, influência ou algo igualmente desagradável.  <b>Ameaça<b> r alguém pode ser de altíssimo risco, mas muito eficaz se bem-sucedido - de qualquer forma, provavelmente não há como reparar o relacionamento depois. Se você  <b>Ameaça<b> r alguém sem sucesso, suas  <b>Ameaça<b> s não terão mais efeito sobre ele, a menos que você mude algo na situação (como em todos os outros testes de perícia).",
+    "description": "Usar força ou ameaças para obrigar alguém a fazer o que você quer.",
+    "detail": "Usar força ou ameaças de força para fazer alguém fazer o que você quer que ele faça. Diga o que você quer que alguém faça e o que você vai fazer com ele se não obedecer. Isso também pode ser chantagem, influência ou algo igualmente desagradável. Ameaçar alguém pode ser de altíssimo risco, mas muito eficaz se bem-sucedido - de qualquer forma, provavelmente não há como reparar o relacionamento depois. Se você ameaçar alguém sem sucesso, suas ameaças não terão mais efeito sobre ele, a menos que você mude algo na situação (como em todos os outros testes de perícia).",
     "family": "str"
   },
   {

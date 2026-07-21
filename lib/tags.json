@@ -41,7 +41,7 @@
   {
     "id": "tg_arcing",
     "name": "Arco",
-    "description": "Esta arma pode ser disparada sobre obstáculos, geralmente lançando um projétil em um  <b>Arco<b> . Ataques feitos com esta arma não exigem linha de visão, desde que seja possível traçar um caminho para o alvo; no entanto, eles ainda são afetados pela cobertura."
+    "description": "Esta arma pode ser disparada sobre obstáculos, geralmente lançando um projétil em um <b>Arco</b>. Ataques feitos com esta arma não exigem linha de visão, desde que seja possível traçar um caminho para o alvo; no entanto, eles ainda são afetados pela cobertura."
   },
   {
     "id": "tg_ap",
@@ -56,7 +56,7 @@
   {
     "id": "tg_knockback",
     "name": "Repulsão {VAL}",
-    "description": "Em um acerto, o usuário pode escolher repulsar seu alvo {VAL} espaços em uma <b>Linha</b> reta diretamente para longe do ponto de origem (por exemplo, o mecha atacante ou o centro de uma <b>Explosão</b>). Múltiplos efeitos de  <b>Repulsão<b>  se acumulam. Isso significa que um ataque feito com uma arma com  <b>Repulsão<b>  1 e um talento que concede  <b>Repulsão<b>  1 conta como tendo  <b>Repulsão<b>  2."
+    "description": "Em um acerto, o usuário pode escolher repulsar seu alvo {VAL} espaços em uma <b>Linha</b> reta diretamente para longe do ponto de origem (por exemplo, o mecha atacante ou o centro de uma <b>Explosão</b>). Múltiplos efeitos de <b>Repulsão</b> se acumulam. Isso significa que um ataque feito com uma arma com <b>Repulsão</b> 1 e um talento que concede <b>Repulsão</b> 1 conta como tendo <b>Repulsão</b> 2."
   },
   {
     "id": "tg_loading",
@@ -76,12 +76,12 @@
   {
     "id": "tg_overshield",
     "name": "Blindagem",
-    "description": "Este sistema fornece PV que desaparecem no final da cena ou quando uma condição especificada é atendida. O usuário retém apenas o maior valor de  <b>Blindagem<b>  aplicado – ele não se acumula. Por exemplo, se um sistema fornecer  <b>Blindagem<b>  5 e o usuário ganhar outro efeito que forneça  <b>Blindagem<b>  7, ele terá  <b>Blindagem<b>  7. O <b>Dano</b> é causado primeiro à  <b>Blindagem<b> , depois aos PV. A  <b>Blindagem<b>  pode levar um personagem além de seus PV máximos. Ele não pode se beneficiar de cura, mas, de resto, se beneficia normalmente de qualquer coisa que afete PV e <b>Dano</b> (ou seja, redução, <b>Armadura</b>, etc.)."
+    "description": "Este sistema fornece PV que desaparecem no final da cena ou quando uma condição especificada é atendida. O usuário retém apenas o maior valor de <b>Blindagem</b> aplicado – ele não se acumula. Por exemplo, se um sistema fornecer <b>Blindagem</b> 5 e o usuário ganhar outro efeito que forneça <b>Blindagem</b> 7, ele terá <b>Blindagem</b> 7. O <b>Dano</b> é causado primeiro à <b>Blindagem</b>, depois aos PV. A <b>Blindagem</b> pode levar um personagem além de seus PV máximos. Ele não pode se beneficiar de cura, mas, de resto, se beneficia normalmente de qualquer coisa que afete PV e <b>Dano</b> (ou seja, redução, <b>Armadura</b>, etc.)."
   },
   {
     "id": "tg_reliable",
     "name": "Confiável {VAL}",
-    "description": "Esta arma tem algum grau de autocorreção ou é simplesmente poderosa o suficiente para causar <b>Dano</b> mesmo com um golpe de raspão. Ela sempre causa {VAL} de <b>Dano</b>, mesmo que erre o alvo ou role menos <b>Dano</b>. O <b>Dano</b>  <b>Confiável<b>  herda outras tags (como PF) e o tipo de <b>Dano</b> base, mas não tags que exigem um acerto, como Repelir."
+    "description": "Esta arma tem algum grau de autocorreção ou é simplesmente poderosa o suficiente para causar <b>Dano</b> mesmo com um golpe de raspão. Ela sempre causa {VAL} de <b>Dano</b>, mesmo que erre o alvo ou role menos <b>Dano</b>. O <b>Dano</b> <b>Confiável</b> herda outras tags (como PF) e o tipo de <b>Dano</b> base, mas não tags que exigem um acerto, como Repelir."
   },
   {
     "id": "tg_seeking",
@@ -91,7 +91,7 @@
   {
     "id": "tg_smart",
     "name": "Inteligente",
-    "description": "Esta arma possui Sistemas de autoguiagem, projéteis autopropelidos ou até munição nanorrobótica. Esses Sistemas são eficazes o suficiente para que seus ataques não possam ser simplesmente esquivados – eles devem ser embaralhados ou Bloqueados. Por causa disso, todos os ataques com esta arma – incluindo ataques corpo a corpo e à distância – usam a <b>Defesa-E</b> do alvo em vez da <b>Evasão</b>. Alvos sem <b>Defesa-E</b> contam como tendo 8 de <b>Defesa-E</b>."
+    "description": "Esta arma possui sistemas de autoguiagem, projéteis autopropelidos ou até munição nanorrobótica. Esses sistemas são eficazes o suficiente para que seus ataques não possam ser simplesmente esquivados – eles devem ser embaralhados ou Bloqueados. Por causa disso, todos os ataques com esta arma – incluindo ataques corpo a corpo e à distância – usam a <b>Defesa-E</b> do alvo em vez da <b>Evasão</b>. Alvos sem <b>Defesa-E</b> contam como tendo <b>8 de Defesa-E</b>."
   },
   {
     "id": "tg_threat",
@@ -120,8 +120,8 @@
   },
   {
     "id": "tg_danger_zone",
-    "name": "<b>Zona de Perigo<b> ",
-    "description": "Este sistema, talento ou arma só pode ser usado se o usuário estiver na <b>Zona de Perigo<b>  (<b>Calor</b> igual a pelo menos metade de sua <b>Cap. de Calor</b>)."
+    "name": "<b>Zona de Perigo</b>",
+    "description": "Este sistema, talento ou arma só pode ser usado se o usuário estiver na <b>Zona de Perigo</b> (<b>Calor</b> igual a pelo menos metade de sua <b>Cap. de Calor</b>)."
   },
   {
     "id": "tg_deployable",
@@ -136,7 +136,7 @@
   {
     "id": "tg_full_action",
     "name": "Ação Completa",
-    "description": "Este sistema requer uma ação completa para ATIVAR."
+    "description": "Este sistema requer uma ação completa para Ativar."
   },
   {
     "id": "tg_grenade",
@@ -151,7 +151,7 @@
   {
     "id": "tg_limited",
     "name": "Limitado {VAL}",
-    "description": "Esta arma ou sistema só pode ser usado {VAL} vezes antes de precisar de um Reparo COMPLETO. Alguns Sistemas Limitados, como Granadas, descrevem esses usos como '<b>Cargas<b>.'. Para usar o sistema, o usuário gasta uma carga."
+    "description": "Esta arma ou sistema só pode ser usado {VAL} vezes antes de precisar de um Reparo C. Alguns Sistemas Limitados, como Granadas, descrevem esses usos como '<b>Cargas</b>'. Para usar o sistema, o usuário gasta uma carga."
   },
   {
     "id": "tg_mine",
@@ -171,7 +171,7 @@
   {
     "id": "tg_quick_action",
     "name": "Ação Rápida",
-    "description": "Este sistema requer uma ação rápida para ATIVAR."
+    "description": "Este sistema requer uma ação rápida para Ativar."
   },
   {
     "id": "tg_reaction",
@@ -181,7 +181,7 @@
   {
     "id": "tg_shield",
     "name": "Escudo",
-    "description": "Este sistema é um escudo de <b>Energia</b> de algum tipo."
+    "description": "Este sistema é um escudo de energia de algum tipo."
   },
   {
     "id": "tg_unique",
@@ -253,13 +253,13 @@
   {
     "id": "tg_exotic",
     "name": "Equipamento Exótico",
-    "description": "EQUIPAMENTO EXÓTICO é uma tag geral para equipamentos que existem fora do sistema de licenciamento tradicional.",
+    "description": "Equipamento Exótico é uma tag geral para equipamentos que existem fora do sistema de licenciamento tradicional.",
     "filter_ignore": true
   },
   {
     "id": "tg_recharge",
     "name": "<b>Recarregar</b> {VAL}+",
-    "description": "Uma vez que este sistema ou arma tenha sido usado, ele não pode ser usado novamente até ser recarregado. No início do turno deste PNJ, role 1d6: se o resultado for igual ou maior que {VAL}, o equipamento pode ser usado novamente. Apenas uma rolagem é necessária para cada PNJ, mesmo que um PNJ tenha múltiplos Sistemas ou armas com <b>Recarga<b>. Se este PNJ tiver dois Sistemas de <b>Recarga<b> com números-alvo de 4+ e 5+, uma rolagem de 5 <b>Recarregar</b>á ambos.",
+    "description": "Uma vez que este sistema ou arma tenha sido usado, ele não pode ser usado novamente até ser recarregado. No início do turno deste PNJ, role 1d6: se o resultado for igual ou maior que {VAL}, o equipamento pode ser usado novamente. Apenas uma rolagem é necessária para cada PNJ, mesmo que um PNJ tenha múltiplos Sistemas ou armas com <b>Recarga</b>. Se este PNJ tiver dois Sistemas de <b>Recarga</b> com números-alvo de 4+ e 5+, uma rolagem de 5 <b>Recarregará</b> ambos.",
     "filter_ignore": true
   },
   {
@@ -295,25 +295,25 @@
   {
     "id": "tg_set_max_uses",
     "name": "Definir Usos Máximos",
-    "description": "Permite ao jogador definir o número máximo de usos para este equipamento (TAG OCULTA).",
+    "description": "Permite ao jogador definir o número máximo de usos para este equipamento.",
     "hidden": true
   },
   {
     "id": "tg_set_damage_type",
     "name": "Definir Tipo de Dano",
-    "description": "Permite ao jogador definir o tipo de <b>Dano</b> para este equipamento (TAG OCULTA).",
+    "description": "Permite ao jogador definir o tipo de <b>Dano</b> para este equipamento.",
     "hidden": true
   },
   {
     "id": "tg_set_damage_value",
     "name": "Definir Valor do Dano",
-    "description": "Permite ao jogador definir o valor do <b>Dano</b> para este equipamento (TAG OCULTA).",
+    "description": "Permite ao jogador definir o valor do <b>Dano</b> para este equipamento.",
     "hidden": true
   },
   {
     "id": "tg_no_cascade",
     "name": "Previne Cascata",
-    "description": "Proíbe um sistema de IA de ser reconhecido como um alvo válido para Cascata (TAG OCULTA).",
+    "description": "Proíbe um sistema de IA de ser reconhecido como um alvo válido para Cascata.",
     "hidden": true
   }
 ]

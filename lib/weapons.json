@@ -251,7 +251,7 @@
   {
     "id": "mw_missile_rack",
     "name": "Caixa de Mísseis",
-    "mount": "<br>Auxiliar</b>y",
+    "mount": "Auxiliary",
     "type": "Launcher",
     "damage": [
       {
@@ -346,7 +346,7 @@
   {
     "id": "mw_nexus_light",
     "name": "Nexo (Leve)",
-    "mount": "<br>Auxiliar</b>y",
+    "mount": "Auxiliary",
     "type": "Nexus",
     "damage": [
       {
@@ -374,7 +374,7 @@
   {
     "id": "mw_pistol",
     "name": "Pistola CQR",
-    "mount": "<br>Auxiliar</b>y",
+    "mount": "Auxiliary",
     "type": "CQB",
     "damage": [
       {
@@ -407,7 +407,7 @@
   {
     "id": "mw_segment_knife",
     "name": "Faca Segmentada",
-    "mount": "<br>Auxiliar</b>y",
+    "mount": "Auxiliary",
     "type": "Melee",
     "damage": [
       {
@@ -497,7 +497,7 @@
   {
     "id": "mw_tactical_knife",
     "name": "Faca Tática",
-    "mount": "<br>Auxiliar</b>y",
+    "mount": "Auxiliary",
     "type": "Melee",
     "damage": [
       {
@@ -578,7 +578,7 @@
   {
     "id": "mw_thermal_pistol",
     "name": "Pistola Térmica",
-    "mount": "<br>Auxiliar</b>y",
+    "mount": "Auxiliary",
     "type": "CQB",
     "damage": [
       {
@@ -659,7 +659,7 @@
   {
     "id": "mw_bristlecrown_flechette_launcher",
     "name": "Lançador de Flechete Coroa",
-    "mount": "<br>Auxiliar</b>y",
+    "mount": "Auxiliary",
     "type": "CQB",
     "damage": [
       {
@@ -893,7 +893,7 @@
   {
     "id": "mw_cutter_mkii_plasma_torch",
     "name": "Tocha de Plasma Cortadora Mk II",
-    "mount": "<br>Auxiliar</b>y",
+    "mount": "Auxiliary",
     "type": "Melee",
     "damage": [
       {
@@ -964,7 +964,7 @@
   {
     "id": "mw_power_knuckles",
     "name": "Punhos de Poder",
-    "mount": "<br>Auxiliar</b>y",
+    "mount": "Auxiliary",
     "type": "Melee",
     "damage": [
       {
@@ -988,7 +988,7 @@
   {
     "id": "mw_hand_cannon",
     "name": "Canhão de Mão",
-    "mount": "<br>Auxiliar</b>y",
+    "mount": "Auxiliary",
     "type": "CQR",
     "damage": [
       {
@@ -1462,7 +1462,7 @@
   {
     "id": "mw_shock_knife",
     "name": "Faca de Choque",
-    "mount": "<br>Auxiliar</b>y",
+    "mount": "Auxiliary",
     "type": "Melee",
     "damage": [
       {
@@ -1600,7 +1600,7 @@
   {
     "id": "mw_fold_knife",
     "name": "Faca Dobrável",
-    "mount": "<br>Auxiliar</b>y",
+    "mount": "Auxiliary",
     "type": "Melee",
     "damage": [
       {
@@ -1629,7 +1629,7 @@
   {
     "id": "mw_vijaya_rockets",
     "name": "Foguetes Vijaya",
-    "mount": "<br>Auxiliar</b>y",
+    "mount": "Auxiliary",
     "type": "Launcher",
     "damage": [
       {
@@ -1686,7 +1686,7 @@
   {
     "id": "mw_oracle_lmg_i",
     "name": "ML-I Oráculo",
-    "mount": "<br>Auxiliar</b>y",
+    "mount": "Auxiliary",
     "type": "Rifle",
     "damage": [
       {
@@ -1983,7 +1983,7 @@
   {
     "id": "mw_catalyst_pistol",
     "name": "Pistola Catalisadora",
-    "mount": "<br>Auxiliar</b>y",
+    "mount": "Auxiliary",
     "type": "CQB",
     "damage": [
       {
@@ -2290,7 +2290,7 @@
   {
     "id": "mw_stub_cannon",
     "name": "Canhão Toco",
-    "mount": "<br>Auxiliar</b>y",
+    "mount": "Auxiliary",
     "type": "Cannon",
     "damage": [
       {
@@ -2817,7 +2817,7 @@
     "type": "Spool Weapon",
     "skirmish": false,
     "barrage": false,
-    "effect": "O Canhão do Apocalipse deve ser carregado antes de poder ser disparado, usando o Poder de Núcleo Carregar Canhão.<br>Esta arma tem perfis diferentes determinados pelo valor atual do DADO DE APOCALIPSE quando você a dispara. Cada perfil substitui o anterior. O Canhão do Apocalipse não pode ser disparado contra alvos a até <b>Alcance 5</b>.<br>Depois de um ataque com o Canhão do Apocalipse, o Dado de Apocalipse reinicia para 4.",
+    "effect": "O Canhão do Apocalipse deve ser carregado antes de poder ser disparado, usando o Poder de Núcleo 'Carregar Canhão'.<br>Esta arma tem perfis diferentes determinados pelo valor atual do DADO DE APOCALIPSE quando você a dispara. Cada perfil substitui o anterior. O Canhão do Apocalipse não pode ser disparado contra alvos a até <b>Alcance 5</b>.<br>Depois de um ataque com o Canhão do Apocalipse, o Dado de Apocalipse reinicia para 4.",
     "actions": [
       {
         "name": "Disparar Canhão do Apocalipse",

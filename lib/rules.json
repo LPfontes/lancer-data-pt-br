@@ -22,22 +22,22 @@
   "max_mech_armor": 4,
   "max_hase": 6,
   "mount_fittings": {
-    "<br>Auxiliar</b>y": [
-      "<br>Auxiliar</b>y"
+    "Auxiliary": [
+      "Auxiliary"
     ],
     "Main": [
       "Main",
-      "<br>Auxiliar</b>y"
+      "Auxiliary"
     ],
     "Flex": [
       "Main",
-      "<br>Auxiliar</b>y"
+      "Auxiliary"
     ],
     "Heavy": [
       "Superheavy",
       "Heavy",
       "Main",
-      "<br>Auxiliar</b>y"
+      "Auxiliary"
     ]
   },
   "overcharge": [
