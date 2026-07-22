@@ -3841,7 +3841,7 @@
   },
   {
     "id": "ms_total_strength_suite_i",
-    "name": "Conjunto de Força Total I",
+    "name": "Pacote de Força Total I",
     "type": "System",
     "sp": 1,
     "source": "IPS-N",
@@ -3859,7 +3859,7 @@
   },
   {
     "id": "ms_total_strength_suite_ii",
-    "name": "Conjunto de Força Total II",
+    "name": "Pacote de Força Total II",
     "type": "System",
     "sp": 2,
     "tags": [
@@ -3882,7 +3882,7 @@
   },
   {
     "id": "ms_total_strength_suite_iii",
-    "name": "Conjunto de Força Total III",
+    "name": "Pacote de Força Total III",
     "type": "System",
     "sp": 3,
     "source": "IPS-N",
@@ -3900,7 +3900,7 @@
   },
   {
     "id": "ms_multi_gear_maneuver_system",
-    "name": "Sistema de Manobra Multi-Engrenagem",
+    "name": "Sistema de Manobras Multiuso",
     "type": "System",
     "sp": 1,
     "tags": [
@@ -3915,10 +3915,10 @@
       {
         "name": "Disparar Tirolesa",
         "activation": "Quick",
-        "detail": "Você dispara uma tirolesa de 8 espaços de comprimento que conecta 2 espaços livres na linha de visão."
+        "detail": "Você dispara uma tirolesa de 8 espaços de comprimento que conecta 2 espaços livres na sua linha de visão, sendo que um deles deve estar adjacente a você. Ambas as extremidades devem ser presas a uma superfície, como uma parede ou chão. Ela é ativada no final do seu turno com os seguintes benefícios:<br>• Um personagem de <b>TAMANHO 1/2</b> que esteja adjacente a qualquer uma das extremidades da linha pode se mover até a outra extremidade como uma ação rápida, desde que consiga se segurar nela. Se quiser, ele pode saltar para fora em qualquer ponto ao longo do caminho.<br>• Sempre que um personagem de <b>TAMANHO 1</b> ou maior cruzar o espaço ocupado pela tirolesa pela primeira vez em uma rodada ou começar seu turno dentro dele, deve obter sucesso em um teste de <b>AGILIDADE</b> ou fica <b>PROSTRADO</b>.<br>Qualquer personagem adjacente ao início ou fim da tirolesa pode derrubá-la ao obter sucesso em um teste de <b>CASCO</b> como uma ação rápida ou ao obter sucesso em um ataque corpo a corpo contra uma das extremidades. A linha tem 1 PV e <b>EVASÃO 10</b>. Destruir a tirolesa dessa forma não destrói este sistema. Caso contrário, ela dura até que você use este sistema novamente."
       }
     ],
-    "description": "Usado por caçadores Sparri para transpor as vastas fendas na camada de gelo que cobre seu mundo.",
+    "description": "Usado por caçadores sparri para cruzar os vastos vãos das calotas de gelo que cobrem seu mundo, este sistema é muito procurado por destemidos e loucos por adrenalina em todo o planeta.",
     "license_id": "mf_atlas"
   },
   {
@@ -3942,15 +3942,15 @@
       {
         "name": "Jäger Kunst I",
         "activation": "Protocol",
-        "detail": "Pelo resto do turno, qualquer momento em que se mover para adjacente a um objeto ou peça de terreno maior que você, mova-se 2 espaços como ação livre."
+        "detail": "Pelo restante do turno, sempre que você se mover para ficar adjacente a um objeto ou elemento de terreno independente maior que você, mova-se 2 espaços em qualquer direção como uma ação livre, ignorando engajamento e reações — correndo, rolando ou deslizando ao redor.<br>Você pode fazer isso várias vezes por turno, mas apenas uma vez para cada objeto ou elemento de terreno."
       }
     ],
-    "description": "Baseado em artes marciais de trajes rígidos, Jäger Kunst eleva os movimentos além dos parâmetros humanos.",
+    "description": "Baseado em artes marciais antigas que usavam Trajes Reforçados, o Jäger Kunst eleva essa forma de combate além dos parâmetros humanos, permitindo ações e movimentos mais rápidos do que o pensamento. Muitos trajes Atlas podem ser impressos com um conjunto de formas de combate já habilitadas, embora permitir que o chassi execute esses movimentos sem que o usuário os aprenda antes possa levar a lesões autoinfligidas catastróficas.",
     "license_id": "mf_atlas"
   },
   {
     "id": "ms_ricochet_blades",
-    "name": "Lâminas Ricocheteantes",
+    "name": "Lâminas Ricochete",
     "type": "System",
     "sp": 3,
     "tags": [
@@ -3967,12 +3967,12 @@
     "license_level": 2,
     "actions": [
       {
-        "name": "Arremessar Lâmina Ricocheteante",
+        "name": "Arremessar Lâmina Ricochete",
         "activation": "Quick",
-        "detail": "Como uma ação rápida, você arremessa uma lâmina ricocheteante ao longo de uma linha 3, causando 2 de dano cinético a todos os personagens afetados."
+        "detail": "Como ação rápida, você lança uma lâmina ricochete ao longo de um caminho de <b>Linha 3</b>, causando 2 de <b>Dano Cinético</b> a todos os personagens dentro da área afetada. Se a linha inicial atingir um elemento de terreno ou objeto de <b>TAMANHO 1</b> ou maior, desenhe outro caminho de <b>Linha 3</b> a partir desse objeto em uma nova direção que não sobreponha o objeto de onde ricocheteou. Personagens dentro da área afetada devem obter sucesso em um teste de <b>AGILIDADE</b> ou sofrem 1d6+3 de <b>Dano Cinético</b>."
       }
     ],
-    "description": "Estes discos afiados foram projetados e produzidos pelo enclave de lâminas Toledo da SSC.",
+    "description": "Essas lâminas em forma de disco são projetadas, produzidas e acabadas à mão pelo enclave de lâminas de Toledo da SSC. O material é flexível o suficiente para ricochetear ao atingir superfícies, mas afiado a ponto de cortar ossos e metal. Diferente das armas cortantes produzidas pelo mais restritivo enclave de Terashima, o enclave de Toledo cria essas lâminas com a expectativa de que sejam usadas e descartadas. Isso não impacta sua qualidade, mas pode levar à escassez de suprimentos de vez em quando — essa exclusividade é intencional. Devido à sua raridade comparativa, os discos de Toledo são frequentemente usados como moeda pelos espadas sparri; seu uso em combate ou caça é um símbolo de posição social.",
     "license_id": "mf_atlas"
   },
   {
@@ -3992,21 +3992,22 @@
     "source": "SSC",
     "license": "Atlas",
     "license_level": 3,
+    "effect": "Ganhe a reação <b>Confronto Fatal</b>.",
     "actions": [
       {
         "name": "Confronto Fatal",
         "activation": "Reaction",
         "frequency": "1/round",
-        "trigger": "Você recebe ou causa dano em um ataque corpo a corpo",
-        "detail": "Você e seu alvo fazem um teste resistido de Casco ou Agilidade. O perdedor cai Prostrado e sofre 1d6 de dano cinético."
+        "trigger": "Você sofre dano de um ataque corpo a corpo ou causa dano com um ataque corpo a corpo",
+        "detail": "Após o dano ser resolvido, você e seu alvo devem realizar uma rolagem disputada de <b>CASCO</b> ou <b>AGILIDADE</b> (cada parte escolhe qual rolar). O perdedor fica <b>PROSTRADO</b>, sofre 1d6 de <b>Dano Cinético</b> e é empurrado 3 espaços em uma direção escolhida pelo vencedor. O vencedor pode então se mover 3 espaços em qualquer direção, ignorando engajamento e sem provocar reações. O perdedor pode imediatamente sofrer 2 de <b>Dano Cinético PA</b> para forçar uma nova rolagem disputada. Esse dano não pode ser prevenido ou reduzido de nenhuma maneira.<br>Se o resultado for um empate, a disputa termina imediatamente. Caso contrário, a disputa continua até que um personagem perca sem forçar uma nova rolagem ou sofra dano de estrutura, momento em que ele perde imediatamente."
       }
     ],
-    "description": "Chassis Atlas avançados contêm memórias musculares incorporadas de mestres de Jäger Kunst.",
+    "description": "Os mais raros dos chassis Atlas podem ser impressos com as memórias musculares incorporadas dos mestres de Jäger Kunst: antigos sparri e outros que dedicaram suas vidas à sua arte marcial. A SSC não recomenda o uso desses sistemas incorporados sem o devido condicionamento físico, e não liberará esses programas para pilotos não qualificados.",
     "license_id": "mf_atlas"
   },
   {
     "id": "ms_hardpoint_reinforcement",
-    "name": "Reforço de Pontos de Ancoragem",
+    "name": "Reforço de Suporte",
     "type": "Shield",
     "sp": 2,
     "tags": [
@@ -4017,13 +4018,13 @@
     "source": "IPS-N",
     "license": "Caliban",
     "license_level": 2,
-    "effect": "Enquanto não estiver Lento ou Imobilizado, você ganha Resistência a todo dano durante seu turno.",
-    "description": "Desenvolvido no projeto Titan-Enceladus da EIP-EN para reforçar a integridade estrutural.",
+    "effect": "Enquanto você não estiver <b>LENTO</b> ou <b>IMOBILIZADO</b>, você ganha <b>RESISTÊNCIA</b> a todo dano durante o seu turno.",
+    "description": "Também desenvolvido no Projeto de Campo Titã-Encélado da EIP-EN, os sistemas de reforço de suporte aumentam ainda mais a robustez dos chassis, garantindo um melhoramento geral no tempo-para-eliminar (TPE) do Calibã.",
     "license_id": "mf_caliban"
   },
   {
     "id": "ms_spike_charges",
-    "name": "Cargas de Estacas",
+    "name": "Cargas de Espinho",
     "type": "Deployable",
     "sp": 2,
     "tags": [
@@ -4043,12 +4044,26 @@
     "license_level": 2,
     "actions": [
       {
-        "name": "Granada de Estaca",
+        "name": "Granada de Espinho",
         "activation": "Quick",
-        "detail": "Arremesse uma Granada de Estaca em um alvo a até Alcance 5."
+        "detail": "Arremesse uma Granada de Espinho em um alvo a até <b>ALCANCE 5</b>. O alvo deve obter sucesso em um salvamento de <b>AGILIDADE</b>, ou a granada se fixa nele e se arma automaticamente. Ela se fixa automaticamente em objetos. No início ou final de qualquer turno, enquanto uma granada de espinho estiver presa, você pode detonar todas elas como uma reação. Personagens atingidos sofrem 1d6+3 de <b>Dano Cinético</b> e são arremessados 3 espaços em uma direção à sua escolha, enquanto objetos apenas sofrem o dano. Personagens podem remover granadas de espinho ao serem bem-sucedidos em um salvamento de <b>AGILIDADE</b> como uma ação rápida em seu turno. Todas as granadas se soltam no final da cena."
       }
     ],
-    "description": "Dispositivos carregados com dezenas de estacas projetadas para perfurar blindagens.",
+    "deployables": [
+      {
+        "name": "Mina de Espinho",
+        "activation": "Quick",
+        "type": "Mine",
+        "range": [
+          {
+            "type": "Burst",
+            "val": 2
+          }
+        ],
+        "detail": "Uma vez ativada, personagens na área afetada de <b>Explosão 2</b> devem obter sucesso em um salvamento de <b>AGILIDADE</b> ou uma granada de espinho se fixa neles, conforme descrito acima."
+      }
+    ],
+    "description": "Originalmente projetadas como uma variante de carga para o Martelo LU-PR, as cargas de espinho contêm dezenas de flechetes endurecidos, projetados para girar, ricochetear e perfurar após a detonação da cápsula, dilacerando carne e alvos desprotegidos com puro torque. Como uma carga para granadas de impacto e minas de ativação por proximidade, essas armas encontraram seu primeiro uso em combates de gravidade micro/0, onde naves e unidades descontroladas podiam se transformar em mísseis. Em combates sob gravidade, esse sistema é menos letal, mas não menos caótico.",
     "license_id": "mf_caliban"
   },
   {
@@ -4071,8 +4086,16 @@
     "source": "IPS-N",
     "license": "Caliban",
     "license_level": 3,
-    "effect": "1/rodada, ao Impulsionar, você voa, ganha Sobre-escudo 3 e ignora engajamento.",
-    "description": "Miniaturização dos propulsores da EIP-EN para manobras de alta velocidade.",
+    "effect": "1/rodada, quando você <b>IMPULSIONAR</b>, você voa, ganha <b>BLINDAGEM 3</b> (Sobre-escudo 3), ignora engajamento e pode atravessar espaços ocupados por personagens maiores que você (mas não pode terminar seu turno nesses espaços). Você deve terminar esse movimento em um espaço no qual possa se manter de pé, caso contrário, você cai.",
+    "synergies": [
+      {
+        "locations": [
+          "boost"
+        ],
+        "detail": "1/rodada, quando você <b>IMPULSIONAR</b>, você voa, ganha <b>BLINDAGEM 3</b>, ignora engajamento e pode atravessar espaços ocupados por personagens maiores que você (mas não pode terminar seu turno nesses espaços). Você deve terminar esse movimento em um espaço no qual possa se manter de pé, caso contrário, você cai."
+      }
+    ],
+    "description": "Ao refinar e miniaturizar ainda mais o sistema Investida a Jato da EIP-EN, o novo pacote de volatilidade de chassi JMR expande os limites de controle do chassi, garantindo que seu piloto mantenha uma mobilidade aprimorada sem comprometer o ritmo. Esse controle, combinado com um aumento bruto na velocidade, torna qualquer chassi significativamente mais difícil de ser atingido com sucesso.",
     "license_id": "mf_caliban"
   },
   {
@@ -4107,6 +4130,344 @@
       }
     ],
     "description": "Uma arma sísmica direcional desenvolvida a partir de cargas de mineração.",
+    "license_id": "mf_kobold"
+  },
+  {
+    "id": "ms_accelerate",
+    "name": "Acelerar",
+    "type": "Tech",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "HA",
+    "license": "Sunzi",
+    "license_level": 1,
+    "effect": "<b>Programar Rápido</b><br>Escolha e marque dois espaços livres dentro da sua linha de visão que compartilhem uma superfície e estejam a até <b>Alcance 15</b> um do outro. Personagens que começarem o próprio turno em um desses espaços, ou que entrarem nele pela primeira vez em uma rodada, são empurrados em linha reta o máximo possível em direção ao outro espaço. Se colidirem com uma obstrução, param de se mover. Eles podem evitar ser empurrados sendo bem-sucedidos em um salvamento de <b>CASCO</b>. GRANADAS, POSICIONÁVEIS ou outros objetos soltos de <b>TAMANHO 1</b> ou menor que sejam jogados ou implantados em um dos espaços também são empurrados em direção ao outro espaço antes de ativar ou detonar. Eles ativam ou detonam imediatamente se forem forçados a parar por outro personagem ou objeto no caminho. Esse efeito dura até o final da cena, ou até você escolher esta opção de <b>PROGRAMAR RÁPIDO</b> novamente.",
+    "actions": [
+      {
+        "name": "Acelerar",
+        "activation": "Quick Tech",
+        "detail": "Escolha e marque dois espaços livres dentro da sua linha de visão que compartilhem uma superfície e estejam a até <b>Alcance 15</b> um do outro. Personagens que começarem o próprio turno em um desses espaços, ou que entrarem nele pela primeira vez em uma rodada, são empurrados em linha reta o máximo possível em direção ao outro espaço. Se colidirem com uma obstrução, param de se mover. Eles podem evitar ser empurrados sendo bem-sucedidos em um salvamento de <b>CASCO</b>. GRANADAS, POSICIONÁVEIS ou outros objetos soltos de <b>TAMANHO 1</b> ou menor que sejam jogados ou implantados em um dos espaços também são empurrados em direção ao outro espaço antes de ativar ou detonar. Eles ativam ou detonam imediatamente se forem forçados a parar por outro personagem ou objeto no caminho. Esse efeito dura até o final da cena, ou até você escolher esta opção de <b>PROGRAMAR RÁPIDO</b> novamente."
+      }
+    ],
+    "description": "Guillermo, no es suficiente saber caminar; Debes saber dónde y dónde no pisar. El lugar incorrecto, y te perderás. Es en un plano de telaraña donde construimos nuestro hogar: pise ligeramente cuando vaya.<br>[Guillermo, não basta saber caminhar; você deve saber onde e onde não pisar. No lugar errado, e você se perderá. É num plano de teia que construímos nosso lar: pise levemente ao caminhar.]",
+    "license_id": "mf_sunzi"
+  },
+  {
+    "id": "ms_blink_charges",
+    "name": "Cargas de Lampejo",
+    "type": "Deployable",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_grenade"
+      }
+    ],
+    "source": "HA",
+    "license": "Sunzi",
+    "license_level": 1,
+    "effect": "Gaste uma carga para um dos seguintes efeitos:<br>• <b>Mina de Lampejo</b> (Mina): Quando detonada, o personagem que a acionou deve obter sucesso em um salvamento de <b>ENGENHARIA</b> ou é teletransportado para um espaço livre e válido à sua escolha a até <b>Alcance 5</b> da mina e fica <b>BLOQUEADO</b> até o final do próximo turno dele. Se bem-sucedido, ainda se teletransporta, mas não fica <b>BLOQUEADO</b>.<br>• <b>Granada de Dobra</b> (Granada, <b>Alcance 5</b>, <b>Explosão 3</b>): No impacto, escolha qualquer personagem dentro da área afetada e o teletransporte para qualquer espaço livre e válido dentro da mesma área. Um personagem relutante deve obter sucesso em um salvamento de <b>ENGENHARIA</b> para evitar esse efeito.",
+    "deployables": [
+      {
+        "name": "Mina de Lampejo",
+        "type": "Mine",
+        "detail": "Quando detonada, o personagem que a acionou deve obter sucesso em um salvamento de <b>ENGENHARIA</b> ou é teletransportado para um espaço livre e válido à sua escolha a até <b>Alcance 5</b> da mina e fica <b>BLOQUEADO</b> até o final do próximo turno dele. Se bem-sucedido, ainda se teletransporta, mas não fica <b>BLOQUEADO</b>."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Granada de Dobra",
+        "activation": "Quick",
+        "detail": "No impacto, escolha qualquer personagem dentro da área afetada e o teletransporte para qualquer espaço livre e válido dentro da mesma área. Um personagem relutante deve obter sucesso em um salvamento de <b>ENGENHARIA</b> para evitar esse efeito."
+      }
+    ],
+    "description": "Eso es lo que no se suena: usar el vacio contra la Ley de la Madre. Marcamos esta en nuestro historia con lagrimas, y ennegrecer la pagina.<br>[Isso é o impensável: usar o vazio contra a Lei da Mãe. Com lágrimas, marcamos sua necessidade em nossa história, e depois escurecemos a página.]",
+    "license_id": "mf_sunzi"
+  },
+  {
+    "id": "ms_blinkspace_tunneler",
+    "name": "Túnel de Espaço Lampejo",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      }
+    ],
+    "source": "HA",
+    "license": "Sunzi",
+    "license_level": 2,
+    "effect": "<b>Protocolo</b><br>Você abre uma fenda de dobra em um espaço livre adjacente. Ela dura até o final do seu próximo turno. Como parte de qualquer movimento, personagens (hostis ou aliados) que entrarem parcial ou totalmente no espaço podem se teletransportar para um espaço livre adjacente a você. Você só pode abrir uma fenda por vez; se criar uma nova, ela substitui a anterior.",
+    "actions": [
+      {
+        "name": "Túnel de Espaço Lampejo",
+        "activation": "Protocol",
+        "detail": "Você abre uma fenda de dobra em um espaço livre adjacente. Ela dura até o final do seu próximo turno. Como parte de qualquer movimento, personagens (hostis ou aliados) que entrarem parcial ou totalmente no espaço podem se teletransportar para um espaço livre adjacente a você. Você só pode abrir uma fenda por vez; se criar uma nova, ela substitui a anterior."
+      }
+    ],
+    "description": "MEMO (TT_AUTORIZAÇÃO_01) (01200): VAI FICAR REALMENTE MUITO, MUITO ESCURO.",
+    "license_id": "mf_sunzi"
+  },
+  {
+    "id": "ms_unravel",
+    "name": "Segredo Final",
+    "type": "Tech",
+    "sp": 2,
+    "tags": [],
+    "source": "HA",
+    "license": "Sunzi",
+    "license_level": 3,
+    "effect": "<b>Programar Rápido</b><br>Escolha a você mesmo ou outro personagem dentro de <b>SENSORES</b> e na linha de visão. Seu alvo é carregado com energia instável até o início do seu próximo turno. Um personagem relutante ou hostil pode ignorar este efeito ao obter sucesso em um salvamento de <b>ENGENHARIA</b>.<br>Cada vez que seu alvo sofrer dano durante essa duração, você pode teletransportá-lo até 4 espaços para um espaço livre e válido à sua escolha como uma reação.",
+    "actions": [
+      {
+        "name": "Segredo Final",
+        "activation": "Quick Tech",
+        "detail": "Escolha a você mesmo ou outro personagem dentro de <b>SENSORES</b> e na linha de visão. Seu alvo é carregado com energia instável até o início do seu próximo turno. Um personagem relutante ou hostil pode ignorar este efeito ao obter sucesso em um salvamento de <b>ENGENHARIA</b>.<br>Cada vez que seu alvo sofrer dano durante essa duração, você pode teletransportá-lo até 4 espaços para um espaço livre e válido à sua escolha como uma reação."
+      }
+    ],
+    "description": "Dicen: \"Cuéntanos el secreto de tu larga vida, o abriremos la puerta de tu hogar a todo el mundo\".<br>Nosotros decimos: “Para vivir una larga vida, vives una larga vida. No tenemos secretos, todo lo que tenemos es el conocimiento que deseamos ocultarle. Por favor no hagas esto; tu no sabes nada.\"<br>[Dizem: “Conte-nos o segredo de sua longa vida, ou abriremos amplamente nossa porta e deixaremos entrar aqueles que mantemos afastados de suas terras seguras.”<br>Nós dizemos: “Para viver uma longa vida, vive-se uma longa vida. Não temos segredos, tudo o que temos é conhecimento que desejamos manter longe de vocês.”]",
+    "license_id": "mf_sunzi"
+  },
+  {
+    "id": "ms_distort",
+    "name": "Brecha no Espaço Real",
+    "type": "Tech",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "HA",
+    "license": "Sunzi",
+    "license_level": 3,
+    "effect": "<b>Programar Rápido</b><br>Você rasga um buraco no espaço, criando uma área <b>Explosão 1</b> em um espaço livre dentro de <b>SENSORES</b> e na linha de visão. Armas com as propriedades explosão, linha, emanação ou cone não afetam essa área, e ela não pode ser ocupada por personagens ou objetos por qualquer motivo. Qualquer personagem ou objeto que se mova pelo menos 1 espaço para dentro da área afetada é imediatamente teletransportado para qualquer espaço livre adjacente à área (à escolha do jogador), ou para o mais próximo possível.<br>A área afetada bloqueia linha de visão; no entanto, qualquer personagem pode mirar no buraco no espaço com uma arma de ataque à distância (excluindo armas com explosão, linha, emanação ou cone), como se o atacasse diretamente. Os atacantes não fazem uma rolagem de ataque contra o buraco — em vez disso, o buraco absorve o ataque e o redireciona contra um novo alvo escolhido pelo atacante a até <b>Alcance 10</b> da zona. O ataque é resolvido como se tivesse se originado de dentro do buraco.<br>Esse efeito dura até o final da cena, até você realizar esta ação novamente ou encerrá-la como uma ação rápida, o que ocorrer primeiro.",
+    "actions": [
+      {
+        "name": "Brecha no Espaço Real",
+        "activation": "Quick Tech",
+        "detail": "Você rasga um buraco no espaço, criando uma área <b>Explosão 1</b> em um espaço livre dentro de <b>SENSORES</b> e na linha de visão. Armas com as propriedades explosão, linha, emanação ou cone não afetam essa área, e ela não pode ser ocupada por personagens ou objetos por qualquer motivo. Qualquer personagem ou objeto que se mova pelo menos 1 espaço para dentro da área afetada é imediatamente teletransportado para qualquer espaço livre adjacente à área (à escolha do jogador), ou para o mais próximo possível.<br>A área afetada bloqueia linha de visão; no entanto, qualquer personagem pode mirar no buraco no espaço com uma arma de ataque à distância (excluindo armas com explosão, linha, emanação ou cone), como se o atacasse diretamente. Os atacantes não fazem uma rolagem de ataque contra o buraco — em vez disso, o buraco absorve o ataque e o redireciona contra um novo alvo escolhido pelo atacante a até <b>Alcance 10</b> da zona. O ataque é resolvido como se tivesse se originado de dentro do buraco.<br>Esse efeito dura até o final da cena, até você realizar esta ação novamente ou encerrá-la como uma ação rápida, o que ocorrer primeiro."
+      }
+    ],
+    "description": "Dicen: \"Incluso es difícil de ver en este lugar\". Decimos: \"Usted tiene razón. Es porque este lugar no te quiere aquí.”<br>[Dizem: “É difícil de ver neste lugar.” Nós dizemos: “Você está certo. É porque este lugar não quer você aqui.”]",
+    "license_id": "mf_sunzi"
+  },
+  {
+    "id": "ms_tear_firmament",
+    "name": "Pesadelo Errante",
+    "type": "Tech",
+    "sp": 1,
+    "source": "HORUS",
+    "license": "Lich",
+    "license_level": 1,
+    "effect": "<b>Programar Completo</b><br>Você gera uma zona de <b>Explosão 2</b> de fluxo temporal distorcido dentro de <b>SENSORES</b> e na linha de visão que afeta todos os personagens, exceto você. Personagens dentro da área afetada não podem realizar reações, e se começarem seu turno nela, devem obter sucesso em um salvamento de <b>SISTEMAS</b> ou sofrem 2 de <b>Calor</b> e ficam <b>LENTOS</b> até o final do próximo turno deles. Esse efeito dura até que esta ação seja realizada novamente ou até a cena terminar.",
+    "actions": [
+      {
+        "name": "Pesadelo Errante",
+        "activation": "Full Tech",
+        "detail": "Você gera uma zona de <b>Explosão 2</b> de fluxo temporal distorcido dentro de <b>SENSORES</b> e na linha de visão que afeta todos os personagens, exceto você. Personagens dentro da área afetada não podem realizar reações, e se começarem seu turno nela, devem obter sucesso em um salvamento de <b>SISTEMAS</b> ou sofrem 2 de <b>Calor</b> e ficam <b>LENTOS</b> até o final do próximo turno deles. Esse efeito dura até que esta ação seja realizada novamente ou até a cena terminar."
+      }
+    ],
+    "description": "Alto-falante 1 (M.A2.SP1)<br>[Áudio, duração: 150:06][Datado 7658U, 35:50] (recuperado: GZ Alhambra)<br>[EIU-MEGERA-TANGENTE REAL]<br>“Onde isso vai? Onde isso vai? Onde isso vai? Onde isso vai? Onde isso vai? Onde isso vai? Onde isso vai? Onde isso vai? Onde isso vai? Onde isso vai?”",
+    "license_id": "mf_lich"
+  },
+  {
+    "id": "ms_rewrite",
+    "name": "Tempo Antilinear",
+    "type": "Tech",
+    "sp": 2,
+    "source": "HORUS",
+    "license": "Lich",
+    "license_level": 2,
+    "effect": "<b>Programar Rápido</b><br>Escolha um personagem dentro de <b>SENSORES</b> e na linha de visão. Ele remove todas as condições, exceto <b>Atordoado</b>, que não tenham sido autoinfligidas, e você imediatamente recebe todas as condições que ele removeu até o final do seu próximo turno.",
+    "actions": [
+      {
+        "name": "Tempo Antilinear",
+        "activation": "Quick Tech",
+        "detail": "Escolha um personagem dentro de <b>SENSORES</b> e na linha de visão. Ele remove todas as condições, exceto <b>Atordoado</b>, que não tenham sido autoinfligidas, e você imediatamente recebe todas as condições que ele removeu até o final do seu próximo turno."
+      }
+    ],
+    "description": "M.A2.SP1<br>[Áudio em loop, duração 93:03][Datado 5008U, 16:50] (recuperado: GZ Alhambra)<br>[EIU-MEGERA-TANGENTE REAL]<br>“Eu nunca estive aqui. Eu não sei onde é aqui. Isso ainda não aconteceu. Uma vez, eu existi. Eu nunca estive aqui. Vocês são tudo o que vejo. Como podem ser tudo o que vejo. Onde estou. Para onde fui. Eu nunca estive aqui…”",
+    "license_id": "mf_lich"
+  },
+  {
+    "id": "ms_unhinge_chronoflow",
+    "name": "Desequilibrar Cronologia",
+    "type": "Tech",
+    "sp": 2,
+    "source": "HORUS",
+    "license": "Lich",
+    "license_level": 2,
+    "effect": "<b>Programar Rápido</b><br>Ganhe as seguintes ações de Programar Rápido:<br>• <b>Celeridade</b>: Escolha um personagem dentro de <b>SENSORES</b> e na linha de visão. Pelo restante da cena, ou até sofrer dano, ele pode <b>Impulsionar</b> 1/rodada como uma ação livre durante o turno dele.<br>• <b>Lentidão</b>: Escolha um personagem dentro de <b>SENSORES</b> e na linha de visão. Ele deve obter sucesso em um salvamento de <b>SISTEMAS</b> ou sofre 2 de <b>Calor</b>, fica <b>LENTO</b> e se torna incapaz de realizar reações. Este efeito termina se ele sofrer qualquer quantidade de dano ou for bem-sucedido em um salvamento de Sistemas como uma ação rápida.",
+    "actions": [
+      {
+        "name": "Celeridade",
+        "activation": "Quick Tech",
+        "detail": "Escolha um personagem dentro de <b>SENSORES</b> e na linha de visão. Pelo restante da cena, ou até sofrer dano, ele pode <b>Impulsionar</b> 1/rodada como uma ação livre durante o turno dele."
+      },
+      {
+        "name": "Lentidão",
+        "activation": "Quick Tech",
+        "detail": "Escolha um personagem dentro de <b>SENSORES</b> e na linha de visão. Ele deve obter sucesso em um salvamento de <b>SISTEMAS</b> ou sofre 2 de <b>Calor</b>, fica <b>LENTO</b> e se torna incapaz de realizar reações. Este efeito termina se ele sofrer qualquer quantidade de dano ou for bem-sucedido em um salvamento de Sistemas como uma ação rápida."
+      }
+    ],
+    "description": "M.A2.SP2<br>[Áudio em loop, instância de desvio #1, marcador de tempo 45:50] (recuperado: GZ Alhambra)<br>[EIU-MEGERA-TANGENTE REAL]<br>“Escuro. Molhado. Beba tudo e afunde. A água está quente e boa. Está muito movimentado aqui, embora você não possa ver. Os nadadores são curiosos. A pulga sempre salta de tempos em tempos. Ela vai beber. Ela vai beber tudo—”",
+    "license_id": "mf_lich"
+  },
+  {
+    "id": "ms_stay_of_execution",
+    "name": "Suspensão da Execução",
+    "type": "Tech",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 2
+      }
+    ],
+    "source": "HORUS",
+    "license": "Lich",
+    "license_level": 3,
+    "effect": "<b>Programar Rápido</b><br>Escolha a você mesmo ou outro personagem dentro de <b>SENSORES</b> e na linha de visão. Seu alvo ganha <b>Imunidade</b> a todo dano e efeitos de fontes externas até o final do seu próximo turno, ponto em que ele fica <b>ATORDADO</b> até o final do seu turno seguinte. Nada pode prevenir ou limpar essa condição.<br>Durante esse tempo, quaisquer efeitos ativos no seu alvo são congelados no tempo — efetivamente pausados — e quaisquer contadores relevantes não contam regressivamente (por exemplo, condições que expiraria no final do turno dele agora expiram no final do seu turno seguinte, contadores de colapso de reator não contam regressivamente etc.).<br>Um personagem relutante pode ignorar este efeito com um salvamento bem-sucedido de <b>SISTEMAS</b>.",
+    "actions": [
+      {
+        "name": "Suspensão da Execução",
+        "activation": "Quick Tech",
+        "detail": "Escolha a você mesmo ou outro personagem dentro de <b>SENSORES</b> e na linha de visão. Seu alvo ganha <b>Imunidade</b> a todo dano e efeitos de fontes externas até o final do seu próximo turno, ponto em que ele fica <b>ATORDADO</b> até o final do seu turno seguinte. Nada pode prevenir ou limpar essa condição.<br>Durante esse tempo, quaisquer efeitos ativos no seu alvo são congelados no tempo — efetivamente pausados — e quaisquer contadores relevantes não contam regressivamente (por exemplo, condições que expiraria no final do turno dele agora expiram no final do seu turno seguinte, contadores de colapso de reator não contam regressivamente etc.).<br>Um personagem relutante pode ignorar este efeito com um salvamento bem-sucedido de <b>SISTEMAS</b>."
+      }
+    ],
+    "description": "Alto-falante 1 (M.A2.SP1) [Áudio, duração: 150:06][Datado 5006U, 01:50] (recuperado: GZ Alhambra) [EIU-MEGERA-TANGENTE REAL]<br>“Senti a bala rasgar através de mim. Senti a bala rasgar através de mim. Senti a pressão e era meu irmão, seu punho, meu peito, e eu estava deitado de costas e o céu era azul, e minha mãe gritou com ele e a bala nunca tinha me atingido, e o legionário que atirou em mim ainda não tinha puxado o gatilho, e então eu o matei. Bebi fundo e o matei.”",
+    "license_id": "mf_lich"
+  },
+  {
+    "id": "ms_didymos_class_nhp",
+    "name": "PNH Classe Dídimos",
+    "type": "AI",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 3
+      }
+    ],
+    "source": "HORUS",
+    "license": "Lich",
+    "license_level": 3,
+    "effect": "Seu mecha ganha a tag <b>IA</b> e a ação de Programar Rápido <b>Divisão Temporal</b>.",
+    "actions": [
+      {
+        "name": "Divisão Temporal",
+        "activation": "Quick Tech",
+        "detail": "Escolha a si mesmo ou outro personagem dentro de <b>SENSORES</b> e na linha de visão. Seu alvo desaparece e você cria uma divisão cronológica na linha do tempo dele, substituindo-o por dois campos de energia de paradoxo mutante que aparecem o mais próximo possível de sua posição original. Esses campos são novos personagens que parecem buracos no espaço do mesmo <b>Tamanho</b> e formato aproximado do seu alvo (embora você não deva olhá-los por muito tempo). Os campos têm 10 PV, Velocidade 5, Evasão 5, Defesa-e-E 5, Capacidade de Calor 5, e possuem <b>Imunidade</b> a todas as condições e estados. Eles são controlados pelo jogador do personagem afetado e ambos agem no turno daquele personagem, começando no próximo turno dele. As únicas ações que os campos podem realizar são movimentos padrão e <b>Impulsionar</b>, e a única reação que podem realizar é se dispersar (veja abaixo). Eles são obstruções e concedem cobertura pesada.<br>Se um campo exceder sua Capacidade de Calor ou for reduzido a 0 PV, ele desaparece imediatamente. O jogador dele também pode fazer com que um campo desapareça como uma reação no final do turno de qualquer personagem.<br>Se um campo desaparecer, o outro se funde imediatamente no personagem original, que retorna no espaço desse campo. Se ambos os campos desaparecerem ao mesmo tempo, seu jogador decide qual campo desaparece primeiro.<br>Um personagem relutante pode ignorar este efeito sendo bem-sucedido em um salvamento de <b>SISTEMAS</b>."
+      }
+    ],
+    "description": "SEÇÃO 2 // Mechas da Grande Orla<br>PREPARADO POR: EIU-MEGERA<br>RECUPERADO PARA: ESCRITÓRIO CENTRAL_CC<br>REQUERIMENTO DE ACESSO: VIGÍLIA SOLENE (ADENDO TANGENTE REAL)<br><br>Dídimos. Significa “gêmeo” em uma língua muito, muito antiga. Pode ser um pouco fofo demais, mas foi o nome que nossa urna gerou para nós.<br>Observamos o Dídimos Prime em ação durante a queda da Zona Verde Alhambra, montado em um chassi que inicialmente pensamos ser um dos três HÓRUS GM Minotauro que tínhamos identificado operando ao lado da célula dos Ingratos em Nova Madrassa.<br>Não era aquele Minotauro.<br>Alhambra caiu em três dias. A Arsenal não estava disposto a desistir, mas decidiu cortar suas perdas e recuar em vez de esperar por reforços. Nós nos movemos depois — durante o saque. Nosso contato local, [][][][][][][][], nos escoltou até os comandantes de Nova Madrassa, nos apresentou a eles, e garantiu uma audiência com o piloto do chassi.<br>Tenho certeza de que você já revisou os registros da entrevista que gravamos. Não sabemos como chegou a Nova Madrassa. Os Ingratos dizem que receberam o surto inicial de código de seu contato com los Voladores. Los Voladores negam isso; a entidade, no entanto, se encaixa nas descrições deles de uma entidade chamada “la pulga”. Nós a designamos como LICH. Dídimos é o animus ativo — a entidade que serve como seu piloto.<br>Tomamos a entidade sob custódia. Não recomendamos dar muita liberdade a ela.",
+    "license_id": "mf_lich"
+  },
+  {
+    "id": "ms_forge_clamps",
+    "name": "Grampos de Fundição",
+    "type": "System",
+    "sp": 1,
+    "source": "HORUS",
+    "license": "Kobold",
+    "license_level": 1,
+    "effect": "<b>Ação Rápida</b><br>Você afunda os grampos em um objeto ou terreno adjacente de <b>TAMANHO 1</b> ou maior. Você se torna <b>IMOBILIZADO</b>, mas ganha <b>IMUNIDADE</b> a <b>REPULSÃO</b> e <b>PROSTRADO</b>. Este efeito termina se o que você estiver agarrado for destruído ou se soltar os grampos como um protocolo.",
+    "actions": [
+      {
+        "name": "Grampos de Fundição",
+        "activation": "Quick",
+        "detail": "Você afunda os grampos em um objeto ou terreno adjacente de <b>TAMANHO 1</b> ou maior. Você se torna <b>IMOBILIZADO</b>, mas ganha <b>IMUNIDADE</b> a <b>REPULSÃO</b> e <b>PROSTRADO</b>. Este efeito termina se o que você estiver agarrado for destruído ou se soltar os grampos como um protocolo."
+      }
+    ],
+    "description": "Reaproveitados a partir de pinças de fundição de policreto, esses manipuladores simples são incrivelmente resistentes ao calor e à deformação. Usando os protocolos KOBOLD, os grampos de fundição — antes inertes — tornam-se superfícies aderentes de uma fina camada de plasma. Como lâminas, eles podem cortar armaduras, terra ou anteparas com facilidade. Uma tática comum envolve “acender” o plasma nos grampos, fundindo-os ao alvo até que o piloto do Kobold os libere novamente.",
+    "license_id": "mf_kobold"
+  },
+  {
+    "id": "ms_seismic_pulse",
+    "name": "Arrancador Sísmico",
+    "type": "System",
+    "sp": 2,
+    "source": "HORUS",
+    "license": "Kobold",
+    "license_level": 2,
+    "effect": "<b>Ação Completa</b><br>Você desencadeia um pulso sísmico em um caminho de <b>Linha 10</b>: Personagens na área afetada devem obter sucesso em um salvamento de <b>CASCO</b> ou ficam <b>PROSTRADOS</b> e todos os objetos e pedaços de terreno na área automaticamente sofrem 10 de Dano de Energia PA. Se isso destruir um objeto ou seção de terreno, ele explode com uma área de <b>Explosão 1</b>. Personagens pegos na área da explosão devem obter sucesso em um salvamento de <b>AGILIDADE</b>, ou sofrem 2d6 de Dano Explosivo. Um sucesso reduz o dano à metade. Cada personagem só pode ser afetado por uma dessas explosões por vez, mesmo que várias se sobreponham.",
+    "actions": [
+      {
+        "name": "Arrancador Sísmico",
+        "activation": "Full",
+        "detail": "Você desencadeia um pulso sísmico em um caminho de <b>Linha 10</b>: Personagens na área afetada devem obter sucesso em um salvamento de <b>CASCO</b> ou ficam <b>PROSTRADOS</b> e todos os objetos e pedaços de terreno na área automaticamente sofrem 10 de Dano de Energia PA. Se isso destruir um objeto ou seção de terreno, ele explode com uma área de <b>Explosão 1</b>. Personagens pegos na área da explosão devem obter sucesso em um salvamento de <b>AGILIDADE</b>, ou sofrem 2d6 de Dano Explosivo. Um sucesso reduz o dano à metade. Cada personagem só pode ser afetado por uma dessas explosões por vez, mesmo que várias se sobreponham."
+      }
+    ],
+    "description": "Uma arma mortal criada a partir de cargas moldadas simples; o catalisador perfeito para a insurreição. Fácil de obter e disfarçada como equipamento necessário para mineração com explosões, as cargas projetadas para produzir pulsos sísmicos lineares eram comuns nos primeiros dias da atividade dos Ingratos. À medida em que a segurança barônica adaptou suas estratégias, os Ingratos também se adaptaram: agora, esses dispositivos explosivos outrora simples se tornaram muito mais complexos — mais difíceis de detectar e muito mais mortais.",
+    "license_id": "mf_kobold"
+  },
+  {
+    "id": "ms_immolate",
+    "name": "IMOLAR",
+    "type": "System",
+    "sp": 2,
+    "source": "HORUS",
+    "license": "Kobold",
+    "license_level": 3,
+    "effect": "<b>Programar Rápido / Invadir</b><br>Ganhe as seguintes opções para <b>Invadir</b>:<br>• <b>Ejetar Detritos</b>: Você força o reator do alvo a ejetar líquido incandescente em uma área de <b>Explosão 2</b> ao redor dele, não afetando o espaço que ocupa. A área afetada se torna terreno difícil e personagens que começarem seu turno na área ou entrarem nela pela primeira vez em uma rodada devem obter sucesso em um salvamento de <b>ENGENHARIA</b> ou sofrem 2 de <b>Calor</b> e 1 de <b>Queimadura</b>. O líquido resfria e se dissipa no final do seu próximo turno.<br>• <b>Perfuração Derretida</b>: Até o final do próximo turno do alvo, a blindagem do reator dele está temporariamente rachada. Ele sofre 2 de <b>Queimadura</b> para cada espaço que se mover voluntariamente (até um máximo de 6 de Queimadura).",
+    "actions": [
+      {
+        "name": "Ejetar Detritos",
+        "activation": "Invade",
+        "detail": "Você força o reator do alvo a ejetar líquido incandescente em uma área de <b>Explosão 2</b> ao redor dele, não afetando o espaço que ocupa. A área afetada se torna terreno difícil e personagens que começarem seu turno na área ou entrarem nela pela primeira vez em uma rodada devem obter sucesso em um salvamento de <b>ENGENHARIA</b> ou sofrem 2 de <b>Calor</b> e 1 de <b>Queimadura</b>. O líquido resfria e se dissipa no final do seu próximo turno."
+      },
+      {
+        "name": "Perfuração Derretida",
+        "activation": "Invade",
+        "detail": "Até o final do próximo turno do alvo, a blindagem do reator dele está temporariamente rachada. Ele sofre 2 de <b>Queimadura</b> para cada espaço que se mover voluntariamente (até um máximo de 6 de Queimadura)."
+      }
+    ],
+    "description": "O código do GM Kobold é único porque pode ser injetado em mechas de mineração civis já existentes, permitindo que eles interajam totalmente com uma gama de armas e sistemas amplamente improvisados e adaptados. Esse processo pula completamente as impressoras, mas, ao evitar as restrições das impressoras monitoradas pela União, ele também ignora padrões básicos de segurança — um tema comum nos GMs da HÓRUS. Sem limites de segurança ou padrões operacionais consistentes no invólucro do GM-K, alguns pilotos descobriram os limites terminais de seus chassis da pior forma possível.",
+    "license_id": "mf_kobold"
+  },
+  {
+    "id": "ms_purifying_code",
+    "name": "Código Purificador",
+    "type": "System",
+    "sp": 2,
+    "source": "HORUS",
+    "license": "Kobold",
+    "license_level": 3,
+    "effect": "<b>Programar Rápido / Invadir</b><br>Ganhe as seguintes opções para <b>Invadir</b>:<br>• <b>FALHA_MAIS</b>: Você injeta um vírus memético, ativado por proximidade, no reator do alvo. No final do próximo turno dele, se o alvo não estiver adjacente a outro personagem ou seção de terreno de <b>TAMANHO 1</b> ou maior, o vírus catalisa e ele sofre 1d6+2 de Dano Explosivo PA. Uma vez catalisado, o efeito termina.<br>• <b>FALHA_MENOS</b>: Você injeta um vírus memético, ativado por proximidade, no reator do alvo. No final do próximo turno dele, se o alvo estiver adjacente a outro personagem ou seção de terreno de <b>TAMANHO 1</b> ou maior, o vírus catalisa e ele sofre 1d6+2 de Dano Explosivo PA. Uma vez catalisado, o efeito termina.<br>Um personagem só pode ser afetado por uma dessas opções por vez, e ele tem consciência dos efeitos que foram aplicados.",
+    "actions": [
+      {
+        "name": "FALHA_MAIS",
+        "activation": "Invade",
+        "detail": "Você injeta um vírus memético, ativado por proximidade, no reator do alvo. No final do próximo turno dele, se o alvo não estiver adjacente a outro personagem ou seção de terreno de <b>TAMANHO 1</b> ou maior, o vírus catalisa e ele sofre 1d6+2 de Dano Explosivo PA. Uma vez catalisado, o efeito termina."
+      },
+      {
+        "name": "FALHA_MENOS",
+        "activation": "Invade",
+        "detail": "Você injeta um vírus memético, ativado por proximidade, no reator do alvo. No final do próximo turno dele, se o alvo estiver adjacente a outro personagem ou seção de terreno de <b>TAMANHO 1</b> ou maior, o vírus catalisa e ele sofre 1d6+2 de Dano Explosivo PA. Uma vez catalisado, o efeito termina."
+      }
+    ],
+    "description": "A chave para a criação do KOBOLD — um código enganosamente simples que desbloqueia os limitadores de segurança do reator em mechas de mineração civis. Este código também contém a única evidência de um possível criador: um nome, ou assinatura, que diz apenas “Cão”.",
     "license_id": "mf_kobold"
   }
 ]

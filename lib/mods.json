@@ -221,7 +221,7 @@
   },
   {
     "id": "wm_molten_wreathe",
-    "name": "Coroa Derretida",
+    "name": "Manoplas de Derretimento",
     "sp": 2,
     "allowed_types": [
       "Melee"
@@ -232,5 +232,35 @@
     "effect": "Escolha uma arma CORPO A CORPO: 1/rodada, após acertar um personagem com esta arma, você sofre 1 de Calor e ela projeta uma nuvem superaquecida em Cone 3 orientada para longe do seu alvo em uma direção à sua escolha. Seu alvo e quaisquer personagens pegos nesta nuvem sofrem 2 de Dano Explosivo cada.",
     "description": "Necessitando de um impulso significativo na capacidade corpo a corpo de seu Raleigh, Xiong decidiu por uma solução rústica, mas eficaz: redirecionar os sistemas de dispersão de núcleo frio do Raleigh para as palmas do chassi.",
     "license_id": "mf_zheng"
+  },
+  {
+    "id": "wm_supermassive_mod",
+    "name": "Modificação Supermassiva",
+    "sp": 1,
+    "allowed_types": [
+      "Melee",
+      "CQB",
+      "Cannon"
+    ],
+    "source": "IPS-N",
+    "license": "Caliban",
+    "license_level": 1,
+    "effect": "Escolha uma arma de CQR, CANHÃO ou corpo a corpo: ela recebe EXAGERADO e REPULSÃO +1. Durante um REPARO COMPLETO, você pode ajustá-la para remover os limitadores de segurança, trocando os benefícios por REPULSÃO +2; no entanto, ela também recebe ARTILHARIA (se for uma arma à distância) ou IMPRECISO (se for corpo a corpo).",
+    "description": "A primeira de uma série de modificações de melhores práticas para combate à queima roupa, desenvolvida pelo mesmo Projeto de Campo Titã-Encélado que produziu o Calibã, as modificações supermassivas incluem uma série de alterações em armas de combate à queima roupa projetadas para aumentar sua letalidade e utilidade geral ao remover precauções de segurança.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "added_tags": [
+      {
+        "id": "tg_overkill"
+      },
+      {
+        "id": "tg_knockback",
+        "val": 1
+      }
+    ],
+    "license_id": "mf_caliban"
   }
 ]

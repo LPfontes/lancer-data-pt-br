@@ -3009,8 +3009,8 @@
     "source": "SSC",
     "license": "Atlas",
     "license_level": 1,
-    "on_hit": "Seu alvo é empalado pelo projétil em forma de arpão desta arma. A qualquer momento após seu alvo realizar uma ação ou movimento durante o próximo turno dele, você pode puxar o cabo e Impulsionar como uma reação, movendo-se em direção ao alvo pelo caminho mais direto possível. Ele deve então passar em um salvamento de Casco ou ser derrubado Prostrado.",
-    "description": "Caçar os Vast — a titanica megafauna de Sparr — é um empreendimento perigoso e lucrativo para o povo Sparri. Estes fuzis longos populares, refinados para os padrões da SSC, são robustos e duráveis.",
+    "on_hit": "Seu alvo é empalado pelo projétil em forma de arpão desta arma. A qualquer momento após o alvo realizar qualquer ação ou movimento durante o próximo turno dele, você pode recolher a linha e IMPULSIONAR como uma reação, movendo-se em direção ao alvo pela rota mais direta possível. Ele deve então obter sucesso em um teste de CASCO ou será derrubado, ficando PROSTRADO; com um sucesso ou fracasso, esse efeito termina. A linha se rompe se o alvo se teletransportar.",
+    "description": "Caçar os Vast — a titânica megafauna de Sparr — é uma empreitada perigosa e lucrativa para o povo sparri. Peles, ossos, carne e outros troféus retirados desses corpos podem garantir meses — ou até anos, no caso de bestas especialmente antigas, grandiosas ou únicas — de prosperidade para os caçadores e seus parentes. Esses populares fuzis longos, refinados de acordo com os padrões da SSC, são robustos e duráveis, perfeitos para derrubar as grandes criaturas e seus acompanhantes.",
     "license_id": "mf_atlas"
   },
   {
@@ -3026,12 +3026,12 @@
     "source": "SSC",
     "license": "Atlas",
     "license_level": 3,
-    "effect": "Você pode começar qualquer combate em qualquer uma das posturas desta arma e pode mudar de postura como um protocolo. Uma vez em uma postura, você permanece nela até assumir uma nova postura, a arma ser destruída, ou ficar ATORDOADO ou BLOQUEADO.",
+    "effect": "Você pode começar qualquer combate em uma das seguintes posturas e pode mudar ou adotar uma nova postura como protocolo:<br>• <b>Postura do Lorde</b>: Você não pode fazer ataques à distância ou ataques tecnológicos, mas qualquer ataque à distância contra você que falhe será desviado pela sua espada, causando 2 de dano (do mesmo tipo do ataque) a um personagem à sua escolha em um raio de <b>Alcance 3</b> e na linha de visão a partir de você.<br>• <b>Postura da Tempestade</b>: 1/rodada, após acertar com esta arma, você pode imediatamente causar 2 de <b>Dano Cinético</b> a todos os outros personagens adjacentes a você e ao seu alvo como uma reação.<br>• <b>Postura do Troll</b>: Esta arma ganha <b>IMPRECISO</b>, <b>PA</b>, e causa +3 de dano.<br>• <b>Postura do Vento</b>: Esta arma ganha <b>CONFIÁVEL 2</b>, <b>Ameaça 2</b>, e <b>REPULSÃO 2</b>. Após atacar com esta arma, quer acerte o ataque ou não, você pode se mover 2 espaços em qualquer direção, ignorando engajamento e sem provocar reações.<br>Uma vez que tenha adotado uma postura, você permanece nela até que adote uma nova postura, esta arma seja destruída, ou você seja ATORDOADO ou BLOQUEADO. Você também pode abandonar uma postura como uma ação livre.",
     "actions": [
       {
         "name": "Mudar Postura",
         "activation": "Protocol",
-        "detail": "Muda a postura desta arma."
+        "detail": "Muda ou adota a postura desta arma."
       },
       {
         "name": "Abandonar Postura",
@@ -3092,10 +3092,10 @@
             "val": 1
           }
         ],
-        "effect": "Você ganha a Reação da Postura da Tempestade."
+        "effect": "1/rodada, após acertar com esta arma, você pode imediatamente causar 2 de Dano Cinético a todos os outros personagens adjacentes a você e ao seu alvo como uma reação."
       },
       {
-        "name": "Postura do Senhor",
+        "name": "Postura do Lorde",
         "damage": [
           {
             "type": "Kinetic",
@@ -3108,7 +3108,7 @@
             "val": 1
           }
         ],
-        "effect": "Você não pode realizar ataques à distância ou tecnológicos, mas qualquer ataque à distância contra você que errar reflete em sua espada, causando 2 de dano a um personagem à sua escolha a até alcance 3."
+        "effect": "Você não pode fazer ataques à distância ou ataques tecnológicos, mas qualquer ataque à distância contra você que falhe será desviado pela sua espada, causando 2 de dano (do mesmo tipo do ataque) a um personagem à sua escolha em um raio de Alcance 3 e na linha de visão a partir de você."
       },
       {
         "name": "Postura do Vento",
@@ -3124,16 +3124,26 @@
             "val": 2
           }
         ],
-        "effect": "Após atacar com esta arma, acertando ou errando, você pode se mover 2 espaços em qualquer direção, ignorando engajamento e reações."
+        "tags": [
+          {
+            "id": "tg_reliable",
+            "val": 2
+          },
+          {
+            "id": "tg_knockback",
+            "val": 2
+          }
+        ],
+        "effect": "Após atacar com esta arma, quer acerte o ataque ou não, você pode se mover 2 espaços em qualquer direção, ignorando engajamento e sem provocar reações."
       }
     ],
-    "description": "Forjada no fogo de uma estrela confinada, cada uma dessas lâminas carrega um nome único e uma história definida por seus usuários. Lâminas Terashima são perfeitamente balanceadas e temperadas.",
+    "description": "Forjadas no fogo de uma estrela aprisionada em Constelação, cada uma dessas lâminas possui um nome único e uma história definida por seus usuários. As lâminas Terashima são perfeitamente balanceadas e temperadas, adaptáveis de uso pessoal até a Classe 3. Quando combinadas com os sistemas de armas e sensores de um chassi, elas provaram ser rápidas e duráveis o suficiente para desviar tiros de armas. Cada lâmina forjada pelo enclave Terashima é uma herança produzida uma única vez e entregue por meio de viagem convencional — sua perda é considerada uma humilhação indescritível para o proprietário e um triunfo incrível para aquele que a tomou. O enclave Terashima mantém o molde de fundição de cada lâmina que produz e os exibe em seu salão central, junto com registros de suas histórias conhecidas.",
     "sp": 2,
     "license_id": "mf_atlas"
   },
   {
     "id": "mw_hammer_u_rpl",
-    "name": "Martelo U-RPL",
+    "name": "Martelo LU-PR",
     "mount": "Heavy",
     "type": "Launcher",
     "damage": [
@@ -3163,12 +3173,12 @@
     "source": "IPS-N",
     "license": "Caliban",
     "license_level": 1,
-    "description": "O Lançador Universal de Projéteis Rotativos Martelo aceita qualquer projétil ou sistema de armas compatível com o Sistema de Cartucho Universal da EIP-EN.",
+    "description": "O Martelo Lançador Universal de Projéteis Rotativos aceita qualquer tipo de projétil ou sistema de armas compatível com o Sistema de Cartuchos Universais da EIP-EN. Seu projétil mais comum é o cartucho convencional de detonação aérea — um sistema de fragmentação projetado para operar em todos os ambientes, com ou sem oxigênio — uma arma devastadora nos corredores compactos, salas seguras e câmaras de contenção de naves capitais e estações espaciais.",
     "license_id": "mf_caliban"
   },
   {
     "id": "mw_hhs_155_cannibal",
-    "name": "HHS-155 CANIBAL",
+    "name": "EOP-155 CANIBAL",
     "mount": "Heavy",
     "type": "CQB",
     "tags": [
@@ -3179,7 +3189,7 @@
     "source": "IPS-N",
     "license": "Caliban",
     "license_level": 3,
-    "effect": "Você pode disparar esta espingarda pesada duas vezes antes de precisar recarregar. Alternativamente, pode disparar ambos os canos de uma vez, recebendo +1 de Dificuldade, aumentando o dano para 3d6+4 Cinético e sua Repulsão para 4.",
+    "effect": "Você pode disparar essa espingarda pesada duas vezes antes de precisar recarregá-la. Ou então você pode disparar ambos os canos de uma vez, recebendo +1 de Dificuldade, aumentando seu dano para 3d6+4 de <b>Dano Cinético</b> e sua <b>REPULSÃO</b> para 4, mas exigindo que ela seja recarregada normalmente.<br>Quando esta arma é recarregada, você pode escolher causar 5 de <b>Dano Cinético</b> a um personagem adjacente devido à força das cápsulas ejetadas.",
     "profiles": [
       {
         "name": "Cano Único",
@@ -3235,10 +3245,11 @@
           {
             "id": "tg_inaccurate"
           }
-        ]
+        ],
+        "effect": "Dispare ambos os canos de uma vez, fazendo com que a arma seja disparada com +1 de Dificuldade e exigindo uma recarga normalmente."
       }
     ],
-    "description": "A Espingarda-Obuseiro Pesada 155 'Canibal' da EIP-EN é um canhão grande de retrocarga projetado para disparar projéteis de alto impacto.",
+    "description": "A EOP-155 “Canibal” Espingarda-Obus Pesada da EIP-EN é um canhão de carregamento manual, de cano duplo sobreposto, projetada para disparar projéteis, chumbo e sabot. Ela é uma versão de maior potência da EOP-075, criada para substituir a antiga “Cortadora Margarida”, oferecendo potencial para retardar movimento comparável, mas em um formato mais fácil de distribuir para exércitos no campo de batalha. A Canibal deve ser usada com cautela perto de aliados, pois seu mecanismo de ejeção expulsa cápsulas gastas com tanta força que pode decapitar pessoal desprotegido.",
     "license_id": "mf_caliban"
   },
   {
@@ -3298,7 +3309,7 @@
   },
   {
     "id": "mw_unraveler",
-    "name": "Desravelador",
+    "name": "Desmantelador",
     "mount": "Main",
     "type": "Launcher",
     "damage": [
@@ -3322,13 +3333,13 @@
     "source": "HORUS",
     "license": "Lich",
     "license_level": 1,
-    "effect": "Se um ataque desta arma não causar dano suficiente para destruir seu alvo ou fazer com que ele receba pelo menos 1 de dano de estrutura, em vez disso causa apenas 2 de dano Confiável, mesmo em um acerto.",
-    "description": "Um lançador misterioso cujos tiros parecem desfazer a integridade temporal do alvo.",
+    "effect": "Se um ataque desta arma não causar dano suficiente para destruir seu alvo ou causar pelo menos 1 de dano de estrutura, ele causa apenas 2 de dano <b>CONFIÁVEL</b>, mesmo em caso de acerto.",
+    "description": "Alto-falante 2 (M.A2.SP2)<br>[Áudio, duração: 120:36][34% de corrupção][Datado 18593U, 01:50]<br>[EIU-MEGERA-TANGENTE REAL]<br>“Escuro. Molhado. Beba tudo e afunde. A água está quente e boa. Está muito movimentado aqui, embora você não possa ver. Os nadadores são curiosos. Abra sua boca.”",
     "license_id": "mf_lich"
   },
   {
     "id": "mw_warp_rifle",
-    "name": "Fuzil de Deformação",
+    "name": "Fuzil de Dobra",
     "mount": "Main",
     "type": "Rifle",
     "damage": [
@@ -3360,7 +3371,7 @@
   },
   {
     "id": "mw_xiaoli_combat_sheathe",
-    "name": "Bainha de Combate Caçadora-de-Tigre",
+    "name": "Manoplas de Combate Caçador de Tigres",
     "mount": "Main",
     "type": "Melee",
     "damage": [
@@ -3391,12 +3402,12 @@
     "source": "IPS-N",
     "license": "Zheng",
     "license_level": 3,
-    "effect": "Diferente de outras armas Superpesadas, esta arma pode ser usada com o perfil básico para Esfregar (Skirmish).<br>Você pode carregar esta arma como uma ação rápida. Enquanto carregada, você ganha cobertura leve, mas fica LENTO, sofre 2 de Calor no início do seu turno e não pode mais usar a D/D 288 para Esfregar (Skirmish). No início de qualquer um dos seus turnos enquanto estiver carregada, ela assume o perfil Carregado.",
+    "effect": "Diferente de outras armas Superpesadas, esta arma pode ser usada com o perfil básico para Alvejar(Skirmish).<br>Você pode carregar esta arma como uma ação rápida. Enquanto carregada, você ganha cobertura leve, mas fica LENTO, sofre 2 de Calor no início do seu turno e não pode mais usar a D/D 288 para Alvejar(Skirmish). No início de qualquer um dos seus turnos enquanto estiver carregada, ela assume o perfil Carregado.",
     "actions": [
       {
         "name": "Carregar D/D 288",
         "activation": "Quick",
-        "detail": "Carrega a D/D 288. No início de qualquer um dos seus turnos enquanto a D/D 288 estiver Carregada, ela usa o perfil 'Carregado'. Você fica LENTO e ganha cobertura leve. Adicionalmente, recebe 2 de Calor no início do seu turno.<br>O perfil 'Carregado' não pode ser usado para Esfregar (Skirmish)."
+        "detail": "Carrega a D/D 288. No início de qualquer um dos seus turnos enquanto a D/D 288 estiver Carregada, ela usa o perfil 'Carregado'. Você fica LENTO e ganha cobertura leve. Adicionalmente, recebe 2 de Calor no início do seu turno.<br>O perfil 'Carregado' não pode ser usado para Alvejar(Skirmish)."
       }
     ],
     "profiles": [
@@ -3452,5 +3463,70 @@
     ],
     "description": "O Armamento de Devastação/Demolição 288 do Zheng é lendário por sua capacidade de perfurar blindagens e infligir destruição total em alvos endurecidos. Originalmente improvisado como último recurso por Xiong Xiaoli, este sistema montado no punho reaproveita a saída primária de exaustão de calor do reator como uma arma direcional de proximidade de engajamento.",
     "license_id": "mf_zheng"
+  },
+  {
+    "id": "mw_fusion_rifle",
+    "name": "Fuzil de Fusão",
+    "mount": "Main",
+    "type": "Rifle",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1-6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 6
+      }
+    ],
+    "tags": [],
+    "source": "HORUS",
+    "license": "Kobold",
+    "license_level": 1,
+    "effect": "Esta arma causa dano igual ao seu <b>ALCANCE</b> em relação ao alvo (até um máximo de 6 de <b>Dano de Energia</b>).",
+    "description": "Adaptado a partir de poderosos laseres de mineração, o simples fuzil de fusão do Kobold não é menos letal por conta de suas origens humildes. Ao queimar baterias de estado sólido para produzir a reação necessária, seu mecanismo simples provou ser fácil o suficiente para que Ingratos não treinados aprendessem a usá-lo rapidamente. À medida que suas táticas melhoravam e as forças Barônicas eram empurradas para trás, o fuzil de fusão tornou-se um ícone da resistência em toda a Baronia — frequentemente visto estampado em muros e cruzados em bandeiras dos Ingratos.",
+    "license_id": "mf_kobold"
+  },
+  {
+    "id": "mw_slag_cannon",
+    "name": "Canhão de Detritos",
+    "mount": "Main",
+    "type": "Cannon",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 8
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      }
+    ],
+    "source": "HORUS",
+    "license": "Kobold",
+    "license_level": 2,
+    "effect": "No Ataque: Se o seu alvo estiver no chão ou em uma superfície plana, assim que o ataque se resolver, coloque um monte de detritos de <b>TAMANHO 1</b> em um espaço livre adjacente ao alvo. O monte de detritos é um objeto com <b>EVASÃO 5</b> e 10 PV.",
+    "deployables": [
+      {
+        "name": "Detritos",
+        "type": "Deployable",
+        "activation": "Free",
+        "hp": "10",
+        "evasion": "5",
+        "detail": "Criado pelo Canhão de Detritos"
+      }
+    ],
+    "description": "Gotejando fúria derretida, o Canhão de Detritos é rápido de imprimir e fácil de usar. Temperamental, mas poderoso, esse canhão utiliza um sistema simples de decomposição de matéria-prima, acoplado a um projetor isolado, para desmontar, superaquecer e lançar uma corrente de partículas em estado múltiplo contra seu alvo. Uma vez lançadas, essas partículas se estabilizam a uma distância de aproximadamente 80 a 100 metros, formando blocos de detritos onde quer que se solidifiquem.",
+    "license_id": "mf_kobold"
   }
 ]

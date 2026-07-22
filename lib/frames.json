@@ -3347,7 +3347,7 @@
       "counters": [
         {
           "id": "ctr_art_of_war",
-          "name": "Art of War",
+          "name": "Arte da Guerra",
           "default_value": 6,
           "min": 0,
           "max": 6
