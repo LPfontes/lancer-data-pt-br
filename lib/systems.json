@@ -3838,5 +3838,275 @@
     ],
     "description": "Do talento <i>Arsenal Ambulante: Rank III</i>.",
     "license_id": ""
+  },
+  {
+    "id": "ms_total_strength_suite_i",
+    "name": "Conjunto de Força Total I",
+    "type": "System",
+    "sp": 1,
+    "source": "IPS-N",
+    "license": "Zheng",
+    "license_level": 1,
+    "actions": [
+      {
+        "name": "Arremessar Terreno",
+        "activation": "Quick",
+        "detail": "Você arranca uma peça do ambiente e a arremessa em um personagem a até Alcance 5 e na linha de visão. Seu alvo deve passar em um salvamento de Agilidade ou sofrer 1d6 de dano cinético e ser empurrado 1 espaço diretamente para longe de você. Após realizar esta ação, coloque uma peça de terreno de Tamanho 1 que concede cobertura pesada em um espaço livre adjacente ao seu alvo, mesmo se ele tiver passado no salvamento. O terreno tem 10 PV e Evasão 5.<br>Se houver um objeto de Tamanho 1 ou peça de cobertura adjacente a você, você pode movê-lo como parte desta ação; caso contrário, seu projétil é arrancado do chão ou ambiente. Se não houver nada para agarrar por perto ou se você não estiver no chão, você não pode realizar esta ação."
+      }
+    ],
+    "description": "Esta atualização de todo o sistema foi o resultado de ajustes que Xiong Xiaoli fez em seu mecha ao longo de uma extensa carreira com a CMCF, muitos dos quais foram incorporados ao protocolo padrão de construção de chassis da EIP-EN.",
+    "license_id": "mf_zheng"
+  },
+  {
+    "id": "ms_total_strength_suite_ii",
+    "name": "Conjunto de Força Total II",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IPS-N",
+    "license": "Zheng",
+    "license_level": 2,
+    "actions": [
+      {
+        "name": "Esmagar Agarrado",
+        "activation": "Protocol",
+        "detail": "Causa 1d6 de dano cinético a um personagem que você esteja agarrando."
+      }
+    ],
+    "description": "A segunda parte do pacote de aprimoramento de Xiong: placas análogas a músculos entrelaçadas sob a blindagem, ajustadas para multiplicar a força de esmagamento.",
+    "license_id": "mf_zheng"
+  },
+  {
+    "id": "ms_total_strength_suite_iii",
+    "name": "Conjunto de Força Total III",
+    "type": "System",
+    "sp": 3,
+    "source": "IPS-N",
+    "license": "Zheng",
+    "license_level": 3,
+    "actions": [
+      {
+        "name": "Arremesso Devastador",
+        "activation": "Full",
+        "detail": "Você encerra um Agarrão, empurrando o outro personagem 5 espaços em qualquer direção e deixando-o Prostrado. Este movimento pode passar por espaços ocupados por outros personagens, mas deve terminar em um espaço livre. Todos os personagens por quem ele passar devem ser bem-sucedidos em um salvamento de Casco ou serão derrubados Prostrados. Se seu alvo colidir com um objeto ou peça de terreno, ele para, sofre 1d6 de dano cinético e deve passar em um salvamento de Casco ou ficará ATORDOADO até o final do seu próximo turno."
+      }
+    ],
+    "description": "O último componente do pacote de aprimoramento Força Total concede ao mecha a capacidade de injetar surtos rápidos de poder intenso em seus sistemas locomotivos.",
+    "license_id": "mf_zheng"
+  },
+  {
+    "id": "ms_multi_gear_maneuver_system",
+    "name": "Sistema de Manobra Multi-Engrenagem",
+    "type": "System",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "SSC",
+    "license": "Atlas",
+    "license_level": 1,
+    "actions": [
+      {
+        "name": "Disparar Tirolesa",
+        "activation": "Quick",
+        "detail": "Você dispara uma tirolesa de 8 espaços de comprimento que conecta 2 espaços livres na linha de visão."
+      }
+    ],
+    "description": "Usado por caçadores Sparri para transpor as vastas fendas na camada de gelo que cobre seu mundo.",
+    "license_id": "mf_atlas"
+  },
+  {
+    "id": "ms_jäger_kunst_i",
+    "name": "Jäger Kunst I",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      }
+    ],
+    "source": "SSC",
+    "license": "Atlas",
+    "license_level": 2,
+    "actions": [
+      {
+        "name": "Jäger Kunst I",
+        "activation": "Protocol",
+        "detail": "Pelo resto do turno, qualquer momento em que se mover para adjacente a um objeto ou peça de terreno maior que você, mova-se 2 espaços como ação livre."
+      }
+    ],
+    "description": "Baseado em artes marciais de trajes rígidos, Jäger Kunst eleva os movimentos além dos parâmetros humanos.",
+    "license_id": "mf_atlas"
+  },
+  {
+    "id": "ms_ricochet_blades",
+    "name": "Lâminas Ricocheteantes",
+    "type": "System",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "SSC",
+    "license": "Atlas",
+    "license_level": 2,
+    "actions": [
+      {
+        "name": "Arremessar Lâmina Ricocheteante",
+        "activation": "Quick",
+        "detail": "Como uma ação rápida, você arremessa uma lâmina ricocheteante ao longo de uma linha 3, causando 2 de dano cinético a todos os personagens afetados."
+      }
+    ],
+    "description": "Estes discos afiados foram projetados e produzidos pelo enclave de lâminas Toledo da SSC.",
+    "license_id": "mf_atlas"
+  },
+  {
+    "id": "ms_jäger_kunst_ii",
+    "name": "Jäger Kunst II",
+    "type": "System",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "SSC",
+    "license": "Atlas",
+    "license_level": 3,
+    "actions": [
+      {
+        "name": "Confronto Fatal",
+        "activation": "Reaction",
+        "frequency": "1/round",
+        "trigger": "Você recebe ou causa dano em um ataque corpo a corpo",
+        "detail": "Você e seu alvo fazem um teste resistido de Casco ou Agilidade. O perdedor cai Prostrado e sofre 1d6 de dano cinético."
+      }
+    ],
+    "description": "Chassis Atlas avançados contêm memórias musculares incorporadas de mestres de Jäger Kunst.",
+    "license_id": "mf_atlas"
+  },
+  {
+    "id": "ms_hardpoint_reinforcement",
+    "name": "Reforço de Pontos de Ancoragem",
+    "type": "Shield",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_shield"
+      }
+    ],
+    "source": "IPS-N",
+    "license": "Caliban",
+    "license_level": 2,
+    "effect": "Enquanto não estiver Lento ou Imobilizado, você ganha Resistência a todo dano durante seu turno.",
+    "description": "Desenvolvido no projeto Titan-Enceladus da EIP-EN para reforçar a integridade estrutural.",
+    "license_id": "mf_caliban"
+  },
+  {
+    "id": "ms_spike_charges",
+    "name": "Cargas de Estacas",
+    "type": "Deployable",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_grenade"
+      }
+    ],
+    "source": "IPS-N",
+    "license": "Caliban",
+    "license_level": 2,
+    "actions": [
+      {
+        "name": "Granada de Estaca",
+        "activation": "Quick",
+        "detail": "Arremesse uma Granada de Estaca em um alvo a até Alcance 5."
+      }
+    ],
+    "description": "Dispositivos carregados com dezenas de estacas projetadas para perfurar blindagens.",
+    "license_id": "mf_caliban"
+  },
+  {
+    "id": "ms_rapid_maneuver_jets",
+    "name": "Jatos de Manobra Rápida",
+    "type": "System",
+    "sp": 4,
+    "tags": [
+      {
+        "id": "tg_overshield"
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      }
+    ],
+    "source": "IPS-N",
+    "license": "Caliban",
+    "license_level": 3,
+    "effect": "1/rodada, ao Impulsionar, você voa, ganha Sobre-escudo 3 e ignora engajamento.",
+    "description": "Miniaturização dos propulsores da EIP-EN para manobras de alta velocidade.",
+    "license_id": "mf_caliban"
+  },
+  {
+    "id": "ms_forge_clamps",
+    "name": "Garras de Forja",
+    "type": "System",
+    "sp": 1,
+    "source": "HORUS",
+    "license": "Kobold",
+    "license_level": 1,
+    "actions": [
+      {
+        "activation": "Quick",
+        "detail": "Prenda as garras em um objeto ou terreno adjacente de Tamanho 1 ou maior."
+      }
+    ],
+    "description": "Manipuladores de fundição reaproveitados resistentes a altas temperaturas.",
+    "license_id": "mf_kobold"
+  },
+  {
+    "id": "ms_seismic_pulse",
+    "name": "Lacerador Sísmico",
+    "type": "System",
+    "sp": 2,
+    "source": "HORUS",
+    "license": "Kobold",
+    "license_level": 2,
+    "actions": [
+      {
+        "activation": "Full",
+        "detail": "Libere um pulso sísmico em uma linha 10."
+      }
+    ],
+    "description": "Uma arma sísmica direcional desenvolvida a partir de cargas de mineração.",
+    "license_id": "mf_kobold"
   }
 ]

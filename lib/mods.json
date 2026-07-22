@@ -218,5 +218,19 @@
       }
     ],
     "license_id": "mf_saladin"
+  },
+  {
+    "id": "wm_molten_wreathe",
+    "name": "Coroa Derretida",
+    "sp": 2,
+    "allowed_types": [
+      "Melee"
+    ],
+    "source": "IPS-N",
+    "license": "Zheng",
+    "license_level": 2,
+    "effect": "Escolha uma arma CORPO A CORPO: 1/rodada, após acertar um personagem com esta arma, você sofre 1 de Calor e ela projeta uma nuvem superaquecida em Cone 3 orientada para longe do seu alvo em uma direção à sua escolha. Seu alvo e quaisquer personagens pegos nesta nuvem sofrem 2 de Dano Explosivo cada.",
+    "description": "Necessitando de um impulso significativo na capacidade corpo a corpo de seu Raleigh, Xiong decidiu por uma solução rústica, mas eficaz: redirecionar os sistemas de dispersão de núcleo frio do Raleigh para as palmas do chassi.",
+    "license_id": "mf_zheng"
   }
 ]
