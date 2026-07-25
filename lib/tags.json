@@ -112,12 +112,12 @@
   {
     "id": "tg_turn",
     "name": "{VAL}/Turno",
-    "description": "Este sistema, característica ou <b>reação</b> pode ser usado {VAL} vezes em qualquer turno."
+    "description": "Este sistema, característica ou <b>Reação</b> pode ser usado {VAL} vezes em qualquer turno."
   },
   {
     "id": "tg_round",
     "name": "{VAL}/Rodada",
-    "description": "Este sistema, característica ou <b>reação</b> pode ser usado {VAL} vezes entre o início do turno do usuário e o início de seu próximo turno."
+    "description": "Este sistema, característica ou <b>Reação</b> pode ser usado {VAL} vezes entre o início do turno do usuário e o início de seu próximo turno."
   },
   {
     "id": "tg_ai",
@@ -132,22 +132,22 @@
   {
     "id": "tg_deployable",
     "name": "Posicionável",
-    "description": "Este sistema é um objeto que pode ser posicionado no campo. A menos que especificado de outra forma, pode ser posicionado em um espaço adjacente, livre e válido como uma ação rápida, e tem 5 de <b>Evasão</b> e 10 PV por <b>Tamanho</b>."
+    "description": "Este sistema é um objeto que pode ser posicionado no campo. A menos que especificado de outra forma, pode ser posicionado em um espaço adjacente, livre e válido como uma  <b>Ação Rápida</b>, e tem 5 de <b>Evasão</b> e 10 PV por <b>Tamanho</b>."
   },
   {
     "id": "tg_drone",
     "name": "Drone",
-    "description": "Esta é uma unidade autopropelida e semiautônoma com inteligência rudimentar. A menos que especificado de outra forma, <b>Drones</b> são personagens de <b>Tamanho 1</b>/2 que são aliados do usuário e têm <b>Evasão</b> 10, 5 PV e 0 de <b>Armadura</b>. Para serem usados, devem ser implantados em um espaço livre e válido dentro do <b>Alcance</b> dos <b>Sensores</b> e na linha de visão, tipicamente como uma ação rápida. Uma vez implantados, eles podem ser recolhidos com a mesma ação usada para implantá-los (ação rápida ou completa, etc.), reunindo-se com seu mecha. Por padrão, <b>Drones</b> não podem realizar ações ou se mover; se tiverem ações ou movimento, eles agem no turno de seu usuário. Eles se beneficiam de cobertura e outras defesas como de costume, e fazem todos os testes de perícia e salvamentos de mecha com +0. Se um Drone chegar a 0 PV, ele é destruído e deve ser reparado antes que possa ser usado novamente – como qualquer sistema. Desde que um Drone não tenha sido destruído, ele é restaurado aos PV máximos quando o usuário descansa ou realiza um Reparo COMPLETO. <b>Drones</b> implantados persistem pelo resto da cena, até serem destruídos, ou até que seja especificado de outra forma."
+    "description": "Esta é uma unidade autopropelida e semiautônoma com inteligência rudimentar. A menos que especificado de outra forma, <b>Drones</b> são personagens de <b>Tamanho 1</b>/2 que são aliados do usuário e têm <b>Evasão</b> 10, 5 PV e 0 de <b>Armadura</b>. Para serem usados, devem ser implantados em um espaço livre e válido dentro do <b>Alcance</b> dos <b>Sensores</b> e na linha de visão, tipicamente como uma  <b>Ação Rápida</b>. Uma vez implantados, eles podem ser recolhidos com a mesma ação usada para implantá-los ( <b>Ação Rápida</b> ou completa, etc.), reunindo-se com seu mecha. Por padrão, <b>Drones</b> não podem realizar ações ou se mover; se tiverem ações ou movimento, eles agem no turno de seu usuário. Eles se beneficiam de cobertura e outras defesas como de costume, e fazem todos os testes de perícia e salvamentos de mecha com +0. Se um Drone chegar a 0 PV, ele é destruído e deve ser reparado antes que possa ser usado novamente – como qualquer sistema. Desde que um Drone não tenha sido destruído, ele é restaurado aos PV máximos quando o usuário descansa ou realiza um Reparo COMPLETO. <b>Drones</b> implantados persistem pelo resto da cena, até serem destruídos, ou até que seja especificado de outra forma."
   },
   {
     "id": "tg_full_action",
     "name": "Ação Completa",
-    "description": "Este sistema requer uma ação completa para Ativar."
+    "description": "Este sistema requer uma <b>Ação Completa</b> para Ativar."
   },
   {
     "id": "tg_grenade",
     "name": "Granada",
-    "description": "Como uma ação rápida, este explosivo ou outro dispositivo pode ser arremessado para um espaço dentro da linha de visão e do <b>Alcance</b> especificado."
+    "description": "Como uma  <b>Ação Rápida</b>, este explosivo ou outro dispositivo pode ser arremessado para um espaço dentro da linha de visão e do <b>Alcance</b> especificado."
   },
   {
     "id": "tg_heat_self",
@@ -157,12 +157,12 @@
   {
     "id": "tg_limited",
     "name": "Limitado {VAL}",
-    "description": "Esta arma ou sistema só pode ser usado {VAL} vezes antes de precisar de um Reparo C. Alguns Sistemas Limitados, como Granadas, descrevem esses usos como '<b>Cargas</b>'. Para usar o sistema, o usuário gasta uma carga."
+    "description": "Esta arma ou sistema só pode ser usado {VAL} vezes antes de precisar de um Reparo Completo. Alguns Sistemas Limitados, como Granadas, descrevem esses usos como '<b>Cargas</b>'. Para usar o sistema, o usuário gasta uma carga."
   },
   {
     "id": "tg_mine",
     "name": "Mina",
-    "description": "Como uma ação rápida, este dispositivo pode ser plantado em um espaço adjacente, livre e válido em qualquer superfície, mas não adjacente a outras minas. Após a implantação, ela se arma no final do turno do personagem que a implantou e – a menos que especificado de outra forma – é acionada quando qualquer personagem entra em um espaço adjacente. Personagens que saem de um espaço adjacente não acionarão uma mina. Uma vez acionada, uma mina cria um ataque de <b>Emanação</b> a partir do espaço em que foi colocada. Minas dentro dos <b>Sensores</b> de um personagem podem ser detectadas com um teste de Sistemas bem-sucedido como uma ação rápida, caso contrário, elas ficam ESCONDIDAS e não podem ser alvo. Minas detectadas podem ser desarmadas de espaços adjacentes com um teste de Sistemas bem-sucedido como uma ação rápida; a tentativa ocorre antes da detonação da mina e, em uma falha, a mina detona normalmente."
+    "description": "Como uma  <b>Ação Rápida</b>, este dispositivo pode ser plantado em um espaço adjacente, livre e válido em qualquer superfície, mas não adjacente a outras minas. Após a implantação, ela se arma no final do turno do personagem que a implantou e – a menos que especificado de outra forma – é acionada quando qualquer personagem entra em um espaço adjacente. Personagens que saem de um espaço adjacente não acionarão uma mina. Uma vez acionada, uma mina cria um ataque de <b>Emanação</b> a partir do espaço em que foi colocada. Minas dentro dos <b>Sensores</b> de um personagem podem ser detectadas com um teste de Sistemas bem-sucedido como uma  <b>Ação Rápida</b>, caso contrário, elas ficam ESCONDIDAS e não podem ser alvo. Minas detectadas podem ser desarmadas de espaços adjacentes com um teste de Sistemas bem-sucedido como uma  <b>Ação Rápida</b>; a tentativa ocorre antes da detonação da mina e, em uma falha, a mina detona normalmente."
   },
   {
     "id": "tg_mod",
@@ -177,12 +177,12 @@
   {
     "id": "tg_quick_action",
     "name": "Ação Rápida",
-    "description": "Este sistema requer uma ação rápida para Ativar."
+    "description": "Este sistema requer uma  <b>Ação Rápida</b> para Ativar."
   },
   {
     "id": "tg_reaction",
-    "name": "<b>reação</b>",
-    "description": "Este sistema pode ser ativado como uma <b>reação</b>."
+    "name": "<b>Reação</b>",
+    "description": "Este sistema pode ser ativado como uma <b>Reação</b>."
   },
   {
     "id": "tg_shield",
@@ -220,7 +220,7 @@
   {
     "id": "tg_sidearm",
     "name": "Arma Secundária",
-    "description": "Esta arma pode ser usada para <b>Lutar</b> como uma ação rápida em vez de uma ação completa."
+    "description": "Esta arma pode ser usada para <b>Lutar</b> como uma  <b>Ação Rápida</b> em vez de uma <b>Ação Completa</b>."
   },
   {
     "id": "tg_invade",
@@ -326,33 +326,33 @@
   },
   {
     "id": "tg_irreducible",
-    "name": "Irreducible",
-    "description": "Prohibits damage reduction from any source (HIDDEN TAG)",
+    "name": "Irredutível",
+    "description": "Proíbe a redução de dano de qualquer fonte (TAG OCULTA)",
     "hidden": true
   },
   {
     "id": "tg_npc_system",
-    "name": "NPC System",
-    "description": "This NPC Feature is categorized as a SYSTEM"
+    "name": "Sistema de NPC",
+    "description": "Esta Característica de NPC é categorizada como um SISTEMA"
   },
   {
     "id": "tg_npc_weapon",
-    "name": "NPC Weapon",
-    "description": "This NPC Feature is categorized as a WEAPON"
+    "name": "Arma de NPC",
+    "description": "Esta Característica de NPC é categorizada como uma ARMA"
   },
   {
     "id": "tg_npc_trait",
-    "name": "NPC Trait",
-    "description": "This NPC Feature is categorized as a TRAIT"
+    "name": "Traço de NPC",
+    "description": "Esta Característica de NPC é categorizada como um TRAÇO"
   },
   {
     "id": "tg_npc_reaction",
-    "name": "NPC Reaction",
-    "description": "This NPC Feature is categorized as a REACTION"
+    "name": "Reação de NPC",
+    "description": "Esta Característica de NPC é categorizada como uma REAÇÃO"
   },
   {
     "id": "tg_npc_tech",
-    "name": "NPC Tech Action",
-    "description": "This NPC Feature is categorized as a TECH ACTION"
+    "name": "Ação Tecnológica de NPC",
+    "description": "Esta Característica de NPC é categorizada como uma AÇÃO TECNOLÓGICA"
   }
 ]

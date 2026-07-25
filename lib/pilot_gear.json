@@ -352,7 +352,7 @@
     "id": "pg_stealth_hardsuit",
     "name": "Traje Reforçado Furtivo",
     "type": "Armor",
-    "effect": "Como uma ação rápida, pilotos usando trajes reforçados furtivos podem se tornar Invisíveis. Eles deixam de ser Invisíveis se sofrerem qualquer <b>Dano</b>.",
+    "effect": "Como uma Ação Rápida, pilotos usando trajes reforçados furtivos podem se tornar <b>Invisíveis</b>. Eles deixam de ser <b>Invisíveis</b> se sofrerem qualquer <b>Dano</b>.",
     "bonuses": [
       {
         "id": "pilot_evasion",
@@ -474,13 +474,13 @@
     "id": "pg_stims",
     "name": "Estimulantes",
     "type": "Gear",
-    "effect": "Gaste uma carga para um dos seguintes efeitos:<ul><li>Despertar: Mantém um piloto acordado e alerta por até 30 horas.</li><li>Acalmar: Mantém um piloto calmo e emocionalmente estável; diminui o medo e outras reações fortes.</li><li>Aguçar: Aumenta os sentidos e a vigilância, reduz a fadiga e diminui os tempos de <b>reação</b>.</li></ul>",
+    "effect": "Gaste uma carga para um dos seguintes efeitos:<ul><li>Despertar: Mantém um piloto acordado e alerta por até 30 horas.</li><li>Acalmar: Mantém um piloto calmo e emocionalmente estável; diminui o medo e outras reações fortes.</li><li>Aguçar: Aumenta os sentidos e a vigilância, reduz a fadiga e diminui os tempos de <b>Reação</b>.</li></ul>",
     "description": "Estes estimulantes químicos são às vezes administrados automaticamente por injetores incorporados ao traje de um piloto, ou até mesmo implantados em seu corpo. O uso descontrolado pode ser viciante e prejudicial à saúde a longo prazo e é um problema para alguns pilotos.",
     "actions": [
       {
         "name": "Usar Estimulante",
         "activation": "Quick",
-        "detail": "Gaste uma carga para um dos seguintes efeitos:<ul><li>Despertar: Mantém um piloto acordado e alerta por até 30 horas.</li><li>Acalmar: Mantém um piloto calmo e emocionalmente estável; diminui o medo e outras reações fortes.</li><li>Aguçar: Aumenta os sentidos e a vigilância, reduz a fadiga e diminui os tempos de <b>reação</b>.</li></ul>"
+        "detail": "Gaste uma carga para um dos seguintes efeitos:<ul><li>Despertar: Mantém um piloto acordado e alerta por até 30 horas.</li><li>Acalmar: Mantém um piloto calmo e emocionalmente estável; diminui o medo e outras reações fortes.</li><li>Aguçar: Aumenta os sentidos e a vigilância, reduz a fadiga e diminui os tempos de <b>Reação</b>.</li></ul>"
       }
     ],
     "tags": [
@@ -497,12 +497,12 @@
     "id": "pg_thermite_charge",
     "name": "Carga de Termita",
     "type": "Gear",
-    "effect": "Gaste uma carga para o seguinte efeito:<ul><li>Carga de Termita (Mina, ESTOURO 1): Esta carga precisa ser detonada remotamente como uma ação rápida. Personagens afetados devem obter sucesso em um salvamento de Engenharia ou sofrem <b>3 de Dano de Energia</b> (PF). <b>Cargas</b> de termita atingem automaticamente objetos, causando <b>10 de Dano de Energia</b> (PF).</li></ul>",
+    "effect": "Gaste uma carga para o seguinte efeito:<ul><li>Carga de Termita (Mina, ESTOURO 1): Esta carga precisa ser detonada remotamente como uma Ação Rápida. Personagens afetados devem obter sucesso em um salvamento de Engenharia ou sofrem <b>3 de Dano de Energia</b> (PF). <b>Cargas</b> de termita atingem automaticamente objetos, causando <b>10 de Dano de Energia</b> (PF).</li></ul>",
     "deployables": [
       {
         "name": "Carga de Termita",
         "type": "Mine",
-        "detail": "Esta carga precisa ser detonada remotamente como uma ação rápida. Personagens afetados devem obter sucesso em um salvamento de Engenharia ou sofrem <b>3 de Dano de Energia</b> (PF). <b>Cargas</b> de termita atingem automaticamente objetos, causando <b>10 de Dano de Energia</b> (PF).",
+        "detail": "Esta carga precisa ser detonada remotamente como uma Ação Rápida. Personagens afetados devem obter sucesso em um salvamento de Engenharia ou sofrem <b>3 de Dano de Energia</b> (PF). <b>Cargas</b> de termita atingem automaticamente objetos, causando <b>10 de Dano de Energia</b> (PF).",
         "actions": [
           {
             "name": "Detonar",
@@ -518,9 +518,9 @@
             ]
           },
           {
-            "name": "Detonate (vs. Object)",
+            "name": "Detonar (vs. Object)",
             "activation": "Quick",
-            "detail": "Thermal charges automatically hit objects, dealing 10 Energy AP.",
+            "detail": "As cargas de Termita atingem automaticamente objetos, causando <b>10 de Dano de Energia</b> (PF).",
             "damage": [
               {
                 "type": "Energy",
@@ -667,7 +667,7 @@
     "id": "pg_personal_drone",
     "name": "Drone Pessoal",
     "type": "Gear",
-    "description": "Pequenos <b>Drones</b> não combatentes são uma visão comum no campo. Eles são bastante barulhentos, mas podem voar cerca de oitocentos metros com boa manobrabilidade antes de perder o sinal, transmitindo informações visuais e de áudio enquanto se movem.",
+    "description": "Pequenos drones não combatentes são uma visão comum no campo. Eles são bastante barulhentos, mas podem voar cerca de oitocentos metros com boa manobrabilidade antes de perder o sinal, transmitindo informações visuais e de áudio enquanto se movem.",
     "tags": [
       {
         "id": "tg_gear"
@@ -700,7 +700,7 @@
     "id": "pg_sleeping_bag",
     "name": "Saco de Dormir",
     "type": "Gear",
-    "effect": "Você pode entrar em seu saco de dormir, recebendo <b>Imunidade</b> a burnout, proteção contra o vácuo e ar suficiente para durar uma hora; no entanto, enquanto estiver no saco de dormir, você fica <b>Atordoado</b> e não pode realizar ações além de sair do saco como uma ação completa.",
+    "effect": "Você pode entrar em seu saco de dormir, recebendo <b>Imunidade</b> a burnout, proteção contra o vácuo e ar suficiente para durar uma hora; no entanto, enquanto estiver no saco de dormir, você fica <b>Atordoado</b> e não pode realizar ações além de sair do saco como uma <b>Ação Completa</b>.",
     "description": "Disponível em uma variedade de tamanhos, os sacos de dormir são uma necessidade no campo. Eles são projetados para serem desdobrados de um traje reforçado, caber na cabine de um mecha, resistir ao fogo e a mudanças de temperatura e, quando necessário, vedar contra o vácuo.",
     "tags": [
       {

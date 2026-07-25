@@ -61,7 +61,7 @@
     "description": "Missões de RECONHECIMENTO são empreendimentos perigosos envolvendo pequenas equipes entrando em território hostil para identificar alvos ou recuperar informações cruciais.",
     "pcVictory": "Ao final da sexta rodada, os PJs controlam a Verdadeira Zona de Controle.",
     "enemyVictory": "Ao final da sexta rodada, os PJs não controlam a Verdadeira Zona de Controle.",
-    "controlZone": "Quatro Zonas de Controle (tipicamente 4 espaços de cada lado) em quadrantes diferentes do mapa, cada uma posicionada em qualquer lugar em seu quadrante. O Mestre designa secretamente uma Zona de Controle como a Verdadeira Zona de Controle. Enquanto dentro de uma Zona de Controle, os PJs podem gastar uma ação completa para determinar se é a Verdadeira Zona de Controle. Se houver apenas PJs dentro da Verdadeira Zona de Controle, eles a controlam; se houver personagens de dois ou mais lados dentro dela, ela está contestada.",
+    "controlZone": "Quatro Zonas de Controle (tipicamente 4 espaços de cada lado) em quadrantes diferentes do mapa, cada uma posicionada em qualquer lugar em seu quadrante. O Mestre designa secretamente uma Zona de Controle como a Verdadeira Zona de Controle. Enquanto dentro de uma Zona de Controle, os PJs podem gastar uma <b>Ação Completa</b> para determinar se é a Verdadeira Zona de Controle. Se houver apenas PJs dentro da Verdadeira Zona de Controle, eles a controlam; se houver personagens de dois ou mais lados dentro dela, ela está contestada.",
     "deployment": "Os PJs posicionam primeiro, escolhendo posições para seus personagens dentro da Zona de Posicionamento Aliada; em seguida, o Mestre posiciona as forças inimigas na ZPE."
   }
 ]

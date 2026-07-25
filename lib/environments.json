@@ -2,12 +2,12 @@
   {
     "id": "env_dangerousflorafauna",
     "name": "Flora ou Fauna Perigosa",
-    "description": "Uma proporção anormalmente grande da vida animal ou vegetal deste planeta é perigosa; parte da flora e fauna pode ser predatória, particularmente hostil, ou até mesmo de <b>Tamanho</b> titânico. Use o tipo de PNJ Monstruosidade para gerar encontros com a vida selvagem. A flora hostil pode aparecer no campo de batalha como personagens imóveis com <b>Tamanho 1</b>–2, 5 PV e <b>Evasão</b> 10; alvos que se movem adjacentes a eles devem ter sucesso em um salvamento de <b>Casco</b> ou sofrem 3 de <b>Dano</b> Cinético e ficam Imobilizados até que a flora seja destruída, pois ela os prende com seiva pegajosa, teias, um poço ou algo semelhante."
+    "description": "Uma proporção anormalmente grande da vida animal ou vegetal deste planeta é perigosa; parte da flora e fauna pode ser predatória, particularmente hostil, ou até mesmo de <b>Tamanho</b> titânico. Use o tipo de PNJ Monstruosidade para gerar encontros com a vida selvagem. A flora hostil pode aparecer no campo de batalha como personagens imóveis com <b>Tamanho 1</b>–2, 5 PV e <b>Evasão</b> 10; alvos que se movem adjacentes a eles devem ter sucesso em um <b>salvamento de Casco</b> ou <b>sofrem 3 de Dano Cinético</b> e ficam Imobilizados até que a flora seja destruída, pois ela os prende com seiva pegajosa, teias, um poço ou algo semelhante."
   },
   {
     "id": "env_extremecold",
     "name": "Frio Extremo",
-    "description": "As culturas locais se adaptaram ao clima congelante, mas mechas e pilotos congelam rapidamente sem uma fonte de <b>Calor</b> próxima. Mechas que não se movem ou IMPULSIONAM em seu turno ficam Imobilizados no final do turno. Isso dura até que eles se libertem com um salvamento de <b>Casco</b> bem-sucedido como uma ação rápida. Além disso, todos os mechas adquirem <b>Resistência</b> a <b>Calor</b>."
+    "description": "As culturas locais se adaptaram ao clima congelante, mas mechas e pilotos congelam rapidamente sem uma fonte de <b>Calor</b> próxima. Mechas que não se movem ou IMPULSIONAM em seu turno ficam Imobilizados no final do turno. Isso dura até que eles se libertem com um <b>salvamento de Casco</b> bem-sucedido como uma  <b>Ação Rápida</b>. Além disso, todos os mechas adquirem <b>Resistência</b> a <b>Calor</b>."
   },
   {
     "id": "env_extremeheat",
@@ -32,7 +32,7 @@
   {
     "id": "env_particulatestorms",
     "name": "Tempestades de Partículas",
-    "description": "Este planeta é varrido por tempestades brutais e abrasivas de areia, rocha ou metal. Durante as tempestades, os mechas sempre têm <b>cobertura leve<b>.. Pilotos que saem de seus mechas sofrem 1 de <b>Dano</b> Cinético (PF) a cada turno que estão do lado de fora."
+    "description": "Este planeta é varrido por tempestades brutais e abrasivas de areia, rocha ou metal. Durante as tempestades, os mechas sempre têm <b>Cobertura Leve<b>.. Pilotos que saem de seus mechas <b>sofrem 1 de Dano Cinético</b> (PF) a cada turno que estão do lado de fora."
   },
   {
     "id": "env_electricalstorms",
@@ -47,7 +47,7 @@
   {
     "id": "env_dangeroustorms",
     "name": "Tempestades Perigosas",
-    "description": "Tempestades de fogo, meteoros, chuva ácida, gelo ou outras partículas destrutivas varrem este planeta. Durante as tempestades, todos os personagens sofrem 2 de <b>Dano</b> Energético (PF) no final de seus turnos, a menos que estejam adjacentes a um objeto que conceda <b>cobertura pesada<b>."
+    "description": "Tempestades de fogo, meteoros, chuva ácida, gelo ou outras partículas destrutivas varrem este planeta. Durante as tempestades, todos os personagens <b>sofrem 2 de Dano</b> Energético (PF) no final de seus turnos, a menos que estejam adjacentes a um objeto que conceda <b>Cobertura Pesada<b>."
   },
   {
     "id": "env_oceanworld",
@@ -57,12 +57,12 @@
   {
     "id": "env_earthquakes",
     "name": "Terremotos",
-    "description": "Este mundo é regularmente abalado por terremotos. Durante os terremotos, role 1d6 no final de cada rodada: com 1, todos os mechas devem ter sucesso em um salvamento de <b>Casco</b> ou serão derrubados (Prostrados), a menos que estejam voando."
+    "description": "Este mundo é regularmente abalado por terremotos. Durante os terremotos, role 1d6 no final de cada rodada: com 1, todos os mechas devem ter sucesso em um <b>salvamento de Casco</b> ou serão derrubados (Prostrados), a menos que estejam voando."
   },
   {
     "id": "env_moltenworld",
     "name": "Mundo Derretido",
-    "description": "Partes da crosta deste mundo se projetam através da superfície em chuvas e poças de rocha líquida. Quando personagens se movem para áreas de rocha derretida ou lava pela primeira vez em seu turno ou começam seu turno lá, eles sofrem 5 de <b>Dano</b> Energético (PF) e 3 de <b>Calor</b>."
+    "description": "Partes da crosta deste mundo se projetam através da superfície em chuvas e poças de rocha líquida. Quando personagens se movem para áreas de rocha derretida ou lava pela primeira vez em seu turno ou começam seu turno lá, eles <b>sofrem 5 de Dano</b> Energético (PF) e 3 de <b>Calor</b>."
   },
   {
     "id": "env_primordealworld",
@@ -92,7 +92,7 @@
   {
     "id": "env_sinkingworld",
     "name": "Mundo Movediço",
-    "description": "A superfície deste mundo é coberta por areia fina ou lama espessa. Mechas que se movem 1 espaço ou less durante seu turno ficam Lentos. Mechas Lentos que se movem 1 espaço ou menos são Imobilizados e começam a afundar, eventualmente sendo completamente engolidos. Este efeito dura até que um mecha afetado (ou um adjacente a ele) tenha sucesso em um salvamento de <b>Casco</b> como uma ação completa."
+    "description": "A superfície deste mundo é coberta por areia fina ou lama espessa. Mechas que se movem 1 espaço ou less durante seu turno ficam Lentos. Mechas Lentos que se movem 1 espaço ou menos são Imobilizados e começam a afundar, eventualmente sendo completamente engolidos. Este efeito dura até que um mecha afetado (ou um adjacente a ele) tenha sucesso em um <b>salvamento de Casco</b> como uma <b>Ação Completa</b>."
   },
   {
     "id": "env_holyworld",

@@ -4,7 +4,7 @@
     "name": "System Point",
     "type": "Bonus",
     "label": "Bonus",
-    "description": "Add a System Point to your active mech's Max SP value",
+    "description": "Adicione Ponto de Sistema ao valor máximo de SP do seu mecha ativo",
     "bonuses": [
       {
         "id": "sp",
@@ -179,7 +179,7 @@
     "name": "Bateria Principal",
     "type": "Mech",
     "label": "Battery",
-    "description": "Você tem acesso a uma bateria de Núcleo — um pacote de energia concentrada que pode <b>Recarregar</b> os Sistemas de Núcleo de um mecha. Como uma ação rápida, você pode usar esta reserva para recuperar 1 Ponto de Núcleo. Esta reserva é consumida quando usada.",
+    "description": "Você tem acesso a uma bateria de Núcleo — um pacote de energia concentrada que pode <b>Recarregar</b> os Sistemas de Núcleo de um mecha. Como uma  <b>Ação Rápida</b>, você pode usar esta reserva para recuperar 1 Ponto de Núcleo. Esta reserva é consumida quando usada.",
     "bonuses": [
       {
         "id": "core_power",
@@ -192,13 +192,13 @@
     "name": "Escudo Posicionável",
     "type": "Mech",
     "label": "Shield",
-    "description": "Um gerador de escudo posicionável de uso único com <b>Tamanho 1</b> que concede <b>cobertura leve</b> para todos os personagens amigáveis em uma área de <b>Emanação 2</b>.",
+    "description": "Um gerador de escudo posicionável de uso único com <b>Tamanho 1</b> que concede <b>Cobertura Leve</b> para todos os personagens amigáveis em uma área de <b>Emanação 2</b>.",
     "deployables": [
       {
         "name": "Escudo Posicionável (Reserva)",
         "type": "Deployable",
         "size": 1,
-        "detail": "Concede <b>cobertura leve</b> para todos os personagens amigáveis em uma área de <b>Emanação</b> 2."
+        "detail": "Concede <b>Cobertura Leve</b> para todos os personagens amigáveis em uma área de <b>Emanação</b> 2."
       }
     ]
   },
@@ -226,10 +226,10 @@
   },
   {
     "id": "reserve_systems_reinforcement_hull",
-    "name": "Systems reinforcement (HULL)",
+    "name": "Reforços de Sistemas (CASCO)",
     "type": "Mech",
     "label": "Resource",
-    "description": "+1 ACCURACY to HULL skill checks.",
+    "description": "+1 de <b>Precisão</b> para testes de perícia de <b>Casco</b>.",
     "bonuses": [
       {
         "id": "hull",
@@ -240,10 +240,10 @@
   },
   {
     "id": "reserve_systems_reinforcement_agility",
-    "name": "Systems reinforcement (AGILITY)",
+    "name": "Reforços de Sistemas (AGILIDADE)",
     "type": "Mech",
     "label": "Resource",
-    "description": "+1 ACCURACY to AGILITY skill checks.",
+    "description": "+1 de <b>Precisão</b> para testes de perícia de <b>Agilidade</b>.",
     "bonuses": [
       {
         "id": "agility",
@@ -254,10 +254,10 @@
   },
   {
     "id": "reserve_systems_reinforcement_systems",
-    "name": "Systems reinforcement (SYSTEMS)",
+    "name": "Reforços de Sistemas (SISTEMAS)",
     "type": "Mech",
     "label": "Resource",
-    "description": "+1 ACCURACY to SYSTEMS skill checks.",
+    "description": "+1 de <b>Precisão</b> para testes de perícia de <b>Sistemas</b>.",
     "bonuses": [
       {
         "id": "systems",
@@ -268,10 +268,10 @@
   },
   {
     "id": "reserve_systems_reinforcement_engineering",
-    "name": "Systems reinforcement (ENGINEERING)",
+    "name": "Reforços de Sistemas (ENGENHARIA)",
     "type": "Mech",
     "label": "Resource",
-    "description": "+1 ACCURACY to ENGINEERING skill checks.",
+    "description": "+1 de <b>Precisão</b> para testes de perícia de <b>Engenharia</b>.",
     "bonuses": [
       {
         "id": "engineering",
@@ -288,8 +288,8 @@
     "description": "Todas as armas à sua escolha podem ser disparadas como se fossem <b>Inteligentes</b>.",
     "active_effects": [
       {
-        "name": "Smart Ammo",
-        "detail": "All weapons of your choice can be fired as if they are SMART."
+        "name": "Munição Inteligente",
+        "detail": "Todas as armas à sua escolha podem ser disparadas como se fossem <b>Inteligentes</b>."
       }
     ]
   },
@@ -298,7 +298,7 @@
     "name": "Servomecanismos",
     "type": "Mech",
     "label": "Resource",
-    "description": "<b>Imunidade à condição Lento</b>.",
+    "description": "<b>Imunidade à condição <b>Lento</b></b>.",
     "add_resist": [
       {
         "immunity": "slowed"
@@ -313,8 +313,8 @@
     "description": "Durante esta missão, seu mecha pode Voar ao se mover, mas deve terminar o movimento em terra.",
     "active_effects": [
       {
-        "name": "Jump Jets",
-        "detail": "Your mech can FLY when moving, but must end movement on land."
+        "name": "Jatos de Salto",
+        "detail": "Seu mecha pode Voar ao se mover, mas deve terminar o movimento em terra."
       }
     ],
     "synergies": [
@@ -362,8 +362,8 @@
     "description": "Treinamento ou aprimoramento que fornece <b>+1 de Precisão</b> para uma perícia de mecha ou ação específica durante esta missão.",
     "active_effects": [
       {
-        "name": "Accuracy",
-        "detail": "+1 ACCURACY to a particular mech skill or action for the duration of this mission."
+        "name": "Precisão",
+        "detail": "+1 de <b>Precisão</b> para uma perícia de mecha ou ação específica durante esta missão."
       }
     ]
   },
@@ -372,7 +372,7 @@
     "name": "Bombardeio",
     "type": "Tactical",
     "label": "Resource",
-    "description": "Você tem acesso a suporte de bombardeio de fogo à distância. Uma vez durante a próxima missão, você pode chamar um bombardeio como uma ação rápida. Escolha um ponto dentro da linha de visão: todos os personagens em <b>Explosão 2</b>  desse ponto devem fazer um <b>salvamento de Agilidade</b> ou receber <b>3d6 de Dano explosivo PF</b>, ou metade em um sucesso.",
+    "description": "Você tem acesso a suporte de bombardeio de fogo à distância. Uma vez durante a próxima missão, você pode chamar um bombardeio como uma  <b>Ação Rápida</b>. Escolha um ponto dentro da linha de visão: todos os personagens em <b>Explosão 2</b>  desse ponto devem fazer um <b>salvamento de Agilidade</b> ou receber <b>3d6 de Dano explosivo PF</b>, ou metade em um sucesso.",
     "actions": [
       {
         "name": "Bombardeio",

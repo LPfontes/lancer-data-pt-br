@@ -141,7 +141,7 @@
   },
   {
     "name": "Teletransporte",
-    "description": "Personagens devem começar e terminar um teletransporte em uma superfície na qual possam se mover normalmente; por exemplo, um personagem que não pode voar não pode se teletransportar no ar. O teletransporte ignora obstruções, não exige linha de visão, ignora engajamento e não provoca reações; no entanto, ainda conta como movimento e, portanto, é afetado por condições como Imobilizado. Um personagem que se teletransporta conta como tendo se movido 1 espaço, não importa o quão longe viaje. Personagens podem tentar se teletransportar para espaços que não podem ver, mas se um espaço já estiver ocupado, o teletransporte falha."
+    "description": "Personagens devem começar e terminar um teletransporte em uma superfície na qual possam se mover normalmente; por exemplo, um personagem que não pode voar não pode se teletransportar no ar. O teletransporte ignora obstruções, não exige linha de visão, ignora engajamento e não provoca reações; no entanto, ainda conta como movimento e, portanto, é afetado por condições como <b>Imobilizado</b>. Um personagem que se teletransporta conta como tendo se movido 1 espaço, não importa o quão longe viaje. Personagens podem tentar se teletransportar para espaços que não podem ver, mas se um espaço já estiver ocupado, o teletransporte falha."
   },
   {
     "name": "Acertos Críticos",

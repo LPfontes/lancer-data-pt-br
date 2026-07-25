@@ -631,13 +631,13 @@
     "source": "IPS-N",
     "license": "Blackbeard",
     "license_level": 1,
-    "on_crit": "Your target becomes Shredded until the end of the current turn.",
+    "on_crit": "O seu alvo fica <b>Dilacerado</b> até fim do seu turno.",
     "description": "Uma versão simples em escala tática de uma ferramenta de cortar lenha, o machado de corrente da EIP-EN é uma lâmina serrilhada que funciona com <b>Energia</b> do Núcleo. Os dentes do machado têm ponta de tungstênio, endurecidos para mastigar alvos duros e macios. Os machados de corrente são armas eficazes e ferramentas utilitárias frequentemente usadas por grupos de abordagem para romper anteparos reforçados.",
     "license_id": "mf_blackbeard"
   },
   {
     "id": "mw_bristlecrown_flechette_launcher",
-    "name": "Lançador de Flechete Coroa",
+    "name": "  <b>Lançador</b> de Flechete Coroa",
     "mount": "Auxiliary",
     "type": "CQB",
     "damage": [
@@ -655,8 +655,8 @@
     "source": "IPS-N",
     "license": "Blackbeard",
     "license_level": 2,
-    "effect": "Esta arma ignora as penalidades de distância quando você estiver Engajado e causa 3 de <b>Dano</b> Cinético (em vez de 1) em alvos Agarrados ou Biológicos.",
-    "description": "O Lançador Flechete Coroa da EIP-EN usa um mecanismo análogo à colmeia para projetar uma zona de morte de alvos vulneráveis em uma cúpula ao redor do usuário, negando proativamente ações hostis do nível de infantaria.",
+    "effect": "Esta arma ignora as penalidades de distância quando você estiver <b>Engajado</b> e causa <b>3 de Dano Cinético</b> (em vez de 1) em alvos Agarrados ou Biológicos.",
+    "description": "O <b>  <b>Lançador</b></b> Flechete Coroa da EIP-EN usa um mecanismo análogo à colmeia para projetar uma zona de morte de alvos vulneráveis em uma cúpula ao redor do usuário, negando proativamente ações hostis do nível de infantaria.",
     "license_id": "mf_blackbeard"
   },
   {
@@ -711,12 +711,12 @@
             "val": 8
           }
         ],
-        "effect": "Você pode girar os canos desta arma como uma ação rápida.",
+        "effect": "Você pode girar os canos desta arma como uma  <b>Ação Rápida</b>.",
         "actions": [
           {
             "name": "Girar Canhão de Assalto",
             "activation": "Quick",
-            "detail": "Gire os canos do Canhão de Assalto, deixando seu mecha Lento e permitindo o uso de seu perfil 'Modo Girando'."
+            "detail": "Gire os canos do Canhão de Assalto, deixando seu mecha <b>Lento</b> e permitindo o uso de seu perfil 'Modo Girando'."
           }
         ],
         "tags": [
@@ -743,12 +743,12 @@
             "val": 8
           }
         ],
-        "effect": "Enquanto estiver girando, esta arma recebe  <b>Confiável<b>  3, mas você fica Lento.<br>Você pode encerrar esse efeito como um protocolo.",
+        "effect": "Enquanto estiver girando, esta arma recebe  <b>Confiável<b>  3, mas você fica <b>Lento</b>.<br>Você pode encerrar esse efeito como um protocolo.",
         "actions": [
           {
             "name": "Cessar Giro",
             "activation": "Protocol",
-            "detail": "Encerre o 'Modo Girando' do Canhão de Assalto, encerrando a condição Lento e permitindo que o Canhão de Assalto seja usado com seu perfil 'Padrão'."
+            "detail": "Encerre o 'Modo Girando' do Canhão de Assalto, encerrando a condição <b>Lento</b> e permitindo que o Canhão de Assalto seja usado com seu perfil 'Padrão'."
           }
         ],
         "tags": [
@@ -796,7 +796,7 @@
     "license": "Drake",
     "license_level": 2,
     "on_hit": {
-      "detail": "The target must succeed on a Hull save or become Impaired until the end of their next turn.",
+      "detail": "O alvo deve ter sucesso em uma salvaguarda de Casco ou ficar <b>Impedido</b> até o final do próximo turno dele.",
       "add_status": [
         {
           "id": "impaired",
@@ -832,12 +832,12 @@
             "val": 8
           }
         ],
-        "effect": "Ao contrário de outras armas <b>Superpesada<b>s, o Leviatã pode ser usado para <b>Alvejar</b>. Você pode girar os canos desta arma como uma ação rápida.",
+        "effect": "Ao contrário de outras armas <b>Superpesada<b>s, o Leviatã pode ser usado para <b>Alvejar</b>. Você pode girar os canos desta arma como uma  <b>Ação Rápida</b>.",
         "actions": [
           {
             "name": "Girar Leviatã",
             "activation": "Quick",
-            "detail": "Gire os canos do Canhão de Assalto Pesado Leviatã, deixando seu mecha Lento e permitindo o uso de seu perfil 'Modo Girando'."
+            "detail": "Gire os canos do Canhão de Assalto Pesado Leviatã, deixando seu mecha <b>Lento</b> e permitindo o uso de seu perfil 'Modo Girando'."
           }
         ]
       },
@@ -855,12 +855,12 @@
             "val": 8
           }
         ],
-        "effect": "Enquanto estiver girando, esta arma recebe  <b>Confiável<b>  5 e 2 de <b>Calor</b> (Autoinfligido), e seu <b>Dano</b> aumenta para 4d6+4 Cinético; no entanto, você fica Lento e não pode mais usar o Leviatã para <b>Alvejar</b>.<br>Você pode interromper esse efeito como um protocolo.",
+        "effect": "Enquanto estiver girando, esta arma recebe  <b>Confiável<b>  5 e 2 de <b>Calor</b> (Autoinfligido), e seu <b>Dano</b> aumenta para 4d6+4 Cinético; no entanto, você fica <b>Lento</b> e não pode mais usar o Leviatã para <b>Alvejar</b>.<br>Você pode interromper esse efeito como um protocolo.",
         "actions": [
           {
             "name": "Cessar Giro do Leviatã",
             "activation": "Protocol",
-            "detail": "Interrompa o 'Modo Girando' do Canhão de Assalto Pesado Leviatã, encerrando a condição Lento e permitindo que o Leviatã seja usado com seu perfil 'Padrão'."
+            "detail": "Interrompa o 'Modo Girando' do Canhão de Assalto Pesado Leviatã, encerrando a condição <b>Lento</b> e permitindo que o Leviatã seja usado com seu perfil 'Padrão'."
           }
         ],
         "tags": [
@@ -970,7 +970,7 @@
     "license": "Nelson",
     "license_level": 3,
     "on_crit": {
-      "detail": "Your target must succeed on a Hull save or be knocked Prone.",
+      "detail": "O seu alvo deve ter sucesso em uma salvaguarda de Casco ou ser derrubado <b>Caído</b>.",
       "add_status": [
         {
           "id": "prone",
@@ -1141,7 +1141,7 @@
     "source": "IPS-N",
     "license": "Tortuga",
     "license_level": 2,
-    "on_attack": "Creates a cloud of smoke and detritus in the attack cone, providing soft cover in the affected area that lasts until the end of your next turn.",
+    "on_attack": "Cria uma nuvem de fumaça e detritos no cone de ataque, fornecendo <b>Cobertura Leve</b> na área afetada que dura até o final do seu próximo turno.",
     "description": "A Cortadora Margarida é uma arma eficaz — embora antiquada — que ainda é favorita de muitos pilotos da marinha. Essencialmente, é uma espingarda maciça; o piloto carrega munição na culatra da arma, coloca um elemento Explosivo no cano, mira e dispara uma nuvem infernal de dardos de flechete, esferas e tiras de magnésio acesas, garantindo limpar qualquer convés onde tenha sido disparada.",
     "license_id": "mf_tortuga"
   },
@@ -1171,7 +1171,7 @@
     "license": "Tortuga",
     "license_level": 2,
     "on_crit": {
-      "detail": "Your target must succeed on a Hull save or become Stunned until the end of their next turn.",
+      "detail": "O seu alvo deve ter sucesso em uma salvaguarda de Casco ou ficar <b>Atordoado</b> até o final do próximo turno dele.",
       "add_status": [
         {
           "id": "stunned",
@@ -1204,7 +1204,7 @@
     "source": "IPS-N",
     "license": "Vlad",
     "license_level": 1,
-    "on_attack": "You also attack all characters in a Line between you and your target. You take 1 heat for each target past the first.",
+    "on_attack": "Você também ataca todos os personagens em uma <b>Linha</b> entre você e o seu alvo. Você sofre 1 de calor para cada alvo além do primeiro.",
     "description": "A lança de impacto é uma variante militar de uma ferramenta de mineração comum: o laser de pesquisa química de uso único. A variante militar da EIP-EN coloca uma série de lanças de impacto nos anexos braquiais ou torácicos de um mecha, deixando seus manipuladores livres para utilizar outras armas e Sistemas. Ela pode ser conectada diretamente ao Núcleo do chassi ou carregada com baterias químicas descartáveis.<br>A matriz de uma dessas lanças dispara por um microssegundo, queimando sua carga armazenada para produzir um intenso pulso de luz que gera um feixe de luz comprimida, capaz de atravessar metros de anteparo endurecido.",
     "license_id": "mf_vlad"
   },
@@ -1239,7 +1239,7 @@
     "license": "Vlad",
     "license_level": 2,
     "on_hit": {
-      "detail": "Targets must succeed on a Hull save or become Immobilized until the end of their next turn.",
+      "detail": "Os alvos devem obter sucesso em uma salvaguarda de Casco ou ficar <b>Impedido</b> até o final do próximo turno deles.",
       "add_status": [
         {
           "id": "immobilized",
@@ -1283,7 +1283,7 @@
     "source": "IPS-N",
     "license": "Vlad",
     "license_level": 3,
-    "effect": "Ao atacar um personagem que está Prostrado, Imobilizado ou <b>Atordoado</b>, a tag Exagerado desta arma causa +1d6 <b>Dano bônus</b> sempre que for ativada. Isso pode ser ativado indefinidamente se o novo resultado do dado bônus for um 1, acionando Exagerado novamente.",
+    "effect": "Ao atacar um personagem que está <b>Prostrado</b>, <b>Imobilizado</b> ou <b>Atordoado</b>, a tag Exagerado desta arma causa +1d6 <b>Dano bônus</b> sempre que for ativada. Isso pode ser ativado indefinidamente se o novo resultado do dado bônus for um 1, acionando Exagerado novamente.",
     "description": "A broca de combate é uma arma brutal de combate próximo, alimentada por um grande pacote de catalisador externo. A ponta é equipada com projetores microplasmáticos projetados para garantir a penetração da broca.",
     "license_id": "mf_vlad"
   },
@@ -1308,7 +1308,7 @@
     "license": "Black Witch",
     "license_level": 1,
     "on_hit": {
-      "detail": "All characters within the affected area must succeed on a Hull save or be pulled 1d3+1 spaces toward you, or as close as possible.",
+      "detail": "Todos os personagens dentro da área afetada devem obter sucesso em uma salvaguarda de Casco ou ser puxados <b>1d3+1 espaços</b> em sua direção, ou o mais perto possível.",
       "save": {
         "stat": "hull",
         "aoe": true
@@ -1412,13 +1412,13 @@
     "source": "SSC",
     "license": "Dusk Wing",
     "license_level": 1,
-    "effect": "Esta arma não ataca personagens aliados pegos em sua área de efeito; em vez disso, ela os envolve em um campo de <b>Energia</b> coruscante que confunde os Sistemas de mira, dando-lhes <b>cobertura leve<b>. até o final de seu próximo turno.",
+    "effect": "Esta arma não ataca personagens aliados pegos em sua área de efeito; em vez disso, ela os envolve em um campo de <b>Energia</b> coruscante que confunde os Sistemas de mira, dando-lhes <b>Cobertura Leve<b>. até o final de seu próximo turno.",
     "description": "“Fizemos o primeiro contato talvez uma hora depois de violar o cofre. Não me lembro de nada. Disseram-me que a maior parte do meu esquadrão foi morta na hora; tudo o que me lembro é de luz – brilhante – e uma leveza em meu próprio ser.<br>“Acredito que morri naquele momento e, no entanto, estou aqui, e não consigo conciliar essas duas realidades. Algo deu errado, algo deu errado, algo deu–”",
     "license_id": "mf_dusk_wing"
   },
   {
     "id": "mw_burst_launcher",
-    "name": "Lançador de Rajada",
+    "name": "  <b>Lançador</b> de Rajada",
     "mount": "Main",
     "type": "Launcher",
     "damage": [
@@ -1449,7 +1449,7 @@
     "license": "Dusk Wing",
     "license_level": 2,
     "on_crit": {
-      "detail": "Target becomes Impaired until the end of their next turn.",
+      "detail": "O alvo fica <b>Impedido</b> até o final do próximo turno dele.",
       "add_status": [
         {
           "id": "impaired",
@@ -1624,7 +1624,7 @@
     "source": "SSC",
     "license": "Monarch",
     "license_level": 3,
-    "effect": "Ataques com esta arma criam até duas áreas de <b>Explosão</b> 1, que não podem se sobrepor.<br>Você também pode atrasar o impacto dos ataques feitos com esta arma. Escolha a(s) área(s) alvo, que se tornam visíveis para todos os personagens: os mísseis aterrissam no final da próxima rodada, após todos os personagens terem agido, e causam 3d6 de <b>Dano</b> EXPLOSIVO em vez de 2d6, mas você fica Lento até o final de seu próximo turno.",
+    "effect": "Ataques com esta arma criam até duas áreas de <b>Explosão</b> 1, que não podem se sobrepor.<br>Você também pode atrasar o impacto dos ataques feitos com esta arma. Escolha a(s) área(s) alvo, que se tornam visíveis para todos os personagens: os mísseis aterrissam no final da próxima rodada, após todos os personagens terem agido, e causam <b>3d6 de Dano</b> EXPLOSIVO em vez de 2d6, mas você fica <b>Lento</b> até o final de seu próximo turno.",
     "description": "Os mísseis Pinaka são mísseis maciços de dois estágios, tipicamente montados ao longo da espinha de um mecha ou transportados, desmontados, para serem lançados de uma montagem braquial. O Pinaka foi originalmente adaptado de mísseis de nave para nave; como tal, seu segundo estágio usa reposicionamento assistido por jato para orientação em voo.",
     "license_id": "mf_monarch"
   },
@@ -1653,7 +1653,7 @@
     "source": "SSC",
     "license": "Mourning Cloak",
     "license_level": 1,
-    "on_crit": "You may teleport 2 spaces in any direction after the attack resolves.",
+    "on_crit": "Você pode se teleportar <b>2 espaços</b> em qualquer direção após o ataque ser resolvido.",
     "description": ">//[Estou sozinho aqui?]<br>>//[[Não. Há apenas uma ausência de você. Está muito ocupado aqui, mas você não pode ver isso.]]<br>— Excerto do tablet de DHIYED 1.3",
     "license_id": "mf_mourning_cloak"
   },
@@ -1711,7 +1711,7 @@
     "license": "Mourning Cloak",
     "license_level": 3,
     "on_crit": {
-      "detail": "Deal +1d6 bonus damage.",
+      "detail": "Cause +1d6 de dano bônus.",
       "bonus_damage": {
         "val": "1d6",
         "hit_type": "crit"
@@ -1777,7 +1777,7 @@
     "source": "HORUS",
     "license": "Balor",
     "license_level": 3,
-    "on_crit": "Pull your target to a free space adjacent to you, or as close as possible.",
+    "on_crit": "Puxe seu alvo para um espaço livre adjacente a você, ou o mais próximo possível.",
     "description": "Utilizando programação de enxame e diretrizes de legião, os coletivistas da HÓRUS criaram uma <b>Estrutura</b> para organizar um enxame de nanorrobôs em uma arma semelhante a um chicote. Os chicotes de nanorrobôs podem se retrair em sua empunhadura para armazenamento, se expandir em combate corpo a corpo para restringir inimigos próximos e retornar à empunhadura quando convocados.",
     "sp": 2,
     "license_id": "mf_balor"
@@ -1846,13 +1846,13 @@
     "source": "HORUS",
     "license": "Goblin",
     "license_level": 1,
-    "effect": "Em vez de usar qualquer tipo de mecanismo de disparo, esta arma escaneia automaticamente os alvos travados, disparando discos afiados e giratórios após identificações bem-sucedidas. Você ganha a <b>reação</b> Assalto Autônomo, que é a única maneira de atacar com o Autocanhão.",
+    "effect": "Em vez de usar qualquer tipo de mecanismo de disparo, esta arma escaneia automaticamente os alvos travados, disparando discos afiados e giratórios após identificações bem-sucedidas. Você ganha a <b>Reação</b> Assalto Autônomo, que é a única maneira de atacar com o Autocanhão.",
     "actions": [
       {
         "name": "Assalto Autônomo",
         "activation": "Reaction",
         "frequency": "1/round",
-        "trigger": "Another character attacks a target within range 15 of you and consumes Lock On",
+        "trigger": "Outro personagem ataca um alvo dentro do <b>Alcance 15</b> de você e consome o <b>Alvo Travado</b>",
         "detail": "Você pode automaticamente acertar o alvo atacado com o Autocanhão."
       }
     ],
@@ -1881,13 +1881,13 @@
     "source": "HORUS",
     "license": "Gorgon",
     "license_level": 3,
-    "effect": "Ganhe a <b>reação</b> VAPT-VUPT, que é a única maneira que você pode atacar com essa arma.",
+    "effect": "Ganhe a <b>Reação</b> VAPT-VUPT, que é a única maneira que você pode atacar com essa arma.",
     "actions": [
       {
         "name": "VAPT-VUPT",
         "activation": "Reaction",
         "frequency": "1/round",
-        "trigger": "A hostile character within Range of the Vorpal Gun and line of sight deals damage to an allied character.",
+        "trigger": "Um personagem hostil dentro do <b>Alcance</b> da Arma Vorpal e com linha de visão causa dano a um personagem aliado.",
         "detail": "Você pode fazer um ataque contra o personagem hostil com a Arma Vorpal."
       }
     ],
@@ -1922,7 +1922,7 @@
     "source": "HORUS",
     "license": "Hydra",
     "license_level": 1,
-    "on_attack": "Choose this weapon’s damage type.",
+    "on_attack": "Escolha o tipo de dano desta arma.",
     "description": "Nexos Carniçais comandam alguns dos maiores <b>Drones</b> viáveis no combate moderno. Esses <b>Drones</b> são um pouco menores que um humano médio — cilindros metálicos repletos de pontos de ancoragem adequados para a maioria das armas antimecha de nível de infantaria. Impulsionados por Sistemas a jato capazes de VTOL/pairar, os <b>Drones</b> Carniçais são unidades autônomas multifuncionais temíveis, difíceis de rastrear e abater.",
     "license_id": "mf_hydra"
   },
@@ -1964,7 +1964,7 @@
         "armor": 2,
         "edef": 10,
         "evasion": 10,
-        "detail": "O Nexo Lívido pode ser posicionado em um espaço livre ao <b>Alcance</b> dos <b>Sensores</b> e na linha de visão como uma <b>Ação Livre</b>, onde se torna um Drone estacionário e flutuante. Uma vez posicionado, você ainda pode usá-lo para <b>Alvejar</b> e usar <b>Barragem</b> como se ainda fosse uma arma, mas com linha de visão e <b>Alcance</b> a partir da localização do Nexo.<br>Você pode recolher ou reposicionar o Nexo Lívido como uma ação rápida. Até ser recolhido ou destruído, ele permanece posicionado até o final da cena. Se for destruído, ele segue as regras para <b>Drones</b> destruídos e não pode ser usado até que seja reparado."
+        "detail": "O Nexo Lívido pode ser posicionado em um espaço livre ao <b>Alcance</b> dos <b>Sensores</b> e na linha de visão como uma <b>Ação Livre</b>, onde se torna um Drone estacionário e flutuante. Uma vez posicionado, você ainda pode usá-lo para <b>Alvejar</b> e usar <b>Barragem</b> como se ainda fosse uma arma, mas com linha de visão e <b>Alcance</b> a partir da localização do Nexo.<br>Você pode recolher ou reposicionar o Nexo Lívido como uma  <b>Ação Rápida</b>. Até ser recolhido ou destruído, ele permanece posicionado até o final da cena. Se for destruído, ele segue as regras para <b>Drones</b> destruídos e não pode ser usado até que seja reparado."
       }
     ],
     "description": "Este Lívido é uma versão blindada e armada do drone Carniçal; os <b>Drones</b> Lívidos têm um sistema de voo aprimorado capaz de manusear armas de nível de mecha dentro de parâmetros ideais e podem operar independentemente de seus Chassis hospedeiros ou como arma integrada. Nos Hidras, os <b>Drones</b> Lívidos geralmente atuam como segmentos torácicos, fornecendo <b>Armadura</b> aos Sistemas Principais: planta de <b>Energia</b>, cabine, urnas de PNH etc.",
@@ -1998,7 +1998,7 @@
     "source": "HORUS",
     "license": "Hydra",
     "license_level": 3,
-    "on_attack": "You can make a second attack with this weapon at the start of your next turn as a protocol. This secondary attack can’t deal bonus damage, and doesn't trigger additional secondary attacks.<br>You may center this weapon’s attack on either yourself or any of your Drones within Sensors.",
+    "on_attack": "Você pode fazer um segundo ataque com esta arma no início do seu próximo turno como um protocolo. Este ataque secundário não pode causar dano bônus e não desencadeia ataques secundários adicionais.<br>Você pode centralizar o ataque desta arma em si mesmo ou em qualquer um dos seus Drones dentro do alcance dos Sensores.",
     "actions": [
       {
         "name": "Ataque Secundário do Nexo Aniquilação",
@@ -2044,7 +2044,7 @@
   },
   {
     "id": "mw_arc_projector",
-    "name": "Projetor de  <b>Arco<b> ",
+    "name": "Projetor de Arco",
     "mount": "Heavy",
     "type": "CQB",
     "damage": [
@@ -2132,7 +2132,7 @@
     "source": "HORUS",
     "license": "Pegasus",
     "license_level": 2,
-    "effect": "Esta arma horripilante não possui forma básica; ela se contorce constantemente em diferentes formas, imitando as armas de outros combatentes. Ela conta como todos os tipos de armas à distância simultaneamente (ex: PAP, Fuzil, etc.), mas não pode aceitar Modificações ou se beneficiar de bônus de Núcleo, embora ainda se beneficie de talentos normalmente.<br>No início do combate, role 3d20 e anote os resultados em ordem: X, Y e Z. X é o seu <b>Alcance</b> base inicial (antes das modificações dos talentos). No início de cada um de seus turnos após o primeiro, a pistola mímica cicla para o próximo resultado, assumindo-o como seu <b>Alcance</b> base. Após Z, ela volta para X.<br>A pistola mímica causa <b>Dano</b> Cinético igual a 1 + metade do seu <b>Alcance</b> base atual.<br>Você pode provocar a pistola mímica como uma ação completa, rolando um novo conjunto de 3d20.",
+    "effect": "Esta arma horripilante não possui forma básica; ela se contorce constantemente em diferentes formas, imitando as armas de outros combatentes. Ela conta como todos os tipos de armas à distância simultaneamente (ex: PAP, Fuzil, etc.), mas não pode aceitar Modificações ou se beneficiar de bônus de Núcleo, embora ainda se beneficie de talentos normalmente.<br>No início do combate, role 3d20 e anote os resultados em ordem: X, Y e Z. X é o seu <b>Alcance</b> base inicial (antes das modificações dos talentos). No início de cada um de seus turnos após o primeiro, a pistola mímica cicla para o próximo resultado, assumindo-o como seu <b>Alcance</b> base. Após Z, ela volta para X.<br>A pistola mímica causa <b>Dano</b> Cinético igual a 1 + metade do seu <b>Alcance</b> base atual.<br>Você pode provocar a pistola mímica como uma <b>Ação Completa</b>, rolando um novo conjunto de 3d20.",
     "actions": [
       {
         "name": "Provoke Mimic Gun",
@@ -2204,7 +2204,7 @@
             "val": "3d6"
           }
         ],
-        "on_attack": "Choose to fire in either siege mode or direct fire mode.",
+        "on_attack": "Escolha disparar no modo cerco ou no modo disparo direto.",
         "tags": [
           {
             "id": "tg_arcing"
@@ -2235,7 +2235,7 @@
             "val": "3d6"
           }
         ],
-        "on_attack": "Choose to fire in either siege mode or direct fire mode.",
+        "on_attack": "Escolha disparar no modo cerco ou no modo disparo direto.",
         "tags": [
           {
             "id": "tg_knockback",
@@ -2248,7 +2248,7 @@
         ]
       }
     ],
-    "description": "O canhão de cerco é a peça de  <b>Artilharia<b>  quintessencial: um canhão obus alimentado por um sistema automatizado de <b>Recarga<b>. Tipicamente encaixado em mechas de longa distância utilizados em papéis de  <b>Artilharia<b>  ou suporte de esquadrão, canhões de cerco são tão capazes de fogo direto quanto indireto, como a situação demandar com as opções variáveis de munição.",
+    "description": "O canhão de cerco é a peça de artilharia quintessencial: um canhão obus alimentado por um sistema automatizado de recarga. Tipicamente encaixado em mechas de longa distância utilizados em papéis de artilharia ou suporte de esquadrão, canhões de cerco são tão capazes de fogo direto quanto indireto, como a situação demandar com as opções variáveis de munição.",
     "license_id": "mf_barbarossa"
   },
   {
@@ -2312,8 +2312,8 @@
     "source": "HA",
     "license": "Genghis",
     "license_level": 3,
-    "effect": "Pode ser disparado como <b>Cone</b> 7 <i>ou</i> <b>Linha</b> 10",
-    "on_attack": "White-hot flames continue to burn in 3 free spaces of your choice within the affected area, lasting for the rest of the scene. When characters start their turn in one of these spaces or enter one for the first time in a round, they take 1d6 energy damage.",
+    "effect": "Pode ser disparado como <b>Cone 7</b> ou <b>Linha 10</b>",
+    "on_attack": "Chamas incandescentes continuam queimando em 3 espaços livres de sua escolha dentro da área afetada, durando até o final da cena. Quando os personagens começam seu turno em um desses espaços ou entram em um pela primeira vez em um turno, eles sofrem 1d6 de dano de energia.",
     "description": "O lança-plasma emergiu tarde demais na Crise Hercyniana para ser usado amplamente no campo. Os poucos dados obtidos dos esquadrões FEF que o utilizaram sugerem que os lança-plasma teriam feito um tremendo impacto nas resoluções de diversas batalhas importantes que ocorreram durante a fase mais sangrenta da Crise.",
     "license_id": "mf_genghis"
   },
@@ -2371,7 +2371,7 @@
     "license": "Iskander",
     "license_level": 2,
     "on_attack": {
-      "detail": "Characters within the affected area must succeed on a Hull save or take 1d6 energy damage and be pulled as close to the center of the blast possible. This weapon cannot be modified or benefit from core bonuses.",
+      "detail": "Os personagens dentro da área afetada devem obter sucesso em uma salvaguarda de Casco ou sofrer 1d6 de dano de energia e ser puxados o mais próximo possível do centro da explosão. Esta arma não pode ser modificada ou beneficiar de bônus principais.",
       "damage": [
         {
           "type": "Energy",
@@ -2555,14 +2555,14 @@
     "source": "HA",
     "license": "Sherman",
     "license_level": 3,
-    "on_attack": "If you’re in the Danger Zone, create a cone 3 backblast of burning plasma in the opposite direction to the attack. Characters within the affected area must succeed on an Engineering save or take 4 burn and 2 heat. Until the start of your next turn, the affected area provides soft cover.",
+    "on_attack": "Se você estiver na <b>Zona de Perigo</b>, crie um <b>Cone de exaustão</b> de plasma incandescente de <b>3 espaços</b> na direção oposta ao ataque. Os personagens dentro da área afetada devem obter sucesso em uma <b>salvaguarda de Engenharia</b> ou sofrer <b>4 de queimadura</b> e <b>2 de calor</b>. Até o início do seu próximo turno, a área afetada fornece <b>Cobertura Leve</b>.",
     "actions": [
       {
         "name": "Tachyon Lance Backblast",
         "activation": "None",
         "frequency": "1/round",
-        "trigger": "You attack with the Tachyon Lance while in the Danger Zone.",
-        "detail": "Create a cone 3 backblast of burning plasma in the opposite direction to the attack. Characters within the affected area must succeed on an Engineering save or take 4 burn and 2 heat. Until the start of your next turn, the affected area provides soft cover.",
+        "trigger": "Atacar com a Lança de Táquions enquanto estiver na <b>Zona de Perigo</b>.",
+        "detail": "Crie um <b>Cone de sopro</b> de plasma em combustão de <b>3 espaços</b> na direção oposta ao ataque. Os personagens dentro da área afetada devem obter sucesso em uma <b>salvaguarda de Engenharia</b> ou sofrer <b>4 de queimadura</b> e <b>2 de calor</b>. Até o início do seu próximo turno, a área afetada fornece <b>Cobertura Leve</b>.",
         "damage": [
           {
             "type": "Burn",
@@ -2691,7 +2691,7 @@
     "talent_item": true,
     "talent_id": "t_nuclear_cavalier",
     "talent_rank": 3,
-    "on_attack": "Clear 4 heat.",
+    "on_attack": "Limpar 4 de calor.",
     "description": "Obtido do Talento de piloto 'Cavaleiro Nuclear: Ranque 3'."
   },
   {
@@ -2874,7 +2874,7 @@
       {
         "name": "Disparar Canhão do Apocalipse",
         "activation": "Full",
-        "detail": "Se o valor do Dado de Apocalipse for 1 a 3, você pode atacar no seu turno com o Canhão do Apocalipse como uma ação completa, mas não pode se mover nem usar nenhuma ação no mesmo turno."
+        "detail": "Se o valor do Dado de Apocalipse for 1 a 3, você pode atacar no seu turno com o Canhão do Apocalipse como uma <b>Ação Completa</b>, mas não pode se mover nem usar nenhuma ação no mesmo turno."
       }
     ],
     "profiles": [
@@ -2913,7 +2913,7 @@
             "val": "2d6"
           }
         ],
-        "effect": "Objetos na área afetada automaticamente sofrem 20 Explosivo(PF). Depois do ataque, a nuvem da <b>Explosão</b> permanece, dando <b>cobertura leve<b>. para personagens na área afetada até o final do seu próximo turno."
+        "effect": "Objetos na área afetada automaticamente sofrem 20 Explosivo(PF). Depois do ataque, a nuvem da <b>Explosão</b> permanece, dando <b>Cobertura Leve<b>. para personagens na área afetada até o final do seu próximo turno."
       },
       {
         "name": "Charge Rail: 2",
@@ -2933,7 +2933,7 @@
             "val": "3d6"
           }
         ],
-        "effect": "Objetos e terreno na área automaticamente sofrem 40 Explosivo(PF) e, em caso de acerto, personagens ficam <b>Dilacerado</b>s e Impedidos até o final do próximo turno deles. A nuvem da <b>Explosão</b> é uma tempestade ardente: até o final do seu próximo turno, personagens dentro da área afetada obtêm <b>cobertura leve<b>., e personagens que começarem o turno deles na área ou se moverem para ela pela primeira vez em uma rodada sofrem 4 de <b>Queimadura</b>."
+        "effect": "Objetos e terreno na área automaticamente sofrem 40 Explosivo(PF) e, em caso de acerto, personagens ficam <b>Dilacerado</b>s e Impedidos até o final do próximo turno deles. A nuvem da <b>Explosão</b> é uma tempestade ardente: até o final do seu próximo turno, personagens dentro da área afetada obtêm <b>Cobertura Leve<b>., e personagens que começarem o turno deles na área ou se moverem para ela pela primeira vez em uma rodada sofrem 4 de <b>Queimadura</b>."
       },
       {
         "name": "Charge Rail: 1",
@@ -2953,7 +2953,7 @@
             "val": "4d6"
           }
         ],
-        "effect": "Objetos e terrenos na área automaticamente sofrem 100 Explosivo(PF) e personagens que forem acertados ficam <b>Dilacerado</b>s e Impedidos até o final do próximo turno deles. O chão da área afetada é vaporizado no impacto: pelo restante da cena, ele é <b>terreno difícil</b>, personagens dentro da área afetada obtêm <b>cobertura leve<b>., e personagens que começam o turno deles na área ou se moverem para ela pela primeira vez em uma rodada sofrem 4 de <b>Queimadura</b>."
+        "effect": "Objetos e terrenos na área automaticamente sofrem 100 Explosivo(PF) e personagens que forem acertados ficam <b>Dilacerado</b>s e Impedidos até o final do próximo turno deles. O chão da área afetada é vaporizado no impacto: pelo restante da cena, ele é <b>terreno difícil</b>, personagens dentro da área afetada obtêm <b>Cobertura Leve<b>., e personagens que começam o turno deles na área ou se moverem para ela pela primeira vez em uma rodada sofrem 4 de <b>Queimadura</b>."
       }
     ]
   },
