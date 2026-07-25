@@ -34,5 +34,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@massif/lancer-data": "^4.0.8"
+  }
 }

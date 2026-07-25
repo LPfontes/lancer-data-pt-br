@@ -64,6 +64,12 @@
     "description": "Esta arma deve ser recarregada após cada uso. Mechas podem <b>Recarregar</b> com a ação <b>Estabilizar</b> e alguns Sistemas."
   },
   {
+    "id": "tg_loading_after",
+    "name": "Loading (Multiple Uses)",
+    "description": "This weapon must be reloaded after {VAL} uses. Mechs can reload with Stabilize and some systems. The user can choose to reload this weapon at the end of their turn, allowing them to fire it again on the same turn. This is a COMP/CON-specific alias for the LOADING tag, and all rules pertaining to LOADING apply.",
+    "hidden": true
+  },
+  {
     "id": "tg_ordnance",
     "name": "Artilharia",
     "description": "Esta arma só pode ser disparada antes que o usuário se mova ou realize qualquer outra ação em seu turno, exceto Protocolos. O usuário ainda pode agir e se mover normalmente após atacar. Adicionalmente, por causa de seu <b>Tamanho</b>, esta arma não pode ser usada contra alvos em engajamento com o mecha do usuário, e não pode ser usada para <b>Retaliar</b>."
@@ -196,17 +202,20 @@
   {
     "id": "tg_personal_armor",
     "name": "Armadura Pessoal",
-    "description": "Este equipamento oferece proteção em combate, mas é óbvio para os observadores e geralmente não pode ser <b>Escondido</b>. Apenas uma peça de <b>Armadura</b> Pessoal pode ser usada por vez. Colocar a <b>Armadura</b> Pessoal leva de 10 a 20 minutos, e ao usá-la, os pilotos têm mobilidade e destreza restritas. Ninguém usa <b>Armadura</b> a menos que espere entrar em uma zona de guerra."
+    "description": "Este equipamento oferece proteção em combate, mas é óbvio para os observadores e geralmente não pode ser <b>Escondido</b>. Apenas uma peça de <b>Armadura</b> Pessoal pode ser usada por vez. Colocar a <b>Armadura</b> Pessoal leva de 10 a 20 minutos, e ao usá-la, os pilotos têm mobilidade e destreza restritas. Ninguém usa <b>Armadura</b> a menos que espere entrar em uma zona de guerra.",
+    "hidden": true
   },
   {
     "id": "tg_pilot_weapon",
     "name": "Arma de Piloto",
-    "description": "Em missões, os pilotos podem levar até duas armas. Todas as armas de piloto são de escala de piloto e não podem ser usadas por mechas."
+    "description": "Em missões, os pilotos podem levar até duas armas. Todas as armas de piloto são de escala de piloto e não podem ser usadas por mechas.",
+    "hidden": true
   },
   {
     "id": "tg_gear",
     "name": "Equipamento",
-    "description": "Esta é uma ferramenta, peça de equipamento ou outro item. Os pilotos podem ter até três destes por vez."
+    "description": "Esta é uma ferramenta, peça de equipamento ou outro item. Os pilotos podem ter até três destes por vez.",
+    "hidden": true
   },
   {
     "id": "tg_sidearm",
@@ -253,8 +262,7 @@
   {
     "id": "tg_exotic",
     "name": "Equipamento Exótico",
-    "description": "Equipamento Exótico é uma tag geral para equipamentos que existem fora do sistema de licenciamento tradicional.",
-    "filter_ignore": true
+    "description": "Equipamento Exótico é uma tag geral para equipamentos que existem fora do sistema de licenciamento tradicional."
   },
   {
     "id": "tg_recharge",
@@ -315,5 +323,36 @@
     "name": "Previne Cascata",
     "description": "Proíbe um sistema de IA de ser reconhecido como um alvo válido para Cascata.",
     "hidden": true
+  },
+  {
+    "id": "tg_irreducible",
+    "name": "Irreducible",
+    "description": "Prohibits damage reduction from any source (HIDDEN TAG)",
+    "hidden": true
+  },
+  {
+    "id": "tg_npc_system",
+    "name": "NPC System",
+    "description": "This NPC Feature is categorized as a SYSTEM"
+  },
+  {
+    "id": "tg_npc_weapon",
+    "name": "NPC Weapon",
+    "description": "This NPC Feature is categorized as a WEAPON"
+  },
+  {
+    "id": "tg_npc_trait",
+    "name": "NPC Trait",
+    "description": "This NPC Feature is categorized as a TRAIT"
+  },
+  {
+    "id": "tg_npc_reaction",
+    "name": "NPC Reaction",
+    "description": "This NPC Feature is categorized as a REACTION"
+  },
+  {
+    "id": "tg_npc_tech",
+    "name": "NPC Tech Action",
+    "description": "This NPC Feature is categorized as a TECH ACTION"
   }
 ]

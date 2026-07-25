@@ -1,20 +1,5 @@
 [
   {
-    "id": "missing_weaponmod",
-    "name": "Carga Térmica",
-    "sp": 1,
-    "allowed_types": [
-      "Melee"
-    ],
-    "source": "GMS",
-    "license": "GMS",
-    "license_level": 1,
-    "effect": "Em um acerto com a arma à qual este mod é aplicado, gaste uma carga como uma <b>Ação Livre</b> para ativar seu detonador e causar +1d6 de <b>Dano</b> EXPLOSIVO de bônus.",
-    "description": "Uma modificação popular da clássica lança de guerra envolve a substituição da longa ponta perfurante da lança por uma carga explosiva descartável acionada por impacto. Na penetração, a ponta da lança é separada do cabo – momentos depois, a ponta embutida detona em uma <b>Explosão</b> cônica a partir do ponto de impacto. As <b>Cargas</b> térmicas sobressalentes são estáveis e transportadas em carregadores tubulares externos.<br>A EIP-EN também fabrica <b>Cargas</b> térmicas compatíveis com a <b>Linha</b> de lâminas, martelos e picaretas da SMG.",
-    "tags": [],
-    "license_id": ""
-  },
-  {
     "id": "wm_thermal_charge",
     "name": "Carga Térmica",
     "sp": 2,
@@ -25,6 +10,17 @@
     "license": "Nelson",
     "license_level": 2,
     "effect": "Ao acertar com essa arma, gaste uma carga como uma <b>Ação Livre</b> para ativar seu detonador e causar +1d6explosive de <b>Dano bônus</b>.",
+    "on_hit": {
+      "detail": "On a hit with the weapon this mod is applied to, expend a charge as a free action to activate its detonator and deal +1d6 explosive bonus damage.",
+      "damage": [
+        {
+          "val": "1d6",
+          "type": "Explosive"
+        }
+      ],
+      "activation": "Free"
+    },
+    "cost": 1,
     "description": "Uma modificação popular no clássico pique de guerra envolve substituir a longa ponta perfurante por uma carga explosiva descartável, acionada por impacto. Na penetração, a ponta do pique é separada do cabo — momentos depois, a ponta embutida detona em uma <b>Explosão</b> cônica para frente. <b>Cargas</b> térmicas sobressalentes são estáveis e transportadas em tubos externos.<br>A EIP-EN também fabrica <b>Cargas</b> térmicas compatíveis com a <b>Linha</b> de lâminas, martelos e picaretas da SMG.",
     "tags": [
       {
@@ -33,12 +29,6 @@
       },
       {
         "id": "tg_unique"
-      }
-    ],
-    "added_damage": [
-      {
-        "type": "Explosive",
-        "val": "1d6"
       }
     ],
     "license_id": "mf_nelson"
@@ -59,6 +49,14 @@
     "license": "Raleigh",
     "license_level": 3,
     "effect": "A sua comp/con classe TIO controla essa arma e seus Sistemas associados.<br>1/turno, você pode atacar com +2 de Dificuldade usando a arma de TIO como uma <b>Ação Livre</b>. TIO não pode usar armas que já foram usadas neste turno, e qualquer arma que TIO usar para atacar não pode ser usada novamente até o início do seu próximo turno.<br>TIO não é uma PNH completa, então não pode entrar em cascata.",
+    "actions": [
+      {
+        "name": "UNCLE",
+        "activation": "Free",
+        "frequency": "1/turn",
+        "detail": "1/turn, you can attack at +2 difficulty with UNCLE’s weapon as a free action. UNCLE can’t use weapons that have already been used this turn, and any weapon UNCLE attacks with can’t be used again until the start of your next turn."
+      }
+    ],
     "description": "O sistema comp/con TIO da EIP-EN é o resultado do programa ESTRELANEGRA-2, um projeto temporário que buscava desenvolver armas <b>Inteligentes</b> mais avançadas. Os primeiros protótipos foram prejudicados por uma combinação de alto consumo de <b>Energia</b>, condicionamento instável e orientação frustrante para tarefas únicas, o que eventualmente levou ao encerramento do projeto.<br>Embora a EIP-EN não esteja mais desenvolvendo novas versões da TIO, eles ainda possuem um estoque de Sistemas antigos aprovados pelo Controle de Qualidade acessíveis a pilotos qualificados.<br>Pilotos sortudos o suficiente para testar os modelos juram ao falar bem da eficiência e raciocínio paralelo da TIO, embora as comp/cons desatualizadas sejam conhecidas por suas personalidades um tanto instáveis.",
     "tags": [
       {
@@ -89,6 +87,21 @@
     "license": "Tortuga",
     "license_level": 3,
     "effect": "Escolha entre CQR, Canhão ou Fuzil: Ao atacar com uma dessas armas, você pode disparar uma munição de penetração profunda em vez de atacar normalmente. Trace um caminho de <b>Linha</b> 3 a partir de você, passando por terreno ou outros obstáculos — qualquer personagem ou objeto no caminho sofre 2kinetic PF conforme o projétil perfura através deles e sai do outro lado. A Distância, cobertura e linha de visão para o ataque são então medidas a partir do final deste caminho, continuando na mesma direção.",
+    "actions": [
+      {
+        "name": "Fire Throughbolt Round",
+        "activation": "None",
+        "detail": "Instead of this weapon's normal attack, fire a Throughbolt Round. Draw a line 3 path from you, passing through terrain or other obstacles – any characters or objects in the path take 2 AP kinetic damage as the projectile punches through them and out the other side. Range, cover, and line of sight for the attack are then measured from the end of this path, continuing in the same direction.",
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": 2,
+            "ap": true,
+            "aoe": true
+          }
+        ]
+      }
+    ],
     "description": "As munição de penetração profunda são uma invenção antiarmadura patenteada da EIP-EN. Quando disparadas, as munições inflamam e projetam um <b>Cone</b> superaquecido de plasma à sua frente, criando um efeito como uma lança em miniatura que penetra facilmente em múltiplos alvos — até mesmo através de superfícies duras.",
     "tags": [
       {
@@ -108,13 +121,15 @@
     "license": "Metalmark",
     "license_level": 3,
     "effect": "além do seu <b>Dano</b> usual, 1/rodada você pode ativar a coroa como uma ação rápida quando acertar um personagem com esta arma para fazê-lo sofrer 1d6 de <b>Queimadura</b>. Se ele já estiver sofrendo de <b>Queimadura</b>, adicionalmente ele só pode ter linha de visão para espaços adjacentes até o final do próximo turno dele.",
-    "actions": [
-      {
-        "name": "Ativar Coroa de Choque",
-        "activation": "Quick",
-        "detail": "1/rodada você pode ativar a Coroa de Choque como uma ação rápida quando acertar um personagem com a arma à qual este mod está aplicado para fazê-lo sofrer 1d6 de <b>Queimadura</b>. Se ele já estiver sofrendo de <b>Queimadura</b>, adicionalmente ele só pode ter linha de visão para espaços adjacentes até o final do próximo turno dele."
-      }
-    ],
+    "actions": {
+      "activation": "Quick",
+      "damage": [
+        {
+          "type": "Burn",
+          "val": "1d6"
+        }
+      ]
+    },
     "description": "Uma modificação pós-fábrica popular entre especialistas em combate corpo a corpo, as Coroas de Choque integram um feixe de filamentos condutores dentro da lâmina, ponta ou superfície de uma arma de combate próximo. Combinadas com uma fonte de <b>Energia</b> — tipicamente no cabo ou metade inferior de uma arma, mas às vezes externa — as Coroas de Choque conferem às armas cinéticas uma vantagem térmica e um marcador visual distinto: finas linhas de luz branca quente como filigrana, envolvendo a arma modificada em <b>Calor</b> cintilante.",
     "tags": [
       {
@@ -215,52 +230,11 @@
     "added_tags": [
       {
         "id": "tg_overkill"
+      },
+      {
+        "id": "tg_irreducible"
       }
     ],
     "license_id": "mf_saladin"
-  },
-  {
-    "id": "wm_molten_wreathe",
-    "name": "Manoplas de Derretimento",
-    "sp": 2,
-    "allowed_types": [
-      "Melee"
-    ],
-    "source": "IPS-N",
-    "license": "Zheng",
-    "license_level": 2,
-    "effect": "Escolha uma arma CORPO A CORPO: 1/rodada, após acertar um personagem com esta arma, você sofre 1 de Calor e ela projeta uma nuvem superaquecida em Cone 3 orientada para longe do seu alvo em uma direção à sua escolha. Seu alvo e quaisquer personagens pegos nesta nuvem sofrem 2 de Dano Explosivo cada.",
-    "description": "Necessitando de um impulso significativo na capacidade corpo a corpo de seu Raleigh, Xiong decidiu por uma solução rústica, mas eficaz: redirecionar os sistemas de dispersão de núcleo frio do Raleigh para as palmas do chassi.",
-    "license_id": "mf_zheng"
-  },
-  {
-    "id": "wm_supermassive_mod",
-    "name": "Modificação Supermassiva",
-    "sp": 1,
-    "allowed_types": [
-      "Melee",
-      "CQB",
-      "Cannon"
-    ],
-    "source": "IPS-N",
-    "license": "Caliban",
-    "license_level": 1,
-    "effect": "Escolha uma arma de CQR, CANHÃO ou corpo a corpo: ela recebe EXAGERADO e REPULSÃO +1. Durante um REPARO COMPLETO, você pode ajustá-la para remover os limitadores de segurança, trocando os benefícios por REPULSÃO +2; no entanto, ela também recebe ARTILHARIA (se for uma arma à distância) ou IMPRECISO (se for corpo a corpo).",
-    "description": "A primeira de uma série de modificações de melhores práticas para combate à queima roupa, desenvolvida pelo mesmo Projeto de Campo Titã-Encélado que produziu o Calibã, as modificações supermassivas incluem uma série de alterações em armas de combate à queima roupa projetadas para aumentar sua letalidade e utilidade geral ao remover precauções de segurança.",
-    "tags": [
-      {
-        "id": "tg_unique"
-      }
-    ],
-    "added_tags": [
-      {
-        "id": "tg_overkill"
-      },
-      {
-        "id": "tg_knockback",
-        "val": 1
-      }
-    ],
-    "license_id": "mf_caliban"
   }
 ]

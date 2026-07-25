@@ -56,8 +56,8 @@
     ],
     "core_system": {
       "name": "Injetor de Combustível Hiperespec",
-      "active_name": "Potencializar",
-      "active_effect": "Pelo resto desta cena, você recebe <b>+1 de Precisão</b> em todos os ataques, testes e salvamentos; adicionalmente, 1/turno, você pode <b>Impulsionar</b> como uma <b>Ação Livre</b>.",
+      "active_name": "Power Up",
+      "active_effect": "For the rest of this scene, you gain +1 Accuracy on all attacks, checks, and saves; additionally, 1/turn, you can Boost as a free action.",
       "use": "Encounter",
       "frequency": "1/scene",
       "activation": "Protocol",
@@ -125,7 +125,7 @@
         "active_actions": [
           {
             "name": "Arpeu",
-            "condition": "Você agarra com sucesso um alvo em <b>Alcance 5</b>.",
+            "condition": "You successfully grapple a target within Range 5.",
             "detail": "O Barba Negra pode <b>Agarrar</b> alvos dentro de <b>Alcance 5</b>. Se o Agarrão for bem-sucedido, o Barba Negra é imediatamente puxado para um espaço adjacente ao alvo pelo caminho mais direto. Se não houver espaços adequados, o Agarrão se quebra e o Barba Negra não se move."
           }
         ],
@@ -168,15 +168,15 @@
     "core_system": {
       "name": "Arpãos de Assalto",
       "description": "O Sistema de Arpãos de Assalto da marca EIP-EN é uma tecnologia líder de classe, classificada para içar, suportar e prender Chassis de tamanhos até Tamanho 4. As cabeças de arpéu são intercambiáveis e podem ser trocadas para engajamento com alvos macios ou duros – eletrificadas ou carregadas com Sistemas de codespike para incapacitação à longa distância.",
-      "active_name": "Omniarpão",
-      "active_effect": "Este sistema dispara arpões de Agarrão em qualquer número de alvos dentro de <b>Alcance 5</b> e na linha de visão. Personagens afetados devem ter sucesso em um salvamento de <b>Casco</b> ou sofrem <b>2d6 de Dano Cinético</b> e ficam <b>Prostrado</b>, e então são puxados para um espaço adjacente a você, ou o mais perto possível. Eles ficam Imobilizados até o final do próximo turno deles. Em um sucesso, eles sofrem metade do Dano e não são afetados de outra forma.",
+      "active_name": "Omni-harpoon",
+      "active_effect": "This system fires grappling harpoons at any number of targets within Range 5 and line of sight. Affected characters must succeed on a Hull save or take 2d6 Kinetic damage and be knocked Prone, then pulled adjacent to you, or as close as possible. They become Immobilized until the end of their next turn. On a success, they take half damage and are otherwise unaffected.",
       "activation": "Quick",
       "duration": "end_turn_self",
       "active_actions": [
         {
           "name": "Omniarpão",
           "activation": "Quick",
-          "trigger": "Você dispara arpões de amarração em qualquer número de alvos dentro do <b>Alcance 5</b> e linha de visão.",
+          "trigger": "You fire grappling harpoons at any number of targets within Range 5 and line of sight.",
           "detail": "Personagens afetados devem ser bem-sucedidos em um salvamento de <b>Casco</b> ou sofrer 2d6 de <b>Dano</b> Cinético e ser derrubados <b>Prostrado</b>, e então puxados para adjacente a você, ou o mais próximo possível. Eles ficam <b>Imobilizados</b> até o final de seus próximos turnos.",
           "range": [
             {
@@ -294,14 +294,14 @@
     ],
     "core_system": {
       "name": "Fortaleza",
-      "active_name": "Protocolo Fortaleza",
-      "active_effect": "Você implanta estabilizadores Pesados e seu mecha se torna mais um posto fortificado do que um veículo. Quando ativado, duas seções de <b>cobertura pesada</b> (Linha 2, Tamanho 1) se desdobram de seu mecha, em qualquer direção. Essas seções de cobertura têm <b>Imunidade</b> a todos os danos.<br>Adicionalmente, os seguintes efeitos se aplicam enquanto ativo:<ul><li>Você fica <b>Imobilizado</b>. </li><li>Você se beneficia de <b>cobertura pesada</b>, mesmo em campo aberto, e adquire <b>Imunidade</b> a Repelir, Prostrado e a todo movimento involuntário. </li><li>Ao <b>Suportar</b>, você pode realizar uma ação completa em seu próximo turno, em vez de apenas uma ação rápida. </li><li>Qualquer personagem que receba <b>cobertura pesada</b> de você ou de suas seções de cobertura adquire <b>Imunidade</b> a Repelir, Prostrado e a todo movimento involuntário, e recebe os benefícios da blindagem anti-explosão. </li></ul>Este sistema pode ser desativado como um protocolo. Caso contrário, dura até o final da cena atual.",
+      "active_name": "Fortress Protocol",
+      "active_effect": "You deploy heavy stabilizers and your mech becomes more like a fortified emplacement than a vehicle. When activated, two sections of hard cover (line 2, Size 1) unfold from your mech, drawn in any direction. These cover sections have Immunity to all damage.<br>Additionally, the following effects apply while active:<ul><li>You become Immobilized.</li><li>You benefit from hard cover, even in the open, and gain Immunity to Knockback, Prone, and all involuntary movement.</li><li>When you Brace, you may take a full action on your next turn instead of just a quick action.</li><li>Any character that gains hard cover from you or your cover sections gains Immunity to Knockback, Prone, and all involuntary movement, and gains the benefits of Blast Plating.</li></ul>This system can be deactivated as a protocol. Otherwise, it lasts until the end of the current scene.",
       "active_deployables": [
         {
           "name": "Cobertura da Fortaleza",
           "type": "cover",
           "size": 1,
-          "size_special": "Linha 2",
+          "size_special": "Line 2",
           "add_resist": [
             {
               "immunity": "all",
@@ -329,7 +329,7 @@
           ],
           "add_special": [
             {
-              "attribute": "Imune a movimento involuntário",
+              "attribute": "Immune to involuntary movement",
               "target": "self"
             }
           ],
@@ -430,8 +430,8 @@
     "core_system": {
       "name": "Drone de Acoplamento",
       "description": "Conhecidos coloquialmente como 'Wingman', os <b>Drones</b> de acoplamento são <b>Drones</b> companheiros transportados e implantados a partir de um chassi. Recomenda-se que os pilotos não desenvolvam apegos emocionais a esses <b>Drones</b> devido à sua alta taxa de baixas.",
-      "active_name": "Supercompressor",
-      "active_effect": "Seu Drone de Acoplamento se prende a um mecha aliado dentro de seu <b>Alcance</b>. Pelo resto da cena, você sofre 1 de <b>Calor</b> no início de cada um de seus turnos, mas seu alvo recebe <b>+1 de Precisão</b> em todos os ataques, testes e salvamentos, e <b>Imunidade</b> às condições Impedido, Bloqueado, Lento, <b>Dilacerado</b> e Imobilizado de personagens que não sejam ele mesmo. Este efeito termina se qualquer um dos personagens ficar <b>Atordoado</b>.<br>Enquanto este sistema estiver ativo, você não pode usar o Drone de Acoplamento para qualquer outro propósito.",
+      "active_name": "Supercharger",
+      "active_effect": "Your Latch Drone clamps onto an allied mech within its Range. For the rest of the scene you take 1 heat at the start of each of your turns, but your target gains +1 accuracy on all attacks, checks, and saves, and Immunity to the Impaired, Jammed, Slowed, Shredded, and Immobilized conditions from characters other than itself. This effect ends if either character becomes Stunned.<br>While this system is active, you cannot use the Latch Drone for any other purpose.",
       "active_effects": [
         {
           "name": "Supercompressor",
@@ -512,7 +512,7 @@
           {
             "name": "Ímpeto",
             "frequency": "1/round",
-            "condition": "Após você <b>Impulsionar</b>",
+            "condition": "After you Boost",
             "detail": "1/rodada, após <b>Impulsionar</b>, o próximo ataque corpo a corpo do Nelson causa <b>+1d6 de Dano bônus</b> ao acertar.",
             "bonus_damage": {
               "detail": "<b>+1d6 de Dano bônus</b> no acerto após você <b>Impulsionar</b>, uma vez por rodada como uma <b>Ação Livre</b>.",
@@ -538,8 +538,8 @@
         "actions": [
           {
             "name": "Escaramuçador",
-            "activation": "Free",
-            "trigger": "Imediatamente após atacar",
+            "activation": "None",
+            "trigger": "Immediately after attacking",
             "detail": "Mova 1 espaço em qualquer direção, desde que não esteja Imobilizado ou Lento. Este movimento ignora engajamento e não provoca reações."
           }
         ]
@@ -548,13 +548,13 @@
     "core_system": {
       "name": "Motor de Ímpeto Perpétuo",
       "description": "O Motor de Ímpeto Perpétuo da EIP-EN explora o spooling de quase-luz de nível de caça para capturar e sustentar uma carga passiva de 0,000001 ls, capaz de ser despejada nos Sistemas de impulso sob comando. Chassis equipados com este motor requerem reforço Pesado, incluindo juntas e membros fortalecidos, e a instalação de um assento de impacto k-comp para proteger o piloto de força-g e cisalhamento súbitos.",
-      "active_name": "Ativar Motor",
-      "active_effect": "Pelo resto da cena, Escaramuçador permite que você se mova 4 espaços de cada vez, em vez de 1 espaço.",
+      "active_name": "Engage Drive",
+      "active_effect": "For the rest of the scene, Skirmisher allows you to move 4 spaces at a time instead of 1 space.",
       "active_actions": [
         {
           "name": "Escaramuçador Potencializado",
-          "activation": "Free",
-          "trigger": "Imediatamente após atacar",
+          "activation": "None",
+          "trigger": "Immediately after attacking",
           "detail": "Mova 4 espaços em qualquer direção, desde que não esteja Imobilizado ou Lento. Este movimento ignora engajamento e não provoca reações."
         }
       ],
@@ -603,7 +603,7 @@
           {
             "name": "Nascido para Matar",
             "activation": "Free",
-            "trigger": "Seu turno termina",
+            "trigger": "Your turn ends",
             "detail": "Recarregue todas as armas com <b>Recarga</b> se você não fez nenhum ataque ou forçou nenhum salvamento."
           }
         ]
@@ -613,6 +613,9 @@
         "description": "O Raleigh pode fazer ataques à distância mesmo quando estiver Bloqueado.",
         "synergies": [
           {
+            "locations": [
+              "attack"
+            ],
             "weapon_types": [
               "ranged"
             ],
@@ -624,8 +627,8 @@
     "core_system": {
       "name": "Canhão M35 'Mjolnir'",
       "description": "O canhão M35 Mjolnir da EIP-EN é uma herança da linha de armas defensivas Watchman da Estrela do Norte, retrabalhado para combate na linha de frente. O Mjolnir é um canhão Auxiliar multi-canos de montagem fixa que usa aceleração magnética para disparar pilhas de projéteis de <b>Explosão</b> aérea em seu alvo. É uma arma de impulso, ligada aos processos neurais de segunda camada do piloto com mediação de um COMP/CON ou PNH; mesmo na morte, o Mjolnir de um piloto continuará a identificar e atacar alvos hostis até atingir a falha sistêmica total. Por essa razão, o Mjolnir é frequentemente referido como uma arma-morta – uma das muitas armas desse tipo a serem encontradas entre os pilotos orientados para CQB.",
-      "active_name": "Deus do Trovão",
-      "active_effect": "Você começa a girar seu M35 Mjolnir, começando sem nenhuma munição na câmara. Pelo resto da cena, você carrega duas munições nas câmaras no final de qualquer um de seus turnos em que não tenha disparado o M35 Mjolnir. Ele pode conter um máximo de seis munições.<br>Quando você dispara o M35 Mjolnir, todas as câmaras disparam simultaneamente, causando <b>4 de Dano Cinético</b> por munição carregada. Se você disparar quatro ou mais munições de uma vez, o ataque recebe (PF) e, em um acerto, seu alvo fica <b>Dilacerado</b> até o final do próximo turno dele.",
+      "active_name": "Thunder God",
+      "active_effect": "You start to spin your M35 Mjolnir up, beginning with no chambered rounds. For the rest of the scene, you load two rounds into chambers at the end of any of your turns in which you haven’t fired the M35 Mjolnir . It can hold a maximum of six rounds.<br>When you fire the M35 Mjolnir, all chambers fire simultaneously, dealing 4 kinetic damage per loaded round. If you fire four or more rounds at once, the attack gains AP and, on a hit, your target becomes Shredded until the end of their next turn.",
       "activation": "Protocol",
       "use": "Encounter",
       "integrated": [
@@ -674,7 +677,7 @@
           {
             "name": "Sentinela",
             "detail": "Você ganha <b>+1 de Precisão</b> em todos os ataques feitos como reações (ex: <b>Retaliar</b>).",
-            "condition": "Você faz um ataque como <b>reação</b>"
+            "condition": "You make an attack as a reaction"
           }
         ]
       },
@@ -692,8 +695,8 @@
     "core_system": {
       "name": "Copiloto WATCHDOG",
       "description": "As equipes de segurança da EIP-EN não são estranhas aos perigos das ações de abordagem de nave para nave ou de nave para estação. Corredores apertados, gravidade instável, ambientes escuros, vácuo absoluto e a potencial <b>Ameaça</b> dupla de oposição orgânica e inorgânica tornam as ações de abordagem alguns dos combates estatisticamente mais mortais – de acordo com as métricas internas da EIP-EN, até mesmo o lado vencedor deve esperar pelo menos 30% de baixas. Esperando diminuir a carga cognitiva sobre os pilotos e quaisquer PNHs ou COMP/CONs instalados em seus Chassis, a EIP-EN desenvolveu o copiloto WATCHDOG. O WATCHDOG é uma partição subsenciente simples: um homúnculo-relâmpago de inteligência agregada gerado a partir de milhares de relatórios pós-ação de ações de abordagem, interrogatórios e doadores voluntários. Não é uma PNH, nem mesmo um COMP/CON, o WATCHDOG é um programa tático robusto semelhante a uma arma <b>Inteligente</b>. Dito isso, sua capacidade de operar sem ciclagem apresenta certas vantagens: a saber, esses copilotos têm alguma capacidade de aprender e fazer previsões com base na análise de seus pilotos. Os WATCHDOGs tendem a ter personalidades simples – na medida em que se pode dizer que têm uma – e são os favoritos dos pilotos que procuram uma atitude pragmática e conselhos nítidos e eficientes.<br>O sistema WATCHDOG está atualmente sob revisão por uma comissão conjunta USB/UDoJ-HR, mas ainda não foi emitida nenhuma suspensão formal da produção.",
-      "active_name": "Modo Hiper-Reflexo",
-      "active_effect": "Pelo resto desta cena:<ul><li>Se você tiver menos de 3 de <b>Ameaça</b> com uma arma à distância, ela aumenta para 3. </li><li>1/rodada, você pode realizar uma <b>reação</b> de <b>Retaliar</b> adicional. </li><li>Qualquer personagem que você acertar com <b>Retaliar</b> fica Imobilizado até o final do próximo turno dele. </li></ul>",
+      "active_name": "Hyper-Reflex Mode",
+      "active_effect": "For the rest of this scene:<ul><li>If you have less than threat 3 with a ranged weapon, it increases to 3.</li><li>1/round, you may take an additional Overwatch reaction.</li><li>Any character you hit with Overwatch becomes Immobilized until the end of their next turn.</li></ul>",
       "active_bonuses": [
         {
           "id": "min_range",
@@ -709,7 +712,7 @@
         {
           "name": "Imobilizar Hiper-Reflexo",
           "detail": "Qualquer personagem que você acertar com <b>Retaliar</b> fica Imobilizado até o final do próximo turno dele.",
-          "condition": "Você acerta um personagem com <b>Retaliar</b>",
+          "condition": "You hit a character with Overwatch",
           "add_status": [
             {
               "id": "immobilized",
@@ -771,13 +774,21 @@
         "active_effects": [
           {
             "name": "Desmembramento",
-            "condition": "Você inflige Imobilizado em outro personagem",
+            "condition": "You inflict Immobilize on another character",
             "detail": "Você imobiliza o alvo. O alvo também fica <b>Dilacerado</b> pela mesma duração.",
             "add_status": [
               {
                 "id": "shredded"
               }
             ]
+          }
+        ],
+        "synergies": [
+          {
+            "locations": [
+              "attack"
+            ],
+            "detail": "When the Vlad inflicts Immobilize on another character, the target also becomes Shredded for the same duration."
           }
         ]
       },
@@ -787,7 +798,7 @@
         "active_effects": [
           {
             "name": "Blindagem Pícaro",
-            "condition": "Um personagem em <b>Alcance 3</b> ataca você",
+            "condition": "A character within range 3 attacks you",
             "detail": "O atacante primeiro sofre 1 de <b>Dano</b> Cinético PF.",
             "damage": [
               {
@@ -809,8 +820,8 @@
     "core_system": {
       "name": "Blindagem Pícaro",
       "description": "Principalmente uma modificação defensiva, a <b>Blindagem</b> Pícaro é eriçada de espigões de cromo-tungstênio endurecido – uma referência ao homônimo histórico do Vlad. As pontas Pícaro são estrategicamente colocadas em áreas com alta probabilidade de encontros cinéticos: manoplas, articulações de manipuladores, placas de ombro e assim por diante. A blindagem Pícaro é incomum entre os pilotos do Núcleo e é considerada uma marca de táticas subdesenvolvidas – embora aterrorizantes.",
-      "active_name": "Espinhos Atormentadores",
-      "active_effect": "Pelo resto da cena, você adquire Resistência a todos os danos originados dentro do <b>Alcance 3</b>, e a <b>Blindagem</b> Pícaro causa <b>3 de Dano Cinético</b> (PF) em vez de 1.",
+      "active_name": "Tormentor Spines",
+      "active_effect": "For the rest of this scene, you gain Resistance to all damage originating within range 3, and Shrike Armor deals 3 AP kinetic damage instead of 1.",
       "active_effects": [
         {
           "name": "Resistência dos Espinhos Atormentadores",
@@ -819,7 +830,7 @@
         {
           "name": "Blindagem Pícaro (Espinhos Atormentadores)",
           "detail": "A <b>Blindagem</b> Pícaro causa 3 de <b>Dano</b> Cinético (PF) em vez de 1.",
-          "condition": "Um personagem em <b>Alcance 3</b> ataca você",
+          "condition": "A character within range 3 attacks you",
           "damage": [
             {
               "val": 3,
@@ -896,7 +907,7 @@
             "name": "Aparar Magnético",
             "activation": "Reaction",
             "frequency": "1/round",
-            "trigger": "Um ataque recebido causará Dano Cinético a você ou a um personagem aliado adjacente",
+            "trigger": "An incoming attack will deal Kinetic Damage to you or an adjacent allied character",
             "detail": "Role 1d6: com 5+, o ataque erra. Este efeito não se acumula com <b>invisível</b>."
           }
         ]
@@ -905,10 +916,10 @@
     "core_system": {
       "name": "Projetor de Campo Magnético",
       "description": "Geradores de campo magnético são uma variação portátil e implantável em campo das tecnologias de defesa magnética típicas. Quando ativados, eles criam uma bolha magnética que aprisiona todos os projéteis ferrosos recebidos. A força do campo é tão grande que pode até mesmo atrair mechas para seu centro. Quando o campo é disperso ou sua bateria de estado sólido se esgota – uma característica, não uma falha – o campo sofre uma súbita implosão catastrófica, atraindo todos os projéteis capturados para um ponto no centro da bolha.",
-      "active_name": "Campo Magnético",
-      "active_effect": "Este sistema projeta um campo magnético de <b>Explosão 3</b> com pelo menos um espaço adjacente a você, causando os seguintes efeitos até o final de seu próximo turno:<ul><li>A área afetada é terreno difícil.</li><li>Ataques à distância que causam Dano Cinético ou explosivo não podem entrar ou sair da área afetada – os projéteis param na borda, sem causar Dano. Registre cada ataque parado desta forma.</li><li>Mechas e outros personagens feitos pelo menos parcialmente de metal que começam seu turno na área afetada ou entram nela pela primeira vez em uma rodada devem ter sucesso em um salvamento de <b>Casco</b> ou são puxados o mais perto possível do centro e ficam Imobilizados.</li></ul>Quando o efeito termina, quaisquer ataques à distância que foram parados retomam sua trajetória – em direção ao centro da área afetada. O MJ rola ataques contra cada personagem dentro, recebendo <b>+1 de Precisão</b> por ataque Bloqueado (até um máximo de +6). Em um acerto, esses ataques causam 1d6 de Dano Cinético por ataque Bloqueado (até um máximo de 6d6 de Dano Cinético).",
+      "active_name": "Mag Field",
+      "active_effect": "This system projects a blast 3 magnetic field with at least one space adjacent to you, causing the following effects until the end of your next turn:<ul><li>The affected area is difficult terrain.</li><li>Ranged attacks that deal kinetic or explosive can’t enter or leave the affected area – projectiles stop at the edge, doing no damage. Record each attack stopped this way.</li><li>Mechs and other characters made at least partly of metal that start their turn in the affected area or enter it for the first time in a round must succeed on a Hull save or be pulled as close to the center as possible and become Immobilized.</li></ul>When the effect ends, any ranged attacks that were stopped resume their trajectory – toward the center of the affected area. The GM rolls attacks against each character within, gaining +1 per blocked attack (to a maximum of +6). On hit, these attacks deal 1d6 kinetic damage per blocked attack (to a maximum of 6d6 kinetic damage).",
       "activation": "Full",
-      "use": "Próximo Turno"
+      "use": "Next Turn"
     },
     "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_black_witch.png",
     "license_id": "mf_black_witch"
@@ -951,7 +962,7 @@
           {
             "name": "Neurolink",
             "frequency": "1/round",
-            "condition": "Você faz um ataque à distância.",
+            "condition": "You make a ranged attack",
             "detail": "Você pode rerolar seu primeiro ataque à distância a cada rodada, mas deve manter o segundo resultado."
           }
         ]
@@ -977,13 +988,13 @@
     "core_system": {
       "name": "Mira Precognitiva",
       "description": "A precognição é o próximo passo na interação humano/IA. Usando uma ponte neural, o sistema de mira precognitiva da SSC permite que os pilotos aprendam constante e inconscientemente com os dados coletados em campo, equipando-os para ler situações antes que elas se desenvolvam. A precognição é altamente experimental e os mecanismos precisos são desconhecidos até mesmo para os projetistas, então a SSC recomenda o uso Limitado e monitorado deste sistema.",
-      "active_name": "Derivação Neural",
-      "active_effect": "Pelo resto desta cena, você adquire a ação Marcar para Morrer.",
+      "active_name": "Neural Shunt",
+      "active_effect": "For the rest of this scene, you gain the Mark for Death action.",
       "active_effects": [
         {
           "name": "Foco: Marcado para a Morte",
           "detail": "Cause <b>Dano bônus</b> ao seu alvo Marcado para a Morte com base no <b>Tamanho</b> da arma (Auxiliar: 1d6, principal: 2d6, pesada: 3d6, <b>Superpesada</b>: 4d6). Este <b>Dano bônus</b> não pode ser reduzido de forma alguma.",
-          "condition": "Você está focando em um alvo (Marcado para Morrer)"
+          "condition": "You are focusing on a target (Marked for Death)"
         }
       ],
       "active_actions": [
@@ -1013,6 +1024,9 @@
       ],
       "active_synergies": [
         {
+          "locations": [
+            "attack"
+          ],
           "detail": "Enquanto focado (Marcado para a Morte) em um alvo, você causa <b>Dano bônus</b> com base no <b>Tamanho</b> da arma (Auxiliar: 1d6, principal: 2d6, pesada: 3d6, <b>Superpesada</b>: 4d6). Este <b>Dano bônus</b> não pode ser reduzido."
         }
       ],
@@ -1070,7 +1084,7 @@
         "active_effects": [
           {
             "name": "Manto Arlequim",
-            "condition": "Durante o seu turno",
+            "condition": "During your turn",
             "detail": "Durante seu turno, a Asa Crepuscular fica <b>invisível</b>; ela reaparece no final do turno.",
             "add_status": [
               {
@@ -1096,8 +1110,8 @@
     "core_system": {
       "name": "Articulação DHIYED",
       "description": "“A crença no que podíamos ver, no que podíamos tocar – no que nossos COMP/CONs nos asseguravam que estava lá, em nossa própria subjetividade e memória. A crença na realidade se tornou uma arma. Abordamos o metacofre sabendo que enfrentaríamos um inimigo desconhecido, mas abordamos com a vantagem de números e força mecânica.<br>“DHIYED nos ensinou enquanto nos matava: através de conversas de comunicação embaralhadas, através dos gritos dos moribundos, através das gargalhadas de nossos eus-espelho enquanto nos matavam. Cada assinatura falsificada, cada salto temporal, cada memético, cada não-Euclidiano – eram lições.<br>“Você entende?<br>“DHIYED o Professor. DHIYED o Monstro. Enquanto o matávamos, DHIYED nos ensinou o que temer e como enfrentá-lo.<br>“O que eu temo agora? Essa é uma boa pergunta. O que o piloto que abriu o caixão de DHIYED teme?<br>“Eu não acho que o matamos. Acho que ele quer que acreditemos que o matamos – e não consigo imaginar o que ele tem feito enquanto nos consideramos seguros.”",
-      "active_name": "Salão de Espelhos",
-      "active_effect": "Pelo resto da cena, sempre que você iniciar um movimento único durante seu turno (por exemplo, um movimento padrão, <b>Impulsionar</b>, ou movimento concedido por talentos ou Sistemas), você deixa uma impressão holográfica de si mesmo no espaço de onde começou. Estes são objetos ilusórios do mesmo Tamanho que você, que têm <b>Imunidade</b> a todos os danos e efeitos e não são obstruções.<br>Quando personagens hostis começam seu turno em, se movem através de, ou se movem adjacentes ao espaço ocupado por um holograma, ele detona. Eles devem ter sucesso em um <b>salvamento de Agilidade</b> ou sofrem 1d6 de Dano Energético. Em um sucesso, eles sofrem metade do Dano.<br>Você também adquire a Ação Rápida Teleporte Holográfico.",
+      "active_name": "Hall of Mirrors",
+      "active_effect": "For the rest of the scene, whenever you start a unique movement during your turn (e.g., a standard move, Boost, or movement granted by talents or systems), you leave a holographic imprint of yourself behind in the space from which you started. These are illusory objects the same Size as you that have Immunity to all damage and effects and aren’t obstructions.<br>When hostile characters start their turn in, move through, or move adjacent to the space occupied by a hologram, it detonates. They must succeed on an Agility save or take 1d6 energy damage. On a success, they take half damage.<br>You also gain the Hologram Teleport Quick Action.",
       "active_actions": [
         {
           "name": "Teleporte Holográfico",
@@ -1174,7 +1188,7 @@
         "active_effects": [
           {
             "name": "Adaptação de Carapaça",
-            "condition": "Você está em <b>cobertura leve</b>",
+            "condition": "You are in soft cover",
             "detail": "Atacantes à distância sofrem +2 de Dificuldade em vez de <b>+1 de Dificuldade</b>."
           }
         ]
@@ -1183,8 +1197,8 @@
     "core_system": {
       "name": "Capa Tática",
       "description": "As capas táticas são tecidos reativos de trama apertada e resistente — tecnologia de alto licenciamento restrita a pilotos da Classificação Marco Metálico II ou superior. O tecido cobre aproximadamente 80% da área de superfície de um mecha, dando-lhe uma qualidade opaca quando vista através de óptica ou a olho nu. Além de seu uso como camuflagem regular, as capas táticas ativadas dobram a luz de tal maneira que torna seus usuários quase impossíveis de serem vistos.",
-      "active_name": "Capa Tática",
-      "active_effect": "Você fica <b>invisível</b> pelo restante da cena.",
+      "active_name": "Tactical Cloak",
+      "active_effect": "You are Invisible for the rest of the scene.",
       "active_effects": [
         {
           "name": "Capa Tática",
@@ -1241,9 +1255,9 @@
         "actions": [
           {
             "name": "Ataque do Silo Vingador",
-            "activation": "Reaction",
+            "activation": "None",
             "frequency": "1/round",
-            "trigger": "Você acerta um golpe crítico com uma arma à distância.",
+            "trigger": "You score a critical hit with a ranged weapon",
             "detail": "Cause <b>3 de Dano Explosivo</b> a um personagem diferente de sua escolha dentro do <b>Alcance 15</b> e da linha de visão.",
             "damage": [
               {
@@ -1282,8 +1296,8 @@
     "core_system": {
       "name": "Sistema de Mísseis de Alta Penetração SSC-30",
       "description": "O Sistema de Mísseis de Alta Penetração SSC-30 (SSC-30 HPMS) é um sistema de entrega de micromísseis montado em mecha, capaz de um tremendo rendimento em combate. Usando o SSC-30 HPMS, o Monarca pode carregar – e entregar – sua carga útil de até 60 mísseis Vingadores miniaturizados em uma única salva.",
-      "active_name": "Punição Divina",
-      "active_effect": "Escolha qualquer número de personagens dentro do <b>Alcance 50</b>: seus alvos devem ter sucesso em um <b>salvamento de Agilidade</b> ou sofrem <b>1d6+4 de Dano Explosivo</b>. Em um sucesso, eles sofrem metade do <b>Dano</b>. Estes mísseis autoguiados podem alcançar qualquer alvo, desde que haja um caminho para fazê-lo.",
+      "active_name": "Divine Punishment",
+      "active_effect": "Choose any number of characters within range 50: your targets must each succeed on an Agility save or take 1d6+4 explosive. On a success, they take half damage. These self-guiding missiles can reach any target as long as there is a path to do so.",
       "active_actions": [
         {
           "name": "Punição Divina",
@@ -1349,9 +1363,14 @@
           {
             "name": "Caçador",
             "frequency": "1/round",
-            "condition": "Você acerta com um ataque corpo a corpo, seu alvo não tem personagens adjacentes, ou se você for o único personagem adjacente ao alvo.",
-            "bonus_damage": "Você acerta com um ataque corpo a corpo se o seu alvo não tiver personagens adjacentes, ou se você ou o alvo estiverem <b>Escondido</b>s.",
-            "detail": "1/rodada, o Manto do Luto pode causar <b>+1d6 de Dano bônus</b> em um acerto com um ataque corpo a corpo se seu alvo não tiver personagens adjacentes, ou se o Manto do Luto for o único personagem adjacente ao alvo."
+            "condition": "You hit with a melee attack, your target has no adjacent characters, or if you are the only character adjacent to the target.",
+            "bonus_damage": {
+              "val": "1d6",
+              "detail": "You hit with a melee attack if your target has no adjacent characters, or if you are the only character adjacent to the target.",
+              "weapon_types": [
+                "melee"
+              ]
+            }
           }
         ]
       },
@@ -1369,8 +1388,8 @@
     "core_system": {
       "name": "Módulo de Turbilhonamento EX",
       "description": "Aberto apenas para pilotos altamente licenciados, o programa Turbilhonamento EX é uma inovação única da SSC. O próprio módulo Turbilhonamento EX é um propulsor de velocidade próxima à luz em miniatura capaz de transportar o usuário através do espaço lampejo com uma Precisão aceitável. A tecnologia é temperamental, no melhor dos casos: nada menor do que um mecha pode sobreviver ao <b>Estresse</b> da viagem de lampejo exposta, e a experiência é traumática tanto para o usuário quanto para qualquer pessoa nas proximidades.",
-      "active_name": "Estabilizar Singularidade",
-      "active_effect": "Pelo resto da cena, você se teletransporta ao <b>Impulsionar</b> ou fazer um movimento padrão.",
+      "active_name": "Stabilize Singularity",
+      "active_effect": "For the rest of the scene, you teleport when you Boost or make a standard move.",
       "active_effects": [
         {
           "name": "Estabilizar Singularidade",
@@ -1387,8 +1406,8 @@
       ],
       "use": "Encounter",
       "activation": "Protocol",
-      "passive_name": "Salto de Lampejo",
-      "passive_effect": "Ganhe a Ação Completa Salto de Lampejo.",
+      "passive_name": "Blinkspace Jump",
+      "passive_effect": "Gain the Blinkspace Jump Full Action.",
       "passive_actions": [
         {
           "name": "Salto de Lampejo",
@@ -1438,7 +1457,7 @@
           {
             "name": "Manto Integrado",
             "detail": "No final do seu turno, você se torna <b>invisível</b> se não tiver se movido naquele turno. Isso termina imediatamente se você se mover ou realizar qualquer ação hostil.",
-            "condition": "Final do seu turno, se você não tiver se movido neste turno",
+            "condition": "End of your turn, if you haven’t moved this turn",
             "add_status": [
               {
                 "id": "invisible",
@@ -1456,31 +1475,29 @@
           {
             "name": "Escaneres Proféticos",
             "frequency": "1/round",
-            "condition": "Você aplica <b>Travado em Mira</b> em um alvo",
+            "condition": "You inflict Lock On on a target",
             "add_status": [
               {
                 "id": "shredded",
                 "target": "target",
                 "duration": "turn_end_target"
               }
-            ],
-            "detail": "1/rodada, quando o Papilionídeo aplica <b>Travado em Mira</b>, o alvo também fica <b>Dilacerado</b> até o final do próximo turno dele."
+            ]
           }
-        ],
-        "use": "Rodada"
+        ]
       }
     ],
     "core_system": {
       "name": "Enxames SIMTAT Nuvem-Batedora",
       "description": "Os enxames de SIMTAT Nuvem-Batedora são pacotes de microssensores em rede, lançados em cápsulas de morteiro não letais que detonam bem acima do campo de batalha. Uma vez posicionado, o enxame gera um programa de simulação tática que começa a executar ciclos de brevidade: simulações apertadas e contidas de possibilidade tática. Os resultados de probabilidade são então direcionados aos processadores em coro do Papilionídeo, que por sua vez os transmitem para o piloto e membros da equipe em rede, garantindo uma alta probabilidade de resultados bem-sucedidos.",
-      "active_name": "Interjeição Profética",
-      "active_effect": "Ganhe a <b>reação</b> Simulação Tática pelo restante da cena.",
+      "active_name": "Prophetic Interjection",
+      "active_effect": "Gain the Tactical Simulation reaction for the rest of the scene.",
       "active_actions": [
         {
           "name": "Simulação Tática",
           "activation": "Reaction",
           "frequency": "1/round",
-          "trigger": "Um personagem aliado na linha de visão sofre Dano de outro personagem na linha de visão.",
+          "trigger": "An allied character in line of sight takes damage from another character in line of sight.",
           "detail": "Efeito: Role 1d6. Em 4 ou mais, o ataque na verdade foi uma simulação prevista pelo seu processador — seu aliado adquire <b>Resistência</b> a todo o <b>Dano</b> causado pelo ataque e pode se teletransportar até 3 espaços, representando sua \"verdadeira\" localização. Em 3 ou menos, há uma falha — seu aliado não adquire <b>Resistência</b>, mas pode se teletransportar até 6 espaços.",
           "add_resist": [
             {
@@ -1533,7 +1550,7 @@
         "active_effects": [
           {
             "name": "Enxame Purificador",
-            "condition": "Um personagem começa o turno agarrado por você ou adjacente a você",
+            "condition": "A character starts their turn grappled by or adjacent to you",
             "detail": "Você causa <b>2 de Dano Cinético</b> a esse personagem.",
             "damage": [
               {
@@ -1551,7 +1568,7 @@
         "active_effects": [
           {
             "name": "Regeneração",
-            "condition": "Seu turno termina e você não sofreu <b>Dano de Estresse</b> ou <b>Estrutura</b> desde o início do seu turno",
+            "condition": "Your turn ends and you haven’t taken stress or structure damage since the start of your turn",
             "detail": "Você recupera 1/4 do total de seus PV. Quando você sofrer <b>Dano de Estresse</b> ou <b>Estrutura</b>, este efeito cessa até o final de seu próximo turno."
           }
         ]
@@ -1564,8 +1581,8 @@
     "core_system": {
       "name": "Enxame Infernal",
       "description": "Em um instante, apenas ao desejar, o piloto de um Balor pode imprimir rapidamente um manto composto por incontáveis <b>Drones</b> minúsculos: um manto de enxame infernal — escudo vivo e faca fluidodinâmica, cortando e protegendo em uma única onda cintilante. Ele se torna Mestre do Enxame, e sua vontade é obedecida por milhões.",
-      "active_name": "Frenesi do Enxame",
-      "active_effect": "Seus nanitas entram em modo hiperativo, causando os seguintes efeitos até o final da cena:<ul><li>Você e aliados adjacentes obtêm <b>cobertura leve</b> </li><li>Enxame Purificador causa 4 Cinético, em vez de 2. </li><li>Regeneração restaura 1/2 de seus PV totais, em vez de 1/4. </li><li>Se você fosse sofrer <b>Dano de Estrutura</b>, role 1d6: em 6, seus nanitas te reconstituem, permitindo você não sofrer <b>Dano de Estrutura</b>, retornando a 1 PV e ganhando <b>Imunidade</b> a todo Dano até o final do turno atual. </li><li>Você fica <b>Dilacerado</b> e não pode remover essa condição pela duração. </li></ul>",
+      "active_name": "Hive Frenzy",
+      "active_effect": "Your nanites switch into a hyperactive mode, causing the following effects until the end of the scene:<ul><li>You and adjacent allies gain soft cover.</li><li>Scouring Swarm deals 4 kinetic, instead of 2.</li><li>Regeneration restores 1/2 of your total HP, instead of 1/4.</li><li>If you would take structure damage, roll 1d6: on 6, your mech hellishly pulls itself together, taking no structure damage, returning to 1 HP, and gaining Immunity to all damage until the end of the current turn.</li><li>You become Shredded and cannot clear this condition for the duration.</li></ul>",
       "active_effects": [
         {
           "name": "Frenesi do Enxame",
@@ -1640,7 +1657,7 @@
             "name": "Código Reativo",
             "activation": "Reaction",
             "frequency": "1/round",
-            "trigger": "Você é atingido por um ataque tecnológico.",
+            "trigger": "You are hit by a Tech Attack.",
             "detail": "Você pode realizar qualquer opção de <b>Programar Rápido</b> contra o atacante como uma <b>reação</b>."
           }
         ]
@@ -1659,8 +1676,8 @@
     "core_system": {
       "name": "Plataforma Instinto",
       "description": "Um dos primeiros Sistemas do modelo Goblin descobertos pelos técnicos da SMG foi uma plataforma de invasão de guerra eletrônica, embora as capacidades avançadas e a arquitetura do sistema permaneçam impenetráveis. Quando instalado, o sistema manifesta uma inteligência subsenciente — designada INSTINTO — que auxilia nas tentativas de invasão contra Sistemas-alvo usando uma mistura de Sistemas físicos e sistemáticas parasimbióticas. Invasões tentadas enquanto o INSTINTO está ativo não são percebidas pelo usuário como código e roteiro, mas como um ataque à matéria orgânica. O INSTINTO mostrou capacidade de agir de forma independente, muitas vezes antecipando seu usuário, mas geralmente com o mesmo interesse. A documentação 'Leia-me' incluída em algumas manifestações do Goblin recomenda que os pilotos reiniciem os núcleos de seus mechas pelo menos uma vez por mês para evitar o despertar espontâneo, embora a maioria não dê atenção a essa advertência.",
-      "active_name": "Simbiose",
-      "active_effect": "O mecha retrai seus Principais Sistemas e se conecta a outro mecha, se tornando mais como uma parte irrelevante e discreta do mecha do que uma entidade separada. O hospedeiro deve ser um mecha aliado e voluntário que ainda não esteja hospedando outro Goblin, maior que você e adjacente a você. Enquanto estiver conectado, você ocupa o espaço do hospedeiro, se move com ele e se beneficia de <b>cobertura pesada</b>, mas ainda pode ser atacado e marcado como alvo separadamente. Você também sofre quaisquer condições e <b>Calor</b> sofridos pelo seu hospedeiro.<br>Seu hospedeiro pode usar seus Sistemas, Defesa-E e Ataque Tecnológico em vez dos próprios. Além disso, a partir do início da próxima rodada, você não faz mais seus próprios turnos; em vez disso, você pode realizar duas ações rápidas ou uma ação completa em qualquer momento durante o turno do seu hospedeiro. Você não pode <b>Sobrecarregar</b> ou se mover, mas ainda pode realizar reações e ações livres normalmente. O turno do seu hospedeiro conta como seu turno para efeitos que se referem ao início ou ao final do turno de um personagem.<br>Esse efeito dura até o final da cena, até que você se desconecte como uma ação rápida ou até você ou seu hospedeiro fiquem <b>Atordoado</b>s. Quando o efeito terminar, você não ganha um turno até a próxima rodada.",
+      "active_name": "Symbiosis",
+      "active_effect": "Your mech retracts its major systems and attaches itself to another mech, becoming more like a vestigial blister than a separate entity. The host must be an allied and willing mech not already hosting another Goblin, larger than and adjacent to you. While attached, you occupy their space, move with them, and benefit from hard cover, but can still be attacked and targeted separately. You also take any conditions and heat taken by your host.<br>Your host may use your Systems, E-Defense, and Tech Attack instead of their own. Additionally, from the beginning of the next round, you no longer take your own turns; instead, you can take two quick actions or one full action at any point during your host’s turn. You can’t Overcharge or move, but may still take reactions and free actions normally. Your host’s turn counts as your turn for the purpose of effects that refer to the start or end of a character’s turn.<br>This effect lasts either for the rest of the scene, until you detach as a quick action, or until you or your host becomes Stunned. When the effect ends, you don’t take a turn until the next round.",
       "activation": "Quick",
       "deactivation": "Quick",
       "use": "Encounter"
@@ -1706,7 +1723,7 @@
         "active_effects": [
           {
             "name": "Paralisia Metastática",
-            "condition": "Uma rolagem de ataque contra o Górgona resultar em 1 ou 2",
+            "condition": "An attack roll against you lands on 1–2",
             "detail": "O ataque erra automaticamente e o atacante fica <b>Atordoado</b> até o final do próximo turno dele.",
             "add_status": [
               {
@@ -1748,13 +1765,13 @@
     "core_system": {
       "name": "Basilisco Hiperfractal Anticognição Direcionado",
       "description": "O BASILISCO é uma arma memética perigosa derivada do Código Litúrgico DHIYED, traduzida para uso em engajamentos em escala de mecha. Normalmente projetados a partir de um laser de comunicações, os BASILISCOS criam padrões hiperfractais — interrupções meméticas que afetam todos os observadores sencientes, orgânicos ou não. A exposição a um basilisco normalmente causa encefalite imediata, hemorragia ocular e craniana maciça e morte — a sobrevivência é possível como uso de displays interdito-res de cabeça resistentes, mas mesmo assim dores de cabeça, náuseas e confusão por um curto período após a visualização são possíveis. A longo prazo, sobreviventes frequentemente exibem sintomas de 'flashback': paralisia momentânea, alienação corpórea e desestabilização da consciência. Hiperfractais anticognitivos são classificados como armas paracausais — devido à natureza não compreendida de seu espectro de luz visível, alguém pensaria que eles representariam um risco para o usuário, no entanto, por alguma razão, eles não o fazem.",
-      "active_name": "Expelir Basilisco",
-      "active_effect": "Você projeta um basilisco horrível, um padrão de dados visuais que é incrivelmente prejudicial para PNHs e Sistemas eletrônicos e difícil de ser olhado, mesmo para humanos. Pelo restante da cena, personagens hostis devem obter sucesso em um salvamento de Sistemas antes de atacar você ou qualquer personagem aliado a até <b>Alcance 3</b>. Em caso de falha, eles ficam <b>Atordoado</b>s até o final do próximo turno deles. Cada personagem só pode ficar <b>Atordoado</b> por esse efeito uma vez por cena.",
+      "active_name": "Extrude Basilisk",
+      "active_effect": "You project a horrifying basilisk, a visual data-pattern that is incredibly harmful to NHPs and electronic systems, and hard to look at even for humans. For the rest of the scene, hostile characters must succeed on a Systems save before attacking you or any allied characters within range 3. On a failure, they become Stunned until the end of their next turn. Each character can only be Stunned by this effect once per scene.",
       "active_effects": [
         {
           "name": "Expelir Basilisco",
           "detail": "Personagens hostis devem obter sucesso em um salvamento de Sistemas antes de atacar você ou qualquer aliado a até <b>Alcance 3</b>. Em caso de falha, o ataque erra automaticamente e eles ficam <b>Atordoados</b> até o final do próximo turno deles.",
-          "condition": "Você ou um personagem aliado adjacente é atacado por um personagem hostil em <b>Alcance 3</b>",
+          "condition": "You or an adjacent allied character is attacked by a hostile character within range 3",
           "add_status": [
             {
               "id": "stunned",
@@ -1835,97 +1852,65 @@
     "core_system": {
       "name": "Desarticulação OROCHI",
       "description": "Encontrado pela primeira vez por técnicos da União em instalações iniciais de Forecast/GALSIM após o Evento de Deimos, OROCHI foi uma manifestação inicial do que mais tarde foi chamado de fenômeno de revoada-rápida – um comportamento observado em <b>Drones</b> de colmeia autônomos e sem líder, onde unidades individuais se combinam em um único enxame e seguem umas às outras, operando sem líder no espaço físico com autonomia estranha e imprevisível; em essência, organizando-se como pássaros em um bando.<br>A manifestação original foi inicialmente pensada como os restos movidos por impulso de um transporte subalterno acidentado à deriva em microgravidade; um exame mais aprofundado provou que a manifestação original era composta por muitas centenas de subalternos desarticulados movendo-se com um padrão discernível. O enxame via a si mesmo não como uma máquina ou uma coleção de máquinas, mas como uma única mente, duplicada em várias unidades. Esta mente foi classificada como uma PNH, recebeu seu codinome atual – OROCHI – e foi remetida a Vênus para estudos adicionais. Em um momento posterior, o hardware que compunha a(s) forma(s) física(s) de OROCHI desapareceu do confinamento. A investigação está em andamento.<br><span class='horus--subtle'>[Fui eu, eu dobrei o espaço e os libertei, só achei que você deveria saber]</span>",
-      "active_name": "Posicionamento Completo",
-      "active_effect": "Todos os quatro <b>Drones</b> OROCHI são posicionados em pontos separados dentro de Sensores; eles permanecem ativos pelo resto da cena. Você pode recolher ou reposicionar qualquer quantidade deles de uma vez",
+      "active_name": "Full Deployment",
+      "active_effect": "All four OROCHI drones are deployed to separate points within Sensors; they remain active for the rest of the scene. You may recall or redeploy any number of them at a time.",
       "activation": "Quick",
-      "passive_name": "OROCHI <b>Drones</b>",
+      "passive_name": "OROCHI Drones",
       "deployables": [
         {
           "name": "Drone OROCHI Guardião",
           "type": "Drone",
           "detail": "Este drone projeta um escudo. Ataques à distância contra personagens aliados adjacentes sofrem <b>+1 de Dificuldade</b>.",
-          "activation": "Free",
+          "activation": "None",
           "recall": "Quick",
           "redeploy": "Quick",
           "size": 0.5,
-          "hp": 0,
-          "evasion": 0,
-          "edef": 0,
-          "speed": 0,
-          "stats": {
-            "size": 1,
-            "hp": 5,
-            "evasion": 5,
-            "edef": 5,
-            "speed": 0,
-            "armor": 0
-          }
+          "hp": "5 + {grit}",
+          "evasion": "{evasion}",
+          "edef": "{edef}",
+          "speed": "{speed}"
         },
         {
           "name": "Drone OROCHI Armadilha",
           "type": "Drone",
           "detail": "Como uma <b>reação</b>, você pode forçar personagens que iniciarem o turno deles adjacentes ou se moverem para ficar adjacentes a este drone pela primeira vez em uma rodada a fazer um <b>salvamento de Agilidade</b>. Em caso de falha, eles ficam Imobilizados. Eles deixam de ficar Imobilizados somente quando o drone for destruído ou não estiver mais adjacente, ou se tiverem sucesso em um <b>salvamento de Agilidade</b> como uma ação rápida.",
-          "activation": "Free",
+          "activation": "None",
           "recall": "Quick",
           "redeploy": "Quick",
           "size": 0.5,
-          "hp": 0,
-          "evasion": 0,
-          "edef": 0,
-          "speed": 0,
-          "stats": {
-            "size": 1,
-            "hp": 5,
-            "evasion": 5,
-            "edef": 5,
-            "speed": 0,
-            "armor": 0
-          }
+          "hp": "5 + {grit}",
+          "evasion": "{evasion}",
+          "edef": "{edef}",
+          "speed": "{speed}"
         },
         {
           "name": "Drone OROCHI <b>Dilacerador</b>",
           "type": "Drone",
           "detail": "Como uma <b>reação</b>, você pode forçar personagens que iniciarem o turno deles adjacentes ou se moverem para ficar adjacentes a este drone pela primeira vez em uma rodada a fazer um salvamento de <b>Casco</b>. Em caso de falha, eles sofrem 1 Cinético e ficam <b>Dilacerado</b>s até o final do próximo turno deles.",
-          "activation": "Free",
+          "activation": "None",
           "recall": "Quick",
           "redeploy": "Quick",
           "size": 0.5,
-          "hp": 0,
-          "evasion": 0,
-          "edef": 0,
-          "speed": 0,
-          "stats": {
-            "size": 1,
-            "hp": 5,
-            "evasion": 5,
-            "edef": 5,
-            "speed": 0,
-            "armor": 0
-          }
+          "hp": "5 + {grit}",
+          "evasion": "{evasion}",
+          "edef": "{edef}",
+          "speed": "{speed}"
         },
         {
           "name": "Drone OROCHI Caçador",
           "type": "Drone",
           "detail": "Como <b>reação</b>, você pode forçar personagens que iniciarem o turno deles adjacentes ou se moverem para ficar adjacentes a este drone pela primeira vez em uma rodada a fazer um salvamento de Sistemas. Em caso de falha, eles ficam Travados em Mira.",
-          "activation": "Free",
+          "activation": "None",
           "recall": "Quick",
           "redeploy": "Quick",
           "size": 0.5,
-          "hp": 0,
-          "evasion": 0,
-          "edef": 0,
-          "speed": 0,
-          "stats": {
-            "size": 1,
-            "hp": 5,
-            "evasion": 5,
-            "edef": 5,
-            "speed": 0,
-            "armor": 0
-          }
+          "hp": "5 + {grit}",
+          "evasion": "{evasion}",
+          "edef": "{edef}",
+          "speed": "{speed}"
         }
       ],
-      "passive_effect": "Seu mecha contém a companhia poderosa de <b>Drones</b> integrados. No momento da criação, escolha um único Drone OROCHI para o acompanhar a partir das seguintes opções.<br>Seus <b>Drones</b> OROCHI compartilham sua Evasão, Defesa-E e Velocidade. Eles podem se mover independentemente em seu turno, mas não podem realizar outras ações. Se você puder voar ou se teletransportar, eles também podem fazê-lo.<br>Se um Drone OROCHI estiver ao <b>Alcance</b> dos Sensores, você pode recolhê-lo como uma ação rápida, integrando-o ao corpo do seu mecha onde não pode ser atingido. Você pode posicioná-lo em um espaço dentro de Sensores como uma ação rápida.<br>Quando descansar ou realizar um Reparo Completo, você pode escolher um drone diferente para acompanhá-lo; além disso, seus <b>Drones</b> recuperam todos os PV e são automaticamente reparados se foram destruídos."
+      "passive_effect": "Your mech contains powerful, integrated drone companions. At creation, choose a single OROCHI Drone to accompany you. <br>Your OROCHI drones share your Evasion, E-Defense, and Speed. They can move independently on your turn, but can’t take any other actions. If you can fly or teleport, they can too.<br>If an OROCHI drone is within Sensors, you may recall it as a quick action, integrating it into your mech’s body where it cannot be targeted. You may redeploy it to a space within Sensors as a quick action. <br>When you rest or perform a FULL REPAIR, you may choose a different drone to accompany you; additionally, your drones regain all HP and are automatically repaired if they were destroyed."
     },
     "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_hydra.png",
     "license_id": "mf_hydra"
@@ -1991,8 +1976,8 @@
         "actions": [
           {
             "name": "Castigue os Inimigos da Divindade",
-            "activation": "Free",
-            "trigger": "O Mantícora foi colocado em um instável Estado de Castigo durante um descanso ou Reparo Completo. Enquanto neste estado, ele é destruído por Dano ou fusão de reator.",
+            "activation": "None",
+            "trigger": "The Manticore has been pushed into an unstable Castigation State during a rest or Full Repair. While in this state it is destroyed due to damage or reactor meltdown.",
             "detail": "O Mantícora explode imediatamente quando for destruído devido a <b>Dano</b> ou fusão de reator, vaporizando-o e matando instantaneamente você e quaisquer outros passageiros presentes. Personagens a até <b>Emanação 2</b> devem obter sucesso em um <b>salvamento de Agilidade</b> ou sofrem <b>8d6 de Dano Explosivo</b>. Em caso de sucesso, eles sofrem metade do <b>Dano</b>.",
             "damage": [
               {
@@ -2010,10 +1995,8 @@
     "core_system": {
       "name": "Exoesqueleto Energizado",
       "description": "E RÁ Disse A Si Mesmo:<br><code class='horus'>DEIXE MEU NOME TE ENVOLVER. NÃO BUSQUE ABRIGO DAS CHAMAS OU DOS DENTES DA BESTA. CUBRA-SE COM O FOGO DE MINHAS PALAVRAS E REJEITE AOS SEUS INIMIGOS AQUELE QUE DESTRUIRIA SUA FORMA. </code>",
-      "passive_name": "Exoesqueleto Energizado",
-      "passive_effect": "1/rodada, quando sofrer <b>Calor</b>, você pode causar <b>2 de Dano de Energia</b> (PF) a um personagem a até <b>Alcance 3</b>.",
-      "active_name": "Destruição do Templo dos Inimigos de RÁ",
-      "active_effect": "Seu mecha crepita com <b>Energia</b>: adquira <b>Resistência</b> a <b>Calor</b> pelo restante da cena e um Dado de <b>Energia</b> — 1d6 — que começa em 1. Sempre que sofrer <b>Calor</b> ou <b>Dano de Energia</b>, inclusive de você mesmo, aumente o valor do Dado de <b>Energia</b> em 1. Quando o Dado de <b>Energia</b> atingir 6, a <b>Energia</b> absorvida é descarregada em uma conflagração de <b>Emanação 2</b>. Personagens dentro da área afetada devem ser bem-sucedidos em um salvamento de Engenharia ou sofrem <b>6d6 de Dano de Energia</b> (PF). Em caso de sucesso, eles sofrem metade do <b>Dano</b>. Objetos na área afetada são automaticamente atingidos. Uma vez descarregado, esse efeito termina.",
+      "active_name": "Destruction of the Temple of the Enemies of RA",
+      "active_effect": "Your mech crackles with energy: gain Resistance to heat for the rest of this scene and a Charge Die – 1d6, starting at 1. Whenever you take heat or energy, even from yourself, increase the value of the Charge Die by 1. When the Charge Die reaches 6, the absorbed energy discharges in a burst 2 inferno. Characters within the affected area must succeed on an Engineering save or take 6d6 AP energy damage. On a success, they take half damage. Objects in the affected area are automatically hit. Once discharged, this effect ends.",
       "active_effects": [
         {
           "name": "Destruição do Templo dos Inimigos de RÁ",
@@ -2038,11 +2021,13 @@
       "use": "Encounter",
       "deactivation": "Free",
       "activation": "Protocol",
+      "passive_name": "Charged Exoskeleton",
+      "passive_effect": "1/round, when you take heat, you may deal 2 AP energy damage to a character within range 3.",
       "passive_effects": [
         {
           "name": "Exoesqueleto Energizado",
           "frequency": "1/round",
-          "condition": "Você sofre <b>Calor</b>.",
+          "condition": "You take heat.",
           "detail": "Você pode causar <b>2 de Dano de Energia</b> (PF) a um personagem a até <b>Alcance 3</b>.",
           "damage": [
             {
@@ -2107,12 +2092,11 @@
         "synergies": [
           {
             "locations": [
-              "other"
+              "eject"
             ],
             "detail": "O Minotauro não fica Impedido quando você EJETA."
           }
-        ],
-        "use": "Rodada"
+        ]
       },
       {
         "name": "Metadobra Interna",
@@ -2138,8 +2122,8 @@
     "core_system": {
       "name": "Labirinto de Metadobra",
       "description": "\"Nenhum labirinto é mais terrível do que aquele que eu crio. Eu conheço todas as saídas e as escondo dentro desse perfeito construto. O que é a mente humana senão um programa de certa forma, um sistema que busca ordem e narrativa em uma bagunça que lhes é dada?<br>Eu organizo isso para eles. Eu. Eu organizo isso para eles e os coloco na tarefa de resolver tudo. Quando emergem, choram de alegria, pela descoberta. Eu os salvo, eu lhes mostro que eles são seus próprios redentores (e, no entanto, não sou eu igualmente culpável — igualmente merecedor de crédito?).<br>“Então, agora vá. Entre. Liberte-se. \"",
-      "active_name": "Labirinto",
-      "active_effect": "Escolha um personagem ao <b>Alcance</b> dos Sensores: ele fica <b>Atordoado</b> enquanto você lança seus Sistemas em uma armadilha de informações metafísicas tão emaranhadas que ele não pode fazer nada além de tentar escapar. No final do próximo turno dele, ele pode fazer um salvamento de Sistemas com +3 de Dificuldade. Em caso de sucesso, ele não está mais <b>Atordoado</b>. Esse salvamento pode ser repetido no final de cada um dos turnos dele, recebendo <b>+1 de Precisão</b> a cada vez até obter sucesso.",
+      "active_name": "Maze",
+      "active_effect": "Choose a character within Sensors: they become Stunned as you hurl their systems into a metaphysical information trap so tangled they can do nothing but try and escape. At the end of their next turn, they can make a Systems save at +3 difficulty. On a success, they are no longer Stunned. This save can be repeated at the end of each of their turns, gaining +1 accuracy each time until successful.",
       "active_effects": [
         {
           "name": "Labirinto",
@@ -2154,12 +2138,12 @@
         }
       ],
       "activation": "Full",
-      "passive_name": "Labirinto de Metadobra",
+      "passive_name": "Metafold Maze",
       "passive_actions": [
         {
           "name": "Labirinto de Metadobra",
           "activation": "Quick",
-          "trigger": "Você acerta com um ataque tecnológico.",
+          "trigger": "You hit with a tech attack.",
           "detail": "Quando acertar com um <b>ataque tecnológico</b>, você pode ativar este sistema, fazendo com que o alvo fique Lento até o final do seu próximo turno. Se ele já estiver Lento, fica Imobilizado até o final do seu próximo turno; se já estiver Imobilizado, ele fica <b>Atordoado</b> até o final do seu próximo turno. Cada personagem só pode ficar <b>Atordoado</b> por esse efeito uma vez por combate, mas pode ficar Lento ou Imobilizado qualquer quantidade de vezes.",
           "add_status": [
             {
@@ -2237,12 +2221,12 @@
     "core_system": {
       "name": "Omniarma Ushabti",
       "description": "\"— engraçado. Veja, agora mesmo, esta arma tecnicamente nem existe. Você está atirando neles com uma arma que não é real, mas ainda é! Não se preocupe com isso. RÁ é assim. Só, aqui, saiba que, porque ela existe em algum momento, nós a fizemos. Isso é causalidade, e a causalidade é uma —\"",
-      "active_name": "Desacorrentar Ushabti",
-      "active_effect": "Pelo restante desta cena, você pode usar A Omniarma Ushabti 3/rodada (em vez de 1/rodada).",
+      "active_name": "Unshackle Ushabti",
+      "active_effect": "For the rest of this scene, you can use the Ushabti Omnigun 3/round, instead of 1/round.",
       "use": "Encounter",
       "activation": "Protocol",
-      "passive_name": "Omniarma Ushabti",
-      "passive_effect": "A omniarma do seu mecha é um hardware experimental tão avançado que desafia a física: ela não requer um encaixe, nem tem um tipo ou Tamanho de arma — o que significa que não pode ser modificada ou se beneficiar dos seus talentos.<br>Você não pode atacar normalmente com esta arma. Em vez disso, 1/rodada, como uma <b>Ação Livre</b> durante o seu turno, você pode usá-la para causar <b>1 de Dano Cinético</b> (PF) a um personagem a até o <b>Alcance</b> e na linha de visão. Isso não conta como um ataque, acerta automaticamente, ignora cobertura, ultrapassa <b>Imunidade</b> e seu Dano não pode ser reduzido ou ignorado de qualquer maneira. Nenhuma regra neste livro ou em qualquer outro substitui isso.",
+      "passive_name": "Ushabti Omnigun",
+      "passive_effect": "Your mech’s omnigun is a piece of experimental hardware so advanced that it defies physics: it doesn’t require a mount, nor does it have a weapon type or size – meaning that it can’t be modified or benefit from your talents.<br>You can’t attack normally with this weapon. Instead, 1/round, as a free action during your turn, you can use it to deal 1 AP kinetic damage to a character within Range 15 and line of sight. This doesn’t count as an attack, hits automatically, ignores cover, bypasses Immunity, and its damage can’t be reduced or ignored in any way. No rule in this book or any other supersedes this.",
       "passive_actions": [
         {
           "name": "Disparar Omniarma",
@@ -2257,7 +2241,7 @@
           ],
           "range": [
             {
-              "type": "Alcance",
+              "type": "Range",
               "val": 15
             }
           ],
@@ -2350,8 +2334,8 @@
     "core_system": {
       "name": "Canhão do Apocalipse",
       "description": "Diretamente do campus diurno de pesquisa e desenvolvimento da Arsenal, o LGC-04 “Canhão do Apocalipse” é uma catapulta gravitacional exponencial, um produto de teste em escala enviado para pilotos licenciados para testes de campo como parte do, em andamento, Projeto de Testes de Armas de Magnitude da Praia do Plenário.<br>Diferente das atuais armas nave a nave de carretel logarítmico curto ou longo (cinética ou energética/particular), essa nova plataforma advém da pesquisa gravitacional atual da Arsenal para carregar exponencialmente e lançar uma carga cinética para sua trajetória. Esse aumento no carregamento de <b>Energia</b> potencial e diminuição do tempo total de carga vem ao custo de estabilidade: onde o canhão de carretel logarítmico é estável e resistente a choque, a catapulta gravitacional exponencial tende a desestabilização. Por enquanto, redundâncias intrínsecas disparam quando uma desestabilização traumática eventualmente ocorre para prevenir detonação dos Sistemas, resetando qualquer processo de carga em andamento no momento do choque.<br>O sistema LGC-04 “Canhão do Apocalipse” foi diminuído consideravelmente do seu papel operacional entendido originalmente, isso é, substituir canhões de carretel espinhal de naves capitanias, para que possam trabalhar no acúmulo de dados em tempo real para serem usados em aprimoramentos do sistema antes da adoção de abordagem naval",
-      "active_name": "Carregar Canhão",
-      "active_effect": "Quando ativado, você começa a carregar o Canhão do Apocalipse do Barbarossa, um poderoso sistema de armas de carretel longo nave a nave que requer calibração de alvo. Receba um Dado de Apocalipse — 1d6 — que começa em 4. No início de cada um dos seus turnos, diminua o valor do Dado de Apocalipse em 1, até um mínimo de 1. Se você se mover (mesmo que involuntariamente), ficar <b>Atordoado</b> ou Bloqueado, o Dado de Apocalipse reinicia para 4 e então continua a diminuir normalmente.<br>Se o valor do Dado de Apocalipse for 1 a 3, você pode atacar no seu turno com o Canhão do Apocalipse como uma ação completa, mas não pode se mover nem usar nenhuma ação no mesmo turno. O Canhão do Apocalipse é uma arma à distância com uma área de <b>Explosão 2</b>  e um perfil determinado pelo valor atual do Dado de Apocalipse:<br>3. [<b>Alcance 20</b>, <b>2d6 de Dano Explosivo</b>] Objetos na área afetada automaticamente sofrem <b>20 de Dano Explosivo</b> (PF). Depois do ataque, a nuvem da <b>Explosão</b> permanece, dando <b>cobertura leve</b> para personagens na área afetada até o final do seu próximo turno.<br>2. [<b>Alcance 25</b>, <b>3d6 de Dano Explosivo</b>] Objetos e terreno na área automaticamente sofrem <b>40 de Dano Explosivo</b> (PF) e, em caso de acerto, personagens ficam <b>Dilacerado</b>s e Impedidos até o final do próximo turno deles. A nuvem da <b>Explosão</b> é uma tempestade ardente: até o final do seu próximo turno, personagens dentro da área afetada obtêm <b>cobertura leve</b>, e personagens que começarem o turno deles na área ou se moverem para ela pela primeira vez em uma rodada sofrem <b>4 de Queimadura</b>.<br>1. [<b>Alcance 30</b>, <b>4d6 de Dano Explosivo</b>] Objetos e terrenos na área automaticamente sofrem <b>100 de Dano Explosivo</b> (PF) e personagens que forem acertados ficam <b>Dilacerado</b>s e Impedidos até o final do próximo turno deles. O chão da área afetada é vaporizado no impacto: pelo restante da cena, ele é terreno difícil, personagens dentro da área afetada obtêm <b>cobertura leve</b>, e personagens que começam o turno deles na área ou se moverem para ela pela primeira vez em uma rodada sofrem <b>4 de Queimadura</b>.<br>O Canhão do Apocalipse não pode ser disparado contra alvos a até <b>Alcance 5</b>.<br>Depois de um ataque com o Canhão do Apocalipse, o Dado de Apocalipse reinicia para 4. Se você chegar no final da cena sem usá-lo, você reganha 1 PN.<br>No final da cena, você perde o Dado de Apocalipse e o Canhão do Apocalipse para de carregar.",
+      "active_name": "Charge Rail",
+      "active_effect": "When activated, you start charging the Barbarossa’s Apocalypse Rail, an incredibly powerful ship-to-ship long-spool weapon system that requires target calibration. Gain an Apocalypse Die, 1d6 starting at 4. At the start of each of your turns, lower the value of the Apocalypse Die by 1, to a minimum of 1. If you move (even involuntarily) or become Stunned or Jammed, the Apocalypse Die resets to 4 and then continues to count down as usual.<br>If the value of the Apocalypse Die is 1–3, you can attack on your turn with the Apocalypse Rail as a full action, but can’t move or take any other actions on the same turn. After an attack with the Apocalypse Rail, the Apocalypse Die resets to 4. If you reach the end of the scene without using it, you regain 1 CP.<br>At the end of the scene, lose the Apocalypse Die, and the Apocalypse Rail stops charging.",
       "activation": "Quick",
       "integrated": [
         "mw_barbarossa_integrated"
@@ -2423,7 +2407,7 @@
         "active_effects": [
           {
             "name": "Ventilação Emergencial",
-            "trigger": "Você sofre <b>Dano de Estrutura</b>.",
+            "trigger": "You take structure damage.",
             "detail": "Remova todo o <b>Calor</b>."
           }
         ]
@@ -2432,12 +2416,12 @@
     "core_system": {
       "name": "Pacote de Sustentação MTB",
       "description": "Para melhor gerenciar a tremenda demanda de <b>Energia</b> do Gengis e acelerar rapidamente sua dispersão de <b>Calor</b>, o Ideário desenvolveu um pacote de mecanismos de gerenciamento de <b>Energia</b>. Depois de testes de campo extensivos, os pilotos descobriram que o Pacote de Sustentação MTB pode ser usado tanto como um dissipador de <b>Calor</b> quanto uma arma de negação de área.",
-      "active_name": "Expor Células de <b>Energia</b>",
-      "active_effect": "Nesta cena, se em algum momento você exceder sua Cap. de <b>Calor</b>, em vez disso você remove todo o <b>Calor</b> e ventila uma nuvem de <b>Emanação</b> 3 de matéria ardente do seu mecha.<br>Até o início do seu próximo turno, todos os personagens dentro da área afetada contam como Invisíveis para todos, exceto você. Personagens que não sejam você sofrem <b>2 de Queimadura</b> e <b>2 de Calor</b> quando começarem os turnos deles na área ou entrarem nela pela primeira vez na rodada. Quando o efeito for encerrado, personagens na área afetada obtêm <b>cobertura leve</b> (que você ignora) até o início do seu próximo turno, quando a nuvem se dispersa.",
+      "active_name": "Expose Power Cells",
+      "active_effect": "The next time you exceed your Heat Cap this scene, you instead clear all heat and vent a burst 3 cloud of burning matter from your mech.<br>Until the start of your next turn, all characters within the affected area count as Invisible to everyone except you, and characters other than you take 2 burn and 2 heat when they start their turn in the area or enter it for the first time in a round. Once this effect ends, characters within the affected area receive soft cover (which you ignore) until the start of your following turn, at which point the cloud disperses.",
       "active_effects": [
         {
           "name": "Expor Células de <b>Energia</b>",
-          "condition": "Nesta cena, se em algum momento você exceder sua Cap. de <b>Calor</b>",
+          "condition": "The next time you exceed your Heat Cap this scene",
           "detail": "Nesta cena, se em algum momento você exceder sua Cap. de <b>Calor</b>, em vez disso você remove todo o <b>Calor</b> e ventila uma nuvem de <b>Emanação</b> 3 de matéria ardente do seu mecha.<br>Até o início do seu próximo turno, todos os personagens dentro da área afetada contam como Invisíveis para todos, exceto você. Personagens que não sejam você sofrem <b>2 de Queimadura</b> e <b>2 de Calor</b> quando começarem os turnos deles na área ou entrarem nela pela primeira vez na rodada. Quando o efeito for encerrado, personagens na área afetada obtêm <b>cobertura leve</b> (que você ignora) até o início do seu próximo turno, quando a nuvem se dispersa.",
           "damage": [
             {
@@ -2504,8 +2488,7 @@
             "frequency": "1/round",
             "detail": "Você pode arremessar uma Granada ou plantar uma Mina como se tivesse <b>Alcance 15</b>."
           }
-        ],
-        "use": "Rodada"
+        ]
       },
       {
         "name": "Posicionadores de Minas",
@@ -2515,11 +2498,10 @@
             "name": "Posicionadores de Minas",
             "activation": "Free",
             "frequency": "1/round",
-            "trigger": "Você plantar uma Mina (incluindo usando seu traço Lançador de Assalto).",
+            "trigger": "You plant a Mine (even using your Assault Launcher trait).",
             "detail": "Você pode plantar até duas outras Minas em espaços livres adjacentes à primeira mina como uma <b>Ação Livre</b>."
           }
-        ],
-        "use": "Rodada"
+        ]
       },
       {
         "name": "Chave-Mestra",
@@ -2535,12 +2517,12 @@
     "core_system": {
       "name": "Semeador de Varredura Ampla",
       "description": "O Semeador de Varredura Ampla é um aparato patenteado desenvolvido durante a Ocupação Orrugi, quando os legionários da Arsenal lutaram contra um movimento guerrilheiro rancoroso e obstinado. Artefatos explosivos improvisados, incluindo em carros e <b>Drones</b> subalternos, eram empregados com frequência pela <b>Resistência</b>; para opor essa <b>Ameaça</b>, a Arsenal Harrison desenvolveu o Semeador para simultaneamente <b>Escanear</b>, identificar e eliminar <b>Ameaças</b> explosivas em proximidade com unidades estacionárias. A tecnologia se provou um sucesso e, com pequenos ajustes, foi adotada para instalação nos Chassis da Arsenal.<br>O Semeador de Varredura Ampla emite um <b>Cone</b> colmeia de detecção variada de luz para marcar alvos em potencial: se uma identificação positiva ocorrer, o alvo é neutralizado com um spray de flechetes opacos acelerados magneticamente. O Semeador pode também carregar minas colmeia.",
-      "active_name": "Nuvem da Morte",
-      "active_effect": "O sistema dispara uma enorme nuvem de microminas que se expande por todo o campo de batalha, afetando todos os personagens hostis a até <b>Alcance 50</b>. Pelo restante da cena, quando personagens hostis fizerem qualquer movimento que não seja seu movimento padrão (incluindo movimento involuntário) eles sofrem <b>3 de Dano Explosivo</b> (PF). Esse efeito pode disparar qualquer quantidade de vezes, mas apenas 1/rodada para cada personagem.",
+      "active_name": "Death Cloud",
+      "active_effect": "This system fires an enormous, expanding cloud of micromines across the whole battlefield, affecting all hostile characters within range 50. For the rest of the scene, when hostile characters make any movement other than their standard move (including involuntary movement), they take 3 AP explosive damage. This effect can trigger any number of times, but only 1/round for each character.",
       "active_effects": [
         {
           "name": "Nuvem da Morte",
-          "condition": "Qualquer personagem hostil a até <b>Alcance 50</b> fizer qualquer movimento que não seja seu movimento padrão (incluindo movimento involuntário).",
+          "condition": "Any hostile characters within range 50 make any movement other than their standard move (including involuntary movement).",
           "detail": "Pelo restante da cena, quando personagens hostis fizerem qualquer movimento que não seja seu movimento padrão (incluindo <b>movimento involuntário</b>) eles sofrem <b>3 de Dano Explosivo</b> (PF). Esse efeito pode disparar qualquer quantidade de vezes, mas apenas 1/rodada para cada personagem.",
           "damage": [
             {
@@ -2595,7 +2577,7 @@
         "active_effects": [
           {
             "name": "Blindagem Pesada",
-            "condition": "Você sofreria metade do Dano em um teste ou salvamento bem-sucedido.",
+            "condition": "You would take half damage on a successful check or save.",
             "detail": "Em vez disso, reduza o <b>Dano</b> para 1."
           }
         ]
@@ -2606,7 +2588,7 @@
         "active_effects": [
           {
             "name": "Égide Rápida",
-            "condition": "Você <b>Suportar</b>.",
+            "condition": "You Brace.",
             "detail": "Quando o Napoleão <b>Suportar</b>, ele reduz o <b>Dano</b> recebido para 1 em vez de ganhar <b>Resistência</b>."
           }
         ],
@@ -2623,8 +2605,8 @@
     "core_system": {
       "name": "Égide Negra Verdadeira",
       "description": "A Égide Negra Verdadeira é um avanço em blindagem pessoal desenvolvido pelo Think Tank do Arsenal. Como as outras tecnologias derivadas de PNH do Arsenal, a Égide é uma tecnologia de 'caixa-preta': seu código e funcionamento interno são altamente confidenciais, e geralmente só pode ser requisitada por pilotos de alto escalão ou posição dentro do Arsenal Harrison. Alguns pilotos Cosmopolitas descreveram a aparência da Égide como semelhante ao vazio – ou cegueira – que veem ao olhar para o espaço-lampejo. É seguro assumir que o dispositivo aproveita a tecnologia instável de campo-lampejo para manifestar uma fina bolha de espaço-lampejo dentro de parâmetros definidos. O campo-lampejo só pode manter a coerência por um breve momento, mas pode ser ligado e Desligado para criar uma cúpula total de espaço-lampejo.",
-      "active_name": "Ativar Égide",
-      "active_effect": "Um campo cintilante e totalmente negro envolve rapidamente seu mecha, cobrindo-o como uma segunda pele. Pelo resto da cena, você:<ul><li>reduz todo o Dano para 1, exceto por Dano que ignora redução;</li><li>adquire <b>Imunidade</b> a todas as ações tecnológicas, incluindo as benéficas, e quaisquer efeitos ou condições tecnológicas atuais em você terminam;</li><li>só pode usar Sistemas com a tag Escudo – quaisquer outros desativam imediatamente (Sistemas que não requerem ativação não são afetados);</li><li>não pode realizar ações rápidas, completas ou reações, exceto por movimentos padrão, <b>Agarrar</b>, <b>Empurrar</b>, <b>Improvisar Ataque</b>, ATIVAR (apenas Sistemas de Escudo), <b>Teste de Perícia</b> e <b>Impulsionar</b>;</li><li>não pode <b>Sobrecarregar</b>;</li><li>não pode usar comunicações para falar com outros personagens (pois o som não sai do escudo). </li></ul>Você ainda pode receber estados e <b>Calor</b>, e pode ser afetado por movimento involuntário. Você pode interagir normalmente com o mundo de outras maneiras, incluindo pegar e arrastar itens, e assim por diante.",
+      "active_name": "Activate Aegis",
+      "active_effect": "A shimmering, utterly black field quickly envelops your mech, covering it like a second skin. For the rest of the scene, you:<ul><li>reduce all damage to 1, except for damage that ignores reduction;</li><li>gain Immunity to all tech actions, including beneficial ones, and any current tech effects or conditions on you end;</li><li>can only use systems with the Shield tag – any others immediately deactivate (systems that do not require activation are unaffected);</li><li>can’t take quick actions, full actions, or reactions, except for standard moves, Grapple, Ram, Improvised Attack, Activate (Shield systems only), Skill Check, and Boost;</li><li>can’t Overcharge;</li><li>can’t use comms to talk to other characters (as sound doesn’t exit the shield).</li></ul>You can still receive statuses and Heat, and can be affected by involuntary movement. You can otherwise interact normally with the world, including picking up and dragging items, and so on.",
       "use": "Encounter",
       "activation": "Quick"
     },
@@ -2693,28 +2675,26 @@
         "actions": [
           {
             "name": "Escudo de Dobra",
-            "activation": "Reaction",
+            "activation": "None",
             "frequency": "1/round",
-            "trigger": "Antes de uma rolagem de ataque ser feita contra você ou um personagem aliado ao <b>Alcance</b> dos Sensores.",
+            "trigger": "Before an attack roll is made against you or an allied character within Sensors.",
             "detail": "Imponha <b>+1 de Dificuldade</b> a esse ataque."
           }
-        ],
-        "use": "Rodada"
+        ]
       }
     ],
     "core_system": {
       "name": "Ciclo de Táquions",
       "description": "Desenvolvido pelo Ideário como um consórcio com a Unidade de Engenharia Estelar da EIP-Estrela do Norte, o Ciclo de Táquion usa um sistema de circuito fechado para restringir e manipular uma lança de táquions, acelerando as partículas mais rápido que a luz em torno de um broquel principal. O broquel pode ser carregado por um mecha ou encaixado diretamente, interceptando disparos direcionais. Como táquions são mais rápidos que a luz, eles são Invisíveis ao olho nu, dando ao escudo a aparência de uma grande roda raiada.",
-      "active_name": "Escudo de Táquions",
-      "active_effect": "Este sistema projeta um escudo de táquions acelerados sobre um personagem aliado ao <b>Alcance</b> dos Sensores. Você pode decidir um novo alvo como uma ação rápida. Ganhe a <b>reação</b> Pulso Defensivo pelo restante da cena.<br>Pulso Defensivo<br><b>reação</b>, 1/rodada<br>Acionamento: Seu alvo é atacado.<br>Efeito: Você fortalece o escudo de táquions do alvo com um pulso de <b>Energia</b>. Ele ganha Resistência a todos os danos do ataque e, se o ataque errar, você pode forçar o atacante a rolar novamente contra um personagem ou objeto à sua escolha, checando a linha de visão e <b>Alcance</b> do seu alvo no lugar do alvo do atacante. Se o ataque era parte de um efeito em área, então o novo alvo deve estar dentro da mesma área que o ataque original.",
+      "active_name": "Tachyon Shield",
+      "active_effect": "This system projects an accelerated-tachyon shield over an allied character within Sensors. You may choose a new target as a quick action. Gain the Defensive Pulse reaction for the rest of the scene.<br>Defensive Pulse<br>Reaction, 1/round<br>Trigger: Your target is attacked.<br>Effect: You empower their tachyon shield with a pulse of energy. They gain Resistance to all damage from the attack, and if the attack misses, you may force the attacker to reroll it against a character or object of your choice, checking line of sight and Range from your target instead of from the attacker. If the attack was part of an area of effect, the new target must be inside the same area of effect from the original attack instead.",
       "use": "Encounter",
       "active_actions": [
         {
           "name": "Pulso Defensivo",
           "activation": "Reaction",
-          "trigger": "Seu alvo é atacado.",
-          "detail": "Você fortalece o escudo de táquions do alvo com um pulso de <b>Energia</b>. Ele ganha <b>Resistência</b> a todos os danos do ataque e, se o ataque errar, você pode forçar o atacante a rolar novamente contra um personagem ou objeto à sua escolha, checando a linha de visão e <b>Alcance</b> do seu alvo no lugar do alvo do atacante. Se o ataque era parte de um efeito em área, o novo alvo deve estar dentro da mesma área que o ataque original.",
-          "init": "Este sistema projeta um escudo de táquions acelerados sobre um personagem aliado ao <b>Alcance</b> dos Sensores. Você pode decidir um novo alvo como uma ação rápida."
+          "trigger": "Your target is attacked.",
+          "detail": "Você fortalece o escudo de táquions do alvo com um pulso de <b>Energia</b>. Ele ganha <b>Resistência</b> a todos os danos do ataque e, se o ataque errar, você pode forçar o atacante a rolar novamente contra um personagem ou objeto à sua escolha, checando a linha de visão e <b>Alcance</b> do seu alvo no lugar do alvo do atacante. Se o ataque era parte de um efeito em área, o novo alvo deve estar dentro da mesma área que o ataque original."
         },
         {
           "name": "Redirecionar Escudo de Táquions",
@@ -2776,7 +2756,7 @@
         "active_effects": [
           {
             "name": "Parada de Mathur",
-            "trigger": "Você remove todo o <b>Calor</b>.",
+            "trigger": "You clear all heat.",
             "detail": "Quando o Sherman remover todo o <b>Calor</b>, você pode escolher sofrer <b>Calor</b> igual a metade da sua <b>Cap. de Calor</b>, colocando-o na <b>Zona de Perigo</b>."
           }
         ],
@@ -2787,8 +2767,7 @@
             ],
             "detail": "Quando o Sherman remover todo o <b>Calor</b>, você pode escolher sofrer <b>Calor</b> igual a metade da sua <b>Cap. de Calor</b>, colocando-o na <b>Zona de Perigo</b>."
           }
-        ],
-        "use": "Livre"
+        ]
       },
       {
         "name": "Ventilar Calor",
@@ -2796,7 +2775,7 @@
         "active_effects": [
           {
             "name": "Ventilar Calor",
-            "condition": "Você Estabiliza ou excede sua Cap. de <b>Calor</b>.",
+            "condition": "You Stabilize or exceed your Heat Cap.",
             "detail": "Quando você <b>Estabilizar</b> o Sherman ou ele exceder sua <b>Cap. de Calor</b>, ele obtém <b>cobertura leve</b> até o final do seu próximo turno.",
             "add_other": [
               {
@@ -2821,8 +2800,8 @@
     "core_system": {
       "name": "Zona de Foco Mk IV Núcleo-Sólido",
       "description": "O ZF4 Núcleo-SÓLIDO é uma arma de feixe de <b>Energia</b> de dupla-origem de encaixe fixo. Alimentado por um sistema de gerador de <b>Energia</b> de milidobras, o ZF4 tem um carregador secundário alimentado por correia de baterias de Núcleo sólido que podem ser utilizadas para <b>Sobrecarregar</b> um único feixe de impulso, estendendo o <b>Alcance</b> da arma e seu poder destrutivo.",
-      "active_name": "Protocolo QUEIMA DE Núcleo",
-      "active_effect": "Seu ZF4 Núcleo-SÓLIDO imediatamente recebe <b>3 Cargas</b>, até um máximo de 4; adicionalmente, pelo restante desta cena, <b>Estabilizar</b> gera <b>2 Cargas</b> no lugar de 1, e todo terreno, objeto e <b>Posicionáveis</b> sofrem <b>10 de Dano Explosivo</b> (PF) por carga ao serem atingidos.",
+      "active_name": "COREBURN Protocol",
+      "active_effect": "Your ZF4 SOLIDCORE immediately gains 3 Charges, to a maximum of 4; additionally, for the rest of this scene, Stabilize generates 2 Charges instead of 1, and all terrain, objects, and deployables take 10 AP energy damage per charge on hit.",
       "activation": "Protocol",
       "integrated": [
         "mw_sherman_integrated"
@@ -2878,7 +2857,7 @@
         "active_effects": [
           {
             "name": "SUPERAR LIMITAÇÃO",
-            "condition": "Você está Exposto.",
+            "condition": "You are Exposed.",
             "detail": "Quando o Tokugawa estiver Exposto, seus ataques corpo a corpo e à distância causam <b>+3 de Dano de Energia bônus</b> ao acertar, todas suas armas que causariam Dano Cinético ou Explosivo causam <b>Dano de Energia</b> no lugar, armas à distância recebem +5 de <b>Linha</b> e armas corpo a corpo recebem +1 de <b>Ameaça</b>.",
             "bonuses": [
               {
@@ -2912,21 +2891,28 @@
         "active_effects": [
           {
             "name": "BAINHA DE PLASMA",
-            "condition": "Você está na <b>Zona de Perigo</b> e ataca com uma arma que causa qualquer quantidade de <b>Dano de Energia</b>.",
+            "condition": "You are in the Danger Zone and attack with a weapon that deals any amount of energy.",
             "detail": "Todos os danos bônus se tornam <b>Dano de Queimadura</b>."
           }
         ],
-        "synergies": []
+        "synergies": [
+          {
+            "locations": [
+              "attack"
+            ],
+            "detail": "When the Tokugawa is in the Danger Zone and attacks with a weapon that deals any amount of energy, all bonus damage becomes burn."
+          }
+        ]
       }
     ],
     "core_system": {
       "name": "ALIMENTADOR DE REATOR SUPERAQUECIDO",
       "description": "Pilotos de uma certa estirpe prosperam à beira da catástrofe, arriscando glorioso sucesso ou total fracasso a cada momento. Essas pessoas audaciosas estão acostumadas com o uivo de avisos de aquecimento crítico — o canto de gorjeio das sirenes de destruição e alimentadores de reator superaquecidos. Pilotos dos Tokugawa são notórios por <b>Sobrecarregar</b> suas armas com <b>Energia</b> em excesso, forçando seu marcador de <b>Calor</b> ao máximo. Aproveitando o reator único do Tokugawa, esses pilotos despejam <b>Dano</b> e não fazem amigos no compartimento de Engenharia — assumindo que eles não se transformem em uma pilha de destroços antes de voltar da linha de frente.",
-      "active_name": "Resplendor",
-      "active_effect": "Pelo restante da cena, armas que causam qualquer <b>Dano de Energia</b> recebem +5 de <b>Alcance</b> se elas forem à distância ou +2 de <b>Ameaça</b> se forem corpo a corpo.<br>Enquanto estiver Exposto, Superar Limitação combina com esses bônus para um aumento total de +10 de <b>Alcance</b> e +3 de <b>Ameaça</b>.",
+      "active_name": "Radiance",
+      "active_effect": "For the rest of this scene, weapons that deal any energy gain +5 range if they are ranged or +2 threat if they are melee.<br>While you’re Exposed, Limit Break stacks with these bonuses for a total increase of +10 range and +3 threat.",
       "use": "Encounter",
       "activation": "Protocol",
-      "passive_name": "Exceder Os Parâmetros",
+      "passive_name": "Overclock",
       "passive_actions": [
         {
           "name": "Exceder Os Parâmetros",
@@ -2969,7 +2955,14 @@
           ]
         }
       ],
-      "active_synergies": []
+      "active_synergies": [
+        {
+          "locations": [
+            "attack"
+          ],
+          "detail": "All weapons on your mech that deal any Energy Damage gain +5 Range if they are ranged weapons or gain +1 Threat if they are melee weapons."
+        }
+      ]
     },
     "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_tokugawa.png",
     "license_id": "mf_tokugawa"

@@ -3,95 +3,82 @@
     "id": "act_move",
     "name": "Movimento",
     "activation": "Move",
-    "terse": "Mova seu personagem até a sua <b>Velocidade</b> em qualquer direção.",
-    "detail": "Em seu turno, os personagens podem sempre mover uma quantidade de espaços igual à sua <b>Velocidade</b>, além de qualquer outra ação. Isso é chamado de movimento padrão para distinguir do movimento fornecido por sistemas e talentos.<br>Um personagem só conta como movendo se mover-se 1 ou mais espaços.<br>Personagens podem se mover para dentro de qualquer espaço adjacente, mesmo diagonalmente, desde que o espaço não esteja ocupado por uma obstrução (e que seja um para o qual normalmente poderiam se mover - por exemplo, personagens não podem mover-se direto para cima, a menos que possam voar). Existem diversos fatores que podem afetar o movimento, detalhados aqui.",
-    "pilot": true,
-    "mech": true,
-    "hide_active": true
+    "terse": "Mova seu personagem até a sua Velocidade em qualquer direção.",
+    "detail": "Em seu turno, os personagens podem sempre mover uma quantidade de espaços igual à sua VELOCIDADE, além de qualquer outra ação. Isso é chamado de movimento padrão para distinguir do movimento fornecido por sistemas ou talentos.<br>Um personagem só conta como movendo se mover-se 1 ou mais espaços.<br>Personagens podem se mover para dentro de qualquer espaço adjacente, mesmo diagonalmente, desde que o espaço não esteja ocupado por uma obstrução (e que seja um para o qual normalmente poderiam se mover - por exemplo, personagens não podem mover-se direto para cima, a menos que possam voar). Existem diversos fatores que podem afetar o movimento, detalhados aqui.",
+    "pilot": true
   },
   {
     "id": "act_overcharge",
     "name": "Sobrecarregar",
     "activation": "Free",
-    "terse": "<b>Sobrecarregar</b> permite que você realize imediatamente qualquer ação rápida de sua escolha como uma <b>Ação Livre</b>, mesmo uma que você já tenha feito neste turno.",
-    "detail": "Quando <b>Sobrecarregar</b>, você brevemente leva seu mecha além das especificações de fábrica para receber uma vantagem tática. Momentos de ação intensa não vão taxar muito os Sistemas do mecha, mas ação constante além dos limites prescritos tem seu preço.<br>Uma vez por turno, você pode <b>Sobrecarregar</b> seu mecha, permitindo fazer qualquer ação rápida como uma <b>Ação Livre</b> – mesmo que sejam ações que já foram feitas neste turno.<br>Na primeira vez que <b>Sobrecarregar</b>, você sofre 1 de <b>Calor</b>.<br>Na segunda vez que <b>Sobrecarregar</b>, você sofre 1d3 de <b>Calor</b>.<br>Na terceira vez, você sofre 1d6 de <b>Calor</b>, e toda vez após isso você sofre $1d6+4$ de <b>Calor</b>.<br>Um Reparo COMPLETO reinicia essa contagem.",
-    "synergy_locations": [
-      "overcharge"
-    ],
-    "confirm": [
-      "LIMITADOR DO REATOR DESATIVADO. TEMPERATURAS DO NÚCLEO AUMENTANDO."
-    ]
+    "terse": "Sobrecarregar permite que você realize imediatamente qualquer ação rápida de sua escolha como uma Ação Livre, mesmo uma que você já tenha feito neste turno.",
+    "detail": "Quando você SOBRECARREGA, brevemente leva seu mecha além das especificações de fábrica para receber uma vantagem tática. Momentos de ação intensa não vão taxar muito os sistemas do mecha, mas ação constante além dos limites prescritos tem seu preço.<br>Uma vez por turno, você pode SOBRECARREGAR seu mecha, permitindo fazer qualquer ação rápida como uma ação livre – mesmo ações que você já tenha feito neste turno.<br>Na primeira vez que SOBRECARREGAR, você sofre 1 de calor.<br>Na segunda vez que SOBRECARREGAR, você sofre 1d3 de calor.<br>Na terceira vez, sofre 1d6 de calor, e toda vez após isso sofre 1d6+4 de calor.<br>Um REPARO COMPLETO reinicia essa contagem."
   },
   {
     "id": "act_skirmish",
     "name": "Alvejar",
     "activation": "Quick",
-    "terse": "Ataque com uma única arma. Além do seu ataque primário, você também pode atacar com uma arma Auxiliar diferente que esteja no mesmo encaixe.",
-    "detail": "Quando <b>Alvejar</b>, você ataca com uma única arma.Para <b>Alvejar</b>, escolha uma arma e um alvo válido dentro do <b>Alcance</b> (ou <b>Ameaça</b>) e então faça um ataque.<ul><li>Além do seu ataque primário, você também pode atacar com uma arma Auxiliar diferente que esteja no mesmo encaixe. Essa arma não causa <b>Dano bônus</b>.</li><li>Armas <b>Superpesadas</b> são volumosas demais para usar com <b>Alvejar</b>, e só podem ser disparadas como parte de uma <b>Barragem</b>.</li></ul>"
+    "terse": "Ataque com uma única arma. Além do seu ataque primário, você também pode atacar com uma arma Auxiliar diferente no mesmo encaixe.",
+    "detail": "Quando você ALVEJA, você ataca com uma única arma.<br>Para ALVEJAR, escolha uma arma e um alvo válido dentro do ALCANCE (ou AMEAÇA) e então faça um ataque.<br>• Além do seu ataque primário, você também pode atacar com uma arma AUXILIAR diferente no mesmo encaixe. Essa arma não causa dano bônus.<br>• Armas SUPERPESADAS são volumosas demais para usar ao ALVEJAR, e só podem ser disparadas como parte de uma BARRAGEM."
   },
   {
     "id": "act_boost",
     "name": "Impulsionar",
     "activation": "Quick",
-    "terse": "Faça um movimento extra de pelo menos 1 espaço, até a sua <b>Velocidade</b>.",
-    "detail": "Quando <b>Impulsionar</b>, Você se move pelo menos 1 espaço, até a sua <b>Velocidade</b>. Isso permite que você faça um movimento adicional além do seu movimento padrão. Certos talentos e Sistemas só podem ser usados quando você usar <b>Impulsionar</b>, não quando fizer um movimento padrão.",
-    "synergy_locations": [
-      "boost"
-    ],
-    "confirm": [
-      "<b>Energia</b> REDIRECIONADA."
-    ],
-    "mech": true,
-    "pilot": true
+    "terse": "Faça um movimento extra de pelo menos 1 espaço, até a sua VELOCIDADE.",
+    "detail": "Quando você IMPULSIONA, você se move pelo menos 1 espaço, até a sua VELOCIDADE. Isso permite que você faça um movimento adicional, além do seu movimento padrão. Certos talentos e sistemas só podem ser usados quando você IMPULSIONA, não quando faz um movimento padrão."
   },
   {
     "id": "act_ram",
     "name": "Empurrar",
     "activation": "Quick",
-    "terse": "Tente derrubar ou <b>Empurrar</b> um alvo. Em um sucesso, o alvo fica Prostrado e você pode escolher empurrá-lo um espaço para trás.",
-    "detail": "Quando <b>Empurrar</b>, você faz um ataque corpo a corpo com o objetivo de derrubar ou <b>Empurrar</b> um alvo.Para <b>Empurrar</b>, faça um ataque corpo a corpo contra um personagem adjacente do mesmo <b>Tamanho</b> ou menor que você. Se você for bem-sucedido, seu alvo fica Prostrado e você pode escolher empurrá-lo um espaço para trás, na direção oposta.",
-    "synergy_locations": [
-      "ram"
-    ],
-    "confirm": [
-      "MANOBRA CONFIRMADA.",
-      "AVISO: PROXIMIDADE.",
-      "AVISO: COLISÃO IMINENTE"
-    ]
+    "terse": "Tente derrubar ou empurrar seu alvo. Em um sucesso, o alvo fica Prostrado e você pode escolher empurrá-lo um espaço para trás.",
+    "detail": "Quando você EMPURRA, você faz um ataque corpo a corpo com o objetivo de derrubar ou empurrar um alvo.<br>Para EMPURRAR, faça um ataque corpo a corpo contra um personagem adjacente do mesmo TAMANHO ou menor que você. Em um sucesso, seu alvo fica PROSTRADO e você também pode escolher empurrá-lo um espaço para trás, na direção oposta a você.",
+    "add_status": [{ "id": "prone", "attack": "melee" }]
+  },
+  {
+    "id": "act_ram_npc",
+    "name": "Empurrar",
+    "activation": "Quick",
+    "terse": "O PNJ faz um ataque corpo a corpo contra um personagem adjacente a ele de seu tamanho ou menor, com um bônus de +1/2/3. Em um sucesso, ele deixa seu alvo Prostrado.",
+    "detail": "O PNJ faz um ataque corpo a corpo contra um personagem adjacente a ele de seu tamanho ou menor, com um bônus de +1/2/3. Em um sucesso, ele deixa seu alvo Prostrado.",
+    "add_status": [{ "id": "prone", "attack": "melee" }],
+    "hidden": true
   },
   {
     "id": "act_grapple",
     "name": "Agarrar",
     "activation": "Quick",
-    "terse": "Tente segurar um alvo, potencialmente o imobilizando ou montando nele.",
-    "detail": "Quando <b>Agarrar</b>, você tenta segurar um alvo e sobrepujá-lo – desarmando, subjugando ou causando <b>Dano</b> a ele para que não possa fazer o mesmo a você.Para <b>Agarrar</b>, escolha um personagem adjacente e faça um ataque corpo a corpo. Em um acerto:<ul><li>ambos os personagens ficam <b>Engajados</b>;</li><li>nenhum dos personagens pode <b>Impulsionar</b> ou usar reações pela duração do agarrão;</li><li>o personagem menor fica Imobilizado, mas se move quando o personagem maior se mover, espelhando seus movimentos. Se ambos os lados forem do mesmo <b>Tamanho</b>, ambos podem fazer um teste disputado de <b>Casco</b> no início dos seus turnos; o vencedor conta como maior que o perdedor até que o teste seja repetido.</li></ul><b>Agarrar</b> termina quando:<ul><li>qualquer um dos personagens quebrar adjacência, como quando ambos são empurrados por outro efeito;</li><li>o atacante escolhe terminar o agarrão como uma <b>Ação Livre</b>;</li><li>o defensor se libertar sendo bem-sucedido em um teste disputado de <b>Casco</b> como uma ação rápida.</li></ul>Se um <b>Agarrar</b> envolver mais que dois personagens, as mesmas regras se aplicam, mas quando contar o <b>Tamanho</b>, some o <b>Tamanho</b> de todos os personagens de cada lado. Por exemplo, se dois personagens aliados <b>Tamanho 1</b> estiverem agarrando um único inimigo <b>Tamanho 2</b>, os personagens aliados contam como <b>Tamanho 2</b> combinado e podem tentar arrastar seu inimigo.",
-    "synergy_locations": [
-      "grapple"
-    ]
+    "terse": "Tente segurar seu alvo, potencialmente o imobilizando ou montando nele.",
+    "detail": "Quando você AGARRA, tenta segurar um alvo e sobrepujá-lo – desarmando, subjugando ou causando dano a ele para que não possa fazer o mesmo a você.<br>Para AGARRAR, escolha um personagem adjacente e faça um ataque corpo a corpo. Em um acerto:<br>• ambos os personagens ficam ENGAJADOS;<br>• nenhum dos personagens pode IMPULSIONAR ou usar reações pela duração do agarrão;<br>• o personagem menor fica IMOBILIZADO, mas se move quando o personagem maior se mover, espelhando seus movimentos. Se ambos os lados forem do mesmo TAMANHO, qualquer um pode fazer testes disputados de CASCO no início do seu turno: o vencedor conta como maior que o perdedor até que este teste seja repetido.<br>Um AGARRÃO termina quando:<br>• qualquer um dos personagens quebrar a adjacência, como quando empurrados por outro efeito;<br>• o atacante escolhe terminar o agarrão como uma ação livre;<br>• o defensor se libertar sendo bem-sucedido em um teste disputado de CASCO como uma ação rápida.<br>Se um AGARRÃO envolver mais de dois personagens, as mesmas regras se aplicam, mas quando contar o TAMANHO, some o TAMANHO de todos os personagens de cada lado. Por exemplo, se dois personagens aliados de TAMANHO 1 estiverem agarrando um único inimigo de TAMANHO 2, os personagens aliados contam como TAMANHO 2 combinado e podem tentar arrastar seu inimigo."
+  },
+  {
+    "id": "act_grapple_npc",
+    "name": "Agarrar",
+    "activation": "Quick",
+    "terse": "O PNJ faz um ataque corpo a corpo contra um personagem adjacente com um bônus de +1/2/3, agarrando-o se for bem-sucedido.",
+    "detail": "O PNJ faz um ataque corpo a corpo contra um personagem adjacente com um bônus de +1/2/3, agarrando-o se for bem-sucedido."
   },
   {
     "id": "act_quick_tech",
     "name": "Programar Rápido",
     "activation": "Quick",
-    "terse": "Realize ações rápidas de guerra eletrônica ou de reforço de Sistemas.",
-    "detail": "Quando usar <b>Programar Rápido</b>, você engaja em guerra eletrônica, contramedidas e outras ações técnicas, geralmente ajudado pelos poderosos núcleos computacionais e de simulação de um mecha.<br>Sempre que usar essa ação, escolha uma opção da lista de <b>Programar Rápido</b>. Todos os mechas têm acesso a essas opções, mas alguns Sistemas as melhoram ou disponibilizam novas opções.<br>Diferente de outras ações rápidas, <b>Programar Rápido</b> pode ser usada mais de uma vez por turno; entretanto, uma opção diferente deve ser escolhida a cada vez, exceto se especificado o contrário ou concedido como uma <b>Ação Livre</b>.",
-    "ignore_used": true,
-    "synergy_locations": [
-      "quick_tech"
-    ]
+    "terse": "Realize ações rápidas de guerra eletrônica ou de reforço de sistemas.",
+    "detail": "Quando você usa PROGRAMAR RÁPIDO, você engaja em guerra eletrônica, contramedidas e outras ações técnicas, geralmente ajudado pelos poderosos núcleos computacionais e de simulação de um mecha.<br>Cada vez que realiza esta ação, você escolhe uma opção da lista de PROGRAMAR RÁPIDO. Todos os mechas têm acesso a essas opções, mas alguns sistemas as melhoram ou disponibilizam novas opções.<br>Diferente de outras ações rápidas, PROGRAMAR RÁPIDO pode ser usada mais de uma vez por turno; entretanto, uma opção diferente deve ser escolhida a cada vez, exceto se especificado o contrário ou concedido como uma ação livre."
   },
   {
     "id": "act_bolster",
     "name": "Reforçar",
     "activation": "Quick Tech",
-    "terse": "Melhore os Sistemas de outro personagem.",
-    "detail": "Quando <b>Reforçar</b>, você usa o formidável poder de processamento de seu mecha para melhorar os Sistemas de outro personagem.Para <b>Reforçar</b>, escolha um personagem ao <b>Alcance</b> dos <b>Sensores</b>. Ele recebe +2 de Precisão no próximo <b>Teste de Perícia</b> ou salvamento que fizer entre agora e o final do próximo turno dele. Personagens só podem se beneficiar de um <b>Reforçar</b> por vez.",
-    "synergy_locations": [
-      "bolster"
-    ],
-    "confirm": [
-      "UPLINK ESTABELECIDO.",
-      "PARALELIZANDO ALGORITMOS DE COMBATE"
+    "terse": "Melhore os sistemas de outro personagem.",
+    "detail": "Quando você REFORÇA, usa o formidável poder de processamento de seu mecha para melhorar os sistemas de outro personagem.<br>Para REFORÇAR, escolha um personagem ao ALCANCE dos SENSORES. Ele recebe +2 de Precisão no próximo teste de perícia ou salvamento que fizer entre agora e o final do próximo turno dele. Personagens só podem se beneficiar de um REFORÇAR por vez.",
+    "add_special": [
+      {
+        "attribute": "Bolstered",
+        "target": "ally",
+        "detail": "Gain +2 Accuracy on the next skill check or save you make.",
+        "duration": "end_next_turn_target"
+      }
     ]
   },
   {
@@ -99,80 +86,63 @@
     "name": "Escanear",
     "activation": "Quick Tech",
     "terse": "Realize um escaneamento profundo em um inimigo.",
-    "detail": "Quando <b>Escanear</b>, você usa os poderosos <b>Sensores</b> de seu mecha para realizar um escaneamento profundo em um inimigo.Para <b>Escanear</b>, escolha um personagem ou objeto ao <b>Alcance</b> dos <b>Sensores</b> e na linha de visão, e então pergunte ao MJ uma das seguintes informações, que ele deve responder honestamente:<ul><li>Armas, Sistemas e estatísticas completas (PV, <b>Velocidade</b>, <b>Evasão</b>, <b>Armadura</b>, PERÍCIAS DE MECHA e assim por diante) de seu alvo.</li><li>Uma informação sigilosa sobre o alvo, como carga ou dados confidenciais, missão atual, a identidade do piloto e assim por diante.</li><li>Informação genérica ou pública sobre o alvo que pode ser retirada de bancos de informação ou registros, como o número do modelo de um mecha.</li></ul>As informações coletadas são as atuais na hora que <b>Escanear</b> – se o alvo sofrer <b>Dano</b> depois, por exemplo, você não recebe uma atualização.",
-    "synergy_locations": [
-      "scan"
-    ],
-    "confirm": [
-      "ESTABELECENDO TRAVA DE ALVO.",
-      "TRAVA CONFIRMADA. SOLUÇÕES DE DISPARO CALCULADAS."
-    ]
+    "detail": "Quando você ESCANEA, você usa os poderosos sensores de seu mecha para realizar um escaneamento profundo em um inimigo.<br>Para ESCANEAR, escolha um personagem ou objeto ao ALCANCE dos SENSORES e na linha de visão, e então pergunte ao MJ uma das seguintes informações, que ele deve responder honestamente:<br>• Armas, sistemas e estatísticas completas (PV, VELOCIDADE, EVASÃO, ARMADURA, PERÍCIAS DE MECHA e assim por diante) de seu alvo.<br>• Uma informação sigilosa sobre o alvo, como carga ou dados confidenciais, missão atual, a identidade do piloto e assim por diante.<br>• Informação genérica ou pública sobre o alvo que pode ser retirada de bancos de informação ou registros, como o número do modelo de um mecha.<br>As informações coletadas são apenas as atuais na hora do ESCANEAMENTO – se o alvo sofrer dano depois, por exemplo, você não recebe uma atualização."
   },
   {
     "id": "act_lockon",
     "name": "Travar Mira",
     "activation": "Quick Tech",
     "terse": "Marque um alvo digitalmente.",
-    "detail": "Quando <b>Travar Mira</b>, você marca um alvo digitalmente, iluminando-o para os Sistemas de mira de seus companheiros e expondo pontos fracos.Para <b>Travar Mira</b>, você escolhe um personagem na linha de visão e ao <b>Alcance</b> dos <b>Sensores</b>. Ele sofre a condição <b>Travado em Mira</b>. Qualquer personagem que faça um ataque contra alguém <b>Travado em Mira</b> pode escolher receber <b>+1 de Precisão</b> no ataque e então remover a condição <b>Travado em Mira</b> depois que o ataque for resolvido. Isso é chamado de consumir <b>Travado em Mira</b>.",
-    "synergy_locations": [
-      "lock_on"
-    ],
-    "confirm": [
-      "ESTABELECENDO TRAVA DE ALVO.",
-      "TRAVA CONFIRMADA. SOLUÇÕES DE DISPARO CALCULADAS."
-    ]
+    "detail": "Quando você TRAVA MIRA, você marca um alvo digitalmente, iluminando-o para os sistemas de mira de seus companheiros e expondo pontos fracos.<br>Para TRAVAR MIRA, escolha um personagem na linha de visão e ao ALCANCE dos SENSORES. Ele sofre a condição TRAVADO EM MIRA. Qualquer personagem que faça um ataque contra alguém TRAVADO EM MIRA pode escolher receber +1 de Precisão no ataque e então remover a condição TRAVADO EM MIRA depois que o ataque for resolvido. Isso é chamado de consumir TRAVADO EM MIRA.",
+    "add_status": [{ "id": "lockon" }]
   },
   {
     "id": "act_invade",
     "name": "Invadir",
     "activation": "Quick Tech",
     "terse": "Execute um ataque eletrônico direto contra um alvo.",
-    "detail": "Quando <b>Invadir</b>, você executa um ataque eletrônico direto contra um alvo. Para <b>Invadir</b>, faça um <b>ataque tecnológico</b> contra um personagem na linha de visão e ao <b>Alcance</b> dos <b>Sensores</b>. Em um sucesso, seu alvo sofre 2 de <b>Calor</b> e você escolhe uma das opções de INVASÃO disponíveis a você. <b>Fragmentar Sinal</b> está disponível para todos os personagens, e opções adicionais são concedidas por certos Sistemas e equipamentos com a tag <b>Invadir</b>. Você também pode <b>Invadir</b> personagens aliados voluntários para criar certos efeitos. Se o seu alvo for voluntário e aliado, você automaticamente é bem-sucedido, isso não conta como um ataque e o alvo não recebe nenhum <b>Calor</b>."
+    "detail": "Quando você INVADE, você executa um ataque eletrônico direto contra um alvo. Para INVADIR, faça um ataque tecnológico contra um personagem na linha de visão e ao ALCANCE dos SENSORES. Em um sucesso, seu alvo sofre 2 de calor e você escolhe uma das opções de INVASÃO disponíveis a você. FRAGMENTAR SINAL está disponível para todos os personagens, e opções adicionais são concedidas por certos sistemas e equipamentos com a tag INVADIR. Você também pode INVADIR personagens aliados voluntários para criar certos efeitos. Se o seu alvo for voluntário e aliado, você automaticamente é bem-sucedido, isso não conta como um ataque e o alvo não recebe nenhum calor."
   },
   {
     "id": "act_inv_fragment_signal",
     "name": "Fragmentar Sinal",
     "activation": "Invade",
-    "terse": "Deixa um personagem Impedido e Lento até o final do próximo turno dele.",
-    "detail": "Você transmite informações falsas, mensagens obscenas ou sinais fantasmas para o Núcleo computacional do alvo. Ele fica Impedido e Lento até o final do próximo turno dele.",
-    "confirm": [
-      "FRAGMENTAÇÃO DE SINAL EM ANDAMENTO."
+    "terse": "Deixa um personagem IMPEDIDO e LENTO até o final do próximo turno dele.",
+    "detail": "Você transmite informações falsas, mensagens obscenas ou sinais fantasmas para o núcleo computacional do alvo. Ele fica IMPEDIDO e LENTO até o final do próximo turno dele.",
+    "add_status": [
+      { "id": "impaired", "duration": "end_next_turn_target" },
+      { "id": "slow", "duration": "end_next_turn_target" }
     ]
   },
   {
     "id": "act_hide",
     "name": "Esconder-se",
     "activation": "Quick",
-    "terse": "Obscureça a posição do seu mecha, tornando-se <b>Escondido</b> e incapaz de ser identificado, localizado com Precisão ou ser alvo direto de ataques ou ações hostis.",
-    "detail": "Quando <b>Esconder-se</b>, você obscurece a posição do seu mecha para se reposicionar, evitar sofrer tiros, reparar ou emboscar.Para <b>Esconder-se</b>, você não pode estar Engajado e precisa estar fora da linha de visão de um inimigo, obscurecido por cobertura suficiente ou <b>invisível</b>. Se conseguir <b>Esconder-se</b> enquanto atende a um desses critérios, você recebe o estado de <b>Escondido</b>.<br><b>cobertura pesada</b> é o suficiente para <b>Esconder-se</b> enquanto ela for grande o suficiente para te ocultar, mas <b>cobertura leve</b> só é suficiente se você estiver completamente dentro de uma área ou zona que te garanta <b>cobertura leve</b> – muitos Sistemas e talentos que fornecem <b>cobertura leve</b> ou o bom e velho obscurecimento não proveem o suficiente para se esconder atrás!<br>Se estiver <b>invisível</b>, você sempre pode <b>Esconder-se</b>, independente de cobertura, a menos que esteja Engajado.<br>A localização exata de alvos <b>Escondidos</b> não pode ser identificada e eles não podem ser visados diretamente por ataques ou ações hostis, mas eles ainda podem ser atingidos por ataques que afetem uma área. Mesmo que os PNJs não possam localizar um personagem <b>Escondido</b>, eles ainda podem saber uma localização aproximada. Então, um PNJ pode descarregar um lança-chamas em uma área mesmo que não saiba exatamente onde o PJ <b>Escondido</b> está à espreita.<br>Adicionalmente, outros personagens ignoram engajamento com você enquanto você estiver <b>Escondido</b> — assume-se que você está tentando se manter furtivo.<br>Você para de ficar <b>Escondido</b> se fizer um ataque (corpo a corpo, à distância ou tecnológico) ou se o seu mecha fizer uma ação hostil (como forçar um alvo a fazer um salvamento). Usar <b>Impulsionar</b> ou reações com seu mecha também faz com que você deixe de estar <b>Escondido</b>. Outras ações podem ser usadas normalmente.<br>Você também perde imediatamente o estado <b>Escondido</b> se a sua cobertura desaparecer ou for destruída, ou se você perder cobertura devido a linha de visão (por exemplo, se um mecha pular por cima de um muro e agora consegue traçar uma Linha ininterrupta até você). Se estiver se escondendo enquanto está <b>invisível</b>, você perde <b>Escondido</b> quando deixar de estar <b>invisível</b>, a menos que esteja em uma cobertura.",
-    "mech": true,
-    "pilot": true,
-    "synergy_locations": [
-      "hide"
-    ],
-    "confirm": [
-      "ASSINATURA DO SENSOR OBSCURECIDA. COMUNICAÇÕES APENAS EM FEIXE DIRETO. LINHAS DE VISÃO LIMPAS."
-    ]
+    "terse": "Obscureça a posição do seu mecha, tornando-se ESCONDIDO e incapaz de ser identificado, localizado com precisão ou ser alvo direto de ataques ou ações hostis.",
+    "detail": "<p>Quando você se ESCONDE, você obscurece a posição do seu mecha para se reposicionar, evitar sofrer tiros, reparar ou emboscar.</p><p>Para se ESCONDER, você não pode estar ENGAJADO e precisa estar fora da linha de visão dos inimigos, obscurecido por cobertura suficiente ou invisível. Se conseguir se ESCONDER enquanto atende a um desses critérios, você recebe o estado de ESCONDIDO.</p><p>Cobertura pesada é o suficiente para se ESCONDER desde que seja grande o suficiente para ocultá-lo completamente, mas cobertura leve só é suficiente se você estiver completamente dentro de uma área ou zona que garanta cobertura leve – muitos sistemas e talentos que fornecem cobertura leve ou obscurecimento simples não proveem o suficiente para se esconder atrás!</p><p>Se estiver INVISÍVEL, você sempre pode se ESCONDER, independente de cobertura, a menos que esteja ENGAJADO.</p><p>A localização exata de alvos ESCONDIDOS não pode ser identificada e eles não podem ser visados diretamente por ataques ou ações hostis, mas ainda podem ser atingidos por ataques que afetem uma área. Embora os PNJs não possam localizar perfeitamente um personagem ESCONDIDO, eles ainda podem saber uma localização aproximada. Assim, um PNJ pode descarregar um lança-chamas em uma área mesmo sem saber exatamente onde um jogador ESCONDIDO está à espreita.</p><p>Adicionalmente, outros personagens ignoram engajamento com você enquanto você estiver ESCONDIDO — assume-se que você está tentando se manter furtivo.</p><p>Você para de ficar ESCONDIDO se fizer um ataque (corpo a corpo, à distância ou tecnológico) ou se o seu mecha fizer uma ação hostil (como forçar um alvo a fazer um salvamento). Usar IMPULSIONAR ou reações com seu mecha também faz com que você perca o estado ESCONDIDO. Outras ações podem ser usadas normalmente.</p><p>Você também perde imediatamente o estado ESCONDIDO se a sua cobertura desaparecer ou for destruída, ou se perder cobertura devido à linha de visão (por exemplo, se um mecha pular por cima de um muro e agora conseguir traçar uma linha de visão ininterrupta até você). Se estiver se escondendo enquanto está INVISÍVEL, você perde o estado ESCONDIDO quando deixar de estar INVISÍVEL, a menos que esteja em uma cobertura.</p>",
+    "pilot": true
   },
   {
     "id": "act_search",
     "name": "Procurar",
     "activation": "Quick",
-    "terse": "Procure por um alvo <b>Escondido</b>.",
-    "detail": "Quando <b>Procurar</b>, você tenta identificar personagens <b>Escondidos</b>. Para <b>Procurar</b> em um mecha, escolha um personagem ao <b>Alcance</b> dos <b>Sensores</b> que você suspeite estar <b>Escondido</b> e faça um teste disputado de Sistemas contra a Agilidade dele.Para <b>Procurar</b> quando estiver sem um mecha, faça um teste disputado de perícia, adicionando os bônus de seus gatilhos normalmente. Isso pode ser usado para revelar personagens dentro de <b>Alcance 5</b>.<br>Após um personagem <b>Escondido</b> ser encontrado usando <b>Procurar</b>, ele imediatamente deixa de estar <b>Escondido</b> e pode ser localizado normalmente por qualquer personagem.",
-    "mech": true,
-    "pilot": true,
-    "synergy_locations": [
-      "search"
-    ]
+    "terse": "Procure por um alvo escondido.",
+    "detail": "Quando você PROCURA, você tenta identificar personagens escondidos. Para PROCURAR em um mecha, escolha um personagem ao ALCANCE dos seus SENSORES que você suspeite estar ESCONDIDO e faça um teste disputado de SISTEMAS contra a AGILIDADE dele.<br>Após um personagem ESCONDIDO ser encontrado usando PROCURAR, ele imediatamente perde o estado ESCONDIDO e pode ser localizado novamente por qualquer personagem."
+  },
+  {
+    "id": "act_search_pilot",
+    "name": "Procurar",
+    "activation": "Quick",
+    "terse": "Procure por um alvo escondido.",
+    "detail": "Para PROCURAR como um piloto a pé, faça um teste de perícia disputado, adicionando os bônus dos seus gatilhos normalmente. Isso pode ser usado para revelar personagens dentro de ALCANCE 5.<br>Após um personagem ESCONDIDO ser encontrado usando PROCURAR, ele imediatamente perde o estado ESCONDIDO e pode ser localizado novamente por qualquer personagem.",
+    "pilot": true
   },
   {
     "id": "act_activate_quick",
     "name": "Ativar (Rápida)",
     "activation": "Quick",
     "terse": "Ative um sistema ou equipamento que requer uma ação rápida.",
-    "detail": "Quando ATIVAR, você usa um sistema ou equipamento que requer uma ação rápida ou completa. Esses Sistemas têm as tags de AÇÃO RÁPIDA ou AÇÃO COMPLETA. Você pode ATIVAR quantas vezes quiser em um turno, mas não pode ATIVAR o mesmo sistema mais de uma vez, a menos que também possa fazê-lo como uma <b>Ação Livre</b>.",
-    "mech": true,
+    "detail": "Quando você ATIVA, você usa um sistema ou equipamento que requer uma ação rápida ou completa. Esses sistemas têm as tags de AÇÃO RÁPIDA ou AÇÃO COMPLETA. Você pode ATIVAR quantas vezes quiser em um turno, mas não pode ATIVAR o mesmo sistema mais de uma vez, a menos que possa fazê-lo como uma ação livre.",
     "pilot": true
   },
   {
@@ -180,150 +150,105 @@
     "name": "Ejetar",
     "activation": "Quick",
     "terse": "Ejete do seu mecha, voando 6 espaços na direção de sua escolha.",
-    "detail": "Você também pode <b>Ejetar</b> como uma ação rápida, voando 6 espaços em uma direção à sua escolha; entretanto, esse é um sistema de emergência de uso único - ele deixa seu mecha Impedido. Seu mecha permanece Impedido e você não pode <b>Ejetar</b> novamente até seu próximo Reparo COMPLETO.",
-    "synergy_locations": [
-      "eject"
-    ],
-    "confirm": [
-      "PROTOCOLOS DE SEGURANÇA DESATIVADOS. MODO DE CONTROLE MANUAL SUSPENSO. PARAFUSOS EXPLOSIVOS ARMADOS.",
-      "BOA SORTE, PILOTO."
-    ]
+    "detail": "Você também pode EJETAR como uma ação rápida, voando 6 espaços em uma direção à sua escolha; entretanto, este é um sistema de uso único para emergências – ele deixa seu mecha IMPEDIDO. Seu mecha permanece IMPEDIDO e você não pode EJETAR novamente até o seu próximo REPARO COMPLETO."
   },
   {
     "id": "act_prepare",
     "name": "Preparar",
     "activation": "Quick",
-    "terse": "Prepare uma ação rápida para um acionamento especificado. Até o início do seu próximo turno, quando o gatilho for acionado, você pode realizar sua ação preparada como uma <b>reação</b>. Sua preparação conta como se você estivesse realizando a ação, então ela segue todas as restrições usuais daquela ação e de realizar múltiplas ações.",
-    "detail": "Quando <b>Preparar</b>, você se apronta para usar uma ação em um momento específico ou quando uma condição específica é atingida (um tiro mais vantajoso, por exemplo).<br>Como uma ação rápida, você pode <b>Preparar</b> qualquer outra ação rápida e especificar um acionamento. Até o início do seu próximo turno, quando houver o acionamento especificado, você pode usar a ação rápida preparada como uma <b>reação</b>.<br>O acionamento para sua ação preparada deve ser construído da seguinte forma: 'Quando X, então Y', onde X é a <b>reação</b>, ação ou movimento usado by um personagem hostil ou aliado e Y é sua ação rápida preparada. Por exemplo, 'quando um personagem aliado ficar adjacente a mim, eu quero jogar uma granada de fumaça' ou 'quando um personagem hostil ficar adjacente a mim, eu quero <b>Empurrar</b> ele'.<br>Sua preparação conta como usar uma ação, então ela segue as restrições normais dessa ação e em usar múltiplas ações. Você não pode, por exemplo, <b>Alvejar</b> e então <b>Preparar</b> para <b>Alvejar</b> novamente; você também não pode se mover e então <b>Preparar</b> para <b>Alvejar</b> com uma arma de <b>Artilharia</b>, que normalmente necessita ser disparada antes de se mover ou fazer qualquer outra coisa em seu turno. Adicionalmente, depois que <b>Preparar</b> uma ação, você não pode se mover ou usar quaisquer outras ações ou reações até o início do seu próximo turno ou até que sua ação preparada tenha sido acionada (o que ocorrer primeiro).<br>Mesmo que você não possa usar reações enquanto mantém uma ação preparada, você pode usá-las normalmente depois de a ação preparada ser acionada. Você também pode desistir de sua ação preparada, permitindo que use reações normalmente. Se a condição de acionamento não acontecer, você perde sua ação preparada.<br>Quando você <b>Preparar</b>, isso é visível e óbvio para observadores (por exemplo, você claramente mira ou prepara Sistemas).",
-    "mech": true,
-    "pilot": true,
-    "synergy_locations": [
-      "prepare"
-    ],
-    "confirm": [
-      "COMANDO NA FILA, AGUARDANDO."
-    ]
+    "terse": "Prepare uma ação rápida para um acionamento especificado. Até o início do seu próximo turno, quando for acionado, você pode realizar sua ação preparada como uma reação. Sua preparação conta como se você estivesse realizando a ação, então ela segue todas as restrições usuais daquela ação e de realizar múltiplas ações.",
+    "detail": "Quando você PREPARA, você se apronta para usar uma ação em um momento específico ou quando uma condição específica é atingida (um tiro mais vantajoso, por exemplo).<br>Como uma ação rápida, você pode PREPARAR qualquer outra ação rápida e especificar um acionamento. Até o início do seu próximo turno, quando houver o acionamento especificado, você pode realizar essa ação como uma reação.<br>O acionamento para sua ação preparada deve ser formulado da seguinte forma: \"Quando X, então Y\", onde X é uma reação, ação ou movimento realizado por um personagem hostil ou aliado e Y é sua ação. Por exemplo, \"quando um personagem aliado se mover para um espaço adjacente a mim, eu quero jogar uma granada de fumaça\" ou \"quando um personagem hostil se mover para um espaço adjacente a mim, eu quero empurrá-lo\".<br>Sua preparação conta como realizar a ação, então ela segue todas as restrições normais dessa ação e de realizar múltiplas ações. Você não pode, por exemplo, ALVEJAR e então preparar para ALVEJAR novamente; você também não pode se mover e então PREPARAR para ALVEJAR com uma arma de ARTILHARIA, que normalmente precisa ser disparada antes de se mover ou fazer qualquer outra coisa em seu turno. Adicionalmente, depois que PREPARAR uma ação, você não pode se mover ou usar quaisquer outras ações ou reações até o início do seu próximo turno ou até que sua ação tenha sido acionada (o que ocorrer primeiro).<br>Embora você não possa usar reações enquanto mantém uma ação preparada, você pode usá-las normalmente depois que ela for acionada. Você também pode desistir de sua ação preparada, permitindo que use reações normalmente. Se a condição de acionamento não acontecer, você perde sua ação preparada.<br>Quando você PREPARA, isso é visível para observadores casuais (por exemplo, você claramente mira ou prepara sistemas).",
+    "pilot": true
   },
   {
     "id": "act_self_destruct",
     "name": "Autodestruir",
     "activation": "Quick",
     "terse": "Como uma última cartada, configure o reator do seu mecha para entrar em estado crítico e explodir.",
-    "detail": "Quando <b>Autodestruir</b>, você sobrecarrega o reator do seu mecha em uma cartada final catastrófica quando não houver outra opção de escapar ou você julgar seu sacrifício como necessário.<br>Você pode se <b>Autodestruir</b> como uma ação rápida, iniciando uma fusão do reator. No final do seu próximo turno, ou no final de um de seus turnos nas próximas duas rodadas (você escolhe), seu mecha explode como se tivesse sofrido uma fusão do reator. A detonação aniquila seu mecha, matando qualquer um dentro dela, provocando uma <b>Explosão</b> de <b>Emanação</b> 2 que causa 4d6 de <b>Dano</b> EXPLOSIVO. Personagens pegos na <b>Emanação</b> que forem bem-sucedidos em um <b>salvamento de Agilidade</b> sofrem metade do <b>Dano</b>.",
-    "synergy_locations": [
-      "self_destruct"
-    ]
+    "detail": "Quando você se AUTODESTRÓI, você sobrecarrega o reator do seu mecha em uma jogada final catastrófica quando não houver outra opção de fuga ou você julgar seu sacrifício necessário.<br>Você pode se AUTODESTRUIR como uma ação rápida, iniciando uma fusão do reator. No final do seu próximo turno, ou no final de um dos seus turnos nas próximas duas rodadas (à sua escolha), seu mecha explode como se tivesse sofrido uma fusão do reator. A explosão aniquila seu mecha, matando qualquer um dentro dele e provocando uma explosão de EMANAÇÃO 2 que causa 4d6 de dano explosivo. Personagens pegos na explosão que forem bem-sucedidos em um salvamento de AGILIDADE sofrem metade deste dano."
   },
   {
     "id": "act_shut_down",
     "name": "Desligar",
     "activation": "Quick",
-    "terse": "Desligue seu mecha como uma medida desesperada para encerrar ataques de sistema, recuperar o controle da IA e resfriá-lo. O mecha fica <b>Atordoado</b> até ser reiniciado com a ação <b>Ligar</b>.",
-    "detail": "Quando <b>Desligar</b>, seu mecha desliga completamente e entra em um estado de descanso. É sempre um risco fazer isso em campo, mas às vezes é necessário para impedir uma sobrecarga catastrófica de Sistemas ou um cascateamento de PNH.<br>Você pode <b>Desligar</b> seu mecha como uma ação rápida. Seu mecha sofre a condição Desligado, com estes efeitos:<ul><li>todo <b>Calor</b> é removido, assim como Exposto;</li><li>quaisquer PNHs em cascata retornam a um estado normal;</li><li>quaisquer estados ou condições que estiverem afetando seu mecha e forem causados por ações de programar, como <b>Travado em Mira</b>, se encerram imediatamente;</li><li>o mecha adquire <b>Imunidade</b> a todas as ações de programar e ataques tecnológicos, incluindo de quaisquer personagens aliados;</li><li>o mecha fica <b>Atordoado</b> indefinidamente. Nada pode impedir essa condição, e ela permanece até que o mecha deixe de estar Desligado.</li></ul>A única forma de remover o estado Desligado é <b>Ligar</b> o mecha.",
-    "synergy_locations": [
-      "shut_down"
-    ],
-    "confirm": [
-      "ALERTA: DESLIGAMENTO DE EMERGÊNCIA",
-      "PARANDO GMS/VCTRL.MANUAL",
-      "FINALIZANDO TODOS OS PROCESSOS RESTANTES",
-      "CONFIRMANDO ESTADO DO RESOLVER",
-      ">://cc.main.term",
-      ">:// _"
-    ]
+    "terse": "Desligue seu mecha como uma medida desesperada para encerrar ataques de sistema, recuperar o controle da IA e resfriar seu mecha. O mecha fica ATORDOADO até ser reiniciado com a ação LIGAR.",
+    "detail": "Quando você DESLIGA, seu mecha desliga completamente e entra em estado de descanso. É sempre arriscado fazer isso em campo, mas às vezes é necessário para impedir uma sobrecarga catastrófica de sistemas ou um cascateamento de PNH.<br>Você pode DESLIGAR seu mecha como uma ação rápida. Seu mecha adquire o estado DESLIGADO, com estes efeitos:<br>• todo o calor é removido, assim como EXPOSTO;<br>• quaisquer PNHs em cascata retornam ao estado normal;<br>• quaisquer estados ou condições que estiverem afetando o mecha causados por ações tecnológicas, como TRAVADO EM MIRA, se encerram imediatamente;<br>• o mecha ganha IMUNIDADE a todas as ações tecnológicas e ataques tecnológicos, incluindo de quaisquer personagens aliados;<br>• o mecha fica ATORDOADO indefinidamente. Nada pode impedir essa condição, e ela permanece até que o mecha deixe de estar DESLIGADO.<br>A única forma de remover o estado DESLIGADO é LIGAR o mecha."
   },
   {
     "id": "act_reload",
     "name": "Recarregar",
     "activation": "Quick",
     "terse": "Recarregue uma arma como piloto.",
-    "detail": "Quando você <b>Recarregar</b>, você recarrega uma Arma de Piloto que tenha a tag <b>Recarga</b>, tornando-a utilizável novamente.",
-    "pilot": true,
-    "synergy_locations": [
-      "reload"
-    ]
+    "detail": "Quando você RECARREGA, recarrega uma Arma de Piloto que tenha a tag RECARGA, tornando-a utilizável novamente.",
+    "pilot": true
   },
   {
     "id": "act_barrage",
     "name": "Barragem",
     "activation": "Full",
-    "terse": "Ataque com duas armas, ou com uma única arma <b>Superpesada</b>.",
-    "detail": "Quando usar <b>Barragem</b>, você ataca com duas armas ou uma arma <b>Superpesada</b>. Para usar <b>Barragem</b>, escolha suas armas e um ou dois alvos diferentes que estejam dentro do <b>Alcance</b> — para fazer um ataque com cada arma.<ul><li>Além dos seus ataques primários, você também pode atacar com uma arma Auxiliar de cada um dos seus encaixes ocupados, desde que a arma Auxiliar ainda não tenha sido disparada nessa ação. Essas armas Auxiliares NÃO causam <b>Dano bônus</b>.</li><li>Armas <b>Superpesadas</b> só podem ser disparadas usando <b>Barragem</b>.</li></ul>",
-    "synergy_locations": [
-      "barrage"
-    ]
+    "terse": "Ataque com duas armas, ou ataque com uma única arma superpesada.",
+    "detail": "Quando você usa BARRAGEM, você ataca com duas armas ou com uma arma SUPERPESADA.<br>Para usar BARRAGEM, escolha suas armas e um alvo ou alvos diferentes – dentro do alcance – e então faça um ataque com cada arma.<br>• Além dos seus ataques primários, você também pode atacar com uma arma AUXILIAR de cada um dos encaixes disparados, desde que a arma AUXILIAR ainda não tenha sido disparada nesta ação. Essas armas AUXILIARES não causam dano bônus.<br>• Armas SUPERPESADAS só podem ser disparadas como parte de uma BARRAGEM."
   },
   {
     "id": "act_full_tech",
     "name": "Programar Completo",
     "activation": "Full",
-    "terse": "Escolha e realize duas opções de <b>Programar Rápido</b>, ou realize uma ação tecnológica completa. Se escolher duas opções de <b>Programar Rápido</b>, você pode escolher a mesma opção múltiplas vezes.",
-    "detail": "Quando usar <b>Programar Completo</b>, você realiza múltiplas ações de programar ou uma ação única, mais complexa.Para <b>Programar Completo</b>, escolha duas opções de <b>Programar Rápido</b> ou uma única opção que requer <b>Programar Completo</b> para ativar. Se escolher duas opções de <b>Programar Rápido</b>, você pode escolher a mesma opção múltiplas vezes.",
-    "synergy_locations": [
-      "full_tech"
-    ]
+    "terse": "Escolha e realize duas opções de Programar Rápido, ou realize uma ação tecnológica completa. Se escolher duas opções de Programar Rápido, você pode escolher a mesma opção múltiplas vezes.",
+    "detail": "Quando você usa PROGRAMAR COMPLETO, você realiza múltiplas ações tecnológicas ou uma ação única e mais complexa.<br>Para usar PROGRAMAR COMPLETO, escolha duas opções de PROGRAMAR RÁPIDO ou uma opção única de sistema ou tecnológica que exija PROGRAMAR COMPLETO para ativar. Se escolher duas opções de PROGRAMAR RÁPIDO, você pode escolher a mesma opção múltiplas vezes."
   },
   {
     "id": "act_stabilize",
     "name": "Estabilizar",
     "activation": "Full",
     "terse": "Cure e resfrie seu mecha, recarregue ou tente encerrar condições que o afetam.",
-    "detail": "Quando <b>Estabilizar</b>, você ativa os protocolos de emergência para remover <b>Calor</b> em excesso dos sistemas de seu mecha, reparar seu Chassi onde for possível ou eliminar um código hostil. Para <b>Estabilizar</b>, escolha um dos seguintes:<ul><li>Esfrie seu mecha, removendo todo <b>Calor</b> e <b>Exposto</b>.</li><li>Marque 1 de Reparo para restaurar todos os PV.</li></ul>Adicionalmente, escolha um dos seguintes:<ul><li>Recarregue todas as armas com <b>Recarga</b>.</li><li>Remova qualquer <b>Queimadura</b> que atualmente está afetando seu mecha.</li><li>Remova uma condição que não foi causada por um dos seus próprios Sistemas, talentos etc.</li><li>Remova uma condição de um aliado adjacente que não foi causada por um de seus próprios Sistemas, talentos etc.</li></ul>",
-    "synergy_locations": [
-      "stabilize"
-    ]
+    "detail": "Quando você ESTABILIZA, você ativa os protocolos de emergência para remover calor em excesso dos sistemas do seu mecha, reparar seu chassi onde for possível ou eliminar código hostil.<br>Para ESTABILIZAR, escolha um dos seguintes:<br>• Esfrie seu mecha, removendo todo calor e EXPOSTO.<br>• Marque 1 REPARO para restaurar todos os PV.<br>Adicionalmente, escolha um dos seguintes:<br>• Recarregue todas as armas com RECARGA.<br>• Remova qualquer queimadura que atualmente esteja afetando seu mecha.<br>• Remova uma condição que não foi causada por um dos seus próprios sistemas, talentos etc.<br>• Remova uma condição de um aliado adjacente que não foi causada por um dos sistemas, talentos etc. dele mesmo."
+  },
+  {
+    "id": "act_stabilize_npc",
+    "name": "Estabilizar",
+    "activation": "Full",
+    "terse": "O PNJ remove todo o calor e o estado Exposto, e recarrega todas as armas com Recarga.",
+    "detail": "O PNJ remove todo o calor e o estado Exposto, e recarrega todas as armas com Recarga.",
+    "hidden": true
   },
   {
     "id": "act_disengage",
     "name": "Desengajar",
     "activation": "Full",
     "terse": "Desengaje com segurança de uma situação perigosa. Até o final do seu turno atual, você ignora engajamentos e seu movimento não provoca reações.",
-    "detail": "Quando <b>Desengajar</b>, você tenta sair com segurança de uma situação perigosa, fazer uma retirada firme e calculada ou confiar na Agilidade do seu mecha para sair do <b>Alcance</b> de <b>Ameaça</b> mais rápido que um inimigo possa atacar.<br>Até o final do seu turno atual, você ignora engajamentos e seu movimento não provoca reações.",
-    "synergy_locations": [
-      "disengage"
-    ],
-    "confirm": [
-      "DESENGAJAMENTO BEM-SUCEDIDO. NOVOS VETORES DE EXTRAÇÃO DISPONÍVEIS."
-    ]
+    "detail": "Quando você DESENGAJA, você tenta sair com segurança de uma situação perigosa, fazer uma retirada firme e calculada ou confiar na agilidade do seu mecha para entrar e sair das zonas de ameaça mais rápido do que um inimigo possa atacar.<br>Até o final do seu turno atual, você ignora engajamentos e seu movimento não provoca reações."
   },
   {
     "id": "act_improvised_attack",
     "name": "Improvisar Ataque",
     "activation": "Full",
     "terse": "Ataque com um punho, coronha de fuzil ou arma improvisada em combate corpo a corpo.",
-    "detail": "Quando <b>Improvisar Ataque</b>, você ataca com a coronha de um fuzil, punho ou outra arma corpo a corpo improvisada. Você pode usar qualquer coisa desde a coronha de uma arma a uma laje de concreto ou um pedaço de placa de <b>Casco</b> – a descrição do ataque cabe a você!Para <b>Improvisar Ataque</b>, faça um ataque corpo a corpo contra um alvo adjacente. Se for bem-sucedido, ele sofre 1d6 de <b>Dano</b> Cinético.",
-    "synergy_locations": [
-      "improvised_attack"
-    ]
+    "detail": "Quando você faz um ATAQUE IMPROVISADO, você ataca com a coronha de um fuzil, punho ou outra arma corpo a corpo improvisada. Você pode usar qualquer coisa desde a coronha de uma arma a uma laje de concreto ou um pedaço de placa de chassi – a descrição do ataque cabe a você!<br>Para fazer um ATAQUE IMPROVISADO, faça um ataque corpo a corpo contra um alvo adjacente. Em um sucesso, ele sofre 1d6 de dano cinético.",
+    "damage": { "type": "kinetic", "val": "1d6", "attack": "melee" }
+  },
+  {
+    "id": "act_improvised_attack_npc",
+    "name": "Improvisar Ataque",
+    "activation": "Full",
+    "terse": "Ataque com um punho, coronha de fuzil ou arma improvisada em combate corpo a corpo.",
+    "detail": "O PNJ faz um ataque corpo a corpo com um bônus de +1/2/3 e causa 3/4/6 de dano, baseado em seu Patamar.",
+    "damage": { "type": "kinetic", "val": 3, "attack": "melee" },
+    "hidden": true
   },
   {
     "id": "act_activate_full",
     "name": "Ativar (Completa)",
     "activation": "Full",
     "terse": "Ative um sistema ou equipamento que requer uma ação completa.",
-    "detail": "Quando Ativar, você usa um sistema ou equipamento que requer uma ação rápida ou completa. Esses Sistemas têm as tags de AÇÃO RÁPIDA ou AÇÃO COMPLETA. Você pode ATIVAR quantas vezes quiser em um turno, mas não pode ATIVAR o mesmo sistema mais de uma vez, a menos que também possa fazê-lo como uma <b>Ação Livre</b>.",
-    "mech": true,
-    "pilot": true,
-    "synergy_locations": [
-      "full_activation"
-    ]
+    "detail": "Quando você ATIVA, você usa um sistema ou equipamento que requer uma ação rápida ou completa. Esses sistemas têm as tags de AÇÃO RÁPIDA ou AÇÃO COMPLETA. Você pode ATIVAR quantas vezes quiser em um turno, mas não pode ATIVAR o mesmo sistema mais de uma vez, a menos que possa fazê-lo como uma ação livre.",
+    "pilot": true
   },
   {
     "id": "act_boot_up",
     "name": "Ligar",
     "activation": "Full",
     "terse": "Ligue seu mecha a partir do estado Desligado.",
-    "detail": "Com uma ação completa, pode <b>Ligar</b> um mecha que esteja pilotando, removendo Desligado e restaurando seu mecha a um estado energizado para funcionar.",
-    "synergy_locations": [
-      "boot_up"
-    ],
-    "confirm": [
-      "UNIDADE COMPANHEIRA/CONCIERGE INICIALIZANDO",
-      "Unidade COMP/CON GMS Mk XI Rev 11.4.1c",
-      "5016.8.22 Sistemas Massivos Gerais // Por Favor, Opere com Responsabilidade",
-      "RESTAURANDO PROCESSOS EM ret.n@142::ACCORD-6",
-      "INTERFACE ONLINE. REINICIALIZAÇÃO BEM-SUCEDIDA."
-    ]
+    "detail": "Você pode LIGAR um mecha que esteja pilotando como uma ação completa, removendo DESLIGADO e restaurando seu mecha a um estado energizado."
   },
   {
     "id": "act_mount",
@@ -331,39 +256,29 @@
     "activation": "Full",
     "terse": "Suba no seu mecha.",
     "pilot": true,
-    "detail": "Quando <b>Montar</b>, você sobe em um mecha. <b>Montar</b> é o termo preferido pela maioria dos pilotos. Você não 'entra' ou 'sobe a bordo' - você monta. Afinal, você é a cavalaria.<br>Você pode <b>Montar</b> como uma ação completa. Você precisa estar adjacente a seu mecha para <b>Montar</b>.<br>Adicionalmente, você também pode <b>Montar</b> em mechas ou veículos aliados voluntários. Quando fizer isso, entre no mesmo espaço e então mova-se com eles."
+    "detail": "Quando você MONTA, você sobe em um mecha. Montar é o termo preferido pela maioria dos pilotos. Você não \"entra\" ou \"sobe a bordo\" – você monta. Afinal, você é a cavalaria.<br>Você pode MONTAR como uma ação completa. Você precisa estar adjacente ao seu mecha para MONTAR.<br>Adicionalmente, você também pode MONTAR em mechas ou veículos aliados voluntários. Quando fizer isso, entre no mesmo espaço e então mova-se com eles."
   },
   {
     "id": "act_dismount",
     "name": "Desmontar",
     "activation": "Full",
     "terse": "Saia do seu mecha.",
-    "detail": "Quando <b>Desmontar</b>, você desce de um mecha. <b>Desmontar</b> é o termo preferido pela maioria dos pilotos.<br>Você pode <b>Desmontar</b> como uma ação completa. Quando <b>Desmontar</b>, você é colocado em um espaço adjacente – se não houver espaços livres, você não pode <b>Desmontar</b>.<br>Adicionalmente, você também pode <b>Desmontar</b> de mechas ou veículos aliados voluntários nos quais você MONTOU.",
-    "synergy_locations": [
-      "dismount"
-    ],
-    "confirm": [
-      "TRAVAS DESENGATADAS. MODO DE CONTROLE MANUAL SUSPENSO."
-    ]
+    "detail": "Quando você DESMONTA, você desce de um mecha. Desmontar é o termo preferido pela maioria dos pilotos.<br>Você pode DESMONTAR como uma ação completa. Quando DESMONTA, você é colocado em um espaço adjacente – se não houver espaços livres, você não pode DESMONTAR.<br>Adicionalmente, você também pode DESMONTAR de mechas ou veículos aliados voluntários nos quais tenha MONTADO."
   },
   {
     "id": "act_skill_check",
     "name": "Teste de Perícia",
     "activation": "Full",
-    "terse": "Realize uma atividade com um objetivo claro que exigiria um <b>Teste de Perícia</b>.",
-    "detail": "Quando fizer um <b>Teste de Perícia</b>, você realiza uma atividade que não é coberta por nenhuma outra ação, mas possui um objetivo claro e é complexo o suficiente para exigir uma rolagem. Os parâmetros e resultados dos TESTES DE PERÍCIA dependem do MJ, mas eles precisam ser envolventes o suficiente para requerer uma ação completa. Se você quiser fazer algo que pode ser feito rapidamente, nenhuma ação é necessária.<br>Exemplos de TESTES DE PERÍCIA:<ul><li>Bruja, a pé, quer abrir uma porta trancada. O MJ pede para ela fazer um <b>Teste de Perícia</b> e decide que Bruja pode usar o bônus de seu gatilho 'Hackear ou Consertar'.</li><li>Pan, em seu mecha, quer pular um abismo que é mais largo do que ele normalmente pode pular. O MJ decide que ele pode tentar com Agilidade.</li><li>Zaid quer levantar uma rocha pesada com seu mecha para liberar uma passagem. O MJ decide que isso é provavelmente uma ação que requer um <b>Teste de Perícia</b> com <b>Casco</b>.</li></ul>",
-    "mech": true,
-    "pilot": true,
-    "synergy_locations": [
-      "skill_check"
-    ]
+    "terse": "Realize uma atividade com um objetivo claro que exigiria um teste de perícia.",
+    "detail": "Quando você faz um TESTE DE PERÍCIA, realiza uma atividade que não é coberta por outras ações, mas possui um objetivo claro e é suficientemente complexa para exigir uma rolagem. Os parâmetros e resultados de TESTES DE PERÍCIA dependem do MJ, mas eles precisam ser envolventes o suficiente para exigir uma ação completa. Se você quiser fazer algo que pode ser feito rapidamente, nenhuma ação é necessária.",
+    "pilot": true
   },
   {
     "id": "act_fight",
     "name": "Lutar",
     "activation": "Full",
     "terse": "Ataque com uma arma como piloto.",
-    "detail": "Quando <b>Lutar</b>, você ataca (corpo a corpo ou à distância) com uma arma.Para <b>Lutar</b>, escolha uma arma e ataque um alvo na linha de visão e dentro do <b>Alcance</b> ou <b>Ameaça</b> como uma ação completa. Ataques à distância são afetados por cobertura e sofrem <b>+1 de Dificuldade</b> se você estiver Engajado.",
+    "detail": "Quando você LUTA, você ataca (corpo a corpo ou à distância) com uma arma.<br>Para LUTAR, escolha uma arma e ataque um alvo dentro do ALCANCE ou AMEAÇA e na linha de visão como uma ação completa. Ataques à distância são afetados por cobertura e sofrem +1 de dificuldade se você estiver ENGAJADO.",
     "pilot": true
   },
   {
@@ -371,94 +286,67 @@
     "name": "Atracar",
     "activation": "Full",
     "terse": "Tente atacar um mecha a pé como piloto.",
-    "detail": "Quando fizer a ação <b>Atracar</b>, você ataca agressivamente um mecha inimigo enquanto está a pé. Não se pode enfatizar o suficiente o quão insensato e perigoso isso é.Para usar <b>Atracar</b>, você precisa estar adjacente a um mecha. Como uma ação completa, faça um <b>Teste de Perícia</b> disputado contra o mecha, usando <b>BRIO</b> (ou um gatilho relevante, a critério do MJ). O mecha se opõe usando <b>Casco</b>. Sendo bem-sucedido, você consegue escalar o mecha, compartilhando seu espaço e se movendo com ele. O mecha pode tentar se livrar de você sendo bem-sucedido em outro <b>Teste de Perícia</b> disputado como uma ação completa; alternativamente, você pode pular do mecha como parte de seu movimento em seu turno.<br>Quando usar <b>Atracar</b> com sucesso, escolha uma das opções a seguir:<ul><li>DISTRAÇÃO: O mecha fica Impedido e Lento até o final do próximo turno dele.</li><li>PANE: Causa 2 de <b>Calor</b> ao mecha ao rasgar fios, painéis e estruturas semelhantes.</li><li><b>Dano</b>: Causa 4 de <b>Dano</b> Cinético ao mecha ao atacar juntas, escotilhas e partes ou peças similares.</li></ul>Em cada um de seus turnos subsequentes, você pode continuar a escolher entre as opções acima como uma ação completa, desde que não deixe de estar atracado com o mecha (ou seja arremessado/removido dele).",
+    "detail": "Quando você ATRACA, ataca agressivamente um mecha inimigo enquanto está a pé. Não se pode enfatizar o suficiente o quão insensato e perigoso isso é.<br>Para ATRACAR, você precisa estar adjacente a um mecha. Como uma ação completa, faça um teste de perícia disputado contra o mecha, usando BRIO (ou um gatilho relevante, a critério do MJ). O mecha se opõe usando CASCO. Sendo bem-sucedido, você consegue escalar o mecha, compartilhando seu espaço e se movendo com ele. O mecha pode tentar se livrar de você sendo bem-sucedido em outro teste de perícia disputado como uma ação completa; alternativamente, você pode pular do mecha como parte de seu movimento em seu turno.",
     "pilot": true
+  },
+  {
+    "id": "act_jockey_distract",
+    "name": "Distrair",
+    "activation": "Jockey",
+    "terse": "Deixa um mecha IMPEDIDO e LENTO até o final do próximo turno dele.",
+    "detail": "Deixa um mecha IMPEDIDO e LENTO até o final do próximo turno dele.",
+    "add_status": [
+      { "id": "impaired", "duration": "end_next_turn_target" },
+      { "id": "slow", "duration": "end_next_turn_target" }
+    ]
+  },
+  {
+    "id": "act_jockey_shred",
+    "name": "Pane",
+    "activation": "Jockey",
+    "terse": "Causa 2 de Calor",
+    "detail": "Causa 2 de calor ao mecha ao rasgar fios, painéis e estruturas semelhantes.",
+    "damage": [{ "type": "heat", "val": 2 }]
+  },
+  {
+    "id": "act_jockey_damage",
+    "name": "Dano",
+    "activation": "Jockey",
+    "terse": "Causa 4 de Dano Cinético",
+    "detail": "Causa 4 de dano cinético ao mecha ao atacar juntas, escotilhas e partes semelhantes.",
+    "damage": [{ "type": "kinetic", "val": 4 }]
   },
   {
     "id": "act_brace",
     "name": "Suportar",
     "activation": "Reaction",
-    "terse": "Prepare seu mecha para o impacto, reduzindo o <b>Dano</b> ao custo das ações do seu próximo turno.",
-    "detail": "Quando <b>Suportar</b>, você prepara seu mecha contra fogo inimigo.<br><b>Suportar</b><br><b>reação</b>, 1/rodada<br>Acionamento: Você é atingido por um ataque e o <b>Dano</b> foi rolado.<br>Efeito: Você conta como tendo <b>Resistência</b> a todo <b>Dano</b>, <b>Queimadura</b> e <b>Calor</b> do ataque acionador e, até o final do seu próximo turno, todos os outros ataques feitos contra você são feitos com <b>+1 de Dificuldade</b>.<br>Devido ao <b>Estresse</b> de <b>Suportar</b>, você não pode usar reações até o final do seu próximo turno e, nesse turno, você só pode usar uma ação rápida – você não pode <b>Sobrecarregar</b>, mover-se normalmente, usar ações completas ou ações livres."
+    "terse": "Prepare seu mecha para o impacto, reduzindo o dano ao custo das ações do seu próximo turno.",
+    "trigger": "Você é atingido por um ataque e o dano foi rolado.",
+    "detail": "Você conta como tendo RESISTÊNCIA a todo dano, queimadura e calor do ataque acionador e, até o final do seu próximo turno, todos os outros ataques feitos contra você são feitos com +1 de dificuldade.<br>Devido ao estresse de suportar, você não pode usar reações até o final do seu próximo turno e, nesse turno, só pode usar uma ação rápida – você não pode SOBRECARREGAR, mover-se normalmente, usar ações completas ou usar ações livres."
   },
   {
     "id": "act_overwatch",
     "name": "Retaliar",
     "activation": "Reaction",
     "terse": "Ataque um alvo próximo que esteja tentando se mover.",
-    "detail": "Quando <b>Retaliar</b>, você controla e defende o espaço em volta de seu mecha contra incursões inimigas usando suas habilidades de piloto, reflexos ou subsistemas finamente ajustados.<br>Exceto se especificado o contrário, todas as armas possuem 1 de <b>Ameaça</b>.<br><b>Retaliar</b><br><b>reação</b>, 1/rodada<br>Acionamento: Um personagem hostil começa qualquer movimento (incluindo <b>Impulsionar</b> e outras ações) dentro da <b>Ameaça</b> de uma das suas armas.<br>Efeito: Você imediatamente usa uma arma que acionou <b>Retaliar</b> para <b>Alvejar</b> o personagem hostil como uma <b>reação</b>, antes dele se mover.",
-    "mech": true,
+    "trigger": "Um personagem hostil começa qualquer movimento (incluindo IMPULSIONAR e outras ações) dentro da AMEAÇA de uma das suas armas. Exceto se especificado o contrário, todas as armas possuem 1 de AMEAÇA por padrão.",
+    "frequency": "1/round",
+    "detail": "Quando uma arma é acionada através do RETALIAR, use imediatamente essa arma para ALVEJAR o personagem acionador como uma reação, antes dele se mover.",
     "pilot": true
+  },
+  {
+    "id": "act_overwatch_npc",
+    "name": "Retaliar",
+    "activation": "Reaction",
+    "terse": "Ataque um alvo próximo que esteja tentando se mover.",
+    "detail": "Quando um personagem começa qualquer movimento no alcance de ameaça de uma arma de um PNJ, esse PNJ pode realizar a ação alvejar contra ele como uma reação. Um PNJ só pode retaliar uma vez entre turnos, a menos que especificado o contrário.",
+    "hidden": true
   },
   {
     "id": "act_free_action",
     "name": "Ação Livre",
     "activation": "Free",
-    "terse": "Personagens podem realizar qualquer número de Ações Livres em seu turno.",
-    "detail": "Ações livres geralmente são concedidas por Sistemas, talentos, equipamento ou <b>Sobrecarregar</b>. Os personagens podem realizar qualquer quantidade de ações livres em seu turno, mas apenas em seu turno, e apenas aquelas concedidas a eles. Ações livres podem sempre ser usadas para fazer ações repetidas.<br>O type mais comum de <b>Ação Livre</b> é um PROTOCOLO, que é concedido por equipamentos e Sistemas e podem ser ativadas ou desativadas apenas no início de um turno. Cada Protocolo só pode ser usado uma vez por turno.",
-    "hide_active": true
-  },
-  {
-    "id": "act_buy_some_time",
-    "name": "Ganhar Tempo",
-    "activation": "Downtime",
-    "terse": "Tente adiar um acerto de contas ou estender sua janela de oportunidade.",
-    "detail": "Quando você GANHA TEMPO, tenta adiar um acerto de contas, estender uma janela de oportunidade ou meramente ganhar algum tempo e fôlego para você e seu grupo. Você pode estar tentando evitar problemas, sobreviver perdido na selva ou causar uma distração para que outro plano <b>Alcance</b> seu ápice. Você pode usar essa distração ou o tempo ganho como RESERVAS para a próxima missão."
-  },
-  {
-    "id": "act_gather_information",
-    "name": "Coletar Informações",
-    "activation": "Downtime",
-    "terse": "Investigue, faça pesquisas ou fique de olho em algo.",
-    "detail": "Quando você COLETA INFORMAÇÕES, bisbilhota por aí, talvez onde não deveria, e investiga algo — conduzindo pesquisas, seguindo um mistério, rastreando um alvo ou vigiando algo. Você pode ir a uma biblioteca ou agir disfarçado para aprender o que puder. Seja o que for, você está tentando COLETAR INFORMAÇÕES sobre um assunto de sua escolha. Você pode usar as informações obtidas como RESERVAS."
-  },
-  {
-    "id": "act_get_a_damn_drink",
-    "name": "Beber um Trago",
-    "activation": "Downtime",
-    "terse": "Desopilar e geralmente se meter em problemas.",
-    "detail": "Quando você BEBE UM TRAGO, você desopila, festeja e geralmente se meter em problemas. Você pode estar tentando fazer conexões, coletar fofocas, forjar uma reputação ou até mesmo apenas esquecer o que aconteceu na última missão. Geralmente há problemas."
-  },
-  {
-    "id": "act_get_connected",
-    "name": "Conectar-se",
-    "activation": "Downtime",
-    "terse": "Faça conexões, peça ajuda ou mobilize apoio.",
-    "detail": "Quando você se CONECTA, faz conexões, cobra favores, pede ajuda ou mobiliza apoio para um curso de ação. Você pode usar os recursos ou a ajuda de seus contatos como RESERVAS para a próxima missão.Para realizar esta ação, você precisa estar dentro do <b>Alcance</b> de comunicações ou em algum lugar onde possa ter uma boa e velha conversa cara a cara."
-  },
-  {
-    "id": "act_get_creative",
-    "name": "Criar Algo",
-    "activation": "Downtime",
-    "terse": "Ajuste algo ou tente criar algo novo.",
-    "detail": "Quando você CRIA ALGO, ajusta algo ou tenta fazer algo novo — seja um item físico ou um software. Uma vez terminado, você pode usar sua nova criação como RESERVAS.<br>Seu projeto não precisa ser algo da lista de equipamentos, mas geralmente não pode ser tão impactante quanto um equipamento de mecha."
-  },
-  {
-    "id": "act_get_focused",
-    "name": "Ficar Focado",
-    "activation": "Downtime",
-    "terse": "Pratique, aprenda, medite ou recorra a um mentor.",
-    "detail": "Quando você FICA FOCADO, concentra-se em aumentar suas próprias habilidades, treinamento e autoaperfeiçoamento. Você pode praticar, aprender, meditar ou recorrer a um mentor.<br>Nomeie o que deseja aprender ou melhorar (ex: um gatilho, técnica, assunto acadêmico ou idioma). O MJ dará ao seu piloto um novo gatilho +2 baseado na sua prática e treinamento. Por exemplo, o gatilho poderia ser +2 Jogar Xadrez ou +2 Dançar. Você também pode melhorar um gatilho de +2 para +4 ou de +4 para +6 ao realizar esta ação de recesso.<br>Esta ação pode ser usada para aprender coisas como pilotagem de naves, culinária, xadrez, boxe, história ou etiqueta. Geralmente deve ser uma perícia não marcial específica ou algo pessoal para o seu personagem."
-  },
-  {
-    "id": "act_get_organized",
-    "name": "Organizar-se",
-    "activation": "Downtime",
-    "terse": "Inicie, gerencie ou melhore uma organização.",
-    "detail": "Quando você se ORGANIZA, inicia, gerencia ou melhora uma organização, negócio ou outro empreendimento.<br>Declare o propósito ou objetivo da sua organização e escolha um FOCO: militar, científico, acadêmico, criminoso, humanitário, industrial, entretenimento ou político. Ela começa com +2 em EFICIÊNCIA ou INFLUÊNCIA e +0 na outra, com um máximo de +6. <br/>EFICIÊNCIA determina quão efetivamente sua organização conduz atividades dentro do seu escopo (ex: uma organização militar com alta eficiência seria boa em combate). <br/>INFLUÊNCIA é seu <b>Tamanho</b>, <b>Alcance</b>, riqueza e reputação.<br>Quando sua organização auxilia diretamente em uma atividade, você pode adicionar sua EFICIÊNCIA ou INFLUÊNCIA como um bônus de estatística ao seu <b>Teste de Perícia</b>. EFICIÊNCIA é usada ao realizar atividades relacionadas ao FOCO da sua organização. INFLUÊNCIA é usada ao adquirir ativos, criar oportunidades ou influenciar a opinião pública. Vantagens ganhas com a ajuda de sua organização podem ser usadas como RESERVAS."
-  },
-  {
-    "id": "act_power_at_a_cost",
-    "name": "Poder a um Custo",
-    "activation": "Downtime",
-    "terse": "Ganhe recompensas, oportunidades ou recursos.",
-    "detail": "Quando você busca PODER A UM CUSTO, está tentando colocar as mãos em algo.<br />Nomeie o que você quer. Você definitivamente conseguirá, mas dependendo do quão extravagante for o pedido, o MJ escolhe um ou dois: <ul> <ul><li>Vai levar muito mais tempo do que você pensava.</li></ul> <ul><li>Vai ser perigoso pra caramba.</li></ul> <ul><li>Você terá que abrir mão de algo ou deixar algo para trás (ex: riqueza, recursos, aliados).</li></ul> <ul><li>Você vai irritar alguém ou algo importante e poderoso.</li></ul> <ul><li>As coisas vão sair totalmente do plano.</li></ul> <ul><li>Você precisará de mais informações para prosseguir com segurança.</li></ul> <ul><li>Isso vai desmoronar muito em breve.</li></ul> <ul><li>Você precisará de mais recursos, mas sabe onde encontrá-los.</li></ul> <ul><li>Você consegue algo quase certo: uma versão menor, ou menos disso.</li></ul> </ul> Esta é uma maneira direta de adquirir RESERVAS, oportunidades e recursos adicionais. Você pode querer algo diretamente útil para uma missão; algo mais abstrato, como tempo, segurança, informação, aliados ou apoio; algo prático, como uma base de operações, materiais, abrigo ou comida; ou até mesmo algo tão simples quanto um maldito maço de cigarros.<br />Você também pode usar PODER A UM CUSTO durante missões para efeitos semelhantes. Outras ações de recesso geralmente não podem ser usadas durante missões, mas seu grupo pode adaptá-las se desejar."
-  },
-  {
-    "id": "act_scrounge_and_barter",
-    "name": "Pechinchar e Barganhar",
-    "activation": "Downtime",
-    "terse": "Tente colocar as mãos em algum equipamento ou ativo.",
-    "detail": "Quando você PECHINCHA E BARGANHA, tenta colocar as mãos em algum equipamento ou ativo vasculhando o ferro-velho, perseguindo rumores, barganhando no mercado local ou caçando por aí.<br>Você pode querer algum equipamento de piloto melhor, um veículo, narcóticos, mercadorias ou outros itens diversos. Precisa ser algo físico, mas não necessariamente precisa estar na lista de equipamentos. Se conseguir, você pode levá-lo na próxima missão como RESERVAS."
+    "terse": "Os personagens podem realizar qualquer número de Ações Livres em seu turno.",
+    "detail": "Ações livres geralmente são concedidas por sistemas, talentos, equipamento ou SOBRECARREGAR. Os personagens podem realizar qualquer quantidade de ações livres em seu turno, mas apenas em seu turno, e apenas aquelas concedidas a eles. Ações livres podem sempre ser usadas para fazer ações repetidas.<br>O tipo mais comum de ação livre é um PROTOCOLO, que é concedido por equipamentos e sistemas e pode ser ativado ou desativado apenas no início de um turno. Cada Protocolo só pode ser usado uma vez por turno."
   }
 ]

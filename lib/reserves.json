@@ -1,5 +1,18 @@
 [
   {
+    "id": "reserve_sp",
+    "name": "System Point",
+    "type": "Bonus",
+    "label": "Bonus",
+    "description": "Add a System Point to your active mech's Max SP value",
+    "bonuses": [
+      {
+        "id": "sp",
+        "val": 1
+      }
+    ]
+  },
+  {
     "id": "reserve_skill",
     "name": "Ponto de Gatilho",
     "type": "Bonus",
@@ -170,7 +183,7 @@
     "bonuses": [
       {
         "id": "core_power",
-        "val": 2
+        "val": 1
       }
     ]
   },
@@ -185,15 +198,7 @@
         "name": "Escudo Posicionável (Reserva)",
         "type": "Deployable",
         "size": 1,
-        "detail": "Concede <b>cobertura leve</b> para todos os personagens amigáveis em uma área de <b>Emanação</b> 2.",
-        "stats": {
-          "size": 1,
-          "hp": 5,
-          "evasion": 5,
-          "edef": 5,
-          "speed": 0,
-          "armor": 0
-        }
+        "detail": "Concede <b>cobertura leve</b> para todos os personagens amigáveis em uma área de <b>Emanação</b> 2."
       }
     ]
   },
@@ -217,14 +222,63 @@
     "type": "Mech",
     "label": "Resource",
     "description": "<b>+1 de Precisão</b> para testes de perícia feitos com uma perícia – <b>Casco</b>, <b>Agilidade</b>, <b>Sistemas</b> ou <b>Engenharia</b>.",
-    "synergies": [
+    "deprecated": true
+  },
+  {
+    "id": "reserve_systems_reinforcement_hull",
+    "name": "Systems reinforcement (HULL)",
+    "type": "Mech",
+    "label": "Resource",
+    "description": "+1 ACCURACY to HULL skill checks.",
+    "bonuses": [
       {
-        "locations": [
-          "hase"
-        ],
-        "detail": "<b>+1 de Precisão</b> em testes de perícia feitos com uma perícia – <b>Casco</b>, <b>Agilidade</b>, <b>Sistemas</b> ou <b>Engenharia</b>."
+        "id": "hull",
+        "accuracy": 1
       }
-    ]
+    ],
+    "deprecated": true
+  },
+  {
+    "id": "reserve_systems_reinforcement_agility",
+    "name": "Systems reinforcement (AGILITY)",
+    "type": "Mech",
+    "label": "Resource",
+    "description": "+1 ACCURACY to AGILITY skill checks.",
+    "bonuses": [
+      {
+        "id": "agility",
+        "accuracy": 1
+      }
+    ],
+    "deprecated": true
+  },
+  {
+    "id": "reserve_systems_reinforcement_systems",
+    "name": "Systems reinforcement (SYSTEMS)",
+    "type": "Mech",
+    "label": "Resource",
+    "description": "+1 ACCURACY to SYSTEMS skill checks.",
+    "bonuses": [
+      {
+        "id": "systems",
+        "accuracy": 1
+      }
+    ],
+    "deprecated": true
+  },
+  {
+    "id": "reserve_systems_reinforcement_engineering",
+    "name": "Systems reinforcement (ENGINEERING)",
+    "type": "Mech",
+    "label": "Resource",
+    "description": "+1 ACCURACY to ENGINEERING skill checks.",
+    "bonuses": [
+      {
+        "id": "engineering",
+        "accuracy": 1
+      }
+    ],
+    "deprecated": true
   },
   {
     "id": "reserve_smart_ammo",
@@ -232,12 +286,10 @@
     "type": "Mech",
     "label": "Ammo",
     "description": "Todas as armas à sua escolha podem ser disparadas como se fossem <b>Inteligentes</b>.",
-    "synergies": [
+    "active_effects": [
       {
-        "locations": [
-          "weapon"
-        ],
-        "detail": "Todas as armas à sua escolha podem ser disparadas como se fossem <b>Inteligentes</b>."
+        "name": "Smart Ammo",
+        "detail": "All weapons of your choice can be fired as if they are SMART."
       }
     ]
   },
@@ -247,12 +299,9 @@
     "type": "Mech",
     "label": "Resource",
     "description": "<b>Imunidade à condição Lento</b>.",
-    "synergies": [
+    "add_resist": [
       {
-        "locations": [
-          "move"
-        ],
-        "detail": "Seu mecha tem <b>Imunidade à condição Lento</b>."
+        "immunity": "slowed"
       }
     ]
   },
@@ -262,6 +311,12 @@
     "type": "Mech",
     "label": "Resource",
     "description": "Durante esta missão, seu mecha pode Voar ao se mover, mas deve terminar o movimento em terra.",
+    "active_effects": [
+      {
+        "name": "Jump Jets",
+        "detail": "Your mech can FLY when moving, but must end movement on land."
+      }
+    ],
     "synergies": [
       {
         "locations": [
@@ -305,12 +360,10 @@
     "type": "Tactical",
     "label": "Skill/Action",
     "description": "Treinamento ou aprimoramento que fornece <b>+1 de Precisão</b> para uma perícia de mecha ou ação específica durante esta missão.",
-    "synergies": [
+    "active_effects": [
       {
-        "locations": [
-          "other"
-        ],
-        "detail": "<b>+1 de Precisão</b> para uma perícia de mecha ou ação específica durante esta missão."
+        "name": "Accuracy",
+        "detail": "+1 ACCURACY to a particular mech skill or action for the duration of this mission."
       }
     ]
   },
@@ -338,7 +391,8 @@
         "damage": [
           {
             "type": "Explosive",
-            "val": "3d6"
+            "val": "3d6",
+            "aoe": true
           }
         ]
       }

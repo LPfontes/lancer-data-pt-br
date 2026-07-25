@@ -1,18 +1,5 @@
 [
   {
-    "id": "missing_pilotweapon",
-    "name": "Arma Arcaica (Corpo a Corpo)",
-    "type": "Weapon",
-    "description": "Essas armas foram feitas com ligas e tecnologia pré-União e podem ser qualquer coisa, desde espadas de aço da era industrial até machados de pedra. Embora permaneçam amplamente utilizadas em alguns mundos, as armas arcaicas usadas por pilotos são geralmente relíquias, heranças de família ou armas cerimoniais.",
-    "tags": [
-      {
-        "id": "tg_pilot_weapon"
-      }
-    ],
-    "range": [],
-    "damage": []
-  },
-  {
     "id": "pg_archaic_melee",
     "name": "Arma Arcaica (Corpo a Corpo)",
     "type": "Weapon",
@@ -33,7 +20,7 @@
     ],
     "damage": [
       {
-        "type": "kinetic",
+        "type": "Kinetic",
         "val": 1
       }
     ]
@@ -59,7 +46,7 @@
     ],
     "damage": [
       {
-        "type": "kinetic",
+        "type": "Kinetic",
         "val": 1
       }
     ]
@@ -85,7 +72,7 @@
     ],
     "damage": [
       {
-        "type": "kinetic",
+        "type": "Kinetic",
         "val": 1
       }
     ]
@@ -134,7 +121,7 @@
     ],
     "damage": [
       {
-        "type": "kinetic",
+        "type": "Kinetic",
         "val": 3
       }
     ]
@@ -228,17 +215,6 @@
       }
     ],
     "effect": "Quando uma arma emblemática é adquirida, escolha seu tipo de <b>Dano</b> – Explosivo, Energético ou Cinético."
-  },
-  {
-    "id": "missing_pilotarmor",
-    "name": "Traje Reforçado de Assalto",
-    "type": "Armor",
-    "description": "Esses trajes reforçados, comuns entre unidades militares, apresentam blindagem mais pesada que os trajes reforçados leves, mas mais mobilidade que os trajes reforçados Pesados. Eles são energizados, aumentando a força do usuário, e tipicamente apresentam um computador de bordo, conjunto de <b>Sensores</b>, ar integrado, sistema de AEV de rajada e Sistemas de reciclagem de resíduos.",
-    "tags": [
-      {
-        "id": "tg_personal_armor"
-      }
-    ]
   },
   {
     "id": "pg_light_hardsuit",
@@ -403,19 +379,7 @@
       {
         "name": "Ativar Traje Furtivo",
         "activation": "Quick",
-        "detail": "Torne-se <b>invisível</b>. Você deixará de ser <b>invisível</b> se sofrer qualquer <b>Dano</b>.",
-        "pilot": true
-      }
-    ]
-  },
-  {
-    "id": "missing_pilotgear",
-    "name": "Curativo",
-    "type": "Gear",
-    "description": "'Curativo' é a gíria dos pilotos para qualquer tipo de equipamento de primeiros socorros moderno, incluindo medi-gel em spray e curativos médicos de ação instantânea.",
-    "tags": [
-      {
-        "id": "tg_gear"
+        "detail": "Torne-se <b>invisível</b>. Você deixará de ser <b>invisível</b> se sofrer qualquer <b>Dano</b>."
       }
     ]
   },
@@ -429,8 +393,7 @@
       {
         "name": "Usar Corretivo",
         "activation": "Full",
-        "detail": "Gaste uma carga para aplicar corretivos em pilotos Caídos e Apagados, trazendo-os imediatamente de volta à consciência com 1 PV.",
-        "pilot": true
+        "detail": "Gaste uma carga para aplicar corretivos em pilotos Caídos e Apagados, trazendo-os imediatamente de volta à consciência com 1 PV."
       }
     ],
     "tags": [
@@ -468,8 +431,7 @@
             "val": 2
           }
         ],
-        "detail": "Gaste uma carga para lançar uma Granada de Fragmentação em até <b>Alcance 5</b>. Personagens afetados dentro da área de <b>Explosão</b> 1 devem obter sucesso em um <b>salvamento de Agilidade</b> ou sofrem 2 de <b>Dano Explosivo</b>.",
-        "pilot": true
+        "detail": "Gaste uma carga para lançar uma Granada de Fragmentação em até <b>Alcance 5</b>. Personagens afetados dentro da área de <b>Explosão</b> 1 devem obter sucesso em um <b>salvamento de Agilidade</b> ou sofrem 2 de <b>Dano Explosivo</b>."
       }
     ],
     "tags": [
@@ -495,8 +457,7 @@
       {
         "name": "Aplicar Remendo",
         "activation": "Full",
-        "detail": "Gaste uma carga para aplicar um adesivo em você ou em um piloto adjacente, restaurando metade de seus PV máximos. Remendos não têm efeito em pilotos Caídos e Apagados.",
-        "pilot": true
+        "detail": "Gaste uma carga para aplicar um adesivo em você ou em um piloto adjacente, restaurando metade de seus PV máximos. Remendos não têm efeito em pilotos Caídos e Apagados."
       }
     ],
     "tags": [
@@ -519,8 +480,7 @@
       {
         "name": "Usar Estimulante",
         "activation": "Quick",
-        "detail": "Gaste uma carga para um dos seguintes efeitos:<ul><li>Despertar: Mantém um piloto acordado e alerta por até 30 horas.</li><li>Acalmar: Mantém um piloto calmo e emocionalmente estável; diminui o medo e outras reações fortes.</li><li>Aguçar: Aumenta os sentidos e a vigilância, reduz a fadiga e diminui os tempos de <b>reação</b>.</li></ul>",
-        "pilot": true
+        "detail": "Gaste uma carga para um dos seguintes efeitos:<ul><li>Despertar: Mantém um piloto acordado e alerta por até 30 horas.</li><li>Acalmar: Mantém um piloto calmo e emocionalmente estável; diminui o medo e outras reações fortes.</li><li>Aguçar: Aumenta os sentidos e a vigilância, reduz a fadiga e diminui os tempos de <b>reação</b>.</li></ul>"
       }
     ],
     "tags": [
@@ -543,23 +503,33 @@
         "name": "Carga de Termita",
         "type": "Mine",
         "detail": "Esta carga precisa ser detonada remotamente como uma ação rápida. Personagens afetados devem obter sucesso em um salvamento de Engenharia ou sofrem <b>3 de Dano de Energia</b> (PF). <b>Cargas</b> de termita atingem automaticamente objetos, causando <b>10 de Dano de Energia</b> (PF).",
-        "pilot": true,
         "actions": [
           {
             "name": "Detonar",
             "activation": "Quick",
             "detail": "Personagens afetados devem obter sucesso em um salvamento de Engenharia ou sofrem <b>3 de Dano de Energia</b> (PF).",
-            "pilot": true
+            "damage": [
+              {
+                "type": "Energy",
+                "val": 3,
+                "ap": true,
+                "save": "eng"
+              }
+            ]
+          },
+          {
+            "name": "Detonate (vs. Object)",
+            "activation": "Quick",
+            "detail": "Thermal charges automatically hit objects, dealing 10 Energy AP.",
+            "damage": [
+              {
+                "type": "Energy",
+                "val": 10,
+                "ap": true
+              }
+            ]
           }
-        ],
-        "stats": {
-          "size": 1,
-          "hp": 5,
-          "evasion": 5,
-          "edef": 5,
-          "speed": 0,
-          "armor": 0
-        }
+        ]
       }
     ],
     "tags": [

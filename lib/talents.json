@@ -9,20 +9,17 @@
       {
         "name": "Acrobacias",
         "description": "Ao voar, você obtém os seguintes benefícios:<ul><li>Você faz todos os testes e <b>salvamentos de Agilidade</b> com <b>+1 de Precisão</b>.</li><li>Sempre que um ataque o errar, você pode voar até 2 espaços em qualquer direção como uma <b>reação</b>.</li></ul>",
-        "synergies": [
+        "active_effects": [
           {
-            "locations": [
-              "agility",
-              "active_effects"
-            ],
-            "detail": "Faça todos os testes e <b>salvamentos de Agilidade</b> com <b>+1 de Precisão</b>."
+            "name": "Acrobatics",
+            "detail": "While flying, you make all Agility checks and saves with +1 Accuracy."
           }
         ],
         "actions": [
           {
             "name": "Acrobacias",
             "activation": "Reaction",
-            "trigger": "Sempre que um ataque errar você.",
+            "trigger": "While flying, an attack misses you.",
             "detail": "Você pode voar até 2 espaços em qualquer direção."
           }
         ]
@@ -30,6 +27,12 @@
       {
         "name": "Pós-combustão",
         "description": "Quando <b>Impulsionar</b> enquanto voa, você pode se mover 1d6 espaços adicionais, mas sofre <b>Calor</b> igual à metade desse valor.",
+        "active_effects": [
+          {
+            "name": "Afterburners",
+            "detail": "When you Boost while flying, you may move an additional 1d6 spaces, but take heat equal to half that amount."
+          }
+        ],
         "synergies": [
           {
             "locations": [
@@ -44,17 +47,22 @@
         "description": "Como uma ação rápida no seu turno, você pode girar seus propulsores. Se terminar seu turno voando, você pode indicar um personagem na linha de visão e dentro de um <b>Alcance</b> igual à sua <b>Velocidade</b> e ganhar a <b>reação</b> Supersônico.",
         "actions": [
           {
-            "name": "Girar Propulsores",
+            "id": "act_ace_supersonic_spinup",
+            "name": "Spin Up Thrusters",
             "activation": "Quick",
-            "detail": "Como uma ação rápida no seu turno, você pode girar seus propulsores. Se terminar seu turno voando, você pode indicar um personagem na linha de visão e dentro de um <b>Alcance</b> igual à sua <b>Velocidade</b> e ganhar a <b>reação</b> Supersônico."
+            "detail": "As a quick action on your turn, you may spin up your thrusters. If you end your turn flying, you may nominate a character within a Range equal to your Speed and within line of sight, and gain the Supersonic reaction.",
+            "add_special": [
+              {
+                "attribute": "Supersonic Target"
+              }
+            ]
           },
           {
-            "name": "Supersônico",
+            "name": "Supersonic",
             "activation": "Reaction",
             "frequency": "1/round",
-            "init": "Requer ativação da ação rápida Girar Propulsores no seu turno. Se você terminar seu turno voando, poderá indicar um personagem dentro de um <b>Alcance</b> igual à sua Velocidade e na linha de visão.",
-            "trigger": "O turno do seu alvo termina.",
-            "detail": "Você voa para um espaço livre e adjacente a ele. Precisa haver um caminho livre para fazer isso, mas você pode se mover mesmo se o personagem indicado não estiver mais dentro do seu <b>Alcance</b> de movimento ou linha de visão. Isso ignora o engajamento e não provoca reações."
+            "trigger": "Your Supersonic Target’s turn ends.",
+            "detail": "You fly to a space free and adjacent to them. There must be a path to do so but you can move even if the nominated character is no longer within your movement range or line of sight. This ignores engagement and does not provoke reactions."
           }
         ]
       }
@@ -70,13 +78,17 @@
       {
         "name": "Sou Eu Quem Você Procura",
         "description": "Quando selecionar este talento, escolha outro piloto (de preferência um PJ, mas PNJs são permitidos se o MJ estiver de acordo) para ser seu Vínculo. Qualquer <b>Teste de Perícia</b> de mecha e salvamentos feitos pelos dois personagens enquanto vocês estiverem adjacentes recebem <b>+1 de Precisão</b>. Se ambos os personagens tiverem esse talento, isso aumenta para +2 de Precisão, mas personagens adicionais com esse talento não podem aumentá-lo ainda mais.<br>Entre as missões, você pode substituir seu Vínculo por um com outro personagem, mas somente se o seu relacionamento com ele tiver mudado.",
-        "synergies": [
+        "active_effects": [
           {
-            "locations": [
-              "skill_check",
-              "active_effects"
-            ],
-            "detail": "Qualquer <b>Teste de Perícia</b> de mecha e salvamentos feitos por você e seu Vínculo enquanto estiverem adjacentes recebem <b>+1 de Precisão</b>. Se ambos tiverem esse talento, aumenta para +2 de Precisão."
+            "name": "I’m Your Huckleberry",
+            "detail": "Any mech skill checks and saves either you or your Bondmate makes while you are adjacent gain +1 Accuracy. If both characters have this talent, this increases to +2 Accuracy.",
+            "add_special": [
+              {
+                "attribute": "Bondmate",
+                "target": "ally",
+                "detail": "Any mech skill checks and saves either you or your Bondmate makes while you are adjacent gain +1 Accuracy. If both characters have this talent, this increases to +2 Accuracy."
+              }
+            ]
           }
         ]
       },
@@ -88,7 +100,7 @@
             "name": "Interceder",
             "activation": "Reaction",
             "frequency": "1/round",
-            "trigger": "Você está adjacente ao seu Vínculo (piloto ou mecha) e ele sofre Dano de uma fonte na sua linha de visão.",
+            "trigger": "You are adjacent to your Bondmate (pilot or mech) and they take damage from a source within your line of sight.",
             "detail": "Você pode sofrer o <b>Dano</b> no lugar dele."
           }
         ]
@@ -96,11 +108,16 @@
       {
         "name": "Me Dê Cobertura!",
         "description": "Se um personagem na sua linha de visão tentar atacar seu Vínculo, você pode gastar seu <b>Retaliar</b> para <b>Ameaçar</b> o atacante, forçando-o a escolher um alvo diferente ou atacar de qualquer maneira: se ele atacar um alvo diferente, seu <b>Retaliar</b> é gasto sem efeito; se ele escolher atacar de qualquer maneira, você pode atacá-lo imediatamente com <b>Retaliar</b>, desde que esteja dentro do seu <b>Alcance</b> e na linha de visão. Esse ataque se resolve antes do ataque acionador.",
+        "active_effects": [
+          {
+            "name": "Cover Me!",
+            "detail": "If a character within your line of sight attempts to attack your Bondmate, you can spend your Overwatch to threaten the attacker, forcing them to either choose a different target or attack anyway: if they attack a different target, your Overwatch is expended without effect; if they choose to attack anyway, you can immediately attack them with Overwatch, as long as they are within Range and line of sight. This attack resolves before the triggering attack."
+          }
+        ],
         "synergies": [
           {
             "locations": [
-              "overwatch",
-              "active_effects"
+              "overwatch"
             ],
             "detail": "Se um personagem na sua linha de visão tentar atacar seu Vínculo, você pode gastar seu <b>Retaliar</b> para <b>Ameaçar</b> o atacante, forçando-o a escolher um alvo diferente ou atacar de qualquer maneira: se ele escolher atacar de qualquer maneira, você pode atacá-lo imediatamente com <b>Retaliar</b>, desde que esteja dentro do seu <b>Alcance</b> e na linha de visão. Esse ataque se resolve antes do ataque acionador."
           }
@@ -117,31 +134,25 @@
     "ranks": [
       {
         "name": "Segurar e Travar",
-        "description": "Você recebe <b>+1 de Precisão</b> em todos os ataques corpo a corpo contra alvos que você esteja usando <b>Agarrar</b>.",
-        "synergies": [
-          {
-            "locations": [
-              "weapon"
-            ],
-            "weapon_types": [
-              "Melee"
-            ],
-            "weapon_sizes": [
-              "any"
-            ],
-            "detail": "Você recebe <b>+1 de Precisão</b> em todos os ataques corpo a corpo contra alvos que você esteja usando <b>Agarrar</b>."
-          }
-        ]
+        "description": "Você recebe <b>+1 de Precisão</b> em todos os ataques corpo a corpo contra alvos que você esteja usando <b>Agarrar</b>."
       },
       {
         "name": "Marreta",
         "description": "Quando <b>Improvisar Ataque</b>, essa ação recebe <b>Repulsão</b> 2 e causa 2d6+2 de <b>Dano</b> Cinético.",
-        "synergies": [
+        "bonuses": [
           {
-            "locations": [
-              "improvised_attack"
-            ],
-            "detail": "Quando <b>Improvisar Ataque</b>, essa ação recebe <b>Repulsão</b> 2 e causa 2d6+2 de <b>Dano</b> Cinético."
+            "id": "damage",
+            "val": "2d6+2",
+            "weapon_types": [
+              "improvised"
+            ]
+          },
+          {
+            "id": "knockback",
+            "val": 2,
+            "weapon_types": [
+              "improvised"
+            ]
           }
         ]
       },
@@ -162,7 +173,21 @@
           {
             "name": "Golpe Nocauteador",
             "activation": "Full",
-            "detail": "Como uma ação completa, redefine seu Dado de Lutador para 6 e faça um golpe nocauteador contra um personagem adjacente. Ele deve obter sucesso em um salvamento de <b>Casco</b>, ou sofre 2d6+2 de <b>Dano</b> Cinético e fica <b>Atordoado</b> até o final do próximo turno dele. (Disponível apenas quando o Dado de Lutador for 1)"
+            "detail": "Como uma ação completa, redefine seu Dado de Lutador para 6 e faça um golpe nocauteador contra um personagem adjacente. Ele deve obter sucesso em um salvamento de <b>Casco</b>, ou sofre 2d6+2 de <b>Dano</b> Cinético e fica <b>Atordoado</b> até o final do próximo turno dele. (Disponível apenas quando o Dado de Lutador for 1)",
+            "condition": "The value of your Brawler Die is 1",
+            "damage": [
+              {
+                "val": "2d6+2",
+                "type": "Kinetic"
+              }
+            ],
+            "add_status": [
+              {
+                "id": "stunned",
+                "duration": "next_turn_end_target",
+                "save": "hull"
+              }
+            ]
           }
         ],
         "counters": [
@@ -187,10 +212,16 @@
       {
         "name": "Predador",
         "description": "Quando você rola um 20 em um dado para qualquer ataque (às vezes chamado de “20 natural”) e for um acerto crítico, você causa o máximo de <b>Dano</b> e <b>Dano</b> adicional possível.",
+        "active_effects": [
+          {
+            "name": "Predator",
+            "detail": "When you roll a 20 on a die for any attack and critical hit, you deal the maximum possible damage and bonus damage."
+          }
+        ],
         "synergies": [
           {
             "locations": [
-              "weapon"
+              "attack"
             ],
             "detail": "Cause o máximo de <b>Dano</b> possível quando fizer uma rolagem de ataque de 20 e obtiver um acerto crítico."
           }
@@ -199,24 +230,20 @@
       {
         "name": "Separar o Rebanho",
         "description": "Seus <b>acertos críticos</b> recebem <b>Repulsão</b> 1.",
-        "synergies": [
+        "active_effects": [
           {
-            "locations": [
-              "weapon"
-            ],
-            "detail": "Inflija <b>Repulsão</b> 1 em um acerto crítico."
+            "name": "Cull the Herd",
+            "detail": "Your critical hits gain Knockback 1."
           }
         ]
       },
       {
         "name": "Implacável",
         "description": "Quando fizer uma rolagem de ataque e errar, sua próxima rolagem de ataque recebe <b>+1 de Precisão</b>. Esse efeito se acumula e persiste até você acertar.",
-        "synergies": [
+        "active_effects": [
           {
-            "locations": [
-              "weapon"
-            ],
-            "detail": "Ao errar, sua próxima rolagem de ataque recebe <b>+1 de Precisão</b>. Esse efeito se acumula e persiste até você acertar."
+            "name": "Relentless",
+            "detail": "When you make an attack roll and miss, your next attack roll gains +1 Accuracy. This effect stacks and persists until you hit."
           }
         ],
         "counters": [
@@ -245,7 +272,26 @@
           {
             "name": "Firmar Mira",
             "activation": "Protocol",
-            "detail": "Fique Imobilizado até o início do seu próximo turno, mas receba <b>+1 de Precisão</b> em todos os ataques que fizer com Fuzis."
+            "detail": "Fique Imobilizado até o início do seu próximo turno, mas receba <b>+1 de Precisão</b> em todos os ataques que fizer com Fuzis.",
+            "add_status": [
+              {
+                "id": "immobilized",
+                "duration": "next_turn_start_self"
+              }
+            ],
+            "add_special": [
+              {
+                "attribute": "Steadying Aim",
+                "detail": "You gain +1 Accuracy on all attacks you make with Rifles."
+              }
+            ]
+          }
+        ],
+        "active_effects": [
+          {
+            "name": "Stable, Steady",
+            "condition": "Steadying Aim is active",
+            "detail": "Gain +1 Accuracy on all attacks you make with Rifles."
           }
         ],
         "synergies": [
@@ -254,7 +300,7 @@
               "weapon"
             ],
             "weapon_types": [
-              "Rifle"
+              "rifle"
             ],
             "weapon_sizes": [
               "any"
@@ -266,16 +312,28 @@
       {
         "name": "Focar",
         "description": "1/rodada, enquanto firmar sua mira e fizer um ataque à distância com um Fuzil, você pode tentar atingir um ponto fraco: sofra 1 de Dificuldade na rolagem de ataque e cause <b>+1d6 de Dano bônus</b> em um acerto crítico.",
+        "active_effects": [
+          {
+            "name": "Zero In",
+            "condition": "You make a ranged attack with a Rifle while Steadying Aim is active",
+            "detail": "Attempt to hit a weak point: gain +1 Difficulty on the attack roll, and deal +1d6 bonus damage on a critical hit.",
+            "bonus_damage": {
+              "detail": "+1d6 bonus damage on a critical hit when making a ranged attack with a Rifle while Steadying Aim is active. This attack also gains +1 Difficulty.",
+              "val": "1d6",
+              "weapon_types": [
+                "rifle"
+              ],
+              "hit_type": "crit"
+            }
+          }
+        ],
         "synergies": [
           {
             "locations": [
               "weapon"
             ],
             "weapon_types": [
-              "Rifle"
-            ],
-            "weapon_sizes": [
-              "any"
+              "rifle"
             ],
             "detail": "1/rodada, enquanto firmar sua mira e fizer um ataque à distância com esta arma, você pode tentar atingir um ponto fraco: sofra 1 de Dificuldade na rolagem de ataque e cause <b>+1d6 de Dano bônus</b> em um acerto crítico."
           }
@@ -284,6 +342,24 @@
       {
         "name": "Olha Isso",
         "description": "1/rodada, quando você obtiver um acerto crítico com um Fuzil enquanto firmar sua mira, seu alvo deve obter sucesso em um salvamento de <b>Casco</b> ou você pode escolher um efeito adicional para seu ataque:<ul><li>Acerto na Cabeça: Ele só tem linha de visão para os espaços adjacentes até o final do próximo turno dele.</li><li>Acerto na Perna: Ele fica Imobilizado até o final do próximo turno dele.</li><li>Acerto no Corpo: Ele fica Prostrado.</li></ul>",
+        "active_effects": [
+          {
+            "name": "Watch This",
+            "condition": "You perform a critical hit with a Rifle while Steadying Aim is active",
+            "detail": "Your target must pass a Hull save or you may choose an additional effect for your attack:<ul><li><b>Headshot:</b> They only have line of sight to adjacent spaces until the end of their next turn.</li><li><b>Leg shot:</b> They become Immobilized until the end of their next turn.</li><li><b>Body shot:</b> They are knocked Prone.</li></ul>",
+            "save": "hull",
+            "add_status": [
+              {
+                "id": "prone",
+                "duration": "indefinite"
+              },
+              {
+                "id": "immobilized",
+                "duration": "next_turn_end_target"
+              }
+            ]
+          }
+        ],
         "synergies": [
           {
             "locations": [
@@ -311,6 +387,25 @@
       {
         "name": "Dez Mil Dentes",
         "description": "1/rodada, quando você obtiver um acerto crítico com um Nexo, seu alvo deve obter sucesso em um salvamento de Sistemas ou fica Impedido e Lento até o final do próximo turno dele.",
+        "active_effects": [
+          {
+            "name": "Ten Thousand Teeth",
+            "detail": "1/round, when you perform a critical hit with a Nexus, your target must pass a Systems save or become Impaired and Slowed until the end of their next turn.",
+            "condition": "You perform a critical hit with a Nexus weapon",
+            "add_status": [
+              {
+                "id": "impaired",
+                "duration": "next_turn_end_target",
+                "save": "sys"
+              },
+              {
+                "id": "slow",
+                "duration": "next_turn_end_target",
+                "save": "sys"
+              }
+            ]
+          }
+        ],
         "synergies": [
           {
             "locations": [
@@ -329,6 +424,19 @@
       {
         "name": "Expor Fraqueza",
         "description": "Quando consumir <b>Travado em Mira</b> como parte de um ataque com um Nexo ou Drone e obtiver um acerto crítico, seu alvo fica <b>Dilacerado</b> até o início do seu próximo turno.",
+        "active_effects": [
+          {
+            "name": "Expose Weakness",
+            "detail": "When you consume Lock On as part of an attack with a Nexus or Drone and perform a critical hit, your target becomes Shredded until the start of your next turn.",
+            "condition": "You perform a critical hit with a Nexus or Drone weapon and consume Lock On",
+            "add_status": [
+              {
+                "id": "shredded",
+                "duration": "next_turn_start_target"
+              }
+            ]
+          }
+        ],
         "synergies": [
           {
             "locations": [
@@ -351,6 +459,54 @@
       {
         "name": "Maré de Supressão",
         "description": "Isto substitui Dez Mil Dentes.<br>1/rodada, quando você obtiver um acerto crítico com um Nexo, seu alvo deve obter sucesso em um salvamento de Sistemas ou você pode escolher um efeito adicional para seu ataque, que dura até o final do próximo turno dele:<ul><li>Enxame Atormentador: O alvo fica Impedido e Lento.</li><li>Enxame Cegante: O alvo só tem linha de visão para quadrados adjacentes a ele.</li><li>Enxame Virulento: O alvo fica <b>Dilacerado</b>. Quaisquer personagens adjacentes a ele também devem obter sucesso em um salvamento de Sistemas ou também ficam <b>Dilacerado</b>s.</li><li>Enxame Restritivo: O alvo sofre 1 de <b>Queimadura</b> sempre que realizar uma ação ou <b>reação</b>.</li></ul>",
+        "active_effects": [
+          {
+            "name": "Tidal Suppression: Harrying Swarm",
+            "detail": "1/round, when you perform a critical hit with a Nexus, your target must succeed on a Systems save or become Impaired and Slowed until the end of their next turn.",
+            "condition": "You perform a critical hit with a Nexus weapon",
+            "frequency": "1/round",
+            "add_status": [
+              {
+                "id": "impaired",
+                "duration": "next_turn_end_target",
+                "save": "sys"
+              },
+              {
+                "id": "slow",
+                "duration": "next_turn_end_target",
+                "save": "sys"
+              }
+            ]
+          },
+          {
+            "name": "Tidal Suppression: Blinding Swarm",
+            "detail": "1/round, when you perform a critical hit with a Nexus, your target must succeed on a Systems save or they only have line of sight to adjacent squares until the end of their next turn.",
+            "condition": "You perform a critical hit with a Nexus weapon",
+            "frequency": "1/round",
+            "save": "sys"
+          },
+          {
+            "name": "Tidal Suppression: Virulent Swarm",
+            "detail": "1/round, when you perform a critical hit with a Nexus, your target must succeed on a Systems save or become Shredded until the end of their next turn. Any adjacent characters of your choice must also make a Systems save or become Shredded.",
+            "condition": "You perform a critical hit with a Nexus weapon",
+            "frequency": "1/round",
+            "add_status": [
+              {
+                "id": "shredded",
+                "duration": "next_turn_end_target",
+                "save": "sys",
+                "aoe": true
+              }
+            ]
+          },
+          {
+            "name": "Tidal Suppression: Restricting Swarm",
+            "detail": "1/round, when you perform a critical hit with a Nexus, your target must succeed on a Systems save or take 1 Burn each time they take an action or reaction until the end of their next turn.",
+            "condition": "You perform a critical hit with a Nexus weapon",
+            "frequency": "1/round",
+            "save": "sys"
+          }
+        ],
         "synergies": [
           {
             "locations": [
@@ -378,38 +534,34 @@
       {
         "name": "Escudo de Lâminas",
         "description": "Enquanto estiver Engajado, você e quaisquer aliados adjacentes a você contam como tendo <b>cobertura leve</b>",
-        "synergies": [
+        "active_effects": [
           {
-            "locations": [
-              "active_effects",
-              "disengage"
-            ],
-            "weapon_types": [
-              "any"
-            ],
-            "detail": "Enquanto estiver Engajado, você e quaisquer aliados adjacentes a você contam como tendo <b>cobertura leve</b>"
+            "name": "Shield of Blades",
+            "detail": "As long as you’re Engaged, you and any allies adjacent to you count as having soft cover.",
+            "condition": "You are Engaged"
           }
         ]
       },
       {
         "name": "Treinado em CQR",
         "description": "Você não sofre Dificuldade por estar Engajado.",
-        "synergies": [
+        "active_effects": [
           {
-            "locations": [
-              "active_effects",
-              "disengage"
-            ],
-            "weapon_types": [
-              "any"
-            ],
-            "detail": "Você não sofre Dificuldade por estar Engajado."
+            "name": "CQB-Trained",
+            "detail": "You don’t gain Difficulty from being Engaged."
           }
         ]
       },
       {
         "name": "Tempestade de Violência",
         "description": "Sempre que acertar um personagem com um ataque corpo a corpo, você recebe <b>+1 de Precisão</b> em seu próximo ataque à distância contra ele; e, sempre que atingir um personagem com um ataque à distância, você recebe <b>+1 de Precisão</b> em seu próximo ataque corpo a corpo contra ele. Esse efeito não se acumula.",
+        "active_effects": [
+          {
+            "name": "Storm of Violence",
+            "condition": "You have hit a character with a melee or ranged attack",
+            "detail": "Whenever you hit a character with a melee attack, you gain +1 Accuracy on your next ranged attack against them; and, whenever you hit a character with a ranged attack, you gain +1 Accuracy on your next melee attack against them. This effect doesn’t stack."
+          }
+        ],
         "synergies": [
           {
             "locations": [
@@ -431,6 +583,14 @@
       {
         "name": "Guerrilheiro",
         "description": "Receba <b>+1 de Precisão</b> no primeiro ataque corpo a corpo que você fizer com uma arma Principal Corpo a Corpo no seu turno.",
+        "active_effects": [
+          {
+            "name": "Partisan",
+            "condition": "The first melee attack you make with a Main Melee weapon on your turn",
+            "detail": "Gain +1 Accuracy on the first melee attack you make with a Main Melee weapon on your turn.",
+            "frequency": "1/turn"
+          }
+        ],
         "synergies": [
           {
             "locations": [
@@ -449,6 +609,14 @@
       {
         "name": "Espadachim",
         "description": "1/rodada, quando você acertar com uma arma Principal Corpo a Corpo, você recebe 1 Dado de Espadachim — 1d6 — até um máximo de 3 Dados de Espadachim. Eles duram até serem gastos ou quando a cena atual terminar. Você pode gastar Dados de Espadachim a uma taxa de 1 para 1 para o seguinte:<ul><li>Aparar: Como uma <b>reação</b> quando for atingido por um ataque corpo a corpo, você adquire <b>Resistência</b> a todos tipo de <b>Dano</b>, <b>Calor</b> e <b>Queimadura</b> causados pelo ataque.</li><li>Defletir: Como uma <b>reação</b>, ao ser atingido por um ataque à distância, você pode rolar qualquer quantidade de Dados de Espadachim, gastando-os: se rolar 5+ em qualquer um desses dados, você adquire <b>Resistência</b> a todo tipo de <b>Dano</b>, <b>Calor</b> e <b>Queimadura</b> causado pelo ataque.</li><li>Fintar: Como uma <b>Ação Livre</b>, escolha um personagem adjacente: ao se mover, você ignora o engajamento e não provoca reações de seu alvo até o início do seu próximo turno.</li><li>Derrubar: Como uma ação rápida, escolha um personagem adjacente: ele deve obter sucesso em um <b>salvamento de Agilidade</b> ou fica Prostrado. Seja qual for o resultado, até o final do seu turno atual, você pode passar livremente pelo espaço dele, embora não possa terminar seu turno no espaço dele.</li></ul>",
+        "active_effects": [
+          {
+            "name": "Blademaster",
+            "detail": "1/round, when you hit with a Main Melee weapon, you gain 1 Blademaster Die – a d6 – up to a maximum of 3 Blademaster Die. They last until expended or the current scene ends.",
+            "condition": "You hit with a Main Melee weapon",
+            "frequency": "1/round"
+          }
+        ],
         "synergies": [
           {
             "locations": [
@@ -467,13 +635,13 @@
           {
             "name": "Aparar",
             "activation": "Reaction",
-            "trigger": "Você é atingido por um ataque corpo a corpo.",
+            "trigger": "You are hit by a melee attack",
             "detail": "Gaste 1 Dado de Espadachim. Você adquire <b>Resistência</b> a todos os danos, <b>Calor</b> e <b>Queimadura</b> causados pelo ataque."
           },
           {
             "name": "Defletir",
             "activation": "Reaction",
-            "trigger": "Você é atingido por um ataque à distância.",
+            "trigger": "You are hit by a ranged attack",
             "detail": "Você pode rolar qualquer número de Dados de Espadachim, gastando-os: se rolar 5+ em qualquer um desses dados, você adquire <b>Resistência</b> a todos os danos, <b>Calor</b> e <b>Queimadura</b> causados pelo ataque."
           },
           {
@@ -500,6 +668,14 @@
       {
         "name": "Imparável",
         "description": "1/rodada, quando acertar com um ataque corpo a corpo no seu turno, você pode gastar um Dado de Espadachim para <b>Agarrar</b> ou <b>Empurrar</b> seu alvo como uma <b>Ação Livre</b> imediatamente após o ataque ser resolvido.",
+        "active_effects": [
+          {
+            "name": "Unstoppable",
+            "detail": "1/round, when you hit with a melee attack on your turn, you may spend a Blademaster Die to immediately Grapple or Ram your target as a free action after the attack has been resolved.",
+            "condition": "You hit with a melee attack on your turn",
+            "frequency": "1/round"
+          }
+        ],
         "synergies": [
           {
             "locations": [
@@ -555,15 +731,19 @@
       {
         "name": "Enxame Energizado",
         "description": "1/rodada, quando você fizer um ataque que consome a condição <b>Travado em Mira</b>, seus <b>Drones</b> imediatamente emitem um pulso violento de <b>Energia</b>. Todos os personagens à sua escolha dentro de uma área de <b>Emanação</b> 1 centrada em cada um de seus <b>Drones</b> sofrem 1d6 de <b>Dano</b> Energético. Cada personagem só pode ser afetado pelo pulso de um drone, mesmo que as áreas se sobreponham.",
-        "synergies": [
+        "active_effects": [
           {
-            "locations": [
-              "system"
-            ],
-            "system_types": [
-              "Drone"
-            ],
-            "detail": "1/rodada, quando você fizer um ataque que consome a condição <b>Travado em Mira</b>, seus <b>Drones</b> imediatamente emitem um pulso violento de <b>Energia</b>. Todos os personagens à sua escolha dentro de uma área de <b>Emanação</b> 1 centrada em cada um de seus <b>Drones</b> sofrem 1d6 de <b>Dano</b> Energético."
+            "name": "Energized Swarm",
+            "detail": "1/round, when you make an attack that consumes the Lock On condition, your Drones immediately emit a vicious pulse of energy. All characters of your choice within Burst 1 areas centered on each of your drones take 1d6 Energy damage. Each character can only be affected by the pulse from one drone, even if the areas overlap.",
+            "condition": "You make an attack that consumes the Lock On condition",
+            "frequency": "1/round",
+            "damage": [
+              {
+                "val": "1d6",
+                "type": "Energy",
+                "aoe": true
+              }
+            ]
           }
         ]
       },
@@ -574,7 +754,21 @@
           {
             "name": "Revigorar",
             "activation": "Quick",
-            "detail": "Como uma ação rápida, envie um pulso de <b>Energia</b> para um personagem aliado (incluindo <b>Drones</b>) dentro de <b>Alcance 3</b>, desenhando uma <b>Linha</b> até ele. Você pode estender o pulso de seu alvo para outro personagem aliado, estendendo a <b>Linha</b> até ele, desde que estejam dentro de <b>Alcance 3</b>, e você pode continuar estendendo o pulso (e a <b>Linha</b>) assim, desde que não mire o mesmo personagem duas vezes. Personagens aliados que forem usados como alvos de pulso ou estiverem no caminho da <b>Linha</b> recebem <b>Blindagem</b> 4; personagens hostis no caminho da <b>Linha</b> sofrem 2 de <b>Dano</b> Energético em vez disso."
+            "detail": "Como uma ação rápida, envie um pulso de <b>Energia</b> para um personagem aliado (incluindo <b>Drones</b>) dentro de <b>Alcance 3</b>, desenhando uma <b>Linha</b> até ele. Você pode estender o pulso de seu alvo para outro personagem aliado, estendendo a <b>Linha</b> até ele, desde que estejam dentro de <b>Alcance 3</b>, e você pode continuar estendendo o pulso (e a <b>Linha</b>) assim, desde que não mire o mesmo personagem duas vezes. Personagens aliados que forem usados como alvos de pulso ou estiverem no caminho da <b>Linha</b> recebem <b>Blindagem</b> 4; personagens hostis no caminho da <b>Linha</b> sofrem 2 de <b>Dano</b> Energético em vez disso.",
+            "damage": [
+              {
+                "val": 2,
+                "type": "Energy",
+                "aoe": true
+              }
+            ],
+            "add_other": [
+              {
+                "type": "overshield",
+                "val": 4,
+                "aoe": true
+              }
+            ]
           }
         ]
       }
@@ -623,6 +817,14 @@
       {
         "name": "Corte Oscilante",
         "description": "1/rodada, quando acertar com uma arma corpo a corpo Pesada ou <b>Superpesada</b>, como uma <b>Ação Livre</b>, você pode fazer outro ataque corpo a corpo com a mesma arma contra um personagem diferente na linha de visão e dentro da <b>Ameaça</b>. Esse ataque causa metade do <b>Dano</b>, se for bem-sucedido.",
+        "active_effects": [
+          {
+            "name": "Backswing Cut",
+            "detail": "1/round, when you hit with a Heavy or Superheavy melee weapon, you can make another melee attack with the same weapon as a free action against a different character within Threat and line of sight. This attack deals half damage, if successful.",
+            "condition": "You hit with a Heavy or Superheavy melee weapon",
+            "frequency": "1/round"
+          }
+        ],
         "synergies": [
           {
             "locations": [
@@ -642,6 +844,21 @@
       {
         "name": "Golpe em <b>Arco</b> Ampliado",
         "description": "Na primeira vez em uma rodada que você realizar um acerto crítico com uma arma corpo a corpo Pesada ou <b>Superpesada</b>, você causa 3 de <b>Dano</b> Cinético a todos os personagens e objetos à sua escolha que estiverem dentro da <b>Ameaça</b>, exceto aquele que você acabou de atacar.",
+        "active_effects": [
+          {
+            "name": "Wide Arc Cleave",
+            "detail": "The first time in a round that you perform a critical hit with a Heavy or Superheavy melee weapon, you deal 3 Kinetic damage to all characters and objects of your choice within Threat, other than the one you just attacked.",
+            "condition": "The first time you perform a critical hit with a Heavy or Superheavy melee weapon",
+            "frequency": "1/round",
+            "damage": [
+              {
+                "val": 3,
+                "type": "Kinetic",
+                "aoe": "Within Threat"
+              }
+            ]
+          }
+        ],
         "synergies": [
           {
             "locations": [
@@ -661,6 +878,14 @@
       {
         "name": "Sem Escapatória",
         "description": "1/rodada, quando errar um ataque corpo a corpo, você o rola novamente contra um alvo diferente dentro da <b>Ameaça</b> e linha de visão.",
+        "active_effects": [
+          {
+            "name": "No Escape",
+            "detail": "1/round, when you miss with a melee attack, you reroll it against a different target within Threat and line of sight.",
+            "condition": "You miss with a melee attack",
+            "frequency": "1/round"
+          }
+        ],
         "synergies": [
           {
             "locations": [
@@ -688,12 +913,26 @@
       {
         "name": "Desafio Honroso",
         "description": "Na primeira vez em seu turno que atacar um personagem hostil dentro de <b>Alcance 3</b>, acertando ou errando, você pode impor a ele a Marca do Exemplar como uma <b>Ação Livre</b>. Só é possível ter uma Marca do Exemplar ativa por vez; colocar uma marca em qualquer personagem substitui qualquer marca já existente.<br>O personagem fica com a Marca do Exemplar até o início do seu próximo turno, e enquanto estiver com ela, você tem a seguinte <b>reação</b>:<ul><li>Ajuda Valorosa (<b>reação</b>, 1/rodada): Um aliado ataca um personagem que está com a sua Marca do Exemplar e erra. Efeito: O aliado pode rolar novamente o ataque. Ele deve usar o segundo resultado, mesmo que seja pior.</li></ul>",
+        "active_effects": [
+          {
+            "name": "Assign Exemplar's Mark",
+            "detail": "The first time on your turn that you attack a hostile character within Range 3, hit or miss, you may give them the Exemplar’s Mark as a free action. Characters can only have one Exemplar’s Mark at a time – new marks from any character replace existing marks.<br>The character has the Exemplar’s Mark until the start of your next turn, and while they have it, you gain the <b>Valiant Aid</b> Reaction.",
+            "condition": "The first time on your turn that you attack a hostile character within Range 3",
+            "frequency": "1/turn",
+            "add_special": [
+              {
+                "attribute": "Exemplar's Mark",
+                "duration": "next_turn_start_self"
+              }
+            ]
+          }
+        ],
         "actions": [
           {
             "name": "Ajuda Valorosa",
             "activation": "Reaction",
             "frequency": "1/round",
-            "trigger": "Um aliado ataca um personagem que está com a sua Marca do Exemplar e erra.",
+            "trigger": "Ally attacks your mark and misses.",
             "detail": "O aliado pode rolar novamente o ataque. Ele deve usar o segundo resultado, mesmo que seja pior."
           }
         ]
@@ -701,10 +940,18 @@
       {
         "name": "Punição",
         "description": "1/rodada, quando o personagem que está com a sua Marca do Exemplar atacar um personagem dentro de <b>Alcance 3</b> de você (e que não seja você), ele aciona seu <b>Retaliar</b>.",
+        "active_effects": [
+          {
+            "name": "Punishment",
+            "detail": "1/round, when the character with your Mark attacks a character within Range 3 of you, other than you, they trigger your Overwatch.",
+            "condition": "The character with your Mark attacks a character within Range 3 of you, other than you",
+            "frequency": "1/round"
+          }
+        ],
         "synergies": [
           {
             "locations": [
-              "active_effects"
+              "stats"
             ],
             "detail": "1/rodada, quando o personagem que está com a sua Marca do Exemplar atacar um personagem dentro de <b>Alcance 3</b> de você (e que não seja você), ele aciona seu <b>Retaliar</b>."
           }
@@ -733,6 +980,14 @@
       {
         "name": "Argumento de Abertura",
         "description": "Receba <b>+1 de Precisão</b> na primeira rolagem de ataque que você fizer com uma arma Auxiliar à distância no seu turno.",
+        "active_effects": [
+          {
+            "name": "Opening Argument",
+            "condition": "The first attack roll you make with an Auxiliary ranged weapon on your turn",
+            "detail": "Gain +1 Accuracy on the first attack roll you make with an Auxiliary ranged weapon on your turn.",
+            "frequency": "1/turn"
+          }
+        ],
         "synergies": [
           {
             "locations": [
@@ -760,7 +1015,7 @@
             "name": "Retornar Fogo",
             "activation": "Reaction",
             "frequency": "1/round",
-            "trigger": "Um personagem atinge você com um ataque à distância.",
+            "trigger": "A character hits you with a ranged attack.",
             "detail": "Você pode atacá-lo imediatamente com uma única arma Auxiliar à distância se ele estiver dentro do <b>Alcance</b>."
           }
         ]
@@ -768,6 +1023,31 @@
       {
         "name": "Eu Mato Com o Coração",
         "description": "Você ganha um Dado de Pistoleiro — 1d6 — começando em 6. Sempre que você acertar com uma arma Auxiliar à distância, reduza o valor do Dado de Pistoleiro em 1. Quando o Dado de Pistoleiro atingir 1, você pode redefinir para 6 para dar +2d6 de <b>Dano bônus</b> ao acertar e tornar o <b>Dano</b> PF para seu próximo ataque com uma arma Auxiliar à distância. Esse ataque também ignora cobertura. O valor do seu Dado de Pistoleiro persiste entre as cenas, mas é redefinido para 6 quando você descansar ou fizer um Reparo Completo.",
+        "active_effects": [
+          {
+            "name": "Gunslinger Die",
+            "detail": "Each time you hit with an Auxiliary ranged weapon, reduce the value of the Gunslinger Die by 1. The value of your Gunslinger Die persists between scenes but resets to 6 when you rest or perform a Full Repair.",
+            "condition": "You hit with an Auxiliary ranged weapon"
+          },
+          {
+            "name": "I Kill With My Heart",
+            "detail": "When your Gunslinger Die is at 1, you may reset it to 6 to give +2d6 bonus damage on hit and AP to your next attack with an Auxiliary ranged weapon. This attack also ignores cover.",
+            "condition": "Your Gunslinger Die is at 1",
+            "bonus_damage": {
+              "val": "2d6",
+              "weapon_types": [
+                "Rifle",
+                "Cannon",
+                "Launcher",
+                "CQB",
+                "Nexus"
+              ],
+              "weapon_sizes": [
+                "Auxiliary"
+              ]
+            }
+          }
+        ],
         "synergies": [
           {
             "locations": [
@@ -784,6 +1064,22 @@
               "Auxiliary"
             ],
             "detail": "Cada vez que você acertar com esta arma, reduza o valor do Dado de Pistoleiro em 1."
+          },
+          {
+            "locations": [
+              "weapon"
+            ],
+            "weapon_types": [
+              "Rifle",
+              "Cannon",
+              "Launcher",
+              "CQB",
+              "Nexus"
+            ],
+            "weapon_sizes": [
+              "Auxiliary"
+            ],
+            "detail": "When your Gunslinger Die is at 1, you may reset it to 6 to give +2d6 bonus damage on hit and AP to your next attack with this weapon. This attack also ignores cover."
           }
         ],
         "counters": [
@@ -808,19 +1104,18 @@
     "ranks": [
       {
         "name": "Atualização de Capacidade Não Autorizada",
-        "description": "Enquanto descansa, você pode gastar 2 de Reparo para reabastecer 1 uso de todas as armas e Sistemas com Limitado.",
-        "synergies": [
-          {
-            "locations": [
-              "rest"
-            ],
-            "detail": "Enquanto descansa, você pode gastar 2 de Reparo para reabastecer 1 uso de todas as armas e Sistemas com Limitado."
-          }
-        ]
+        "description": "Enquanto descansa, você pode gastar 2 de Reparo para reabastecer 1 uso de todas as armas e Sistemas com Limitado."
       },
       {
         "name": "Ligado à Máquina",
         "description": "Quando <b>Estabilizar</b>, você remove as condições Impedido, Bloqueado, Imobilizado, Lento e <b>Travado em Mira</b> que não foram causadas por seus próprios Sistemas, talentos etc.",
+        "active_effects": [
+          {
+            "name": "Machine Bond",
+            "detail": "When you STABILIZE, you clear all IMPAIRED, JAMMED, IMMOBILIZED, SLOWED, and LOCK ON conditions that weren’t caused by your own systems, talents, etc.",
+            "condition": "You STABILIZE"
+          }
+        ],
         "synergies": [
           {
             "locations": [
@@ -854,10 +1149,23 @@
       {
         "name": "SNOW_CRASH",
         "description": "Quando acertar com um <b>ataque tecnológico</b> que consome <b>Travado em Mira</b>, seu alvo deve escolher entre sofrer 2 de <b>Calor</b> ou ser empurrado 3 espaços em uma direção à sua escolha.",
+        "active_effects": [
+          {
+            "name": "SNOW_CRASH",
+            "detail": "When you hit with a tech attack that consumes Lock On, your target must choose to either take 2 Heat or be pushed 3 spaces in a direction of your choice.",
+            "condition": "You hit with a tech attack that consumes Lock On",
+            "damage": [
+              {
+                "val": 2,
+                "type": "Heat"
+              }
+            ]
+          }
+        ],
         "synergies": [
           {
             "locations": [
-              "tech"
+              "tech_attack"
             ],
             "detail": "Quando acertar com um <b>ataque tecnológico</b> que consome <b>Travado em Mira</b>, seu alvo deve escolher entre sofrer 2 de <b>Calor</b> ou ser empurrado 3 espaços em uma direção à sua escolha."
           }
@@ -891,8 +1199,8 @@
           {
             "activation": "Full Tech",
             "name": "Último Argumento dos Reis",
-            "tech_attack": true,
-            "detail": "Faça um <b>ataque tecnológico</b> contra um alvo na linha de visão e ao <b>Alcance</b> dos <b>Sensores</b>. Em caso de sucesso, você implanta um vírus que desencadeia uma pequena fusão no reator de seu alvo: ele imediatamente sofre uma quantidade de <b>Queimadura</b> igual ao <b>Calor</b> atual dele. Se esta ação fizer com que seu alvo superaqueça, ela será resolvida antes que ele redefina a <b>Cap. de Calor</b>."
+            "detail": "Faça um <b>ataque tecnológico</b> contra um alvo na linha de visão e ao <b>Alcance</b> dos <b>Sensores</b>. Em caso de sucesso, você implanta um vírus que desencadeia uma pequena fusão no reator de seu alvo: ele imediatamente sofre uma quantidade de <b>Queimadura</b> igual ao <b>Calor</b> atual dele. Se esta ação fizer com que seu alvo superaqueça, ela será resolvida antes que ele redefina a <b>Cap. de Calor</b>.",
+            "attack": "tech"
           }
         ]
       }
@@ -912,13 +1220,24 @@
           {
             "name": "Fogo de Cobertura",
             "activation": "Quick",
-            "detail": "Escolha um personagem dentro da linha de visão e do <b>Alcance</b> de uma de suas armas à distância PESADAS, e a até 10 espaços: ele fica Impedido até o início de seu próximo turno. Pela duração, se seu alvo se mover mais de 1 espaço, ele remove Impedido, mas você pode atacá-lo como uma <b>reação</b> com uma arma à distância PESADA pela metade do <b>Dano</b>, <b>Calor</b> ou <b>Queimadura</b>, e então este efeito termina. Você pode fazer este ataque em qualquer ponto durante o movimento dele (por exemplo, esperando até que ele saia da cobertura).<br>Fogo de Cobertura só pode afetar um personagem por vez – usos subsequentes substituem os anteriores – e termina imediatamente se seu alvo causar <b>Dano</b> a você."
+            "detail": "Escolha um personagem dentro da linha de visão e do <b>Alcance</b> de uma de suas armas à distância PESADAS, e a até 10 espaços: ele fica Impedido até o início de seu próximo turno. Pela duração, se seu alvo se mover mais de 1 espaço, ele remove Impedido, mas você pode atacá-lo como uma <b>reação</b> com uma arma à distância PESADA pela metade do <b>Dano</b>, <b>Calor</b> ou <b>Queimadura</b>, e então este efeito termina. Você pode fazer este ataque em qualquer ponto durante o movimento dele (por exemplo, esperando até que ele saia da cobertura).<br>Fogo de Cobertura só pode afetar um personagem por vez – usos subsequentes substituem os anteriores – e termina imediatamente se seu alvo causar <b>Dano</b> a você.",
+            "add_status": [
+              {
+                "id": "impaired",
+                "duration": "next_turn_start_self"
+              }
+            ],
+            "add_special": [
+              {
+                "attribute": "Covering Fire Target"
+              }
+            ]
           },
           {
             "name": "Ataque de Fogo de Cobertura",
             "activation": "Reaction",
             "frequency": "1/round",
-            "trigger": "O alvo de seu Fogo de Cobertura se move mais de 1 espaço.",
+            "trigger": "The target of your Covering Fire moves more than 1 space.",
             "detail": "Você pode atacar o alvo com uma arma à distância PESADA pela metade do <b>Dano</b>, <b>Calor</b> ou <b>Queimadura</b>. Você pode fazer este ataque em qualquer ponto durante o movimento dele (por exemplo, esperando até que ele saia da cobertura)."
           }
         ]
@@ -926,24 +1245,27 @@
       {
         "name": "Bater do Martelo",
         "description": "Se você acertar seu alvo de Fogo de Cobertura com a <b>reação</b> de ataque concedida por este talento, seu alvo fica Imobilizado até o final do próximo turno dele.",
-        "synergies": [
+        "active_effects": [
           {
-            "locations": [
-              "active_effects"
-            ],
-            "detail": "Se você acertar com o ataque concedido por Fogo de Cobertura, seu alvo fica Imobilizado até o final do próximo turno dele."
+            "name": "Hammerbeat",
+            "detail": "If you successfully hit your Covering Fire target with the attack reaction granted by that talent, your target is Immobilized until the end of their next turn.",
+            "condition": "You successfully hit your Covering Fire target with the attack reaction granted by that talent",
+            "add_status": [
+              {
+                "id": "immobilized",
+                "duration": "next_turn_end_target"
+              }
+            ]
           }
         ]
       },
       {
         "name": "Rajada de Fogo",
         "description": "Ao usar Fogo de Cobertura, você pode escolher dois alvos em vez de um. Cada alvo aciona e resolve seu ataque separadamente, e o <b>Dano</b> de um alvo só encerra o efeito naquele alvo.",
-        "synergies": [
+        "active_effects": [
           {
-            "locations": [
-              "active_effects"
-            ],
-            "detail": "Ao usar Fogo de Cobertura, você pode escolher dois alvos em vez de um. Cada alvo aciona e resolve seu ataque separadamente, e o <b>Dano</b> de um alvo só encerra o efeito naquele alvo."
+            "name": "Bracketing Fire",
+            "detail": "When you use <b>Covering Fire</b>, you may choose two targets instead of one. Each target triggers and resolves your attack separately, and damage from one target only ends the effect on that target."
           }
         ]
       }
@@ -959,6 +1281,14 @@
       {
         "name": "Bote",
         "description": "1/rodada, quando atacar com uma arma corpo a corpo Auxiliar, você pode voar até 3 espaços diretamente em direção a um personagem-alvo antes do ataque. Esse movimento ignora o engajamento e não provoca reações.",
+        "active_effects": [
+          {
+            "name": "Lunge",
+            "detail": "1/round, when you attack with an Auxiliary melee weapon, you may fly up to 3 spaces directly towards the targeted character before the attack. This movement ignores engagement and doesn’t provoke reactions.",
+            "condition": "You attack with an Auxiliary melee weapon",
+            "frequency": "1/round"
+          }
+        ],
         "synergies": [
           {
             "locations": [
@@ -977,6 +1307,18 @@
       {
         "name": "Malabarista de Facas",
         "description": "Todas as suas armas corpo a corpo Auxiliares recebem Arremessável 5, se ainda não tiverem essa tag — se já tiverem Arremessável, elas aumentam para Arremessável 5. No final do seu turno, todas as armas que você arremessou neste turno voltam automaticamente para você.",
+        "bonuses": [
+          {
+            "id": "thrown",
+            "weapon_types": [
+              "Melee"
+            ],
+            "weapon_sizes": [
+              "Auxiliary"
+            ],
+            "val": 5
+          }
+        ],
         "synergies": [
           {
             "locations": [
@@ -995,6 +1337,14 @@
       {
         "name": "Lâmina Desdenhada",
         "description": "1/rodada, quando acertar um personagem com um ataque corpo a corpo, você também pode lançar uma arma corpo a corpo Auxiliar como um ataque contra qualquer personagem dentro do <b>Alcance</b> usando uma <b>Ação Livre</b>. Esse ataque não causa <b>Dano bônus</b>.",
+        "active_effects": [
+          {
+            "name": "Disdainful Blade",
+            "detail": "1/round, when you hit a character with a melee attack, you may also throw an Auxiliary melee weapon as an attack against any character within Range as a free action. This attack can’t deal bonus damage.",
+            "condition": "You hit a character with a melee attack",
+            "frequency": "1/round"
+          }
+        ],
         "synergies": [
           {
             "locations": [
@@ -1022,48 +1372,46 @@
       {
         "name": "Esgueirar-se",
         "description": "Durante o seu turno, você recebe os seguintes benefícios:<ul><li>Entrar na linha de visão de personagens hostis ou sair de uma cobertura não impede que você fique <b>Escondido</b>.</li><li>Você pode passar livremente por espaços inimigos, mas não terminar seu turno neles.</li><li>Você pode se <b>Esconder</b> mesmo à vista dos inimigos.</li></ul>Esses efeitos encerram imediatamente quando seu turno termina (então você perde <b>Escondido</b> se ainda estiver na linha de visão ou fora de cobertura naquele momento).",
-        "synergies": [
+        "active_effects": [
           {
-            "locations": [
-              "active_effects"
-            ],
-            "detail": "Entrar na linha de visão de personagens hostis ou sair de uma cobertura não impede que você fique <b>Escondido</b>."
-          },
-          {
-            "locations": [
-              "active_effects"
-            ],
-            "detail": "Você pode passar livremente por espaços inimigos, mas não terminar seu turno neles."
-          },
-          {
-            "locations": [
-              "active_effects"
-            ],
-            "detail": "Você pode se <b>Esconder</b> mesmo à vista dos inimigos."
+            "name": "Prowl",
+            "detail": "During your turn, gain the following benefits:<ul><li>Entering line of sight of hostile characters or moving from cover does not stop you from being Hidden.</li><li>You can pass freely through – but not end your turn in – enemy spaces.</li><li>You can Hide even in plain sight of enemies.<br>These effects immediately end when your turn ends (so you lose Hidden if you’re still in line of sight or out of cover at that time).</li></ul>"
           }
         ]
       },
       {
         "name": "Emboscada",
         "description": "Quando começar seu turno <b>Escondido</b>, a primeira rolagem de ataque de qualquer tipo que você fizer, faz seu alvo cambalear com um acerto. Seu alvo deve obter sucesso em um salvamento de <b>Casco</b> ou fica Lento, Impedido e incapaz de realizar reações até o final do próximo turno dele.",
-        "synergies": [
+        "active_effects": [
           {
-            "locations": [
-              "weapon"
-            ],
-            "detail": "Quando começar seu turno <b>Escondido</b>, a primeira rolagem de ataque de qualquer tipo que você fizer, faz seu alvo cambalear com um acerto. Seu alvo deve obter sucesso em um salvamento de <b>Casco</b> ou fica Lento, Impedido e incapaz de realizar reações até o final do próximo turno dele."
+            "name": "Ambush",
+            "detail": "When you start your turn Hidden, the first attack roll of any type that you make sends your target reeling on a hit. Your target must succeed on a Hull save or become Slowed, Impaired, and unable to take reactions until the end of their next turn.",
+            "condition": "You start your turn Hidden and make an attack roll",
+            "frequency": "1/turn",
+            "add_status": [
+              {
+                "id": "slow",
+                "save": "hull",
+                "duration": "next_turn_end_target"
+              },
+              {
+                "id": "impaired",
+                "save": "hull",
+                "duration": "next_turn_end_target"
+              }
+            ]
           }
         ]
       },
       {
         "name": "Mestre da Furtividade",
         "description": "Quando perder <b>Escondido</b> (por qualquer meio), você pode primeiro disparar uma bomba de luz em qualquer personagem adjacente. Esse personagem deve obter sucesso em um salvamento de Sistemas ou fica capaz de traçar linha de visão apenas para espaços adjacentes a ele até o final do próximo turno dele.<br>Você pode então mover-se até sua <b>Velocidade</b>, ignorando o engajamento e não provocando reações, e então é revelado normalmente.",
-        "synergies": [
+        "active_effects": [
           {
-            "locations": [
-              "active_effects"
-            ],
-            "detail": "Quando perder <b>Escondido</b>, você pode disparar uma bomba de luz em um personagem adjacente (salvamento de Sistemas ou visão limitada a adjacente) e mover sua <b>Velocidade</b> ignorando engajamento/reações antes de ser revelado."
+            "name": "Mastermind",
+            "detail": "When you lose Hidden (by any means), you may first fire a flash bomb at any adjacent character. That character must pass a Systems save or only be able to draw line of sight to adjacent spaces until the end of their next turn.<br>You can then move up to your speed, ignoring engagement and not provoking reactions, and are then revealed normally.",
+            "condition": "You lose Hidden",
+            "frequency": "1/turn"
           }
         ]
       }
@@ -1079,6 +1427,14 @@
       {
         "name": "Ímpeto",
         "description": "Quando <b>Impulsionar</b>, seu próximo <b>Empurrar</b> antes do início do seu próximo turno recebe <b>+1 de Precisão</b> e repele seu alvo por 2 espaços adicionais.",
+        "active_effects": [
+          {
+            "name": "Momentum",
+            "detail": "When you Boost, your next Ram before the start of your next turn gains +1 Accuracy and knocks your target back an additional 2 spaces.",
+            "condition": "You Boost",
+            "frequency": "1/turn"
+          }
+        ],
         "synergies": [
           {
             "locations": [
@@ -1097,6 +1453,27 @@
       {
         "name": "Transferência de Massa Cinética",
         "description": "1/rodada, se você <b>Empurrar</b> um alvo para:<ul><li>Um espaço ocupado por outro personagem, o outro personagem deve obter sucesso em um salvamento de <b>Casco</b>, ou fica Prostrado.</li><li>Uma obstrução grande o suficiente para fazer o movimento dele parar, seu alvo sofre 1d6 de <b>Dano</b> Cinético e fica Prostrado.</li></ul>",
+        "active_effects": [
+          {
+            "name": "Kinetic Mass Transfer",
+            "detail": "1/round, if you Ram a target into...<ul><li>...a space occupied by another character, the other character must succeed on a Hull save or be knocked Prone.</li><li>...an obstruction large enough to stop their movement, your target takes 1d6 kinetic damage.</li></ul>",
+            "condition": "You Ram a target into another character or an obstruction large enough to stop their movement",
+            "frequency": "1/round",
+            "damage": [
+              {
+                "val": "1d6",
+                "type": "Kinetic",
+                "aoe": true
+              }
+            ],
+            "add_status": [
+              {
+                "id": "prone",
+                "save": "hull"
+              }
+            ]
+          }
+        ],
         "synergies": [
           {
             "locations": [
@@ -1109,6 +1486,34 @@
       {
         "name": "Força Imparável",
         "description": "1/rodada, ao <b>Impulsionar</b>, você pode <b>Sobrecarregar</b> os motores do seu mecha. Mova sua <b>Velocidade</b> máxima em <b>Linha</b> reta, sofra 1d3+3 de <b>Calor</b> e receba os seguintes benefícios:<ul><li>Você pode passar livremente por personagens do mesmo <b>Tamanho</b> do seu mecha ou menores; todo personagem por quem passar deve obter sucesso em um salvamento de <b>Casco</b>, ou fica Prostrado.</li><li>Qualquer terreno, paredes ou outras obstruções estacionárias pelas quais você tentar passar sofre 20 de <b>Dano</b> Cinético PF. Se isso for suficiente para destruí-los, você passa; caso contrário, seu movimento termina.</li><li>Você ignora <b>terreno difícil</b>.</li><li>Seu movimento ignora engajamento e não provoca reações.</li></ul>",
+        "active_effects": [
+          {
+            "name": "Unstoppable Force",
+            "detail": "1/round, when you Boost, you may supercharge your mech’s servos. Move your maximum speed in a straight line, take 1d3+3 Heat, and gain the following benefits:<ul><li>You can freely pass through characters the same Size as your mech or smaller; any characters passed through must succeed on a Hull save or be knocked Prone.</li><li>Any terrain, walls, or other stationary obstructions you attempt to pass through receive 20 Kinetic AP damage. If that is enough to destroy them, you pass through; otherwise, your movement ends.</li><li>You ignore difficult terrain.</li><li>Your movement ignores engagement and doesn’t provoke reactions.</li></ul>",
+            "condition": "You Boost",
+            "frequency": "1/round",
+            "damage": [
+              {
+                "val": "1d3+3",
+                "type": "Heat",
+                "target": "self"
+              },
+              {
+                "val": "20",
+                "type": "Kinetic",
+                "ap": true,
+                "aoe": true
+              }
+            ],
+            "add_status": [
+              {
+                "id": "prone",
+                "save": "hull",
+                "aoe": true
+              }
+            ]
+          }
+        ],
         "synergies": [
           {
             "locations": [
@@ -1134,6 +1539,7 @@
           {
             "name": "Emitir Ordem",
             "activation": "Free",
+            "frequency": "1/turn",
             "detail": "1/turno, no seu turno como uma <b>Ação Livre</b>, você pode dar uma ordem a um PJ aliado com o qual você pode se comunicar, descrevendo um curso de ação, e entregar a ele um Dado de Liderança. Ele pode gastar o Dado de Liderança para receber <b>+1 de Precisão</b> em qualquer ação que siga diretamente essa ordem, ou pode devolvê-lo a você como uma <b>Ação Livre</b>."
           }
         ],
@@ -1141,7 +1547,7 @@
           {
             "id": "ctr_leader",
             "name": "Dados de Liderança",
-            "default_value": 3,
+            "default_value": 0,
             "min": 0,
             "max": 6
           }
@@ -1154,23 +1560,14 @@
           {
             "name": "Emitir Comando (<b>reação</b>)",
             "activation": "Reaction",
-            "frequency": "Unlimited",
-            "trigger": "Início do turno de qualquer outro jogador.",
+            "trigger": "Another player starts their turn.",
             "detail": "Você pode emitir um comando como <b>reação</b> no início do turno de qualquer outro jogador, quantas vezes quiser por rodada, e entregar um Dado de Liderança."
           }
         ]
       },
       {
         "name": "Presença Inspiradora",
-        "description": "Ganhe 6 Dados de Liderança em vez de 5. Os aliados que tiverem seus Dados de Liderança podem gastá-los para reduzir <b>Dano</b> sofrido em –1d6 no momento em que sofrer o <b>Dano</b>, ou para causar <b>+1d6 de Dano bônus</b> quando acertarem um ataque.",
-        "synergies": [
-          {
-            "locations": [
-              "active_effects"
-            ],
-            "detail": "Aliados com seus Dados de Liderança podem gastá-los para: reduzir <b>Dano</b> sofrido em -1d6 ou causar <b>+1d6 de Dano bônus</b> em um acerto."
-          }
-        ]
+        "description": "Ganhe 6 Dados de Liderança em vez de 5. Os aliados que tiverem seus Dados de Liderança podem gastá-los para reduzir <b>Dano</b> sofrido em –1d6 no momento em que sofrer o <b>Dano</b>, ou para causar <b>+1d6 de Dano bônus</b> quando acertarem um ataque."
       }
     ]
   },
@@ -1184,6 +1581,20 @@
       {
         "name": "Sangramento de <b>Calor</b> Agressivo",
         "description": "A primeira rolagem de ataque que você fizer no seu turno enquanto estiver na <b>Zona de Perigo</b> causa +2 de <b>Calor</b> em um acerto. Se você entrar na <b>Zona de Perigo</b> durante o seu turno, este talento terá efeito no seu próximo ataque.",
+        "active_effects": [
+          {
+            "name": "Aggressive Heat Bleed",
+            "detail": "The first attack roll you make on your turn while in the Danger Zone deals +2 Heat on a hit.",
+            "condition": "Your first attack roll while in the Danger Zone",
+            "frequency": "1/turn",
+            "damage": [
+              {
+                "val": 2,
+                "type": "Heat"
+              }
+            ]
+          }
+        ],
         "synergies": [
           {
             "locations": [
@@ -1196,10 +1607,25 @@
       {
         "name": "Hemorragia de Fusão",
         "description": "A primeira rolagem de ataque à distância ou corpo a corpo que você fizer no seu turno enquanto estiver na <b>Zona de Perigo</b> causa <b>Dano</b> Energético, em vez de Cinético ou explosivo, e adicionalmente causa <b>+1d6 de Dano bônus</b> Energético em um acerto.",
+        "active_effects": [
+          {
+            "name": "Fusion Hemorrhage",
+            "detail": "The first ranged or melee attack roll you make on your turn while in the Danger Zone deals Energy instead of Kinetic or Explosive and additionally deals +1d6 Energy bonus damage on a hit.",
+            "condition": "Your first ranged or melee attack roll while in the Danger Zone",
+            "frequency": "1/turn",
+            "bonus_damage": [
+              {
+                "detail": "The first ranged or melee hit you make on your turn while in the Danger Zone deals +1d6 Energy bonus damage.",
+                "val": "1d6",
+                "type": "Energy"
+              }
+            ]
+          }
+        ],
         "synergies": [
           {
             "locations": [
-              "weapon"
+              "attack"
             ],
             "detail": "A primeira rolagem de ataque à distância ou corpo a corpo que você fizer no seu turno enquanto estiver na <b>Zona de Perigo</b> causa <b>Dano</b> Energético, em vez de Cinético ou explosivo, e adicionalmente causa <b>+1d6 de Dano bônus</b> Energético em um acerto."
           }
@@ -1229,13 +1655,40 @@
           {
             "name": "Munição Britadeira",
             "activation": "Quick",
-            "detail": "Como uma ação rápida, dispare uma munição britadeira a partir de um lançador acoplado, causando automaticamente 10 de <b>Dano</b> Cinético PF a uma seção de <b>Tamanho 1</b> de qualquer objeto dentro do <b>Alcance</b> (ex. cobertura, terreno). Quaisquer personagens adjacentes ao seu alvo são repelidos por 2 espaços e sofrem 2 de <b>Dano</b> Cinético."
+            "detail": "Como uma ação rápida, dispare uma munição britadeira a partir de um lançador acoplado, causando automaticamente 10 de <b>Dano</b> Cinético PF a uma seção de <b>Tamanho 1</b> de qualquer objeto dentro do <b>Alcance</b> (ex. cobertura, terreno). Quaisquer personagens adjacentes ao seu alvo são repelidos por 2 espaços e sofrem 2 de <b>Dano</b> Cinético.",
+            "damage": [
+              {
+                "val": 10,
+                "type": "Kinetic",
+                "ap": true
+              },
+              {
+                "val": 2,
+                "type": "Kinetic",
+                "aoe": true
+              }
+            ]
           }
         ]
       },
       {
         "name": "Impacto",
         "description": "1/rodada, antes de rolar um ataque com um Canhão, todos os personagens adjacentes a você devem obter sucesso em um salvamento de <b>Casco</b> ou são repelidos por 1 espaço e ficam Prostrados. Você é então, empurrado 1 espaço em qualquer direção.",
+        "active_effects": [
+          {
+            "name": "Impact",
+            "detail": "1/round, before rolling an attack with a Cannon, all characters adjacent to you must succeed on a Hull save or be knocked back by 1 space and knocked Prone. You are then pushed 1 space in any direction.",
+            "condition": "You are about to roll an attack with a Cannon",
+            "frequency": "1/round",
+            "add_status": [
+              {
+                "id": "prone",
+                "save": "hull",
+                "aoe": true
+              }
+            ]
+          }
+        ],
         "synergies": [
           {
             "locations": [
@@ -1254,6 +1707,27 @@
       {
         "name": "Dano Colateral",
         "description": "1/rodada, ao obter um acerto crítico em um personagem ou objeto com um Canhão, você pode optar por causar uma <b>Emanação</b> de munições secundárias, provocando uma <b>Emanação</b> de <b>Emanação</b> 2 em torno de seu alvo. Os personagens que estiverem dentro da área afetada devem ficar Prostrados como uma <b>reação</b>, ou sofrem 2 de <b>Dano</b> explosivo e são repelidos por 2 espaços a partir do centro do ataque.",
+        "active_effects": [
+          {
+            "name": "Collateral Damage",
+            "detail": "1/round, when you perform a critical hit on a character or object with a Cannon, you may choose to cause an explosion of secondary munitions, causing a Burst 2 explosion around your target. Characters within the affected area must either drop Prone as a reaction, or take 2 Explosive damage and be knocked back by 2 spaces from the center of the attack.",
+            "condition": "You perform a critical hit on a character or object with a Cannon",
+            "frequency": "1/round",
+            "damage": [
+              {
+                "val": 2,
+                "type": "Explosive",
+                "aoe": true
+              }
+            ],
+            "add_status": [
+              {
+                "id": "prone",
+                "aoe": true
+              }
+            ]
+          }
+        ],
         "synergies": [
           {
             "locations": [
@@ -1281,22 +1755,31 @@
       {
         "name": "Lançadores de Obstrução Integrados",
         "description": "No início do seu turno, você obtém <b>cobertura leve</b> Você perde essa cobertura se atacar ou forçar outro personagem a fazer um salvamento.",
-        "synergies": [
+        "active_effects": [
           {
-            "locations": [
-              "active_effects"
-            ],
-            "detail": "No início do seu turno, você obtém <b>cobertura leve</b> Você perde essa cobertura se atacar ou forçar outro personagem a fazer um salvamento."
+            "name": "Integrated Chaff Launchers",
+            "detail": "At the start of your turn, you gain soft cover. You lose this cover if you attack or force another character to make a save."
           }
         ]
       },
       {
         "name": "Rompedor",
         "description": "Antes ou depois de <b>Alvejar</b> (inclusive como uma <b>reação</b>, por exemplo, de <b>Retaliar</b>), você pode se mover 2 espaços. Esse movimento ignora o engajamento e não provoca reações.",
+        "active_effects": [
+          {
+            "name": "Lockbreaker",
+            "detail": "Before or after you Skirmish (including as a reaction, e.g. from Overwatch), you may move 2 spaces. This movement ignores engagement and doesn’t provoke reactions."
+          }
+        ],
         "synergies": [
           {
             "locations": [
               "weapon"
+            ],
+            "weapon_sizes": [
+              "Auxiliary",
+              "Heavy",
+              "Main"
             ],
             "detail": "Antes ou depois de <b>Alvejar</b> (inclusive como uma <b>reação</b>, por exemplo, de <b>Retaliar</b>), você pode se mover 2 espaços. Esse movimento ignora o engajamento e não provoca reações."
           }
@@ -1305,12 +1788,12 @@
       {
         "name": "Esquivo",
         "description": "O primeiro ataque feito como uma <b>reação</b> contra você em qualquer rodada automaticamente erra.",
-        "synergies": [
+        "active_effects": [
           {
-            "locations": [
-              "active_effects"
-            ],
-            "detail": "O primeiro ataque feito como uma <b>reação</b> contra você em qualquer rodada automaticamente erra."
+            "name": "Weave",
+            "detail": "The first attack taken as a reaction against you in any round automatically misses.",
+            "condition": "You are targeted by an attack as a reaction",
+            "frequency": "1/round"
           }
         ]
       }
@@ -1326,18 +1809,25 @@
       {
         "name": "Particularizar",
         "description": "Quando um personagem aliado adjacente a você atacar um alvo e consumir <b>Travado em Mira</b>, ele pode rolar duas vezes e escolher qualquer um dos resultados.",
-        "synergies": [
+        "active_effects": [
           {
-            "locations": [
-              "active_effects"
-            ],
-            "detail": "Quando um personagem aliado adjacente a você atacar um alvo e consumir <b>Travado em Mira</b>, ele pode rolar duas vezes e escolher qualquer um dos resultados."
+            "name": "Particularize",
+            "detail": "When an allied character adjacent to you attacks a target and consumes Lock On, they may roll twice and choose either result.",
+            "condition": "An allied character adjacent to you attacks a target and consumes Lock On"
           }
         ]
       },
       {
         "name": "Panóptico",
         "description": "No final do seu turno, se você não se moveu e fez a ação de <b>Programar Rápido</b>: <b>Travar Mira</b>, você pode <b>Travar Mira</b> uma vez adicional como uma <b>Ação Livre</b>. Além disso, quando <b>Travar Mira</b>, você descobre a <b>Armadura</b>, <b>Velocidade</b>, <b>Evasão</b>, <b>Defesa-E</b>, Perícias de Mecha e PV atuais do seu alvo, e pode compartilhar essas informações com aliados.",
+        "active_effects": [
+          {
+            "name": "Panopticon",
+            "detail": "At the end of your turn, if you did not move and took the Lock On Quick Tech action, you may Lock On once as a free action. Additionally, when you Lock On, you learn your target’s Armor, Speed, Evasion, E-Defense, Mech Skills, and current HP, and can share this information with allies.",
+            "condition": "The end of your turn, if you did not move and took the Lock On Quick Tech action",
+            "frequency": "1/turn"
+          }
+        ],
         "synergies": [
           {
             "locations": [
@@ -1370,6 +1860,19 @@
       {
         "name": "Dilúvio Sísmico",
         "description": "1/rodada, quando atacar com sucesso usando um Lançador e consumir <b>Travado em Mira</b>, você também pode deixar seu alvo Prostrado.",
+        "active_effects": [
+          {
+            "name": "Seismic Deluge",
+            "detail": "1/round, when you successfully attack with a Launcher and consume Lock On, you may also knock your target Prone.",
+            "condition": "You successfully attack with a Launcher and consume Lock On",
+            "frequency": "1/round",
+            "add_status": [
+              {
+                "id": "prone"
+              }
+            ]
+          }
+        ],
         "synergies": [
           {
             "locations": [
@@ -1388,6 +1891,34 @@
       {
         "name": "Domínio da Tempestade",
         "description": "Você personalizou seu mecha com Sistemas Auxiliares de mísseis de concussão. 1/rodada, ao atingir um personagem ou objeto com um Lançador, você pode escolher um dos seguintes efeitos:<ul><li>Relâmpago: Você dispara uma rajada concentrada de mísseis naquele personagem. Ele deve obter sucesso em um salvamento de <b>Casco</b> ou é repelido de você por 3 espaços; a força do tiro então te joga para trás em 3 espaços, para um lado oposto à direção do tiro.</li><li>Trovão: Você dispara uma rajada de mísseis em uma área de <b>Emanação</b> 2 ao redor do alvo. Os personagens na área devem obter sucesso em um <b>salvamento de Agilidade</b> ou são repelidos para longe do alvo por 1 espaço. O alvo primário não é afetado.</li></ul>",
+        "active_effects": [
+          {
+            "name": "Stormbending",
+            "detail": "1/round, when you hit a character or object with a Launcher, you can choose one of the following effects: Lightning or Thunder.",
+            "condition": "You hit a character or object with a Launcher",
+            "frequency": "1/round"
+          },
+          {
+            "name": "Stormbending: Lightning",
+            "detail": "You fire a concentrated blast of missiles at that character. They must succeed on a Hull save or be knocked away from you by 3 spaces; the force of firing then knocks you back by 3 spaces, away from the direction of fire.",
+            "condition": "You hit a character or object with a Launcher",
+            "frequency": "1/round",
+            "save": {
+              "stat": "hull",
+              "aoe": true
+            }
+          },
+          {
+            "name": "Stormbending: Thunder",
+            "detail": "You fire a spray of missiles at a Burst 2 area around that target. Characters in the area must succeed on an Agility save or be knocked back by 1 space, away from the target. The primary target is unaffected.",
+            "condition": "You hit a character or object with a Launcher",
+            "frequency": "1/round",
+            "save": {
+              "stat": "agility",
+              "aoe": true
+            }
+          }
+        ],
         "synergies": [
           {
             "locations": [
@@ -1424,7 +1955,16 @@
           {
             "name": "Ataque Maciço",
             "activation": "Full",
-            "detail": "Redefina seu Dado de Torrente para 6 e faça um ataque maciço como uma ação completa, visando um personagem na linha de visão e a até <b>Alcance 15</b>: ele deve obter sucesso em um <b>salvamento de Agilidade</b> ou sofre 2d6 explosivo, fica <b>Atordoado</b> até o final do próximo turno dele e cai Prostrado. Em caso de sucesso, ele sofre metade do <b>Dano</b> e cai Prostrado, mas não fica <b>Atordoado</b>."
+            "detail": "Redefina seu Dado de Torrente para 6 e faça um ataque maciço como uma ação completa, visando um personagem na linha de visão e a até <b>Alcance 15</b>: ele deve obter sucesso em um <b>salvamento de Agilidade</b> ou sofre 2d6 explosivo, fica <b>Atordoado</b> até o final do próximo turno dele e cai Prostrado. Em caso de sucesso, ele sofre metade do <b>Dano</b> e cai Prostrado, mas não fica <b>Atordoado</b>.",
+            "damage": [
+              {
+                "type": "Explosive",
+                "val": "2d6",
+                "save": "agi",
+                "save_half": true
+              }
+            ],
+            "condition": "The value of your Torrent Die is 1"
           }
         ],
         "counters": [
@@ -1449,6 +1989,14 @@
       {
         "name": "Oportunista",
         "description": "1/rodada, receba <b>+1 de Precisão</b> em qualquer ataque corpo a corpo se pelo menos um personagem aliado estiver Engajado com seu alvo.",
+        "active_effects": [
+          {
+            "name": "Opportunist",
+            "detail": "1/round, gain +1 Accuracy on any melee attack if at least one allied character is Engaged with your target.",
+            "condition": "You make a melee attack and at least one allied character is Engaged with your target",
+            "frequency": "1/round"
+          }
+        ],
         "synergies": [
           {
             "locations": [
@@ -1467,6 +2015,14 @@
       {
         "name": "Luz Solar ao Fundo",
         "description": "1/rodada, receba <b>+1 de Precisão</b> em qualquer ataque à distância feito enquanto você estiver em uma elevação maior que seu alvo.",
+        "active_effects": [
+          {
+            "name": "Solar Backdrop",
+            "detail": "1/round, gain +1 Accuracy on any ranged attack made while you are at a higher elevation than your target.",
+            "condition": "You make a ranged attack while you are at a higher elevation than your target",
+            "frequency": "1/round"
+          }
+        ],
         "synergies": [
           {
             "locations": [
@@ -1494,7 +2050,7 @@
             "name": "Flanquear",
             "activation": "Reaction",
             "frequency": "1/round",
-            "trigger": "Um personagem que não tem cobertura de sua posição é atacado com sucesso por um personagem aliado.",
+            "trigger": "A character who doesn’t have cover from your position is successfully attacked by an allied character.",
             "detail": "Você pode atacá-lo com <b>Retaliar</b>, causando metade do <b>Dano</b>, <b>Queimadura</b> ou <b>Calor</b> em um acerto."
           }
         ]
@@ -1530,18 +2086,15 @@
         "special_equipment": [
           "ms_technophile_3"
         ],
-        "synergies": [
+        "active_effects": [
           {
-            "locations": [
-              "cascade"
-            ],
-            "detail": "IAs instaladas em seu mecha não podem entrar em cascata a menos que você opte por isso."
-          },
+            "name": "Enlightenment",
+            "detail": "AIs installed in your mech cannot enter cascade unless you choose to let them go."
+          }
+        ],
+        "bonuses": [
           {
-            "locations": [
-              "active_effects"
-            ],
-            "detail": "Enquanto sua PNH personalizada responder a você, as PNHs que estão em cascata ou desacorrentadas não o verão mais com indiferença."
+            "id": "no_cascade"
           }
         ],
         "exclusive": true
@@ -1558,6 +2111,14 @@
       {
         "name": "Etiqueta de Aperto de Mão",
         "description": "Receba <b>+1 de Precisão</b> ao usar armas CQR para atacar alvos dentro de <b>Alcance 3</b>.",
+        "active_effects": [
+          {
+            "name": "Handshake Etiquette",
+            "detail": "Gain +1 Accuracy when using CQB weapons to attack targets within Range 3.",
+            "condition": "You attack with a CQB weapon at a target within Range 3",
+            "frequency": "1/round"
+          }
+        ],
         "synergies": [
           {
             "locations": [
@@ -1576,6 +2137,13 @@
       {
         "name": "Ver Através",
         "description": "Você modificou seus <b>Sensores</b> e munição para atravessar, desconsiderar ou ignorar de alguma forma a cobertura próxima. Desde que tenha linha de visão, você ignora <b>cobertura leve</b> e pesada ao usar armas CQR para atacar alvos dentro de <b>Alcance 3</b>.",
+        "active_effects": [
+          {
+            "name": "See-Through Seeker",
+            "detail": "As long as you have line of sight, ignore both soft and hard cover when using CQB weapons to attack targets within Range 3.",
+            "condition": "You attack with a CQB weapon at a target within Range 3"
+          }
+        ],
         "synergies": [
           {
             "locations": [
@@ -1594,11 +2162,16 @@
       {
         "name": "Sempre Alerta",
         "description": "Você pode atacar com <b>Retaliar</b> usando armas CQR quando personagens hostis entrarem ou saírem de espaços dentro de sua <b>Ameaça</b>, mesmo que eles tenham iniciado o movimento lá.",
+        "active_effects": [
+          {
+            "name": "Semper Vigilo",
+            "detail": "You may attack with Overwatch using CQB weapons when hostile characters enter, leave, or exit spaces within your Threat, no matter whether they started their movement there."
+          }
+        ],
         "synergies": [
           {
             "locations": [
-              "overwatch",
-              "active_effects"
+              "overwatch"
             ],
             "detail": "Você pode atacar com <b>Retaliar</b> usando armas CQR quando personagens hostis entrarem ou saírem de espaços dentro de sua <b>Ameaça</b>, mesmo que eles tenham iniciado o movimento lá."
           }
