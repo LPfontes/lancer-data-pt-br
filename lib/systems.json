@@ -1159,7 +1159,7 @@
     "source": "IPS-N",
     "license": "Vlad",
     "license_level": 2,
-    "effect": "This system blankets a free Burst 1 area within Range 5 with explosive caltrops. The affected area becomes difficult terrain for the rest of the scene, and mechs take 1d3 AP Energy Damage when they enter the affected area for the first time in a round or end their turn within it.",
+    "effect": "Este sistema cobre uma área livre de <b>Explosão 1</b> a até <b>Alcance 5</b> com estrepes explosivos. A área afetada se torna <b>terreno difícil</b> pelo resto da cena, e os mechas sofrem 1d3 de <b>Dano de Energia PF</b> quando entram na área afetada pela primeira vez em uma rodada ou terminam seu turno dentro dela.",
     "deployables": [
       {
         "type": "Deployable",
@@ -4174,7 +4174,7 @@
     "source": "HA",
     "license": "Tokugawa",
     "license_level": 1,
-    "effect": "Armas que causam qualquer  de <b>Energia</b> recebem +5range se forem à distância ou +1threat se forem corpo a corpo.<br>Quando você sofrer qualquer <b>Dano de Estrutura</b>, este sistema é destruído e você sofre 1d6 Explosivo(PF) da <b>Explosão</b>.<br>Esse <b>Dano</b> não pode ser prevenido ou reduzido de nenhuma forma.",
+    "effect": "Armas que causam qualquer  de <b>Energia</b> recebem +5 de Alcance se forem à distância ou +1 de Ameaça se forem corpo a corpo.<br>Quando você sofrer qualquer <b>Dano de Estrutura</b>, este sistema é destruído e você sofre 1d6 Explosivo(PF) da <b>Explosão</b>.<br>Esse <b>Dano</b> não pode ser prevenido ou reduzido de nenhuma forma.",
     "bonuses": [
       {
         "id": "range",
