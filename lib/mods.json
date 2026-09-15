@@ -121,15 +121,20 @@
     "license": "Metalmark",
     "license_level": 3,
     "effect": "além do seu <b>Dano</b> usual, 1/rodada você pode ativar a coroa como uma Ação Rápida quando acertar um personagem com esta arma para fazê-lo sofrer 1d6 de <b>Queimadura</b>. Se ele já estiver sofrendo de <b>Queimadura</b>, adicionalmente ele só pode ter linha de visão para espaços adjacentes até o final do próximo turno dele.",
-    "actions": {
-      "activation": "Quick",
-      "damage": [
-        {
-          "type": "Burn",
-          "val": "1d6"
-        }
-      ]
-    },
+    "actions": [
+      {
+        "name": "Coroa de Choque",
+        "activation": "Quick",
+        "frequency": "1/round",
+        "detail": "1/rodada você pode ativar a coroa como uma Ação Rápida quando acertar um personagem com esta arma para fazê-lo sofrer 1d6 de <b>Queimadura</b>. Se ele já estiver sofrendo de <b>Queimadura</b>, adicionalmente ele só pode ter linha de visão para espaços adjacentes até o final do próximo turno dele.",
+        "damage": [
+          {
+            "type": "Burn",
+            "val": "1d6"
+          }
+        ]
+      }
+    ],
     "description": "Uma modificação pós-fábrica popular entre especialistas em combate corpo a corpo, as Coroas de Choque integram um feixe de filamentos condutores dentro da lâmina, ponta ou superfície de uma arma de combate próximo. Combinadas com uma fonte de <b>Energia</b> — tipicamente no cabo ou metade inferior de uma arma, mas às vezes externa — as Coroas de Choque conferem às armas cinéticas uma vantagem térmica e um marcador visual distinto: finas linhas de luz branca quente como filigrana, envolvendo a arma modificada em <b>Calor</b> cintilante.",
     "tags": [
       {
