@@ -111,7 +111,7 @@
   },
   {
     "id": "ms_pattern_a_smoke_charges",
-    "name": "<b>Cargas<b>. de Fumaça Padrão A",
+    "name": "Cargas. de Fumaça Padrão A",
     "type": "Deployable",
     "sp": 2,
     "tags": [
@@ -190,7 +190,7 @@
   },
   {
     "id": "ms_pattern_b_hex_charges",
-    "name": "<b>Cargas<b>. HEX Padrão B",
+    "name": "Cargas. HEX Padrão B",
     "type": "Deployable",
     "sp": 2,
     "tags": [
@@ -628,7 +628,7 @@
         "counters": [
           {
             "id": "aegis_shield_die",
-            "name": "<b>Energia</b> do Gerador de Escudo Égide",
+            "name": "Energia do Gerador de Escudo Égide",
             "default_value": 3,
             "min": 0,
             "max": 3
@@ -2222,7 +2222,7 @@
         "detail": "Seu alvo se move à <b>Velocidade</b> máxima dele em uma direção à sua escolha.<br>Ele pode ser movido para áreas perigosas e outros obstáculos, mas ainda é afetado por <b>terreno difícil</b>, obstruções etc.<br>Esse movimento é involuntário, mas provoca reações e engajamento normalmente e não conta como  <b>Repulsão<b> , <b>Empurrar</b> ou puxar."
       },
       {
-        "name": "<b>Ejetar</b> Núcleos de <b>Energia</b>",
+        "name": "Ejetar Núcleos de Energia",
         "activation": "Invade",
         "detail": "Seu alvo fica <b>Bloqueado</b> até o final do próximo turno dele, enquanto você temporariamente interrompe seus Sistemas, ejetando carregadores de munição e hastes de resfriamento.<br>Personagens adjacentes ao seu alvo sofrem <b>2 de Dano de Energia</b>.<br>Isso só pode ser usado 1/cena em cada personagem.",
         "add_status": [
@@ -2879,7 +2879,7 @@
   },
   {
     "id": "ms_mesmer_charges",
-    "name": "<b>Cargas<b>. de Transe",
+    "name": "Cargas. de Transe",
     "type": "Deployable",
     "sp": 2,
     "tags": [

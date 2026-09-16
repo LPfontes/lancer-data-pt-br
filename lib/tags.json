@@ -126,7 +126,7 @@
   },
   {
     "id": "tg_danger_zone",
-    "name": "<b>Zona de Perigo</b>",
+    "name": "Zona de Perigo",
     "description": "Este sistema, talento ou arma só pode ser usado se o usuário estiver na <b>Zona de Perigo</b> (<b>Calor</b> igual a pelo menos metade de sua <b>Cap. de Calor</b>)."
   },
   {
@@ -181,7 +181,7 @@
   },
   {
     "id": "tg_reaction",
-    "name": "<b>Reação</b>",
+    "name": "Reação",
     "description": "Este sistema pode ser ativado como uma <b>Reação</b>."
   },
   {
@@ -224,28 +224,28 @@
   },
   {
     "id": "tg_invade",
-    "name": "<b>Invadir</b>",
+    "name": "Invadir",
     "description": "Este sistema fornece opções adicionais para a Ação Rápida de Programar <b>Invadir</b>."
   },
   {
     "id": "tg_quick_tech",
-    "name": "<b>Programar Rápido</b>",
+    "name": "Programar Rápido",
     "description": "Esta tecnologia pode ser usada como uma Ação de <b>Programar Rápido</b>."
   },
   {
     "id": "tg_full_tech",
-    "name": "<b>Programar Completo</b>",
+    "name": "Programar Completo",
     "description": "Esta tecnologia pode ser usada como uma Ação de <b>Programar Completo</b>."
   },
   {
     "id": "tg_free_action",
-    "name": "<b>Ação Livre</b>",
+    "name": "Ação Livre",
     "description": "Personagens podem realizar ações livres a qualquer momento durante seu turno, e elas não contam para o número de ações rápidas ou completas que realizam. Elas também podem ser usadas para realizar ações mais de uma vez por turno.",
     "filter_ignore": true
   },
   {
     "id": "tg_range",
-    "name": "<b>Alcance</b> ({VAL})",
+    "name": "Alcance ({VAL})",
     "description": "Este sistema pode ser ativado a um <b>Alcance</b> de {VAL} espaços.",
     "filter_ignore": true
   },
@@ -266,7 +266,7 @@
   },
   {
     "id": "tg_recharge",
-    "name": "<b>Recarregar</b> {VAL}+",
+    "name": "Recarregar {VAL}+",
     "description": "Uma vez que este sistema ou arma tenha sido usado, ele não pode ser usado novamente até ser recarregado. No início do turno deste PNJ, role 1d6: se o resultado for igual ou maior que {VAL}, o equipamento pode ser usado novamente. Apenas uma rolagem é necessária para cada PNJ, mesmo que um PNJ tenha múltiplos Sistemas ou armas com <b>Recarga</b>. Se este PNJ tiver dois Sistemas de <b>Recarga</b> com números-alvo de 4+ e 5+, uma rolagem de 5 <b>Recarregará</b> ambos.",
     "filter_ignore": true
   },
@@ -290,8 +290,8 @@
   },
   {
     "id": "tg_invisible",
-    "name": "<b>invisível</b>",
-    "description": "Esta unidade é <b>invisível</b>.",
+    "name": "Invisível",
+    "description": "Esta unidade é <b>Invisível</b>.",
     "filter_ignore": true
   },
   {

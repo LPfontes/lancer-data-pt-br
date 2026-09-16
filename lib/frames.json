@@ -2081,7 +2081,7 @@
         "description": "Você pode <b>Montar</b> ou <b>Desmontar</b> o Minotauro pela primeira vez a cada rodada como uma <b>Ação Livre</b>. Além disso, o Minotauro não fica <b>Impedido</b> quando você <b>Ejetar</b>.",
         "actions": [
           {
-            "name": "<b>Montar</b>/<b>Desmontar</b> (Inverter Cabine)",
+            "name": "MontarDesmontar (Inverter Cabine)",
             "activation": "Free",
             "frequency": "1/round",
             "detail": "Você pode <b>Montar</b> ou <b>Desmontar</b> o Minotauro pela primeira vez em cada rodada como uma <b>Ação Livre</b>."
@@ -2808,7 +2808,7 @@
     "counters": [
       {
         "id": "ctr_zf4_solidcore",
-        "name": "<b>Cargas</b> ZF4",
+        "name": "Cargas ZF4",
         "default_value": 1,
         "min": 1,
         "max": 4

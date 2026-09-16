@@ -44,7 +44,7 @@
       },
       {
         "name": "Supersônico",
-        "description": "Como uma  <b>Ação Rápida</b> no seu turno, você pode girar seus propulsores. Se terminar seu turno voando, você pode indicar um personagem na linha de visão e dentro de um <b>Alcance</b> igual à sua <b>Velocidade</b> e ganhar a <b>Reação</b> Supersônico.",
+        "description": "Como uma <b>Ação Rápida</b> no seu turno, você pode girar seus propulsores. Se terminar seu turno voando, você pode indicar um personagem na linha de visão e dentro de um <b>Alcance</b> igual à sua <b>Velocidade</b> e ganhar a <b>Reação</b> Supersônico.",
         "actions": [
           {
             "id": "act_ace_supersonic_spinup",
