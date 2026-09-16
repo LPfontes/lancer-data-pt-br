@@ -154,7 +154,7 @@
     "source": "SSC",
     "license": "Monarch",
     "license_level": 2,
-    "effect": "Escolha um <b>  <b>Lançador</b></b> ou Canhão: ele adquire <b>+5 de Alcance</b> e <b>Artilharia</b>.",
+    "effect": "Escolha um Lançador ou <b>Canhão</b>: ele adquire <b>+5 de Alcance</b> e <b>Artilharia</b>.",
     "description": "Modificações de estabilização aprimoram encaixes físicos e softwares de mira, garantindo que as armas permaneçam niveladas, firmes e em ângulo apropriado independentemente do terreno ou das manobras do piloto.",
     "added_range": [
       {

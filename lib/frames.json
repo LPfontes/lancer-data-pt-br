@@ -2478,11 +2478,11 @@
     },
     "traits": [
       {
-        "name": "  <b>Lançador</b> de Assalto",
+        "name": "Lançador de Assalto",
         "description": "1/rodada, o Iskander pode arremessar uma Granada ou plantar uma Mina como se tivesse <b>Alcance 15</b>.",
         "active_effects": [
           {
-            "name": "  <b>Lançador</b> de Assalto",
+            "name": "Lançador de Assalto",
             "frequency": "1/round",
             "detail": "Você pode arremessar uma Granada ou plantar uma Mina como se tivesse <b>Alcance 15</b>."
           }
@@ -2490,13 +2490,13 @@
       },
       {
         "name": "Posicionadores de Minas",
-        "description": "1/rodada, quando o Iskander plantar uma Mina (incluindo usando seu traço <b>  <b>Lançador</b></b> de Assalto), ele pode plantar até duas outras Minas em espaços livres adjacentes à primeira mina como uma <b>Ação Livre</b>.",
+        "description": "1/rodada, quando o Iskander plantar uma Mina (incluindo usando seu traço <b>Lançador de Assalto</b>), ele pode plantar até duas outras Minas em espaços livres adjacentes à primeira mina como uma <b>Ação Livre</b>.",
         "actions": [
           {
             "name": "Posicionadores de Minas",
             "activation": "Free",
             "frequency": "1/round",
-            "trigger": "Você planta uma Mina (incluindo usando seu traço <b>  <b>Lançador</b></b> de Assalto).",
+            "trigger": "Você planta uma Mina (incluindo usando seu traço <b>Lançador de Assalto</b>).",
             "detail": "Você pode plantar até duas outras Minas em espaços livres adjacentes à primeira mina como uma <b>Ação Livre</b>."
           }
         ]

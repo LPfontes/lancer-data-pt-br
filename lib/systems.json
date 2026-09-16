@@ -1149,7 +1149,7 @@
   },
   {
     "id": "ms_caltrop_launcher",
-    "name": "  <b>Lançador</b> de Estrepes",
+    "name": "Lançador de Estrepes",
     "sp": 1,
     "tags": [
       {
@@ -3337,7 +3337,7 @@
   },
   {
     "id": "ms_flak_launcher",
-    "name": "  <b>Lançador</b> Anti-Aéreo",
+    "name": "Lançador Anti-Aéreo",
     "sp": 2,
     "source": "HA",
     "license": "Barbarossa",

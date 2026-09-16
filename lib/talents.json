@@ -783,7 +783,7 @@
     "ranks": [
       {
         "name": "Protótipo",
-        "description": "Ao realizar um Reparo Completo, você pode, com algumas tentativas e erros, instalar um protótipo de sistema de armas em seu mecha. Você pode escolher características para seu protótipo de arma com base no seguinte perfil sempre que realizar um Reparo Completo, sempre rolando novamente 1d6+2 para determinar o valor de Limitado:<br>Protótipo de Arma<br>Principal [Corpo a Corpo, CQR, Fuzil, Canhão, <b>Lançador</b>, Nexo], Limitado [1d6+2], Exagerado [<b>Ameaça</b> 1 ou <b>Alcance 10</b>] [1d6+2 Cinético, explosivo ou Energético]<br>Esta arma é um protótipo experimental, personalizado de acordo com as suas necessidades específicas.<br>Ao instalar ou durante um Reparo Completo, você pode escolher um novo tipo de arma, tipo de <b>Dano</b> e <b>Ameaça</b> 1 (armas do tipo corpo a corpo) ou <b>Alcance 10</b> (todos os outros tipos). Além disso, sempre que executar um Reparo Completo, role novamente 1d6+2 para determinar os usos de Limitado desta arma.<br>Esta arma conta como um encaixe integrado e não requer um encaixe.",
+        "description": "Ao realizar um Reparo Completo, você pode, com algumas tentativas e erros, instalar um protótipo de sistema de armas em seu mecha. Você pode escolher características para seu protótipo de arma com base no seguinte perfil sempre que realizar um Reparo Completo, sempre rolando novamente 1d6+2 para determinar o valor de Limitado:<br>Protótipo de Arma<br>Principal [Corpo a Corpo, CQR, Fuzil, Canhão, Lançador, Nexo], Limitado [1d6+2], Exagerado [<b>Ameaça</b> 1 ou <b>Alcance 10</b>] [1d6+2 Cinético, explosivo ou Energético]<br>Esta arma é um protótipo experimental, personalizado de acordo com as suas necessidades específicas.<br>Ao instalar ou durante um Reparo Completo, você pode escolher um novo tipo de arma, tipo de <b>Dano</b> e <b>Ameaça</b> 1 (armas do tipo corpo a corpo) ou <b>Alcance 10</b> (todos os outros tipos). Além disso, sempre que executar um Reparo Completo, role novamente 1d6+2 para determinar os usos de Limitado desta arma.<br>Esta arma conta como um encaixe integrado e não requer um encaixe.",
         "integrated": [
           "mw_prototype_1"
         ],
@@ -1859,12 +1859,12 @@
     "ranks": [
       {
         "name": "Dilúvio Sísmico",
-        "description": "1/rodada, quando atacar com sucesso usando um <b>Lançador</b> e consumir <b>Travado em Mira</b>, você também pode deixar seu alvo <b>Prostrado</b>.",
+        "description": "1/rodada, quando atacar com sucesso usando um Lançador e consumir <b>Travado em Mira</b>, você também pode deixar seu alvo <b>Prostrado</b>.",
         "active_effects": [
           {
             "name": "Dilúvio Sísmico",
-            "detail": "1/rodada, quando atacar com sucesso usando um <b>Lançador</b> e consumir <b>Travado em Mira</b>, você também pode deixar seu alvo <b>Prostrado</b>.",
-            "condition": "Você obtém sucesso em um ataque com um <b>Lançador</b> e consome <b>Travado em Mira</b>",
+            "detail": "1/rodada, quando atacar com sucesso usando um Lançador e consumir <b>Travado em Mira</b>, você também pode deixar seu alvo <b>Prostrado</b>.",
+            "condition": "Você obtém sucesso em um ataque com um Lançador e consome <b>Travado em Mira</b>",
             "frequency": "1/round",
             "add_status": [
               {
@@ -1884,24 +1884,24 @@
             "weapon_sizes": [
               "any"
             ],
-            "detail": "1/rodada, quando atacar com sucesso usando um <b>Lançador</b> e consumir <b>Travado em Mira</b>, você também pode deixar seu alvo <b>Prostrado</b>."
+            "detail": "1/rodada, quando atacar com sucesso usando um Lançador e consumir <b>Travado em Mira</b>, você também pode deixar seu alvo <b>Prostrado</b>."
           }
         ]
       },
       {
         "name": "Domínio da Tempestade",
-        "description": "Você personalizou seu mecha com sistemas auxiliares de mísseis de concussão. 1/rodada, ao atingir um personagem ou objeto com um <b>Lançador</b>, você pode escolher um dos seguintes efeitos:<ul><li><b>Relâmpago</b>: Você dispara uma rajada concentrada de mísseis naquele personagem. Ele deve obter sucesso em um <b>salvamento de Casco</b> ou é repelido de você por 3 espaços; a força do tiro então te joga para trás em 3 espaços, para um lado oposto à direção do tiro.</li><li><b>Trovão</b>: Você dispara uma rajada de mísseis em uma área de <b>Emanação</b> 2 ao redor do alvo. Os personagens na área devem obter sucesso em um <b>salvamento de Agilidade</b> ou são repelidos para longe do alvo por 1 espaço. O alvo primário não é afetado.</li></ul>",
+        "description": "Você personalizou seu mecha com sistemas auxiliares de mísseis de concussão. 1/rodada, ao atingir um personagem ou objeto com um Lançador, você pode escolher um dos seguintes efeitos:<ul><li><b>Relâmpago</b>: Você dispara uma rajada concentrada de mísseis naquele personagem. Ele deve obter sucesso em um <b>salvamento de Casco</b> ou é repelido de você por 3 espaços; a força do tiro então te joga para trás em 3 espaços, para um lado oposto à direção do tiro.</li><li><b>Trovão</b>: Você dispara uma rajada de mísseis em uma área de <b>Emanação</b> 2 ao redor do alvo. Os personagens na área devem obter sucesso em um <b>salvamento de Agilidade</b> ou são repelidos para longe do alvo por 1 espaço. O alvo primário não é afetado.</li></ul>",
         "active_effects": [
           {
             "name": "Domínio da Tempestade",
-            "detail": "1/rodada, ao atingir um personagem ou objeto com um <b>Lançador</b>, você pode escolher um dos seguintes efeitos: <b>Relâmpago</b> ou <b>Trovão</b>.",
-            "condition": "Você atinge um personagem ou objeto com um <b>Lançador</b>",
+            "detail": "1/rodada, ao atingir um personagem ou objeto com um Lançador, você pode escolher um dos seguintes efeitos: <b>Relâmpago</b> ou <b>Trovão</b>.",
+            "condition": "Você atinge um personagem ou objeto com um Lançador",
             "frequency": "1/round"
           },
           {
             "name": "Domínio da Tempestade: Relâmpago",
             "detail": "Você dispara uma rajada concentrada de mísseis naquele personagem. Ele deve obter sucesso em um <b>salvamento de Casco</b> ou é repelido de você por 3 espaços; a força do tiro então te joga para trás em 3 espaços, para um lado oposto à direção do tiro.",
-            "condition": "Você atinge um personagem ou objeto com um <b>Lançador</b>",
+            "condition": "Você atinge um personagem ou objeto com um Lançador",
             "frequency": "1/round",
             "save": {
               "stat": "hull",
@@ -1911,7 +1911,7 @@
           {
             "name": "Domínio da Tempestade: Trovão",
             "detail": "Você dispara uma rajada de mísseis em uma área de <b>Emanação</b> 2 ao redor do alvo. Os personagens na área devem obter sucesso em um <b>salvamento de Agilidade</b> ou são repelidos para longe do alvo por 1 espaço. O alvo primário não é afetado.",
-            "condition": "Você atinge um personagem ou objeto com um <b>Lançador</b>",
+            "condition": "Você atinge um personagem ou objeto com um Lançador",
             "frequency": "1/round",
             "save": {
               "stat": "agility",
@@ -1930,7 +1930,7 @@
             "weapon_sizes": [
               "any"
             ],
-            "detail": "1/rodada, ao atingir um personagem ou objeto com um <b>Lançador</b>, você pode escolher um dos seguintes efeitos: <b>Relâmpago</b> (Repulsão 3 e Auto-Repulsão 3) ou <b>Trovão</b> (<b>Emanação</b> 2, <b>Repulsão</b> 1)."
+            "detail": "1/rodada, ao atingir um personagem ou objeto com um Lançador, você pode escolher um dos seguintes efeitos: <b>Relâmpago</b> (Repulsão 3 e Auto-Repulsão 3) ou <b>Trovão</b> (<b>Emanação</b> 2, <b>Repulsão</b> 1)."
           }
         ]
       },

@@ -637,7 +637,7 @@
   },
   {
     "id": "mw_bristlecrown_flechette_launcher",
-    "name": "  <b>Lançador</b> de Flechete Coroa",
+    "name": "Lançador de Flechete Coroa",
     "mount": "Auxiliary",
     "type": "CQB",
     "damage": [
@@ -656,7 +656,7 @@
     "license": "Blackbeard",
     "license_level": 2,
     "effect": "Esta arma ignora as penalidades de distância quando você estiver <b>Engajado</b> e causa <b>3 de Dano Cinético</b> (em vez de 1) em alvos Agarrados ou Biológicos.",
-    "description": "O <b>  <b>Lançador</b></b> Flechete Coroa da EIP-EN usa um mecanismo análogo à colmeia para projetar uma zona de morte de alvos vulneráveis em uma cúpula ao redor do usuário, negando proativamente ações hostis do nível de infantaria.",
+    "description": "O Lançador de Flechetes Coroa da EIP-EN usa um mecanismo análogo à colmeia para projetar uma zona de morte de alvos vulneráveis em uma cúpula ao redor do usuário, negando proativamente ações hostis do nível de infantaria.",
     "license_id": "mf_blackbeard"
   },
   {
@@ -1418,7 +1418,7 @@
   },
   {
     "id": "mw_burst_launcher",
-    "name": "  <b>Lançador</b> de Rajada",
+    "name": "Lançador de Rajada",
     "mount": "Main",
     "type": "Launcher",
     "damage": [
