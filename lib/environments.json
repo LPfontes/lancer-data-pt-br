@@ -32,7 +32,7 @@
   {
     "id": "env_particulatestorms",
     "name": "Tempestades de Partículas",
-    "description": "Este planeta é varrido por tempestades brutais e abrasivas de areia, rocha ou metal. Durante as tempestades, os mechas sempre têm <b>Cobertura Leve<b>.. Pilotos que saem de seus mechas <b>sofrem 1 de Dano Cinético</b> (PF) a cada turno que estão do lado de fora."
+    "description": "Este planeta é varrido por tempestades brutais e abrasivas de areia, rocha ou metal. Durante as tempestades, os mechas sempre têm <b>Cobertura Leve</b>.. Pilotos que saem de seus mechas <b>sofrem 1 de Dano Cinético</b> (PF) a cada turno que estão do lado de fora."
   },
   {
     "id": "env_electricalstorms",
@@ -47,7 +47,7 @@
   {
     "id": "env_dangeroustorms",
     "name": "Tempestades Perigosas",
-    "description": "Tempestades de fogo, meteoros, chuva ácida, gelo ou outras partículas destrutivas varrem este planeta. Durante as tempestades, todos os personagens <b>sofrem 2 de Dano</b> Energético (PF) no final de seus turnos, a menos que estejam adjacentes a um objeto que conceda <b>Cobertura Pesada<b>."
+    "description": "Tempestades de fogo, meteoros, chuva ácida, gelo ou outras partículas destrutivas varrem este planeta. Durante as tempestades, todos os personagens <b>sofrem 2 de Dano</b> Energético (PF) no final de seus turnos, a menos que estejam adjacentes a um objeto que conceda <b>Cobertura Pesada</b>."
   },
   {
     "id": "env_oceanworld",
