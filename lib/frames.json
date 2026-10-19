@@ -8,7 +8,7 @@
       "Balanced"
     ],
     "y_pos": 25,
-    "description": "A maioria dos humanos não pensa em perguntar sobre a história da água que bebem, da terra que pisam ou do ar que respiram. E, no entanto, sem água, terra e ar, não haveria lugar para a humanidade fazer um lar.<br>Da mesma forma, o SMG-MP1 'Evereste' é muitas vezes subestimado, sua importância descartada em favor de outros Chassis mais especializados. Um mecha simples e despretensioso, definido por linhas simples, graça funcional, compatibilidade universal e robustez, o Evereste é tão fundamental para o chassi mecanizado moderno quanto o mundo natural é para a vida humana. O Evereste não é o mecha mais especializado, mas é a espinha dorsal de nosso imperativo de expansão. De seus ombros, a humanidade avança.<br>Antes da adoção oficial do nome pela SMG, 'Evereste' era um nome de uso dado ao chassi por seus pilotos. O Monte Evereste – ou Sagarmatha, ou Chomolungma, como era chamado em línguas humanas mais antigas – é a montanha mais alta do Berço, embora não seja o pico mais proeminente no espaço conhecido, nem mesmo o maior no sistema estelar do Berço, e ainda assim pilotos por toda a galáxia chamam seus MP1 por esse nome antigo. Por quê?<br>A resposta sentimental é que o nome é um lembrete do que já foi o limite da <b>Resistência</b> humana – outrora o auge da realização humana. Alcançar o cume do Evereste era desafiar a morte e ficar no topo do mundo – o culminar de meses, até anos, de treinamento, investimento e trabalho duro. Alcançar o pico também foi um triunfo das pessoas, Sistemas e instituições por trás do indivíduo – um triunfo muitas vezes não reconhecido, ou deliberadamente apagado.<br>Sagarmatha. Chomolungma.<br>Mesmo antes da Queda, quando os cofres Massif foram construídos, alguns nomes – algumas histórias – receberam prioridade sobre outros.<br>A verdadeira história por trás do nome Evereste é provavelmente muito menos deliberada. Em algum momento, um piloto recém-formado, frustrado com as convenções de nomenclatura simples da SMG, pintou 'EVERESTE' na lateral de seu MP1. Talvez fosse um codinome, ou talvez representasse o orgulho que sentia pelo sucesso. De qualquer forma, o nome pegou: outros adotaram o nome, e ao longo de cinco séculos ele cresceu para se tornar a designação oficial não oficial do chassi MP1.<br>Pilotos veteranos podem nunca mais voltar ao Evereste depois de seguirem em frente, mas sempre se lembrarão de alcançar aquele primeiro cume – o topo da montanha onde provaram que podiam fincar sua própria bandeira no pico do mundo.<br>Sagarmatha. Chomolungma.<br>Evereste – você nunca o esquecerá.",
+    "description": "A maioria dos humanos não pensa em perguntar sobre a história da água que bebem, da terra que pisam ou do ar que respiram. E, no entanto, sem água, terra e ar, não haveria lugar para a humanidade fazer um lar.<br>Da mesma forma, o SMG-MP1 'Evereste' é muitas vezes subestimado, sua importância descartada em favor de outros Chassis mais especializados. Um mecha simples e despretensioso, definido por linhas simples, graça funcional, compatibilidade universal e robustez, o Evereste é tão fundamental para o chassi mecanizado moderno quanto o mundo natural é para a vida humana. O Evereste não é o mecha mais especializado, mas é a espinha dorsal de nosso imperativo de expansão. De seus ombros, a humanidade avança.<br>Antes da adoção oficial do nome pela SMG, 'Evereste' era um nome de uso dado ao chassi por seus pilotos. O Monte Evereste – ou Sagarmatha, ou Chomolungma, como era chamado em línguas humanas mais antigas – é a montanha mais alta do Berço, embora não seja o pico mais proeminente no espaço conhecido, nem mesmo o maior no sistema estelar do Berço, e ainda assim pilotos por toda a galáxia chamam seus MP1 por esse nome antigo. Por quê?<br>A resposta sentimental é que o nome é um lembrete do que já foi o limite da resistência humana – outrora o auge da realização humana. Alcançar o cume do Evereste era desafiar a morte e ficar no topo do mundo – o culminar de meses, até anos, de treinamento, investimento e trabalho duro. Alcançar o pico também foi um triunfo das pessoas, Sistemas e instituições por trás do indivíduo – um triunfo muitas vezes não reconhecido, ou deliberadamente apagado.<br>Sagarmatha. Chomolungma.<br>Mesmo antes da Queda, quando os cofres Massif foram construídos, alguns nomes – algumas histórias – receberam prioridade sobre outros.<br>A verdadeira história por trás do nome Evereste é provavelmente muito menos deliberada. Em algum momento, um piloto recém-formado, frustrado com as convenções de nomenclatura simples da SMG, pintou 'EVERESTE' na lateral de seu MP1. Talvez fosse um codinome, ou talvez representasse o orgulho que sentia pelo sucesso. De qualquer forma, o nome pegou: outros adotaram o nome, e ao longo de cinco séculos ele cresceu para se tornar a designação oficial não oficial do chassi MP1.<br>Pilotos veteranos podem nunca mais voltar ao Evereste depois de seguirem em frente, mas sempre se lembrarão de alcançar aquele primeiro cume – o topo da montanha onde provaram que podiam fincar sua própria bandeira no pico do mundo.<br>Sagarmatha. Chomolungma.<br>Evereste – você nunca o esquecerá.",
     "mounts": [
       "Main",
       "Flex",
@@ -56,7 +56,7 @@
     ],
     "core_system": {
       "name": "Injetor de Combustível Hiperespec",
-      "active_name": "Aumentar Potência",
+      "active_name": "Potencializar",
       "active_effect": "Pelo resto desta cena, você ganha <b>+1 de Precisão</b> em todos os ataques, testes e salvaguardas; adicionalmente, 1/turno, você pode <b>Impulsiar</b> como uma <b>Ação Livre</b>.",
       "use": "Encounter",
       "frequency": "1/scene",
@@ -85,6 +85,88 @@
       ]
     },
     "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_standard_pattern_i_everest.png",
+    "license_id": "mf_standard_pattern_i_everest"
+  },
+  {
+    "id": "mf_chomolungma",
+    "license_level": 0,
+    "source": "GMS",
+    "name": "Chomolungma",
+    "variant": "Evereste",
+    "mechtype": [
+      "Controller",
+      "Support"
+    ],
+    "y_pos": 25,
+    "description": "<p>O Chomolungma é um chassi avançado da SMG ao qual todos os personagens têm acesso a partir do NL0. Esta Variante de Chassi não é mutuamente exclusiva com o Evereste.</p><p>Embora a SMG seja amplamente percebida como uma fabricante conservadora e rígida, a União dedica recursos substanciais à pesquisa e desenvolvimento de novas armas e avanços tecnológicos para manter ou superar a paridade com atores de nível galáctico como o Arsenal Harrison ou as Baronias Comerciais Karrakinas. Desenvolvido pela Agência de Pesquisas Especiais de Projetos Avançados da União em conjunto com a Sistemas Massivos Gerais, o Chomolungma é um chassi novo e mais avançado tecnologicamente, baseado no design do SMG Padrão I.</p><p>O Chomolungma é um chassi especializado, trocando capacidade de montagem de armamentos por sensores adicionais, sistemas de comunicação/transmissão e sistemas avançados de guerra eletrônica da SMG, incluindo pacotes de programas de intrusão sistêmica de ponta e hiperprocessadores de trama recursiva. Diante de conflitos recentes, a União começou a aumentar a distribuição de licenças do Chomolungma entre unidades regulares e auxiliares, para acompanhar o ritmo das evoluções nas táticas e tecnologias de campo de batalha.</p>",
+    "mounts": [
+      "Main/Aux",
+      "Flex"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 10,
+      "evasion": 8,
+      "edef": 10,
+      "heatcap": 6,
+      "repcap": 4,
+      "sensor_range": 15,
+      "tech_attack": 1,
+      "save": 11,
+      "speed": 4,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "Brilho",
+        "description": "1/cena, o Chomolungma pode realizar qualquer ação de <b>Tech Rápida</b> como uma <b>Ação Livre</b> e, em seguida, pode <b>Reforçar</b> ou <b>Travar Mira</b> como uma <b>Ação Livre</b>.",
+        "use": "Encounter",
+        "active_effects": [
+          {
+            "name": "Brilho",
+            "frequency": "1/scene",
+            "detail": "Você pode realizar qualquer ação de <b>Tech Rápida</b> como uma <b>Ação Livre</b> e, em seguida, pode <b>Reforçar</b> ou <b>Travar Mira</b> como uma <b>Ação Livre</b>."
+          }
+        ]
+      },
+      {
+        "name": "Sifão de Dados",
+        "description": "Sempre que o Chomolungma fizer um <b>Ataque Tecnológico</b> contra um personagem hostil, ele também pode <b>Escanear</b> o alvo automaticamente."
+      },
+      {
+        "name": "Peças Substituíveis",
+        "description": "Enquanto estiver descansando, o Chomolungma pode ser reparado à taxa de 1 Reparo por 1 <b>Dano de Estrutura</b>, em vez de 2 Reparos.",
+        "bonuses": [
+          {
+            "id": "cheap_struct",
+            "val": 1
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "PACOTE AVANÇADO DE INTRUSÃO",
+      "description": "Pacote Avançado de Intrusão embarcado no chassi Chomolungma, fornecendo rotinas de invasão recursiva de nível militar e protocolos de guerra eletrônica de ampla frequência desenvolvidos pela Agência de Pesquisas Especiais da União.",
+      "passive_name": "Pacote Avançado de Intrusão",
+      "passive_effect": "<p>O Chomolungma ganha as seguintes opções adicionais para <b>Invadir</b>:</p><ul><li><b>Bloqueio de Controle de Equilíbrio:</b> Empurre o alvo 2 espaços em qualquer direção e o deixe <b>Prostrado</b>. Se ele já estiver Prostrado, ele se torna <b>Imobilizado</b> até o final do próximo turno dele. Você só pode Imobilizar cada personagem desta forma 1/cena.</li><li><b>Esmagador de Sistema:</b> Seu alvo recebe 2 de <b>Calor</b> adicional, totalizando 4 de Calor. Se esse Invadir fizer com que o alvo exceda sua Cap. de Calor, ele também sofre 4 de <b>Queimadura</b>. Isso só pode ser usado 1/cena em cada personagem.</li></ul>",
+      "active_name": "Pulso Codificado de Área Ampla",
+      "activation": "Full",
+      "use": "Encounter",
+      "frequency": "1/scene",
+      "active_effect": "<b>Ativar (1 PN) Pulso Codificado de Área Ampla, Ação Completa</b>",
+      "active_actions": [
+        {
+          "name": "Pulso Codificado de Área Ampla",
+          "activation": "Full",
+          "cost": 1,
+          "detail": "Escolha qualquer número de personagens hostis ao alcance dos <b>Sensores</b> e faça um ataque tecnológico de <b>Invadir</b> especial contra eles, ignorando <b>Invisível</b> e linha de visão. Em um acerto, aplique os efeitos normais de Invadir, escolhendo opções individualmente para cada alvo. Em caso de falha, os alvos se tornam <b>Impedidos</b> até o final do próximo turno deles."
+        }
+      ]
+    },
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_chomolungma.png",
     "license_id": "mf_standard_pattern_i_everest"
   },
   {
