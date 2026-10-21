@@ -1,0 +1,7030 @@
+/**
+ * cards-data.js - Banco de Dados Resumido e Pré-processado para Cards LANCER RPG
+ * Tradução PT-BR • Compêndio Otimizado para Impressão de Mesa e Editor
+ * Total: 44 Ações | 85 Armas | 124 Sistemas | 15 Status
+ */
+window.LANCER_CARDS_DATA = {
+  "actions": [
+    {
+      "id": "act_move",
+      "category": "action",
+      "name": "Movimento",
+      "activation": "Movimento",
+      "terse": "Mova seu personagem até a sua <b>Velocidade</b> em qualquer direção.",
+      "detail": "Em seu turno, os personagens podem sempre mover uma quantidade de espaços igual à sua <b>VELOCIDADE</b>, além de qualquer outra ação. Isso é chamado de movimento padrão para distinguir do movimento fornecido por sistemas e talentos.\nUm personagem só conta como movendo se mover-se 1 ou mais espaços<b>[cite: 1937]</b>.\nPersonagens podem se mover para dentro de qualquer espaço adjacente, mesmo diagonalmente, desde que o espaço não esteja ocupado por uma obstrução (e que seja um para o qual normalmente poderiam se mover - por exemplo, personagens não podem mover-se direto para cima, a menos que possam voar). Existem diversos fatores que podem afetar o movimento, detalhados aqui.",
+      "tags": [],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_overcharge",
+      "category": "action",
+      "name": "Sobrecarregar",
+      "activation": "Ação Livre",
+      "terse": "<b>SOBRECARREGAR</b> permite que você realize imediatamente qualquer <b>ação rápida</b> de sua escolha como uma <b>Ação Livre</b>, mesmo uma que você já tenha feito neste turno.",
+      "detail": "Quando <b>SOBRECARREGAR</b>, você brevemente leva seu mecha além das especificações de fábrica para receber uma vantagem tática. Momentos de ação intensa não vão taxar muito os sistemas do mecha, mas ação constante além dos limites prescritos tem seu preço.\nUma vez por turno, você pode <b>SOBRECARREGAR</b> seu mecha, permitindo fazer qualquer <b>ação rápida</b> como uma <b>ação livre</b> – mesmo que sejam ações que já foram feitas neste turno.\nNa primeira vez que <b>SOBRECARREGAR</b>, você sofre 1 de calor.\nNa segunda vez que <b>SOBRECARREGAR</b>, você sofre 1d3 de calor.\nNa terceira vez, você sofre 1d6 de calor, e toda vez após isso você sofre 1d6+4 de calor.\nUm <b>REPARO COMPLETO</b> reinicia essa contagem.",
+      "tags": [],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_skirmish",
+      "category": "action",
+      "name": "Alvejar",
+      "activation": "Ação Rápida",
+      "terse": "Ataque com uma única arma. Além do seu ataque primário, você também pode atacar com uma arma <b>AUXILIAR</b> diferente que esteja no mesmo encaixe.",
+      "detail": "Quando <b>ALVEJAR</b>, você ataca com uma única arma.\nPara <b>ALVEJAR</b>, escolha uma arma e um alvo válido dentro do ALCANCE (ou AMEAÇA) e então faça um ataque.\n• Além do seu ataque primário, você também pode atacar com uma arma <b>AUXILIAR</b> diferente que esteja no mesmo encaixe. Essa arma não causa dano bônus.\n• Armas <b>SUPERPESADAS</b> são volumosas demais para usar com <b>ALVEJAR</b>, e só podem ser disparadas como parte de uma <b>BARRAGEM</b>.",
+      "tags": [],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_boost",
+      "category": "action",
+      "name": "Impulsionar",
+      "activation": "Ação Rápida",
+      "terse": "Faça um movimento extra de pelo menos 1 espaço, até a sua <b>VELOCIDADE</b>.",
+      "detail": "Quando <b>IMPULSIONAR</b>, Você se move pelo menos 1 espaço, até a sua <b>VELOCIDADE</b>. Isso permite que você faça um movimento adicional além do seu movimento padrão. Certos talentos e sistemas só podem ser usados quando você usar <b>IMPULSIONAR</b>, não quando fizer um movimento padrão.",
+      "tags": [],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_ram",
+      "category": "action",
+      "name": "Empurrar",
+      "activation": "Ação Rápida",
+      "terse": "Tente derrubar ou empurrar um alvo. Em um sucesso, o alvo fica <b>PROSTRADO</b> e você pode escolher empurrá-lo um espaço para trás.",
+      "detail": "Quando <b>EMPURRAR</b>, você faz um ataque corpo a corpo com o objetivo de derrubar ou empurrar um alvo.\nPara <b>EMPURRAR</b>, faça um ataque corpo a corpo contra um personagem adjacente do mesmo TAMANHO ou menor que você. Se você for bem-sucedido, seu alvo fica <b>PROSTRADO</b> e você pode escolher empurrá-lo um espaço para trás, na direção oposta.",
+      "tags": [
+        "Aplica: prone"
+      ],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_ram_npc",
+      "category": "action",
+      "name": "Empurrar (PNJ)",
+      "activation": "Ação Rápida",
+      "terse": "O PNJ faz um ataque corpo a corpo contra um personagem adjacente de tamanho igual ou menor, com bônus de +1/2/3. Em um sucesso, derruba o alvo <b>PROSTRADO</b>.",
+      "detail": "O PNJ faz um ataque corpo a corpo contra um personagem adjacente de tamanho igual ou menor, com bônus de +1/2/3. Em um sucesso, derruba o alvo <b>PROSTRADO</b>.",
+      "tags": [
+        "Aplica: prone"
+      ],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_grapple",
+      "category": "action",
+      "name": "Agarrar",
+      "activation": "Ação Rápida",
+      "terse": "Tente segurar um alvo, potencialmente o imobilizando ou montando nele.",
+      "detail": "Quando <b>AGARRAR</b>, você tenta segurar um alvo e sobrepujá-lo – desarmando, subjugando ou causando dano a ele para que não possa fazer o mesmo a você.\nPara <b>AGARRAR</b>, escolha um personagem adjacente e faça um ataque corpo a corpo. Em um acerto:\n• ambos os personagens ficam ENGAJADOS;\n• nenhum dos personagens pode <b>IMPULSIONAR</b> ou usar reações pela duração do agarrão;\n• o personagem menor fica IMOBILIZADO, mas se move quando o personagem maior se mover, espelhando seus movimentos. Se ambos os lados forem do mesmo TAMANHO, ambos podem fazer um teste disputado de CASCO no início dos seus turnos; o vencedor conta como maior que o perdedor até que o teste seja repetido.\n<b>AGARRAR</b> termina quando:\n• qualquer um dos personagens quebrar adjacência, como quando ambos são empurrados por outro efeito;\n• o atacante escolhe terminar o agarrão como uma <b>ação livre</b>;\n• o defensor se libertar sendo bem-sucedido em um teste disputado de CASCO como uma <b>ação rápida</b>.\nSe um <b>AGARRAR</b> envolver mais que dois personagens, as mesmas regras se aplicam, mas quando contar o TAMANHO, some o TAMANHO de todos os personagens de cada lado. Por exemplo, se dois personagens aliados TAMANHO 1 estiverem agarrando um único inimigo TAMANHO 2, os personagens aliados contam como TAMANHO 2 combinado e podem tentar arrastar seu inimigo.",
+      "tags": [],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_grapple_npc",
+      "category": "action",
+      "name": "Agarrar (PNJ)",
+      "activation": "Ação Rápida",
+      "terse": "O PNJ faz um ataque corpo a corpo contra um personagem adjacente com bônus de +1/2/3, agarrando-o em caso de sucesso.",
+      "detail": "O PNJ faz um ataque corpo a corpo contra um personagem adjacente com bônus de +1/2/3, agarrando-o em caso de sucesso.",
+      "tags": [],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_quick_tech",
+      "category": "action",
+      "name": "Programar Rápido",
+      "activation": "Ação Rápida",
+      "terse": "Realize <b>ações rápidas</b> de guerra eletrônica ou de reforço de sistemas.",
+      "detail": "Quando usar <b>PROGRAMAR RÁPIDO</b>, você engaja em guerra eletrônica, contramedidas e outras ações técnicas, geralmente ajudado pelos poderosos núcleos computacionais e de simulação de um mecha.\nSempre que usar essa ação, escolha uma opção da lista de <b>PROGRAMAR RÁPIDO</b>. Todos os mechas têm acesso a essas opções, mas alguns sistemas as melhoram ou disponibilizam novas opções.\nDiferente de outras <b>ações rápidas</b>, <b>PROGRAMAR RÁPIDO</b> pode ser usada mais de uma vez por turno; entretanto, uma opção diferente deve ser escolhida a cada vez, exceto se especificado de outra forma ou concedido como uma <b>ação livre</b>.",
+      "tags": [],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_bolster",
+      "category": "action",
+      "name": "Reforçar",
+      "activation": "Programar Rápido",
+      "terse": "Melhore os sistemas de outro personagem.",
+      "detail": "Quando <b>REFORÇAR</b>, você usa o formidável poder de processamento de seu mecha para melhorar os sistemas de outro personagem.\nPara <b>REFORÇAR</b>, escolha um personagem ao alcance dos SENSORES. Ele recebe +2 de PRECISÃO no próximo teste de perícia ou salvamento que fizer entre agora e o final do próximo turno dele. Personagens só podem se beneficiar de um <b>REFORÇAR</b> por vez.",
+      "tags": [],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_scan",
+      "category": "action",
+      "name": "Escanear",
+      "activation": "Programar Rápido",
+      "terse": "Realize um escaneamento profundo em um inimigo.",
+      "detail": "Quando <b>ESCANEAR</b>, você usa os poderosos sensores de seu mecha para realizar um escaneamento profundo em um inimigo.\nPara <b>ESCANEAR</b>, escolha um personagem ou objeto ao alcance dos SENSORES e na linha de visão, e então pergunte ao MJ uma das seguintes informações, que ele deve responder honestamente:\n• Armas, sistemas e estatísticas completas (PV, <b>VELOCIDADE</b>, EVASÃO, <b>ARMADURA</b>, PERÍCIAS DE MECHA e assim por diante) de seu alvo.\n• Uma informação sigilosa sobre o alvo, como carga ou dados confidenciais, missão atual, a identidade do piloto e assim por diante.\n• Informação genérica ou pública sobre o alvo que pode ser retirada de bancos de informação ou registros, como o número do modelo de um mecha.\nAs informações coletadas são as atuais na hora que <b>ESCANEAR</b> – se o alvo sofrer dano depois, por exemplo, você não recebe uma atualização.",
+      "tags": [],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_lockon",
+      "category": "action",
+      "name": "Travar Mira",
+      "activation": "Programar Rápido",
+      "terse": "Marque um alvo digitalmente.",
+      "detail": "Quando <b>TRAVAR MIRA</b>, você marca um alvo digitalmente, iluminando-o para os sistemas de mira de seus companheiros e expondo pontos fracos.\nPara <b>TRAVAR MIRA</b>, você escolhe um personagem na linha de visão e ao alcance dos SENSORES. Ele sofre a condição TRAVADO EM MIRA. Qualquer personagem que faça um ataque contra alguém TRAVADO EM MIRA pode escolher receber +1 de PRECISÃO no ataque e então remover a condição TRAVADO EM MIRA depois que o ataque for resolvido. Isso é chamado de consumir TRAVADO EM MIRA.",
+      "tags": [
+        "Aplica: lockon"
+      ],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_invade",
+      "category": "action",
+      "name": "Invadir",
+      "activation": "Programar Rápido",
+      "terse": "Execute um ataque eletrônico direto contra um alvo.",
+      "detail": "Quando <b>INVADIR</b>, você executa um ataque eletrônico direto contra um alvo. Para <b>INVADIR</b>, faça um ataque tecnológico contra um personagem na linha de visão e ao alcance dos SENSORES. Em um sucesso, seu alvo sofre 2 de calor e você escolhe uma das opções de INVASÃO disponíveis a você. <b>FRAGMENTAR SINAL</b> está disponível para todos os personagens, e opções adicionais são concedidas por certos sistemas e equipamentos com a tag <b>INVADIR</b>. Você também pode <b>INVADIR</b> personagens aliados voluntários para criar certos efeitos. Se o seu alvo for voluntário e aliado, você automaticamente é bem-sucedido, isso não conta como um ataque e o alvo não recebe nenhum calor.",
+      "tags": [],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_inv_fragment_signal",
+      "category": "action",
+      "name": "Fragmentar Sinal",
+      "activation": "Invadir",
+      "terse": "Deixa um personagem <b>IMPEDIDO</b> e <b>LENTO</b> até o final do próximo turno dele.",
+      "detail": "Você transmite informações falsas, mensagens obscenas ou sinais fantasmas para o núcleo computacional do alvo. Ele fica <b>IMPEDIDO</b> e <b>LENTO</b> até o final do próximo turno dele.",
+      "tags": [
+        "Aplica: impaired",
+        "Aplica: slow"
+      ],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_hide",
+      "category": "action",
+      "name": "Esconder-se",
+      "activation": "Ação Rápida",
+      "terse": "Obscureça a posição do seu mecha, tornando-se ESCONDIDO e incapaz de ser identificado, localizado com precisão ou ser alvo direto de ataques ou ações hostis.",
+      "detail": "Quando <b>ESCONDER-SE</b>, você obscurece a posição do seu mecha para se reposicionar, evitar sofrer tiros, reparar ou emboscar.\nPara <b>ESCONDER-SE</b>, você não pode estar ENGAJADO e precisa estar fora da linha de visão de um inimigo, obscurecido por cobertura suficiente ou invisível. Se conseguir <b>ESCONDER-SE</b> enquanto atende a um desses critérios, você recebe o estado de ESCONDIDO.\nCobertura pesada é o suficiente para <b>ESCONDER-SE</b> enquanto ela for grande o suficiente para te ocultar, mas cobertura leve só é suficiente se você estiver completamente dentro de uma área ou zona que te garanta cobertura leve – muitos sistemas e talentos que fornecem cobertura leve ou o bom e velho obscurecimento não proveem o suficiente para se esconder atrás!\nSe estiver INVISÍVEL, você sempre pode <b>ESCONDER-SE</b>, independente de cobertura, a menos que esteja ENGAJADO.\nA localização exata de alvos ESCONDIDOS não pode ser identificada e eles não podem ser visados diretamente por ataques ou ações hostis, mas eles ainda podem ser atingidos por ataques que afetem uma área. Mesmo que os PNJs não possam localizar um personagem ESCONDIDO, eles ainda podem saber uma localização aproximada. Então, um PNJ pode descarregar um lança-chamas em uma área mesmo que não saiba exatamente onde o PJ ESCONDIDO está à espreita.\nAdicionalmente, outros personagens ignoram engajamento com você enquanto você estiver ESCONDIDO — assume-se que você está tentando se manter furtivo.\nVocê para de ficar ESCONDIDO se fizer um ataque (corpo a corpo, à distância ou tecnológico) ou se o seu mecha fizer uma ação hostil (como forçar um alvo a fazer um salvamento). Usar <b>IMPULSIONAR</b> ou reações com seu mecha também faz com que você deixe de estar ESCONDIDO. Outras ações podem ser usadas normalmente.\nVocê também perde imediatamente o estado ESCONDIDO se a sua cobertura desaparecer ou for destruída, ou se você perder cobertura devido a linha de visão (por exemplo, se um mecha pular por cima de um muro e agora consegue traçar uma linha ininterrupta até você). Se estiver se escondendo enquanto está INVISÍVEL, você perde ESCONDIDO quando deixar de estar INVISÍVEL, a menos que esteja em uma cobertura.",
+      "tags": [],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_search",
+      "category": "action",
+      "name": "Procurar",
+      "activation": "Ação Rápida",
+      "terse": "Procure por um alvo escondido.",
+      "detail": "Quando PROCURAR, você tenta identificar personagens escondidos. Para PROCURAR em um mecha, escolha um personagem ao alcance dos SENSORES que você suspeite estar ESCONDIDO e faça um teste disputado de SISTEMAS contra a AGILIDADE dele.\nPara PROCURAR quando estiver sem um mecha, faça um teste disputado de perícia, adicionando os bônus de seus gatilhos normalmente. Isso pode ser usado para revelar personagens dentro de ALCANCE 5.\nApós um personagem ESCONDIDO ser encontrado usando PROCURAR, ele imediatamente deixa de estar ESCONDIDO e pode ser localizado normalmente por qualquer personagem.",
+      "tags": [],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_search_pilot",
+      "category": "action",
+      "name": "Procurar (Piloto)",
+      "activation": "Ação Rápida",
+      "terse": "Procure por um alvo escondido.",
+      "detail": "Para PROCURAR como piloto a pé, faça um teste de perícia disputado, adicionando bônus de gatilhos normalmente. Isso pode ser usado para revelar personagens dentro de ALCANCE 5.\nApós um personagem ESCONDIDO ser encontrado usando PROCURAR, ele imediatamente perde ESCONDIDO e pode ser localizado novamente por qualquer personagem.",
+      "tags": [],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_activate_quick",
+      "category": "action",
+      "name": "Ativar (Rápida)",
+      "activation": "Ação Rápida",
+      "terse": "Ative um sistema ou equipamento que requer uma <b>ação rápida</b>.",
+      "detail": "Quando ATIVAR, você usa um sistema ou equipamento que requer uma <b>ação rápida</b> ou completa. Esses sistemas têm as tags de <b>AÇÃO RÁPIDA</b> ou <b>AÇÃO COMPLETA</b>. Você pode ATIVAR quantas vezes quiser em um turno, mas não pode ATIVAR o mesmo sistema mais de uma vez, a menos que também possa fazê-lo como uma <b>ação livre</b>.",
+      "tags": [],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_eject",
+      "category": "action",
+      "name": "Ejetar",
+      "activation": "Ação Rápida",
+      "terse": "Ejete do seu mecha, voando 6 espaços na direção de sua escolha.",
+      "detail": "Você também pode <b>EJETAR</b> como uma <b>ação rápida</b>, voando 6 espaços em uma direção à sua escolha; entretanto, esse é um sistema de emergência de uso único - ele deixa seu mecha <b>IMPEDIDO</b>. Seu mecha permanece <b>IMPEDIDO</b> e você não pode <b>EJETAR</b> novamente até seu próximo <b>REPARO COMPLETO</b>.",
+      "tags": [],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_prepare",
+      "category": "action",
+      "name": "Preparar",
+      "activation": "Ação Rápida",
+      "terse": "Prepare uma <b>ação rápida</b> para um acionamento especificado. Até o início do seu próximo turno, quando o gatilho for acionado, você pode realizar sua ação preparada como uma reação. Sua preparação conta como se você estivesse realizando a ação, então ela segue todas as restrições usuais daquela ação e de realizar múltiplas ações.",
+      "detail": "Quando <b>PREPARAR</b>, você se apronta para usar uma ação em um momento específico ou quando uma condição específica é atingida (um tiro mais vantajoso, por exemplo).\nComo uma <b>ação rápida</b>, você pode <b>PREPARAR</b> qualquer outra <b>ação rápida</b> e especificar um acionamento. Até o início do seu próximo turno, quando houver o acionamento especificado, você pode usar a <b>ação rápida</b> preparada como uma reação.\nO acionamento para sua ação preparada deve ser construído da seguinte forma: 'Quando X, então Y', onde X é a reação, ação ou movimento usado by um personagem hostil ou aliado e Y é sua <b>ação rápida</b> preparada. Por exemplo, 'quando um personagem aliado ficar adjacente a mim, eu quero jogar uma granada de fumaça' ou 'quando um personagem hostil ficar adjacente a mim, eu quero empurrar ele'.\nSua preparação conta como usar uma ação, então ela segue as restrições normais dessa ação e em usar múltiplas ações. Você não pode, por exemplo, <b>ALVEJAR</b> e então <b>PREPARAR</b> para <b>ALVEJAR</b> novamente; você também não pode se mover e então <b>PREPARAR</b> para <b>ALVEJAR</b> com uma arma de ARTILHARIA, que normalmente necessita ser disparada antes de se mover ou fazer qualquer outra coisa em seu turno. Adicionalmente, depois que <b>PREPARAR</b> uma ação, você não pode se mover ou usar quaisquer outras ações ou reações até o início do seu próximo turno ou até que sua ação preparada tenha sido acionada (o que ocorrer primeiro).\nMesmo que você não possa usar reações enquanto mantém uma ação preparada, você pode usá-las normalmente depois de a ação preparada ser acionada. Você também pode desistir de sua ação preparada, permitindo que use reações normalmente. Se a condição de acionamento não acontecer, você perde sua ação preparada.\nQuando você <b>PREPARAR</b>, isso é visível e óbvio para observadores (por exemplo, você claramente mira ou prepara sistemas).",
+      "tags": [],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_self_destruct",
+      "category": "action",
+      "name": "Autodestruir",
+      "activation": "Ação Rápida",
+      "terse": "Como uma última cartada, configure o reator do seu mecha para entrar em estado crítico e explodir.",
+      "detail": "Quando AUTODESTRUIR, você sobrecarrega o reator do seu mecha em uma cartada final catastrófica quando não houver outra opção de escapar ou você julgar seu sacrifício como necessário.\nVocê pode se AUTODESTRUIR como uma <b>ação rápida</b>, iniciando uma fusão do reator. No final do seu próximo turno, ou no final de um de seus turnos nas próximas duas rodadas (você escolhe), seu mecha explode como se tivesse sofrido uma fusão do reator. A detonação aniquila seu mecha, matando qualquer um dentro dela, provocando uma explosão de EMANAÇÃO 2 que causa 4d6 de dano explosivo. Personagens pegos na emanação que forem bem-sucedidos em um salvamento de AGILIDADE sofrem metade do dano.",
+      "tags": [],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_shut_down",
+      "category": "action",
+      "name": "Desligar",
+      "activation": "Ação Rápida",
+      "terse": "Desligue seu mecha como uma medida desesperada para encerrar ataques de sistema, recuperar o controle da <b>IA</b> e resfriá-lo. O mecha fica <b>ATORDOADO</b> até ser reiniciado com a ação LIGAR.",
+      "detail": "Quando <b>DESLIGAR</b>, seu mecha desliga completamente e entra em um estado de descanso. É sempre um risco fazer isso em campo, mas às vezes é necessário para impedir uma sobrecarga catastrófica de sistemas ou um cascateamento de PNH.\nVocê pode <b>DESLIGAR</b> seu mecha como uma <b>ação rápida</b>. Seu mecha sofre a condição DESLIGADO, com estes efeitos:\n• todo calor é removido, assim como <b>EXPOSTO</b>;\n• quaisquer PNHs em cascata retornam a um estado normal;\n• quaisquer estados ou condições que estiverem afetando seu mecha e forem causados por ações de programar, como TRAVADO EM MIRA, se encerram imediatamente;\n• o mecha adquire IMUNIDADE a todas as ações de programar e ataques tecnológicos, incluindo de quaisquer personagens aliados;\n• o mecha fica <b>ATORDOADO</b> indefinidamente. Nada pode impedir essa condição, e ela permanece até que o mecha deixe de estar DESLIGADO.\nA única forma de remover o estado DESLIGADO é LIGAR o mecha.",
+      "tags": [],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_reload",
+      "category": "action",
+      "name": "Recarregar",
+      "activation": "Ação Rápida",
+      "terse": "Recarregue uma arma como piloto.",
+      "detail": "Quando você RECARREGAR, você recarrega uma Arma de Piloto que tenha a tag <b>RECARGA</b>, tornando-a utilizável novamente.",
+      "tags": [],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_barrage",
+      "category": "action",
+      "name": "Barragem",
+      "activation": "Ação Completa",
+      "terse": "Ataque com duas armas, ou com uma única arma <b>SUPERPESADA</b>.",
+      "detail": "Quando usar <b>BARRAGEM</b>, você ataca com duas armas ou uma arma <b>SUPERPESADA</b>.\nPara usar <b>BARRAGEM</b>, escolha suas armas e um ou dois alvos diferentes que estejam dentro do alcance — para fazer um ataque com cada arma.\n• Além dos seus ataques primários, você também pode atacar com uma arma <b>AUXILIAR</b> de cada um dos seus encaixes ocupados, desde que a arma <b>AUXILIAR</b> ainda não tenha sido disparada nessa ação. Essas armas <b>AUXILIARES</b> não causam dano bônus.\n• Armas <b>SUPERPESADAS</b> só podem ser disparadas usando <b>BARRAGEM</b>.",
+      "tags": [],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_full_tech",
+      "category": "action",
+      "name": "Programar Completo",
+      "activation": "Ação Completa",
+      "terse": "Escolha e realize duas opções de <b>PROGRAMAR RÁPIDO</b>, ou realize uma ação tecnológica completa. Se escolher duas opções de <b>PROGRAMAR RÁPIDO</b>, você pode escolher a mesma opção múltiplas vezes.",
+      "detail": "Quando usar PROGRAMAR COMPLETO, você realiza múltiplas ações de programar ou uma ação única, mais complexa.\nPara PROGRAMAR COMPLETO, escolha duas opções de <b>PROGRAMAR RÁPIDO</b> ou uma única opção que requer PROGRAMAR COMPLETO para ativar. Se escolher duas opções de <b>PROGRAMAR RÁPIDO</b>, você pode escolher a mesma opção múltiplas vezes.",
+      "tags": [],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_stabilize",
+      "category": "action",
+      "name": "Estabilizar",
+      "activation": "Ação Completa",
+      "terse": "Cure e resfrie seu mecha, recarregue ou tente encerrar condições que o afetam.",
+      "detail": "Quando <b>ESTABILIZAR</b>, você ativa os protocolos de emergência para remover calor em excesso dos sistemas de seu mecha, reparar seu chassi onde for possível ou eliminar um código hostil.\nPara <b>ESTABILIZAR</b>, escolha um dos seguintes:\n• Esfrie seu mecha, removendo todo calor e <b>EXPOSTO</b>.\n• Marque 1 de REPARO para restaurar todos os PV.\nAdicionalmente, escolha um dos seguintes:\n• Recarregue todas as armas com <b>RECARGA</b>.\n• Remova qualquer queimadura que atualmente está afetando seu mecha.\n• Remova uma condição que não foi causada por um dos seus próprios sistemas, talentos etc.\n• Remova uma condição de um aliado adjacente que não foi causada por um de seus próprios sistemas, talentos etc.",
+      "tags": [],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_stabilize_npc",
+      "category": "action",
+      "name": "Estabilizar (PNJ)",
+      "activation": "Ação Completa",
+      "terse": "O PNJ remove todo o calor e o status <b>Exposto</b>, e recarrega todas as armas com <b>Recarga</b>.",
+      "detail": "O PNJ remove todo o calor e o status <b>EXPOSTO</b>, e recarrega todas as armas com <b>RECARGA</b>.",
+      "tags": [],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_disengage",
+      "category": "action",
+      "name": "Desengajar",
+      "activation": "Ação Completa",
+      "terse": "Desengaje com segurança de uma situação perigosa. Até o final do seu turno atual, você ignora engajamentos e seu movimento não provoca reações.",
+      "detail": "Quando <b>DESENGAJAR</b>, você tenta sair com segurança de uma situação perigosa, fazer uma retirada firme e calculada ou confiar na agilidade do seu mecha para sair do alcance de ameaça mais rápido que um inimigo possa atacar.\nAté o final do seu turno atual, você ignora engajamentos e seu movimento não provoca reações.",
+      "tags": [],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_improvised_attack",
+      "category": "action",
+      "name": "Improvisar Ataque",
+      "activation": "Ação Completa",
+      "terse": "Ataque com um punho, coronha de fuzil ou arma improvisada em combate corpo a corpo.",
+      "detail": "Quando IMPROVISAR ATAQUE, você ataca com a coronha de um fuzil, punho ou outra arma corpo a corpo improvisada. Você pode usar qualquer coisa desde a coronha de uma arma a uma laje de concreto ou um pedaço de placa de casco – a descrição do ataque cabe a você!\nPara IMPROVISAR ATAQUE, faça um ataque corpo a corpo contra um alvo adjacente. Se for bem-sucedido, ele sofre 1d6 de dano cinético.",
+      "tags": [],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_improvised_attack_npc",
+      "category": "action",
+      "name": "Ataque Improvisado (PNJ)",
+      "activation": "Ação Completa",
+      "terse": "Ataque com um punho, coronha de fuzil ou arma improvisada em combate corpo a corpo.",
+      "detail": "O PNJ faz um ataque corpo a corpo com bônus de +1/2/3 e causa 3/4/6 de dano, baseado em seu Nível.",
+      "tags": [],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_activate_full",
+      "category": "action",
+      "name": "Ativar (Completa)",
+      "activation": "Ação Completa",
+      "terse": "Ative um sistema ou equipamento que requer uma <b>ação completa</b>.",
+      "detail": "Quando ATIVAR, você usa um sistema ou equipamento que requer uma <b>ação rápida</b> ou completa. Esses sistemas têm as tags de <b>AÇÃO RÁPIDA</b> ou <b>AÇÃO COMPLETA</b>. Você pode ATIVAR quantas vezes quiser em um turno, mas não pode ATIVAR o mesmo sistema mais de uma vez, a menos que também possa fazê-lo como uma <b>ação livre</b>.",
+      "tags": [],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_boot_up",
+      "category": "action",
+      "name": "Ligar",
+      "activation": "Ação Completa",
+      "terse": "Ligue seu mecha a partir do estado DESLIGADO.",
+      "detail": "Com uma <b>ação completa</b>, pode LIGAR um mecha que esteja pilotando, removendo DESLIGADO e restaurando seu mecha a um estado energizado para funcionar.",
+      "tags": [],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_mount",
+      "category": "action",
+      "name": "Montar",
+      "activation": "Ação Completa",
+      "terse": "Suba no seu mecha.",
+      "detail": "Quando <b>MONTAR</b>, você sobe em um mecha. <b>Montar</b> é o termo preferido pela maioria dos pilotos. Você não 'entra' ou 'sobe a bordo' - você monta. Afinal, você é a cavalaria.\nVocê pode <b>MONTAR</b> como uma <b>ação completa</b>. Você precisa estar adjacente a seu mecha para <b>MONTAR</b>.\nAdicionalmente, você também pode <b>MONTAR</b> em mechas ou veículos aliados voluntários. Quando fizer isso, entre no mesmo espaço e então mova-se com eles.",
+      "tags": [],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_dismount",
+      "category": "action",
+      "name": "Desmontar",
+      "activation": "Ação Completa",
+      "terse": "Saia do seu mecha.",
+      "detail": "Quando <b>DESMONTAR</b>, você desce de um mecha. <b>Desmontar</b> é o termo preferido pela maioria dos pilotos.\nVocê pode <b>DESMONTAR</b> como uma <b>ação completa</b>. Quando <b>DESMONTAR</b>, você é colocado em um espaço adjacente – se não houver espaços livres, você não pode <b>DESMONTAR</b>.\nAdicionalmente, você também pode <b>DESMONTAR</b> de mechas ou veículos aliados voluntários nos quais você MONTOU.",
+      "tags": [],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_skill_check",
+      "category": "action",
+      "name": "Teste de Perícia",
+      "activation": "Ação Completa",
+      "terse": "Realize uma atividade com um objetivo claro que exigiria um teste de perícia.",
+      "detail": "Quando fizer um TESTE DE PERÍCIA, você realiza uma atividade que não é coberta por nenhuma outra ação, mas possui um objetivo claro e é complexo o suficiente para exigir uma rolagem. Os parâmetros e resultados dos TESTES DE PERÍCIA dependem do MJ, mas eles precisam ser envolventes o suficiente para requerer uma <b>ação completa</b>. Se você quiser fazer algo que pode ser feito rapidamente, nenhuma ação é necessária.\nExemplos de TESTES DE PERÍCIA:\n• Bruja, a pé, quer abrir uma porta trancada. O MJ pede para ela fazer um TESTE DE PERÍCIA e decide que Bruja pode usar o bônus de seu gatilho 'Hackear ou Consertar'.\n• Pan, em seu mecha, quer pular um abismo que é mais largo do que ele normalmente pode pular. O MJ decide que ele pode tentar com AGILIDADE.\n• Zaid quer levantar uma rocha pesada com seu mecha para liberar uma passagem. O MJ decide que isso é provavelmente uma ação que requer um TESTE DE PERÍCIA com CASCO.",
+      "tags": [],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_fight",
+      "category": "action",
+      "name": "Lutar",
+      "activation": "Ação Completa",
+      "terse": "Ataque com uma arma como piloto.",
+      "detail": "Quando LUTAR, você ataca (corpo a corpo ou à distância) com uma arma.\nPara LUTAR, escolha uma arma e ataque um alvo na linha de visão e dentro do ALCANCE ou AMEAÇA como uma <b>ação completa</b>. Ataques à distância são afetados por cobertura e sofrem +1 de DIFICULDADE se você estiver ENGAJADO.",
+      "tags": [],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_jockey",
+      "category": "action",
+      "name": "Atracar",
+      "activation": "Ação Completa",
+      "terse": "Tente atacar um mecha a pé como piloto.",
+      "detail": "Quando fizer a ação ATRACAR, você ataca agressivamente um mecha inimigo enquanto está a pé. Não se pode enfatizar o suficiente o quão insensato e perigoso isso é.\nPara usar ATRACAR, você precisa estar adjacente a um mecha. Como uma <b>ação completa</b>, faça um teste de perícia disputado contra o mecha, usando BRIO (ou um gatilho relevante, a critério do MJ). O mecha se opõe usando CASCO. Sendo bem-sucedido, você consegue escalar o mecha, compartilhando seu espaço e se movendo com ele. O mecha pode tentar se livrar de você sendo bem-sucedido em outro teste de perícia disputado como uma <b>ação completa</b>; alternativamente, você pode pular do mecha como parte de seu movimento em seu turno.\nQuando usar ATRACAR com sucesso, escolha uma das opções a seguir:\n• DISTRAÇÃO: O mecha fica <b>IMPEDIDO</b> e <b>LENTO</b> até o final do próximo turno dele.\n• PANE: Causa 2 de calor ao mecha ao rasgar fios, painéis e estruturas semelhantes.\n• DANO: Causa 4 de dano cinético ao mecha ao atacar juntas, escotilhas e partes ou peças similares.\nEm cada um de seus turnos subsequentes, você pode continuar a escolher entre as opções acima como uma <b>ação completa</b>, desde que não deixe de estar atracado com o mecha (ou seja arremessado/removido dele).",
+      "tags": [],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_jockey_distract",
+      "category": "action",
+      "name": "Distração",
+      "activation": "Jockey",
+      "terse": "IMPEÇA e DESACELERE um mecha até o final do próximo turno dele.",
+      "detail": "O mecha fica <b>IMPEDIDO</b> e <b>LENTO</b> até o final do próximo turno dele.",
+      "tags": [
+        "Aplica: impaired",
+        "Aplica: slow"
+      ],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_jockey_shred",
+      "category": "action",
+      "name": "Pane",
+      "activation": "Jockey",
+      "terse": "Cause 2 de Calor.",
+      "detail": "Cause 2 de calor ao mecha ao rasgar fios, painéis e estruturas semelhantes.",
+      "tags": [],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_jockey_damage",
+      "category": "action",
+      "name": "Dano",
+      "activation": "Jockey",
+      "terse": "Cause 4 de Dano Cinético.",
+      "detail": "Cause 4 de dano cinético ao mecha ao atacar juntas, escotilhas e partes ou peças similares.",
+      "tags": [],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_brace",
+      "category": "action",
+      "name": "Suportar",
+      "activation": "Reação",
+      "terse": "Prepare seu mecha para o impacto, reduzindo o dano ao custo das ações do seu próximo turno.",
+      "detail": "Quando <b>SUPORTAR</b>, você prepara seu mecha contra fogo inimigo.\n<b>Suportar</b>\n<b>Reação</b>, 1/rodada\nAcionamento: Você é atingido por um ataque e o dano foi rolado.\nEfeito: Você conta como tendo RESISTÊNCIA a todo dano, queimadura e calor do ataque acionador e, até o final do seu próximo turno, todos os outros ataques feitos contra você são feitos com +1 de DIFICULDADE.\nDevido ao estresse de <b>SUPORTAR</b>, você não pode usar reações até o final do seu próximo turno e, nesse turno, você só pode usar uma <b>ação rápida</b> – você não pode <b>SOBRECARREGAR</b>, mover-se normalmente, usar <b>ações completas</b> ou <b>ações livres</b>.",
+      "tags": [],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_overwatch",
+      "category": "action",
+      "name": "Retaliar",
+      "activation": "Reação",
+      "terse": "Ataque um alvo próximo que esteja tentando se mover.",
+      "detail": "Quando <b>RETALIAR</b>, você controla e defende o espaço em volta de seu mecha contra incursões inimigas usando suas habilidades de piloto, reflexos ou subsistemas finamente ajustados.\nExceto se especificado o contrário, todas as armas possuem 1 de AMEAÇA.\n<b>Retaliar</b>\n<b>Reação</b>, 1/rodada\nAcionamento: Um personagem hostil começa qualquer movimento (incluindo <b>IMPULSIONAR</b> e outras ações) dentro da AMEAÇA de uma das suas armas.\nEfeito: Você imediatamente usa uma arma que acionou <b>RETALIAR</b> para <b>ALVEJAR</b> o personagem hostil como uma reação, antes dele se mover.",
+      "tags": [],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_overwatch_npc",
+      "category": "action",
+      "name": "Retaliar (PNJ)",
+      "activation": "Reação",
+      "terse": "Ataque um alvo próximo que esteja tentando se mover.",
+      "detail": "Quando um personagem inicia qualquer movimento dentro do alcance de ameaça da arma de um PNJ, esse PNJ pode usar a ação <b>ALVEJAR</b> contra ele como uma reação. Um PNJ só pode <b>RETALIAR</b> uma vez entre os turnos, salvo especificado de outra forma.",
+      "tags": [],
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "act_free_action",
+      "category": "action",
+      "name": "Ação Livre",
+      "activation": "Ação Livre",
+      "terse": "Personagens podem realizar qualquer número de <b>Ações Livres</b> em seu turno.",
+      "detail": "Ações livres geralmente são concedidas por sistemas, talentos, equipamento ou <b>SOBRECARREGAR</b>. Os personagens podem realizar qualquer quantidade de <b>ações livres</b> em seu turno, mas apenas em seu turno, e apenas aquelas concedidas a eles. Ações livres podem sempre ser usadas para fazer ações repetidas.\nO tipo mais comum de <b>ação livre</b> é um <b>PROTOCOLO</b>, que é concedido por equipamentos e sistemas e podem ser ativadas ou desativadas apenas no início de um turno. Cada <b>Protocolo</b> só pode ser usado uma vez por turno.",
+      "tags": [],
+      "source": "REGRAS BÁSICAS"
+    }
+  ],
+  "weapons": [
+    {
+      "id": "mw_anti_materiel_rifle",
+      "category": "weapon",
+      "name": "Fuzil Antimaterial",
+      "mount": "Pesada",
+      "type": "Rifle",
+      "damage": "2d6 Cinético",
+      "damage_val": "2d6",
+      "damage_type": "Cinético",
+      "range": "Alcance 20",
+      "range_val": 20,
+      "range_type": "Alcance",
+      "sp": 0,
+      "tags": [
+        "Precisa",
+        "Perfurante (PF)",
+        "Recarga",
+        "Artilharia"
+      ],
+      "tags_summary": "Precisa (+1d6 no ataque); PF (ignora Armadura); Carregamento (precisa de ação rápida ou estabilizar para recarregar); Artilharia (só pode disparar antes de se mover no turno)",
+      "terse": "Rifle pesado de sniper para longa distância. <b>[PF]</b> Ignora <b>Armadura</b>. <b>[Carregamento]</b> Exige <b>recarga</b> após o disparo. <b>[Artilharia]</b> Dispare antes de se mover.",
+      "detail": "Rifle pesado de sniper para longa distância. <b>[PF]</b> Ignora <b>Armadura</b>. <b>[Carregamento]</b> Exige <b>recarga</b> após o disparo. <b>[Artilharia]</b> Dispare antes de se mover.\nPropriedades:\n• Precisa (+1d6 no ataque)\n• PF (ignora <b>Armadura</b>)\n• Carregamento (precisa de <b>ação rápida</b> ou estabilizar para recarregar)\n• Artilharia (só pode disparar antes de se mover no turno)",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "mw_assault_rifle",
+      "category": "weapon",
+      "name": "Fuzil de Assalto",
+      "mount": "Principal",
+      "type": "Rifle",
+      "damage": "1d6 Cinético",
+      "damage_val": "1d6",
+      "damage_type": "Cinético",
+      "range": "Alcance 10",
+      "range_val": 10,
+      "range_type": "Alcance",
+      "sp": 0,
+      "tags": [
+        "Confiável 2"
+      ],
+      "tags_summary": "Confiável 2 (causa 2 de dano mesmo se errar o ataque)",
+      "terse": "Fuzil tático de uso geral. <b>[Confiável 2]</b> Causa 2 de dano garantido mesmo se o ataque errar.",
+      "detail": "Fuzil tático de uso geral. <b>[Confiável 2]</b> Causa 2 de dano garantido mesmo se o ataque errar.\nPropriedades:\n• Confiável 2 (causa 2 de dano mesmo se errar o ataque)",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "mw_charged_blade",
+      "category": "weapon",
+      "name": "Lâmina Carregada",
+      "mount": "Principal",
+      "type": "Corpo a Corpo",
+      "damage": "1d3+3 Energético",
+      "damage_val": "1d3+3",
+      "damage_type": "Energético",
+      "range": "Ameaça 1",
+      "range_val": 1,
+      "range_type": "Ameaça",
+      "sp": 0,
+      "tags": [
+        "Perfurante (PF)"
+      ],
+      "tags_summary": "PF (ignora Armadura)",
+      "terse": "Lâmina corpo a corpo de alta frequência com fio de energia mono-molecular superaquecido.",
+      "detail": "Lâmina corpo a corpo de alta frequência com fio de energia mono-molecular superaquecido.\nPropriedades:\n• PF (ignora <b>Armadura</b>)",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "mw_cyclone_pulse_rifle",
+      "category": "weapon",
+      "name": "Fuzil de Pulso Ciclone",
+      "mount": "Superpesada",
+      "type": "Rifle",
+      "damage": "3d6+3 Cinético",
+      "damage_val": "3d6+3",
+      "damage_type": "Cinético",
+      "range": "Alcance 15",
+      "range_val": 15,
+      "range_type": "Alcance",
+      "sp": 0,
+      "tags": [
+        "Precisa",
+        "Recarga",
+        "Confiável 5"
+      ],
+      "tags_summary": "Precisa (+1d6 no ataque); Carregamento (precisa de ação rápida ou estabilizar para recarregar); Confiável 5 (causa 5 de dano mesmo se errar o ataque)",
+      "terse": "Artilharia <b>superpesada</b> de pulso contínuo. Disparo destrutivo devastador com <b>[PF]</b> que ignora <b>armadura</b>.",
+      "detail": "Artilharia <b>superpesada</b> de pulso contínuo. Disparo destrutivo devastador com <b>[PF]</b> que ignora <b>armadura</b>.\nPropriedades:\n• Precisa (+1d6 no ataque)\n• Carregamento (precisa de <b>ação rápida</b> ou estabilizar para recarregar)\n• Confiável 5 (causa 5 de dano mesmo se errar o ataque)",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "mw_heavy_charged_blade",
+      "category": "weapon",
+      "name": "Lâmina Pesada Carregada",
+      "mount": "Pesada",
+      "type": "Corpo a Corpo",
+      "damage": "1d6+3 Energético",
+      "damage_val": "1d6+3",
+      "damage_type": "Energético",
+      "range": "Ameaça 1",
+      "range_val": 1,
+      "range_type": "Ameaça",
+      "sp": 0,
+      "tags": [
+        "Perfurante (PF)"
+      ],
+      "tags_summary": "PF (ignora Armadura)",
+      "terse": "Espada pesada de alta energia para partir <b>blindagens</b> espessas.",
+      "detail": "Espada pesada de alta energia para partir <b>blindagens</b> espessas.\nPropriedades:\n• PF (ignora <b>Armadura</b>)",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "mw_heavy_machine_gun",
+      "category": "weapon",
+      "name": "Metralhadora Pesada",
+      "mount": "Pesada",
+      "type": "Canhão",
+      "damage": "2d6+4 Cinético",
+      "damage_val": "2d6+4",
+      "damage_type": "Cinético",
+      "range": "Alcance 8",
+      "range_val": 8,
+      "range_type": "Alcance",
+      "sp": 0,
+      "tags": [
+        "Imprecisa"
+      ],
+      "tags_summary": "Imprecisa (+1d6 de dificuldade)",
+      "terse": "Arma de supressão pesada de alta cadência de fogo contínuo. <b>[Imprecisa]</b> (+1d6 de dificuldade).",
+      "detail": "Arma de supressão pesada de alta cadência de fogo contínuo. <b>[Imprecisa]</b> (+1d6 de dificuldade).\nPropriedades:\n• Imprecisa (+1d6 de dificuldade)",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "mw_heavy_melee_weapon",
+      "category": "weapon",
+      "name": "Arma Corpo a Corpo Pesada",
+      "mount": "Pesada",
+      "type": "Corpo a Corpo",
+      "damage": "2d6+1 Cinético",
+      "damage_val": "2d6+1",
+      "damage_type": "Cinético",
+      "range": "Ameaça 1",
+      "range_val": 1,
+      "range_type": "Ameaça",
+      "sp": 0,
+      "tags": [],
+      "tags_summary": "",
+      "terse": "Arma contundente ou cortante pesada (machado, martelo, maça) para impactos maciços corpo a corpo.",
+      "detail": "Arma contundente ou cortante pesada (machado, martelo, maça) para impactos maciços corpo a corpo.",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "mw_howitzer",
+      "category": "weapon",
+      "name": "Obuseiro",
+      "mount": "Pesada",
+      "type": "Canhão",
+      "damage": "2d6 Explosivo",
+      "damage_val": "2d6",
+      "damage_type": "Explosivo",
+      "range": "Alcance 20, Explosão 2",
+      "range_val": 20,
+      "range_type": "Alcance",
+      "sp": 0,
+      "tags": [
+        "Arco",
+        "Imprecisa",
+        "Recarga",
+        "Artilharia"
+      ],
+      "tags_summary": "Arco (ignora cobertura se tiver visão indireta); Imprecisa (+1d6 de dificuldade); Carregamento (precisa de ação rápida ou estabilizar para recarregar); Artilharia (só pode disparar antes de se mover no turno)",
+      "terse": "Obuseiro de artilharia pesada. Disparo parabólico em <b>[Explosão 2]</b> que ignora obstáculos e cobertura.",
+      "detail": "Obuseiro de artilharia pesada. Disparo parabólico em <b>[Explosão 2]</b> que ignora obstáculos e cobertura.\nPropriedades:\n• Arco (ignora cobertura se tiver visão indireta)\n• Imprecisa (+1d6 de dificuldade)\n• Carregamento (precisa de <b>ação rápida</b> ou estabilizar para recarregar)\n• Artilharia (só pode disparar antes de se mover no turno)",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "mw_missile_rack",
+      "category": "weapon",
+      "name": "Suporte de Mísseis",
+      "mount": "Auxiliar",
+      "type": "Lançador",
+      "damage": "1d3+1 Explosivo",
+      "damage_val": "1d3+1",
+      "damage_type": "Explosivo",
+      "range": "Alcance 10, Explosão 1",
+      "range_val": 10,
+      "range_type": "Alcance",
+      "sp": 0,
+      "tags": [
+        "Recarga"
+      ],
+      "tags_summary": "Carregamento (precisa de ação rápida ou estabilizar para recarregar)",
+      "terse": "Suporte de micromísseis autoguiados de disparo rápido em salva.",
+      "detail": "Suporte de micromísseis autoguiados de disparo rápido em salva.\nPropriedades:\n• Carregamento (precisa de <b>ação rápida</b> ou estabilizar para recarregar)",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "mw_mortar",
+      "category": "weapon",
+      "name": "Morteiro",
+      "mount": "Principal",
+      "type": "Canhão",
+      "damage": "1d6+1 Explosivo",
+      "damage_val": "1d6+1",
+      "damage_type": "Explosivo",
+      "range": "Alcance 15, Explosão 1",
+      "range_val": 15,
+      "range_type": "Alcance",
+      "sp": 0,
+      "tags": [
+        "Arco",
+        "Imprecisa"
+      ],
+      "tags_summary": "Arco (ignora cobertura se tiver visão indireta); Imprecisa (+1d6 de dificuldade)",
+      "terse": "Morteiro leve para fogo indireto. Projéteis parabólicos com dispersão em <b>[Explosão 1]</b> que superam cobertura.",
+      "detail": "Morteiro leve para fogo indireto. Projéteis parabólicos com dispersão em <b>[Explosão 1]</b> que superam cobertura.\nPropriedades:\n• Arco (ignora cobertura se tiver visão indireta)\n• Imprecisa (+1d6 de dificuldade)",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "mw_nexus_hunter_killer",
+      "category": "weapon",
+      "name": "Nexo (Caçador-Assassino)",
+      "mount": "Principal",
+      "type": "Nexo",
+      "damage": "1d6 Cinético",
+      "damage_val": "1d6",
+      "damage_type": "Cinético",
+      "range": "Alcance 10",
+      "range_val": 10,
+      "range_type": "Alcance",
+      "sp": 0,
+      "tags": [
+        "Inteligente"
+      ],
+      "tags_summary": "Inteligente (ataca a Defesa Tecnológica do alvo)",
+      "terse": "Nexo de drones autônomos de ataque. Ataca a Defesa Tecnológica do alvo com enxame cinético coordenado.",
+      "detail": "Nexo de drones autônomos de ataque. Ataca a Defesa Tecnológica do alvo com enxame cinético coordenado.\nPropriedades:\n• Inteligente (ataca a Defesa Tecnológica do alvo)",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "mw_nexus_light",
+      "category": "weapon",
+      "name": "Nexo (Leve)",
+      "mount": "Auxiliar",
+      "type": "Nexo",
+      "damage": "1d3 Cinético",
+      "damage_val": "1d3",
+      "damage_type": "Cinético",
+      "range": "Alcance 10",
+      "range_val": 10,
+      "range_type": "Alcance",
+      "sp": 0,
+      "tags": [
+        "Inteligente"
+      ],
+      "tags_summary": "Inteligente (ataca a Defesa Tecnológica do alvo)",
+      "terse": "Nexo <b>auxiliar</b> compacto de microdrones para suporte e ataques de flanco rápidos.",
+      "detail": "Nexo <b>auxiliar</b> compacto de microdrones para suporte e ataques de flanco rápidos.\nPropriedades:\n• Inteligente (ataca a Defesa Tecnológica do alvo)",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "mw_pistol",
+      "category": "weapon",
+      "name": "Pistola",
+      "mount": "Auxiliar",
+      "type": "Combate Próximo (CQB)",
+      "damage": "1d3 Cinético",
+      "damage_val": "1d3",
+      "damage_type": "Cinético",
+      "range": "Alcance 5, Ameaça 3",
+      "range_val": 5,
+      "range_type": "Alcance",
+      "sp": 0,
+      "tags": [
+        "Confiável 1"
+      ],
+      "tags_summary": "Confiável 1 (causa 1 de dano mesmo se errar o ataque)",
+      "terse": "Pistola de saque rápido para engajamentos a curta distância. Ideal como ataque secundário em <b>Alvejar</b>.",
+      "detail": "Pistola de saque rápido para engajamentos a curta distância. Ideal como ataque secundário em <b>Alvejar</b>.\nPropriedades:\n• Confiável 1 (causa 1 de dano mesmo se errar o ataque)",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "mw_segment_knife",
+      "category": "weapon",
+      "name": "Faca de Segmento",
+      "mount": "Auxiliar",
+      "type": "Corpo a Corpo",
+      "damage": "1d3+1 Energético",
+      "damage_val": "1d3+1",
+      "damage_type": "Energético",
+      "range": "Ameaça 1",
+      "range_val": 1,
+      "range_type": "Ameaça",
+      "sp": 0,
+      "tags": [
+        "Exagero"
+      ],
+      "tags_summary": "Excesso (rolou 1 no dano: sofre 1 de calor e rerrola o 1)",
+      "terse": "Faca tática de lâminas descartáveis impressas rapidamente para estocadas ágeis corpo a corpo.",
+      "detail": "Faca tática de lâminas descartáveis impressas rapidamente para estocadas ágeis corpo a corpo.\nPropriedades:\n• Excesso (rolou 1 no dano: sofre 1 de calor e rerrola o 1)",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "mw_rocket_propelled_grenade",
+      "category": "weapon",
+      "name": "Granada Autopropelida",
+      "mount": "Principal",
+      "type": "Lançador",
+      "damage": "1d6+1 Explosivo",
+      "damage_val": "1d6+1",
+      "damage_type": "Explosivo",
+      "range": "Alcance 10, Explosão 2",
+      "range_val": 10,
+      "range_type": "Alcance",
+      "sp": 0,
+      "tags": [
+        "Recarga",
+        "Artilharia"
+      ],
+      "tags_summary": "Carregamento (precisa de ação rápida ou estabilizar para recarregar); Artilharia (só pode disparar antes de se mover no turno)",
+      "terse": "Lança-foguetes portátil com ogiva perfurante de <b>blindagem</b> em área <b>[Explosão 1]</b>.",
+      "detail": "Lança-foguetes portátil com ogiva perfurante de <b>blindagem</b> em área <b>[Explosão 1]</b>.\nPropriedades:\n• Carregamento (precisa de <b>ação rápida</b> ou estabilizar para recarregar)\n• Artilharia (só pode disparar antes de se mover no turno)",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "mw_shotgun",
+      "category": "weapon",
+      "name": "Escopeta",
+      "mount": "Principal",
+      "type": "Combate Próximo (CQB)",
+      "damage": "1d6 Cinético",
+      "damage_val": "1d6",
+      "damage_type": "Cinético",
+      "range": "Alcance 5, Ameaça 3",
+      "range_val": 5,
+      "range_type": "Alcance",
+      "sp": 0,
+      "tags": [],
+      "tags_summary": "",
+      "terse": "Escopeta de combate com dispersão de chumbo de alto impacto em curto alcance.",
+      "detail": "Escopeta de combate com dispersão de chumbo de alto impacto em curto alcance.",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "mw_tactical_knife",
+      "category": "weapon",
+      "name": "Faca Tática",
+      "mount": "Auxiliar",
+      "type": "Corpo a Corpo",
+      "damage": "1d3+1 Cinético",
+      "damage_val": "1d3+1",
+      "damage_type": "Cinético",
+      "range": "Ameaça 1",
+      "range_val": 1,
+      "range_type": "Ameaça",
+      "sp": 0,
+      "tags": [
+        "Arremessável 3"
+      ],
+      "tags_summary": "Arremesso 3 (pode ser arremessada até alcance 3)",
+      "terse": "Faca tática leve balanceada. <b>[Arremesso 5]</b> Pode ser arremessada contra alvos a curta distância.",
+      "detail": "Faca tática leve balanceada. <b>[Arremesso 5]</b> Pode ser arremessada contra alvos a curta distância.\nPropriedades:\n• Arremesso 3 (pode ser arremessada até alcance 3)",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "mw_tactical_melee_weapon",
+      "category": "weapon",
+      "name": "Arma Corpo a Corpo Tática",
+      "mount": "Principal",
+      "type": "Corpo a Corpo",
+      "damage": "1d6+2 Cinético",
+      "damage_val": "1d6+2",
+      "damage_type": "Cinético",
+      "range": "Ameaça 1",
+      "range_val": 1,
+      "range_type": "Ameaça",
+      "sp": 0,
+      "tags": [],
+      "tags_summary": "",
+      "terse": "Arma corpo a corpo padrão balanceada (espada, machado de mão, bastão de choque).",
+      "detail": "Arma corpo a corpo padrão balanceada (espada, machado de mão, bastão de choque).",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "mw_thermal_lance",
+      "category": "weapon",
+      "name": "Lança Térmica",
+      "mount": "Pesada",
+      "type": "Canhão",
+      "damage": "1d6+3 Energético",
+      "damage_val": "1d6+3",
+      "damage_type": "Energético",
+      "range": "Linha 10",
+      "range_val": 10,
+      "range_type": "Linha",
+      "sp": 0,
+      "tags": [
+        "Calor 2 (Próprio)"
+      ],
+      "tags_summary": "Calor 2 (sofre 2 de calor ao disparar)",
+      "terse": "Pesada Canhão. Calor 2 (sofre 2 de calor ao disparar)",
+      "detail": "Pesada Canhão. Calor 2 (sofre 2 de calor ao disparar)\nPropriedades:\n• Calor 2 (sofre 2 de calor ao disparar)",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "mw_thermal_pistol",
+      "category": "weapon",
+      "name": "Pistola Térmica",
+      "mount": "Auxiliar",
+      "type": "Combate Próximo (CQB)",
+      "damage": "2 Energético",
+      "damage_val": 2,
+      "damage_type": "Energético",
+      "range": "Linha 5",
+      "range_val": 5,
+      "range_type": "Linha",
+      "sp": 0,
+      "tags": [],
+      "tags_summary": "",
+      "terse": "Assim como os mechas da SMG, as armas da SMG são padrões galácticos confiáveis, feitas com peças intercambiáveis e construídas para suportar quase todas as condições. Existem três linhas atualmente em produção. A linha Tipo-II (T-2) exibe as armas corpo a corpo 'carregadas' e as armas de energia proprietárias da SMG.",
+      "detail": "Assim como os mechas da SMG, as armas da SMG são padrões galácticos confiáveis, feitas com peças intercambiáveis e construídas para suportar quase todas as condições. Existem três linhas atualmente em produção. A linha Tipo-II (T-2) exibe as armas corpo a corpo 'carregadas' e as armas de energia proprietárias da SMG.",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "mw_thermal_rifle",
+      "category": "weapon",
+      "name": "Fuzil Térmico",
+      "mount": "Principal",
+      "type": "Rifle",
+      "damage": "1d3+2 Energético",
+      "damage_val": "1d3+2",
+      "damage_type": "Energético",
+      "range": "Alcance 5",
+      "range_val": 5,
+      "range_type": "Alcance",
+      "sp": 0,
+      "tags": [
+        "Perfurante (PF)"
+      ],
+      "tags_summary": "PF (ignora Armadura)",
+      "terse": "Fuzil de feixe térmico concentrado. Causa dano de Queimadura contínua que derrete chapas de <b>blindagem</b>.",
+      "detail": "Fuzil de feixe térmico concentrado. Causa dano de Queimadura contínua que derrete chapas de <b>blindagem</b>.\nPropriedades:\n• PF (ignora <b>Armadura</b>)",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "mw_chain_axe",
+      "category": "weapon",
+      "name": "Machado de Serra",
+      "mount": "Principal",
+      "type": "Corpo a Corpo",
+      "damage": "1d6 Cinético",
+      "damage_val": "1d6",
+      "damage_type": "Cinético",
+      "range": "Ameaça 1",
+      "range_val": 1,
+      "range_type": "Ameaça",
+      "sp": 0,
+      "tags": [
+        "Confiável 2"
+      ],
+      "tags_summary": "Confiável 2 (causa 2 de dano mesmo se errar o ataque)",
+      "terse": "<b>[No Crítico]</b> Seu alvo fica DILACERADO até o final do turno atual.\nTags: Confiável 2 (causa 2 de dano mesmo se errar o ataque)",
+      "detail": "<b>[No Crítico]</b> Seu alvo fica DILACERADO até o final do turno atual.\nTags: Confiável 2 (causa 2 de dano mesmo se errar o ataque)\nPropriedades:\n• Confiável 2 (causa 2 de dano mesmo se errar o ataque)",
+      "source": "IPS-N",
+      "license": "Blackbeard",
+      "license_level": 1
+    },
+    {
+      "id": "mw_bristlecrown_flechette_launcher",
+      "category": "weapon",
+      "name": "Lançador de Dardos Bristlecrown",
+      "mount": "Auxiliar",
+      "type": "Combate Próximo (CQB)",
+      "damage": "1 Cinético",
+      "damage_val": 1,
+      "damage_type": "Cinético",
+      "range": "Emanação 1",
+      "range_val": 1,
+      "range_type": "Emanação",
+      "sp": 0,
+      "tags": [],
+      "tags_summary": "",
+      "terse": "Esta arma ignora penalidades à distância por estar ENGAJADO e causa 3 de dano Cinético a alvos AGARRADOS ou Biológicos, em vez de 1.",
+      "detail": "Esta arma ignora penalidades à distância por estar ENGAJADO e causa 3 de dano Cinético a alvos AGARRADOS ou Biológicos, em vez de 1.",
+      "source": "IPS-N",
+      "license": "Blackbeard",
+      "license_level": 2
+    },
+    {
+      "id": "mw_nanocarbon_sword",
+      "category": "weapon",
+      "name": "Espada de Nanocarbono",
+      "mount": "Pesada",
+      "type": "Corpo a Corpo",
+      "damage": "1d6+4 Cinético",
+      "damage_val": "1d6+4",
+      "damage_type": "Cinético",
+      "range": "Ameaça 2",
+      "range_val": 2,
+      "range_type": "Ameaça",
+      "sp": 0,
+      "tags": [
+        "Confiável 3"
+      ],
+      "tags_summary": "Confiável 3 (causa 3 de dano mesmo se errar o ataque)",
+      "terse": "Pesada Corpo a Corpo. Confiável 3 (causa 3 de dano mesmo se errar o ataque)",
+      "detail": "Pesada Corpo a Corpo. Confiável 3 (causa 3 de dano mesmo se errar o ataque)\nPropriedades:\n• Confiável 3 (causa 3 de dano mesmo se errar o ataque)",
+      "source": "IPS-N",
+      "license": "Blackbeard",
+      "license_level": 2
+    },
+    {
+      "id": "mw_assault_cannon",
+      "category": "weapon",
+      "name": "Canhão de Assalto",
+      "mount": "Principal",
+      "type": "Canhão",
+      "damage": "-",
+      "damage_val": "-",
+      "damage_type": "-",
+      "range": "-",
+      "range_val": "-",
+      "range_type": "-",
+      "sp": 0,
+      "tags": [],
+      "tags_summary": "",
+      "terse": "O canhão de assalto de escolha da EIP-EN é um canhão automático de resfriamento profundo, utilizável como arma montada ou plataforma operada por manipulador. O canhão, simples em sua funcionalidade, pode ser alimentado por carregador de caixa ou por fita e é uma inclusão padrão em quase todos os pedidos de frota da EIP-EN. Em ambientes de micro e gravidade zero, os pilotos do Drake comumente empregam o canhão de assalto como um sistema de propulsão adicional.",
+      "detail": "O canhão de assalto de escolha da EIP-EN é um canhão automático de resfriamento profundo, utilizável como arma montada ou plataforma operada por manipulador. O canhão, simples em sua funcionalidade, pode ser alimentado por carregador de caixa ou por fita e é uma inclusão padrão em quase todos os pedidos de frota da EIP-EN. Em ambientes de micro e gravidade zero, os pilotos do Drake comumente empregam o canhão de assalto como um sistema de propulsão adicional.",
+      "source": "IPS-N",
+      "license": "Drake",
+      "license_level": 1
+    },
+    {
+      "id": "mw_concussion_missiles",
+      "category": "weapon",
+      "name": "Mísseis de Concussão",
+      "mount": "Principal",
+      "type": "Lançador",
+      "damage": "1d3 Explosivo",
+      "damage_val": "1d3",
+      "damage_type": "Explosivo",
+      "range": "Alcance 5",
+      "range_val": 5,
+      "range_type": "Alcance",
+      "sp": 0,
+      "tags": [
+        "Repulsão 2"
+      ],
+      "tags_summary": "Repulsão 2 (empurra o alvo 2 espaços)",
+      "terse": "<b>[No Acerto]</b> O alvo deve ser bem-sucedido em um salvamento de CASCO ou ficar <b>IMPEDIDO</b> até o final do próximo turno dele.\nTags: Repulsão 2 (empurra o alvo 2 espaços)",
+      "detail": "<b>[No Acerto]</b> O alvo deve ser bem-sucedido em um salvamento de CASCO ou ficar <b>IMPEDIDO</b> até o final do próximo turno dele.\nTags: Repulsão 2 (empurra o alvo 2 espaços)\nPropriedades:\n• Repulsão 2 (empurra o alvo 2 espaços)",
+      "source": "IPS-N",
+      "license": "Drake",
+      "license_level": 2
+    },
+    {
+      "id": "mw_leviathan_heavy_assault_cannon",
+      "category": "weapon",
+      "name": "Canhão de Assalto Pesado Leviatã",
+      "mount": "Superpesada",
+      "type": "Canhão",
+      "damage": "-",
+      "damage_val": "-",
+      "damage_type": "-",
+      "range": "-",
+      "range_val": "-",
+      "range_type": "-",
+      "sp": 0,
+      "tags": [],
+      "tags_summary": "",
+      "terse": "O Canhão de Assalto Pesado (CAP) Leviatã é um canhão rotativo maciço de múltiplos canos, alimentado por um reservatório externo, geralmente montado dorsalmente no chassi que o transporta. Sem modificações, o Leviatã só deve ser disparado dentro das especificações de tempo de rajada recomendadas para evitar traumas percussivos nas juntas e nos pilotos. Em parceria com o Think Tank do Arsenal Harrison, a EIP-EN está atualmente investigando soluções remotas para as demandas de consumo de munição do canhão.",
+      "detail": "O Canhão de Assalto Pesado (CAP) Leviatã é um canhão rotativo maciço de múltiplos canos, alimentado por um reservatório externo, geralmente montado dorsalmente no chassi que o transporta. Sem modificações, o Leviatã só deve ser disparado dentro das especificações de tempo de rajada recomendadas para evitar traumas percussivos nas juntas e nos pilotos. Em parceria com o Think Tank do Arsenal Harrison, a EIP-EN está atualmente investigando soluções remotas para as demandas de consumo de munição do canhão.",
+      "source": "IPS-N",
+      "license": "Drake",
+      "license_level": 3
+    },
+    {
+      "id": "mw_cutter_mkii_plasma_torch",
+      "category": "weapon",
+      "name": "Tocha de Plasma Cortadora MkII",
+      "mount": "Auxiliar",
+      "type": "Corpo a Corpo",
+      "damage": "1 Energético + 1 Calor + 1 Queimadura",
+      "damage_val": 1,
+      "damage_type": "Energético",
+      "range": "Ameaça 1",
+      "range_val": 1,
+      "range_type": "Ameaça",
+      "sp": 0,
+      "tags": [
+        "Calor 1 (Próprio)"
+      ],
+      "tags_summary": "Calor 1 (sofre 1 de calor ao disparar)",
+      "terse": "Esta arma causa 10 de dano energético PF a objetos, cobertura, terreno e ao ambiente.",
+      "detail": "Esta arma causa 10 de dano energético PF a objetos, cobertura, terreno e ao ambiente.\nPropriedades:\n• Calor 1 (sofre 1 de calor ao disparar)",
+      "source": "IPS-N",
+      "license": "Lancaster",
+      "license_level": 3
+    },
+    {
+      "id": "mw_war_pike",
+      "category": "weapon",
+      "name": "Pique de Guerra",
+      "mount": "Principal",
+      "type": "Corpo a Corpo",
+      "damage": "1d6 Cinético",
+      "damage_val": "1d6",
+      "damage_type": "Cinético",
+      "range": "Ameaça 3",
+      "range_val": 3,
+      "range_type": "Ameaça",
+      "sp": 0,
+      "tags": [
+        "Repulsão 1",
+        "Arremessável 5"
+      ],
+      "tags_summary": "Repulsão 1 (empurra o alvo 1 espaços); Arremesso 5 (pode ser arremessada até alcance 5)",
+      "terse": "Principal Corpo a Corpo. Repulsão 1 (empurra o alvo 1 espaços) • Arremesso 5 (pode ser arremessada até alcance 5)",
+      "detail": "Principal Corpo a Corpo. Repulsão 1 (empurra o alvo 1 espaços) • Arremesso 5 (pode ser arremessada até alcance 5)\nPropriedades:\n• Repulsão 1 (empurra o alvo 1 espaços)\n• Arremesso 5 (pode ser arremessada até alcance 5)",
+      "source": "IPS-N",
+      "license": "Nelson",
+      "license_level": 1
+    },
+    {
+      "id": "mw_power_knuckles",
+      "category": "weapon",
+      "name": "Soqueiras de Energia",
+      "mount": "Auxiliar",
+      "type": "Corpo a Corpo",
+      "damage": "1d3+1 Explosivo",
+      "damage_val": "1d3+1",
+      "damage_type": "Explosivo",
+      "range": "Ameaça 1",
+      "range_val": 1,
+      "range_type": "Ameaça",
+      "sp": 0,
+      "tags": [],
+      "tags_summary": "",
+      "terse": "<b>[No Crítico]</b> Seu alvo deve ser bem-sucedido em um salvamento de CASCO ou ficar <b>PROSTRADO</b>.",
+      "detail": "<b>[No Crítico]</b> Seu alvo deve ser bem-sucedido em um salvamento de CASCO ou ficar <b>PROSTRADO</b>.",
+      "source": "IPS-N",
+      "license": "Nelson",
+      "license_level": 3
+    },
+    {
+      "id": "mw_hand_cannon",
+      "category": "weapon",
+      "name": "Canhão de Mão",
+      "mount": "Auxiliar",
+      "type": "Combate Próximo (CQB)",
+      "damage": "1d6 Cinético",
+      "damage_val": "1d6",
+      "damage_type": "Cinético",
+      "range": "Alcance 5, Ameaça 3",
+      "range_val": 5,
+      "range_type": "Alcance",
+      "sp": 0,
+      "tags": [
+        "Recarga",
+        "Confiável 1"
+      ],
+      "tags_summary": "Carregamento (precisa de ação rápida ou estabilizar para recarregar); Confiável 1 (causa 1 de dano mesmo se errar o ataque)",
+      "terse": "<b>Auxiliar</b> Combate Próximo (CQB). Carregamento (precisa de <b>ação rápida</b> ou estabilizar para recarregar) • Confiável 1 (causa 1 de dano mesmo se errar o ataque)",
+      "detail": "<b>Auxiliar</b> Combate Próximo (CQB). Carregamento (precisa de <b>ação rápida</b> ou estabilizar para recarregar) • Confiável 1 (causa 1 de dano mesmo se errar o ataque)\nPropriedades:\n• Carregamento (precisa de <b>ação rápida</b> ou estabilizar para recarregar)\n• Confiável 1 (causa 1 de dano mesmo se errar o ataque)",
+      "source": "IPS-N",
+      "license": "Raleigh",
+      "license_level": 1
+    },
+    {
+      "id": "mw_bolt_thrower",
+      "category": "weapon",
+      "name": "Lançador de Virotes",
+      "mount": "Pesada",
+      "type": "Canhão",
+      "damage": "2d6 Cinético + 1d6 Explosivo",
+      "damage_val": "2d6",
+      "damage_type": "Cinético",
+      "range": "Alcance 8",
+      "range_val": 8,
+      "range_type": "Alcance",
+      "sp": 0,
+      "tags": [
+        "Recarga",
+        "Confiável 2"
+      ],
+      "tags_summary": "Carregamento (precisa de ação rápida ou estabilizar para recarregar); Confiável 2 (causa 2 de dano mesmo se errar o ataque)",
+      "terse": "Pesada Canhão. Carregamento (precisa de <b>ação rápida</b> ou estabilizar para recarregar) • Confiável 2 (causa 2 de dano mesmo se errar o ataque)",
+      "detail": "Pesada Canhão. Carregamento (precisa de <b>ação rápida</b> ou estabilizar para recarregar) • Confiável 2 (causa 2 de dano mesmo se errar o ataque)\nPropriedades:\n• Carregamento (precisa de <b>ação rápida</b> ou estabilizar para recarregar)\n• Confiável 2 (causa 2 de dano mesmo se errar o ataque)",
+      "source": "IPS-N",
+      "license": "Raleigh",
+      "license_level": 2
+    },
+    {
+      "id": "mw_kinetic_hammer",
+      "category": "weapon",
+      "name": "Martelo Cinético",
+      "mount": "Pesada",
+      "type": "Corpo a Corpo",
+      "damage": "2d6+2 Cinético",
+      "damage_val": "2d6+2",
+      "damage_type": "Cinético",
+      "range": "Ameaça 1",
+      "range_val": 1,
+      "range_type": "Ameaça",
+      "sp": 0,
+      "tags": [
+        "Confiável 4"
+      ],
+      "tags_summary": "Confiável 4 (causa 4 de dano mesmo se errar o ataque)",
+      "terse": "Pesada Corpo a Corpo. Confiável 4 (causa 4 de dano mesmo se errar o ataque)",
+      "detail": "Pesada Corpo a Corpo. Confiável 4 (causa 4 de dano mesmo se errar o ataque)\nPropriedades:\n• Confiável 4 (causa 4 de dano mesmo se errar o ataque)",
+      "source": "IPS-N",
+      "license": "Raleigh",
+      "license_level": 3
+    },
+    {
+      "id": "mw_deck_sweeper_automatic_shotgun",
+      "category": "weapon",
+      "name": "Escopeta Automática Limpa-Convés",
+      "mount": "Principal",
+      "type": "Combate Próximo (CQB)",
+      "damage": "2d6 Cinético",
+      "damage_val": "2d6",
+      "damage_type": "Cinético",
+      "range": "Alcance 3, Ameaça 3",
+      "range_val": 3,
+      "range_type": "Alcance",
+      "sp": 0,
+      "tags": [
+        "Imprecisa"
+      ],
+      "tags_summary": "Imprecisa (+1d6 de dificuldade)",
+      "terse": "Principal Combate Próximo (CQB). Imprecisa (+1d6 de dificuldade)",
+      "detail": "Principal Combate Próximo (CQB). Imprecisa (+1d6 de dificuldade)\nPropriedades:\n• Imprecisa (+1d6 de dificuldade)",
+      "source": "IPS-N",
+      "license": "Tortuga",
+      "license_level": 1
+    },
+    {
+      "id": "mw_daisy_cutter",
+      "category": "weapon",
+      "name": "Corta-Margaridas",
+      "mount": "Pesada",
+      "type": "Combate Próximo (CQB)",
+      "damage": "3d6 Cinético",
+      "damage_val": "3d6",
+      "damage_type": "Cinético",
+      "range": "Cone 7",
+      "range_val": 7,
+      "range_type": "Cone",
+      "sp": 0,
+      "tags": [
+        "Limitado 2"
+      ],
+      "tags_summary": "Limitada 2 (2 usos por missão)",
+      "terse": "<b>[Ao Atacar]</b> Cria uma nuvem de fumaça e detritos no cone de ataque, fornecendo cobertura leve na área afetada que dura até o final de seu próximo turno.\nTags: Limitada 2 (2 usos por missão)",
+      "detail": "<b>[Ao Atacar]</b> Cria uma nuvem de fumaça e detritos no cone de ataque, fornecendo cobertura leve na área afetada que dura até o final de seu próximo turno.\nTags: Limitada 2 (2 usos por missão)\nPropriedades:\n• Limitada 2 (2 usos por missão)",
+      "source": "IPS-N",
+      "license": "Tortuga",
+      "license_level": 2
+    },
+    {
+      "id": "mw_catalytic_hammer",
+      "category": "weapon",
+      "name": "Martelo Catalítico",
+      "mount": "Principal",
+      "type": "Corpo a Corpo",
+      "damage": "1d3+5 Cinético",
+      "damage_val": "1d3+5",
+      "damage_type": "Cinético",
+      "range": "Ameaça 1",
+      "range_val": 1,
+      "range_type": "Ameaça",
+      "sp": 0,
+      "tags": [
+        "Recarga"
+      ],
+      "tags_summary": "Carregamento (precisa de ação rápida ou estabilizar para recarregar)",
+      "terse": "<b>[No Crítico]</b> Seu alvo fica <b>ATORDOADO</b> até o final do próximo turno dele.\nTags: Carregamento (precisa de <b>ação rápida</b> ou estabilizar para recarregar)",
+      "detail": "<b>[No Crítico]</b> Seu alvo fica <b>ATORDOADO</b> até o final do próximo turno dele.\nTags: Carregamento (precisa de <b>ação rápida</b> ou estabilizar para recarregar)\nPropriedades:\n• Carregamento (precisa de <b>ação rápida</b> ou estabilizar para recarregar)",
+      "source": "IPS-N",
+      "license": "Tortuga",
+      "license_level": 2
+    },
+    {
+      "id": "mw_impact_lance",
+      "category": "weapon",
+      "name": "Lança de Impacto",
+      "mount": "Principal",
+      "type": "Corpo a Corpo",
+      "damage": "1d6 Energético",
+      "damage_val": "1d6",
+      "damage_type": "Energético",
+      "range": "Ameaça 3",
+      "range_val": 3,
+      "range_type": "Ameaça",
+      "sp": 0,
+      "tags": [],
+      "tags_summary": "",
+      "terse": "<b>[Ao Atacar]</b> Você também ataca todos os personagens em uma Linha entre você e seu alvo. Você sofre 1 de calor para cada alvo além do primeiro.",
+      "detail": "<b>[Ao Atacar]</b> Você também ataca todos os personagens em uma Linha entre você e seu alvo. Você sofre 1 de calor para cada alvo além do primeiro.",
+      "source": "IPS-N",
+      "license": "Vlad",
+      "license_level": 1
+    },
+    {
+      "id": "mw_impaler_nailgun",
+      "category": "weapon",
+      "name": "Pistola de Pregos Empaladora",
+      "mount": "Principal",
+      "type": "Combate Próximo (CQB)",
+      "damage": "1d6+1 Cinético",
+      "damage_val": "1d6+1",
+      "damage_type": "Cinético",
+      "range": "Alcance 5, Ameaça 3",
+      "range_val": 5,
+      "range_type": "Alcance",
+      "sp": 0,
+      "tags": [
+        "Calor 1 (Próprio)"
+      ],
+      "tags_summary": "Calor 1 (sofre 1 de calor ao disparar)",
+      "terse": "<b>[No Acerto]</b> Os alvos devem ser bem-sucedidos em um salvamento de CASCO ou ficarem IMOBILIZADOS até o final do próximo turno deles.\nTags: Calor 1 (sofre 1 de calor ao disparar)",
+      "detail": "<b>[No Acerto]</b> Os alvos devem ser bem-sucedidos em um salvamento de CASCO ou ficarem IMOBILIZADOS até o final do próximo turno deles.\nTags: Calor 1 (sofre 1 de calor ao disparar)\nPropriedades:\n• Calor 1 (sofre 1 de calor ao disparar)",
+      "source": "IPS-N",
+      "license": "Vlad",
+      "license_level": 2
+    },
+    {
+      "id": "mw_combat_drill",
+      "category": "weapon",
+      "name": "Broca de Combate",
+      "mount": "Superpesada",
+      "type": "Corpo a Corpo",
+      "damage": "3d6 Cinético + 1d6 Energético",
+      "damage_val": "3d6",
+      "damage_type": "Cinético",
+      "range": "Ameaça 1",
+      "range_val": 1,
+      "range_type": "Ameaça",
+      "sp": 0,
+      "tags": [
+        "Perfurante (PF)",
+        "Exagero"
+      ],
+      "tags_summary": "PF (ignora Armadura); Excesso (rolou 1 no dano: sofre 1 de calor e rerrola o 1)",
+      "terse": "Ao atacar um personagem que esteja CAÍDO, IMOBILIZADO ou <b>ATORDOADO</b>, a tag Excesso desta arma causa +1d6 de dano bônus extra cada vez que for ativada. Isso pode ser ativado indefinidamente se o novo resultado do dado de bônus for 1, acionando o Excesso novamente.",
+      "detail": "Ao atacar um personagem que esteja CAÍDO, IMOBILIZADO ou <b>ATORDOADO</b>, a tag Excesso desta arma causa +1d6 de dano bônus extra cada vez que for ativada. Isso pode ser ativado indefinidamente se o novo resultado do dado de bônus for 1, acionando o Excesso novamente.\nPropriedades:\n• PF (ignora <b>Armadura</b>)\n• Excesso (rolou 1 no dano: sofre 1 de calor e rerrola o 1)",
+      "source": "IPS-N",
+      "license": "Vlad",
+      "license_level": 3
+    },
+    {
+      "id": "mw_magnetic_cannon",
+      "category": "weapon",
+      "name": "Canhão Magnético",
+      "mount": "Principal",
+      "type": "Canhão",
+      "damage": "1d3+1 Energético",
+      "damage_val": "1d3+1",
+      "damage_type": "Energético",
+      "range": "Linha 8",
+      "range_val": 8,
+      "range_type": "Linha",
+      "sp": 0,
+      "tags": [],
+      "tags_summary": "",
+      "terse": "<b>[No Acerto]</b> Todos os personagens dentro da área afetada devem ser bem-sucedidos em um salvamento de CASCO ou serem puxados 1d3+1 espaços em direção ao centro da área.",
+      "detail": "<b>[No Acerto]</b> Todos os personagens dentro da área afetada devem ser bem-sucedidos em um salvamento de CASCO ou serem puxados 1d3+1 espaços em direção ao centro da área.",
+      "source": "SSC",
+      "license": "Black Witch",
+      "license_level": 1
+    },
+    {
+      "id": "mw_vulture_dmr",
+      "category": "weapon",
+      "name": "Fuzil de Precisão Vulture",
+      "mount": "Principal",
+      "type": "Rifle",
+      "damage": "1d6+1 Cinético",
+      "damage_val": "1d6+1",
+      "damage_type": "Cinético",
+      "range": "Alcance 15",
+      "range_val": 15,
+      "range_type": "Alcance",
+      "sp": 0,
+      "tags": [
+        "Precisa",
+        "Exagero",
+        "Calor 1 (Próprio)"
+      ],
+      "tags_summary": "Precisa (+1d6 no ataque); Excesso (rolou 1 no dano: sofre 1 de calor e rerrola o 1); Calor 1 (sofre 1 de calor ao disparar)",
+      "terse": "Principal Rifle. Precisa (+1d6 no ataque) • Excesso (rolou 1 no dano: sofre 1 de calor e rerrola o 1) • Calor 1 (sofre 1 de calor ao disparar)",
+      "detail": "Principal Rifle. Precisa (+1d6 no ataque) • Excesso (rolou 1 no dano: sofre 1 de calor e rerrola o 1) • Calor 1 (sofre 1 de calor ao disparar)\nPropriedades:\n• Precisa (+1d6 no ataque)\n• Excesso (rolou 1 no dano: sofre 1 de calor e rerrola o 1)\n• Calor 1 (sofre 1 de calor ao disparar)",
+      "source": "SSC",
+      "license": "Death’s Head",
+      "license_level": 2
+    },
+    {
+      "id": "mw_railgun",
+      "category": "weapon",
+      "name": "Canhão Elétrico",
+      "mount": "Pesada",
+      "type": "Rifle",
+      "damage": "1d6+4 Cinético",
+      "damage_val": "1d6+4",
+      "damage_type": "Cinético",
+      "range": "Linha 20",
+      "range_val": 20,
+      "range_type": "Linha",
+      "sp": 0,
+      "tags": [
+        "Perfurante (PF)",
+        "Artilharia",
+        "Calor 2 (Próprio)"
+      ],
+      "tags_summary": "PF (ignora Armadura); Artilharia (só pode disparar antes de se mover no turno); Calor 2 (sofre 2 de calor ao disparar)",
+      "terse": "Pesada Rifle. PF (ignora <b>Armadura</b>) • Artilharia (só pode disparar antes de se mover no turno) • Calor 2 (sofre 2 de calor ao disparar)",
+      "detail": "Pesada Rifle. PF (ignora <b>Armadura</b>) • Artilharia (só pode disparar antes de se mover no turno) • Calor 2 (sofre 2 de calor ao disparar)\nPropriedades:\n• PF (ignora <b>Armadura</b>)\n• Artilharia (só pode disparar antes de se mover no turno)\n• Calor 2 (sofre 2 de calor ao disparar)",
+      "source": "SSC",
+      "license": "Death’s Head",
+      "license_level": 3
+    },
+    {
+      "id": "mw_veil_rifle",
+      "category": "weapon",
+      "name": "Fuzil do Véu",
+      "mount": "Principal",
+      "type": "Rifle",
+      "damage": "1d3+1 Energético",
+      "damage_val": "1d3+1",
+      "damage_type": "Energético",
+      "range": "Linha 10",
+      "range_val": 10,
+      "range_type": "Linha",
+      "sp": 0,
+      "tags": [
+        "Precisa"
+      ],
+      "tags_summary": "Precisa (+1d6 no ataque)",
+      "terse": "Esta arma não ataca personagens aliados pegos em sua área de efeito; em vez disso, ela os envolve em um campo de energia coruscante que confunde os sistemas de mira, dando-lhes cobertura leve até o final de seu próximo turno.",
+      "detail": "Esta arma não ataca personagens aliados pegos em sua área de efeito; em vez disso, ela os envolve em um campo de energia coruscante que confunde os sistemas de mira, dando-lhes cobertura leve até o final de seu próximo turno.\nPropriedades:\n• Precisa (+1d6 no ataque)",
+      "source": "SSC",
+      "license": "Dusk Wing",
+      "license_level": 1
+    },
+    {
+      "id": "mw_burst_launcher",
+      "category": "weapon",
+      "name": "Lançador de Rajada",
+      "mount": "Principal",
+      "type": "Lançador",
+      "damage": "1d3 Explosivo + 1 Calor",
+      "damage_val": "1d3",
+      "damage_type": "Explosivo",
+      "range": "Alcance 15",
+      "range_val": 15,
+      "range_type": "Alcance",
+      "sp": 0,
+      "tags": [
+        "Precisa",
+        "Arco"
+      ],
+      "tags_summary": "Precisa (+1d6 no ataque); Arco (ignora cobertura se tiver visão indireta)",
+      "terse": "<b>[No Crítico]</b> O alvo fica <b>IMPEDIDO</b> até o final do próximo turno dele.\nTags: Precisa (+1d6 no ataque) • Arco (ignora cobertura se tiver visão indireta)",
+      "detail": "<b>[No Crítico]</b> O alvo fica <b>IMPEDIDO</b> até o final do próximo turno dele.\nTags: Precisa (+1d6 no ataque) • Arco (ignora cobertura se tiver visão indireta)\nPropriedades:\n• Precisa (+1d6 no ataque)\n• Arco (ignora cobertura se tiver visão indireta)",
+      "source": "SSC",
+      "license": "Dusk Wing",
+      "license_level": 2
+    },
+    {
+      "id": "mw_rail_rifle",
+      "category": "weapon",
+      "name": "Fuzil Elétrico",
+      "mount": "Principal",
+      "type": "Rifle",
+      "damage": "1d6+1 Cinético",
+      "damage_val": "1d6+1",
+      "damage_type": "Cinético",
+      "range": "Linha 10",
+      "range_val": 10,
+      "range_type": "Linha",
+      "sp": 0,
+      "tags": [
+        "Calor 1 (Próprio)"
+      ],
+      "tags_summary": "Calor 1 (sofre 1 de calor ao disparar)",
+      "terse": "Principal Rifle. Calor 1 (sofre 1 de calor ao disparar)",
+      "detail": "Principal Rifle. Calor 1 (sofre 1 de calor ao disparar)\nPropriedades:\n• Calor 1 (sofre 1 de calor ao disparar)",
+      "source": "SSC",
+      "license": "Metalmark",
+      "license_level": 2
+    },
+    {
+      "id": "mw_shock_knife",
+      "category": "weapon",
+      "name": "Faca de Choque",
+      "mount": "Auxiliar",
+      "type": "Corpo a Corpo",
+      "damage": "1 Energético + 2 Queimadura",
+      "damage_val": 1,
+      "damage_type": "Energético",
+      "range": "Ameaça 1",
+      "range_val": 1,
+      "range_type": "Ameaça",
+      "sp": 0,
+      "tags": [
+        "Arremessável 5",
+        "Calor 1 (Próprio)"
+      ],
+      "tags_summary": "Arremesso 5 (pode ser arremessada até alcance 5); Calor 1 (sofre 1 de calor ao disparar)",
+      "terse": "<b>Auxiliar</b> Corpo a Corpo. Arremesso 5 (pode ser arremessada até alcance 5) • Calor 1 (sofre 1 de calor ao disparar)",
+      "detail": "<b>Auxiliar</b> Corpo a Corpo. Arremesso 5 (pode ser arremessada até alcance 5) • Calor 1 (sofre 1 de calor ao disparar)\nPropriedades:\n• Arremesso 5 (pode ser arremessada até alcance 5)\n• Calor 1 (sofre 1 de calor ao disparar)",
+      "source": "SSC",
+      "license": "Metalmark",
+      "license_level": 2
+    },
+    {
+      "id": "mw_sharanga_missiles",
+      "category": "weapon",
+      "name": "Mísseis Sharanga",
+      "mount": "Principal",
+      "type": "Lançador",
+      "damage": "3 Explosivo",
+      "damage_val": 3,
+      "damage_type": "Explosivo",
+      "range": "Alcance 15",
+      "range_val": 15,
+      "range_type": "Alcance",
+      "sp": 0,
+      "tags": [
+        "Arco"
+      ],
+      "tags_summary": "Arco (ignora cobertura se tiver visão indireta)",
+      "terse": "Esta arma pode atacar dois alvos ao mesmo tempo.",
+      "detail": "Esta arma pode atacar dois alvos ao mesmo tempo.\nPropriedades:\n• Arco (ignora cobertura se tiver visão indireta)",
+      "source": "SSC",
+      "license": "Monarch",
+      "license_level": 1
+    },
+    {
+      "id": "mw_gandiva_missiles",
+      "category": "weapon",
+      "name": "Mísseis Gandiva",
+      "mount": "Pesada",
+      "type": "Lançador",
+      "damage": "1d6+3 Energético",
+      "damage_val": "1d6+3",
+      "damage_type": "Energético",
+      "range": "Alcance 15",
+      "range_val": 15,
+      "range_type": "Alcance",
+      "sp": 1,
+      "tags": [
+        "Precisa",
+        "Guiada",
+        "Inteligente"
+      ],
+      "tags_summary": "Precisa (+1d6 no ataque); Teleguiada (ignora cobertura e linha de visão); Inteligente (ataca a Defesa Tecnológica do alvo)",
+      "terse": "Pesada Lançador. Precisa (+1d6 no ataque) • Teleguiada (ignora cobertura e linha de visão) • Inteligente (ataca a Defesa Tecnológica do alvo)",
+      "detail": "Pesada Lançador. Precisa (+1d6 no ataque) • Teleguiada (ignora cobertura e linha de visão) • Inteligente (ataca a Defesa Tecnológica do alvo)\nPropriedades:\n• Precisa (+1d6 no ataque)\n• Teleguiada (ignora cobertura e linha de visão)\n• Inteligente (ataca a Defesa Tecnológica do alvo)",
+      "source": "SSC",
+      "license": "Monarch",
+      "license_level": 2
+    },
+    {
+      "id": "mw_pinaka_missiles",
+      "category": "weapon",
+      "name": "Mísseis Pinaka",
+      "mount": "Superpesada",
+      "type": "Lançador",
+      "damage": "2d6 Explosivo",
+      "damage_val": "2d6",
+      "damage_type": "Explosivo",
+      "range": "Alcance 20, Explosão 1",
+      "range_val": 20,
+      "range_type": "Alcance",
+      "sp": 0,
+      "tags": [
+        "Arco",
+        "Calor 2 (Próprio)"
+      ],
+      "tags_summary": "Arco (ignora cobertura se tiver visão indireta); Calor 2 (sofre 2 de calor ao disparar)",
+      "terse": "Ataques com esta arma criam até duas áreas de EXPLOSÃO 1, que não podem se sobrepor.\nVocê também pode atrasar o impacto dos ataques feitos com esta arma. Escolha a(s) área(s) alvo, que se tornam visíveis para todos os personagens: os mísseis aterrissam no final da próxima rodada, após todos os personagens terem agido, e causam 3d6 de dano explosivo em vez de 2d6, mas você fica <b>LENTO</b> até o final de seu próximo turno.",
+      "detail": "Ataques com esta arma criam até duas áreas de EXPLOSÃO 1, que não podem se sobrepor.\nVocê também pode atrasar o impacto dos ataques feitos com esta arma. Escolha a(s) área(s) alvo, que se tornam visíveis para todos os personagens: os mísseis aterrissam no final da próxima rodada, após todos os personagens terem agido, e causam 3d6 de dano explosivo em vez de 2d6, mas você fica <b>LENTO</b> até o final de seu próximo turno.\nPropriedades:\n• Arco (ignora cobertura se tiver visão indireta)\n• Calor 2 (sofre 2 de calor ao disparar)",
+      "source": "SSC",
+      "license": "Monarch",
+      "license_level": 3
+    },
+    {
+      "id": "mw_fold_knife",
+      "category": "weapon",
+      "name": "Faca Dobrável",
+      "mount": "Auxiliar",
+      "type": "Corpo a Corpo",
+      "damage": "1d3 Cinético",
+      "damage_val": "1d3",
+      "damage_type": "Cinético",
+      "range": "Ameaça 1",
+      "range_val": 1,
+      "range_type": "Ameaça",
+      "sp": 0,
+      "tags": [
+        "Precisa"
+      ],
+      "tags_summary": "Precisa (+1d6 no ataque)",
+      "terse": "<b>[No Crítico]</b> Você pode se teletransportar 2 espaços em qualquer direção após o ataque ser resolvido.\nTags: Precisa (+1d6 no ataque)",
+      "detail": "<b>[No Crítico]</b> Você pode se teletransportar 2 espaços em qualquer direção após o ataque ser resolvido.\nTags: Precisa (+1d6 no ataque)\nPropriedades:\n• Precisa (+1d6 no ataque)",
+      "source": "SSC",
+      "license": "Mourning Cloak",
+      "license_level": 1
+    },
+    {
+      "id": "mw_vijaya_rockets",
+      "category": "weapon",
+      "name": "Foguetes Vijaya",
+      "mount": "Auxiliar",
+      "type": "Lançador",
+      "damage": "1d3 Explosivo",
+      "damage_val": "1d3",
+      "damage_type": "Explosivo",
+      "range": "Alcance 5",
+      "range_val": 5,
+      "range_type": "Alcance",
+      "sp": 0,
+      "tags": [
+        "Precisa"
+      ],
+      "tags_summary": "Precisa (+1d6 no ataque)",
+      "terse": "<b>Auxiliar</b> Lançador. Precisa (+1d6 no ataque)",
+      "detail": "<b>Auxiliar</b> Lançador. Precisa (+1d6 no ataque)\nPropriedades:\n• Precisa (+1d6 no ataque)",
+      "source": "SSC",
+      "license": "Mourning Cloak",
+      "license_level": 1
+    },
+    {
+      "id": "mw_variable_sword",
+      "category": "weapon",
+      "name": "Espada Variável",
+      "mount": "Principal",
+      "type": "Corpo a Corpo",
+      "damage": "3 Cinético",
+      "damage_val": 3,
+      "damage_type": "Cinético",
+      "range": "Ameaça 2",
+      "range_val": 2,
+      "range_type": "Ameaça",
+      "sp": 0,
+      "tags": [
+        "Precisa"
+      ],
+      "tags_summary": "Precisa (+1d6 no ataque)",
+      "terse": "<b>[No Crítico]</b> Cause +1d6 de dano bônus.\nTags: Precisa (+1d6 no ataque)",
+      "detail": "<b>[No Crítico]</b> Cause +1d6 de dano bônus.\nTags: Precisa (+1d6 no ataque)\nPropriedades:\n• Precisa (+1d6 no ataque)",
+      "source": "SSC",
+      "license": "Mourning Cloak",
+      "license_level": 3
+    },
+    {
+      "id": "mw_oracle_lmg_i",
+      "category": "weapon",
+      "name": "Metralhadora Leve Oráculo I",
+      "mount": "Auxiliar",
+      "type": "Rifle",
+      "damage": "1d3 Cinético",
+      "damage_val": "1d3",
+      "damage_type": "Cinético",
+      "range": "Alcance 15",
+      "range_val": 15,
+      "range_type": "Alcance",
+      "sp": 1,
+      "tags": [
+        "Precisa",
+        "Arco"
+      ],
+      "tags_summary": "Precisa (+1d6 no ataque); Arco (ignora cobertura se tiver visão indireta)",
+      "terse": "<b>Auxiliar</b> Rifle. Precisa (+1d6 no ataque) • Arco (ignora cobertura se tiver visão indireta)",
+      "detail": "<b>Auxiliar</b> Rifle. Precisa (+1d6 no ataque) • Arco (ignora cobertura se tiver visão indireta)\nPropriedades:\n• Precisa (+1d6 no ataque)\n• Arco (ignora cobertura se tiver visão indireta)",
+      "source": "SSC",
+      "license": "Swallowtail",
+      "license_level": 2
+    },
+    {
+      "id": "mw_nanobot_whip",
+      "category": "weapon",
+      "name": "Chicote de Nanorrobôs",
+      "mount": "Pesada",
+      "type": "Corpo a Corpo",
+      "damage": "2d6 Cinético",
+      "damage_val": "2d6",
+      "damage_type": "Cinético",
+      "range": "Ameaça 3",
+      "range_val": 3,
+      "range_type": "Ameaça",
+      "sp": 2,
+      "tags": [
+        "Inteligente"
+      ],
+      "tags_summary": "Inteligente (ataca a Defesa Tecnológica do alvo)",
+      "terse": "<b>[No Crítico]</b> Puxe seu alvo para um espaço livre adjacente a você, ou o mais próximo possível.\nTags: Inteligente (ataca a Defesa Tecnológica do alvo)",
+      "detail": "<b>[No Crítico]</b> Puxe seu alvo para um espaço livre adjacente a você, ou o mais próximo possível.\nTags: Inteligente (ataca a Defesa Tecnológica do alvo)\nPropriedades:\n• Inteligente (ataca a Defesa Tecnológica do alvo)",
+      "source": "HORUS",
+      "license": "Balor",
+      "license_level": 3
+    },
+    {
+      "id": "mw_swarm_hive_nanites",
+      "category": "weapon",
+      "name": "Nanorrobôs Enxame/Colmeia",
+      "mount": "Principal",
+      "type": "Nexo",
+      "damage": "2 Cinético + 2 Queimadura",
+      "damage_val": 2,
+      "damage_type": "Cinético",
+      "range": "Alcance 5",
+      "range_val": 5,
+      "range_type": "Alcance",
+      "sp": 0,
+      "tags": [
+        "Inteligente",
+        "Guiada"
+      ],
+      "tags_summary": "Inteligente (ataca a Defesa Tecnológica do alvo); Teleguiada (ignora cobertura e linha de visão)",
+      "terse": "Principal Nexo. Inteligente (ataca a Defesa Tecnológica do alvo) • Teleguiada (ignora cobertura e linha de visão)",
+      "detail": "Principal Nexo. Inteligente (ataca a Defesa Tecnológica do alvo) • Teleguiada (ignora cobertura e linha de visão)\nPropriedades:\n• Inteligente (ataca a Defesa Tecnológica do alvo)\n• Teleguiada (ignora cobertura e linha de visão)",
+      "source": "HORUS",
+      "license": "Balor",
+      "license_level": 3
+    },
+    {
+      "id": "mw_autopod",
+      "category": "weapon",
+      "name": "Autopod",
+      "mount": "Principal",
+      "type": "Lançador",
+      "damage": "3 Cinético",
+      "damage_val": 3,
+      "damage_type": "Cinético",
+      "range": "Alcance 15",
+      "range_val": 15,
+      "range_type": "Alcance",
+      "sp": 1,
+      "tags": [
+        "Guiada",
+        "Único"
+      ],
+      "tags_summary": "Teleguiada (ignora cobertura e linha de visão); Única (máximo 1 instalada por mecha)",
+      "terse": "Em vez de usar qualquer tipo de mecanismo de gatilho, esta arma varre automaticamente as travas de alvo, disparando discos giratórios e afiados após identificações bem-sucedidas. Ganhe a reação Assalto Autônomo, que é a única maneira de você atacar com o Autopod.\n<b>[<b>Reação</b>]</b> Autonomous Assault: Você pode acertar automaticamente o alvo deles com o Autopod.",
+      "detail": "Em vez de usar qualquer tipo de mecanismo de gatilho, esta arma varre automaticamente as travas de alvo, disparando discos giratórios e afiados após identificações bem-sucedidas. Ganhe a reação Assalto Autônomo, que é a única maneira de você atacar com o Autopod.\n<b>[<b>Reação</b>]</b> Autonomous Assault: Você pode acertar automaticamente o alvo deles com o Autopod.\nPropriedades:\n• Teleguiada (ignora cobertura e linha de visão)\n• Única (máximo 1 instalada por mecha)",
+      "source": "HORUS",
+      "license": "Goblin",
+      "license_level": 1
+    },
+    {
+      "id": "mw_vorpal_gun",
+      "category": "weapon",
+      "name": "Pistola Vorpal",
+      "mount": "Principal",
+      "type": "Canhão",
+      "damage": "2d6 Cinético",
+      "damage_val": "2d6",
+      "damage_type": "Cinético",
+      "range": "Alcance 5",
+      "range_val": 5,
+      "range_type": "Alcance",
+      "sp": 0,
+      "tags": [],
+      "tags_summary": "",
+      "terse": "Ganhe a reação Snicker-Snack, que é a única maneira de você atacar com esta arma.\n<b>[<b>Reação</b>]</b> Snicker-Snack: Você pode fazer um ataque contra o personagem hostil com a Pistola Vorpal.",
+      "detail": "Ganhe a reação Snicker-Snack, que é a única maneira de você atacar com esta arma.\n<b>[<b>Reação</b>]</b> Snicker-Snack: Você pode fazer um ataque contra o personagem hostil com a Pistola Vorpal.",
+      "source": "HORUS",
+      "license": "Gorgon",
+      "license_level": 3
+    },
+    {
+      "id": "mw_ghoul_nexus",
+      "category": "weapon",
+      "name": "Nexo Ghoul",
+      "mount": "Principal",
+      "type": "Nexo",
+      "damage": "1d3+2 Variável",
+      "damage_val": "1d3+2",
+      "damage_type": "Variável",
+      "range": "Alcance 10",
+      "range_val": 10,
+      "range_type": "Alcance",
+      "sp": 0,
+      "tags": [
+        "Inteligente",
+        "Definir Tipo de Dano"
+      ],
+      "tags_summary": "Inteligente (ataca a Defesa Tecnológica do alvo)",
+      "terse": "<b>[Ao Atacar]</b> Escolha o tipo de dano desta arma.\nTags: Inteligente (ataca a Defesa Tecnológica do alvo)",
+      "detail": "<b>[Ao Atacar]</b> Escolha o tipo de dano desta arma.\nTags: Inteligente (ataca a Defesa Tecnológica do alvo)\nPropriedades:\n• Inteligente (ataca a Defesa Tecnológica do alvo)",
+      "source": "HORUS",
+      "license": "Hydra",
+      "license_level": 1
+    },
+    {
+      "id": "mw_ghast_nexus",
+      "category": "weapon",
+      "name": "Nexo Ghast",
+      "mount": "Pesada",
+      "type": "Nexo",
+      "damage": "1d6+3 Explosivo",
+      "damage_val": "1d6+3",
+      "damage_type": "Explosivo",
+      "range": "Alcance 10",
+      "range_val": 10,
+      "range_type": "Alcance",
+      "sp": 0,
+      "tags": [
+        "Inteligente"
+      ],
+      "tags_summary": "Inteligente (ataca a Defesa Tecnológica do alvo)",
+      "terse": "Esta arma pode ser usada para atacar normalmente ou implantada como um Drone.",
+      "detail": "Esta arma pode ser usada para atacar normalmente ou implantada como um Drone.\nPropriedades:\n• Inteligente (ataca a Defesa Tecnológica do alvo)",
+      "source": "HORUS",
+      "license": "Hydra",
+      "license_level": 2
+    },
+    {
+      "id": "mw_annihilation_nexus",
+      "category": "weapon",
+      "name": "Nexo de Aniquilação",
+      "mount": "Superpesada",
+      "type": "Nexo",
+      "damage": "1d6+3 Energético",
+      "damage_val": "1d6+3",
+      "damage_type": "Energético",
+      "range": "Emanação 2",
+      "range_val": 2,
+      "range_type": "Emanação",
+      "sp": 0,
+      "tags": [
+        "Perfurante (PF)",
+        "Inteligente"
+      ],
+      "tags_summary": "PF (ignora Armadura); Inteligente (ataca a Defesa Tecnológica do alvo)",
+      "terse": "<b>[Ao Atacar]</b> Você pode fazer um segundo ataque com esta arma no início de seu próximo turno como um protocolo. Este ataque secundário não pode causar dano bônus e não aciona ataques secundários adicionais. Você pode centralizar o ataque desta arma em você mesmo ou em qualquer um de seus Drones dentro dos SENSORES.\n<b>[<b>Protocolo</b>]</b> Ataque Secundário do Nexo Aniquilação: Se você fez um ataque com o Nexo Aniquilação no seu último turno, você pode fazer um segundo ataque com ele como uma <b>ação rápida</b> neste turno.\nTags: PF (ignora <b>Armadura</b>) • Inteligente (ataca a Defesa Tecnológica do alvo)",
+      "detail": "<b>[Ao Atacar]</b> Você pode fazer um segundo ataque com esta arma no início de seu próximo turno como um protocolo. Este ataque secundário não pode causar dano bônus e não aciona ataques secundários adicionais. Você pode centralizar o ataque desta arma em você mesmo ou em qualquer um de seus Drones dentro dos SENSORES.\n<b>[<b>Protocolo</b>]</b> Ataque Secundário do Nexo Aniquilação: Se você fez um ataque com o Nexo Aniquilação no seu último turno, você pode fazer um segundo ataque com ele como uma <b>ação rápida</b> neste turno.\nTags: PF (ignora <b>Armadura</b>) • Inteligente (ataca a Defesa Tecnológica do alvo)\nPropriedades:\n• PF (ignora <b>Armadura</b>)\n• Inteligente (ataca a Defesa Tecnológica do alvo)",
+      "source": "HORUS",
+      "license": "Hydra",
+      "license_level": 3
+    },
+    {
+      "id": "mw_catalyst_pistol",
+      "category": "weapon",
+      "name": "Pistola Catalisadora",
+      "mount": "Auxiliar",
+      "type": "Combate Próximo (CQB)",
+      "damage": "1d3 Energético",
+      "damage_val": "1d3",
+      "damage_type": "Energético",
+      "range": "Cone 3, Ameaça 3",
+      "range_val": 3,
+      "range_type": "Cone",
+      "sp": 0,
+      "tags": [
+        "Calor 2 (Próprio)"
+      ],
+      "tags_summary": "Calor 2 (sofre 2 de calor ao disparar)",
+      "terse": "<b>Auxiliar</b> Combate Próximo (CQB). Calor 2 (sofre 2 de calor ao disparar)",
+      "detail": "<b>Auxiliar</b> Combate Próximo (CQB). Calor 2 (sofre 2 de calor ao disparar)\nPropriedades:\n• Calor 2 (sofre 2 de calor ao disparar)",
+      "source": "HORUS",
+      "license": "Manticore",
+      "license_level": 1
+    },
+    {
+      "id": "mw_arc_projector",
+      "category": "weapon",
+      "name": "Projetor de Arco",
+      "mount": "Pesada",
+      "type": "Combate Próximo (CQB)",
+      "damage": "1d6+1 Energético",
+      "damage_val": "1d6+1",
+      "damage_type": "Energético",
+      "range": "Alcance 5",
+      "range_val": 5,
+      "range_type": "Alcance",
+      "sp": 0,
+      "tags": [
+        "Calor 1 (Próprio)"
+      ],
+      "tags_summary": "Calor 1 (sofre 1 de calor ao disparar)",
+      "terse": "<b>[No Acerto]</b> Você também pode fazer um ataque secundário contra um personagem diferente a até 3 de alcance do primeiro alvo. Você pode continuar fazendo ataques secundários em acertos, desde que haja novos alvos válidos dentro do alcance; no entanto, cada ataque gera 1 de calor, e ataques secundários não podem causar dano bônus. Personagens não podem ser atingidos mais de uma vez pelo mesmo disparo desta arma.\nTags: Calor 1 (sofre 1 de calor ao disparar)",
+      "detail": "<b>[No Acerto]</b> Você também pode fazer um ataque secundário contra um personagem diferente a até 3 de alcance do primeiro alvo. Você pode continuar fazendo ataques secundários em acertos, desde que haja novos alvos válidos dentro do alcance; no entanto, cada ataque gera 1 de calor, e ataques secundários não podem causar dano bônus. Personagens não podem ser atingidos mais de uma vez pelo mesmo disparo desta arma.\nTags: Calor 1 (sofre 1 de calor ao disparar)\nPropriedades:\n• Calor 1 (sofre 1 de calor ao disparar)",
+      "source": "HORUS",
+      "license": "Manticore",
+      "license_level": 2
+    },
+    {
+      "id": "mw_smartgun",
+      "category": "weapon",
+      "name": "Smartgun",
+      "mount": "Principal",
+      "type": "Rifle",
+      "damage": "4 Cinético",
+      "damage_val": 4,
+      "damage_type": "Cinético",
+      "range": "Alcance 15",
+      "range_val": 15,
+      "range_type": "Alcance",
+      "sp": 2,
+      "tags": [
+        "Precisa",
+        "Guiada",
+        "Inteligente"
+      ],
+      "tags_summary": "Precisa (+1d6 no ataque); Teleguiada (ignora cobertura e linha de visão); Inteligente (ataca a Defesa Tecnológica do alvo)",
+      "terse": "Principal Rifle. Precisa (+1d6 no ataque) • Teleguiada (ignora cobertura e linha de visão) • Inteligente (ataca a Defesa Tecnológica do alvo)",
+      "detail": "Principal Rifle. Precisa (+1d6 no ataque) • Teleguiada (ignora cobertura e linha de visão) • Inteligente (ataca a Defesa Tecnológica do alvo)\nPropriedades:\n• Precisa (+1d6 no ataque)\n• Teleguiada (ignora cobertura e linha de visão)\n• Inteligente (ataca a Defesa Tecnológica do alvo)",
+      "source": "HORUS",
+      "license": "Pegasus",
+      "license_level": 1
+    },
+    {
+      "id": "mw_mimic_gun",
+      "category": "weapon",
+      "name": "Pistola Mímica",
+      "mount": "Pesada",
+      "type": "Desconhecido",
+      "damage": "??? Cinético",
+      "damage_val": "???",
+      "damage_type": "Cinético",
+      "range": "Alcance ???",
+      "range_val": "???",
+      "range_type": "Alcance",
+      "sp": 0,
+      "tags": [],
+      "tags_summary": "",
+      "terse": "Esta arma horripilante não possui forma básica; ela se contorce constantemente em diferentes formas, imitando as armas de outros combatentes. Ela conta como todos os tipos de armas à distância simultaneamente (ex: PAP, Fuzil, etc.), mas não pode aceitar Modificações ou se beneficiar de bônus de núcleo, embora ainda se beneficie de talentos normalmente.\nNo início do combate, role 3d20 e anote os resultados em ordem: X, Y e Z. X é o seu Alcance base inicial (antes das modificações dos talentos). No início de cada um de seus turnos após o primeiro, a pistola mímica cicla para o próximo resultado, assumindo-o como seu Alcance base. Após Z, ela volta para X.\nA pistola mímica causa dano cinético igual a 1 + metade do seu Alcance base atual.\nVocê pode provocar a pistola mímica como uma <b>ação completa</b>, rolando um novo conjunto de 3d20.\n<b>[<b>Ação Completa</b>]</b> Provoke Mimic Gun: Role um novo conjunto de 3d20 para definir os valores da Pistola Mímica.",
+      "detail": "Esta arma horripilante não possui forma básica; ela se contorce constantemente em diferentes formas, imitando as armas de outros combatentes. Ela conta como todos os tipos de armas à distância simultaneamente (ex: PAP, Fuzil, etc.), mas não pode aceitar Modificações ou se beneficiar de bônus de núcleo, embora ainda se beneficie de talentos normalmente.\nNo início do combate, role 3d20 e anote os resultados em ordem: X, Y e Z. X é o seu Alcance base inicial (antes das modificações dos talentos). No início de cada um de seus turnos após o primeiro, a pistola mímica cicla para o próximo resultado, assumindo-o como seu Alcance base. Após Z, ela volta para X.\nA pistola mímica causa dano cinético igual a 1 + metade do seu Alcance base atual.\nVocê pode provocar a pistola mímica como uma <b>ação completa</b>, rolando um novo conjunto de 3d20.\n<b>[<b>Ação Completa</b>]</b> Provoke Mimic Gun: Role um novo conjunto de 3d20 para definir os valores da Pistola Mímica.",
+      "source": "HORUS",
+      "license": "Pegasus",
+      "license_level": 2
+    },
+    {
+      "id": "mw_autogun",
+      "category": "weapon",
+      "name": "Autoarma",
+      "mount": "Principal",
+      "type": "Canhão",
+      "damage": "3 Cinético",
+      "damage_val": 3,
+      "damage_type": "Cinético",
+      "range": "Alcance 15",
+      "range_val": 15,
+      "range_type": "Alcance",
+      "sp": 1,
+      "tags": [],
+      "tags_summary": "",
+      "terse": "Esta arma não pode fazer ataques normais. Em vez disso, você pode atacar com ela como uma <b>ação livre</b> no final do seu turno. Ela não se beneficia nem aciona seus talentos.\n<b>[<b>Ação Livre</b>]</b> Disparar Autoarma: Esta arma não pode fazer ataques normais. Em vez disso, você pode atacar com ela como uma <b>ação livre</b> ao final de qualquer movimento seu, desde que o alvo esteja dentro do Alcance e da linha de visão.",
+      "detail": "Esta arma não pode fazer ataques normais. Em vez disso, você pode atacar com ela como uma <b>ação livre</b> no final do seu turno. Ela não se beneficia nem aciona seus talentos.\n<b>[<b>Ação Livre</b>]</b> Disparar Autoarma: Esta arma não pode fazer ataques normais. Em vez disso, você pode atacar com ela como uma <b>ação livre</b> ao final de qualquer movimento seu, desde que o alvo esteja dentro do Alcance e da linha de visão.",
+      "source": "HORUS",
+      "license": "Pegasus",
+      "license_level": 3
+    },
+    {
+      "id": "mw_siege_cannon",
+      "category": "weapon",
+      "name": "Canhão de Cerco",
+      "mount": "Superpesada",
+      "type": "Canhão",
+      "damage": "-",
+      "damage_val": "-",
+      "damage_type": "-",
+      "range": "-",
+      "range_val": "-",
+      "range_type": "-",
+      "sp": 0,
+      "tags": [],
+      "tags_summary": "",
+      "terse": "O canhão de sítio é a peça de artilharia por excelência do Arsenal: um canhão obuseiro alimentado por um mecanismo de carga automático. Projetado para operar a longas distâncias contra alvos fixos, o canhão de sítio é capaz de demolir fortalezas e devastar formações densas de tropas.",
+      "detail": "O canhão de sítio é a peça de artilharia por excelência do Arsenal: um canhão obuseiro alimentado por um mecanismo de carga automático. Projetado para operar a longas distâncias contra alvos fixos, o canhão de sítio é capaz de demolir fortalezas e devastar formações densas de tropas.",
+      "source": "HA",
+      "license": "Barbarossa",
+      "license_level": 3
+    },
+    {
+      "id": "mw_krakatoa_thermobaric_flamethrower",
+      "category": "weapon",
+      "name": "Lança-Chamas Termobárico Krakatoa",
+      "mount": "Pesada",
+      "type": "Combate Próximo (CQB)",
+      "damage": "1 Energético + 4 Queimadura",
+      "damage_val": 1,
+      "damage_type": "Energético",
+      "range": "Cone 5",
+      "range_val": 5,
+      "range_type": "Cone",
+      "sp": 0,
+      "tags": [],
+      "tags_summary": "",
+      "terse": "Entre o espesso ambiente arbóreo de Hercínia, as táticas de enxame dos Egregorianos e a natureza intensamente pessoal do combate nas ruínas, o Krakatoa emergiu como a ferramenta ideal para limpar grupos densos de inimigos. Seu combustível termobaricamente acelerado queima mais quente e por mais tempo que qualquer outra alternativa.",
+      "detail": "Entre o espesso ambiente arbóreo de Hercínia, as táticas de enxame dos Egregorianos e a natureza intensamente pessoal do combate nas ruínas, o Krakatoa emergiu como a ferramenta ideal para limpar grupos densos de inimigos. Seu combustível termobaricamente acelerado queima mais quente e por mais tempo que qualquer outra alternativa.",
+      "source": "HA",
+      "license": "Genghis",
+      "license_level": 1
+    },
+    {
+      "id": "mw_plasma_thrower",
+      "category": "weapon",
+      "name": "Lança-Plasma",
+      "mount": "Superpesada",
+      "type": "Combate Próximo (CQB)",
+      "damage": "1d6+2 Energético + 6 Queimadura",
+      "damage_val": "1d6+2",
+      "damage_type": "Energético",
+      "range": "Cone 7, Linha 10",
+      "range_val": 7,
+      "range_type": "Cone",
+      "sp": 0,
+      "tags": [
+        "Calor 4 (Próprio)"
+      ],
+      "tags_summary": "Calor 4 (sofre 4 de calor ao disparar)",
+      "terse": "Pode ser disparado como Cone 7 <i>ou</i> Linha 10\n<b>[Ao Atacar]</b> Chamas em brasa continuam a queimar em 3 espaços livres de sua escolha dentro da área afetada, durando pelo resto da cena. Quando personagens começam seu turno em um desses espaços ou entram em um pela primeira vez em uma rodada, eles sofrem 1d6 de dano energético.",
+      "detail": "Pode ser disparado como Cone 7 <i>ou</i> Linha 10\n<b>[Ao Atacar]</b> Chamas em brasa continuam a queimar em 3 espaços livres de sua escolha dentro da área afetada, durando pelo resto da cena. Quando personagens começam seu turno em um desses espaços ou entram em um pela primeira vez em uma rodada, eles sofrem 1d6 de dano energético.\nPropriedades:\n• Calor 4 (sofre 4 de calor ao disparar)",
+      "source": "HA",
+      "license": "Genghis",
+      "license_level": 3
+    },
+    {
+      "id": "mw_stub_cannon",
+      "category": "weapon",
+      "name": "Canhão de Cepo",
+      "mount": "Auxiliar",
+      "type": "Canhão",
+      "damage": "3 Explosivo",
+      "damage_val": 3,
+      "damage_type": "Explosivo",
+      "range": "Alcance 5",
+      "range_val": 5,
+      "range_type": "Alcance",
+      "sp": 0,
+      "tags": [
+        "Limitado 6",
+        "Repulsão 1"
+      ],
+      "tags_summary": "Limitada 6 (6 usos por missão); Repulsão 1 (empurra o alvo 1 espaços)",
+      "terse": "<b>Auxiliar</b> Canhão. Limitada 6 (6 usos por missão) • Repulsão 1 (empurra o alvo 1 espaços)",
+      "detail": "<b>Auxiliar</b> Canhão. Limitada 6 (6 usos por missão) • Repulsão 1 (empurra o alvo 1 espaços)\nPropriedades:\n• Limitada 6 (6 usos por missão)\n• Repulsão 1 (empurra o alvo 1 espaços)",
+      "source": "HA",
+      "license": "Iskander",
+      "license_level": 1
+    },
+    {
+      "id": "mw_gravity_gun",
+      "category": "weapon",
+      "name": "Arma de Gravidade",
+      "mount": "Pesada",
+      "type": "Rifle",
+      "damage": "-",
+      "damage_val": "-",
+      "damage_type": "-",
+      "range": "Alcance 8, Explosão 3",
+      "range_val": 8,
+      "range_type": "Alcance",
+      "sp": 0,
+      "tags": [],
+      "tags_summary": "",
+      "terse": "<b>[Ao Atacar]</b> Personagens dentro da área afetada devem ser bem-sucedidos em um salvamento de CASCO ou sofrer 1d6 de dano energético e serem puxados até 3 espaços em direção ao centro da área.",
+      "detail": "<b>[Ao Atacar]</b> Personagens dentro da área afetada devem ser bem-sucedidos em um salvamento de CASCO ou sofrer 1d6 de dano energético e serem puxados até 3 espaços em direção ao centro da área.",
+      "source": "HA",
+      "license": "Iskander",
+      "license_level": 2
+    },
+    {
+      "id": "mw_displacer",
+      "category": "weapon",
+      "name": "Deslocador",
+      "mount": "Principal",
+      "type": "Rifle",
+      "damage": "10 Energético",
+      "damage_val": 10,
+      "damage_type": "Energético",
+      "range": "Alcance 10, Explosão 1",
+      "range_val": 10,
+      "range_type": "Alcance",
+      "sp": 0,
+      "tags": [
+        "Perfurante (PF)",
+        "Recarga",
+        "Único",
+        "Calor 10 (Próprio)"
+      ],
+      "tags_summary": "PF (ignora Armadura); Carregamento (precisa de ação rápida ou estabilizar para recarregar); Única (máximo 1 instalada por mecha); Calor 10 (sofre 10 de calor ao disparar)",
+      "terse": "Principal Rifle. PF (ignora <b>Armadura</b>) • Carregamento (precisa de <b>ação rápida</b> ou estabilizar para recarregar) • Única (máximo 1 instalada por mecha) • Calor 10 (sofre 10 de calor ao disparar)",
+      "detail": "Principal Rifle. PF (ignora <b>Armadura</b>) • Carregamento (precisa de <b>ação rápida</b> ou estabilizar para recarregar) • Única (máximo 1 instalada por mecha) • Calor 10 (sofre 10 de calor ao disparar)\nPropriedades:\n• PF (ignora <b>Armadura</b>)\n• Carregamento (precisa de <b>ação rápida</b> ou estabilizar para recarregar)\n• Única (máximo 1 instalada por mecha)\n• Calor 10 (sofre 10 de calor ao disparar)",
+      "source": "HA",
+      "license": "Napoleon",
+      "license_level": 3
+    },
+    {
+      "id": "mw_shatterhead_colony_missiles",
+      "category": "weapon",
+      "name": "Mísseis de Colônia Estilhaçacabeça",
+      "mount": "Principal",
+      "type": "Lançador",
+      "damage": "1d3+1 Energético",
+      "damage_val": "1d3+1",
+      "damage_type": "Energético",
+      "range": "Alcance 15",
+      "range_val": 15,
+      "range_type": "Alcance",
+      "sp": 1,
+      "tags": [
+        "Arco"
+      ],
+      "tags_summary": "Arco (ignora cobertura se tiver visão indireta)",
+      "terse": "A rolagem de ataque final para esta arma nunca pode ser afetada por dificuldade.",
+      "detail": "A rolagem de ataque final para esta arma nunca pode ser afetada por dificuldade.\nPropriedades:\n• Arco (ignora cobertura se tiver visão indireta)",
+      "source": "HA",
+      "license": "Saladin",
+      "license_level": 1
+    },
+    {
+      "id": "mw_sol_pattern_laser_rifle",
+      "category": "weapon",
+      "name": "Fuzil a Laser Modelo SOL",
+      "mount": "Principal",
+      "type": "Rifle",
+      "damage": "1d6 Energético + 1 Queimadura",
+      "damage_val": "1d6",
+      "damage_type": "Energético",
+      "range": "Alcance 8",
+      "range_val": 8,
+      "range_type": "Alcance",
+      "sp": 0,
+      "tags": [
+        "Calor 1 (Próprio)"
+      ],
+      "tags_summary": "Calor 1 (sofre 1 de calor ao disparar)",
+      "terse": "Principal Rifle. Calor 1 (sofre 1 de calor ao disparar)",
+      "detail": "Principal Rifle. Calor 1 (sofre 1 de calor ao disparar)\nPropriedades:\n• Calor 1 (sofre 1 de calor ao disparar)",
+      "source": "HA",
+      "license": "Sherman",
+      "license_level": 1
+    },
+    {
+      "id": "mw_andromeda_pattern_heavy_laser_rifle",
+      "category": "weapon",
+      "name": "Fuzil a Laser Pesado Modelo ANDROMEDA",
+      "mount": "Pesada",
+      "type": "Canhão",
+      "damage": "2d6 Energético + 3 Queimadura",
+      "damage_val": "2d6",
+      "damage_type": "Energético",
+      "range": "Alcance 12",
+      "range_val": 12,
+      "range_type": "Alcance",
+      "sp": 0,
+      "tags": [
+        "Calor 3 (Próprio)"
+      ],
+      "tags_summary": "Calor 3 (sofre 3 de calor ao disparar)",
+      "terse": "Pesada Canhão. Calor 3 (sofre 3 de calor ao disparar)",
+      "detail": "Pesada Canhão. Calor 3 (sofre 3 de calor ao disparar)\nPropriedades:\n• Calor 3 (sofre 3 de calor ao disparar)",
+      "source": "HA",
+      "license": "Sherman",
+      "license_level": 2
+    },
+    {
+      "id": "mw_tachyon_lance",
+      "category": "weapon",
+      "name": "Lança de Táquions",
+      "mount": "Superpesada",
+      "type": "Canhão",
+      "damage": "2d6 Energético + 8 Queimadura",
+      "damage_val": "2d6",
+      "damage_type": "Energético",
+      "range": "Alcance 20",
+      "range_val": 20,
+      "range_type": "Alcance",
+      "sp": 0,
+      "tags": [
+        "Artilharia",
+        "Calor 4 (Próprio)"
+      ],
+      "tags_summary": "Artilharia (só pode disparar antes de se mover no turno); Calor 4 (sofre 4 de calor ao disparar)",
+      "terse": "<b>[Ao Atacar]</b> Se você estiver na Zona de Perigo, crie um backblast de cone 3 de plasma em chamas na direção oposta ao ataque. Personagens dentro da área afetada devem ter sucesso em um salvamento de ENGENHARIA ou sofrer 4 de queimadura e 2 de calor. Até o início de seu próximo turno, a área afetada fornece cobertura leve.\n<b>[<b>Reação</b>]</b> Tachyon Lance Backblast: Crie um backblast de cone 3 de plasma em chamas na direção oposta ao ataque. Personagens dentro do cone devem ser bem-sucedidos em um salvamento de ENGENHARIA ou sofrer 4 de queimadura e 2 de calor.\nTags: Artilharia (só pode disparar antes de se mover no turno) • Calor 4 (sofre 4 de calor ao disparar)",
+      "detail": "<b>[Ao Atacar]</b> Se você estiver na Zona de Perigo, crie um backblast de cone 3 de plasma em chamas na direção oposta ao ataque. Personagens dentro da área afetada devem ter sucesso em um salvamento de ENGENHARIA ou sofrer 4 de queimadura e 2 de calor. Até o início de seu próximo turno, a área afetada fornece cobertura leve.\n<b>[<b>Reação</b>]</b> Tachyon Lance Backblast: Crie um backblast de cone 3 de plasma em chamas na direção oposta ao ataque. Personagens dentro do cone devem ser bem-sucedidos em um salvamento de ENGENHARIA ou sofrer 4 de queimadura e 2 de calor.\nTags: Artilharia (só pode disparar antes de se mover no turno) • Calor 4 (sofre 4 de calor ao disparar)\nPropriedades:\n• Artilharia (só pode disparar antes de se mover no turno)\n• Calor 4 (sofre 4 de calor ao disparar)",
+      "source": "HA",
+      "license": "Sherman",
+      "license_level": 3
+    },
+    {
+      "id": "mw_annihilator",
+      "category": "weapon",
+      "name": "Aniquilador",
+      "mount": "Principal",
+      "type": "Combate Próximo (CQB)",
+      "damage": "1d3+2 Energético",
+      "damage_val": "1d3+2",
+      "damage_type": "Energético",
+      "range": "Alcance 5, Ameaça 3",
+      "range_val": 5,
+      "range_type": "Alcance",
+      "sp": 0,
+      "tags": [
+        "Perfurante (PF)",
+        "Calor 2 (Próprio)"
+      ],
+      "tags_summary": "PF (ignora Armadura); Calor 2 (sofre 2 de calor ao disparar)",
+      "terse": "<b>[No Acerto]</b> Faça um ataque secundário contra todos os personagens dentro de EMANAÇÃO 1 do alvo. Estes ataques não podem causar dano bônus e não acionam o custo de calor do Aniquilador ou ataques secundários.\nTags: PF (ignora <b>Armadura</b>) • Calor 2 (sofre 2 de calor ao disparar)",
+      "detail": "<b>[No Acerto]</b> Faça um ataque secundário contra todos os personagens dentro de EMANAÇÃO 1 do alvo. Estes ataques não podem causar dano bônus e não acionam o custo de calor do Aniquilador ou ataques secundários.\nTags: PF (ignora <b>Armadura</b>) • Calor 2 (sofre 2 de calor ao disparar)\nPropriedades:\n• PF (ignora <b>Armadura</b>)\n• Calor 2 (sofre 2 de calor ao disparar)",
+      "source": "HA",
+      "license": "Tokugawa",
+      "license_level": 1
+    },
+    {
+      "id": "mw_torch",
+      "category": "weapon",
+      "name": "Tocha",
+      "mount": "Principal",
+      "type": "Corpo a Corpo",
+      "damage": "1d6 Energético + 3 Queimadura",
+      "damage_val": "1d6",
+      "damage_type": "Energético",
+      "range": "Ameaça 1",
+      "range_val": 1,
+      "range_type": "Ameaça",
+      "sp": 0,
+      "tags": [
+        "Exagero",
+        "Calor 2 (Próprio)"
+      ],
+      "tags_summary": "Excesso (rolou 1 no dano: sofre 1 de calor e rerrola o 1); Calor 2 (sofre 2 de calor ao disparar)",
+      "terse": "Principal Corpo a Corpo. Excesso (rolou 1 no dano: sofre 1 de calor e rerrola o 1) • Calor 2 (sofre 2 de calor ao disparar)",
+      "detail": "Principal Corpo a Corpo. Excesso (rolou 1 no dano: sofre 1 de calor e rerrola o 1) • Calor 2 (sofre 2 de calor ao disparar)\nPropriedades:\n• Excesso (rolou 1 no dano: sofre 1 de calor e rerrola o 1)\n• Calor 2 (sofre 2 de calor ao disparar)",
+      "source": "HA",
+      "license": "Tokugawa",
+      "license_level": 2
+    },
+    {
+      "id": "mw_fuel_rod_gun",
+      "category": "weapon",
+      "name": "Arma de Barra de Combustível",
+      "mount": "Principal",
+      "type": "Combate Próximo (CQB)",
+      "damage": "1d3+2 Energético",
+      "damage_val": "1d3+2",
+      "damage_type": "Energético",
+      "range": "Alcance 3, Ameaça 3",
+      "range_val": 3,
+      "range_type": "Alcance",
+      "sp": 0,
+      "tags": [
+        "Limitado 3",
+        "Único"
+      ],
+      "tags_summary": "Limitada 3 (3 usos por missão); Única (máximo 1 instalada por mecha)",
+      "terse": "<b>[Ao Atacar]</b> Clear 4 heat.\nTags: Limitada 3 (3 usos por missão) • Única (máximo 1 instalada por mecha)",
+      "detail": "<b>[Ao Atacar]</b> Clear 4 heat.\nTags: Limitada 3 (3 usos por missão) • Única (máximo 1 instalada por mecha)\nPropriedades:\n• Limitada 3 (3 usos por missão)\n• Única (máximo 1 instalada por mecha)",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "mw_prototype_1",
+      "category": "weapon",
+      "name": "Arma Protótipo I",
+      "mount": "Principal",
+      "type": "Especial",
+      "damage": "1d6+2 Variável",
+      "damage_val": "1d6+2",
+      "damage_type": "Variável",
+      "range": "Ameaça 1, Alcance 10",
+      "range_val": 1,
+      "range_type": "Ameaça",
+      "sp": 0,
+      "tags": [
+        "Limitado 1d6+2",
+        "Exagero",
+        "Definir Usos Máximos",
+        "Definir Tipo de Dano"
+      ],
+      "tags_summary": "Limitada 1d6+2 (1d6+2 usos por missão); Excesso (rolou 1 no dano: sofre 1 de calor e rerrola o 1)",
+      "terse": "Esta arma é um protótipo experimental, personalizado de acordo com seus requisitos específicos.\nQuando você a instala, ou durante um <b>Reparo Completo</b>, você pode escolher um novo tipo de arma, tipo de dano e Ameaça 1 (corpo a corpo) ou Alcance 10 (todos os outros tipos). Adicionalmente, cada vez que você realizar um <b>Reparo Completo</b>, role novamente 1d6+2 para determinar os usos Limitados desta arma.",
+      "detail": "Esta arma é um protótipo experimental, personalizado de acordo com seus requisitos específicos.\nQuando você a instala, ou durante um <b>Reparo Completo</b>, você pode escolher um novo tipo de arma, tipo de dano e Ameaça 1 (corpo a corpo) ou Alcance 10 (todos os outros tipos). Adicionalmente, cada vez que você realizar um <b>Reparo Completo</b>, role novamente 1d6+2 para determinar os usos Limitados desta arma.\nPropriedades:\n• Limitada 1d6+2 (1d6+2 usos por missão)\n• Excesso (rolou 1 no dano: sofre 1 de calor e rerrola o 1)",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "mw_prototype_2",
+      "category": "weapon",
+      "name": "Arma Protótipo II",
+      "mount": "Principal",
+      "type": "Especial",
+      "damage": "1d6+2 Variável",
+      "damage_val": "1d6+2",
+      "damage_type": "Variável",
+      "range": "Ameaça 1, Alcance 10",
+      "range_val": 1,
+      "range_type": "Ameaça",
+      "sp": 0,
+      "tags": [
+        "Limitado 1d6+2",
+        "Exagero",
+        "Definir Usos Máximos",
+        "Definir Tipo de Dano"
+      ],
+      "tags_summary": "Limitada 1d6+2 (1d6+2 usos por missão); Excesso (rolou 1 no dano: sofre 1 de calor e rerrola o 1)",
+      "terse": "Esta arma é um protótipo experimental, personalizado de acordo com seus requisitos específicos.\nQuando você a instala, ou durante um <b>Reparo Completo</b>, você pode escolher um novo tipo de arma, tipo de dano e Ameaça 1 (corpo a corpo) ou Alcance 10 (todos os outros tipos). Adicionalmente, cada vez que você realizar um <b>Reparo Completo</b>, role novamente 1d6+2 para determinar os usos Limitados desta arma e escolha dois:<ul><li><b>Ópticas Ajustadas:</b> Sua arma protótipo sempre ganha +1 de Precisão nos ataques.</li><li><b>Computador Ajustado:</b> Sua arma protótipo é Inteligente.</li><li><b>Blindagem de reator removida:</b> Cada vez que você atacar com sua arma protótipo, você pode escolher – ao custo de 2 de Calor – atacar com uma das seguintes opções, dependendo do seu tipo de arma:<ul><li><b>Arma à distância:</b> Cone 3, Linha 5 ou <b>[Explosão 1, Alcance 10]</b>.</li><li><b>Arma corpo a corpo:</b> Emanação 1.</li></li></ul></ul>",
+      "detail": "Esta arma é um protótipo experimental, personalizado de acordo com seus requisitos específicos.\nQuando você a instala, ou durante um <b>Reparo Completo</b>, você pode escolher um novo tipo de arma, tipo de dano e Ameaça 1 (corpo a corpo) ou Alcance 10 (todos os outros tipos). Adicionalmente, cada vez que você realizar um <b>Reparo Completo</b>, role novamente 1d6+2 para determinar os usos Limitados desta arma e escolha dois:<ul><li><b>Ópticas Ajustadas:</b> Sua arma protótipo sempre ganha +1 de Precisão nos ataques.</li><li><b>Computador Ajustado:</b> Sua arma protótipo é Inteligente.</li><li><b>Blindagem de reator removida:</b> Cada vez que você atacar com sua arma protótipo, você pode escolher – ao custo de 2 de Calor – atacar com uma das seguintes opções, dependendo do seu tipo de arma:<ul><li><b>Arma à distância:</b> Cone 3, Linha 5 ou <b>[Explosão 1, Alcance 10]</b>.</li><li><b>Arma corpo a corpo:</b> Emanação 1.</li></li></ul></ul>\nPropriedades:\n• Limitada 1d6+2 (1d6+2 usos por missão)\n• Excesso (rolou 1 no dano: sofre 1 de calor e rerrola o 1)",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "mw_prototype_3",
+      "category": "weapon",
+      "name": "Arma Protótipo III",
+      "mount": "Principal",
+      "type": "Especial",
+      "damage": "1d6+4 Variável",
+      "damage_val": "1d6+4",
+      "damage_type": "Variável",
+      "range": "Ameaça 1, Alcance 10",
+      "range_val": 1,
+      "range_type": "Ameaça",
+      "sp": 0,
+      "tags": [
+        "Limitado 2d6",
+        "Exagero",
+        "Definir Usos Máximos",
+        "Definir Tipo de Dano"
+      ],
+      "tags_summary": "Limitada 2d6 (2d6 usos por missão); Excesso (rolou 1 no dano: sofre 1 de calor e rerrola o 1)",
+      "terse": "Esta arma é um protótipo experimental, personalizado de acordo com seus requisitos específicos.\nQuando você a instala, ou durante um <b>Reparo Completo</b>, você pode escolher um novo tipo de arma, tipo de dano e Ameaça 1 (corpo a corpo) ou Alcance 10 (todos os outros tipos). Adicionalmente, cada vez que você realizar um <b>Reparo Completo</b>, role novamente 2d6 para determinar os usos Limitados desta arma e escolha dois:<ul><li><b>Ópticas Ajustadas:</b> Sua arma protótipo sempre ganha +1 de Precisão nos ataques.</li><li><b>Computador Ajustado:</b> Sua arma protótipo é Inteligente.</li><li><b>Blindagem de reator removida:</b> Cada vez que você atacar com sua arma protótipo, você pode escolher – ao custo de 2 de Calor – atacar com uma das seguintes opções, dependendo do seu tipo de arma:<ul><li><b>Arma à distância:</b> Cone 3, Linha 5 ou <b>[Explosão 1, Alcance 10]</b>.</li><li><b>Arma corpo a corpo:</b> Emanação 1.</li></li></ul></ul>",
+      "detail": "Esta arma é um protótipo experimental, personalizado de acordo com seus requisitos específicos.\nQuando você a instala, ou durante um <b>Reparo Completo</b>, você pode escolher um novo tipo de arma, tipo de dano e Ameaça 1 (corpo a corpo) ou Alcance 10 (todos os outros tipos). Adicionalmente, cada vez que você realizar um <b>Reparo Completo</b>, role novamente 2d6 para determinar os usos Limitados desta arma e escolha dois:<ul><li><b>Ópticas Ajustadas:</b> Sua arma protótipo sempre ganha +1 de Precisão nos ataques.</li><li><b>Computador Ajustado:</b> Sua arma protótipo é Inteligente.</li><li><b>Blindagem de reator removida:</b> Cada vez que você atacar com sua arma protótipo, você pode escolher – ao custo de 2 de Calor – atacar com uma das seguintes opções, dependendo do seu tipo de arma:<ul><li><b>Arma à distância:</b> Cone 3, Linha 5 ou <b>[Explosão 1, Alcance 10]</b>.</li><li><b>Arma corpo a corpo:</b> Emanação 1.</li></li></ul></ul>\nPropriedades:\n• Limitada 2d6 (2d6 usos por missão)\n• Excesso (rolou 1 no dano: sofre 1 de calor e rerrola o 1)",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "mw_lancaster_integrated",
+      "category": "weapon",
+      "name": "Drone de Trava",
+      "mount": "Principal",
+      "type": "Lançador",
+      "damage": "-",
+      "damage_val": "-",
+      "damage_type": "-",
+      "range": "Alcance 8",
+      "range_val": 8,
+      "range_type": "Alcance",
+      "sp": 0,
+      "tags": [],
+      "tags_summary": "",
+      "terse": "This weapon can’t make normal attacks. Instead, choose an allied mech within Range and line of sight and make a ranged attack against Evasion 8. On a hit, either you or your target may spend 1 Repair to restore half your target’s HP.",
+      "detail": "This weapon can’t make normal attacks. Instead, choose an allied mech within Range and line of sight and make a ranged attack against Evasion 8. On a hit, either you or your target may spend 1 Repair to restore half your target’s HP.",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "mw_raleigh_integrated",
+      "category": "weapon",
+      "name": "M35 Mjolnir",
+      "mount": "Principal",
+      "type": "Combate Próximo (CQB)",
+      "damage": "4 Cinético",
+      "damage_val": 4,
+      "damage_type": "Cinético",
+      "range": "Alcance 5, Ameaça 3",
+      "range_val": 5,
+      "range_type": "Alcance",
+      "sp": 0,
+      "tags": [],
+      "tags_summary": "",
+      "terse": "1/round, when you reload any weapon, this weapon can be fired as a free action.",
+      "detail": "1/round, when you reload any weapon, this weapon can be fired as a free action.",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "mw_barbarossa_integrated",
+      "category": "weapon",
+      "name": "Trilho do Apocalipse",
+      "mount": "Classe Nave",
+      "type": "Arma de Carretel",
+      "damage": "-",
+      "damage_val": "-",
+      "damage_type": "-",
+      "range": "-",
+      "range_val": "-",
+      "range_type": "-",
+      "sp": 0,
+      "tags": [],
+      "tags_summary": "",
+      "terse": "O Trilho do Apocalipse deve ser carregado antes de poder ser disparado, usando o Poder de NÚCLEO Carregar Trilho.\nEsta arma tem perfis diferentes determinados pelo valor atual do DADO DO APOCALIPSE quando você a dispara. Cada perfil substitui o anterior. O Trilho do Apocalipse não pode ser disparado contra alvos a menos de alcance 5.\nApós um ataque com o Trilho do Apocalipse, o Dado do Apocalipse volta para 4.\n<b>[<b>Ação Completa</b>]</b> Fire Apocalypse Rail: Se o valor do Dado do Apocalipse for 1–3, você pode atacar em seu turno com o Trilho do Apocalipse como uma <b>ação livre</b>. Se o valor for 4–6, você pode atacar como uma <b>ação livre</b> ao final do turno de qualquer personagem.",
+      "detail": "O Trilho do Apocalipse deve ser carregado antes de poder ser disparado, usando o Poder de NÚCLEO Carregar Trilho.\nEsta arma tem perfis diferentes determinados pelo valor atual do DADO DO APOCALIPSE quando você a dispara. Cada perfil substitui o anterior. O Trilho do Apocalipse não pode ser disparado contra alvos a menos de alcance 5.\nApós um ataque com o Trilho do Apocalipse, o Dado do Apocalipse volta para 4.\n<b>[<b>Ação Completa</b>]</b> Fire Apocalypse Rail: Se o valor do Dado do Apocalipse for 1–3, você pode atacar em seu turno com o Trilho do Apocalipse como uma <b>ação livre</b>. Se o valor for 4–6, você pode atacar como uma <b>ação livre</b> ao final do turno de qualquer personagem.",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "mw_sherman_integrated",
+      "category": "weapon",
+      "name": "ZF4 SOLIDCORE",
+      "mount": "Principal",
+      "type": "Canhão",
+      "damage": "-",
+      "damage_val": "-",
+      "damage_type": "-",
+      "range": "-",
+      "range_val": "-",
+      "range_type": "-",
+      "sp": 0,
+      "tags": [
+        "Artilharia"
+      ],
+      "tags_summary": "Artilharia (só pode disparar antes de se mover no turno)",
+      "terse": "Principal Canhão. Artilharia (só pode disparar antes de se mover no turno)",
+      "detail": "Principal Canhão. Artilharia (só pode disparar antes de se mover no turno)\nPropriedades:\n• Artilharia (só pode disparar antes de se mover no turno)",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    }
+  ],
+  "systems": [
+    {
+      "id": "ms_comp_con_class_assistant_unit",
+      "category": "system",
+      "name": "Unidade Assistente Classe Comp/Con",
+      "sp": 2,
+      "type": "AI",
+      "tags": [
+        "IA",
+        "Previne Cascata",
+        "Único"
+      ],
+      "actions": [
+        {
+          "name": "Engage COMP/CON",
+          "activation": "Protocolo",
+          "detail": "Você cede o controle do seu mecha para seu COMP/CON, permitindo que seu mecha aja de forma independente em seu turno com seu próprio conjunto de ações. Diferente de outras IAs, um mecha controlado por um COMP/CON não tem iniciativa independente e exige ordens diretas. Seu mecha seguirá cursos de ação básicos (defender esta área, atacar aquele inimigo, me proteger, etc.) da melhor maneira que puder, ou agirá para se defender caso suas instruções terminem ou não receba novas orientações. Você pode emitir novas ordens no início do seu turno, desde que esteja até Alcance 50 e tenha meios de se comunicar com o mecha. Unidades Comp/con não são verdadeiros NHPs e por isso não podem entrar em cascata.",
+          "active_effects": [
+            {
+              "name": "COMP/CON Online",
+              "detail": "COMP/CON está no controle do seu mecha. Você pode emitir novos comandos no início do seu turno, contanto que esteja dentro de Alcance 50 e tenha os meios para se comunicar com seu mecha."
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "Seu mecha tem uma unidade básica de comp/con, concedendo a ele a tag <b>IA</b>. A comp/con pode falar com você e tem uma personalidade, mas, ao contrário de uma PNH, não é realmente capaz de pensar de forma independente. Ela obedece apenas a você.\nVocê pode conceder o controle do seu mecha à sua comp/con como um protocolo, permitindo que seu mecha aja de forma independente durante seu turno com seu próprio conjunto de ações. Ao contrário de outras IAs, um mecha controlado por uma comp/con não tem iniciativa independente e requer comando direto. Seu mecha seguirá cursos básicos de ação (defenda esta área, ataque este inimigo, me proteja etc.) da melhor maneira possível, ou agirá para se defender se as suas instruções forem concluídas ou se não receber mais orientações. Você pode dar novos comandos no início do seu turno, desde que esteja a até Alcance 50 e tenha os meios para se comunicar com seu mecha. As unidades comp/con não são verdadeiras PNHs e, portanto, não podem entrar em cascata.\n<b>[<b>Protocolo</b>]</b> Engage COMP/CON: Você cede o controle do seu mecha para seu COMP/CON, permitindo que seu mecha aja de forma independente em seu turno com seu próprio conjunto de ações. Diferente de outras IAs, um mecha controlado por um COMP/CON não tem iniciativa independente e exige ordens diretas. Seu mecha seguirá cursos de ação básicos (defender esta área, atacar aquele inimigo, me proteger, etc.) da melhor maneira que puder, ou agirá para se defender caso suas instruções terminem ou não receba novas orientações. Você pode emitir novas ordens no início do seu turno, desde que esteja até Alcance 50 e tenha meios de se comunicar com o mecha. Unidades Comp/con não são verdadeiros NHPs e por isso não podem entrar em cascata.",
+      "detail": "Seu mecha tem uma unidade básica de comp/con, concedendo a ele a tag <b>IA</b>. A comp/con pode falar com você e tem uma personalidade, mas, ao contrário de uma PNH, não é realmente capaz de pensar de forma independente. Ela obedece apenas a você.\nVocê pode conceder o controle do seu mecha à sua comp/con como um protocolo, permitindo que seu mecha aja de forma independente durante seu turno com seu próprio conjunto de ações. Ao contrário de outras IAs, um mecha controlado por uma comp/con não tem iniciativa independente e requer comando direto. Seu mecha seguirá cursos básicos de ação (defenda esta área, ataque este inimigo, me proteja etc.) da melhor maneira possível, ou agirá para se defender se as suas instruções forem concluídas ou se não receber mais orientações. Você pode dar novos comandos no início do seu turno, desde que esteja a até Alcance 50 e tenha os meios para se comunicar com seu mecha. As unidades comp/con não são verdadeiras PNHs e, portanto, não podem entrar em cascata.\n<b>[<b>Protocolo</b>]</b> Engage COMP/CON: Você cede o controle do seu mecha para seu COMP/CON, permitindo que seu mecha aja de forma independente em seu turno com seu próprio conjunto de ações. Diferente de outras IAs, um mecha controlado por um COMP/CON não tem iniciativa independente e exige ordens diretas. Seu mecha seguirá cursos de ação básicos (defender esta área, atacar aquele inimigo, me proteger, etc.) da melhor maneira que puder, ou agirá para se defender caso suas instruções terminem ou não receba novas orientações. Você pode emitir novas ordens no início do seu turno, desde que esteja até Alcance 50 e tenha meios de se comunicar com o mecha. Unidades Comp/con não são verdadeiros NHPs e por isso não podem entrar em cascata.",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "ms_custom_paint_job",
+      "category": "system",
+      "name": "Pintura Personalizada",
+      "sp": 1,
+      "type": "Sistema",
+      "tags": [
+        "Único",
+        "Indestrutível"
+      ],
+      "actions": [],
+      "deployables": [],
+      "terse": "Quando você sofrer dano de estrutura, role 1d6. Com um 6, você retorna para 1 PV e ignora o dano – o golpe simplesmente “arranhou sua pintura”.\nEste sistema só pode ser usado uma vez antes de cada <b>Reparo Completo</b> e não é um alvo válido para destruição de sistema.",
+      "detail": "Quando você sofrer dano de estrutura, role 1d6. Com um 6, você retorna para 1 PV e ignora o dano – o golpe simplesmente “arranhou sua pintura”.\nEste sistema só pode ser usado uma vez antes de cada <b>Reparo Completo</b> e não é um alvo válido para destruição de sistema.",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "ms_expanded_compartment",
+      "category": "system",
+      "name": "Compartimento Expandido",
+      "sp": 1,
+      "type": "Sistema",
+      "tags": [
+        "Único"
+      ],
+      "actions": [
+        {
+          "name": "Ceder Controle",
+          "activation": "Protocolo",
+          "detail": "Você passa ou retoma o controle para ou de um personagem (não-Mecha) ou objeto de Tamanho 1/2 viajando como passageiro na cabine. Se eles assumirem os controles no seu lugar, o mecha fica IMPEDIDO e LENTO para refletir a falta de licenças e integração adequadas.",
+          "add_status": [
+            {
+              "id": "impaired",
+              "target": "self"
+            },
+            {
+              "id": "slow",
+              "target": "self"
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "Seu mecha tem espaço para um personagem ou objeto não-Mecha adicional de Tamanho 1/2 viajar como passageiro na cabine. Enquanto dentro do mecha, eles não podem sofrer nenhum efeito de fora ou ser alvo de ataques, como se fossem um piloto. Você pode ceder ou retomar o controle a eles como um protocolo (seguindo as mesmas regras de piloto e IAs), mas se eles assumirem os controles no seu lugar, o mecha fica <b>IMPEDIDO</b> e <b>LENTO</b> para refletir a falta de licenças e integração adequadas.\n<b>[<b>Protocolo</b>]</b> Ceder Controle: Você passa ou retoma o controle para ou de um personagem (não-Mecha) ou objeto de Tamanho 1/2 viajando como passageiro na cabine. Se eles assumirem os controles no seu lugar, o mecha fica <b>IMPEDIDO</b> e <b>LENTO</b> para refletir a falta de licenças e integração adequadas.",
+      "detail": "Seu mecha tem espaço para um personagem ou objeto não-Mecha adicional de Tamanho 1/2 viajar como passageiro na cabine. Enquanto dentro do mecha, eles não podem sofrer nenhum efeito de fora ou ser alvo de ataques, como se fossem um piloto. Você pode ceder ou retomar o controle a eles como um protocolo (seguindo as mesmas regras de piloto e IAs), mas se eles assumirem os controles no seu lugar, o mecha fica <b>IMPEDIDO</b> e <b>LENTO</b> para refletir a falta de licenças e integração adequadas.\n<b>[<b>Protocolo</b>]</b> Ceder Controle: Você passa ou retoma o controle para ou de um personagem (não-Mecha) ou objeto de Tamanho 1/2 viajando como passageiro na cabine. Se eles assumirem os controles no seu lugar, o mecha fica <b>IMPEDIDO</b> e <b>LENTO</b> para refletir a falta de licenças e integração adequadas.",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "ms_manipulators",
+      "category": "system",
+      "name": "Manipuladores",
+      "sp": 1,
+      "type": "Sistema",
+      "tags": [
+        "Único"
+      ],
+      "actions": [],
+      "deployables": [],
+      "terse": "Seu mecha possui um conjunto extra de membros. Eles são pequenos demais para oferecerem benefícios de combate, mas permitem que o mecha interaja com objetos que de outra forma seriam pequenos ou sensíveis demais (ex.: painéis sensíveis ao toque tamanho piloto).",
+      "detail": "Seu mecha possui um conjunto extra de membros. Eles são pequenos demais para oferecerem benefícios de combate, mas permitem que o mecha interaja com objetos que de outra forma seriam pequenos ou sensíveis demais (ex.: painéis sensíveis ao toque tamanho piloto).",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "ms_pattern_a_smoke_charges",
+      "category": "system",
+      "name": "Cargas de Fumaça Padrão-A",
+      "sp": 2,
+      "type": "Deployable",
+      "tags": [
+        "Limitado 3",
+        "Único",
+        "Granada"
+      ],
+      "actions": [
+        {
+          "name": "Granada de Fumaça",
+          "activation": "Rápida",
+          "range": [
+            {
+              "type": "Range",
+              "val": 5
+            },
+            {
+              "type": "Blast",
+              "val": 2
+            }
+          ],
+          "detail": "Jogue uma Granada de Fumaça em até Alcance 5. Todos os personagens e objetos numa área de Explosão 2 se beneficiam de cobertura leve até o fim de seu próximo turno, quando a fumaça se dispersa."
+        }
+      ],
+      "deployables": [
+        {
+          "name": "Mina de Fumaça",
+          "type": "Mine",
+          "range": [
+            {
+              "type": "Burst",
+              "val": 3
+            }
+          ],
+          "detail": "Esta mina detona quando qualquer personagem aliado se move sobre ela ou para adjacente a ela. Todos os personagens e objetos numa área de Emanação 3 recebem cobertura leve até o final do próximo turno do personagem que a detonou, quando então a fumaça se dispersa."
+        }
+      ],
+      "terse": "<b>[<b>Ação Rápida</b>]</b> Granada de Fumaça: Jogue uma Granada de Fumaça em até Alcance 5. Todos os personagens e objetos numa área de Explosão 2 se beneficiam de cobertura leve até o fim de seu próximo turno, quando a fumaça se dispersa.\n<b>[Posicionável: Mina de Fumaça (Mine)]</b> Esta mina detona quando qualquer personagem aliado se move sobre ela ou para adjacente a ela. Todos os personagens e objetos numa área de Emanação 3 recebem cobertura leve até o final do próximo turno do personagem que a detonou, quando então a fumaça se dispersa.",
+      "detail": "<b>[<b>Ação Rápida</b>]</b> Granada de Fumaça: Jogue uma Granada de Fumaça em até Alcance 5. Todos os personagens e objetos numa área de Explosão 2 se beneficiam de cobertura leve até o fim de seu próximo turno, quando a fumaça se dispersa.\n<b>[Posicionável: Mina de Fumaça (Mine)]</b> Esta mina detona quando qualquer personagem aliado se move sobre ela ou para adjacente a ela. Todos os personagens e objetos numa área de Emanação 3 recebem cobertura leve até o final do próximo turno do personagem que a detonou, quando então a fumaça se dispersa.",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "ms_pattern_a_jericho_deployable_cover",
+      "category": "system",
+      "name": "Cobertura Implantável Jericho Padrão-A",
+      "sp": 2,
+      "type": "Deployable",
+      "tags": [
+        "Único"
+      ],
+      "actions": [],
+      "deployables": [
+        {
+          "name": "Cobertura Implantável Jericho",
+          "type": "Deployable",
+          "instances": 2,
+          "size": 1,
+          "hp": 10,
+          "evasion": 5,
+          "detail": "Implante duas seções de cobertura pesada de Tamanho 1 em espaços livres adjacentes a você e entre si. Cada seção é um objeto com Evasão 5 e 10 PV que pode ser alvo e destruído individualmente. As seções concedem cobertura pesada para quem estiver atrás delas.",
+          "recall": "Full",
+          "redeploy": "Quick"
+        }
+      ],
+      "terse": "Implante duas seções de cobertura pesada de Tamanho 1 em espaços livres adjacentes a você e entre si. Cada seção é um objeto com Evasão 5 e 10 PV que pode ser alvo e destruído individualmente. As seções de cobertura podem ser recolhidas novamente como uma <b>ação completa</b>.\nReparar o sistema restaura ambas as seções.\n<b>[Posicionável: Cobertura Implantável Jericho (Deployable)]</b> Implante duas seções de cobertura pesada de Tamanho 1 em espaços livres adjacentes a você e entre si. Cada seção é um objeto com Evasão 5 e 10 PV que pode ser alvo e destruído individualmente. As seções concedem cobertura pesada para quem estiver atrás delas.",
+      "detail": "Implante duas seções de cobertura pesada de Tamanho 1 em espaços livres adjacentes a você e entre si. Cada seção é um objeto com Evasão 5 e 10 PV que pode ser alvo e destruído individualmente. As seções de cobertura podem ser recolhidas novamente como uma <b>ação completa</b>.\nReparar o sistema restaura ambas as seções.\n<b>[Posicionável: Cobertura Implantável Jericho (Deployable)]</b> Implante duas seções de cobertura pesada de Tamanho 1 em espaços livres adjacentes a você e entre si. Cada seção é um objeto com Evasão 5 e 10 PV que pode ser alvo e destruído individualmente. As seções concedem cobertura pesada para quem estiver atrás delas.",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "ms_pattern_b_hex_charges",
+      "category": "system",
+      "name": "Cargas HEX Padrão-B",
+      "sp": 2,
+      "type": "Deployable",
+      "tags": [
+        "Limitado 3",
+        "Único",
+        "Granada"
+      ],
+      "actions": [
+        {
+          "name": "Granada de Frag",
+          "activation": "Rápida",
+          "range": [
+            {
+              "type": "Range",
+              "val": 5
+            },
+            {
+              "type": "Blast",
+              "val": 1
+            }
+          ],
+          "damage": [
+            {
+              "type": "Explosive",
+              "val": "1d6",
+              "aoe": true,
+              "save": "agi",
+              "save_half": true
+            }
+          ],
+          "detail": "Jogue uma Granada de Frag em até Alcance 5. Todos os personagens em uma área de Explosão 1 devem passar num salvamento de AGILIDADE ou sofrem 1d6 de dano Explosivo. Num sucesso, sofrem metade."
+        }
+      ],
+      "deployables": [
+        {
+          "name": "Mina Explosiva",
+          "type": "Mine",
+          "range": [
+            {
+              "type": "Burst",
+              "val": 1
+            }
+          ],
+          "damage": [
+            {
+              "type": "Explosive",
+              "val": "3d6",
+              "aoe": true,
+              "save": "agi",
+              "save_half": true
+            }
+          ],
+          "activation": "Rápida",
+          "detail": "Todos os personagens em uma área de Emanação 1 devem passar num salvamento de AGILIDADE ou sofrem 2d6 de dano Explosivo. Num sucesso, sofrem metade do dano."
+        }
+      ],
+      "terse": "<b>[<b>Ação Rápida</b>]</b> Granada de Frag: Jogue uma Granada de Frag em até Alcance 5. Todos os personagens em uma área de Explosão 1 devem passar num salvamento de AGILIDADE ou sofrem 1d6 de dano Explosivo. Num sucesso, sofrem metade.\n<b>[Posicionável: Mina Explosiva (Mine)]</b> Todos os personagens em uma área de Emanação 1 devem passar num salvamento de AGILIDADE ou sofrem 2d6 de dano Explosivo. Num sucesso, sofrem metade do dano.",
+      "detail": "<b>[<b>Ação Rápida</b>]</b> Granada de Frag: Jogue uma Granada de Frag em até Alcance 5. Todos os personagens em uma área de Explosão 1 devem passar num salvamento de AGILIDADE ou sofrem 1d6 de dano Explosivo. Num sucesso, sofrem metade.\n<b>[Posicionável: Mina Explosiva (Mine)]</b> Todos os personagens em uma área de Emanação 1 devem passar num salvamento de AGILIDADE ou sofrem 2d6 de dano Explosivo. Num sucesso, sofrem metade do dano.",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "ms_personalizations",
+      "category": "system",
+      "name": "Personalizações",
+      "sp": 1,
+      "type": "Sistema",
+      "tags": [
+        "Único"
+      ],
+      "actions": [],
+      "deployables": [],
+      "terse": "Você ganha +2 PV e, em consulta com o Mestre, pode estabelecer uma modificação menor que fez em seu mecha.\nEsta modificação não tem benefício numérico além dos PV adicionais que concede, mas pode proporcionar outros efeitos úteis. Se o Mestre concordar que esta modificação ajudaria em um teste de perícia de piloto ou mecha, você ganha +1 de PRECISÃO para aquele teste.",
+      "detail": "Você ganha +2 PV e, em consulta com o Mestre, pode estabelecer uma modificação menor que fez em seu mecha.\nEsta modificação não tem benefício numérico além dos PV adicionais que concede, mas pode proporcionar outros efeitos úteis. Se o Mestre concordar que esta modificação ajudaria em um teste de perícia de piloto ou mecha, você ganha +1 de PRECISÃO para aquele teste.",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "ms_stable_structure",
+      "category": "system",
+      "name": "Estrutura Estável",
+      "sp": 2,
+      "type": "Sistema",
+      "tags": [
+        "Único"
+      ],
+      "actions": [],
+      "deployables": [],
+      "terse": "Você ganha +1 de PRECISÃO em salvamentos para evitar <b>PROSTRADO</b> ou Repulsão.",
+      "detail": "Você ganha +1 de PRECISÃO em salvamentos para evitar <b>PROSTRADO</b> ou Repulsão.",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "ms_turret_drones",
+      "category": "system",
+      "name": "Drones de Torreta",
+      "sp": 2,
+      "type": "Drone",
+      "tags": [
+        "Limitado 3",
+        "Único"
+      ],
+      "actions": [],
+      "deployables": [
+        {
+          "name": "Drone Torreta",
+          "type": "Drone",
+          "size": 0.5,
+          "hp": 5,
+          "edef": 10,
+          "evasion": 10,
+          "detail": "Ganhe a reação Ataque de Torreta, que pode ser usada uma vez para cada drone torreta implantado. Drones torreta não podem ser recolhidos e expiram no fim da cena.",
+          "actions": [
+            {
+              "name": "Ataque de Torreta",
+              "activation": "Reação",
+              "frequency": "1/rodada",
+              "trigger": "Um personagem aliado a até Alcance 10 de um drone torreta faz um ataque bem-sucedido.",
+              "detail": "O drone torreta causa 3 de dano Cinético ao alvo, contanto que tenha linha de visão para o alvo.",
+              "damage": [
+                {
+                  "type": "Kinetic",
+                  "val": 3
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "terse": "Gaste uma carga para implantar um drone torreta que se prende a qualquer objeto ou superfície dentro dos SENSORES e na linha de visão. Ganhe a reação Ataque de Torreta, que pode ser usada uma vez para cada drone torreta implantado. Drones torreta não podem ser recolhidos e expiram ao final da cena.\n<b>[Posicionável: Drone Torreta (Drone)]</b> Ganhe a reação Ataque de Torreta, que pode ser usada uma vez para cada drone torreta implantado. Drones torreta não podem ser recolhidos e expiram no fim da cena.",
+      "detail": "Gaste uma carga para implantar um drone torreta que se prende a qualquer objeto ou superfície dentro dos SENSORES e na linha de visão. Ganhe a reação Ataque de Torreta, que pode ser usada uma vez para cada drone torreta implantado. Drones torreta não podem ser recolhidos e expiram ao final da cena.\n<b>[Posicionável: Drone Torreta (Drone)]</b> Ganhe a reação Ataque de Torreta, que pode ser usada uma vez para cada drone torreta implantado. Drones torreta não podem ser recolhidos e expiram no fim da cena.",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "ms_type_3_projected_shield",
+      "category": "system",
+      "name": "Escudo Projetado Tipo-3",
+      "sp": 2,
+      "type": "Shield",
+      "tags": [
+        "Escudo",
+        "Único",
+        "Calor 1 (Próprio)"
+      ],
+      "actions": [
+        {
+          "name": "Projetar Escudo",
+          "activation": "Protocolo",
+          "detail": "Nomeie um personagem na sua linha de visão: todos os ataques à distância ou corpo a corpo que ele fizer contra você, ou que você fizer contra ele, recebem +2 de DIFICULDADE até o início de seu próximo turno."
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Protocolo</b>]</b> Projetar Escudo: Nomeie um personagem na sua linha de visão: todos os ataques à distância ou corpo a corpo que ele fizer contra você, ou que você fizer contra ele, recebem +2 de DIFICULDADE até o início de seu próximo turno.",
+      "detail": "<b>[<b>Protocolo</b>]</b> Projetar Escudo: Nomeie um personagem na sua linha de visão: todos os ataques à distância ou corpo a corpo que ele fizer contra você, ou que você fizer contra ele, recebem +2 de DIFICULDADE até o início de seu próximo turno.",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "ms_eva_module",
+      "category": "system",
+      "name": "Módulo EVA",
+      "sp": 1,
+      "type": "Flight System",
+      "tags": [
+        "Único"
+      ],
+      "actions": [],
+      "deployables": [],
+      "terse": "Seu mecha possui um sistema de propulsão adequado para uso em ambientes de baixa ou zero gravidade e subaquáticos. Nesses ambientes, você pode VOAR e não fica <b>LENTO</b>.",
+      "detail": "Seu mecha possui um sistema de propulsão adequado para uso em ambientes de baixa ou zero gravidade e subaquáticos. Nesses ambientes, você pode VOAR e não fica <b>LENTO</b>.",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "ms_rapid_burst_jump_jet_system",
+      "category": "system",
+      "name": "Sistemas de Jatos de Salto de Estouro Rápido",
+      "sp": 2,
+      "type": "Flight System",
+      "tags": [
+        "Único"
+      ],
+      "actions": [],
+      "deployables": [],
+      "terse": "Você pode VOAR quando <b>IMPULSIONAR</b>; no entanto, você deve terminar o movimento no chão ou em outra superfície sólida, ou então começa a cair imediatamente.",
+      "detail": "Você pode VOAR quando <b>IMPULSIONAR</b>; no entanto, você deve terminar o movimento no chão ou em outra superfície sólida, ou então começa a cair imediatamente.",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "ms_type_i_flight_system",
+      "category": "system",
+      "name": "Sistema de Voo Tipo-I",
+      "sp": 3,
+      "type": "Flight System",
+      "tags": [
+        "Único"
+      ],
+      "actions": [],
+      "deployables": [],
+      "terse": "Você pode optar por contar todo e qualquer movimento seu como voo; no entanto, você sofre TAMANHO +1 de calor no final de qualquer um de seus turnos em que voar dessa maneira.",
+      "detail": "Você pode optar por contar todo e qualquer movimento seu como voo; no entanto, você sofre TAMANHO +1 de calor no final de qualquer um de seus turnos em que voar dessa maneira.",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "ms_synthetic_muscle_netting",
+      "category": "system",
+      "name": "Malha de Músculo Sintético",
+      "sp": 2,
+      "type": "Sistema",
+      "tags": [
+        "Único"
+      ],
+      "actions": [],
+      "deployables": [],
+      "terse": "Você pode <b>EMPURRAR</b> alvos maiores que você, e ao <b>AGARRAR</b> ou <b>EMPURRAR</b> alvos maiores, você conta como o mesmo TAMANHO do maior oponente. Ao <b>AGARRAR</b> ou <b>EMPURRAR</b> oponentes do mesmo TAMANHO ou menores, você conta como pelo menos um TAMANHO maior. Adicionalmente, sua capacidade de levantar e arrastar é dobrada.",
+      "detail": "Você pode <b>EMPURRAR</b> alvos maiores que você, e ao <b>AGARRAR</b> ou <b>EMPURRAR</b> alvos maiores, você conta como o mesmo TAMANHO do maior oponente. Ao <b>AGARRAR</b> ou <b>EMPURRAR</b> oponentes do mesmo TAMANHO ou menores, você conta como pelo menos um TAMANHO maior. Adicionalmente, sua capacidade de levantar e arrastar é dobrada.",
+      "source": "IPS-N",
+      "license": "Blackbeard",
+      "license_level": 1
+    },
+    {
+      "id": "ms_reinforced_cabling",
+      "category": "system",
+      "name": "Cabeamento Reforçado",
+      "sp": 2,
+      "type": "Sistema",
+      "tags": [],
+      "actions": [
+        {
+          "name": "Balanço com Arpéu",
+          "activation": "Livre",
+          "detail": "1/turno, ao fazer um movimento padrão, você pode voar sua VELOCIDADE em linha reta, desde que haja um caminho livre. Este movimento deve terminar em um objeto ou superfície, caso contrário, você começa a cair. Enquanto permanecer estacionário, você pode se prender à superfície ou objeto de destino, mesmo que seja vertical ou suspenso. Se for derrubado (PROSTRADO) ou repelido enquanto estiver preso a uma superfície, você cai."
+        },
+        {
+          "name": "Arrastar para Baixo",
+          "activation": "Rápida",
+          "detail": "Faça um teste disputado de CASCO contra um personagem dentro do ALCANCE 5 e na linha de visão: o perdedor é derrubado (PROSTRADO).",
+          "add_status": [
+            {
+              "id": "prone"
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Ação Livre</b>]</b> Balanço com Arpéu: 1/turno, ao fazer um movimento padrão, você pode voar sua <b>VELOCIDADE</b> em linha reta, desde que haja um caminho livre. Este movimento deve terminar em um objeto ou superfície, caso contrário, você começa a cair. Enquanto permanecer estacionário, você pode se prender à superfície ou objeto de destino, mesmo que seja vertical ou suspenso. Se for derrubado (<b>PROSTRADO</b>) ou repelido enquanto estiver preso a uma superfície, você cai.\n<b>[<b>Ação Rápida</b>]</b> Arrastar para Baixo: Faça um teste disputado de CASCO contra um personagem dentro do ALCANCE 5 e na linha de visão: o perdedor é derrubado (<b>PROSTRADO</b>).",
+      "detail": "<b>[<b>Ação Livre</b>]</b> Balanço com Arpéu: 1/turno, ao fazer um movimento padrão, você pode voar sua <b>VELOCIDADE</b> em linha reta, desde que haja um caminho livre. Este movimento deve terminar em um objeto ou superfície, caso contrário, você começa a cair. Enquanto permanecer estacionário, você pode se prender à superfície ou objeto de destino, mesmo que seja vertical ou suspenso. Se for derrubado (<b>PROSTRADO</b>) ou repelido enquanto estiver preso a uma superfície, você cai.\n<b>[<b>Ação Rápida</b>]</b> Arrastar para Baixo: Faça um teste disputado de CASCO contra um personagem dentro do ALCANCE 5 e na linha de visão: o perdedor é derrubado (<b>PROSTRADO</b>).",
+      "source": "IPS-N",
+      "license": "Blackbeard",
+      "license_level": 3
+    },
+    {
+      "id": "ms_sekhmet_class_nhp",
+      "category": "system",
+      "name": "PNH Classe-SEKHMET",
+      "sp": 3,
+      "type": "AI",
+      "tags": [
+        "Único",
+        "IA"
+      ],
+      "actions": [
+        {
+          "name": "Protocolo SEKHMET",
+          "activation": "Protocolo",
+          "detail": "Quando ativado, você cede o controle de seu mecha ao seu NHP e ganha os seguintes benefícios:<ul><li>Todos os acertos críticos corpo a corpo causam +1d6 de dano bônus.</li><li>1/rodada, você pode RETALIAR usando apenas armas corpo a corpo como ação livre.</li></ul>Enquanto ativado, as únicas ações, movimentos ou reações que podem ser feitas são se mover ou IMPULSIONAR em direção ao personagem mais próximo que você possa ver – aliado ou inimigo – e realizar ataques corpo a corpo e lutas contra eles. Se você tem múltiplas opções, pode escolher. O controle não pode ser retomado até você ter feito uma ação assim ou caso não existam personagens visíveis no início de seu turno. Desativar SEKHMET atordoa você.",
+          "active_effects": [
+            {
+              "name": "SEKHMET Ativo",
+              "detail": "Seu mecha é controlado por SEKHMET."
+            },
+            {
+              "name": "Protocolo SEKHMET (Bônus Crítico Corpo a Corpo)",
+              "detail": "Todos os acertos críticos corpo a corpo causam +1d6 de dano bônus.",
+              "bonus_damage": {
+                "detail": "+1d6 de dano bônus em acertos críticos corpo a corpo.",
+                "val": "1d6",
+                "weapon_types": [
+                  "melee"
+                ],
+                "hit_type": "crit"
+              }
+            },
+            {
+              "name": "Protocolo SEKHMET (Escaramuça)",
+              "detail": "1/rodada, você pode RETALIAR apenas com armas corpo a corpo como uma ação livre."
+            }
+          ]
+        },
+        {
+          "name": "Retomar Controle",
+          "activation": "Protocolo",
+          "detail": "Você retoma o controle de seu mecha do SEKHMET. Você fica ATORDOADO até o início de seu próximo turno.",
+          "add_status": [
+            {
+              "id": "stunned",
+              "target": "self",
+              "duration": "next_turn_start_self"
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "Seu mecha adquire a tag <b>IA</b> e o <b>Protocolo</b> SEKHMET.\n<b>[<b>Protocolo</b>]</b> <b>Protocolo</b> SEKHMET: Quando ativado, você cede o controle de seu mecha ao seu NHP e ganha os seguintes benefícios:<ul><li>Todos os acertos críticos corpo a corpo causam +1d6 de dano bônus.</li><li>1/rodada, você pode <b>RETALIAR</b> usando apenas armas corpo a corpo como <b>ação livre</b>.</li></ul>Enquanto ativado, as únicas ações, movimentos ou reações que podem ser feitas são se mover ou <b>IMPULSIONAR</b> em direção ao personagem mais próximo que você possa ver – aliado ou inimigo – e realizar ataques corpo a corpo e lutas contra eles. Se você tem múltiplas opções, pode escolher. O controle não pode ser retomado até você ter feito uma ação assim ou caso não existam personagens visíveis no início de seu turno. Desativar SEKHMET atordoa você.\n<b>[<b>Protocolo</b>]</b> Retomar Controle: Você retoma o controle de seu mecha do SEKHMET. Você fica <b>ATORDOADO</b> até o início de seu próximo turno.",
+      "detail": "Seu mecha adquire a tag <b>IA</b> e o <b>Protocolo</b> SEKHMET.\n<b>[<b>Protocolo</b>]</b> <b>Protocolo</b> SEKHMET: Quando ativado, você cede o controle de seu mecha ao seu NHP e ganha os seguintes benefícios:<ul><li>Todos os acertos críticos corpo a corpo causam +1d6 de dano bônus.</li><li>1/rodada, você pode <b>RETALIAR</b> usando apenas armas corpo a corpo como <b>ação livre</b>.</li></ul>Enquanto ativado, as únicas ações, movimentos ou reações que podem ser feitas são se mover ou <b>IMPULSIONAR</b> em direção ao personagem mais próximo que você possa ver – aliado ou inimigo – e realizar ataques corpo a corpo e lutas contra eles. Se você tem múltiplas opções, pode escolher. O controle não pode ser retomado até você ter feito uma ação assim ou caso não existam personagens visíveis no início de seu turno. Desativar SEKHMET atordoa você.\n<b>[<b>Protocolo</b>]</b> Retomar Controle: Você retoma o controle de seu mecha do SEKHMET. Você fica <b>ATORDOADO</b> até o início de seu próximo turno.",
+      "source": "IPS-N",
+      "license": "Blackbeard",
+      "license_level": 3
+    },
+    {
+      "id": "ms_argonaut_shield",
+      "category": "system",
+      "name": "Escudo Argonauta",
+      "sp": 2,
+      "type": "Sistema",
+      "tags": [
+        "Único"
+      ],
+      "actions": [
+        {
+          "activation": "Rápida",
+          "detail": "Você usa o pesado Escudo Argonauta sobre o braço para fornecer cobertura a um personagem adjacente como uma ação rápida, dando-lhe RESISTÊNCIA a todos os danos; no entanto, você sofre metade do dano que seu alvo sofreria antes de calcular ARMADURA e RESISTÊNCIA. Este efeito dura até que seu alvo quebre a adjacência, momento em que este efeito cessa até que você repita esta ação.",
+          "add_resist": [
+            {
+              "resist": "all",
+              "target": "ally"
+            }
+          ],
+          "add_special": [
+            {
+              "attribute": "Argonaut Shield Target",
+              "target": "ally",
+              "detail": "Ganhe resistência a todos os danos enquanto você estiver adjacente ao Drake."
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Você usa o pesado Escudo Argonauta sobre o braço para fornecer cobertura a um personagem adjacente como uma <b>ação rápida</b>, dando-lhe RESISTÊNCIA a todos os danos; no entanto, você sofre metade do dano que seu alvo sofreria antes de calcular <b>ARMADURA</b> e RESISTÊNCIA. Este efeito dura até que seu alvo quebre a adjacência, momento em que este efeito cessa até que você repita esta ação.",
+      "detail": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Você usa o pesado Escudo Argonauta sobre o braço para fornecer cobertura a um personagem adjacente como uma <b>ação rápida</b>, dando-lhe RESISTÊNCIA a todos os danos; no entanto, você sofre metade do dano que seu alvo sofreria antes de calcular <b>ARMADURA</b> e RESISTÊNCIA. Este efeito dura até que seu alvo quebre a adjacência, momento em que este efeito cessa até que você repita esta ação.",
+      "source": "IPS-N",
+      "license": "Drake",
+      "license_level": 1
+    },
+    {
+      "id": "ms_aegis_shield_generator",
+      "category": "system",
+      "name": "Gerador de Escudo Égide",
+      "sp": 2,
+      "type": "Deployable",
+      "tags": [
+        "Único",
+        "Limitado 1"
+      ],
+      "actions": [],
+      "deployables": [
+        {
+          "type": "Deployable",
+          "name": "Gerador de Escudo Égide",
+          "activation": "Rápida",
+          "cost": 1,
+          "size": 1,
+          "hp": 10,
+          "evasion": 5,
+          "detail": "Separe três d6s para representar a energia restante do gerador. Como uma reação quando qualquer personagem ou objeto de sua escolha, pelo menos parcialmente na área, sofre dano, você pode rolar um dos d6s para reduzir o dano pela quantidade rolada.<br>Este efeito dura pelo resto da cena, até que todos os dados tenham sido rolados e o gerador perca energia, ou o gerador seja destruído.",
+          "counters": [
+            {
+              "id": "aegis_shield_die",
+              "name": "Energia do Gerador de Escudo Égide",
+              "default_value": 3,
+              "min": 0,
+              "max": 3
+            }
+          ],
+          "tags": [
+            {
+              "id": "tg_shield"
+            }
+          ]
+        }
+      ],
+      "terse": "Gaste uma carga para posicionar um gerador de escudo de Tamanho 1 em um espaço livre e adjacente, onde ele cria um escudo de ESTOURO 1.\n<b>[Posicionável: Gerador de Escudo Égide (Deployable)]</b> Separe três d6s para representar a energia restante do gerador. Como uma reação quando qualquer personagem ou objeto de sua escolha, pelo menos parcialmente na área, sofre dano, você pode rolar um dos d6s para reduzir o dano pela quantidade rolada. Este efeito dura pelo resto da cena, até que todos os dados tenham sido rolados e o gerador perca energia, ou o gerador seja destruído.",
+      "detail": "Gaste uma carga para posicionar um gerador de escudo de Tamanho 1 em um espaço livre e adjacente, onde ele cria um escudo de ESTOURO 1.\n<b>[Posicionável: Gerador de Escudo Égide (Deployable)]</b> Separe três d6s para representar a energia restante do gerador. Como uma reação quando qualquer personagem ou objeto de sua escolha, pelo menos parcialmente na área, sofre dano, você pode rolar um dos d6s para reduzir o dano pela quantidade rolada. Este efeito dura pelo resto da cena, até que todos os dados tenham sido rolados e o gerador perca energia, ou o gerador seja destruído.",
+      "source": "IPS-N",
+      "license": "Drake",
+      "license_level": 2
+    },
+    {
+      "id": "ms_portable_bunker",
+      "category": "system",
+      "name": "Bunker Portátil",
+      "sp": 2,
+      "type": "Deployable",
+      "tags": [
+        "Limitado 1",
+        "Único"
+      ],
+      "actions": [],
+      "deployables": [
+        {
+          "type": "Deployable",
+          "name": "Bunker Portátil",
+          "activation": "Rápida",
+          "cost": 1,
+          "size": 4,
+          "hp": 40,
+          "evasion": 5,
+          "detail": "Todos os personagens completamente dentro da área 4x4 do bunker ganham cobertura pesada contra todos os ataques de fora do bunker, de todas as direções, e RESISTÊNCIA a danos de ataques de EXPLOSÃO, LINHA, EMANAÇÃO e CONE que se originam de fora do bunker.<br>O bunker tem o topo aberto, e os personagens podem entrar ou sair à vontade. Ele não pode ser movido ou desativado uma vez implantado."
+        }
+      ],
+      "terse": "Gaste uma carga para implantar um bunker portátil em uma área livre e adjacente de 4 por 4. No início do seu próximo turno, ele se desdobra em uma posição fortificada.\n<b>[Posicionável: Bunker Portátil (Deployable)]</b> Todos os personagens completamente dentro da área 4x4 do bunker ganham cobertura pesada contra todos os ataques de fora do bunker, de todas as direções, e RESISTÊNCIA a danos de ataques de EXPLOSÃO, LINHA, EMANAÇÃO e CONE que se originam de fora do bunker. O bunker tem o topo aberto, e os personagens podem entrar ou sair à vontade. Ele não pode ser movido ou desativado uma vez implantado.",
+      "detail": "Gaste uma carga para implantar um bunker portátil em uma área livre e adjacente de 4 por 4. No início do seu próximo turno, ele se desdobra em uma posição fortificada.\n<b>[Posicionável: Bunker Portátil (Deployable)]</b> Todos os personagens completamente dentro da área 4x4 do bunker ganham cobertura pesada contra todos os ataques de fora do bunker, de todas as direções, e RESISTÊNCIA a danos de ataques de EXPLOSÃO, LINHA, EMANAÇÃO e CONE que se originam de fora do bunker. O bunker tem o topo aberto, e os personagens podem entrar ou sair à vontade. Ele não pode ser movido ou desativado uma vez implantado.",
+      "source": "IPS-N",
+      "license": "Drake",
+      "license_level": 3
+    },
+    {
+      "id": "ms_cable_winch_system",
+      "category": "system",
+      "name": "Sistema de Guincho de Cabo",
+      "sp": 1,
+      "type": "Sistema",
+      "tags": [],
+      "actions": [
+        {
+          "activation": "Rápida",
+          "detail": "Esses cabos podem ser presos a um personagem adjacente. Se o alvo estiver ATORDOADO ou voluntário, você tem sucesso automaticamente; caso contrário, ele pode resistir com um salvamento de CASCO bem-sucedido. Uma vez preso, você e o alvo não podem se afastar mais de 5 espaços um do outro. Qualquer um dos personagens pode rebocar o outro, obedecendo às regras normais de levantar e arrastar, e ficando LENTO ao fazê-lo.<br>Qualquer personagem pode remover os cabos com um acerto em um ataque corpo a corpo ou IMPROVISAR ATAQUE contra EVASÃO 10.<br>Esses cabos também podem ser usados para arrastar, puxar ou interagir de outra forma com objetos e o ambiente. Eles têm 5 espaços de comprimento e podem suportar um TAMANHO combinado de 6 antes de quebrarem. Personagens podem usá-los para escalar superfícies, permitindo que subam sem penalidade de VELOCIDADE.",
+          "save": "hull"
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Esses cabos podem ser presos a um personagem adjacente. Se o alvo estiver <b>ATORDOADO</b> ou voluntário, você tem sucesso automaticamente; caso contrário, ele pode resistir com um salvamento de CASCO bem-sucedido. Uma vez preso, você e o alvo não podem se afastar mais de 5 espaços um do outro. Qualquer um dos personagens pode rebocar o outro, obedecendo às regras normais de levantar e arrastar, e ficando <b>LENTO</b> ao fazê-lo. Qualquer personagem pode remover os cabos com um acerto em um ataque corpo a corpo ou IMPROVISAR ATAQUE contra EVASÃO 10. Esses cabos também podem ser usados para arrastar, puxar ou interagir de outra forma com objetos e o ambiente. Eles têm 5 espaços de comprimento e podem suportar um TAMANHO combinado de 6 antes de quebrarem. Personagens podem usá-los para escalar superfícies, permitindo que subam sem penalidade de <b>VELOCIDADE</b>.",
+      "detail": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Esses cabos podem ser presos a um personagem adjacente. Se o alvo estiver <b>ATORDOADO</b> ou voluntário, você tem sucesso automaticamente; caso contrário, ele pode resistir com um salvamento de CASCO bem-sucedido. Uma vez preso, você e o alvo não podem se afastar mais de 5 espaços um do outro. Qualquer um dos personagens pode rebocar o outro, obedecendo às regras normais de levantar e arrastar, e ficando <b>LENTO</b> ao fazê-lo. Qualquer personagem pode remover os cabos com um acerto em um ataque corpo a corpo ou IMPROVISAR ATAQUE contra EVASÃO 10. Esses cabos também podem ser usados para arrastar, puxar ou interagir de outra forma com objetos e o ambiente. Eles têm 5 espaços de comprimento e podem suportar um TAMANHO combinado de 6 antes de quebrarem. Personagens podem usá-los para escalar superfícies, permitindo que subam sem penalidade de <b>VELOCIDADE</b>.",
+      "source": "IPS-N",
+      "license": "Lancaster",
+      "license_level": 1
+    },
+    {
+      "id": "ms_restock_drone",
+      "category": "system",
+      "name": "Drone de Reabastecimento",
+      "sp": 2,
+      "type": "Drone",
+      "tags": [
+        "Limitado 2",
+        "Único"
+      ],
+      "actions": [],
+      "deployables": [
+        {
+          "type": "Drone",
+          "name": "Drone de Reabastecimento",
+          "activation": "Rápida",
+          "size": 0.5,
+          "hp": 5,
+          "edef": 10,
+          "evasion": 10,
+          "detail": "Enquanto adjacentes a este drone, personagens aliados podem ativá-lo como uma ação rápida, removendo 1d6 de calor e uma condição, e recarregando uma arma com RECARGA. Após ser ativado, o drone se desintegra imediatamente.",
+          "actions": [
+            {
+              "name": "Ativar Drone de Reabastecimento",
+              "activation": "Rápida",
+              "detail": "Remova 1d6 de calor e uma condição, e recarregue uma arma com RECARGA. Após ser ativado, o drone se desintegra imediatamente."
+            }
+          ]
+        }
+      ],
+      "terse": "Gaste uma carga para implantar um drone de reabastecimento em qualquer espaço livre e adjacente, onde ele se prepara no final do seu turno.\n<b>[Posicionável: Drone de Reabastecimento (Drone)]</b> Enquanto adjacentes a este drone, personagens aliados podem ativá-lo como uma <b>ação rápida</b>, removendo 1d6 de calor e uma condição, e recarregando uma arma com <b>RECARGA</b>. Após ser ativado, o drone se desintegra imediatamente.",
+      "detail": "Gaste uma carga para implantar um drone de reabastecimento em qualquer espaço livre e adjacente, onde ele se prepara no final do seu turno.\n<b>[Posicionável: Drone de Reabastecimento (Drone)]</b> Enquanto adjacentes a este drone, personagens aliados podem ativá-lo como uma <b>ação rápida</b>, removendo 1d6 de calor e uma condição, e recarregando uma arma com <b>RECARGA</b>. Após ser ativado, o drone se desintegra imediatamente.",
+      "source": "IPS-N",
+      "license": "Lancaster",
+      "license_level": 1
+    },
+    {
+      "id": "ms_mule_harness",
+      "category": "system",
+      "name": "Arreio MULA",
+      "sp": 2,
+      "type": "Sistema",
+      "tags": [
+        "Único"
+      ],
+      "actions": [],
+      "deployables": [],
+      "terse": "Encaixes extras, correias e pontos de fixação permitem que outros personagens escalem e montem seu mecha. Personagens adjacentes e não IMOBILIZADOS podem subir em seu mecha como uma <b>ação rápida</b>. Enquanto montados, eles ocupam o mesmo espaço que você, se movem quando você se move (mesmo se estiverem <b>LENTOS</b>) e se beneficiam de cobertura leve. Se você ou um passageiro for derrubado (<b>PROSTRADO</b>), ATORDUADO, IMOBILIZADO ou destruído, eles aterrissam <b>PROSTRADOS</b> em espaços adjacentes. Passageiros podem descer como parte de qualquer movimento de afastamento, mas só podem subir em seu mecha como uma <b>ação rápida</b>.\nVocê pode carregar passageiros de um Tamanho combinado igual ao seu Tamanho, menos Tamanho 1/2 (ex: se seu mecha for Tamanho 1, você pode carregar um personagem Tamanho 1/2; se for Tamanho 2, você pode carregar um personagem Tamanho 1 e um personagem Tamanho 1/2).",
+      "detail": "Encaixes extras, correias e pontos de fixação permitem que outros personagens escalem e montem seu mecha. Personagens adjacentes e não IMOBILIZADOS podem subir em seu mecha como uma <b>ação rápida</b>. Enquanto montados, eles ocupam o mesmo espaço que você, se movem quando você se move (mesmo se estiverem <b>LENTOS</b>) e se beneficiam de cobertura leve. Se você ou um passageiro for derrubado (<b>PROSTRADO</b>), ATORDUADO, IMOBILIZADO ou destruído, eles aterrissam <b>PROSTRADOS</b> em espaços adjacentes. Passageiros podem descer como parte de qualquer movimento de afastamento, mas só podem subir em seu mecha como uma <b>ação rápida</b>.\nVocê pode carregar passageiros de um Tamanho combinado igual ao seu Tamanho, menos Tamanho 1/2 (ex: se seu mecha for Tamanho 1, você pode carregar um personagem Tamanho 1/2; se for Tamanho 2, você pode carregar um personagem Tamanho 1 e um personagem Tamanho 1/2).",
+      "source": "IPS-N",
+      "license": "Lancaster",
+      "license_level": 2
+    },
+    {
+      "id": "ms_whitewash_sealant_spray",
+      "category": "system",
+      "name": "Spray Selante Whitewash",
+      "sp": 2,
+      "type": "Sistema",
+      "tags": [],
+      "actions": [
+        {
+          "activation": "Rápida",
+          "detail": "Este selante pode ser pulverizado em personagens ou espaços livres dentro do alcance 5 e na linha de visão. Ele tem efeitos diferentes dependendo do alvo:<ul><li><b>Personagens Hostis:</b> Seu alvo deve ter sucesso em um salvamento de AGILIDADE ou fica LENTO até o final de seu próximo turno e remove toda a queimadura.</li><li><b>Personagens Aliados:</b> Seu alvo remove toda a queimadura, mas fica LENTO até o final de seu próximo turno.</li><li><b>Espaço Livre:</b> Quaisquer incêndios dentro de uma EXPLOSÃO 1 são extintos e a área se torna terreno difícil pelo resto da cena.</li></ul>",
+          "add_status": [
+            {
+              "id": "slow",
+              "save": "agi",
+              "duration": "next_turn_end_target"
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Este selante pode ser pulverizado em personagens ou espaços livres dentro do alcance 5 e na linha de visão. Ele tem efeitos diferentes dependendo do alvo:<ul><li><b>Personagens Hostis:</b> Seu alvo deve ter sucesso em um salvamento de AGILIDADE ou fica <b>LENTO</b> até o final de seu próximo turno e remove toda a queimadura.</li><li><b>Personagens Aliados:</b> Seu alvo remove toda a queimadura, mas fica <b>LENTO</b> até o final de seu próximo turno.</li><li><b>Espaço Livre:</b> Quaisquer incêndios dentro de uma EXPLOSÃO 1 são extintos e a área se torna terreno difícil pelo resto da cena.</li></ul>",
+      "detail": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Este selante pode ser pulverizado em personagens ou espaços livres dentro do alcance 5 e na linha de visão. Ele tem efeitos diferentes dependendo do alvo:<ul><li><b>Personagens Hostis:</b> Seu alvo deve ter sucesso em um salvamento de AGILIDADE ou fica <b>LENTO</b> até o final de seu próximo turno e remove toda a queimadura.</li><li><b>Personagens Aliados:</b> Seu alvo remove toda a queimadura, mas fica <b>LENTO</b> até o final de seu próximo turno.</li><li><b>Espaço Livre:</b> Quaisquer incêndios dentro de uma EXPLOSÃO 1 são extintos e a área se torna terreno difícil pelo resto da cena.</li></ul>",
+      "source": "IPS-N",
+      "license": "Lancaster",
+      "license_level": 2
+    },
+    {
+      "id": "ms_aceso_stabilizer",
+      "category": "system",
+      "name": "Estabilizador Aceso",
+      "sp": 3,
+      "type": "Shield",
+      "tags": [
+        "Limitado 3",
+        "Blindagem",
+        "Escudo",
+        "Único"
+      ],
+      "actions": [
+        {
+          "activation": "Rápida",
+          "detail": "Gaste uma carga para disparar este pequeno sistema autoarmável em um mecha aliado dentro do alcance 5. Eles ganham SOBRESCUDO igual ao seu BRIO +4. Enquanto tiverem este SOBRESCUDO, eles ganham IMUNIDADE a IMPEdIDO e BLOQUEADO.",
+          "add_resist": [
+            {
+              "immunity": "impaired"
+            },
+            {
+              "immunity": "jammed"
+            }
+          ],
+          "add_other": [
+            {
+              "type": "overshield",
+              "val": "{grit} + 4",
+              "aoe": true
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Gaste uma carga para disparar este pequeno sistema autoarmável em um mecha aliado dentro do alcance 5. Eles ganham SOBRESCUDO igual ao seu BRIO +4. Enquanto tiverem este SOBRESCUDO, eles ganham IMUNIDADE a IMPEdIDO e BLOQUEADO.",
+      "detail": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Gaste uma carga para disparar este pequeno sistema autoarmável em um mecha aliado dentro do alcance 5. Eles ganham SOBRESCUDO igual ao seu BRIO +4. Enquanto tiverem este SOBRESCUDO, eles ganham IMUNIDADE a IMPEdIDO e BLOQUEADO.",
+      "source": "IPS-N",
+      "license": "Lancaster",
+      "license_level": 3
+    },
+    {
+      "id": "ms_bulwark_mods",
+      "category": "system",
+      "name": "Mods de Bastião",
+      "sp": 1,
+      "type": "Sistema",
+      "tags": [
+        "Único"
+      ],
+      "actions": [],
+      "deployables": [],
+      "terse": "Os membros estendidos, <b>blindagem</b> adicional, sistemas de motor redundantes e outros reforços do seu mecha permitem que você ignore terreno difícil.",
+      "detail": "Os membros estendidos, <b>blindagem</b> adicional, sistemas de motor redundantes e outros reforços do seu mecha permitem que você ignore terreno difícil.",
+      "source": "IPS-N",
+      "license": "Nelson",
+      "license_level": 1
+    },
+    {
+      "id": "ms_armor_lock_plating",
+      "category": "system",
+      "name": "Blindagem Armor-Lock",
+      "sp": 1,
+      "type": "Sistema",
+      "tags": [
+        "Único",
+        "Calor 2 (Próprio)"
+      ],
+      "actions": [],
+      "deployables": [],
+      "terse": "Você pode <b>SUPORTAR</b> enquanto AGARRA. Quando o fizer, quaisquer agarramentos que o afetem atualmente terminam.\nAdicionalmente, quando você <b>SUPORTAR</b>, você recebe os seguintes benefícios até o final do seu próximo turno:<ul><li>Ataques contra você recebem +1 de DIFICULDADE.</li><li>Você não pode falhar em salvamentos ou testes disputados de AGILIDADE ou CASCO.</li><li>Você ganha IMUNIDADE a REPELIR, <b>AGARRAR</b>, ser derrubado (<b>PROSTRADO</b>) e ser movido por qualquer força externa menor que Tamanho 5.</li></ul>",
+      "detail": "Você pode <b>SUPORTAR</b> enquanto AGARRA. Quando o fizer, quaisquer agarramentos que o afetem atualmente terminam.\nAdicionalmente, quando você <b>SUPORTAR</b>, você recebe os seguintes benefícios até o final do seu próximo turno:<ul><li>Ataques contra você recebem +1 de DIFICULDADE.</li><li>Você não pode falhar em salvamentos ou testes disputados de AGILIDADE ou CASCO.</li><li>Você ganha IMUNIDADE a REPELIR, <b>AGARRAR</b>, ser derrubado (<b>PROSTRADO</b>) e ser movido por qualquer força externa menor que Tamanho 5.</li></ul>",
+      "source": "IPS-N",
+      "license": "Nelson",
+      "license_level": 2
+    },
+    {
+      "id": "ms_ramjet",
+      "category": "system",
+      "name": "Ramjet",
+      "sp": 3,
+      "type": "Sistema",
+      "tags": [
+        "Único",
+        "Calor 2 (Próprio)"
+      ],
+      "actions": [
+        {
+          "activation": "Protocolo",
+          "detail": "Até o início de seu próximo turno, você pode se mover +2 espaços ao IMPULSIONAR e seus ataques corpo a corpo (incluindo EMPURRAR, AGARRAR, etc.) ganham REPELIR 2.<br>Ao se mover durante este tempo, você deve se mover sua VELOCIDADE máxima em linha reta; no entanto, você pode parar se colidir com uma obstrução ou personagem hostil, e pode mudar de direção entre movimentos separados (por exemplo, movimentos padrão, IMPULSIONAR, etc.)."
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Protocolo</b>]</b> Habilidade: Até o início de seu próximo turno, você pode se mover +2 espaços ao <b>IMPULSIONAR</b> e seus ataques corpo a corpo (incluindo <b>EMPURRAR</b>, <b>AGARRAR</b>, etc.) ganham REPELIR 2. Ao se mover durante este tempo, você deve se mover sua <b>VELOCIDADE</b> máxima em linha reta; no entanto, você pode parar se colidir com uma obstrução ou personagem hostil, e pode mudar de direção entre movimentos separados (por exemplo, movimentos padrão, <b>IMPULSIONAR</b>, etc.).",
+      "detail": "<b>[<b>Protocolo</b>]</b> Habilidade: Até o início de seu próximo turno, você pode se mover +2 espaços ao <b>IMPULSIONAR</b> e seus ataques corpo a corpo (incluindo <b>EMPURRAR</b>, <b>AGARRAR</b>, etc.) ganham REPELIR 2. Ao se mover durante este tempo, você deve se mover sua <b>VELOCIDADE</b> máxima em linha reta; no entanto, você pode parar se colidir com uma obstrução ou personagem hostil, e pode mudar de direção entre movimentos separados (por exemplo, movimentos padrão, <b>IMPULSIONAR</b>, etc.).",
+      "source": "IPS-N",
+      "license": "Nelson",
+      "license_level": 3
+    },
+    {
+      "id": "ms_bb_breach_blast_charges",
+      "category": "system",
+      "name": "Cargas de Invasão/Explosão BB",
+      "sp": 2,
+      "type": "Deployable",
+      "tags": [
+        "Limitado 3",
+        "Único",
+        "Granada"
+      ],
+      "actions": [
+        {
+          "name": "Granada Térmica",
+          "range": [
+            {
+              "type": "Range",
+              "val": 5
+            },
+            {
+              "type": "Blast",
+              "val": 1
+            }
+          ],
+          "damage": [
+            {
+              "type": "Energy",
+              "val": "1d6",
+              "save": "agi",
+              "save_half": true
+            }
+          ],
+          "detail": "Arremesse uma Granada Térmica dentro do ALCANCE 5. Todos os personagens dentro de uma área de EXPLOSÃO 1 devem ter sucesso em um salvamento de AGILIDADE ou sofrem 1d6 de dano energético. Em um sucesso, eles sofrem metade do dano. Objetos e terreno são atingidos automaticamente e sofrem 10 de dano energético PF."
+        }
+      ],
+      "deployables": [
+        {
+          "name": "Carga de Invasão",
+          "type": "Mine",
+          "detail": "Além dos espaços livres adjacentes, esta mina também pode ser plantada em paredes, peças de cobertura e terreno adjacentes. Uma vez armada, esta mina deve ser detonada com uma ação rápida. Personagens dentro da área afetada devem ter sucesso em um salvamento de AGILIDADE ou sofrem 2d6 de dano explosivo PF. Em um sucesso, eles sofrem metade do dano. Objetos e terreno são atingidos automaticamente e sofrem 30 de dano explosivo PF.",
+          "actions": [
+            {
+              "name": "Detonar",
+              "activation": "Rápida",
+              "detail": "Personagens dentro de uma área de EMANAÇÃO 1 devem ter sucesso em um salvamento de AGILIDADE ou sofrem 2d6 de dano explosivo PF. Em um sucesso, eles sofrem metade do dano. Objetos e terreno são atingidos automaticamente e sofrem 30 de dano explosivo PF."
+            }
+          ]
+        }
+      ],
+      "terse": "<b>[Ação]</b> Granada Térmica: Arremesse uma Granada Térmica dentro do ALCANCE 5. Todos os personagens dentro de uma área de EXPLOSÃO 1 devem ter sucesso em um salvamento de AGILIDADE ou sofrem 1d6 de dano energético. Em um sucesso, eles sofrem metade do dano. Objetos e terreno são atingidos automaticamente e sofrem 10 de dano energético PF.\n<b>[Posicionável: Carga de Invasão (Mine)]</b> Além dos espaços livres adjacentes, esta mina também pode ser plantada em paredes, peças de cobertura e terreno adjacentes. Uma vez armada, esta mina deve ser detonada com uma <b>ação rápida</b>. Personagens dentro da área afetada devem ter sucesso em um salvamento de AGILIDADE ou sofrem 2d6 de dano explosivo PF. Em um sucesso, eles sofrem metade do dano. Objetos e terreno são atingidos automaticamente e sofrem 30 de dano explosivo PF.",
+      "detail": "<b>[Ação]</b> Granada Térmica: Arremesse uma Granada Térmica dentro do ALCANCE 5. Todos os personagens dentro de uma área de EXPLOSÃO 1 devem ter sucesso em um salvamento de AGILIDADE ou sofrem 1d6 de dano energético. Em um sucesso, eles sofrem metade do dano. Objetos e terreno são atingidos automaticamente e sofrem 10 de dano energético PF.\n<b>[Posicionável: Carga de Invasão (Mine)]</b> Além dos espaços livres adjacentes, esta mina também pode ser plantada em paredes, peças de cobertura e terreno adjacentes. Uma vez armada, esta mina deve ser detonada com uma <b>ação rápida</b>. Personagens dentro da área afetada devem ter sucesso em um salvamento de AGILIDADE ou sofrem 2d6 de dano explosivo PF. Em um sucesso, eles sofrem metade do dano. Objetos e terreno são atingidos automaticamente e sofrem 30 de dano explosivo PF.",
+      "source": "IPS-N",
+      "license": "Raleigh",
+      "license_level": 1
+    },
+    {
+      "id": "ms_roland_chamber",
+      "category": "system",
+      "name": "Câmara 'Roland'",
+      "sp": 3,
+      "type": "Sistema",
+      "tags": [
+        "Único"
+      ],
+      "actions": [
+        {
+          "name": "Câmara Roland",
+          "activation": "Livre",
+          "trigger": "Você ataca com uma arma de Recarga após recarregar qualquer arma.",
+          "detail": "No acerto: Este ataque causa +1d6 de dano bônus explosivo, e os alvos devem passar num salvamento de CASCO ou são derrubados PROSTRADOS.",
+          "add_status": [
+            {
+              "id": "prone",
+              "save": "hull"
+            }
+          ],
+          "damage": [
+            {
+              "type": "Explosive",
+              "val": "1d6"
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "Quando você recarregar qualquer arma, seu próximo ataque com uma arma de <b>RECARGA</b> ganha este efeito:\nNo acerto: Este ataque causa +1d6 de dano bônus explosivo, e os alvos devem ter sucesso em um salvamento de CASCO ou ser derrubados (<b>PROSTRADO</b>).\n<b>[<b>Ação Livre</b>]</b> Câmara Roland: No acerto: Este ataque causa +1d6 de dano bônus explosivo, e os alvos devem passar num salvamento de CASCO ou são derrubados <b>PROSTRADOS</b>.",
+      "detail": "Quando você recarregar qualquer arma, seu próximo ataque com uma arma de <b>RECARGA</b> ganha este efeito:\nNo acerto: Este ataque causa +1d6 de dano bônus explosivo, e os alvos devem ter sucesso em um salvamento de CASCO ou ser derrubados (<b>PROSTRADO</b>).\n<b>[<b>Ação Livre</b>]</b> Câmara Roland: No acerto: Este ataque causa +1d6 de dano bônus explosivo, e os alvos devem passar num salvamento de CASCO ou são derrubados <b>PROSTRADOS</b>.",
+      "source": "IPS-N",
+      "license": "Raleigh",
+      "license_level": 2
+    },
+    {
+      "id": "ms_siege_ram",
+      "category": "system",
+      "name": "Aríete de Cerco",
+      "sp": 2,
+      "type": "Sistema",
+      "tags": [
+        "Único"
+      ],
+      "actions": [],
+      "deployables": [],
+      "terse": "Quando você <b>EMPURRAR</b>, você causa 2 de dano cinético no acerto, e você causa 10 de dano cinético PF ao <b>EMPURRAR</b> objetos e terrenos.",
+      "detail": "Quando você <b>EMPURRAR</b>, você causa 2 de dano cinético no acerto, e você causa 10 de dano cinético PF ao <b>EMPURRAR</b> objetos e terrenos.",
+      "source": "IPS-N",
+      "license": "Tortuga",
+      "license_level": 1
+    },
+    {
+      "id": "ms_hyperdense_armor",
+      "category": "system",
+      "name": "Blindagem Hiperdensa",
+      "sp": 3,
+      "type": "Shield",
+      "tags": [
+        "Único",
+        "Escudo"
+      ],
+      "actions": [
+        {
+          "activation": "Rápida",
+          "detail": "Quando ativada, a Blindagem Hiperdensa endurece em uma superfície cintilante e reflexiva que oferece proteção inigualável. Você ganha RESISTÊNCIA a todos os danos, calor e queimadura de ataques que se originam além do ALCANCE 3; no entanto, você fica LENTO e causa metade do dano, calor e queimadura a personagens além do ALCANCE 3.",
+          "add_resist": [
+            {
+              "resist": "all",
+              "target": "self"
+            }
+          ],
+          "add_status": [
+            {
+              "id": "slow",
+              "target": "self"
+            }
+          ],
+          "add_special": [
+            {
+              "attribute": "HyperDense Armor Active",
+              "target": "self"
+            }
+          ]
+        },
+        {
+          "name": "Desativar Blindagem Hiperdensa",
+          "activation": "Rápida",
+          "detail": "Desative a Blindagem Hiperdensa, perdendo a RESISTÊNCIA a todos os danos, calor e queimadura de ataques que se originam além do ALCANCE 3; bem como removendo seu estado de LENTO e causando dano, calor e queimadura normais a personagens além do ALCANCE 3.",
+          "remove_special": [
+            {
+              "attribute": "HyperDense Armor Active",
+              "target": "self"
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Quando ativada, a <b>Blindagem</b> Hiperdensa endurece em uma superfície cintilante e reflexiva que oferece proteção inigualável. Você ganha RESISTÊNCIA a todos os danos, calor e queimadura de ataques que se originam além do ALCANCE 3; no entanto, você fica <b>LENTO</b> e causa metade do dano, calor e queimadura a personagens além do ALCANCE 3.\n<b>[<b>Ação Rápida</b>]</b> Desativar <b>Blindagem</b> Hiperdensa: Desative a <b>Blindagem</b> Hiperdensa, perdendo a RESISTÊNCIA a todos os danos, calor e queimadura de ataques que se originam além do ALCANCE 3; bem como removendo seu estado de <b>LENTO</b> e causando dano, calor e queimadura normais a personagens além do ALCANCE 3.",
+      "detail": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Quando ativada, a <b>Blindagem</b> Hiperdensa endurece em uma superfície cintilante e reflexiva que oferece proteção inigualável. Você ganha RESISTÊNCIA a todos os danos, calor e queimadura de ataques que se originam além do ALCANCE 3; no entanto, você fica <b>LENTO</b> e causa metade do dano, calor e queimadura a personagens além do ALCANCE 3.\n<b>[<b>Ação Rápida</b>]</b> Desativar <b>Blindagem</b> Hiperdensa: Desative a <b>Blindagem</b> Hiperdensa, perdendo a RESISTÊNCIA a todos os danos, calor e queimadura de ataques que se originam além do ALCANCE 3; bem como removendo seu estado de <b>LENTO</b> e causando dano, calor e queimadura normais a personagens além do ALCANCE 3.",
+      "source": "IPS-N",
+      "license": "Tortuga",
+      "license_level": 3
+    },
+    {
+      "id": "ms_webjaw_snare",
+      "category": "system",
+      "name": "Armadilha de Teia",
+      "sp": 1,
+      "type": "Deployable",
+      "tags": [
+        "Limitado 2",
+        "Único"
+      ],
+      "actions": [],
+      "deployables": [
+        {
+          "type": "Deployable",
+          "name": "Armadilha de Teia",
+          "activation": "Rápida",
+          "size": 1,
+          "hp": 10,
+          "evasion": 5,
+          "detail": "A Armadilha de Teia não obstrui o movimento e não pode ser atacada até ser acionada.<br>A armadilha é acionada quando qualquer personagem se move sobre ela. Ele deve ter sucesso em um salvamento de CASCO ou sofre 1d6 de dano cinético PF e fica IMOBILIZADO. Este efeito dura até que a armadilha seja destruída.",
+          "damage": [
+            {
+              "type": "Kinetic",
+              "val": "1d6",
+              "ap": true,
+              "save": "hull"
+            }
+          ],
+          "add_status": [
+            {
+              "id": "immobilized",
+              "save": "hull"
+            }
+          ]
+        }
+      ],
+      "terse": "Gaste uma carga para implantar uma armadilha Webjaw em um espaço livre e adjacente, onde ela se arma no final do seu turno.\n<b>[Posicionável: Armadilha de Teia (Deployable)]</b> A Armadilha de Teia não obstrui o movimento e não pode ser atacada até ser acionada. A armadilha é acionada quando qualquer personagem se move sobre ela. Ele deve ter sucesso em um salvamento de CASCO ou sofre 1d6 de dano cinético PF e fica IMOBILIZADO. Este efeito dura até que a armadilha seja destruída.",
+      "detail": "Gaste uma carga para implantar uma armadilha Webjaw em um espaço livre e adjacente, onde ela se arma no final do seu turno.\n<b>[Posicionável: Armadilha de Teia (Deployable)]</b> A Armadilha de Teia não obstrui o movimento e não pode ser atacada até ser acionada. A armadilha é acionada quando qualquer personagem se move sobre ela. Ele deve ter sucesso em um salvamento de CASCO ou sofre 1d6 de dano cinético PF e fica IMOBILIZADO. Este efeito dura até que a armadilha seja destruída.",
+      "source": "IPS-N",
+      "license": "Vlad",
+      "license_level": 1
+    },
+    {
+      "id": "ms_caltrop_launcher",
+      "category": "system",
+      "name": "Lançador de Abrolhos",
+      "sp": 1,
+      "type": "Sistema",
+      "tags": [
+        "Único"
+      ],
+      "actions": [],
+      "deployables": [
+        {
+          "type": "Deployable",
+          "name": "Campo de Abrolhos",
+          "activation": "Rápida",
+          "size": 1,
+          "hp": 10,
+          "evasion": 5,
+          "detail": "A área afetada torna-se terreno difícil pelo resto da cena, e mechas sofrem 1d3 de dano explosivo PA quando entram na área afetada pela primeira vez na rodada ou terminam seu turno dentro dela. Isso só pode ser ativado uma vez por rodada.",
+          "damage": [
+            {
+              "type": "Explosive",
+              "val": "1d3",
+              "ap": true
+            }
+          ]
+        }
+      ],
+      "terse": "<b>[Posicionável: Campo de Abrolhos (Deployable)]</b> A área afetada torna-se terreno difícil pelo resto da cena, e mechas sofrem 1d3 de dano explosivo PA quando entram na área afetada pela primeira vez na rodada ou terminam seu turno dentro dela. Isso só pode ser ativado uma vez por rodada.",
+      "detail": "<b>[Posicionável: Campo de Abrolhos (Deployable)]</b> A área afetada torna-se terreno difícil pelo resto da cena, e mechas sofrem 1d3 de dano explosivo PA quando entram na área afetada pela primeira vez na rodada ou terminam seu turno dentro dela. Isso só pode ser ativado uma vez por rodada.",
+      "source": "IPS-N",
+      "license": "Vlad",
+      "license_level": 2
+    },
+    {
+      "id": "ms_charged_stake",
+      "category": "system",
+      "name": "Estaca Carregada",
+      "sp": 2,
+      "type": "Sistema",
+      "tags": [],
+      "actions": [
+        {
+          "activation": "Completa",
+          "detail": "Este sistema dispara uma estaca carregada em um personagem adjacente a você. Seu alvo deve ter sucesso em um salvamento de CASCO ou será empalado pela estaca, sofrendo<br>1d6 de dano energético PF e ficando IMOBILIZADO enquanto estiver empalado. No final de cada um de seus turnos, um personagem empalado sofre 1d6 de dano energético PF. Um personagem empalado pode repetir este salvamento com sucesso como uma ação completa para remover a estaca e se libertar, que é a única maneira de encerrar a imobilização.<br>Você só pode afetar um personagem com a estaca por vez.",
+          "damage": [
+            {
+              "type": "Energy",
+              "val": "1d6",
+              "ap": true,
+              "save": "hull"
+            }
+          ],
+          "add_status": [
+            {
+              "id": "immobilized",
+              "save": "hull"
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Ação Completa</b>]</b> Habilidade: Este sistema dispara uma estaca carregada em um personagem adjacente a você. Seu alvo deve ter sucesso em um salvamento de CASCO ou será empalado pela estaca, sofrendo 1d6 de dano energético PF e ficando IMOBILIZADO enquanto estiver empalado. No final de cada um de seus turnos, um personagem empalado sofre 1d6 de dano energético PF. Um personagem empalado pode repetir este salvamento com sucesso como uma <b>ação completa</b> para remover a estaca e se libertar, que é a única maneira de encerrar a imobilização. Você só pode afetar um personagem com a estaca por vez.",
+      "detail": "<b>[<b>Ação Completa</b>]</b> Habilidade: Este sistema dispara uma estaca carregada em um personagem adjacente a você. Seu alvo deve ter sucesso em um salvamento de CASCO ou será empalado pela estaca, sofrendo 1d6 de dano energético PF e ficando IMOBILIZADO enquanto estiver empalado. No final de cada um de seus turnos, um personagem empalado sofre 1d6 de dano energético PF. Um personagem empalado pode repetir este salvamento com sucesso como uma <b>ação completa</b> para remover a estaca e se libertar, que é a única maneira de encerrar a imobilização. Você só pode afetar um personagem com a estaca por vez.",
+      "source": "IPS-N",
+      "license": "Vlad",
+      "license_level": 3
+    },
+    {
+      "id": "ms_ferrous_lash",
+      "category": "system",
+      "name": "Chicote Ferroso",
+      "sp": 2,
+      "type": "Sistema",
+      "tags": [],
+      "actions": [
+        {
+          "activation": "Rápida",
+          "detail": "Escolha um personagem dentro do ALCANCE 8 e na linha de visão. Se ele for aliado, você pode puxá-lo 5 espaços em qualquer direção; se for hostil, ele deve ter sucesso em um salvamento de AGILIDADE ou será puxado 5 espaços em uma direção de sua escolha. Este movimento ignora engajamento e não provoca reações.<br>Se um alvo hostil movido por este sistema colidir com uma obstrução ou outro mecha, ele para de se mover e é derrubado (PROSTRADO).",
+          "range": [
+            {
+              "type": "Range",
+              "val": 8
+            }
+          ],
+          "save": "agi"
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Escolha um personagem dentro do ALCANCE 8 e na linha de visão. Se ele for aliado, você pode puxá-lo 5 espaços em qualquer direção; se for hostil, ele deve ter sucesso em um salvamento de AGILIDADE ou será puxado 5 espaços em uma direção de sua escolha. Este movimento ignora engajamento e não provoca reações. Se um alvo hostil movido por este sistema colidir com uma obstrução ou outro mecha, ele para de se mover e é derrubado (<b>PROSTRADO</b>).",
+      "detail": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Escolha um personagem dentro do ALCANCE 8 e na linha de visão. Se ele for aliado, você pode puxá-lo 5 espaços em qualquer direção; se for hostil, ele deve ter sucesso em um salvamento de AGILIDADE ou será puxado 5 espaços em uma direção de sua escolha. Este movimento ignora engajamento e não provoca reações. Se um alvo hostil movido por este sistema colidir com uma obstrução ou outro mecha, ele para de se mover e é derrubado (<b>PROSTRADO</b>).",
+      "source": "SSC",
+      "license": "Black Witch",
+      "license_level": 1
+    },
+    {
+      "id": "ms_iceout_drone",
+      "category": "system",
+      "name": "Drone ICEOUT",
+      "sp": 2,
+      "type": "Drone",
+      "tags": [
+        "Limitado 2",
+        "Único"
+      ],
+      "actions": [],
+      "deployables": [
+        {
+          "type": "Drone",
+          "name": "Drone ICEOUT",
+          "activation": "Rápida",
+          "size": 0.5,
+          "hp": 5,
+          "edef": 10,
+          "evasion": 10,
+          "detail": "Personagens pelo menos parcialmente dentro da área de EMANAÇÃO 1 do drone ICEOUT ganham IMUNIDADE a todas as ações tecnológicas e não podem realizar ações tecnológicas. Condições e efeitos existentes causados por ações tecnológicas não são removidos, mas os personagens têm IMUNIDADE a eles enquanto estão na área, e podem fazer salvamentos contra eles normalmente.<br>O drone ICEOUT pode ser movido para qualquer ponto dentro do alcance dos SENSORES como uma ação rápida. Ele não pode ser recolhido e expira no final da cena.",
+          "actions": [
+            {
+              "name": "Mover Drone ICEOUT",
+              "activation": "Rápida",
+              "detail": "O drone ICEOUT pode ser movido para qualquer ponto dentro do alcance dos SENSORES."
+            }
+          ]
+        }
+      ],
+      "terse": "Gaste uma carga para implantar um drone ICEOUT em um espaço livre dentro dos Sensores e da linha de visão, onde ele paira no lugar e gera um campo de ESTOURO 1.\n<b>[Posicionável: Drone ICEOUT (Drone)]</b> Personagens pelo menos parcialmente dentro da área de EMANAÇÃO 1 do drone ICEOUT ganham IMUNIDADE a todas as ações tecnológicas e não podem realizar ações tecnológicas. Condições e efeitos existentes causados por ações tecnológicas não são removidos, mas os personagens têm IMUNIDADE a eles enquanto estão na área, e podem fazer salvamentos contra eles normalmente. O drone ICEOUT pode ser movido para qualquer ponto dentro do alcance dos SENSORES como uma <b>ação rápida</b>. Ele não pode ser recolhido e expira no final da cena.",
+      "detail": "Gaste uma carga para implantar um drone ICEOUT em um espaço livre dentro dos Sensores e da linha de visão, onde ele paira no lugar e gera um campo de ESTOURO 1.\n<b>[Posicionável: Drone ICEOUT (Drone)]</b> Personagens pelo menos parcialmente dentro da área de EMANAÇÃO 1 do drone ICEOUT ganham IMUNIDADE a todas as ações tecnológicas e não podem realizar ações tecnológicas. Condições e efeitos existentes causados por ações tecnológicas não são removidos, mas os personagens têm IMUNIDADE a eles enquanto estão na área, e podem fazer salvamentos contra eles normalmente. O drone ICEOUT pode ser movido para qualquer ponto dentro do alcance dos SENSORES como uma <b>ação rápida</b>. Ele não pode ser recolhido e expira no final da cena.",
+      "source": "SSC",
+      "license": "Black Witch",
+      "license_level": 2
+    },
+    {
+      "id": "ms_perimeter_command_plate",
+      "category": "system",
+      "name": "Placa de Comando de Perímetro",
+      "sp": 2,
+      "type": "Deployable",
+      "tags": [
+        "Único"
+      ],
+      "actions": [],
+      "deployables": [
+        {
+          "name": "Placa de Comando de Perímetro",
+          "type": "Deployable",
+          "size": 2,
+          "hp": 20,
+          "evasion": 5,
+          "detail": "A placa é ativada para um personagem na primeira vez que ele entra em seu espaço durante uma rodada, ou se ele terminar seu turno lá.<br>Ao imprimir, escolha uma configuração:<ul><li><b>Repelir:</b> Personagens hostis que se movem para a PCP devem ter sucesso em um salvamento de CASCO ou são empurrados 3 espaços na direção de sua escolha. Se isso os fizer colidir com uma obstrução, eles são derrubados (PROSTRADOS). Personagens aliados que entram no espaço podem voar imediatamente 3 espaços em qualquer direção como uma ação livre.</li><li><b>Atrair:</b> Personagens que se movem para a PCP devem ter sucesso em um salvamento de CASCO ou ficam IMOBILIZADOS. Eles podem remover IMOBILIZADO repetindo o salvamento com sucesso como uma ação rápida; também é removido se a PCP for destruída.",
+          "actions": [
+            {
+              "name": "Repelir",
+              "activation": "Livre",
+              "trigger": "Personagens hostis que se moverem para cima do PCP",
+              "detail": "Devem passar em salvamento de CASCO ou são empurrados 3 espaços na direção de sua escolha. Se isso fizer com que colidam com uma obstrução, são derrubados PROSTRADOS.",
+              "save": "hull"
+            },
+            {
+              "name": "Atrair",
+              "activation": "Livre",
+              "trigger": "Personagens que se moverem para cima do PCP",
+              "detail": "Devem passar num salvamento de CASCO ou ficam IMOBILIZADOS. Podem remover IMOBILIZADO repetindo com sucesso o salvamento como ação rápida; também é removido se o PCP for destruído.",
+              "add_status": [
+                {
+                  "id": "immobilized",
+                  "save": "hull"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "terse": "Esta Placa de Comando de Perímetro (PCP) de metal pesado pode ser impressa rapidamente e implantada em um espaço livre de 2x2 dentro do alcance 5. A PCP é plana, não obstrui o movimento e dura pelo resto da cena. Se você criar uma nova PCP, a antiga se desintegra.\n<b>[Posicionável: Placa de Comando de Perímetro (Deployable)]</b> A placa é ativada para um personagem na primeira vez que ele entra em seu espaço durante uma rodada, ou se ele terminar seu turno lá. Ao imprimir, escolha uma configuração:<ul><li><b>Repelir:</b> Personagens hostis que se movem para a PCP devem ter sucesso em um salvamento de CASCO ou são empurrados 3 espaços na direção de sua escolha. Se isso os fizer colidir com uma obstrução, eles são derrubados (<b>PROSTRADOS</b>). Personagens aliados que entram no espaço podem voar imediatamente 3 espaços em qualquer direção como uma <b>ação livre</b>.</li><li><b>Atrair:</b> Personagens que se movem para a PCP devem ter sucesso em um salvamento de CASCO ou ficam IMOBILIZADOS. Eles podem remover IMOBILIZADO repetindo o salvamento com sucesso como uma <b>ação rápida</b>; também é removido se a PCP for destruída.",
+      "detail": "Esta Placa de Comando de Perímetro (PCP) de metal pesado pode ser impressa rapidamente e implantada em um espaço livre de 2x2 dentro do alcance 5. A PCP é plana, não obstrui o movimento e dura pelo resto da cena. Se você criar uma nova PCP, a antiga se desintegra.\n<b>[Posicionável: Placa de Comando de Perímetro (Deployable)]</b> A placa é ativada para um personagem na primeira vez que ele entra em seu espaço durante uma rodada, ou se ele terminar seu turno lá. Ao imprimir, escolha uma configuração:<ul><li><b>Repelir:</b> Personagens hostis que se movem para a PCP devem ter sucesso em um salvamento de CASCO ou são empurrados 3 espaços na direção de sua escolha. Se isso os fizer colidir com uma obstrução, eles são derrubados (<b>PROSTRADOS</b>). Personagens aliados que entram no espaço podem voar imediatamente 3 espaços em qualquer direção como uma <b>ação livre</b>.</li><li><b>Atrair:</b> Personagens que se movem para a PCP devem ter sucesso em um salvamento de CASCO ou ficam IMOBILIZADOS. Eles podem remover IMOBILIZADO repetindo o salvamento com sucesso como uma <b>ação rápida</b>; também é removido se a PCP for destruída.",
+      "source": "SSC",
+      "license": "Black Witch",
+      "license_level": 2
+    },
+    {
+      "id": "ms_black_ice_module",
+      "category": "system",
+      "name": "Módulo de Gelo Negro",
+      "sp": 3,
+      "type": "Tech",
+      "tags": [
+        "Único"
+      ],
+      "actions": [],
+      "deployables": [],
+      "terse": "Ataques tecnológicos contra você ou personagens aliados adjacentes recebem +1 de DIFICULDADE. Cada ataque tecnológico subsequente contra você ou um personagem aliado adjacente recebe um adicional de +1 de DIFICULDADE, até um máximo de +3 de DIFICULDADE.\nSuas definições de Gelo Negro reiniciam – voltando para +1 de DIFICULDADE – quando aumentariam para +4 de DIFICULDADE ou no final da cena. Personagens aliados perdem este benefício quando quebram a adjacência.",
+      "detail": "Ataques tecnológicos contra você ou personagens aliados adjacentes recebem +1 de DIFICULDADE. Cada ataque tecnológico subsequente contra você ou um personagem aliado adjacente recebe um adicional de +1 de DIFICULDADE, até um máximo de +3 de DIFICULDADE.\nSuas definições de Gelo Negro reiniciam – voltando para +1 de DIFICULDADE – quando aumentariam para +4 de DIFICULDADE ou no final da cena. Personagens aliados perdem este benefício quando quebram a adjacência.",
+      "source": "SSC",
+      "license": "Black Witch",
+      "license_level": 3
+    },
+    {
+      "id": "ms_magnetic_shield",
+      "category": "system",
+      "name": "Escudo Magnético",
+      "sp": 2,
+      "type": "Shield",
+      "tags": [
+        "Escudo",
+        "Único"
+      ],
+      "actions": [
+        {
+          "activation": "Rápida",
+          "detail": "Este sistema cria um campo de força de linha 4, com 4 espaços de altura – com pelo menos 1 espaço adjacente a você – que é uma obstrução para mechas e personagens feitos pelo menos parcialmente de metal. Dura pelo resto da cena e, se um novo for colocado, o antigo é desativado.<br>O campo de força não bloqueia a linha de visão, mas fornece cobertura leve. Personagens ganham RESISTÊNCIA a dano cinético e explosivo enquanto se beneficiam desta cobertura."
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Este sistema cria um campo de força de linha 4, com 4 espaços de altura – com pelo menos 1 espaço adjacente a você – que é uma obstrução para mechas e personagens feitos pelo menos parcialmente de metal. Dura pelo resto da cena e, se um novo for colocado, o antigo é desativado. O campo de força não bloqueia a linha de visão, mas fornece cobertura leve. Personagens ganham RESISTÊNCIA a dano cinético e explosivo enquanto se beneficiam desta cobertura.",
+      "detail": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Este sistema cria um campo de força de linha 4, com 4 espaços de altura – com pelo menos 1 espaço adjacente a você – que é uma obstrução para mechas e personagens feitos pelo menos parcialmente de metal. Dura pelo resto da cena e, se um novo for colocado, o antigo é desativado. O campo de força não bloqueia a linha de visão, mas fornece cobertura leve. Personagens ganham RESISTÊNCIA a dano cinético e explosivo enquanto se beneficiam desta cobertura.",
+      "source": "SSC",
+      "license": "Black Witch",
+      "license_level": 3
+    },
+    {
+      "id": "ms_high_stress_mag_clamps",
+      "category": "system",
+      "name": "Grampos Magnéticos de Alta Tensão",
+      "sp": 1,
+      "type": "Sistema",
+      "tags": [
+        "Único"
+      ],
+      "actions": [],
+      "deployables": [],
+      "terse": "Você trata todas as superfícies sólidas como terreno plano para fins de movimento; você pode se mover por elas normalmente em vez de escalar, embora comece a cair se for derrubado (<b>PROSTRADO</b>).",
+      "detail": "Você trata todas as superfícies sólidas como terreno plano para fins de movimento; você pode se mover por elas normalmente em vez de escalar, embora comece a cair se for derrubado (<b>PROSTRADO</b>).",
+      "source": "SSC",
+      "license": "Death’s Head",
+      "license_level": 1
+    },
+    {
+      "id": "ms_tracking_bug",
+      "category": "system",
+      "name": "Rastreador",
+      "sp": 2,
+      "type": "Tech",
+      "tags": [],
+      "actions": [
+        {
+          "activation": "Programar Rápido",
+          "detail": "Faça um ataque tecnológico contra um personagem dentro do alcance dos SENSORES. Em um acerto, você sabe a localização exata, PV, ESTRUTURA e VELOCIDADE dele pela duração. Ele não pode se ESCONDER e você ignora seu estado de INVISÍVEL. Para remover o drone de rastreamento, ele deve ter sucesso em um teste de ENGENHARIA como uma ação rápida; caso contrário, ele se desativa no final da cena.",
+          "attack": "tech"
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Programar Rápido</b>]</b> Habilidade: Faça um ataque tecnológico contra um personagem dentro do alcance dos SENSORES. Em um acerto, você sabe a localização exata, PV, ESTRUTURA e <b>VELOCIDADE</b> dele pela duração. Ele não pode se ESCONDER e você ignora seu estado de INVISÍVEL. Para remover o drone de rastreamento, ele deve ter sucesso em um teste de ENGENHARIA como uma <b>ação rápida</b>; caso contrário, ele se desativa no final da cena.",
+      "detail": "<b>[<b>Programar Rápido</b>]</b> Habilidade: Faça um ataque tecnológico contra um personagem dentro do alcance dos SENSORES. Em um acerto, você sabe a localização exata, PV, ESTRUTURA e <b>VELOCIDADE</b> dele pela duração. Ele não pode se ESCONDER e você ignora seu estado de INVISÍVEL. Para remover o drone de rastreamento, ele deve ter sucesso em um teste de ENGENHARIA como uma <b>ação rápida</b>; caso contrário, ele se desativa no final da cena.",
+      "source": "SSC",
+      "license": "Death’s Head",
+      "license_level": 1
+    },
+    {
+      "id": "ms_core_siphon",
+      "category": "system",
+      "name": "Sifão de Núcleo",
+      "sp": 2,
+      "type": "Sistema",
+      "tags": [
+        "Único"
+      ],
+      "actions": [
+        {
+          "activation": "Protocolo",
+          "detail": "Ao ativar este protocolo, você recebe +1 de PRECISÃO em sua primeira rolagem de ataque neste turno, mas recebe +1 de DIFICULDADE em todas as outras rolagens de ataque até o final do turno.",
+          "active_effects": [
+            {
+              "name": "Sifão de Núcleo Ativo",
+              "detail": "Você ganha +1 de PRECISÃO em sua primeira rolagem de ataque neste turno, mas sofre +1 de DIFICULDADE em todas as outras rolagens de ataque até o final do turno."
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Protocolo</b>]</b> Habilidade: Ao ativar este protocolo, você recebe +1 de PRECISÃO em sua primeira rolagem de ataque neste turno, mas recebe +1 de DIFICULDADE em todas as outras rolagens de ataque até o final do turno.",
+      "detail": "<b>[<b>Protocolo</b>]</b> Habilidade: Ao ativar este protocolo, você recebe +1 de PRECISÃO em sua primeira rolagem de ataque neste turno, mas recebe +1 de DIFICULDADE em todas as outras rolagens de ataque até o final do turno.",
+      "source": "SSC",
+      "license": "Death’s Head",
+      "license_level": 2
+    },
+    {
+      "id": "ms_kinetic_compensator",
+      "category": "system",
+      "name": "Compensador Cinético",
+      "sp": 2,
+      "type": "Sistema",
+      "tags": [
+        "Único"
+      ],
+      "actions": [],
+      "deployables": [],
+      "terse": "Quando você erra uma rolagem de ataque à distância, sua próxima rolagem de ataque à distância recebe +1 de PRECISÃO.",
+      "detail": "Quando você erra uma rolagem de ataque à distância, sua próxima rolagem de ataque à distância recebe +1 de PRECISÃO.",
+      "source": "SSC",
+      "license": "Death’s Head",
+      "license_level": 3
+    },
+    {
+      "id": "ms_neurospike",
+      "category": "system",
+      "name": "Neuroespinho",
+      "sp": 2,
+      "type": "Tech",
+      "tags": [
+        "Único"
+      ],
+      "actions": [
+        {
+          "name": "Código Pícaro",
+          "activation": "Invadir",
+          "detail": "Até o final do próximo turno do alvo, ele primeiro sofre 2 de calor sempre que ataca.",
+          "add_special": [
+            {
+              "attribute": "Nuerospike: Shrike Code Target",
+              "detail": "Sofra 2 de Calor sempre que atacar"
+            }
+          ]
+        },
+        {
+          "name": "Miragem",
+          "activation": "Invadir",
+          "detail": "Escolha a si mesmo ou a um personagem aliado: seus sistemas transmitem imagens borradas e ilusórias sobre a silhueta real deles. Seu alvo trata você, ou o personagem que você escolheu, como INVISÍVEL até o final do próximo turno dele.",
+          "add_special": [
+            {
+              "attribute": "Nuerospike: Mirage Target",
+              "detail": "Trate o Dusk Wing (ou o personagem que ele escolheu) como INVISÍVEL até o fim do seu próximo turno.",
+              "duration": "next_turn_end_target"
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Invadir</b>]</b> Código Pícaro: Até o final do próximo turno do alvo, ele primeiro sofre 2 de calor sempre que ataca.\n<b>[<b>Invadir</b>]</b> Miragem: Escolha a si mesmo ou a um personagem aliado: seus sistemas transmitem imagens borradas e ilusórias sobre a silhueta real deles. Seu alvo trata você, ou o personagem que você escolheu, como INVISÍVEL até o final do próximo turno dele.",
+      "detail": "<b>[<b>Invadir</b>]</b> Código Pícaro: Até o final do próximo turno do alvo, ele primeiro sofre 2 de calor sempre que ataca.\n<b>[<b>Invadir</b>]</b> Miragem: Escolha a si mesmo ou a um personagem aliado: seus sistemas transmitem imagens borradas e ilusórias sobre a silhueta real deles. Seu alvo trata você, ou o personagem que você escolheu, como INVISÍVEL até o final do próximo turno dele.",
+      "source": "SSC",
+      "license": "Dusk Wing",
+      "license_level": 1
+    },
+    {
+      "id": "ms_flicker_field_projector",
+      "category": "system",
+      "name": "Projetor de Campo Cintilante",
+      "sp": 1,
+      "type": "Sistema",
+      "tags": [
+        "Único"
+      ],
+      "actions": [],
+      "deployables": [],
+      "terse": "Sempre que você <b>IMPULSIONAR</b> ou fizer um movimento padrão, você projeta um padrão holográfico ao seu redor, deixando imagens residuais que dificultam saber sua posição exata: você conta como INVISÍVEL no próximo ataque que for feito contra você. Você só pode se beneficiar de uma instância deste efeito por vez.",
+      "detail": "Sempre que você <b>IMPULSIONAR</b> ou fizer um movimento padrão, você projeta um padrão holográfico ao seu redor, deixando imagens residuais que dificultam saber sua posição exata: você conta como INVISÍVEL no próximo ataque que for feito contra você. Você só pode se beneficiar de uma instância deste efeito por vez.",
+      "source": "SSC",
+      "license": "Dusk Wing",
+      "license_level": 2
+    },
+    {
+      "id": "ms_stuncrown",
+      "category": "system",
+      "name": "Coroa Atordoante",
+      "sp": 2,
+      "type": "Sistema",
+      "tags": [
+        "Limitado 2",
+        "Único"
+      ],
+      "actions": [
+        {
+          "activation": "Rápida",
+          "detail": "Gaste uma carga para criar um clarão de luz de EMANAÇÃO 3. Todos os personagens hostis dentro da área afetada que têm linha de visão para você devem ter sucesso em um salvamento de AGILIDADE ou ficam BLOQUEADOS, e em um salvamento de SISTEMAS ou ficam IMPEDIDOS. Esses efeitos duram até o final do próximo turno deles.<br>Personagens em cobertura de você não são afetados por este sistema.",
+          "add_status": [
+            {
+              "id": "jammed",
+              "save": "agi",
+              "aoe": true
+            },
+            {
+              "id": "impaired",
+              "save": "sys",
+              "aoe": true
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Gaste uma carga para criar um clarão de luz de EMANAÇÃO 3. Todos os personagens hostis dentro da área afetada que têm linha de visão para você devem ter sucesso em um salvamento de AGILIDADE ou ficam BLOQUEADOS, e em um salvamento de SISTEMAS ou ficam <b>IMPEDIDOS</b>. Esses efeitos duram até o final do próximo turno deles. Personagens em cobertura de você não são afetados por este sistema.",
+      "detail": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Gaste uma carga para criar um clarão de luz de EMANAÇÃO 3. Todos os personagens hostis dentro da área afetada que têm linha de visão para você devem ter sucesso em um salvamento de AGILIDADE ou ficam BLOQUEADOS, e em um salvamento de SISTEMAS ou ficam <b>IMPEDIDOS</b>. Esses efeitos duram até o final do próximo turno deles. Personagens em cobertura de você não são afetados por este sistema.",
+      "source": "SSC",
+      "license": "Dusk Wing",
+      "license_level": 3
+    },
+    {
+      "id": "ms_oasis_wall",
+      "category": "system",
+      "name": "Muralha OÁSIS",
+      "sp": 3,
+      "type": "Shield",
+      "tags": [
+        "Único",
+        "Escudo",
+        "Calor 2 (Próprio)"
+      ],
+      "actions": [
+        {
+          "activation": "Protocolo",
+          "detail": "Até o início de seu próximo turno, você só pode se mover em linhas retas; no entanto, você cria um rastro holográfico atrás de si ao se mover, criando uma barreira de luz feita de seções contíguas do mesmo TAMANHO que seu mecha (TAMANHO 1 para Mechas de TAMANHO 0.5) em cada espaço que você atravessa. Esta barreira concede cobertura pesada a personagens adjacentes, e personagens que se beneficiam desta cobertura também ganham RESISTÊNCIA a dano energético.<br>A barreira não conta como uma obstrução e tem IMUNIDADE a todos os danos. Personagens podem passar livremente por ela, mas não podem terminar seus turnos dentro dela, e qualquer personagem que seria movido involuntariamente para dentro da barreira para de se mover se terminaria seu movimento dentro dela. Dura pelo resto da cena ou até você usar este sistema novamente.",
+          "add_resist": [
+            {
+              "resist": "Energy",
+              "target": "self"
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Protocolo</b>]</b> Habilidade: Até o início de seu próximo turno, você só pode se mover em linhas retas; no entanto, você cria um rastro holográfico atrás de si ao se mover, criando uma barreira de luz feita de seções contíguas do mesmo TAMANHO que seu mecha (TAMANHO 1 para Mechas de TAMANHO 0.5) em cada espaço que você atravessa. Esta barreira concede cobertura pesada a personagens adjacentes, e personagens que se beneficiam desta cobertura também ganham RESISTÊNCIA a dano energético. A barreira não conta como uma obstrução e tem IMUNIDADE a todos os danos. Personagens podem passar livremente por ela, mas não podem terminar seus turnos dentro dela, e qualquer personagem que seria movido involuntariamente para dentro da barreira para de se mover se terminaria seu movimento dentro dela. Dura pelo resto da cena ou até você usar este sistema novamente.",
+      "detail": "<b>[<b>Protocolo</b>]</b> Habilidade: Até o início de seu próximo turno, você só pode se mover em linhas retas; no entanto, você cria um rastro holográfico atrás de si ao se mover, criando uma barreira de luz feita de seções contíguas do mesmo TAMANHO que seu mecha (TAMANHO 1 para Mechas de TAMANHO 0.5) em cada espaço que você atravessa. Esta barreira concede cobertura pesada a personagens adjacentes, e personagens que se beneficiam desta cobertura também ganham RESISTÊNCIA a dano energético. A barreira não conta como uma obstrução e tem IMUNIDADE a todos os danos. Personagens podem passar livremente por ela, mas não podem terminar seus turnos dentro dela, e qualquer personagem que seria movido involuntariamente para dentro da barreira para de se mover se terminaria seu movimento dentro dela. Dura pelo resto da cena ou até você usar este sistema novamente.",
+      "source": "SSC",
+      "license": "Dusk Wing",
+      "license_level": 3
+    },
+    {
+      "id": "ms_flash_charges",
+      "category": "system",
+      "name": "Cargas de Clarão",
+      "sp": 2,
+      "type": "Deployable",
+      "tags": [
+        "Limitado 2",
+        "Único",
+        "Granada"
+      ],
+      "actions": [
+        {
+          "name": "Granada de Clarão",
+          "range": [
+            {
+              "type": "Range",
+              "val": 5
+            },
+            {
+              "type": "Blast",
+              "val": 3
+            }
+          ],
+          "detail": "Arremesse uma Granada de Clarão dentro do ALCANCE 5. Até o final de seu próximo turno, esta granada cria uma zona de EXPLOSÃO 3 de luz ofuscante e faíscas. Enquanto personagens que não sejam você estiverem pelo menos parcialmente dentro da área, eles não podem traçar linha de visão para fora da área. Personagens totalmente fora da área ou que saem da área não são afetados, a menos que se movam para dentro dela."
+        }
+      ],
+      "deployables": [
+        {
+          "name": "Mina de Clarão",
+          "type": "Mine",
+          "range": [
+            {
+              "type": "Burst",
+              "val": 1
+            }
+          ],
+          "detail": "Esta mina detona em uma área de EMANAÇÃO 1 quando um personagem se move adjacente ou sobre ela. Personagens dentro da área afetada devem ter sucesso em um salvamento de AGILIDADE ou só têm linha de visão para espaços adjacentes até o final de seu próximo turno."
+        }
+      ],
+      "terse": "<b>[Ação]</b> Granada de Clarão: Arremesse uma Granada de Clarão dentro do ALCANCE 5. Até o final de seu próximo turno, esta granada cria uma zona de EXPLOSÃO 3 de luz ofuscante e faíscas. Enquanto personagens que não sejam você estiverem pelo menos parcialmente dentro da área, eles não podem traçar linha de visão para fora da área. Personagens totalmente fora da área ou que saem da área não são afetados, a menos que se movam para dentro dela.\n<b>[Posicionável: Mina de Clarão (Mine)]</b> Esta mina detona em uma área de EMANAÇÃO 1 quando um personagem se move adjacente ou sobre ela. Personagens dentro da área afetada devem ter sucesso em um salvamento de AGILIDADE ou só têm linha de visão para espaços adjacentes até o final de seu próximo turno.",
+      "detail": "<b>[Ação]</b> Granada de Clarão: Arremesse uma Granada de Clarão dentro do ALCANCE 5. Até o final de seu próximo turno, esta granada cria uma zona de EXPLOSÃO 3 de luz ofuscante e faíscas. Enquanto personagens que não sejam você estiverem pelo menos parcialmente dentro da área, eles não podem traçar linha de visão para fora da área. Personagens totalmente fora da área ou que saem da área não são afetados, a menos que se movam para dentro dela.\n<b>[Posicionável: Mina de Clarão (Mine)]</b> Esta mina detona em uma área de EMANAÇÃO 1 quando um personagem se move adjacente ou sobre ela. Personagens dentro da área afetada devem ter sucesso em um salvamento de AGILIDADE ou só têm linha de visão para espaços adjacentes até o final de seu próximo turno.",
+      "source": "SSC",
+      "license": "Metalmark",
+      "license_level": 1
+    },
+    {
+      "id": "ms_reactive_weave",
+      "category": "system",
+      "name": "Trama Reativa",
+      "sp": 1,
+      "type": "Sistema",
+      "tags": [
+        "Único"
+      ],
+      "actions": [],
+      "deployables": [],
+      "terse": "Quando você SUPORTA, você se torna INVISÍVEL até o final de seu próximo turno e pode se mover imediatamente um número de espaços igual à sua <b>VELOCIDADE</b>.",
+      "detail": "Quando você SUPORTA, você se torna INVISÍVEL até o final de seu próximo turno e pode se mover imediatamente um número de espaços igual à sua <b>VELOCIDADE</b>.",
+      "source": "SSC",
+      "license": "Metalmark",
+      "license_level": 1
+    },
+    {
+      "id": "ms_active_camouflage",
+      "category": "system",
+      "name": "Camuflagem Ativa",
+      "sp": 3,
+      "type": "Sistema",
+      "tags": [
+        "Único",
+        "Calor 2 (Próprio)"
+      ],
+      "actions": [
+        {
+          "activation": "Protocolo",
+          "detail": "Você fica INVISÍVEL até sofrer dano, ou até o final de seu próximo turno.",
+          "add_status": [
+            {
+              "id": "invisible",
+              "target": "self",
+              "duration": "next_turn_end_self"
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Protocolo</b>]</b> Habilidade: Você fica INVISÍVEL até sofrer dano, ou até o final de seu próximo turno.",
+      "detail": "<b>[<b>Protocolo</b>]</b> Habilidade: Você fica INVISÍVEL até sofrer dano, ou até o final de seu próximo turno.",
+      "source": "SSC",
+      "license": "Metalmark",
+      "license_level": 3
+    },
+    {
+      "id": "ms_javelin_rockets",
+      "category": "system",
+      "name": "Foguetes Dardo",
+      "sp": 2,
+      "type": "Sistema",
+      "tags": [
+        "Único"
+      ],
+      "actions": [
+        {
+          "activation": "Rápida",
+          "detail": "Escolha 3 espaços livres dentro do alcance 15 e na linha de visão que não sejam adjacentes entre si. Todos os personagens sabem quais espaços você escolheu. Você dispara uma saraivada de foguetes autoguiados para o ar: até o início de seu próximo turno, quando um personagem se move para ou passa acima de um espaço escolhido – não mais que 10 espaços acima – ele é atingido por um foguete, sofrendo 3 de dano cinético. Cada espaço pode ser acionado uma vez e então o efeito desaparece naquele espaço."
+        }
+      ],
+      "deployables": [
+        {
+          "name": "Javelin Rocket",
+          "type": "Mine",
+          "range": [
+            {
+              "type": "Burst",
+              "val": 1
+            }
+          ],
+          "damage": [
+            {
+              "type": "Kinetic",
+              "val": 3
+            }
+          ],
+          "detail": "Este foguete auto-guiado detona em uma área de Explosão 1 quando um personagem se move de forma adjacente ou sobre ele. Personagens na área afetada sofrem 3 de dano cinético."
+        }
+      ],
+      "terse": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Escolha 3 espaços livres dentro do alcance 15 e na linha de visão que não sejam adjacentes entre si. Todos os personagens sabem quais espaços você escolheu. Você dispara uma saraivada de foguetes autoguiados para o ar: até o início de seu próximo turno, quando um personagem se move para ou passa acima de um espaço escolhido – não mais que 10 espaços acima – ele é atingido por um foguete, sofrendo 3 de dano cinético. Cada espaço pode ser acionado uma vez e então o efeito desaparece naquele espaço.\n<b>[Posicionável: Javelin Rocket (Mine)]</b> Este foguete auto-guiado detona em uma área de Explosão 1 quando um personagem se move de forma adjacente ou sobre ele. Personagens na área afetada sofrem 3 de dano cinético.",
+      "detail": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Escolha 3 espaços livres dentro do alcance 15 e na linha de visão que não sejam adjacentes entre si. Todos os personagens sabem quais espaços você escolheu. Você dispara uma saraivada de foguetes autoguiados para o ar: até o início de seu próximo turno, quando um personagem se move para ou passa acima de um espaço escolhido – não mais que 10 espaços acima – ele é atingido por um foguete, sofrendo 3 de dano cinético. Cada espaço pode ser acionado uma vez e então o efeito desaparece naquele espaço.\n<b>[Posicionável: Javelin Rocket (Mine)]</b> Este foguete auto-guiado detona em uma área de Explosão 1 quando um personagem se move de forma adjacente ou sobre ele. Personagens na área afetada sofrem 3 de dano cinético.",
+      "source": "SSC",
+      "license": "Monarch",
+      "license_level": 1
+    },
+    {
+      "id": "ms_tlaloc_class_nhp",
+      "category": "system",
+      "name": "PNH CLASSE-TLALOC",
+      "sp": 3,
+      "type": "AI",
+      "tags": [
+        "IA",
+        "Único",
+        "Calor 2 (Próprio)"
+      ],
+      "actions": [
+        {
+          "name": "Protocolo TLALOC",
+          "activation": "Protocolo",
+          "detail": "Sua PNH pode disparar e redirecionar rapidamente suas armas – muito mais rápido que o pensamento. Você fica IMOBILIZADO até o início de seu próximo turno; no entanto, durante este tempo, você pode rolar novamente cada rolagem de ataque corpo a corpo ou à distância que errar uma vez, escolhendo um novo alvo dentro do ALCANCE do ataque. Se o ataque foi parte de uma área de efeito, ele deve visar um personagem na mesma área. Qualquer alvo dado não pode ser atingido mais de uma vez como parte da mesma ação.",
+          "active_effects": [
+            {
+              "name": "Protocolo TLALOC Ativo",
+              "detail": "Você pode rerrolar cada rolagem de ataque corpo a corpo ou à distância errada uma vez, escolhendo um novo alvo no Alcance do ataque. Se o ataque for área de efeito, o novo alvo deve estar na mesma área.",
+              "duration": "next_turn_start_self"
+            }
+          ],
+          "add_status": [
+            {
+              "id": "immobilized",
+              "target": "self",
+              "duration": "next_turn_start_self"
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "Seu mecha adquire a tag <b>IA</b> e o <b>Protocolo</b> TLALOC.\n<b>[<b>Protocolo</b>]</b> <b>Protocolo</b> TLALOC: Sua PNH pode disparar e redirecionar rapidamente suas armas – muito mais rápido que o pensamento. Você fica IMOBILIZADO até o início de seu próximo turno; no entanto, durante este tempo, você pode rolar novamente cada rolagem de ataque corpo a corpo ou à distância que errar uma vez, escolhendo um novo alvo dentro do ALCANCE do ataque. Se o ataque foi parte de uma área de efeito, ele deve visar um personagem na mesma área. Qualquer alvo dado não pode ser atingido mais de uma vez como parte da mesma ação.",
+      "detail": "Seu mecha adquire a tag <b>IA</b> e o <b>Protocolo</b> TLALOC.\n<b>[<b>Protocolo</b>]</b> <b>Protocolo</b> TLALOC: Sua PNH pode disparar e redirecionar rapidamente suas armas – muito mais rápido que o pensamento. Você fica IMOBILIZADO até o início de seu próximo turno; no entanto, durante este tempo, você pode rolar novamente cada rolagem de ataque corpo a corpo ou à distância que errar uma vez, escolhendo um novo alvo dentro do ALCANCE do ataque. Se o ataque foi parte de uma área de efeito, ele deve visar um personagem na mesma área. Qualquer alvo dado não pode ser atingido mais de uma vez como parte da mesma ação.",
+      "source": "SSC",
+      "license": "Monarch",
+      "license_level": 3
+    },
+    {
+      "id": "ms_hunter_logic_suite",
+      "category": "system",
+      "name": "Conjunto Lógico de Caçador",
+      "sp": 2,
+      "type": "Tech",
+      "tags": [
+        "Único"
+      ],
+      "actions": [
+        {
+          "name": "Espreitar Presa",
+          "activation": "Invadir",
+          "detail": "Você infecta o alvo com uma lógica viral que apaga sua imagem de seus sensores. Ele o trata como INVISÍVEL até você sofrer dano dele. Isso só pode afetar um alvo por vez.",
+          "add_special": [
+            {
+              "attribute": "Hunter Logic Suite: Stalk Prey Target",
+              "detail": "Trate o Mourning Cloak como INVISÍVEL até que ele sofra dano de você"
+            }
+          ]
+        },
+        {
+          "name": "Aterrorizar",
+          "activation": "Invadir",
+          "detail": "Você infecta o alvo com uma lógica viral que faz seu mecha parecer horripilante. Até o final do próximo turno dele, ele fica IMPEDIDO e não pode fazer nenhum movimento voluntário que o aproxime de você.",
+          "add_status": [
+            {
+              "id": "impaired",
+              "duration": "next_turn_end_target"
+            }
+          ],
+          "add_special": [
+            {
+              "attribute": "Hunter Logic Suite: Terrify Target",
+              "detail": "Você não pode fazer nenhum movimento voluntário que te aproxime do Mourning Cloak"
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Invadir</b>]</b> Espreitar Presa: Você infecta o alvo com uma lógica viral que apaga sua imagem de seus sensores. Ele o trata como INVISÍVEL até você sofrer dano dele. Isso só pode afetar um alvo por vez.\n<b>[<b>Invadir</b>]</b> Aterrorizar: Você infecta o alvo com uma lógica viral que faz seu mecha parecer horripilante. Até o final do próximo turno dele, ele fica <b>IMPEDIDO</b> e não pode fazer nenhum movimento voluntário que o aproxime de você.",
+      "detail": "<b>[<b>Invadir</b>]</b> Espreitar Presa: Você infecta o alvo com uma lógica viral que apaga sua imagem de seus sensores. Ele o trata como INVISÍVEL até você sofrer dano dele. Isso só pode afetar um alvo por vez.\n<b>[<b>Invadir</b>]</b> Aterrorizar: Você infecta o alvo com uma lógica viral que faz seu mecha parecer horripilante. Até o final do próximo turno dele, ele fica <b>IMPEDIDO</b> e não pode fazer nenhum movimento voluntário que o aproxime de você.",
+      "source": "SSC",
+      "license": "Mourning Cloak",
+      "license_level": 2
+    },
+    {
+      "id": "ms_singularity_motivator",
+      "category": "system",
+      "name": "Motivador de Singularidade",
+      "sp": 2,
+      "type": "Sistema",
+      "tags": [
+        "Único"
+      ],
+      "actions": [
+        {
+          "name": "Singularidade Exposta",
+          "activation": "Reação",
+          "frequency": "1/rodada",
+          "trigger": "Seu mecha sofre dano.",
+          "detail": "Você pode se teletransportar imediatamente para um espaço livre dentro de 1d6 espaços."
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Reação</b>]</b> Singularidade Exposta: Você pode se teletransportar imediatamente para um espaço livre dentro de 1d6 espaços.",
+      "detail": "<b>[<b>Reação</b>]</b> Singularidade Exposta: Você pode se teletransportar imediatamente para um espaço livre dentro de 1d6 espaços.",
+      "source": "SSC",
+      "license": "Mourning Cloak",
+      "license_level": 2
+    },
+    {
+      "id": "ms_fade_cloak",
+      "category": "system",
+      "name": "Manto FADE",
+      "sp": 2,
+      "type": "Sistema",
+      "tags": [
+        "Único"
+      ],
+      "actions": [
+        {
+          "activation": "Rápida",
+          "detail": "Quando ativado, você sai imediatamente de fase com o espaço real, tornando-se intangível. Enquanto intangível, você pode se mover através de obstruções, mas não terminar seu turno dentro delas. Você não pode interagir com nenhum outro objeto ou personagem ou ser interagido de forma alguma (por exemplo, sofrendo ou causando dano).<br>Role 1d6 no início de cada um de seus turnos: com 3 ou menos, você retorna ao espaço real até o início de seu próximo turno; com 4+, você permanece intangível.<br>Este sistema permanece ativo pelo resto da cena, ou até você desativá-lo como uma ação rápida.",
+          "add_special": [
+            {
+              "attribute": "FADE Cloak: Intangible",
+              "detail": "Você pode se mover através de obstruções, mas não terminar o turno dentro delas. Você não pode interagir com nenhum outro personagem ou objeto, nem interagir de qualquer maneira (ex. causar ou receber dano)."
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Quando ativado, você sai imediatamente de fase com o espaço real, tornando-se intangível. Enquanto intangível, você pode se mover através de obstruções, mas não terminar seu turno dentro delas. Você não pode interagir com nenhum outro objeto ou personagem ou ser interagido de forma alguma (por exemplo, sofrendo ou causando dano). Role 1d6 no início de cada um de seus turnos: com 3 ou menos, você retorna ao espaço real até o início de seu próximo turno; com 4+, você permanece intangível. Este sistema permanece ativo pelo resto da cena, ou até você desativá-lo como uma <b>ação rápida</b>.",
+      "detail": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Quando ativado, você sai imediatamente de fase com o espaço real, tornando-se intangível. Enquanto intangível, você pode se mover através de obstruções, mas não terminar seu turno dentro delas. Você não pode interagir com nenhum outro objeto ou personagem ou ser interagido de forma alguma (por exemplo, sofrendo ou causando dano). Role 1d6 no início de cada um de seus turnos: com 3 ou menos, você retorna ao espaço real até o início de seu próximo turno; com 4+, você permanece intangível. Este sistema permanece ativo pelo resto da cena, ou até você desativá-lo como uma <b>ação rápida</b>.",
+      "source": "SSC",
+      "license": "Mourning Cloak",
+      "license_level": 3
+    },
+    {
+      "id": "ms_lotus_projector",
+      "category": "system",
+      "name": "Projetor Lótus",
+      "sp": 2,
+      "type": "Drone",
+      "tags": [
+        "Invisível"
+      ],
+      "actions": [],
+      "deployables": [
+        {
+          "type": "Drone",
+          "name": "Projetor Lótus",
+          "size": 0.5,
+          "hp": 5,
+          "edef": 10,
+          "evasion": 10,
+          "recall": "Quick",
+          "redeploy": "Quick",
+          "detail": "Este drone de reconhecimento pode ser implantado em um espaço dentro do alcance dos SENSORES e na linha de visão, onde emite um campo de EMANAÇÃO 2 com os seguintes efeitos:<ul><li>Você sabe a localização atual, PV, EVASÃO, DEFESA-E e calor de todos os personagens dentro da área afetada.</li><li>Personagens hostis não podem se ESCONDER na área, e se terminarem seu turno na área afetada, deixam de estar ESCONDIDOS.</li><li>Personagens hostis não podem se beneficiar de estarem INVISÍVEIS enquanto na área afetada.</li></ul>Você pode recolher e reimplantar seu drone de reconhecimento como uma ação rápida."
+        }
+      ],
+      "terse": "Este drone de reconhecimento pode ser implantado em um espaço dentro do alcance dos SENSORES e na linha de visão, onde emite um campo de EMANAÇÃO 2 com os seguintes efeitos:<ul><li>Você sabe a localização atual, PV, EVASÃO, DEFESA-E e calor de todos os personagens dentro da área afetada.</li><li>Personagens hostis não podem se ESCONDER na área, e se terminarem seu turno na área afetada, deixam de estar ESCONDIDOS.</li><li>Personagens hostis não podem se beneficiar de estarem INVISÍVEIS enquanto na área afetada.</li></ul>Você pode recolher e reimplantar seu drone de reconhecimento como uma <b>ação rápida</b>.\n<b>[Posicionável: Projetor Lótus (Drone)]</b> Este drone de reconhecimento pode ser implantado em um espaço dentro do alcance dos SENSORES e na linha de visão, onde emite um campo de EMANAÇÃO 2 com os seguintes efeitos:<ul><li>Você sabe a localização atual, PV, EVASÃO, DEFESA-E e calor de todos os personagens dentro da área afetada.</li><li>Personagens hostis não podem se ESCONDER na área, e se terminarem seu turno na área afetada, deixam de estar ESCONDIDOS.</li><li>Personagens hostis não podem se beneficiar de estarem INVISÍVEIS enquanto na área afetada.</li></ul>Você pode recolher e reimplantar seu drone de reconhecimento como uma <b>ação rápida</b>.",
+      "detail": "Este drone de reconhecimento pode ser implantado em um espaço dentro do alcance dos SENSORES e na linha de visão, onde emite um campo de EMANAÇÃO 2 com os seguintes efeitos:<ul><li>Você sabe a localização atual, PV, EVASÃO, DEFESA-E e calor de todos os personagens dentro da área afetada.</li><li>Personagens hostis não podem se ESCONDER na área, e se terminarem seu turno na área afetada, deixam de estar ESCONDIDOS.</li><li>Personagens hostis não podem se beneficiar de estarem INVISÍVEIS enquanto na área afetada.</li></ul>Você pode recolher e reimplantar seu drone de reconhecimento como uma <b>ação rápida</b>.\n<b>[Posicionável: Projetor Lótus (Drone)]</b> Este drone de reconhecimento pode ser implantado em um espaço dentro do alcance dos SENSORES e na linha de visão, onde emite um campo de EMANAÇÃO 2 com os seguintes efeitos:<ul><li>Você sabe a localização atual, PV, EVASÃO, DEFESA-E e calor de todos os personagens dentro da área afetada.</li><li>Personagens hostis não podem se ESCONDER na área, e se terminarem seu turno na área afetada, deixam de estar ESCONDIDOS.</li><li>Personagens hostis não podem se beneficiar de estarem INVISÍVEIS enquanto na área afetada.</li></ul>Você pode recolher e reimplantar seu drone de reconhecimento como uma <b>ação rápida</b>.",
+      "source": "SSC",
+      "license": "Swallowtail",
+      "license_level": 1
+    },
+    {
+      "id": "ms_markerlight",
+      "category": "system",
+      "name": "Luz Marcadora",
+      "sp": 2,
+      "type": "Tech",
+      "tags": [],
+      "actions": [
+        {
+          "activation": "Programar Completo",
+          "detail": "Faça um ataque tecnológico contra um personagem dentro do alcance dos SENSORES e na linha de visão. Em um acerto, ele sofre 2 de calor, fica TRAVADO EM MIRA e não pode se beneficiar de cobertura leve até que a TRAVA EM MIRA seja removida; adicionalmente, uma vez antes do início de seu próximo turno, quando um personagem aliado atingir seu alvo, você pode declarar como uma reação que ele atingiu um ponto fraco. Se já não fosse, o ataque se torna um acerto crítico.",
+          "attack": "tech",
+          "range": [
+            {
+              "val": "{sensors}"
+            }
+          ],
+          "damage": [
+            {
+              "type": "Heat",
+              "val": 2
+            }
+          ],
+          "add_status": [
+            {
+              "id": "lock_on"
+            }
+          ],
+          "add_special": [
+            {
+              "attribute": "Markerlight Target",
+              "detail": "Você não pode se beneficiar de cobertura leve até que TRAVADO EM MIRA seja removido."
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[Programar Completo]</b> Habilidade: Faça um ataque tecnológico contra um personagem dentro do alcance dos SENSORES e na linha de visão. Em um acerto, ele sofre 2 de calor, fica TRAVADO EM MIRA e não pode se beneficiar de cobertura leve até que a TRAVA EM MIRA seja removida; adicionalmente, uma vez antes do início de seu próximo turno, quando um personagem aliado atingir seu alvo, você pode declarar como uma reação que ele atingiu um ponto fraco. Se já não fosse, o ataque se torna um acerto crítico.",
+      "detail": "<b>[Programar Completo]</b> Habilidade: Faça um ataque tecnológico contra um personagem dentro do alcance dos SENSORES e na linha de visão. Em um acerto, ele sofre 2 de calor, fica TRAVADO EM MIRA e não pode se beneficiar de cobertura leve até que a TRAVA EM MIRA seja removida; adicionalmente, uma vez antes do início de seu próximo turno, quando um personagem aliado atingir seu alvo, você pode declarar como uma reação que ele atingiu um ponto fraco. Se já não fosse, o ataque se torna um acerto crítico.",
+      "source": "SSC",
+      "license": "Swallowtail",
+      "license_level": 1
+    },
+    {
+      "id": "ms_retractable_profile",
+      "category": "system",
+      "name": "Perfil Retrátil",
+      "sp": 1,
+      "type": "Tech",
+      "tags": [
+        "Único"
+      ],
+      "actions": [
+        {
+          "activation": "Protocolo",
+          "detail": "Seu mecha pode retrair sistemas principais para reduzir seu perfil. Enquanto ativo:<ul><li>testes para te localizar recebem +1 de dificuldade enquanto estiver ESCONDIDO;</li><li>ataques à distância e tecnológicos contra você recebem +1 de dificuldade;</li><li>você fica LENTO e não pode realizar ataques.</li></ul>",
+          "add_status": [
+            {
+              "id": "slow",
+              "target": "self"
+            }
+          ],
+          "add_special": [
+            {
+              "attribute": "Retractable Profile Active",
+              "target": "self",
+              "detail": "Testes para localizá-lo recebem +1 de dificuldade enquanto ESCONDIDO; ataques à distância e tecnológicos contra você recebem +1 de dificuldade; você fica LENTO e não pode fazer qualquer tipo de ataque."
+            }
+          ]
+        },
+        {
+          "name": "Desativar Perfil Retrátil",
+          "activation": "Rápida",
+          "detail": "Você pode encerrar o Perfil Retrátil como uma ação rápida.",
+          "remove_special": {
+            "attribute": "Perfil Retrátil Ativado",
+            "target": "self"
+          }
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Protocolo</b>]</b> Habilidade: Seu mecha pode retrair sistemas principais para reduzir seu perfil. Enquanto ativo:<ul><li>testes para te localizar recebem +1 de dificuldade enquanto estiver ESCONDIDO;</li><li>ataques à distância e tecnológicos contra você recebem +1 de dificuldade;</li><li>você fica <b>LENTO</b> e não pode realizar ataques.</li></ul>\n<b>[<b>Ação Rápida</b>]</b> Desativar Perfil Retrátil: Você pode encerrar o Perfil Retrátil como uma <b>ação rápida</b>.",
+      "detail": "<b>[<b>Protocolo</b>]</b> Habilidade: Seu mecha pode retrair sistemas principais para reduzir seu perfil. Enquanto ativo:<ul><li>testes para te localizar recebem +1 de dificuldade enquanto estiver ESCONDIDO;</li><li>ataques à distância e tecnológicos contra você recebem +1 de dificuldade;</li><li>você fica <b>LENTO</b> e não pode realizar ataques.</li></ul>\n<b>[<b>Ação Rápida</b>]</b> Desativar Perfil Retrátil: Você pode encerrar o Perfil Retrátil como uma <b>ação rápida</b>.",
+      "source": "SSC",
+      "license": "Swallowtail",
+      "license_level": 2
+    },
+    {
+      "id": "ms_athena_class_nhp",
+      "category": "system",
+      "name": "PNH CLASSE-ATHENA",
+      "sp": 3,
+      "type": "AI",
+      "tags": [
+        "IA",
+        "Único"
+      ],
+      "actions": [
+        {
+          "name": "Simulacro",
+          "activation": "Rápida",
+          "detail": "A ATHENA constrói um modelo 3D perfeito, em tempo real e totalmente interativo de uma área de EXPLOSÃO 3 dentro do alcance 50, incluindo personagens em movimento, tudo renderizado em detalhes primorosamente extremos. Os seguintes efeitos se aplicam:<ul><li>Você tem visibilidade total dentro da área afetada, mas não conta como linha de visão.</li><li>Você conhece todas as estatísticas, armas e sistemas de personagens dentro da área afetada.</li><li>Personagens hostis dentro da área afetada não se beneficiam de cobertura e não podem se ESCONDER ou se tornar INVISÍVEIS.</li><li>Personagens hostis que terminam seu turno na área afetada recebem TRAVADO EM MIRA e deixam de ser INVISÍVEIS ou ESCONDIDOS.</li></ul>A simulação da ATHENA dura até o final da cena, ou cerca de 30 minutos na narrativa. Você pode visar uma nova área como uma ação rápida.",
+          "active_effects": [
+            {
+              "name": "Simulacro ATHENA Ativo",
+              "detail": "Você tem visibilidade total na área afetada, mas não conta como linha de visão. Você sabe todas as estatísticas, armas e sistemas dos personagens dentro dela. Personagens hostis não se beneficiam de INVISÍVEL ou cobertura leve contra ninguém enquanto estiverem na área afetada."
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "Seu mecha adquire a tag <b>IA</b> e o Simulacro.\n<b>[<b>Ação Rápida</b>]</b> Simulacro: A ATHENA constrói um modelo 3D perfeito, em tempo real e totalmente interativo de uma área de EXPLOSÃO 3 dentro do alcance 50, incluindo personagens em movimento, tudo renderizado em detalhes primorosamente extremos. Os seguintes efeitos se aplicam:<ul><li>Você tem visibilidade total dentro da área afetada, mas não conta como linha de visão.</li><li>Você conhece todas as estatísticas, armas e sistemas de personagens dentro da área afetada.</li><li>Personagens hostis dentro da área afetada não se beneficiam de cobertura e não podem se ESCONDER ou se tornar INVISÍVEIS.</li><li>Personagens hostis que terminam seu turno na área afetada recebem TRAVADO EM MIRA e deixam de ser INVISÍVEIS ou ESCONDIDOS.</li></ul>A simulação da ATHENA dura até o final da cena, ou cerca de 30 minutos na narrativa. Você pode visar uma nova área como uma <b>ação rápida</b>.",
+      "detail": "Seu mecha adquire a tag <b>IA</b> e o Simulacro.\n<b>[<b>Ação Rápida</b>]</b> Simulacro: A ATHENA constrói um modelo 3D perfeito, em tempo real e totalmente interativo de uma área de EXPLOSÃO 3 dentro do alcance 50, incluindo personagens em movimento, tudo renderizado em detalhes primorosamente extremos. Os seguintes efeitos se aplicam:<ul><li>Você tem visibilidade total dentro da área afetada, mas não conta como linha de visão.</li><li>Você conhece todas as estatísticas, armas e sistemas de personagens dentro da área afetada.</li><li>Personagens hostis dentro da área afetada não se beneficiam de cobertura e não podem se ESCONDER ou se tornar INVISÍVEIS.</li><li>Personagens hostis que terminam seu turno na área afetada recebem TRAVADO EM MIRA e deixam de ser INVISÍVEIS ou ESCONDIDOS.</li></ul>A simulação da ATHENA dura até o final da cena, ou cerca de 30 minutos na narrativa. Você pode visar uma nova área como uma <b>ação rápida</b>.",
+      "source": "SSC",
+      "license": "Swallowtail",
+      "license_level": 3
+    },
+    {
+      "id": "ms_lb_oc_cloaking_field",
+      "category": "system",
+      "name": "Campo de Camuflagem LB/OC",
+      "sp": 4,
+      "type": "Sistema",
+      "tags": [
+        "Calor 2 (Próprio)"
+      ],
+      "actions": [
+        {
+          "activation": "Rápida",
+          "detail": "Você fica LENTO, mas seu mecha e todos os aliados em uma área de Emanação 2 ficam INVISÍVEIS contanto que permaneçam completamente dentro da área. Esse efeito dura até o fim de seu próximo turno.",
+          "add_status": [
+            {
+              "id": "slow",
+              "target": "self"
+            },
+            {
+              "id": "invisible",
+              "target": "self"
+            }
+          ],
+          "add_special": [
+            {
+              "attribute": "LB/OC Cloaking Field Active",
+              "target": "self",
+              "detail": "Seu mecha e todos os aliados numa área de Emanação 2 ficam INVISÍVEIS contanto que permaneçam totalmente na área."
+            }
+          ]
+        },
+        {
+          "name": "Desativar Campo de Camuflagem LB/OC",
+          "activation": "Rápida",
+          "detail": "Você pode encerrar o Campo de Camuflagem LB/OC como uma ação rápida.",
+          "remove_special": [
+            {
+              "attribute": "LB/OC Cloaking Field Active",
+              "target": "self"
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Você fica <b>LENTO</b>, mas seu mecha e todos os aliados em uma área de Emanação 2 ficam INVISÍVEIS contanto que permaneçam completamente dentro da área. Esse efeito dura até o fim de seu próximo turno.\n<b>[<b>Ação Rápida</b>]</b> Desativar Campo de Camuflagem LB/OC: Você pode encerrar o Campo de Camuflagem LB/OC como uma <b>ação rápida</b>.",
+      "detail": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Você fica <b>LENTO</b>, mas seu mecha e todos os aliados em uma área de Emanação 2 ficam INVISÍVEIS contanto que permaneçam completamente dentro da área. Esse efeito dura até o fim de seu próximo turno.\n<b>[<b>Ação Rápida</b>]</b> Desativar Campo de Camuflagem LB/OC: Você pode encerrar o Campo de Camuflagem LB/OC como uma <b>ação rápida</b>.",
+      "source": "SSC",
+      "license": "Swallowtail",
+      "license_level": 3
+    },
+    {
+      "id": "ms_hive_drone",
+      "category": "system",
+      "name": "Drone Colmeia",
+      "sp": 2,
+      "type": "Drone",
+      "tags": [],
+      "actions": [],
+      "deployables": [
+        {
+          "type": "Drone",
+          "name": "Drone Colmeia",
+          "size": 0.5,
+          "hp": 5,
+          "edef": 10,
+          "evasion": 10,
+          "recall": "Rápida",
+          "redeploy": "Rápida",
+          "detail": "Este drone colmeia pode ser implantado em um espaço livre dentro do alcance dos SENSORES e na linha de visão, onde libera um enxame de lavagem cinza de EMANAÇÃO 2 com os seguintes efeitos:<ul><li>Personagens aliados pelo menos parcialmente dentro da área afetada ganham cobertura leve, assim como o drone colmeia.</li><li>Personagens hostis sofrem 1 de dano cinético PF quando começam seu turno na área afetada ou entram nela pela primeira vez em uma rodada. O dano de áreas criadas por múltiplos drones colmeia não se acumula.</li></ul>O drone pode ser implantado em um espaço diferente ou recolhido como uma ação rápida.",
+          "damage": [
+            {
+              "type": "Kinetic",
+              "val": 1,
+              "ap": true
+            }
+          ]
+        }
+      ],
+      "terse": "Este drone colmeia pode ser implantado em um espaço livre dentro do alcance dos SENSORES e na linha de visão, onde libera um enxame de lavagem cinza de EMANAÇÃO 2 com os seguintes efeitos:<ul><li>Personagens aliados pelo menos parcialmente dentro da área afetada ganham cobertura leve, assim como o drone colmeia.</li><li>Personagens hostis sofrem 1 de dano cinético PF quando começam seu turno na área afetada ou entram nela pela primeira vez em uma rodada. O dano de áreas criadas por múltiplos drones colmeia não se acumula.</li></ul>O drone pode ser implantado em um espaço diferente ou recolhido como uma <b>ação rápida</b>.\n<b>[Posicionável: Drone Colmeia (Drone)]</b> Este drone colmeia pode ser implantado em um espaço livre dentro do alcance dos SENSORES e na linha de visão, onde libera um enxame de lavagem cinza de EMANAÇÃO 2 com os seguintes efeitos:<ul><li>Personagens aliados pelo menos parcialmente dentro da área afetada ganham cobertura leve, assim como o drone colmeia.</li><li>Personagens hostis sofrem 1 de dano cinético PF quando começam seu turno na área afetada ou entram nela pela primeira vez em uma rodada. O dano de áreas criadas por múltiplos drones colmeia não se acumula.</li></ul>O drone pode ser implantado em um espaço diferente ou recolhido como uma <b>ação rápida</b>.",
+      "detail": "Este drone colmeia pode ser implantado em um espaço livre dentro do alcance dos SENSORES e na linha de visão, onde libera um enxame de lavagem cinza de EMANAÇÃO 2 com os seguintes efeitos:<ul><li>Personagens aliados pelo menos parcialmente dentro da área afetada ganham cobertura leve, assim como o drone colmeia.</li><li>Personagens hostis sofrem 1 de dano cinético PF quando começam seu turno na área afetada ou entram nela pela primeira vez em uma rodada. O dano de áreas criadas por múltiplos drones colmeia não se acumula.</li></ul>O drone pode ser implantado em um espaço diferente ou recolhido como uma <b>ação rápida</b>.\n<b>[Posicionável: Drone Colmeia (Drone)]</b> Este drone colmeia pode ser implantado em um espaço livre dentro do alcance dos SENSORES e na linha de visão, onde libera um enxame de lavagem cinza de EMANAÇÃO 2 com os seguintes efeitos:<ul><li>Personagens aliados pelo menos parcialmente dentro da área afetada ganham cobertura leve, assim como o drone colmeia.</li><li>Personagens hostis sofrem 1 de dano cinético PF quando começam seu turno na área afetada ou entram nela pela primeira vez em uma rodada. O dano de áreas criadas por múltiplos drones colmeia não se acumula.</li></ul>O drone pode ser implantado em um espaço diferente ou recolhido como uma <b>ação rápida</b>.",
+      "source": "HORUS",
+      "license": "Balor",
+      "license_level": 1
+    },
+    {
+      "id": "ms_scanner_swarm",
+      "category": "system",
+      "name": "Enxame de Escaneres",
+      "sp": 1,
+      "type": "Tech",
+      "tags": [
+        "Único"
+      ],
+      "actions": [],
+      "deployables": [],
+      "terse": "Você ganha +1 de PRECISÃO em ataques tecnológicos contra personagens adjacentes.",
+      "detail": "Você ganha +1 de PRECISÃO em ataques tecnológicos contra personagens adjacentes.",
+      "source": "HORUS",
+      "license": "Balor",
+      "license_level": 1
+    },
+    {
+      "id": "ms_swarm_body",
+      "category": "system",
+      "name": "Corpo de Enxame",
+      "sp": 2,
+      "type": "Sistema",
+      "tags": [
+        "Único"
+      ],
+      "actions": [
+        {
+          "activation": "Rápida",
+          "detail": "Após ativar este sistema, um enxame de EMANAÇÃO 1 é liberado no final de seu turno. Personagens de sua escolha que começam seu turno na área ou entrarem nela em seu turno devem ter sucesso em um salvamento de SISTEMAS ou sofrem 3 de dano cinético. Esta quantidade aumenta em +3 de dano para cada um de seus turnos que você permaneceu estacionário, até um máximo de 9 de dano cinético.<br>Este efeito dura até você se mover, incluindo movimento involuntário.",
+          "active_effects": [
+            {
+              "name": "Corpo de Enxame Ativo",
+              "detail": "Personagens de sua escolha que começarem seu turno na área ou entrarem nela em seus próprios turnos devem passar num salvamento de SISTEMAS ou sofrer 3 de dano cinético. Esse valor aumenta em +3 de dano para cada um dos seus turnos em que você não fizer movimentos (sejam eles voluntários ou não), até um máximo de 9 de dano cinético. Ele é reiniciado para 3 de dano quando você for movido por qualquer motivo.",
+              "damage": [
+                {
+                  "type": "Kinetic",
+                  "val": 3,
+                  "aoe": true
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Após ativar este sistema, um enxame de EMANAÇÃO 1 é liberado no final de seu turno. Personagens de sua escolha que começam seu turno na área ou entrarem nela em seu turno devem ter sucesso em um salvamento de SISTEMAS ou sofrem 3 de dano cinético. Esta quantidade aumenta em +3 de dano para cada um de seus turnos que você permaneceu estacionário, até um máximo de 9 de dano cinético. Este efeito dura até você se mover, incluindo movimento involuntário.",
+      "detail": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Após ativar este sistema, um enxame de EMANAÇÃO 1 é liberado no final de seu turno. Personagens de sua escolha que começam seu turno na área ou entrarem nela em seu turno devem ter sucesso em um salvamento de SISTEMAS ou sofrem 3 de dano cinético. Esta quantidade aumenta em +3 de dano para cada um de seus turnos que você permaneceu estacionário, até um máximo de 9 de dano cinético. Este efeito dura até você se mover, incluindo movimento involuntário.",
+      "source": "HORUS",
+      "license": "Balor",
+      "license_level": 2
+    },
+    {
+      "id": "ms_h0r_os_system_upgrade_i",
+      "category": "system",
+      "name": "Melhoria de Sistema H0R_OS I",
+      "sp": 2,
+      "type": "Tech",
+      "tags": [
+        "Único"
+      ],
+      "actions": [
+        {
+          "name": "Sistema de Marionetes",
+          "activation": "Invadir",
+          "detail": "Seu alvo move sua VELOCIDADE máxima em uma direção de sua escolha. Ele pode ser movido para áreas perigosas e outros obstáculos, mas ainda é afetado por terreno difícil, obstruções, e assim por diante. Este movimento é involuntário, mas provoca reações e Engajamento normalmente e não conta como REPELIR, empurrar ou puxar."
+        },
+        {
+          "name": "Ejetar Núcleos de Energia",
+          "activation": "Invadir",
+          "detail": "Seu alvo fica BLOQUEADO até o final de seu próximo turno enquanto você interrompe temporariamente seus sistemas, ejetando pentes de munição e barras de resfriamento. Personagens adjacentes ao seu alvo sofrem 2 de dano energético. Isso só pode ser usado 1/cena em cada personagem.",
+          "add_status": [
+            {
+              "id": "jammed",
+              "target": "target",
+              "duration": "next_turn_end_target"
+            }
+          ],
+          "damage": [
+            {
+              "type": "Energy",
+              "val": 2,
+              "aoe": true
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Invadir</b>]</b> Sistema de Marionetes: Seu alvo move sua <b>VELOCIDADE</b> máxima em uma direção de sua escolha. Ele pode ser movido para áreas perigosas e outros obstáculos, mas ainda é afetado por terreno difícil, obstruções, e assim por diante. Este movimento é involuntário, mas provoca reações e Engajamento normalmente e não conta como REPELIR, empurrar ou puxar.\n<b>[<b>Invadir</b>]</b> <b>Ejetar</b> Núcleos de Energia: Seu alvo fica BLOQUEADO até o final de seu próximo turno enquanto você interrompe temporariamente seus sistemas, ejetando pentes de munição e barras de resfriamento. Personagens adjacentes ao seu alvo sofrem 2 de dano energético. Isso só pode ser usado 1/cena em cada personagem.",
+      "detail": "<b>[<b>Invadir</b>]</b> Sistema de Marionetes: Seu alvo move sua <b>VELOCIDADE</b> máxima em uma direção de sua escolha. Ele pode ser movido para áreas perigosas e outros obstáculos, mas ainda é afetado por terreno difícil, obstruções, e assim por diante. Este movimento é involuntário, mas provoca reações e Engajamento normalmente e não conta como REPELIR, empurrar ou puxar.\n<b>[<b>Invadir</b>]</b> <b>Ejetar</b> Núcleos de Energia: Seu alvo fica BLOQUEADO até o final de seu próximo turno enquanto você interrompe temporariamente seus sistemas, ejetando pentes de munição e barras de resfriamento. Personagens adjacentes ao seu alvo sofrem 2 de dano energético. Isso só pode ser usado 1/cena em cada personagem.",
+      "source": "HORUS",
+      "license": "Goblin",
+      "license_level": 1
+    },
+    {
+      "id": "ms_metahook",
+      "category": "system",
+      "name": "Metagancho",
+      "sp": 2,
+      "type": "Tech",
+      "tags": [
+        "Único"
+      ],
+      "actions": [
+        {
+          "activation": "Programar Rápido",
+          "detail": "Escolha um personagem aliado dentro do alcance dos SENSORES e na linha de visão. Você estabelece um link de sistemas com ele, que dura enquanto ele estiver dentro do alcance dos SENSORES e na linha de visão. Enquanto estiverem vinculados, você pode usar os SENSORES e a linha de visão dele para ações tecnológicas, e ele pode usar seus SISTEMAS para fazer testes de perícia e salvamentos; no entanto, sempre que qualquer um dos personagens sofrer calor ou uma condição, ela também é sofrida pelo outro personagem. Você só pode vincular sistemas com um personagem por vez.",
+          "add_special": [
+            {
+              "attribute": "Metahook Target",
+              "target": "ally",
+              "detail": "O Goblin pode usar seus SENSORES e linha de visão para ações tecnológicas, e você pode usar as estatísticas de SISTEMAS dele para testes de perícia e salvamentos; contudo, sempre que qualquer um sofrer Calor ou condição, é duplicado para o outro."
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Programar Rápido</b>]</b> Habilidade: Escolha um personagem aliado dentro do alcance dos SENSORES e na linha de visão. Você estabelece um link de sistemas com ele, que dura enquanto ele estiver dentro do alcance dos SENSORES e na linha de visão. Enquanto estiverem vinculados, você pode usar os SENSORES e a linha de visão dele para ações tecnológicas, e ele pode usar seus SISTEMAS para fazer testes de perícia e salvamentos; no entanto, sempre que qualquer um dos personagens sofrer calor ou uma condição, ela também é sofrida pelo outro personagem. Você só pode vincular sistemas com um personagem por vez.",
+      "detail": "<b>[<b>Programar Rápido</b>]</b> Habilidade: Escolha um personagem aliado dentro do alcance dos SENSORES e na linha de visão. Você estabelece um link de sistemas com ele, que dura enquanto ele estiver dentro do alcance dos SENSORES e na linha de visão. Enquanto estiverem vinculados, você pode usar os SENSORES e a linha de visão dele para ações tecnológicas, e ele pode usar seus SISTEMAS para fazer testes de perícia e salvamentos; no entanto, sempre que qualquer um dos personagens sofrer calor ou uma condição, ela também é sofrida pelo outro personagem. Você só pode vincular sistemas com um personagem por vez.",
+      "source": "HORUS",
+      "license": "Goblin",
+      "license_level": 2
+    },
+    {
+      "id": "ms_h0r_os_system_upgrade_ii",
+      "category": "system",
+      "name": "Melhoria de Sistema H0R_OS II",
+      "sp": 2,
+      "type": "Tech",
+      "tags": [
+        "Único"
+      ],
+      "actions": [],
+      "deployables": [
+        {
+          "name": "Construir Outro: Imagem Ideal",
+          "type": "Object",
+          "size": 2,
+          "detail": "Você cria um construto de dados num espaço livre adjacente – um objeto de Tamanho 2 que pode se parecer com qualquer coisa e que parece real a todos os sistemas. O construto fornece cobertura pesada, bloqueia linha de visão e age como obstrução para quem tentar atravessá-lo, mas é destruído quando sofre qualquer dano ou quando for atingido por um ataque (mesmo que erre)."
+        },
+        {
+          "name": "Construir Outro: Falso Ídolo",
+          "type": "Decoy",
+          "size": 2,
+          "hp": 1,
+          "edef": 10,
+          "evasion": 10,
+          "detail": "Escolha um espaço livre nos SENSORES e um alvo – você mesmo ou um aliado nos SENSORES. Você cria um falso ídolo – uma isca ilusória do seu alvo – no espaço. Antes de tentar mirar ou atacar seu alvo, os atacantes devem passar num salvamento de SISTEMAS; numa falha, eles devem mirar ou atacar o ídolo no lugar do alvo (mas podem prosseguir com outras opções se não conseguirem devido à falta de linha de visão, etc). Personagens que passarem ficam imunes à isca no resto da cena. O ídolo evapora quando o alvo real for atingido por um ataque que cause dano.",
+          "save": "sys"
+        }
+      ],
+      "terse": "<b>[Posicionável: Construir Outro: Imagem Ideal (Object)]</b> Você cria um construto de dados num espaço livre adjacente – um objeto de Tamanho 2 que pode se parecer com qualquer coisa e que parece real a todos os sistemas. O construto fornece cobertura pesada, bloqueia linha de visão e age como obstrução para quem tentar atravessá-lo, mas é destruído quando sofre qualquer dano ou quando for atingido por um ataque (mesmo que erre).\n<b>[Posicionável: Construir Outro: Falso Ídolo (Decoy)]</b> Escolha um espaço livre nos SENSORES e um alvo – você mesmo ou um aliado nos SENSORES. Você cria um falso ídolo – uma isca ilusória do seu alvo – no espaço. Antes de tentar mirar ou atacar seu alvo, os atacantes devem passar num salvamento de SISTEMAS; numa falha, eles devem mirar ou atacar o ídolo no lugar do alvo (mas podem prosseguir com outras opções se não conseguirem devido à falta de linha de visão, etc). Personagens que passarem ficam imunes à isca no resto da cena. O ídolo evapora quando o alvo real for atingido por um ataque que cause dano.",
+      "detail": "<b>[Posicionável: Construir Outro: Imagem Ideal (Object)]</b> Você cria um construto de dados num espaço livre adjacente – um objeto de Tamanho 2 que pode se parecer com qualquer coisa e que parece real a todos os sistemas. O construto fornece cobertura pesada, bloqueia linha de visão e age como obstrução para quem tentar atravessá-lo, mas é destruído quando sofre qualquer dano ou quando for atingido por um ataque (mesmo que erre).\n<b>[Posicionável: Construir Outro: Falso Ídolo (Decoy)]</b> Escolha um espaço livre nos SENSORES e um alvo – você mesmo ou um aliado nos SENSORES. Você cria um falso ídolo – uma isca ilusória do seu alvo – no espaço. Antes de tentar mirar ou atacar seu alvo, os atacantes devem passar num salvamento de SISTEMAS; numa falha, eles devem mirar ou atacar o ídolo no lugar do alvo (mas podem prosseguir com outras opções se não conseguirem devido à falta de linha de visão, etc). Personagens que passarem ficam imunes à isca no resto da cena. O ídolo evapora quando o alvo real for atingido por um ataque que cause dano.",
+      "source": "HORUS",
+      "license": "Goblin",
+      "license_level": 2
+    },
+    {
+      "id": "ms_osiris_class_nhp",
+      "category": "system",
+      "name": "PNH CLASSE-OSIRIS",
+      "sp": 3,
+      "type": "AI",
+      "tags": [
+        "IA",
+        "Único",
+        "1/Rodada"
+      ],
+      "actions": [
+        {
+          "name": "Arremessar no Duat",
+          "activation": "Completa",
+          "detail": "Você canaliza os sistemas do alvo por uma área extradimensional desconhecida.<br>Faça um ataque tecnológico em um alvo dentro de SENSORES. Em caso de sucesso, adicione 1 Ponto e eles perdem controle sobre seus sistemas: no próximo turno de seu alvo, você controla sua movimentação padrão (eles só podem se mover para espaços válidos).",
+          "attack": "tech",
+          "damage": [
+            {
+              "type": "Heat",
+              "val": 2,
+              "save": "hull"
+            }
+          ],
+          "add_special": [
+            {
+              "attribute": "Hurl into the Duat Target",
+              "detail": "O Goblin controla sua movimentação padrão no próximo turno."
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "Seu mecha adquire a tag <b>IA</b> e pode realizar a opção de TECNOLOGIA RÁPIDA Arremessar no Duat.\n<b>[<b>Ação Completa</b>]</b> Arremessar no Duat: Você canaliza os sistemas do alvo por uma área extradimensional desconhecida. Faça um ataque tecnológico em um alvo dentro de SENSORES. Em caso de sucesso, adicione 1 Ponto e eles perdem controle sobre seus sistemas: no próximo turno de seu alvo, você controla sua movimentação padrão (eles só podem se mover para espaços válidos).",
+      "detail": "Seu mecha adquire a tag <b>IA</b> e pode realizar a opção de TECNOLOGIA RÁPIDA Arremessar no Duat.\n<b>[<b>Ação Completa</b>]</b> Arremessar no Duat: Você canaliza os sistemas do alvo por uma área extradimensional desconhecida. Faça um ataque tecnológico em um alvo dentro de SENSORES. Em caso de sucesso, adicione 1 Ponto e eles perdem controle sobre seus sistemas: no próximo turno de seu alvo, você controla sua movimentação padrão (eles só podem se mover para espaços válidos).",
+      "source": "HORUS",
+      "license": "Goblin",
+      "license_level": 3
+    },
+    {
+      "id": "ms_h0r_os_system_upgrade_iii",
+      "category": "system",
+      "name": "Melhoria de Sistema H0R_OS III",
+      "sp": 2,
+      "type": "Tech",
+      "tags": [
+        "Único"
+      ],
+      "actions": [
+        {
+          "name": "Emblemas Dimensionais",
+          "activation": "Invadir",
+          "detail": "Você cria três construtos de dados de Tamanho 1 em espaços adjacentes ao seu alvo, mas não adjacentes entre si. Quando um personagem passa por um deles, ele toma 2 de Calor e o construto some."
+        },
+        {
+          "name": "Algemas Celestiais",
+          "activation": "Invadir",
+          "detail": "Marque o espaço que seu alvo ocupa. Se eles saírem do espaço, uma vez a qualquer momento durante o seu turno, você pode usar uma ação livre para teletransportá-los de volta, ou para o espaço livre mais próximo.",
+          "add_special": [
+            {
+              "attribute": "H0R_OS: Celestial Shackles Target",
+              "detail": "Se você sair do espaço afetado, o Goblin pode usar ação livre para te teletransportar de volta no turno dele."
+            }
+          ]
+        }
+      ],
+      "deployables": [
+        {
+          "name": "Emblemas Dimensionais",
+          "type": "Object",
+          "size": 1,
+          "instances": 3,
+          "detail": "Você cria três construtos de dados de Tamanho 1 em espaços adjacentes ao seu alvo, mas não adjacentes entre si. Quando um personagem passa por um deles, ele toma 2 de Calor e o construto some.",
+          "damage": [
+            {
+              "type": "Heat",
+              "val": 2
+            }
+          ],
+          "recall": "Free"
+        }
+      ],
+      "terse": "<b>[<b>Invadir</b>]</b> Emblemas Dimensionais: Você cria três construtos de dados de Tamanho 1 em espaços adjacentes ao seu alvo, mas não adjacentes entre si. Quando um personagem passa por um deles, ele toma 2 de Calor e o construto some.\n<b>[<b>Invadir</b>]</b> Algemas Celestiais: Marque o espaço que seu alvo ocupa. Se eles saírem do espaço, uma vez a qualquer momento durante o seu turno, você pode usar uma <b>ação livre</b> para teletransportá-los de volta, ou para o espaço livre mais próximo.\n<b>[Posicionável: Emblemas Dimensionais (Object)]</b> Você cria três construtos de dados de Tamanho 1 em espaços adjacentes ao seu alvo, mas não adjacentes entre si. Quando um personagem passa por um deles, ele toma 2 de Calor e o construto some.",
+      "detail": "<b>[<b>Invadir</b>]</b> Emblemas Dimensionais: Você cria três construtos de dados de Tamanho 1 em espaços adjacentes ao seu alvo, mas não adjacentes entre si. Quando um personagem passa por um deles, ele toma 2 de Calor e o construto some.\n<b>[<b>Invadir</b>]</b> Algemas Celestiais: Marque o espaço que seu alvo ocupa. Se eles saírem do espaço, uma vez a qualquer momento durante o seu turno, você pode usar uma <b>ação livre</b> para teletransportá-los de volta, ou para o espaço livre mais próximo.\n<b>[Posicionável: Emblemas Dimensionais (Object)]</b> Você cria três construtos de dados de Tamanho 1 em espaços adjacentes ao seu alvo, mas não adjacentes entre si. Quando um personagem passa por um deles, ele toma 2 de Calor e o construto some.",
+      "source": "HORUS",
+      "license": "Goblin",
+      "license_level": 3
+    },
+    {
+      "id": "ms_mimic_mesh",
+      "category": "system",
+      "name": "Teia de Mímica",
+      "sp": 2,
+      "type": "Sistema",
+      "tags": [
+        "Único"
+      ],
+      "actions": [
+        {
+          "name": "Ativar Teia de Mímica",
+          "activation": "Rápida",
+          "detail": "Escolha um aliado dentro de SENSORES. Até o final de seu próximo turno, você pode usar a reação de Percepção do Campo de Batalha.",
+          "add_special": [
+            {
+              "attribute": "Mimic Mesh Target",
+              "target": "ally"
+            }
+          ]
+        },
+        {
+          "name": "Percepção do Campo de Batalha",
+          "activation": "Reação",
+          "trigger": "Uma ação hostil é tomada contra seu alvo.",
+          "detail": "Você pode se mover 3 espaços na direção de seu alvo pela rota mais direta. O movimento interrompe e se resolve antes da ação."
+        }
+      ],
+      "deployables": [],
+      "terse": "Ao ativar, escolha um personagem aliado dentro dos SENSORES: até o final de seu próximo turno, você ganha a reação Percepção do Campo de Batalha.\n<b>[<b>Ação Rápida</b>]</b> Ativar Teia de Mímica: Escolha um aliado dentro de SENSORES. Até o final de seu próximo turno, você pode usar a reação de Percepção do Campo de Batalha.\n<b>[<b>Reação</b>]</b> Percepção do Campo de Batalha: Você pode se mover 3 espaços na direção de seu alvo pela rota mais direta. O movimento interrompe e se resolve antes da ação.",
+      "detail": "Ao ativar, escolha um personagem aliado dentro dos SENSORES: até o final de seu próximo turno, você ganha a reação Percepção do Campo de Batalha.\n<b>[<b>Ação Rápida</b>]</b> Ativar Teia de Mímica: Escolha um aliado dentro de SENSORES. Até o final de seu próximo turno, você pode usar a reação de Percepção do Campo de Batalha.\n<b>[<b>Reação</b>]</b> Percepção do Campo de Batalha: Você pode se mover 3 espaços na direção de seu alvo pela rota mais direta. O movimento interrompe e se resolve antes da ação.",
+      "source": "HORUS",
+      "license": "Gorgon",
+      "license_level": 1
+    },
+    {
+      "id": "ms_sentinel_drone",
+      "category": "system",
+      "name": "Drone Sentinela",
+      "sp": 2,
+      "type": "Drone",
+      "tags": [],
+      "actions": [],
+      "deployables": [
+        {
+          "type": "Drone",
+          "name": "Drone Sentinela",
+          "size": 0.5,
+          "hp": 5,
+          "edef": 10,
+          "evasion": 10,
+          "detail": "O drone sentinela pode ser implantado em espaço livre nos SENSORES, onde estabelece uma área de Emanação 2. Hostis sofrem 3 de dano cinético caso comecem o turno ou se movam lá.",
+          "recall": "Quick",
+          "redeploy": "Quick"
+        }
+      ],
+      "terse": "O drone sentinela pode ser implantado em qualquer espaço livre dentro dos SENSORES e na linha de visão, onde estabelece um perímetro de segurança de EMANAÇÃO 2. Personagens hostis dentro da área afetada sofrem 3 de dano cinético do fogo automático do drone antes de realizar qualquer ataque.\nO drone sentinela pode ser reimplantado em um novo local ou recolhido como uma <b>ação rápida</b>.\n<b>[Posicionável: Drone Sentinela (Drone)]</b> O drone sentinela pode ser implantado em espaço livre nos SENSORES, onde estabelece uma área de Emanação 2. Hostis sofrem 3 de dano cinético caso comecem o turno ou se movam lá.",
+      "detail": "O drone sentinela pode ser implantado em qualquer espaço livre dentro dos SENSORES e na linha de visão, onde estabelece um perímetro de segurança de EMANAÇÃO 2. Personagens hostis dentro da área afetada sofrem 3 de dano cinético do fogo automático do drone antes de realizar qualquer ataque.\nO drone sentinela pode ser reimplantado em um novo local ou recolhido como uma <b>ação rápida</b>.\n<b>[Posicionável: Drone Sentinela (Drone)]</b> O drone sentinela pode ser implantado em espaço livre nos SENSORES, onde estabelece uma área de Emanação 2. Hostis sofrem 3 de dano cinético caso comecem o turno ou se movam lá.",
+      "source": "HORUS",
+      "license": "Gorgon",
+      "license_level": 1
+    },
+    {
+      "id": "ms___scorpion_v70.1",
+      "category": "system",
+      "name": "//SCORPION V70.1",
+      "sp": 2,
+      "type": "Tech",
+      "tags": [
+        "Único"
+      ],
+      "actions": [
+        {
+          "name": "Ativar //SCORPION",
+          "activation": "Livre",
+          "trigger": "Você ou aliado adjacente sofre um erro de ataque tecnológico ou sucesso em salvamento.",
+          "detail": "Escolha um:<ul><li>O atacante fica IMPEDIDO até o final de seu próximo turno e sofre 2 de calor.</li><li>O atacante fica TRAVADO até o final de seu próximo turno.</li></ul>",
+          "add_status": [
+            {
+              "id": "impaired",
+              "duration": "next_turn_end_target"
+            },
+            {
+              "id": "jammed",
+              "duration": "next_turn_end_target"
+            }
+          ],
+          "damage": [
+            {
+              "type": "Heat",
+              "val": 2
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Ação Livre</b>]</b> Ativar //SCORPION: Escolha um:<ul><li>O atacante fica <b>IMPEDIDO</b> até o final de seu próximo turno e sofre 2 de calor.</li><li>O atacante fica TRAVADO até o final de seu próximo turno.</li></ul>",
+      "detail": "<b>[<b>Ação Livre</b>]</b> Ativar //SCORPION: Escolha um:<ul><li>O atacante fica <b>IMPEDIDO</b> até o final de seu próximo turno e sofre 2 de calor.</li><li>O atacante fica TRAVADO até o final de seu próximo turno.</li></ul>",
+      "source": "HORUS",
+      "license": "Gorgon",
+      "license_level": 2
+    },
+    {
+      "id": "ms_monitor_module",
+      "category": "system",
+      "name": "Módulo Monitor",
+      "sp": 2,
+      "type": "Sistema",
+      "tags": [
+        "Único"
+      ],
+      "actions": [
+        {
+          "activation": "Rápida",
+          "detail": "Ganha 1d3 Cargas e escolha um aliado: no ataque de inimigos contra ele, use uma carga como reação para RETALIAR.",
+          "add_special": [
+            {
+              "attribute": "Monitor Module Target",
+              "target": "ally",
+              "duration": "next_turn_end_target",
+              "detail": "O Gorgon usará suas Cargas contra você em RETALIAÇÃO."
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Ganha 1d3 Cargas e escolha um aliado: no ataque de inimigos contra ele, use uma carga como reação para <b>RETALIAR</b>.",
+      "detail": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Ganha 1d3 Cargas e escolha um aliado: no ataque de inimigos contra ele, use uma carga como reação para <b>RETALIAR</b>.",
+      "source": "HORUS",
+      "license": "Gorgon",
+      "license_level": 2
+    },
+    {
+      "id": "ms_scylla_class_nhp",
+      "category": "system",
+      "name": "PNH CLASSE-SCYLLA",
+      "sp": 3,
+      "type": "AI",
+      "tags": [
+        "IA",
+        "Único",
+        "Calor 2 (Próprio)"
+      ],
+      "actions": [
+        {
+          "name": "Libertar SCYLLA",
+          "activation": "Rápida",
+          "detail": "Você tem até duas reações que te deixam RETALIAR quando atacarem aliados. Você perde o acesso a eles na rodada...",
+          "active_effects": [
+            {
+              "name": "Libertar SCYLLA Ativo",
+              "detail": "Ataques de hostis permitem que você dê o troco em RETALIAÇÃO caso ataquem aliados ou utilizem ações perigosas."
+            }
+          ]
+        },
+        {
+          "name": "Libertar SCYLLA: Reação",
+          "activation": "Reação",
+          "frequency": "2/rodada",
+          "trigger": "Uma das seguintes, escolhida quando SCYLLA for Ativada:<ul><li>Atacarem você ou aliados próximos.</li><li>Movimentos inesperados de hostis.</li></ul>",
+          "detail": "Retalie contra o alvo que engatilhou, dando dano base como calor/queima e reduzindo o efeito pela metade."
+        }
+      ],
+      "deployables": [],
+      "terse": "Seu mecha adquire a tag <b>IA</b> e Libertar SCYLLA.\n<b>[<b>Ação Rápida</b>]</b> Libertar SCYLLA: Você tem até duas reações que te deixam <b>RETALIAR</b> quando atacarem aliados. Você perde o acesso a eles na rodada...\n<b>[<b>Reação</b>]</b> Libertar SCYLLA: <b>Reação</b>: Retalie contra o alvo que engatilhou, dando dano base como calor/queima e reduzindo o efeito pela metade.",
+      "detail": "Seu mecha adquire a tag <b>IA</b> e Libertar SCYLLA.\n<b>[<b>Ação Rápida</b>]</b> Libertar SCYLLA: Você tem até duas reações que te deixam <b>RETALIAR</b> quando atacarem aliados. Você perde o acesso a eles na rodada...\n<b>[<b>Reação</b>]</b> Libertar SCYLLA: <b>Reação</b>: Retalie contra o alvo que engatilhou, dando dano base como calor/queima e reduzindo o efeito pela metade.",
+      "source": "HORUS",
+      "license": "Gorgon",
+      "license_level": 3
+    },
+    {
+      "id": "ms_puppetmaster",
+      "category": "system",
+      "name": "PUPPETMASTER",
+      "sp": 2,
+      "type": "Tech",
+      "tags": [
+        "Único"
+      ],
+      "actions": [
+        {
+          "name": "Guiar o Rebanho",
+          "activation": "Tecnologia Rápida",
+          "detail": "Mova quaisquer drones, aliados ou inimigos, a até 4 espaços."
+        },
+        {
+          "name": "Eletropulso",
+          "activation": "Tecnologia Rápida",
+          "detail": "Personagens de sua escolha em adjacência com um drone tomam 2 de dano de energia.",
+          "damage": [
+            {
+              "type": "Energy",
+              "val": 2,
+              "aoe": true
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[Tecnologia Rápida]</b> Guiar o Rebanho: Mova quaisquer drones, aliados ou inimigos, a até 4 espaços.\n<b>[Tecnologia Rápida]</b> Eletropulso: Personagens de sua escolha em adjacência com um drone tomam 2 de dano de energia.",
+      "detail": "<b>[Tecnologia Rápida]</b> Guiar o Rebanho: Mova quaisquer drones, aliados ou inimigos, a até 4 espaços.\n<b>[Tecnologia Rápida]</b> Eletropulso: Personagens de sua escolha em adjacência com um drone tomam 2 de dano de energia.",
+      "source": "HORUS",
+      "license": "Hydra",
+      "license_level": 1
+    },
+    {
+      "id": "ms_tempest_drone",
+      "category": "system",
+      "name": "Drone Tempestade",
+      "sp": 2,
+      "type": "Drone",
+      "tags": [
+        "Resistência (Tudo)"
+      ],
+      "actions": [],
+      "deployables": [
+        {
+          "type": "Drone",
+          "name": "Drone Tempestade",
+          "size": 0.5,
+          "hp": 5,
+          "edef": 10,
+          "evasion": 10,
+          "detail": "Personagens sofrem 4 de dano energético e são empurrados ao entrarem na área do Tempest.",
+          "recall": "Rápida",
+          "redeploy": "Rápida",
+          "damage": [
+            {
+              "type": "Energy",
+              "val": 4,
+              "save": "hull"
+            }
+          ],
+          "tags": [
+            {
+              "id": "tg_resistall"
+            }
+          ]
+        }
+      ],
+      "terse": "Este drone tempestade grande e blindado pode ser implantado em um espaço livre dentro dos SENSORES e na linha de visão.\n<b>[Posicionável: Drone Tempestade (Drone)]</b> Personagens sofrem 4 de dano energético e são empurrados ao entrarem na área do Tempest.",
+      "detail": "Este drone tempestade grande e blindado pode ser implantado em um espaço livre dentro dos SENSORES e na linha de visão.\n<b>[Posicionável: Drone Tempestade (Drone)]</b> Personagens sofrem 4 de dano energético e são empurrados ao entrarem na área do Tempest.",
+      "source": "HORUS",
+      "license": "Hydra",
+      "license_level": 2
+    },
+    {
+      "id": "ms_assassin_drone",
+      "category": "system",
+      "name": "Drone Assassino",
+      "sp": 2,
+      "type": "Drone",
+      "tags": [],
+      "actions": [],
+      "deployables": [
+        {
+          "type": "Drone",
+          "name": "Drone Assassino",
+          "size": 0.5,
+          "hp": 5,
+          "edef": 10,
+          "evasion": 10,
+          "detail": "Mire uma área de explosão 2, e use Negação de Área (ações ilimitadas) contra qualquer intruso.",
+          "recall": "Rápida",
+          "redeploy": "Rápida",
+          "actions": [
+            {
+              "name": "Negação de Área",
+              "activation": "Reação",
+              "trigger": "Um inimigo entra na área",
+              "detail": "Use 3 de Dano Cinético somado de seu Brio contra eles.",
+              "damage": [
+                {
+                  "type": "Kinetic",
+                  "val": 3,
+                  "attack": "ranged"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "terse": "Este drone assassino pode ser implantado em qualquer espaço livre e adjacente.\n<b>[Posicionável: Drone Assassino (Drone)]</b> Mire uma área de explosão 2, e use Negação de Área (ações ilimitadas) contra qualquer intruso.",
+      "detail": "Este drone assassino pode ser implantado em qualquer espaço livre e adjacente.\n<b>[Posicionável: Drone Assassino (Drone)]</b> Mire uma área de explosão 2, e use Negação de Área (ações ilimitadas) contra qualquer intruso.",
+      "source": "HORUS",
+      "license": "Hydra",
+      "license_level": 3
+    },
+    {
+      "id": "ms_beckoner",
+      "category": "system",
+      "name": "Invocador",
+      "sp": 2,
+      "type": "Tech",
+      "tags": [
+        "Único"
+      ],
+      "actions": [
+        {
+          "name": "Invocar",
+          "activation": "Invadir",
+          "detail": "Você sofre 1d6+2 de dano energético PA e troca de lugar com seu alvo, ambos se teletransportando para a posição do outro. Seu alvo deve ser um Mecha e ter o mesmo Tamanho que você ou maior, caso contrário, essa ação falha.",
+          "damage": [
+            {
+              "type": "Energy",
+              "val": "1d6+2",
+              "ap": true,
+              "target": "self"
+            }
+          ]
+        },
+        {
+          "name": "Chamar",
+          "activation": "Invadir",
+          "detail": "Todos os personagens em um alcance de 3 do seu alvo são puxados adjacentes a ele, ou o mais próximo possível."
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Invadir</b>]</b> Invocar: Você sofre 1d6+2 de dano energético PA e troca de lugar com seu alvo, ambos se teletransportando para a posição do outro. Seu alvo deve ser um Mecha e ter o mesmo Tamanho que você ou maior, caso contrário, essa ação falha.\n<b>[<b>Invadir</b>]</b> Chamar: Todos os personagens em um alcance de 3 do seu alvo são puxados adjacentes a ele, ou o mais próximo possível.",
+      "detail": "<b>[<b>Invadir</b>]</b> Invocar: Você sofre 1d6+2 de dano energético PA e troca de lugar com seu alvo, ambos se teletransportando para a posição do outro. Seu alvo deve ser um Mecha e ter o mesmo Tamanho que você ou maior, caso contrário, essa ação falha.\n<b>[<b>Invadir</b>]</b> Chamar: Todos os personagens em um alcance de 3 do seu alvo são puxados adjacentes a ele, ou o mais próximo possível.",
+      "source": "HORUS",
+      "license": "Manticore",
+      "license_level": 1
+    },
+    {
+      "id": "ms_smite",
+      "category": "system",
+      "name": "Punir",
+      "sp": 3,
+      "type": "Tech",
+      "tags": [
+        "Único"
+      ],
+      "actions": [
+        {
+          "name": "Punir",
+          "activation": "Invadir",
+          "detail": "Você sofre 1d6 de dano energético PA e seu alvo deve passar em um salvamento de SISTEMAS ou fica ATORDOADO até o final de seu próximo turno. Cada personagem só pode ser ATORDOADO por este efeito uma vez por cena.",
+          "damage": [
+            {
+              "type": "Energy",
+              "val": "1d6",
+              "ap": true,
+              "target": "self"
+            }
+          ],
+          "add_status": [
+            {
+              "id": "stunned",
+              "duration": "next_turn_end_target",
+              "save": "sys"
+            }
+          ]
+        },
+        {
+          "name": "Cauterizar",
+          "activation": "Invadir",
+          "detail": "Você sofre 1d6 de dano energético PA e causa 2 de calor ao seu alvo para cada outro personagem de Tamanho 1 ou maior que estiver ENGAJADO com ele ou adjacente a ele – incluindo você – até um máximo de 6 de calor.",
+          "damage": [
+            {
+              "type": "Heat",
+              "val": 2,
+              "aoe": true
+            },
+            {
+              "type": "Energy",
+              "val": "1d6",
+              "ap": true,
+              "target": "self"
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Invadir</b>]</b> Punir: Você sofre 1d6 de dano energético PA e seu alvo deve passar em um salvamento de SISTEMAS ou fica <b>ATORDOADO</b> até o final de seu próximo turno. Cada personagem só pode ser <b>ATORDOADO</b> por este efeito uma vez por cena.\n<b>[<b>Invadir</b>]</b> Cauterizar: Você sofre 1d6 de dano energético PA e causa 2 de calor ao seu alvo para cada outro personagem de Tamanho 1 ou maior que estiver ENGAJADO com ele ou adjacente a ele – incluindo você – até um máximo de 6 de calor.",
+      "detail": "<b>[<b>Invadir</b>]</b> Punir: Você sofre 1d6 de dano energético PA e seu alvo deve passar em um salvamento de SISTEMAS ou fica <b>ATORDOADO</b> até o final de seu próximo turno. Cada personagem só pode ser <b>ATORDOADO</b> por este efeito uma vez por cena.\n<b>[<b>Invadir</b>]</b> Cauterizar: Você sofre 1d6 de dano energético PA e causa 2 de calor ao seu alvo para cada outro personagem de Tamanho 1 ou maior que estiver ENGAJADO com ele ou adjacente a ele – incluindo você – até um máximo de 6 de calor.",
+      "source": "HORUS",
+      "license": "Manticore",
+      "license_level": 2
+    },
+    {
+      "id": "ms_emp_pulse",
+      "category": "system",
+      "name": "Pulso PEM",
+      "sp": 2,
+      "type": "Sistema",
+      "tags": [
+        "Único"
+      ],
+      "actions": [
+        {
+          "activation": "Rápida",
+          "detail": "Você fica ATORDOADO até o final de seu próximo turno e todos os personagens dentro de uma EMANAÇÃO 1 sem a tag BIOLÓGICO devem ter sucesso em um salvamento de SISTEMAS ou também ficam ATORDoados até o final de seu próximo turno. Personagens que não sejam você só podem ser ATORDoados 1/cena por este efeito.",
+          "add_status": [
+            {
+              "id": "stunned",
+              "target": "self",
+              "duration": "next_turn_end_self"
+            },
+            {
+              "id": "stunned",
+              "duration": "next_turn_end_target",
+              "aoe": true,
+              "save": "sys"
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Você fica <b>ATORDOADO</b> até o final de seu próximo turno e todos os personagens dentro de uma EMANAÇÃO 1 sem a tag BIOLÓGICO devem ter sucesso em um salvamento de SISTEMAS ou também ficam ATORDoados até o final de seu próximo turno. Personagens que não sejam você só podem ser ATORDoados 1/cena por este efeito.",
+      "detail": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Você fica <b>ATORDOADO</b> até o final de seu próximo turno e todos os personagens dentro de uma EMANAÇÃO 1 sem a tag BIOLÓGICO devem ter sucesso em um salvamento de SISTEMAS ou também ficam ATORDoados até o final de seu próximo turno. Personagens que não sejam você só podem ser ATORDoados 1/cena por este efeito.",
+      "source": "HORUS",
+      "license": "Manticore",
+      "license_level": 3
+    },
+    {
+      "id": "ms_lightning_generator",
+      "category": "system",
+      "name": "Gerador de Raios",
+      "sp": 3,
+      "type": "Sistema",
+      "tags": [
+        "Único",
+        "Calor 1 (Próprio)"
+      ],
+      "actions": [
+        {
+          "activation": "Protocolo",
+          "detail": "Ao ativar este protocolo, você sofre 1 de calor e causa 2 de dano energético a todos os personagens e objetos adjacentes a você.<br>Se você estiver na ZONA DE PERIGO no início de seu turno, este protocolo é ativado automaticamente, mas o dano aumenta para 4 de dano energético PF.",
+          "damage": [
+            {
+              "type": "Heat",
+              "val": 1,
+              "target": "self"
+            },
+            {
+              "type": "Energy",
+              "val": 2,
+              "aoe": true
+            },
+            {
+              "type": "Energy",
+              "val": 4,
+              "aoe": true
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Protocolo</b>]</b> Habilidade: Ao ativar este protocolo, você sofre 1 de calor e causa 2 de dano energético a todos os personagens e objetos adjacentes a você. Se você estiver na ZONA DE PERIGO no início de seu turno, este protocolo é ativado automaticamente, mas o dano aumenta para 4 de dano energético PF.",
+      "detail": "<b>[<b>Protocolo</b>]</b> Habilidade: Ao ativar este protocolo, você sofre 1 de calor e causa 2 de dano energético a todos os personagens e objetos adjacentes a você. Se você estiver na ZONA DE PERIGO no início de seu turno, este protocolo é ativado automaticamente, mas o dano aumenta para 4 de dano energético PF.",
+      "source": "HORUS",
+      "license": "Manticore",
+      "license_level": 3
+    },
+    {
+      "id": "ms_mesmer_charges",
+      "category": "system",
+      "name": "Cargas Mesmer",
+      "sp": 2,
+      "type": "Deployable",
+      "tags": [
+        "Limitado 2",
+        "Único",
+        "Granada"
+      ],
+      "actions": [
+        {
+          "name": "Sinalizador Mesmer",
+          "activation": "Rápida",
+          "range": [
+            {
+              "type": "Range",
+              "val": 5
+            }
+          ],
+          "detail": "Arremesse um Sinalizador Mesmer dentro do ALCANCE 5. Seu alvo deve ter sucesso em um salvamento de SISTEMAS, ou os únicos movimentos voluntários que ele pode fazer são em sua direção até o final do próximo turno dele.",
+          "save": "sys",
+          "add_special": [
+            {
+              "attribute": "Mesmer Beacon Target",
+              "duration": "next_turn_end_target",
+              "detail": "Os únicos movimentos voluntários que você pode fazer são em direção ao Minotaur até o fim do seu próximo turno."
+            }
+          ]
+        }
+      ],
+      "deployables": [
+        {
+          "name": "Mina Mesmer",
+          "type": "Mine",
+          "range": [
+            {
+              "type": "Burst",
+              "val": 2
+            }
+          ],
+          "detail": "Personagens dentro da área de EMANAÇÃO 2 afetada devem ter sucesso em um salvamento de SISTEMAS ou ficam IMOBILIZADOS até o final de seu próximo turno.",
+          "add_status": [
+            {
+              "id": "immobilized",
+              "duration": "next_turn_end_target",
+              "save": "sys",
+              "aoe": true
+            }
+          ]
+        }
+      ],
+      "terse": "<b>[<b>Ação Rápida</b>]</b> Sinalizador Mesmer: Arremesse um Sinalizador Mesmer dentro do ALCANCE 5. Seu alvo deve ter sucesso em um salvamento de SISTEMAS, ou os únicos movimentos voluntários que ele pode fazer são em sua direção até o final do próximo turno dele.\n<b>[Posicionável: Mina Mesmer (Mine)]</b> Personagens dentro da área de EMANAÇÃO 2 afetada devem ter sucesso em um salvamento de SISTEMAS ou ficam IMOBILIZADOS até o final de seu próximo turno.",
+      "detail": "<b>[<b>Ação Rápida</b>]</b> Sinalizador Mesmer: Arremesse um Sinalizador Mesmer dentro do ALCANCE 5. Seu alvo deve ter sucesso em um salvamento de SISTEMAS, ou os únicos movimentos voluntários que ele pode fazer são em sua direção até o final do próximo turno dele.\n<b>[Posicionável: Mina Mesmer (Mine)]</b> Personagens dentro da área de EMANAÇÃO 2 afetada devem ter sucesso em um salvamento de SISTEMAS ou ficam IMOBILIZADOS até o final de seu próximo turno.",
+      "source": "HORUS",
+      "license": "Minotaur",
+      "license_level": 1
+    },
+    {
+      "id": "ms_viral_logic_suite",
+      "category": "system",
+      "name": "Conjunto Lógico Viral",
+      "sp": 2,
+      "type": "Tech",
+      "tags": [
+        "Único"
+      ],
+      "actions": [
+        {
+          "name": "Bomba Lógica",
+          "activation": "Invadir",
+          "detail": "Todos os personagens de sua escolha dentro de uma EMANAÇÃO 2 de seu alvo devem ter sucesso em um salvamento de SISTEMAS ou ficam LENTOS até terminarem um de seus turnos não adjacentes a nenhum personagem.",
+          "add_status": [
+            {
+              "id": "slow",
+              "save": "sys",
+              "aoe": true
+            }
+          ]
+        },
+        {
+          "name": "Banir",
+          "activation": "Invadir",
+          "detail": "Até o final do próximo turno de seu alvo, ele sofre 2 de calor para cada espaço que se mover voluntariamente, até um máximo de 6 de calor.",
+          "add_special": [
+            {
+              "attribute": "Viral Logic: Banish Target",
+              "duration": "next_turn_end_target",
+              "detail": "Você sofre 2 de calor para cada espaço que se mover voluntariamente, até um máximo de 6 de calor."
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Invadir</b>]</b> Bomba Lógica: Todos os personagens de sua escolha dentro de uma EMANAÇÃO 2 de seu alvo devem ter sucesso em um salvamento de SISTEMAS ou ficam <b>LENTOS</b> até terminarem um de seus turnos não adjacentes a nenhum personagem.\n<b>[<b>Invadir</b>]</b> Banir: Até o final do próximo turno de seu alvo, ele sofre 2 de calor para cada espaço que se mover voluntariamente, até um máximo de 6 de calor.",
+      "detail": "<b>[<b>Invadir</b>]</b> Bomba Lógica: Todos os personagens de sua escolha dentro de uma EMANAÇÃO 2 de seu alvo devem ter sucesso em um salvamento de SISTEMAS ou ficam <b>LENTOS</b> até terminarem um de seus turnos não adjacentes a nenhum personagem.\n<b>[<b>Invadir</b>]</b> Banir: Até o final do próximo turno de seu alvo, ele sofre 2 de calor para cada espaço que se mover voluntariamente, até um máximo de 6 de calor.",
+      "source": "HORUS",
+      "license": "Minotaur",
+      "license_level": 1
+    },
+    {
+      "id": "ms_aggressive_system_sync",
+      "category": "system",
+      "name": "Sincronia de Sistema Agressivo",
+      "sp": 2,
+      "type": "Tech",
+      "tags": [],
+      "actions": [
+        {
+          "name": "Correntes de Prometeu",
+          "activation": "Programar Completo",
+          "detail": "Faça um ataque tecnológico contra um personagem dentro do alcance dos SENSORES. Em um acerto, ele sofre 4 de calor e, pelo resto da cena, sofre 2 de calor sempre que estiver a mais de 3 de alcance de você no final do turno dele. Ele pode encerrar este efeito com um salvamento de SISTEMAS bem-sucedido como uma ação completa. Isso só pode afetar um personagem por vez.",
+          "attack": "tech",
+          "damage": [
+            {
+              "type": "Heat",
+              "val": 4
+            }
+          ],
+          "add_special": [
+            {
+              "attribute": "Aggressive System Sync: Chains of Prometheus Target",
+              "detail": "Você sofre 2 de calor qualquer momento em que estiver a mais do que 3 de alcance do Minotaur no fim do seu turno."
+            }
+          ]
+        },
+        {
+          "name": "Excomungar",
+          "activation": "Programar Completo",
+          "detail": "Faça um ataque tecnológico contra um personagem dentro do alcance dos SENSORES. Em um acerto, pelo resto da cena, a primeira vez em uma rodada que ele se mover adjacente a um personagem aliado durante seu turno ou começar seu turno adjacente a um, ambos os personagens sofrem 3 de calor. Ele pode encerrar este efeito com um salvamento de SISTEMAS bem-sucedido como uma ação completa. Isso só pode afetar um personagem por vez.",
+          "attack": "tech",
+          "add_special": [
+            {
+              "attribute": "Aggressive System Sync: Excommunicate Target",
+              "detail": "A primeira vez na rodada que você se move para adjacente a um aliado no seu turno ou começa seu turno adjacente a um, ambos sofrem 3 de calor."
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[Programar Completo]</b> Correntes de Prometeu: Faça um ataque tecnológico contra um personagem dentro do alcance dos SENSORES. Em um acerto, ele sofre 4 de calor e, pelo resto da cena, sofre 2 de calor sempre que estiver a mais de 3 de alcance de você no final do turno dele. Ele pode encerrar este efeito com um salvamento de SISTEMAS bem-sucedido como uma <b>ação completa</b>. Isso só pode afetar um personagem por vez.\n<b>[Programar Completo]</b> Excomungar: Faça um ataque tecnológico contra um personagem dentro do alcance dos SENSORES. Em um acerto, pelo resto da cena, a primeira vez em uma rodada que ele se mover adjacente a um personagem aliado durante seu turno ou começar seu turno adjacente a um, ambos os personagens sofrem 3 de calor. Ele pode encerrar este efeito com um salvamento de SISTEMAS bem-sucedido como uma <b>ação completa</b>. Isso só pode afetar um personagem por vez.",
+      "detail": "<b>[Programar Completo]</b> Correntes de Prometeu: Faça um ataque tecnológico contra um personagem dentro do alcance dos SENSORES. Em um acerto, ele sofre 4 de calor e, pelo resto da cena, sofre 2 de calor sempre que estiver a mais de 3 de alcance de você no final do turno dele. Ele pode encerrar este efeito com um salvamento de SISTEMAS bem-sucedido como uma <b>ação completa</b>. Isso só pode afetar um personagem por vez.\n<b>[Programar Completo]</b> Excomungar: Faça um ataque tecnológico contra um personagem dentro do alcance dos SENSORES. Em um acerto, pelo resto da cena, a primeira vez em uma rodada que ele se mover adjacente a um personagem aliado durante seu turno ou começar seu turno adjacente a um, ambos os personagens sofrem 3 de calor. Ele pode encerrar este efeito com um salvamento de SISTEMAS bem-sucedido como uma <b>ação completa</b>. Isso só pode afetar um personagem por vez.",
+      "source": "HORUS",
+      "license": "Minotaur",
+      "license_level": 2
+    },
+    {
+      "id": "ms_metafold_carver",
+      "category": "system",
+      "name": "Escultor de Metadobra",
+      "sp": 2,
+      "type": "Tech",
+      "tags": [],
+      "actions": [
+        {
+          "name": "Jornada Ofídica",
+          "activation": "Invadir",
+          "detail": "Seu alvo é teletransportado 1d6+1 espaços diretamente em sua direção, ou o mais perto possível. Se este efeito o moveria para um espaço ocupado por um personagem, objeto ou pedaço de terreno, o teletransporte falha."
+        },
+        {
+          "name": "Dobrar Espaço",
+          "activation": "Invadir",
+          "detail": "Seu alvo desaparece do campo de batalha até o início de seu próximo turno. Ele retorna no mesmo espaço de onde desapareceu, ou em um espaço livre de sua escolha o mais próximo possível."
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Invadir</b>]</b> Jornada Ofídica: Seu alvo é teletransportado 1d6+1 espaços diretamente em sua direção, ou o mais perto possível. Se este efeito o moveria para um espaço ocupado por um personagem, objeto ou pedaço de terreno, o teletransporte falha.\n<b>[<b>Invadir</b>]</b> Dobrar Espaço: Seu alvo desaparece do campo de batalha até o início de seu próximo turno. Ele retorna no mesmo espaço de onde desapareceu, ou em um espaço livre de sua escolha o mais próximo possível.",
+      "detail": "<b>[<b>Invadir</b>]</b> Jornada Ofídica: Seu alvo é teletransportado 1d6+1 espaços diretamente em sua direção, ou o mais perto possível. Se este efeito o moveria para um espaço ocupado por um personagem, objeto ou pedaço de terreno, o teletransporte falha.\n<b>[<b>Invadir</b>]</b> Dobrar Espaço: Seu alvo desaparece do campo de batalha até o início de seu próximo turno. Ele retorna no mesmo espaço de onde desapareceu, ou em um espaço livre de sua escolha o mais próximo possível.",
+      "source": "HORUS",
+      "license": "Minotaur",
+      "license_level": 2
+    },
+    {
+      "id": "ms_interdiction_field",
+      "category": "system",
+      "name": "Campo de Interdição",
+      "sp": 3,
+      "type": "Sistema",
+      "tags": [],
+      "actions": [
+        {
+          "activation": "Rápida",
+          "detail": "Quando ativado, este sistema cria um campo de EMANAÇÃO 3 ao seu redor que dura até ser desativado como uma ação rápida, e você fica LENTO pela duração. Personagens hostis que começam seu turno dentro da área afetada ou que entram nela pela primeira vez em uma rodada devem ter sucesso em um salvamento de SISTEMAS ou ficam LENTOS até o final de seu próximo turno. Apenas personagens de sua escolha dentro do campo podem se teletransportar ou considerar a área do campo um espaço válido para teletransporte.",
+          "add_status": [
+            {
+              "id": "slow",
+              "target": "self"
+            },
+            {
+              "id": "slow",
+              "duration": "next_turn_end_target",
+              "aoe": true,
+              "save": "sys"
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Quando ativado, este sistema cria um campo de EMANAÇÃO 3 ao seu redor que dura até ser desativado como uma <b>ação rápida</b>, e você fica <b>LENTO</b> pela duração. Personagens hostis que começam seu turno dentro da área afetada ou que entram nela pela primeira vez em uma rodada devem ter sucesso em um salvamento de SISTEMAS ou ficam <b>LENTOS</b> até o final de seu próximo turno. Apenas personagens de sua escolha dentro do campo podem se teletransportar ou considerar a área do campo um espaço válido para teletransporte.",
+      "detail": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Quando ativado, este sistema cria um campo de EMANAÇÃO 3 ao seu redor que dura até ser desativado como uma <b>ação rápida</b>, e você fica <b>LENTO</b> pela duração. Personagens hostis que começam seu turno dentro da área afetada ou que entram nela pela primeira vez em uma rodada devem ter sucesso em um salvamento de SISTEMAS ou ficam <b>LENTOS</b> até o final de seu próximo turno. Apenas personagens de sua escolha dentro do campo podem se teletransportar ou considerar a área do campo um espaço válido para teletransporte.",
+      "source": "HORUS",
+      "license": "Minotaur",
+      "license_level": 3
+    },
+    {
+      "id": "ms_law_of_blades",
+      "category": "system",
+      "name": "Lei das Lâminas",
+      "sp": 2,
+      "type": "Tech",
+      "tags": [
+        "Único"
+      ],
+      "actions": [
+        {
+          "name": "Conceitos Predador/Presa",
+          "activation": "Programar Completo",
+          "detail": "Faça um ataque tecnológico contra um personagem hostil dentro do alcance dos SENSORES. Em um acerto, ele ataca imediatamente um personagem ou objeto diferente de sua escolha com uma única arma como uma reação. Embora você escolha o alvo e a arma dele, ele conta como se estivesse atacando e realizando uma reação.",
+          "attack": "tech"
+        },
+        {
+          "name": "Sistemas Escravos",
+          "activation": "Programar Completo",
+          "attack": "tech",
+          "detail": "Faça um ataque tecnológico contra um personagem hostil dentro do alcance dos SENSORES. Em um acerto, ele realiza imediatamente uma das seguintes ações – escolhida por você – como uma reação: IMPULSIONAR, ESTABILIZAR, IMPROVISAR ATAQUE, AGARRAR, EMPURRAR. Embora você escolha a ação e seu alvo (se relevante), ele conta como se estivesse realizando a ação e uma reação."
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[Programar Completo]</b> Conceitos Predador/Presa: Faça um ataque tecnológico contra um personagem hostil dentro do alcance dos SENSORES. Em um acerto, ele ataca imediatamente um personagem ou objeto diferente de sua escolha com uma única arma como uma reação. Embora você escolha o alvo e a arma dele, ele conta como se estivesse atacando e realizando uma reação.\n<b>[Programar Completo]</b> Sistemas Escravos: Faça um ataque tecnológico contra um personagem hostil dentro do alcance dos SENSORES. Em um acerto, ele realiza imediatamente uma das seguintes ações – escolhida por você – como uma reação: <b>IMPULSIONAR</b>, <b>ESTABILIZAR</b>, IMPROVISAR ATAQUE, <b>AGARRAR</b>, <b>EMPURRAR</b>. Embora você escolha a ação e seu alvo (se relevante), ele conta como se estivesse realizando a ação e uma reação.",
+      "detail": "<b>[Programar Completo]</b> Conceitos Predador/Presa: Faça um ataque tecnológico contra um personagem hostil dentro do alcance dos SENSORES. Em um acerto, ele ataca imediatamente um personagem ou objeto diferente de sua escolha com uma única arma como uma reação. Embora você escolha o alvo e a arma dele, ele conta como se estivesse atacando e realizando uma reação.\n<b>[Programar Completo]</b> Sistemas Escravos: Faça um ataque tecnológico contra um personagem hostil dentro do alcance dos SENSORES. Em um acerto, ele realiza imediatamente uma das seguintes ações – escolhida por você – como uma reação: <b>IMPULSIONAR</b>, <b>ESTABILIZAR</b>, IMPROVISAR ATAQUE, <b>AGARRAR</b>, <b>EMPURRAR</b>. Embora você escolha a ação e seu alvo (se relevante), ele conta como se estivesse realizando a ação e uma reação.",
+      "source": "HORUS",
+      "license": "Minotaur",
+      "license_level": 3
+    },
+    {
+      "id": "ms_hunter_lock",
+      "category": "system",
+      "name": "Trava de Caçador",
+      "sp": 2,
+      "type": "Sistema",
+      "tags": [
+        "Único"
+      ],
+      "actions": [
+        {
+          "activation": "Rápida",
+          "detail": "Escolha um personagem dentro do alcance dos SENSORES: pelo resto da cena, seu primeiro ataque bem-sucedido à distância ou corpo a corpo contra ele a cada rodada causa +3 de dano bônus. Você não pode escolher um novo alvo até que seu alvo atual seja destruído ou a cena termine.",
+          "add_special": [
+            {
+              "attribute": "Hunter Lock Target",
+              "detail": "O primeiro ataque bem-sucedido corpo a corpo ou à distância do Pegasus contra você a cada rodada causa +3 de dano bônus."
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Escolha um personagem dentro do alcance dos SENSORES: pelo resto da cena, seu primeiro ataque bem-sucedido à distância ou corpo a corpo contra ele a cada rodada causa +3 de dano bônus. Você não pode escolher um novo alvo até que seu alvo atual seja destruído ou a cena termine.",
+      "detail": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Escolha um personagem dentro do alcance dos SENSORES: pelo resto da cena, seu primeiro ataque bem-sucedido à distância ou corpo a corpo contra ele a cada rodada causa +3 de dano bônus. Você não pode escolher um novo alvo até que seu alvo atual seja destruído ou a cena termine.",
+      "source": "HORUS",
+      "license": "Pegasus",
+      "license_level": 1
+    },
+    {
+      "id": "ms_eye_of_horus",
+      "category": "system",
+      "name": "Olho de HÓRUS",
+      "sp": 3,
+      "type": "Sistema",
+      "tags": [
+        "Único"
+      ],
+      "actions": [
+        {
+          "activation": "Rápida",
+          "detail": "Até o final de seu próximo turno, personagens dentro do alcance dos SENSORES não se beneficiam de ESCONDIDO e INVISÍVEL contra você e você pode verificar os PV, EVASÃO, DEFESA-E e calor atual de personagens hostis dentro da mesma área. Personagens aliados não se beneficiam deste efeito.",
+          "active_effects": [
+            {
+              "name": "Olho de HÓRUS Ativo",
+              "detail": "Personagens dentro de SENSORES não se beneficiam de ESCONDIDO ou INVISÍVEL contra você e você pode conferir os PV, Evasão, Defesa-E e Calor atual de personagens hostis dentro dessa mesma área. Personagens aliados não se beneficiam de INVISÍVEL contra você.",
+              "duration": "next_turn_end_self"
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Até o final de seu próximo turno, personagens dentro do alcance dos SENSORES não se beneficiam de ESCONDIDO e INVISÍVEL contra você e você pode verificar os PV, EVASÃO, DEFESA-E e calor atual de personagens hostis dentro da mesma área. Personagens aliados não se beneficiam deste efeito.",
+      "detail": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Até o final de seu próximo turno, personagens dentro do alcance dos SENSORES não se beneficiam de ESCONDIDO e INVISÍVEL contra você e você pode verificar os PV, EVASÃO, DEFESA-E e calor atual de personagens hostis dentro da mesma área. Personagens aliados não se beneficiam deste efeito.",
+      "source": "HORUS",
+      "license": "Pegasus",
+      "license_level": 2
+    },
+    {
+      "id": "ms_sisyphus_class_nhp",
+      "category": "system",
+      "name": "PNH CLASSE-SÍSIFO",
+      "sp": 2,
+      "type": "AI",
+      "tags": [
+        "IA",
+        "Único",
+        "2/Rodada"
+      ],
+      "actions": [
+        {
+          "name": "Dobrar Probabilidade",
+          "activation": "Programar Completo",
+          "detail": "Role 2d20 e anote os resultados: X e Y. Estes números são perdidos no final de seu próximo turno. Adquira a reação Canibalismo Probabilístico até o final de seu próximo turno."
+        },
+        {
+          "name": "Canibalismo Probabilístico",
+          "activation": "Reação",
+          "frequency": "2/rodada",
+          "trigger": "Você ou qualquer outro personagem dentro do alcance dos SENSORES iria rolar um d20",
+          "detail": "Efeito: Escolha X ou Y. Esse número se torna imediatamente o resultado da rolagem.<br>Esta reação não pode ser usada mais de duas vezes antes do início de seu próximo turno."
+        }
+      ],
+      "deployables": [],
+      "terse": "Seu mecha adquire a tag <b>IA</b> e Dobrar Probabilidade.\n<b>[Programar Completo]</b> Dobrar Probabilidade: Role 2d20 e anote os resultados: X e Y. Estes números são perdidos no final de seu próximo turno. Adquira a reação Canibalismo Probabilístico até o final de seu próximo turno.\n<b>[<b>Reação</b>]</b> Canibalismo Probabilístico: Efeito: Escolha X ou Y. Esse número se torna imediatamente o resultado da rolagem. Esta reação não pode ser usada mais de duas vezes antes do início de seu próximo turno.",
+      "detail": "Seu mecha adquire a tag <b>IA</b> e Dobrar Probabilidade.\n<b>[Programar Completo]</b> Dobrar Probabilidade: Role 2d20 e anote os resultados: X e Y. Estes números são perdidos no final de seu próximo turno. Adquira a reação Canibalismo Probabilístico até o final de seu próximo turno.\n<b>[<b>Reação</b>]</b> Canibalismo Probabilístico: Efeito: Escolha X ou Y. Esse número se torna imediatamente o resultado da rolagem. Esta reação não pode ser usada mais de duas vezes antes do início de seu próximo turno.",
+      "source": "HORUS",
+      "license": "Pegasus",
+      "license_level": 3
+    },
+    {
+      "id": "ms_roller_directed_payload_charges",
+      "category": "system",
+      "name": "Cargas de Carga Útil Dirigida 'Roller'",
+      "sp": 2,
+      "type": "Deployable",
+      "tags": [
+        "Limitado 2",
+        "Único",
+        "Granada"
+      ],
+      "actions": [
+        {
+          "name": "Granada Roller",
+          "damage": [
+            {
+              "type": "Explosive",
+              "val": "1d6+3"
+            }
+          ],
+          "detail": "Em vez de arremessar esta granada, ela rola por uma trajetória de linha 10 diretamente de você, saltando sobre obstruções e objetos de até TAMANHO 1 e passando por buracos ou vãos não menores que TAMANHO 1/2. Ela detona quando passa por ou adjacente ao espaço ocupado por qualquer personagem: eles devem ter sucesso em um salvamento de AGILIDADE ou sofrem 1d6+3 de dano explosivo e são repelidos 3 espaços na direção em que a granada foi rolada. Em um sucesso, eles sofrem metade do dano e não são repelidos."
+        }
+      ],
+      "deployables": [
+        {
+          "name": "Mina Saltitante",
+          "type": "Mine",
+          "range": [
+            {
+              "type": "Burst",
+              "val": 1
+            }
+          ],
+          "detail": "Esta mina detona quando um personagem voador passa sobre ou adjacente a ela, até 10 espaços de altura. A mina se lança para cima e detona: todos os personagens dentro da área afetada devem ter sucesso em um salvamento de SISTEMAS ou sofrem 2d6 de dano explosivo e pousam imediatamente (isso conta como queda sem dano); adicionalmente, eles não podem voar até o final de seu próximo turno. Em um sucesso, eles sofrem metade do dano e não são afetados de outra forma.",
+          "damage": [
+            {
+              "type": "Explosive",
+              "val": "2d6",
+              "save": "sys",
+              "aoe": true
+            }
+          ],
+          "tags": [
+            {
+              "id": "tg_smart"
+            }
+          ]
+        }
+      ],
+      "terse": "<b>[Ação]</b> Granada Roller: Em vez de arremessar esta granada, ela rola por uma trajetória de linha 10 diretamente de você, saltando sobre obstruções e objetos de até TAMANHO 1 e passando por buracos ou vãos não menores que TAMANHO 1/2. Ela detona quando passa por ou adjacente ao espaço ocupado por qualquer personagem: eles devem ter sucesso em um salvamento de AGILIDADE ou sofrem 1d6+3 de dano explosivo e são repelidos 3 espaços na direção em que a granada foi rolada. Em um sucesso, eles sofrem metade do dano e não são repelidos.\n<b>[Posicionável: Mina Saltitante (Mine)]</b> Esta mina detona quando um personagem voador passa sobre ou adjacente a ela, até 10 espaços de altura. A mina se lança para cima e detona: todos os personagens dentro da área afetada devem ter sucesso em um salvamento de SISTEMAS ou sofrem 2d6 de dano explosivo e pousam imediatamente (isso conta como queda sem dano); adicionalmente, eles não podem voar até o final de seu próximo turno. Em um sucesso, eles sofrem metade do dano e não são afetados de outra forma.",
+      "detail": "<b>[Ação]</b> Granada Roller: Em vez de arremessar esta granada, ela rola por uma trajetória de linha 10 diretamente de você, saltando sobre obstruções e objetos de até TAMANHO 1 e passando por buracos ou vãos não menores que TAMANHO 1/2. Ela detona quando passa por ou adjacente ao espaço ocupado por qualquer personagem: eles devem ter sucesso em um salvamento de AGILIDADE ou sofrem 1d6+3 de dano explosivo e são repelidos 3 espaços na direção em que a granada foi rolada. Em um sucesso, eles sofrem metade do dano e não são repelidos.\n<b>[Posicionável: Mina Saltitante (Mine)]</b> Esta mina detona quando um personagem voador passa sobre ou adjacente a ela, até 10 espaços de altura. A mina se lança para cima e detona: todos os personagens dentro da área afetada devem ter sucesso em um salvamento de SISTEMAS ou sofrem 2d6 de dano explosivo e pousam imediatamente (isso conta como queda sem dano); adicionalmente, eles não podem voar até o final de seu próximo turno. Em um sucesso, eles sofrem metade do dano e não são afetados de outra forma.",
+      "source": "HA",
+      "license": "Barbarossa",
+      "license_level": 1
+    },
+    {
+      "id": "ms_siege_stabilizers",
+      "category": "system",
+      "name": "Estabilizadores de Cerco",
+      "sp": 1,
+      "type": "Sistema",
+      "tags": [
+        "Único"
+      ],
+      "actions": [
+        {
+          "activation": "Rápida",
+          "detail": "Os estabilizadores de seu mecha se estendem (ou retraem). Enquanto estiverem estendidos, seus ataques à distância ganham +5 de ALCANCE, mas você fica IMOBILIZADO, não pode fazer ataques corpo a corpo e não pode fazer ataques à distância contra ou centrados em personagens, objetos ou espaços dentro do alcance 5.",
+          "add_status": [
+            {
+              "id": "immobilized",
+              "target": "self"
+            }
+          ],
+          "active_effects": [
+            {
+              "name": "Estabilizadores de Cerco Ativos",
+              "detail": "Seus ataques à distância ganham +5 de alcance, mas você fica IMOBILIZADO, não pode fazer ataques corpo a corpo e não pode fazer ataques à distância contra ou centralizados em personagens, objetos ou espaços dentro do alcance de 5."
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Os estabilizadores de seu mecha se estendem (ou retraem). Enquanto estiverem estendidos, seus ataques à distância ganham +5 de ALCANCE, mas você fica IMOBILIZADO, não pode fazer ataques corpo a corpo e não pode fazer ataques à distância contra ou centrados em personagens, objetos ou espaços dentro do alcance 5.",
+      "detail": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Os estabilizadores de seu mecha se estendem (ou retraem). Enquanto estiverem estendidos, seus ataques à distância ganham +5 de ALCANCE, mas você fica IMOBILIZADO, não pode fazer ataques corpo a corpo e não pode fazer ataques à distância contra ou centrados em personagens, objetos ou espaços dentro do alcance 5.",
+      "source": "HA",
+      "license": "Barbarossa",
+      "license_level": 1
+    },
+    {
+      "id": "ms_autoloader_drone",
+      "category": "system",
+      "name": "Drone de Carregamento Automático",
+      "sp": 2,
+      "type": "Drone",
+      "tags": [
+        "Limitado 1",
+        "Único"
+      ],
+      "actions": [],
+      "deployables": [
+        {
+          "type": "Drone",
+          "name": "Drone de Carregamento Automático",
+          "size": 0.5,
+          "hp": 5,
+          "edef": 10,
+          "evasion": 10,
+          "detail": "1/rodada, um personagem adjacente a ele pode recarregar uma arma com RECARGA como uma ação rápida. Ele se desativa no final da cena."
+        }
+      ],
+      "terse": "Gaste uma carga para implantar este drone de carregamento automático em qualquer espaço adjacente.\n<b>[Posicionável: Drone de Carregamento Automático (Drone)]</b> 1/rodada, um personagem adjacente a ele pode recarregar uma arma com <b>RECARGA</b> como uma <b>ação rápida</b>. Ele se desativa no final da cena.",
+      "detail": "Gaste uma carga para implantar este drone de carregamento automático em qualquer espaço adjacente.\n<b>[Posicionável: Drone de Carregamento Automático (Drone)]</b> 1/rodada, um personagem adjacente a ele pode recarregar uma arma com <b>RECARGA</b> como uma <b>ação rápida</b>. Ele se desativa no final da cena.",
+      "source": "HA",
+      "license": "Barbarossa",
+      "license_level": 2
+    },
+    {
+      "id": "ms_flak_launcher",
+      "category": "system",
+      "name": "Lançador Antiaéreo",
+      "sp": 2,
+      "type": "Sistema",
+      "tags": [],
+      "actions": [
+        {
+          "activation": "Rápida",
+          "detail": "Escolha um personagem voador dentro do alcance 15 e na linha de visão. Ele deve ter sucesso em um salvamento de AGILIDADE ou pousa imediatamente (isso conta como queda sem dano), e adicionalmente fica LENTO e não pode voar até o final de seu próximo turno.",
+          "save": "agi",
+          "add_special": [
+            {
+              "attribute": "Affected by Flak Launcher",
+              "duration": "next_turn_end_target",
+              "detail": "Você não pode voar até o fim do seu próximo turno."
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Escolha um personagem voador dentro do alcance 15 e na linha de visão. Ele deve ter sucesso em um salvamento de AGILIDADE ou pousa imediatamente (isso conta como queda sem dano), e adicionalmente fica <b>LENTO</b> e não pode voar até o final de seu próximo turno.",
+      "detail": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Escolha um personagem voador dentro do alcance 15 e na linha de visão. Ele deve ter sucesso em um salvamento de AGILIDADE ou pousa imediatamente (isso conta como queda sem dano), e adicionalmente fica <b>LENTO</b> e não pode voar até o final de seu próximo turno.",
+      "source": "HA",
+      "license": "Barbarossa",
+      "license_level": 2
+    },
+    {
+      "id": "ms_external_ammo_feed",
+      "category": "system",
+      "name": "Alimentador de Munição Externo",
+      "sp": 3,
+      "type": "Sistema",
+      "tags": [
+        "Único",
+        "Calor 1d3+1 (Próprio)"
+      ],
+      "actions": [
+        {
+          "activation": "Rápida",
+          "detail": "1/rodada, você pode ativar este sistema para recarregar uma arma com RECARGA.",
+          "frequency": "1/rodada"
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Ação Rápida</b>]</b> Habilidade: 1/rodada, você pode ativar este sistema para recarregar uma arma com <b>RECARGA</b>.",
+      "detail": "<b>[<b>Ação Rápida</b>]</b> Habilidade: 1/rodada, você pode ativar este sistema para recarregar uma arma com <b>RECARGA</b>.",
+      "source": "HA",
+      "license": "Barbarossa",
+      "license_level": 3
+    },
+    {
+      "id": "ms_explosive_vents",
+      "category": "system",
+      "name": "Ventilações Explosivas",
+      "sp": 2,
+      "type": "Sistema",
+      "tags": [
+        "Único",
+        "1/Rodada"
+      ],
+      "actions": [
+        {
+          "activation": "Livre",
+          "trigger": "Você zera todo o calor ou sofre Estresse.",
+          "detail": "Os dutos de refrigeração do seu mecha se abrem, liberando uma explosão de Emanação 1. Personagens dentro da área afetada sofrem 2 de calor e 2 de Queimadura.",
+          "damage": [
+            {
+              "type": "Heat",
+              "val": 2,
+              "aoe": true
+            },
+            {
+              "type": "Burn",
+              "val": 2,
+              "aoe": true
+            }
+          ],
+          "range": [
+            {
+              "type": "Burst",
+              "val": 1
+            }
+          ],
+          "frequency": "1/rodada"
+        }
+      ],
+      "deployables": [],
+      "terse": "Quando você zera todo o calor ou sofre estresse, os dutos de resfriamento do seu mecha se abrem e liberam uma explosão de ESTOURO 1. Personagens dentro da área afetada sofrem 2 de calor e 2 de queimadura.\n<b>[<b>Ação Livre</b>]</b> Habilidade: Os dutos de refrigeração do seu mecha se abrem, liberando uma explosão de Emanação 1. Personagens dentro da área afetada sofrem 2 de calor e 2 de Queimadura.",
+      "detail": "Quando você zera todo o calor ou sofre estresse, os dutos de resfriamento do seu mecha se abrem e liberam uma explosão de ESTOURO 1. Personagens dentro da área afetada sofrem 2 de calor e 2 de queimadura.\n<b>[<b>Ação Livre</b>]</b> Habilidade: Os dutos de refrigeração do seu mecha se abrem, liberando uma explosão de Emanação 1. Personagens dentro da área afetada sofrem 2 de calor e 2 de Queimadura.",
+      "source": "HA",
+      "license": "Genghis",
+      "license_level": 1
+    },
+    {
+      "id": "ms_havok_charges",
+      "category": "system",
+      "name": "Cargas HAVOK",
+      "sp": 2,
+      "type": "Deployable",
+      "tags": [
+        "Limitado 2",
+        "Único",
+        "Granada"
+      ],
+      "actions": [
+        {
+          "name": "Granada de Napalm",
+          "range": [
+            {
+              "type": "Range",
+              "val": 5
+            },
+            {
+              "type": "Line",
+              "val": 5
+            }
+          ],
+          "damage": [
+            {
+              "type": "Burn",
+              "val": 2,
+              "save": "agi",
+              "save_half": true,
+              "aoe": true
+            }
+          ],
+          "detail": "Arremesse uma Granada de Napalm dentro do ALCANCE 5. Esta granada libera um spray de napalm em uma trajetória de linha 5 de sua escolha a partir do local de impacto. Personagens dentro da área afetada devem ter sucesso em um salvamento de AGILIDADE ou sofrem 2 de queimadura. Em um sucesso, eles sofrem 1 de queimadura."
+        }
+      ],
+      "deployables": [
+        {
+          "name": "Mina HAVOK",
+          "type": "Mine",
+          "range": [
+            {
+              "type": "Line",
+              "val": 5
+            }
+          ],
+          "damage": [
+            {
+              "type": "Burn",
+              "val": 4,
+              "save": "agi",
+              "save_half": true
+            }
+          ],
+          "detail": "Quando um personagem se move sobre ou adjacente a esta mina, ela detona com uma explosão focada em uma trajetória de linha 5 na direção do personagem que a acionou. Personagens dentro da área afetada devem ter sucesso em um salvamento de AGILIDADE ou sofrem 4 de queimadura. Em um sucesso, eles sofrem 2 de queimadura."
+        }
+      ],
+      "terse": "<b>[Ação]</b> Granada de Napalm: Arremesse uma Granada de Napalm dentro do ALCANCE 5. Esta granada libera um spray de napalm em uma trajetória de linha 5 de sua escolha a partir do local de impacto. Personagens dentro da área afetada devem ter sucesso em um salvamento de AGILIDADE ou sofrem 2 de queimadura. Em um sucesso, eles sofrem 1 de queimadura.\n<b>[Posicionável: Mina HAVOK (Mine)]</b> Quando um personagem se move sobre ou adjacente a esta mina, ela detona com uma explosão focada em uma trajetória de linha 5 na direção do personagem que a acionou. Personagens dentro da área afetada devem ter sucesso em um salvamento de AGILIDADE ou sofrem 4 de queimadura. Em um sucesso, eles sofrem 2 de queimadura.",
+      "detail": "<b>[Ação]</b> Granada de Napalm: Arremesse uma Granada de Napalm dentro do ALCANCE 5. Esta granada libera um spray de napalm em uma trajetória de linha 5 de sua escolha a partir do local de impacto. Personagens dentro da área afetada devem ter sucesso em um salvamento de AGILIDADE ou sofrem 2 de queimadura. Em um sucesso, eles sofrem 1 de queimadura.\n<b>[Posicionável: Mina HAVOK (Mine)]</b> Quando um personagem se move sobre ou adjacente a esta mina, ela detona com uma explosão focada em uma trajetória de linha 5 na direção do personagem que a acionou. Personagens dentro da área afetada devem ter sucesso em um salvamento de AGILIDADE ou sofrem 4 de queimadura. Em um sucesso, eles sofrem 2 de queimadura.",
+      "source": "HA",
+      "license": "Genghis",
+      "license_level": 2
+    },
+    {
+      "id": "ms_auto_cooler",
+      "category": "system",
+      "name": "Resfriador Automático",
+      "sp": 2,
+      "type": "Sistema",
+      "tags": [
+        "Único"
+      ],
+      "actions": [
+        {
+          "activation": "Protocolo",
+          "detail": "Desde que você não sofra dano, não se mova ou não exceda sua CAP. DE CALOR, você remove todo o calor no início de seu próximo turno."
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Protocolo</b>]</b> Habilidade: Desde que você não sofra dano, não se mova ou não exceda sua CAP. DE CALOR, você remove todo o calor no início de seu próximo turno.",
+      "detail": "<b>[<b>Protocolo</b>]</b> Habilidade: Desde que você não sofra dano, não se mova ou não exceda sua CAP. DE CALOR, você remove todo o calor no início de seu próximo turno.",
+      "source": "HA",
+      "license": "Genghis",
+      "license_level": 2
+    },
+    {
+      "id": "ms_agni_class_nhp",
+      "category": "system",
+      "name": "PNH CLASSE-AGNI",
+      "sp": 3,
+      "type": "AI",
+      "tags": [
+        "IA",
+        "Único",
+        "Limitado 1"
+      ],
+      "actions": [
+        {
+          "name": "Protocolo AGNI",
+          "activation": "Protocolo",
+          "detail": "1/cena, gaste uma carga para remover automaticamente todo o calor no final de seu turno, ventilando-o em uma onda de EMANAÇÃO 2. Personagens dentro da área afetada devem ter sucesso em um salvamento de ENGENHARIA ou sofrem 2 de queimadura e são empurrados para fora da área (ou o mais longe possível). Até o final de seu próximo turno, personagens dentro da área afetada recebem cobertura leve.",
+          "frequency": "1/cena",
+          "damage": [
+            {
+              "type": "Burn",
+              "val": 2,
+              "aoe": true,
+              "save": "sys",
+              "save_half": true
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "Seu mecha adquire a tag <b>IA</b> e o <b>Protocolo</b> AGNI.\n<b>[<b>Protocolo</b>]</b> <b>Protocolo</b> AGNI: 1/cena, gaste uma carga para remover automaticamente todo o calor no final de seu turno, ventilando-o em uma onda de EMANAÇÃO 2. Personagens dentro da área afetada devem ter sucesso em um salvamento de ENGENHARIA ou sofrem 2 de queimadura e são empurrados para fora da área (ou o mais longe possível). Até o final de seu próximo turno, personagens dentro da área afetada recebem cobertura leve.",
+      "detail": "Seu mecha adquire a tag <b>IA</b> e o <b>Protocolo</b> AGNI.\n<b>[<b>Protocolo</b>]</b> <b>Protocolo</b> AGNI: 1/cena, gaste uma carga para remover automaticamente todo o calor no final de seu turno, ventilando-o em uma onda de EMANAÇÃO 2. Personagens dentro da área afetada devem ter sucesso em um salvamento de ENGENHARIA ou sofrem 2 de queimadura e são empurrados para fora da área (ou o mais longe possível). Até o final de seu próximo turno, personagens dentro da área afetada recebem cobertura leve.",
+      "source": "HA",
+      "license": "Genghis",
+      "license_level": 3
+    },
+    {
+      "id": "ms_grounding_charges",
+      "category": "system",
+      "name": "Cargas de Aterramento",
+      "sp": 2,
+      "type": "Deployable",
+      "tags": [
+        "Limitado 2",
+        "Único",
+        "Granada"
+      ],
+      "actions": [
+        {
+          "name": "Granada de Gravidade",
+          "range": [
+            {
+              "type": "Range",
+              "val": 5
+            }
+          ],
+          "add_status": [
+            {
+              "id": "slow",
+              "save": "agi"
+            }
+          ],
+          "add_special": [
+            {
+              "attribute": "Affected by Gravity Grenade",
+              "detail": "Você fica LENTO até não realizar movimentos voluntários por um turno completo em seu próprio turno."
+            }
+          ],
+          "detail": "Arremesse uma Granada de Gravidade dentro do ALCANCE 5. Seu alvo deve ter sucesso em um salvamento de AGILIDADE ou fica LENTO até não fazer nenhum movimento voluntário por um turno completo em seu próprio turno."
+        }
+      ],
+      "deployables": [
+        {
+          "name": "Mina de Aterramento",
+          "type": "Mine",
+          "detail": "Esta mina deve ser detonada remotamente como uma ação rápida, afetando um único personagem dentro do alcance 5 da mina: ele deve ter sucesso em um salvamento de CASCO ou será puxado o mais longe possível em direção à mina e derrubado (PROSTRADO). Personagens voadores que falham no salvamento são afetados da mesma maneira, exceto que também são forçados a pousar (isso conta como queda, mas sem dano).",
+          "actions": [
+            {
+              "name": "Detonar Mina de Aterramento",
+              "activation": "Rápida",
+              "detail": "Detonar a Mina de Aterramento afeta um único personagem dentro do alcance 5 da mina: ele deve ter sucesso em um salvamento de CASCO ou será puxado o mais longe possível em direção à mina e derrubado (PROSTRADO). Personagens voadores que falham no salvamento são afetados da mesma maneira, exceto que também são forçados a pousar (isso conta como queda, mas sem dano).",
+              "add_status": [
+                {
+                  "id": "prone",
+                  "save": "hull"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "terse": "<b>[Ação]</b> Granada de Gravidade: Arremesse uma Granada de Gravidade dentro do ALCANCE 5. Seu alvo deve ter sucesso em um salvamento de AGILIDADE ou fica <b>LENTO</b> até não fazer nenhum movimento voluntário por um turno completo em seu próprio turno.\n<b>[Posicionável: Mina de Aterramento (Mine)]</b> Esta mina deve ser detonada remotamente como uma <b>ação rápida</b>, afetando um único personagem dentro do alcance 5 da mina: ele deve ter sucesso em um salvamento de CASCO ou será puxado o mais longe possível em direção à mina e derrubado (<b>PROSTRADO</b>). Personagens voadores que falham no salvamento são afetados da mesma maneira, exceto que também são forçados a pousar (isso conta como queda, mas sem dano).",
+      "detail": "<b>[Ação]</b> Granada de Gravidade: Arremesse uma Granada de Gravidade dentro do ALCANCE 5. Seu alvo deve ter sucesso em um salvamento de AGILIDADE ou fica <b>LENTO</b> até não fazer nenhum movimento voluntário por um turno completo em seu próprio turno.\n<b>[Posicionável: Mina de Aterramento (Mine)]</b> Esta mina deve ser detonada remotamente como uma <b>ação rápida</b>, afetando um único personagem dentro do alcance 5 da mina: ele deve ter sucesso em um salvamento de CASCO ou será puxado o mais longe possível em direção à mina e derrubado (<b>PROSTRADO</b>). Personagens voadores que falham no salvamento são afetados da mesma maneira, exceto que também são forçados a pousar (isso conta como queda, mas sem dano).",
+      "source": "HA",
+      "license": "Iskander",
+      "license_level": 1
+    },
+    {
+      "id": "ms_repulser_field",
+      "category": "system",
+      "name": "Campo Repulsor",
+      "sp": 1,
+      "type": "Sistema",
+      "tags": [
+        "Único",
+        "Calor 1 (Próprio)"
+      ],
+      "actions": [
+        {
+          "activation": "Rápida",
+          "detail": "Este sistema emite um pulso de Emanação 2 ao seu redor. Personagens na área afetada devem passar em salvamento de CASCO ou são empurrados 2 espaços para longe de você; então, todas as Minas na área afetada são destruídas de forma segura.",
+          "range": [
+            {
+              "type": "Burst",
+              "val": 2
+            }
+          ],
+          "save": {
+            "stat": "hull",
+            "aoe": true
+          }
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Este sistema emite um pulso de Emanação 2 ao seu redor. Personagens na área afetada devem passar em salvamento de CASCO ou são empurrados 2 espaços para longe de você; então, todas as Minas na área afetada são destruídas de forma segura.",
+      "detail": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Este sistema emite um pulso de Emanação 2 ao seu redor. Personagens na área afetada devem passar em salvamento de CASCO ou são empurrados 2 espaços para longe de você; então, todas as Minas na área afetada são destruídas de forma segura.",
+      "source": "HA",
+      "license": "Iskander",
+      "license_level": 2
+    },
+    {
+      "id": "ms_clamp_bombs",
+      "category": "system",
+      "name": "Bombas de Grampo",
+      "sp": 2,
+      "type": "Sistema",
+      "tags": [
+        "Limitado 4",
+        "Único"
+      ],
+      "actions": [],
+      "deployables": [
+        {
+          "name": "Bombas de Grampo",
+          "type": "Grenade",
+          "detail": "Esta bomba se prende a um alvo e detona no final do próximo turno dele, causando 1d6+3 de dano explosivo PA. Todos os personagens adjacentes ao alvo sofrem metade do dano. O alvo pode desarmar a bomba passando num teste de Engenharia como ação completa.",
+          "save": "eng",
+          "damage": [
+            {
+              "type": "Explosive",
+              "val": "1d6+3",
+              "ap": true,
+              "aoe": true
+            }
+          ]
+        }
+      ],
+      "terse": "<b>[Posicionável: Bombas de Grampo (Grenade)]</b> Esta bomba se prende a um alvo e detona no final do próximo turno dele, causando 1d6+3 de dano explosivo PA. Todos os personagens adjacentes ao alvo sofrem metade do dano. O alvo pode desarmar a bomba passando num teste de Engenharia como <b>ação completa</b>.",
+      "detail": "<b>[Posicionável: Bombas de Grampo (Grenade)]</b> Esta bomba se prende a um alvo e detona no final do próximo turno dele, causando 1d6+3 de dano explosivo PA. Todos os personagens adjacentes ao alvo sofrem metade do dano. O alvo pode desarmar a bomba passando num teste de Engenharia como <b>ação completa</b>.",
+      "source": "HA",
+      "license": "Iskander",
+      "license_level": 3
+    },
+    {
+      "id": "ms_tesseract",
+      "category": "system",
+      "name": "Tesseract",
+      "sp": 2,
+      "type": "Tech",
+      "tags": [
+        "Único"
+      ],
+      "actions": [
+        {
+          "name": "Foco Disperso",
+          "activation": "Tecnologia Rápida",
+          "detail": "Escolha uma área de Explosão 3 dentro de SENSORES: esta área, estendendo 6 espaços para cima, torna-se uma área zero-g. Além das regras usuais para movimento zero-g, objetos que entrarem na área flutuam no lugar."
+        },
+        {
+          "name": "Foco Pontual",
+          "activation": "Tecnologia Rápida",
+          "detail": "Escolha um personagem hostil ou aliado voluntário dentro de SENSORES. Se for aliado, ele flutua 6 espaços no ar, ficando IMOBILIZADO no ar, mas contando como se estivesse voando e incapaz de cair. Se for inimigo, pode fazer um salvamento de AGILIDADE para negar.",
+          "add_status": [
+            {
+              "id": "immobilized",
+              "target": "any",
+              "save": "eng"
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[Tecnologia Rápida]</b> Foco Disperso: Escolha uma área de Explosão 3 dentro de SENSORES: esta área, estendendo 6 espaços para cima, torna-se uma área zero-g. Além das regras usuais para movimento zero-g, objetos que entrarem na área flutuam no lugar.\n<b>[Tecnologia Rápida]</b> Foco Pontual: Escolha um personagem hostil ou aliado voluntário dentro de SENSORES. Se for aliado, ele flutua 6 espaços no ar, ficando IMOBILIZADO no ar, mas contando como se estivesse voando e incapaz de cair. Se for inimigo, pode fazer um salvamento de AGILIDADE para negar.",
+      "detail": "<b>[Tecnologia Rápida]</b> Foco Disperso: Escolha uma área de Explosão 3 dentro de SENSORES: esta área, estendendo 6 espaços para cima, torna-se uma área zero-g. Além das regras usuais para movimento zero-g, objetos que entrarem na área flutuam no lugar.\n<b>[Tecnologia Rápida]</b> Foco Pontual: Escolha um personagem hostil ou aliado voluntário dentro de SENSORES. Se for aliado, ele flutua 6 espaços no ar, ficando IMOBILIZADO no ar, mas contando como se estivesse voando e incapaz de cair. Se for inimigo, pode fazer um salvamento de AGILIDADE para negar.",
+      "source": "HA",
+      "license": "Iskander",
+      "license_level": 3
+    },
+    {
+      "id": "ms_stasis_bolt",
+      "category": "system",
+      "name": "Dardo de Estase",
+      "sp": 1,
+      "type": "Shield",
+      "tags": [
+        "Escudo",
+        "Único"
+      ],
+      "actions": [
+        {
+          "name": "Carregar Dardo de Estase",
+          "activation": "Rápida",
+          "detail": "Carregue o Dardo de Estase, ganhando a Reação de Ponto de Interdição."
+        },
+        {
+          "name": "Ponto de Interdição",
+          "activation": "Reação",
+          "frequency": "1/rodada",
+          "trigger": "Você ou um aliado em Alcance 5 são alvo de um ataque à distância.",
+          "detail": "Faça uma rolagem de ataque à distância resistida: se você vencer, o ataque inimigo erra automaticamente. O Dardo perde a carga."
+        }
+      ],
+      "deployables": [],
+      "terse": "Este sistema carrega como uma <b>ação rápida</b>, preparando um ponto de estase projetado. Enquanto estiver carregado, você ganha a reação Ponto de Interdição. Ele só pode manter uma carga por vez, mas as cargas duram pelo resto da cena ou até serem usadas.\n<b>[<b>Ação Rápida</b>]</b> Carregar Dardo de Estase: Carregue o Dardo de Estase, ganhando a <b>Reação</b> de Ponto de Interdição.\n<b>[<b>Reação</b>]</b> Ponto de Interdição: Faça uma rolagem de ataque à distância resistida: se você vencer, o ataque inimigo erra automaticamente. O Dardo perde a carga.",
+      "detail": "Este sistema carrega como uma <b>ação rápida</b>, preparando um ponto de estase projetado. Enquanto estiver carregado, você ganha a reação Ponto de Interdição. Ele só pode manter uma carga por vez, mas as cargas duram pelo resto da cena ou até serem usadas.\n<b>[<b>Ação Rápida</b>]</b> Carregar Dardo de Estase: Carregue o Dardo de Estase, ganhando a <b>Reação</b> de Ponto de Interdição.\n<b>[<b>Reação</b>]</b> Ponto de Interdição: Faça uma rolagem de ataque à distância resistida: se você vencer, o ataque inimigo erra automaticamente. O Dardo perde a carga.",
+      "source": "HA",
+      "license": "Napoleon",
+      "license_level": 1
+    },
+    {
+      "id": "ms_stasis_generator",
+      "category": "system",
+      "name": "Gerador de Estase",
+      "sp": 2,
+      "type": "Shield",
+      "tags": [
+        "Único",
+        "Escudo"
+      ],
+      "actions": [
+        {
+          "activation": "Rápida",
+          "detail": "Escolha um inimigo ou aliado voluntário na linha de visão e alcance 5: até o fim de seu próximo turno, ele fica ATORDOADO, ganha Imunidade a todo dano e efeitos, e não pode ser movido.",
+          "save": "eng",
+          "add_status": [
+            {
+              "id": "stunned",
+              "target": "any"
+            }
+          ],
+          "add_resist": [
+            {
+              "resist": "all",
+              "val": "immunity",
+              "target": "any"
+            }
+          ],
+          "add_special": [
+            {
+              "attribute": "Affected by Stasis Generator",
+              "duration": "next_turn_end_target",
+              "detail": "Você não pode ser movido, alvo ou afetado por nenhum outro personagem ou efeito."
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Escolha um inimigo ou aliado voluntário na linha de visão e alcance 5: até o fim de seu próximo turno, ele fica <b>ATORDOADO</b>, ganha Imunidade a todo dano e efeitos, e não pode ser movido.",
+      "detail": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Escolha um inimigo ou aliado voluntário na linha de visão e alcance 5: até o fim de seu próximo turno, ele fica <b>ATORDOADO</b>, ganha Imunidade a todo dano e efeitos, e não pode ser movido.",
+      "source": "HA",
+      "license": "Napoleon",
+      "license_level": 1
+    },
+    {
+      "id": "ms_stasis_barrier",
+      "category": "system",
+      "name": "Barreira de Estase",
+      "sp": 2,
+      "type": "Deployable",
+      "tags": [
+        "Limitado 1",
+        "Escudo",
+        "Único",
+        "Invulnerável"
+      ],
+      "actions": [],
+      "deployables": [
+        {
+          "type": "Deployable",
+          "name": "Barreira de Estase",
+          "activation": "Rápida",
+          "deactivation": "Rápida",
+          "detail": "Gere uma barreira de Linha 4 com 4 espaços de altura em espaços livres com pelo menos um espaço adjacente a você. Conta como obstrução e oferece cobertura leve, mas não bloqueia linha de visão. Um ataque cruzando-a tem +2 Dificuldade.",
+          "tags": [
+            {
+              "id": "tg_invulnerable"
+            }
+          ]
+        }
+      ],
+      "terse": "Gaste uma carga para ativar esta barreira de estase, gerando uma barreira de linha 4 com 4 espaços de altura em espaços livres com pelo menos um espaço adjacente a você.\n<b>[Posicionável: Barreira de Estase (Deployable)]</b> Gere uma barreira de Linha 4 com 4 espaços de altura em espaços livres com pelo menos um espaço adjacente a você. Conta como obstrução e oferece cobertura leve, mas não bloqueia linha de visão. Um ataque cruzando-a tem +2 Dificuldade.",
+      "detail": "Gaste uma carga para ativar esta barreira de estase, gerando uma barreira de linha 4 com 4 espaços de altura em espaços livres com pelo menos um espaço adjacente a você.\n<b>[Posicionável: Barreira de Estase (Deployable)]</b> Gere uma barreira de Linha 4 com 4 espaços de altura em espaços livres com pelo menos um espaço adjacente a você. Conta como obstrução e oferece cobertura leve, mas não bloqueia linha de visão. Um ataque cruzando-a tem +2 Dificuldade.",
+      "source": "HA",
+      "license": "Napoleon",
+      "license_level": 2
+    },
+    {
+      "id": "ms_blinkshield",
+      "category": "system",
+      "name": "Blinkshield",
+      "sp": 2,
+      "type": "Shield",
+      "tags": [
+        "Único",
+        "Escudo",
+        "Calor 4 (Próprio)"
+      ],
+      "actions": [
+        {
+          "activation": "Completa",
+          "detail": "Este sistema gera uma bolha de Emanação 4 ao seu redor, alterando o fluxo temporal dentro dela. Nada pode entrar ou sair, nem luz – é impermeável com Imunidade.",
+          "active_effects": [
+            {
+              "name": "Blinkshield Ativo",
+              "detail": "Nada entra ou sai. Linha de visão não cruza e a barreira tem Imunidade total.",
+              "duration": "next_turn_end_self"
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Ação Completa</b>]</b> Habilidade: Este sistema gera uma bolha de Emanação 4 ao seu redor, alterando o fluxo temporal dentro dela. Nada pode entrar ou sair, nem luz – é impermeável com Imunidade.",
+      "detail": "<b>[<b>Ação Completa</b>]</b> Habilidade: Este sistema gera uma bolha de Emanação 4 ao seu redor, alterando o fluxo temporal dentro dela. Nada pode entrar ou sair, nem luz – é impermeável com Imunidade.",
+      "source": "HA",
+      "license": "Napoleon",
+      "license_level": 3
+    },
+    {
+      "id": "ms_enclave_pattern_support_shield",
+      "category": "system",
+      "name": "Escudo de Suporte Padrão-ENCLAVE",
+      "sp": 2,
+      "type": "Shield",
+      "tags": [
+        "Único",
+        "Escudo"
+      ],
+      "actions": [
+        {
+          "activation": "Rápida",
+          "detail": "Este sistema gera um domo de Emanação 3 até o final de seu próximo turno. Você fica IMOBILIZADO. Ataques para dentro dele recebem +1 Dificuldade.",
+          "add_status": [
+            {
+              "id": "immobilized",
+              "target": "self"
+            }
+          ],
+          "active_effects": [
+            {
+              "name": "Escudo de Suporte Padrão-ENCLAVE Ativo",
+              "detail": "Ataques para personagens dentro do domo vindo de fora recebem +1 Dificuldade.",
+              "duration": "next_turn_end_self"
+            }
+          ]
+        },
+        {
+          "name": "Intervenção de Campo Blink",
+          "activation": "Reação",
+          "frequency": "1/rodada",
+          "trigger": "Alguém dentro é atacado.",
+          "detail": "Sofra 2 de Calor para dar Resistência total contra o ataque.",
+          "damage": [
+            {
+              "type": "Heat",
+              "val": 2,
+              "target": "self"
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Este sistema gera um domo de Emanação 3 até o final de seu próximo turno. Você fica IMOBILIZADO. Ataques para dentro dele recebem +1 Dificuldade.\n<b>[<b>Reação</b>]</b> Intervenção de Campo Blink: Sofra 2 de Calor para dar Resistência total contra o ataque.",
+      "detail": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Este sistema gera um domo de Emanação 3 até o final de seu próximo turno. Você fica IMOBILIZADO. Ataques para dentro dele recebem +1 Dificuldade.\n<b>[<b>Reação</b>]</b> Intervenção de Campo Blink: Sofra 2 de Calor para dar Resistência total contra o ataque.",
+      "source": "HA",
+      "license": "Saladin",
+      "license_level": 1
+    },
+    {
+      "id": "ms_flash_anchor",
+      "category": "system",
+      "name": "Âncora Flash",
+      "sp": 1,
+      "type": "Shield",
+      "tags": [
+        "Único",
+        "Escudo",
+        "Calor 2 (Próprio)"
+      ],
+      "actions": [
+        {
+          "name": "Trava Flash",
+          "activation": "Reação",
+          "frequency": "1/rodada",
+          "trigger": "Você ou aliado é movido forçadamente.",
+          "detail": "Sofra 2 de Calor. Movimento é evitado e você ganha Imunidade a esses movimentos até o seu próximo turno."
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Reação</b>]</b> Trava Flash: Sofra 2 de Calor. Movimento é evitado e você ganha Imunidade a esses movimentos até o seu próximo turno.",
+      "detail": "<b>[<b>Reação</b>]</b> Trava Flash: Sofra 2 de Calor. Movimento é evitado e você ganha Imunidade a esses movimentos até o seu próximo turno.",
+      "source": "HA",
+      "license": "Saladin",
+      "license_level": 2
+    },
+    {
+      "id": "ms_hardlight_defense_system",
+      "category": "system",
+      "name": "Sistema de Defesa de Luz Sólida",
+      "sp": 3,
+      "type": "Shield",
+      "tags": [
+        "Único",
+        "Escudo",
+        "Calor 2 (Próprio)"
+      ],
+      "actions": [
+        {
+          "activation": "Completa",
+          "detail": "Cria escudo de Emanação 3, deixando você IMOBILIZADO e bloqueando linha de visão totalmente.",
+          "add_status": [
+            {
+              "id": "immobilized",
+              "target": "self"
+            }
+          ],
+          "range": [
+            {
+              "type": "Burst",
+              "val": 3
+            }
+          ],
+          "damage": [
+            {
+              "type": "Burn",
+              "val": 2,
+              "aoe": true
+            }
+          ],
+          "add_special": [
+            {
+              "attribute": "Hardlight Defense System Active",
+              "target": "self",
+              "detail": "Nenhum ataque passa. Personagens parcialmente dentro desenham linha de visão normalmente."
+            }
+          ]
+        },
+        {
+          "name": "Desativar Sistema de Defesa de Luz Sólida",
+          "activation": "Protocolo",
+          "detail": "Desative o escudo e remova IMOBILIZADO.",
+          "remove_special": [
+            {
+              "attribute": "Hardlight Defense System Active",
+              "target": "self"
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Ação Completa</b>]</b> Habilidade: Cria escudo de Emanação 3, deixando você IMOBILIZADO e bloqueando linha de visão totalmente.\n<b>[<b>Protocolo</b>]</b> Desativar Sistema de Defesa de Luz Sólida: Desative o escudo e remova IMOBILIZADO.",
+      "detail": "<b>[<b>Ação Completa</b>]</b> Habilidade: Cria escudo de Emanação 3, deixando você IMOBILIZADO e bloqueando linha de visão totalmente.\n<b>[<b>Protocolo</b>]</b> Desativar Sistema de Defesa de Luz Sólida: Desative o escudo e remova IMOBILIZADO.",
+      "source": "HA",
+      "license": "Saladin",
+      "license_level": 2
+    },
+    {
+      "id": "ms_noah_class_nhp",
+      "category": "system",
+      "name": "PNH CLASSE-NOAH",
+      "sp": 3,
+      "type": "AI",
+      "tags": [
+        "IA",
+        "Único"
+      ],
+      "actions": [
+        {
+          "name": "Arca Diluviana",
+          "activation": "Rápida",
+          "detail": "Até seu próximo turno você fica Lento e pode desviar ataques à distância sofrendo calor como reação.",
+          "add_status": [
+            {
+              "id": "slow",
+              "target": "self"
+            }
+          ],
+          "active_effects": [
+            {
+              "name": "Arca Diluviana Ativa",
+              "detail": "Sempre que atacado, como reação sofra 1 calor e role d6; no 4+, ataque erra e sofra mais 1 calor.",
+              "duration": "next_turn_end_self"
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "Seu mecha adquire a tag <b>IA</b> e a Arca Diluviana.\n<b>[<b>Ação Rápida</b>]</b> Arca Diluviana: Até seu próximo turno você fica <b>Lento</b> e pode desviar ataques à distância sofrendo calor como reação.",
+      "detail": "Seu mecha adquire a tag <b>IA</b> e a Arca Diluviana.\n<b>[<b>Ação Rápida</b>]</b> Arca Diluviana: Até seu próximo turno você fica <b>Lento</b> e pode desviar ataques à distância sofrendo calor como reação.",
+      "source": "HA",
+      "license": "Saladin",
+      "license_level": 3
+    },
+    {
+      "id": "ms_reactor_stabilizer",
+      "category": "system",
+      "name": "Estabilizador de Reator",
+      "sp": 3,
+      "type": "Sistema",
+      "tags": [
+        "Único"
+      ],
+      "actions": [],
+      "deployables": [],
+      "terse": "Você pode repetir testes de superaquecimento, mas deve manter o segundo resultado, mesmo que seja pior.",
+      "detail": "Você pode repetir testes de superaquecimento, mas deve manter o segundo resultado, mesmo que seja pior.",
+      "source": "HA",
+      "license": "Sherman",
+      "license_level": 1
+    },
+    {
+      "id": "ms_redundant_systems_upgrade",
+      "category": "system",
+      "name": "Melhoria de Sistemas Redundantes",
+      "sp": 3,
+      "type": "Sistema",
+      "tags": [
+        "Limitado 1",
+        "Único"
+      ],
+      "actions": [
+        {
+          "activation": "Rápida",
+          "detail": "Gaste uma carga para ESTABILIZAR como uma ação rápida."
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Gaste uma carga para <b>ESTABILIZAR</b> como uma <b>ação rápida</b>.",
+      "detail": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Gaste uma carga para <b>ESTABILIZAR</b> como uma <b>ação rápida</b>.",
+      "source": "HA",
+      "license": "Sherman",
+      "license_level": 2
+    },
+    {
+      "id": "ms_asura_class_nhp",
+      "category": "system",
+      "name": "PNH CLASSE-ASURA",
+      "sp": 3,
+      "type": "AI",
+      "tags": [
+        "IA",
+        "Único",
+        "Limitado 1",
+        "Calor 3 (Próprio)"
+      ],
+      "actions": [
+        {
+          "name": "Protocolo ASURA",
+          "activation": "Protocolo",
+          "detail": "1/cena, gaste carga para realizar duas ações rápidas extras ou uma ação completa extra no turno, seguindo restrições de redundância."
+        }
+      ],
+      "deployables": [],
+      "terse": "Seu mecha adquire a tag <b>IA</b> e o <b>Protocolo</b> ASURA.\n<b>[<b>Protocolo</b>]</b> <b>Protocolo</b> ASURA: 1/cena, gaste carga para realizar duas <b>ações rápidas</b> extras ou uma <b>ação completa</b> extra no turno, seguindo restrições de redundância.",
+      "detail": "Seu mecha adquire a tag <b>IA</b> e o <b>Protocolo</b> ASURA.\n<b>[<b>Protocolo</b>]</b> <b>Protocolo</b> ASURA: 1/cena, gaste carga para realizar duas <b>ações rápidas</b> extras ou uma <b>ação completa</b> extra no turno, seguindo restrições de redundância.",
+      "source": "HA",
+      "license": "Sherman",
+      "license_level": 3
+    },
+    {
+      "id": "ms_external_batteries",
+      "category": "system",
+      "name": "Baterias Externas",
+      "sp": 2,
+      "type": "Sistema",
+      "tags": [
+        "Único"
+      ],
+      "actions": [],
+      "deployables": [],
+      "terse": "Armas que causam qualquer dano de energia ganham +5 de ALCANCE se forem à distância ou +1 de AMEAÇA se forem corpo a corpo. Quando você sofre qualquer dano estrutural, este sistema é destruído e você sofre 1d6 de dano explosivo PF pela explosão. Este dano não pode ser prevenido ou reduzido de forma alguma.",
+      "detail": "Armas que causam qualquer dano de energia ganham +5 de ALCANCE se forem à distância ou +1 de AMEAÇA se forem corpo a corpo. Quando você sofre qualquer dano estrutural, este sistema é destruído e você sofre 1d6 de dano explosivo PF pela explosão. Este dano não pode ser prevenido ou reduzido de forma alguma.",
+      "source": "HA",
+      "license": "Tokugawa",
+      "license_level": 1
+    },
+    {
+      "id": "ms_deep_well_heat_sink",
+      "category": "system",
+      "name": "Dissipador de Calor de Poço Profundo",
+      "sp": 4,
+      "type": "Sistema",
+      "tags": [
+        "Único"
+      ],
+      "actions": [],
+      "deployables": [],
+      "terse": "Quando você começa seu turno na Zona de Perigo, ganha RESISTÊNCIA a calor pelo resto do turno. Este efeito persiste mesmo se você sair da Zona de Perigo durante o seu turno.",
+      "detail": "Quando você começa seu turno na Zona de Perigo, ganha RESISTÊNCIA a calor pelo resto do turno. Este efeito persiste mesmo se você sair da Zona de Perigo durante o seu turno.",
+      "source": "HA",
+      "license": "Tokugawa",
+      "license_level": 2
+    },
+    {
+      "id": "ms_lucifer_class_nhp",
+      "category": "system",
+      "name": "PNH CLASSE-LUCIFER",
+      "sp": 3,
+      "type": "AI",
+      "tags": [
+        "IA",
+        "Único",
+        "Limitado 2",
+        "Calor 1d3+3 (Próprio)"
+      ],
+      "actions": [
+        {
+          "name": "Protocolo LUCIFER",
+          "activation": "Protocolo",
+          "detail": "Gaste carga para adicionar ao seu próximo ataque dano bônus igual ao seu Calor atual, contanto que tenha dano de energia."
+        }
+      ],
+      "deployables": [],
+      "terse": "Seu mecha adquire a tag <b>IA</b> e o <b>Protocolo</b> LUCIFER.\n<b>[<b>Protocolo</b>]</b> <b>Protocolo</b> LUCIFER: Gaste carga para adicionar ao seu próximo ataque dano bônus igual ao seu Calor atual, contanto que tenha dano de energia.",
+      "detail": "Seu mecha adquire a tag <b>IA</b> e o <b>Protocolo</b> LUCIFER.\n<b>[<b>Protocolo</b>]</b> <b>Protocolo</b> LUCIFER: Gaste carga para adicionar ao seu próximo ataque dano bônus igual ao seu Calor atual, contanto que tenha dano de energia.",
+      "source": "HA",
+      "license": "Tokugawa",
+      "license_level": 3
+    },
+    {
+      "id": "ms_plasma_gauntlet",
+      "category": "system",
+      "name": "Manopla de Plasma",
+      "sp": 2,
+      "type": "Sistema",
+      "tags": [
+        "Zona de Perigo",
+        "Limitado 1",
+        "Único"
+      ],
+      "actions": [
+        {
+          "activation": "Rápida",
+          "detail": "Apenas na Zona de Perigo. Gaste carga; um inimigo adjacente passa em AGILIDADE ou sofre 4d6 de Energia PA e cai PROSTRADO.",
+          "damage": [
+            {
+              "type": "Energy",
+              "val": "4d6",
+              "ap": true,
+              "save": "agi",
+              "save_half": true
+            }
+          ],
+          "add_status": [
+            {
+              "id": "stunned",
+              "target": "self"
+            },
+            {
+              "id": "prone",
+              "target": "any",
+              "save": "hull"
+            }
+          ]
+        }
+      ],
+      "deployables": [],
+      "terse": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Apenas na Zona de Perigo. Gaste carga; um inimigo adjacente passa em AGILIDADE ou sofre 4d6 de Energia PA e cai <b>PROSTRADO</b>.",
+      "detail": "<b>[<b>Ação Rápida</b>]</b> Habilidade: Apenas na Zona de Perigo. Gaste carga; um inimigo adjacente passa em AGILIDADE ou sofre 4d6 de Energia PA e cai <b>PROSTRADO</b>.",
+      "source": "HA",
+      "license": "Tokugawa",
+      "license_level": 3
+    },
+    {
+      "id": "ms_technophile_1",
+      "category": "system",
+      "name": "PNH Classe-Servo",
+      "sp": 0,
+      "type": "AI",
+      "tags": [
+        "IA",
+        "Único"
+      ],
+      "actions": [],
+      "deployables": [],
+      "terse": "Seu mecha adquire a tag <b>IA</b>.\nVocê desenvolveu uma PNH personalizada. Esta PNH pode falar com você e tem uma personalidade, mas eles são menos avançados do que a maioria das PNHs e são incapazes de pensamento independente, confiando em você para orientação. Ao agir sozinho, eles seguirão a última orientação dada e se defenderão conforme necessário; no entanto, eles têm iniciativa limitada e não se beneficiam de seus talentos.",
+      "detail": "Seu mecha adquire a tag <b>IA</b>.\nVocê desenvolveu uma PNH personalizada. Esta PNH pode falar com você e tem uma personalidade, mas eles são menos avançados do que a maioria das PNHs e são incapazes de pensamento independente, confiando em você para orientação. Ao agir sozinho, eles seguirão a última orientação dada e se defenderão conforme necessário; no entanto, eles têm iniciativa limitada e não se beneficiam de seus talentos.",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "ms_technophile_2",
+      "category": "system",
+      "name": "PNH Classe-Estudante",
+      "sp": 0,
+      "type": "AI",
+      "tags": [
+        "IA",
+        "Único",
+        "1/Rodada"
+      ],
+      "actions": [],
+      "deployables": [],
+      "terse": "Seu mecha adquire a tag <b>IA</b>.\nSua PNH personalizada se desenvolveu ainda mais e agora é capaz de pensamento independente. Ela pode tomar decisões e julgamentos complexos e agir de forma independente, sem instrução.\n1/rodada, com a assistência de sua PNH, você pode repetir qualquer teste de perícia ou salvamento de mecha. Você deve manter o novo resultado, mesmo que seja pior.",
+      "detail": "Seu mecha adquire a tag <b>IA</b>.\nSua PNH personalizada se desenvolveu ainda mais e agora é capaz de pensamento independente. Ela pode tomar decisões e julgamentos complexos e agir de forma independente, sem instrução.\n1/rodada, com a assistência de sua PNH, você pode repetir qualquer teste de perícia ou salvamento de mecha. Você deve manter o novo resultado, mesmo que seja pior.",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "ms_technophile_3",
+      "category": "system",
+      "name": "PNH Classe-Iluminação",
+      "sp": 0,
+      "type": "AI",
+      "tags": [
+        "Único",
+        "1/Rodada",
+        "IA"
+      ],
+      "actions": [],
+      "deployables": [],
+      "terse": "Seu mecha adquire a tag <b>IA</b>; no entanto, esta PNH não conta para o número de IAs que você pode ter instaladas ao mesmo tempo.\nEsta PNH se beneficia de seus talentos ao pilotar seu mecha. Adicionalmente, você pode carregá-lo com você fora de seu mecha, seja como um receptáculo miniaturizado, um plugue flash integrado ao traje ou com um implante de porta física.\n1/rodada, com a assistência de sua PNH, você pode repetir qualquer teste de perícia ou salvamento de mecha. Você deve manter o novo resultado, mesmo que seja pior.",
+      "detail": "Seu mecha adquire a tag <b>IA</b>; no entanto, esta PNH não conta para o número de IAs que você pode ter instaladas ao mesmo tempo.\nEsta PNH se beneficia de seus talentos ao pilotar seu mecha. Adicionalmente, você pode carregá-lo com você fora de seu mecha, seja como um receptáculo miniaturizado, um plugue flash integrado ao traje ou com um implante de porta física.\n1/rodada, com a assistência de sua PNH, você pode repetir qualquer teste de perícia ou salvamento de mecha. Você deve manter o novo resultado, mesmo que seja pior.",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "ms_walking_armory_1",
+      "category": "system",
+      "name": "Estojo de Munição I",
+      "sp": 0,
+      "type": "Sistema",
+      "tags": [
+        "Limitado 6",
+        "1/Turno"
+      ],
+      "actions": [],
+      "deployables": [],
+      "terse": "1/turno, quando você atacar com uma arma à distância Principal, você pode gastar cargas para aplicar um dos seguintes efeitos ao seu ataque pelo custo listado.",
+      "detail": "1/turno, quando você atacar com uma arma à distância Principal, você pode gastar cargas para aplicar um dos seguintes efeitos ao seu ataque pelo custo listado.",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "ms_walking_armory_2",
+      "category": "system",
+      "name": "Estojo de Munição II",
+      "sp": 0,
+      "type": "Sistema",
+      "tags": [
+        "Limitado 6",
+        "1/Turno"
+      ],
+      "actions": [],
+      "deployables": [],
+      "terse": "1/turno, quando você atacar com uma arma à distância Principal, você pode gastar cargas para aplicar um dos seguintes efeitos ao seu ataque pelo custo listado.",
+      "detail": "1/turno, quando você atacar com uma arma à distância Principal, você pode gastar cargas para aplicar um dos seguintes efeitos ao seu ataque pelo custo listado.",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    },
+    {
+      "id": "ms_walking_armory_3",
+      "category": "system",
+      "name": "Estojo de Munição III",
+      "sp": 0,
+      "type": "Sistema",
+      "tags": [
+        "Limitado 6",
+        "1/Turno"
+      ],
+      "actions": [],
+      "deployables": [],
+      "terse": "1/turno, quando você atacar com uma arma à distância Principal, você pode gastar cargas para aplicar um dos seguintes efeitos ao seu ataque pelo custo listado. Se você realizar um acerto crítico usando munição de seu Estojo de Munição, você não gasta nenhuma carga. Se o seu ataque tiver mais de um alvo, este efeito se aplica apenas à primeira rolagem de ataque que você fizer.",
+      "detail": "1/turno, quando você atacar com uma arma à distância Principal, você pode gastar cargas para aplicar um dos seguintes efeitos ao seu ataque pelo custo listado. Se você realizar um acerto crítico usando munição de seu Estojo de Munição, você não gasta nenhuma carga. Se o seu ataque tiver mais de um alvo, este efeito se aplica apenas à primeira rolagem de ataque que você fizer.",
+      "source": "GMS",
+      "license": "GMS",
+      "license_level": 0
+    }
+  ],
+  "statuses": [
+    {
+      "id": "dangerzone",
+      "category": "status",
+      "name": "Zona de Perigo",
+      "type": "Status",
+      "exclusive": "Mech",
+      "terse": "Nível de calor em metade da capacidade ou mais.",
+      "detail": "Personagens estão na ZONA DE PERIGO quando metade ou mais do seu calor está preenchido. Eles estão extremamente quentes, o que habilita alguns ataques, talentos e efeitos.",
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "downandout",
+      "category": "status",
+      "name": "Caído e Apagado",
+      "type": "Status",
+      "exclusive": "Pilot",
+      "terse": "Piloto está inconsciente; qualquer dano adicional o mata.",
+      "detail": "Pilotos que estão CAÍDOS E APAGADOS estão inconscientes e <b>ATORDOADOS</b> — se receberem mais dano, morrem. Eles recuperarão a consciência e metade dos seus PV quando descansarem.",
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "engaged",
+      "category": "status",
+      "name": "Engajado",
+      "type": "Status",
+      "exclusive": null,
+      "terse": "Ataques à distância feitos por este personagem recebem +1 de dificuldade. Todo movimento adicional é perdido se ENGAJADO por um alvo de tamanho igual ou maior.",
+      "detail": "Se um personagem se mover adjacente a um personagem hostil, ambos ganham o status ENGAJADO enquanto permanecerem adjacentes. Ataques à distância feitos por um personagem ENGAJADO recebem +1 de dificuldade. Adicionalmente, personagens que ficam ENGAJADOS por alvos de tamanho igual ou maior durante um movimento param de se mover imediatamente e perdem qualquer movimento não utilizado.",
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "exposed",
+      "category": "status",
+      "name": "Exposto",
+      "type": "Status",
+      "exclusive": "Mech",
+      "terse": "Todo o dano cinético, explosivo ou energético recebido por este personagem é dobrado.",
+      "detail": "Personagens ficam <b>EXPOSTOS</b> quando lidam com acúmulo de calor descontrolado — sua <b>armadura</b> está enfraquecida pelo superaquecimento, suas saídas de ar estão abertas e suas armas estão desacelerando, fornecendo vários pontos fracos. Todo o dano cinético, explosivo ou energético recebido por personagens <b>EXPOSTOS</b> é dobrado, antes de aplicar qualquer redução. Um mecha pode limpar <b>EXPOSTO</b> realizando a ação <b>ESTABILIZAR</b>.",
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "hidden",
+      "category": "status",
+      "name": "Escondido",
+      "type": "Status",
+      "exclusive": null,
+      "terse": "Este personagem não pode ser alvo de ataques ou ações hostis, não causa engajamento e inimigos só conhecem sua localização aproximada.",
+      "detail": "Personagens ESCONDIDOS não podem ser alvo de ataques ou ações hostis, não causam engajamento e inimigos só conhecem sua localização aproximada. Atacar, forçar salvamentos, tomar reações, usar <b>IMPULSIONAR</b> e perder cobertura removem ESCONDIDO após serem resolvidos. Personagens podem encontrar personagens ESCONDIDOS com PROCURAR.",
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "invisible",
+      "category": "status",
+      "name": "Invisível",
+      "type": "Status",
+      "exclusive": null,
+      "terse": "Todos os ataques contra personagens INVISÍVEIS têm 50% de chance de errar antes de uma rolagem de ataque. Personagens INVISÍVEIS podem sempre se ESCONDER, mesmo sem cobertura.",
+      "detail": "Todos os ataques contra personagens INVISÍVEIS, independentemente do tipo, têm 50% de chance de errar completamente, antes de uma rolagem de ataque ser feita. Role um dado ou lance uma moeda para determinar se o ataque erra.\nAdicionalmente, personagens INVISÍVEIS podem sempre se ESCONDER, mesmo sem cobertura.",
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "prone",
+      "category": "status",
+      "name": "Prostrado",
+      "type": "Status",
+      "exclusive": null,
+      "terse": "Ataques contra alvos <b>PROSTRADOS</b> recebem +1 de precisão. Personagens <b>PROSTRADOS</b> são <b>LENTOS</b> e contam como se movendo em terreno difícil.",
+      "detail": "Ataques contra alvos <b>PROSTRADOS</b> recebem +1 de precisão.\nAdicionalmente, personagens <b>PROSTRADOS</b> são <b>LENTOS</b> e contam como se movendo em terreno difícil. Personagens podem remover <b>PROSTRADO</b> levantando-se em vez de fazer seu movimento padrão, a menos que estejam IMOBILIZADOS. Levantar-se não conta como movimento, portanto não aciona <b>RETALIAR</b> ou outros efeitos.",
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "shut-down",
+      "category": "status",
+      "name": "Desligado",
+      "type": "Status",
+      "exclusive": "Mech",
+      "terse": "Enquanto DESLIGADO, mechas são <b>ATORDOADOS</b> indefinidamente.",
+      "detail": "Quando um mecha é DESLIGADO:\n• todo o calor é limpo e o status <b>EXPOSTO</b> é removido;\n• quaisquer PNHs em cascata são estabilizados e não estão mais em cascata;\n• quaisquer status e condições que afetam o mecha causados por ações tecnológicas, como TRAVADO EM MIRA, terminam imediatamente.\nMechas DESLIGADOS têm IMUNIDADE a todas as ações e ataques tecnológicos, incluindo os de personagens aliados.\nEnquanto DESLIGADO, mechas são <b>ATORDOADOS</b> indefinidamente. Nada pode impedir esta condição, e ela permanece até que o mecha deixe de estar DESLIGADO.",
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "immobilized",
+      "category": "status",
+      "name": "Imobilizado",
+      "type": "Condição",
+      "exclusive": null,
+      "terse": "Personagens IMOBILIZADOS não podem fazer nenhum movimento voluntário.",
+      "detail": "Personagens IMOBILIZADOS não podem fazer nenhum movimento voluntário, embora movimentos involuntários não sejam afetados.",
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "impaired",
+      "category": "status",
+      "name": "Impedido",
+      "type": "Condição",
+      "exclusive": null,
+      "terse": "Personagens <b>IMPEDIDOS</b> recebem +1 de dificuldade em todos os ataques, salvamentos e testes de perícia.",
+      "detail": "Personagens <b>IMPEDIDOS</b> recebem +1 de dificuldade em todos os ataques, salvamentos e testes de perícia.",
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "jammed",
+      "category": "status",
+      "name": "Bloqueado",
+      "type": "Condição",
+      "exclusive": null,
+      "terse": "Personagens BLOQUEADOS não podem usar comunicações, fazer ataques além de IMPROVISAR ATAQUE, <b>AGARRAR</b> e <b>EMPURRAR</b>, tomar reações, ou se beneficiar de ações tecnológicas.",
+      "detail": "Personagens BLOQUEADOS não podem:\n• usar comunicações para falar com outros personagens;\n• fazer ataques, além de IMPROVISAR ATAQUE, <b>AGARRAR</b> e <b>EMPURRAR</b>;\n• tomar reações, ou se beneficiar de ações tecnológicas.",
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "lockon",
+      "category": "status",
+      "name": "Travado em Mira",
+      "type": "Condição",
+      "exclusive": null,
+      "terse": "Personagens hostis podem consumir TRAVADO EM MIRA para +1 de precisão em seu próximo ataque contra este personagem.",
+      "detail": "Personagens hostis podem optar por consumir a condição TRAVADO EM MIRA de um personagem em troca de +1 de precisão em seu próximo ataque contra aquele personagem.\nTRAVADO EM MIRA também é necessário para usar alguns talentos e sistemas.",
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "shredded",
+      "category": "status",
+      "name": "Dilacerado",
+      "type": "Condição",
+      "exclusive": null,
+      "terse": "Personagens DILACERADOS não se beneficiam de <b>ARMADURA</b> ou RESISTÊNCIA.",
+      "detail": "Personagens DILACERADOS não se beneficiam de <b>ARMADURA</b> ou RESISTÊNCIA.",
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "slow",
+      "category": "status",
+      "name": "Lento",
+      "type": "Condição",
+      "exclusive": null,
+      "terse": "Este personagem não pode <b>IMPULSIONAR</b> ou fazer quaisquer movimentos especiais concedidos por talentos, sistemas ou armas.",
+      "detail": "O único movimento que personagens <b>LENTOS</b> podem fazer é seu movimento padrão, em seu próprio turno — eles não podem <b>IMPULSIONAR</b> ou fazer quaisquer movimentos especiais concedidos por talentos, sistemas ou armas.",
+      "source": "REGRAS BÁSICAS"
+    },
+    {
+      "id": "stunned",
+      "category": "status",
+      "name": "Atordoado",
+      "type": "Condição",
+      "exclusive": null,
+      "terse": "Mechas <b>ATORDOADOS</b> não podem <b>SOBRECARREGAR</b>, mover-se ou realizar quaisquer ações.",
+      "detail": "Mechas <b>ATORDOADOS</b> não podem <b>SOBRECARREGAR</b>, mover-se ou realizar quaisquer ações — incluindo <b>ações livres</b> e reações. Pilotos ainda podem <b>MONTAR</b>, <b>DESMONTAR</b> ou <b>EJETAR</b> de mechas <b>ATORDOADOS</b>, e podem realizar ações normalmente.\nMechas <b>ATORDOADOS</b> têm EVASÃO máxima de 5 e falham automaticamente em todos os testes e salvamentos de CASCO e AGILIDADE.",
+      "source": "REGRAS BÁSICAS"
+    }
+  ],
+  "tags": [
+    {
+      "id": "tg_burn",
+      "name": "Queimadura {VAL}",
+      "short_rule": "Queimadura {VAL} (causa {VAL} de queimadura contínua no alvo)",
+      "description": "Em um acerto, esta arma causa {VAL} de Queimadura em seu alvo. Ele imediatamente sofre essa quantidade de dano de queimadura, ignorando Armadura, e então marca {VAL} de Queimadura em sua ficha, somando a qualquer Queimadura existente. No final de seu turno, personagens com queimadura marcada fazem um teste de ENGENHARIA. Em um sucesso, eles removem toda a queimadura marcada; em uma falha, eles sofrem dano igual ao total de queimadura marcada."
+    },
+    {
+      "id": "tg_heat_target",
+      "name": "Calor {VAL} (Alvo)",
+      "short_rule": "Calor {VAL} (causa {VAL} de calor ao acertar o alvo)",
+      "description": "Em um acerto, esta arma ou sistema causa {VAL} de Calor em seu alvo."
+    },
+    {
+      "id": "tg_line",
+      "name": "Linha {VAL}",
+      "short_rule": "Linha {VAL} (atinge todos alvos em linha de {VAL} espaços)",
+      "description": "Ataques feitos com esta arma afetam personagens em uma linha reta, com {VAL} espaços de comprimento."
+    },
+    {
+      "id": "tg_cone",
+      "name": "Cone {VAL}",
+      "short_rule": "Cone {VAL} (atinge alvos em cone de {VAL} espaços)",
+      "description": "Ataques feitos com esta arma afetam personagens dentro de um cone, com {VAL} espaços de comprimento e {VAL} espaços de largura em seu ponto mais distante. O cone começa com 1 espaço de largura."
+    },
+    {
+      "id": "tg_blast",
+      "name": "Explosão {VAL}",
+      "short_rule": "Explosão {VAL} (área circular de raio {VAL})",
+      "description": "Ataques feitos com esta arma afetam personagens dentro de um raio de {VAL} espaços, a partir de um ponto dentro do Alcance e da linha de visão. Cobertura e linha de visão são calculadas com base no centro da explosão, em vez da posição do atacante."
+    },
+    {
+      "id": "tg_burst",
+      "name": "Emanação {VAL}",
+      "short_rule": "Emanação {VAL} (área ao redor do usuário de raio {VAL})",
+      "description": "Ataques feitos com esta arma afetam personagens dentro de um raio de {VAL} espaços, centrados e incluindo o espaço ocupado pelo usuário (ou alvo). Se a Emanação for um ataque, o usuário ou alvo não é afetado pelo ataque, a menos que especificado. Cobertura e linha de visão são calculadas a partir do personagem. Se um efeito de Emanação for contínuo, ele se move com o personagem em seu centro."
+    },
+    {
+      "id": "tg_accurate",
+      "name": "Precisa",
+      "short_rule": "Precisa (+1d6 no ataque)",
+      "description": "Ataques feitos com esta arma recebem +1 de PRECISÃO."
+    },
+    {
+      "id": "tg_arcing",
+      "name": "Arco",
+      "short_rule": "Arco (ignora cobertura se tiver visão indireta)",
+      "description": "Esta arma pode ser disparada sobre obstáculos, geralmente lançando um projétil em um arco. Ataques feitos com esta arma não exigem linha de visão, desde que seja possível traçar um caminho para o alvo; no entanto, eles ainda são afetados pela cobertura."
+    },
+    {
+      "id": "tg_ap",
+      "name": "Perfurante (PF)",
+      "short_rule": "PF (ignora Armadura)",
+      "description": "O dano causado por esta arma ignora Armadura."
+    },
+    {
+      "id": "tg_inaccurate",
+      "name": "Imprecisa",
+      "short_rule": "Imprecisa (+1d6 de dificuldade)",
+      "description": "Ataques feitos com esta arma recebem +1 de DIFICULDADE."
+    },
+    {
+      "id": "tg_knockback",
+      "name": "Repulsão {VAL}",
+      "short_rule": "Repulsão {VAL} (empurra o alvo {VAL} espaços)",
+      "description": "Em um acerto, o usuário pode escolher repulsar seu alvo {VAL} espaços em uma linha reta diretamente para longe do ponto de origem (por exemplo, o mecha atacante ou o centro de uma Explosão). Múltiplos efeitos de Repulsão se acumulam. Isso significa que um ataque feito com uma arma com Repulsão 1 e um talento que concede Repulsão 1 conta como tendo Repulsão 2."
+    },
+    {
+      "id": "tg_loading",
+      "name": "Recarga",
+      "short_rule": "Carregamento (precisa de ação rápida ou estabilizar para recarregar)",
+      "description": "Esta arma deve ser recarregada após cada uso. Mechas podem recarregar com a ação ESTABILIZAR e alguns sistemas."
+    },
+    {
+      "id": "tg_loading_after",
+      "name": "Recarga (Múltiplos Usos)",
+      "short_rule": "Esta arma deve ser recarregada após {VAL} usos. Mechas podem recarregar com Estabilizar e alguns sistemas. O usuário pode optar por recarregar esta arma no final de seu turno, permitindo disparar novamente no mesmo turno. Este é um alias específico do COMP/CON para a tag RECARGA, e todas as regras pertinentes a RECARGA se aplicam.",
+      "description": "Esta arma deve ser recarregada após {VAL} usos. Mechas podem recarregar com Estabilizar e alguns sistemas. O usuário pode optar por recarregar esta arma no final de seu turno, permitindo disparar novamente no mesmo turno. Este é um alias específico do COMP/CON para a tag RECARGA, e todas as regras pertinentes a RECARGA se aplicam."
+    },
+    {
+      "id": "tg_ordnance",
+      "name": "Artilharia",
+      "short_rule": "Artilharia (só pode disparar antes de se mover no turno)",
+      "description": "Esta arma só pode ser disparada antes que o usuário se mova ou realize qualquer outra ação em seu turno, exceto Protocolos. O usuário ainda pode agir e se mover normalmente após atacar. Adicionalmente, por causa de seu tamanho, esta arma não pode ser usada contra alvos em engajamento com o mecha do usuário, e não pode ser usada para RETALIAR."
+    },
+    {
+      "id": "tg_overkill",
+      "name": "Exagero",
+      "short_rule": "Excesso (rolou 1 no dano: sofre 1 de calor e rerrola o 1)",
+      "description": "Ao rolar dano com esta arma, qualquer dado de dano que cair em 1 faz com que o atacante sofra 1 de Calor, e então é rolado novamente. Números 1 adicionais continuam a acionar este efeito."
+    },
+    {
+      "id": "tg_overshield",
+      "name": "Blindagem",
+      "short_rule": "Este sistema fornece PV que desaparecem no final da cena ou quando uma condição especificada é atendida. O usuário retém apenas o maior valor de Blindagem aplicado – ele não se acumula. Por exemplo, se um sistema fornecer Blindagem 5 e o usuário ganhar outro efeito que forneça Blindagem 7, ele terá Blindagem 7. O dano é causado primeiro à Blindagem, depois aos PV. A Blindagem pode levar um personagem além de seus PV máximos. Ele não pode se beneficiar de cura, mas, de resto, se beneficia normalmente de qualquer coisa que afete PV e dano (ou seja, redução, armadura, etc.).",
+      "description": "Este sistema fornece PV que desaparecem no final da cena ou quando uma condição especificada é atendida. O usuário retém apenas o maior valor de Blindagem aplicado – ele não se acumula. Por exemplo, se um sistema fornecer Blindagem 5 e o usuário ganhar outro efeito que forneça Blindagem 7, ele terá Blindagem 7. O dano é causado primeiro à Blindagem, depois aos PV. A Blindagem pode levar um personagem além de seus PV máximos. Ele não pode se beneficiar de cura, mas, de resto, se beneficia normalmente de qualquer coisa que afete PV e dano (ou seja, redução, armadura, etc.)."
+    },
+    {
+      "id": "tg_reliable",
+      "name": "Confiável {VAL}",
+      "short_rule": "Confiável {VAL} (causa {VAL} de dano mesmo se errar o ataque)",
+      "description": "Esta arma tem algum grau de autocorreção ou é simplesmente poderosa o suficiente para causar dano mesmo com um golpe de raspão. Ela sempre causa {VAL} de dano, mesmo que erre o alvo ou role menos dano. O dano Confiável herda outras tags (como PF) e o tipo de dano base, mas não tags que exigem um acerto, como Repelir."
+    },
+    {
+      "id": "tg_seeking",
+      "name": "Guiada",
+      "short_rule": "Teleguiada (ignora cobertura e linha de visão)",
+      "description": "Esta arma tem uma forma limitada de autoguiagem e propulsão interna, permitindo que siga caminhos complicados até seus alvos. Desde que seja possível traçar um caminho para seu alvo, esta arma ignora cobertura e não requer linha de visão."
+    },
+    {
+      "id": "tg_smart",
+      "name": "Inteligente",
+      "short_rule": "Inteligente (ataca a Defesa Tecnológica do alvo)",
+      "description": "Esta arma possui sistemas de autoguiagem, projéteis autopropelidos ou até munição nanorrobótica. Esses sistemas são eficazes o suficiente para que seus ataques não possam ser simplesmente esquivados – eles devem ser embaralhados ou bloqueados. Por causa disso, todos os ataques com esta arma – incluindo ataques corpo a corpo e à distância – usam a DEFESA-E do alvo em vez da EVASÃO. Alvos sem DEFESA-E contam como tendo 8 de DEFESA-E."
+    },
+    {
+      "id": "tg_threat",
+      "name": "Ameaça {VAL}",
+      "short_rule": "Ameaça {VAL} (raio de reação e ataque de oportunidade)",
+      "description": "Esta arma pode ser usada para fazer ataques de RETALIAR dentro de {VAL} espaços. Se for uma arma corpo a corpo, pode ser usada para fazer ataques corpo a corpo dentro de {VAL} espaços."
+    },
+    {
+      "id": "tg_thrown",
+      "name": "Arremessável {VAL}",
+      "short_rule": "Arremesso {VAL} (pode ser arremessada até alcance {VAL})",
+      "description": "Esta arma corpo a corpo pode ser arremessada em alvos dentro de {VAL} espaços. Ataques de arremesso seguem as regras para ataques corpo a corpo, mas são afetados pela cobertura; adicionalmente, uma arma arremessada para em um espaço adjacente ao seu alvo e deve ser recuperada como uma ação livre enquanto adjacente a essa arma antes que possa ser usada novamente."
+    },
+    {
+      "id": "tg_turn",
+      "name": "{VAL}/Turno",
+      "short_rule": "Este sistema, característica ou reação pode ser usado {VAL} vezes em qualquer turno.",
+      "description": "Este sistema, característica ou reação pode ser usado {VAL} vezes em qualquer turno."
+    },
+    {
+      "id": "tg_round",
+      "name": "{VAL}/Rodada",
+      "short_rule": "Este sistema, característica ou reação pode ser usado {VAL} vezes entre o início do turno do usuário e o início de seu próximo turno.",
+      "description": "Este sistema, característica ou reação pode ser usado {VAL} vezes entre o início do turno do usuário e o início de seu próximo turno."
+    },
+    {
+      "id": "tg_ai",
+      "name": "IA",
+      "short_rule": "IA (Instalação de Inteligência Artificial)",
+      "description": "Um mecha só pode ter um sistema com esta tag instalado por vez. Alguns sistemas de IA concedem a tag IA ao mecha. Um mecha com a tag IA tem uma unidade PNH ou COMP/CON instalada que pode agir de forma um tanto autônoma. Um piloto pode optar por entregar os controles à sua IA ou retomar o controle como um protocolo. Seu mecha ganha seu próprio conjunto de ações e reações quando controlado por uma IA, mas o piloto não pode realizar ações ou reações com ele até o início de seu próximo turno. IAs não podem se beneficiar de talentos e têm uma pequena chance de entrar em cascata quando sofrem dano de estrutura ou de estresse."
+    },
+    {
+      "id": "tg_danger_zone",
+      "name": "Zona de Perigo",
+      "short_rule": "Zona de Perigo (efeito ativo com calor a 50%+)",
+      "description": "Este sistema, talento ou arma só pode ser usado se o usuário estiver na Zona de Perigo (Calor igual a pelo menos metade de sua Cap. de Calor)."
+    },
+    {
+      "id": "tg_deployable",
+      "name": "Posicionável",
+      "short_rule": "Posicionável em campo de batalha",
+      "description": "Este sistema é um objeto que pode ser posicionado no campo. A menos que especificado de outra forma, pode ser posicionado em um espaço adjacente, livre e válido como uma ação rápida, e tem 5 de Evasão e 10 PV por Tamanho."
+    },
+    {
+      "id": "tg_drone",
+      "name": "Drone",
+      "short_rule": "Drone (possui estatísticas e ações próprias)",
+      "description": "Esta é uma unidade autopropelida e semiautônoma com inteligência rudimentar. A menos que especificado de outra forma, Drones são personagens de TAMANHO 1/2 que são aliados do usuário e têm EVASÃO 10, 5 PV e 0 de ARMADURA. Para serem usados, devem ser implantados em um espaço livre e válido dentro do alcance dos SENSORES e na linha de visão, tipicamente como uma ação rápida. Uma vez implantados, eles podem ser recolhidos com a mesma ação usada para implantá-los (ação rápida ou completa, etc.), reunindo-se com seu mecha. Por padrão, Drones não podem realizar ações ou se mover; se tiverem ações ou movimento, eles agem no turno de seu usuário. Eles se beneficiam de cobertura e outras defesas como de costume, e fazem todos os testes de perícia e salvamentos de mecha com +0. Se um Drone chegar a 0 PV, ele é destruído e deve ser reparado antes que possa ser usado novamente – como qualquer sistema. Desde que um Drone não tenha sido destruído, ele é restaurado aos PV máximos quando o usuário descansa ou realiza um REPARO COMPLETO. Drones implantados persistem pelo resto da cena, até serem destruídos, ou até que seja especificado de outra forma."
+    },
+    {
+      "id": "tg_full_action",
+      "name": "Ação Completa",
+      "short_rule": "Este sistema requer uma ação completa para ATIVAR.",
+      "description": "Este sistema requer uma ação completa para ATIVAR."
+    },
+    {
+      "id": "tg_grenade",
+      "name": "Granada",
+      "short_rule": "Granada (alcance 5 / arremessável)",
+      "description": "Como uma ação rápida, este explosivo ou outro dispositivo pode ser arremessado para um espaço dentro da linha de visão e do Alcance especificado."
+    },
+    {
+      "id": "tg_heat_self",
+      "name": "Calor {VAL} (Próprio)",
+      "short_rule": "Calor {VAL} (sofre {VAL} de calor ao disparar)",
+      "description": "Imediatamente após usar esta arma ou sistema, o usuário sofre {VAL} de Calor."
+    },
+    {
+      "id": "tg_limited",
+      "name": "Limitado {VAL}",
+      "short_rule": "Limitada {VAL} ({VAL} usos por missão)",
+      "description": "Esta arma ou sistema só pode ser usado {VAL} vezes antes de precisar de um REPARO COMPLETO. Alguns sistemas Limitados, como Granadas, descrevem esses usos como 'cargas'. Para usar o sistema, o usuário gasta uma carga."
+    },
+    {
+      "id": "tg_mine",
+      "name": "Mina",
+      "short_rule": "Mina (acionada por proximidade)",
+      "description": "Como uma ação rápida, este dispositivo pode ser plantado em um espaço adjacente, livre e válido em qualquer superfície, mas não adjacente a outras minas. Após a implantação, ela se arma no final do turno do personagem que a implantou e – a menos que especificado de outra forma – é acionada quando qualquer personagem entra em um espaço adjacente. Personagens que saem de um espaço adjacente não acionarão uma mina. Uma vez acionada, uma mina cria um ataque de Emanação a partir do espaço em que foi colocada. Minas dentro dos SENSORES de um personagem podem ser detectadas com um teste de SISTEMAS bem-sucedido como uma ação rápida, caso contrário, elas ficam ESCONDIDAS e não podem ser alvo. Minas detectadas podem ser desarmadas de espaços adjacentes com um teste de SISTEMAS bem-sucedido como uma ação rápida; a tentativa ocorre antes da detonação da mina e, em uma falha, a mina detona normalmente."
+    },
+    {
+      "id": "tg_mod",
+      "name": "Modificação",
+      "short_rule": "Esta modificação pode ser aplicada a uma arma. Cada arma só pode ter uma Modificação, e não pode ter mais de uma da mesma Modificação. As modificações são aplicadas quando o usuário constrói seu mecha ou durante um REPARO COMPLETO.",
+      "description": "Esta modificação pode ser aplicada a uma arma. Cada arma só pode ter uma Modificação, e não pode ter mais de uma da mesma Modificação. As modificações são aplicadas quando o usuário constrói seu mecha ou durante um REPARO COMPLETO."
+    },
+    {
+      "id": "tg_protocol",
+      "name": "Protocolo",
+      "short_rule": "Este sistema pode ser ativado como uma ação livre, mas apenas no início do turno do usuário. Outra ação pode ser necessária para desativá-lo.",
+      "description": "Este sistema pode ser ativado como uma ação livre, mas apenas no início do turno do usuário. Outra ação pode ser necessária para desativá-lo."
+    },
+    {
+      "id": "tg_quick_action",
+      "name": "Ação Rápida",
+      "short_rule": "Este sistema requer uma ação rápida para ATIVAR.",
+      "description": "Este sistema requer uma ação rápida para ATIVAR."
+    },
+    {
+      "id": "tg_reaction",
+      "name": "Reação",
+      "short_rule": "Este sistema pode ser ativado como uma reação.",
+      "description": "Este sistema pode ser ativado como uma reação."
+    },
+    {
+      "id": "tg_shield",
+      "name": "Escudo",
+      "short_rule": "Escudo defensivo",
+      "description": "Este sistema é um escudo de energia de algum tipo."
+    },
+    {
+      "id": "tg_unique",
+      "name": "Único",
+      "short_rule": "Única (máximo 1 instalada por mecha)",
+      "description": "Esta arma ou sistema não pode ser duplicado – cada personagem só pode ter uma cópia dele instalada por vez."
+    },
+    {
+      "id": "tg_archaic",
+      "name": "Arcaica",
+      "short_rule": "Esta arma é antiquada e não pode ferir mechas.",
+      "description": "Esta arma é antiquada e não pode ferir mechas."
+    },
+    {
+      "id": "tg_personal_armor",
+      "name": "Armadura Pessoal",
+      "short_rule": "Este equipamento oferece proteção em combate, mas é óbvio para os observadores e geralmente não pode ser escondido. Apenas uma peça de Armadura Pessoal pode ser usada por vez. Colocar a Armadura Pessoal leva de 10 a 20 minutos, e ao usá-la, os pilotos têm mobilidade e destreza restritas. Ninguém usa armadura a menos que espere entrar em uma zona de guerra.",
+      "description": "Este equipamento oferece proteção em combate, mas é óbvio para os observadores e geralmente não pode ser escondido. Apenas uma peça de Armadura Pessoal pode ser usada por vez. Colocar a Armadura Pessoal leva de 10 a 20 minutos, e ao usá-la, os pilotos têm mobilidade e destreza restritas. Ninguém usa armadura a menos que espere entrar em uma zona de guerra."
+    },
+    {
+      "id": "tg_pilot_weapon",
+      "name": "Arma de Piloto",
+      "short_rule": "Em missões, os pilotos podem levar até duas armas. Todas as armas de piloto são de escala de piloto e não podem ser usadas por mechas.",
+      "description": "Em missões, os pilotos podem levar até duas armas. Todas as armas de piloto são de escala de piloto e não podem ser usadas por mechas."
+    },
+    {
+      "id": "tg_gear",
+      "name": "Equipamento",
+      "short_rule": "Esta é uma ferramenta, peça de equipamento ou outro item. Os pilotos podem ter até três destes por vez.",
+      "description": "Esta é uma ferramenta, peça de equipamento ou outro item. Os pilotos podem ter até três destes por vez."
+    },
+    {
+      "id": "tg_sidearm",
+      "name": "Arma Secundária",
+      "short_rule": "Esta arma pode ser usada para LUTAR como uma ação rápida em vez de uma ação completa.",
+      "description": "Esta arma pode ser usada para LUTAR como uma ação rápida em vez de uma ação completa."
+    },
+    {
+      "id": "tg_invade",
+      "name": "Invadir",
+      "short_rule": "Este sistema fornece opções adicionais para a Ação Rápida de Programar INVADIR.",
+      "description": "Este sistema fornece opções adicionais para a Ação Rápida de Programar INVADIR."
+    },
+    {
+      "id": "tg_quick_tech",
+      "name": "Programar Rápido",
+      "short_rule": "Esta tecnologia pode ser usada como uma Ação de Programar Rápido.",
+      "description": "Esta tecnologia pode ser usada como uma Ação de Programar Rápido."
+    },
+    {
+      "id": "tg_full_tech",
+      "name": "Programar Completo",
+      "short_rule": "Esta tecnologia pode ser usada como uma Ação de Programar Completo.",
+      "description": "Esta tecnologia pode ser usada como uma Ação de Programar Completo."
+    },
+    {
+      "id": "tg_free_action",
+      "name": "Ação Livre",
+      "short_rule": "Personagens podem realizar ações livres a qualquer momento durante seu turno, e elas não contam para o número de ações rápidas ou completas que realizam. Elas também podem ser usadas para realizar ações mais de uma vez por turno.",
+      "description": "Personagens podem realizar ações livres a qualquer momento durante seu turno, e elas não contam para o número de ações rápidas ou completas que realizam. Elas também podem ser usadas para realizar ações mais de uma vez por turno."
+    },
+    {
+      "id": "tg_range",
+      "name": "Alcance ({VAL})",
+      "short_rule": "Este sistema pode ser ativado a um alcance de {VAL} espaços.",
+      "description": "Este sistema pode ser ativado a um alcance de {VAL} espaços."
+    },
+    {
+      "id": "tg_modded",
+      "name": "Modificada",
+      "short_rule": "Esta arma foi equipada com uma modificação de arma.",
+      "description": "Esta arma foi equipada com uma modificação de arma."
+    },
+    {
+      "id": "tg_resistance",
+      "name": "Resistência",
+      "short_rule": "Reduz pela metade todo o dano de uma fonte à qual você tem resistência.",
+      "description": "Reduz pela metade todo o dano de uma fonte à qual você tem resistência."
+    },
+    {
+      "id": "tg_exotic",
+      "name": "Equipamento Exótico",
+      "short_rule": "EQUIPAMENTO EXÓTICO é uma tag geral para equipamentos que existem fora do sistema de licenciamento tradicional.",
+      "description": "EQUIPAMENTO EXÓTICO é uma tag geral para equipamentos que existem fora do sistema de licenciamento tradicional."
+    },
+    {
+      "id": "tg_recharge",
+      "name": "Recarregar {VAL}+",
+      "short_rule": "Uma vez que este sistema ou arma tenha sido usado, ele não pode ser usado novamente até ser recarregado. No início do turno deste PNJ, role 1d6: se o resultado for igual ou maior que {VAL}, o equipamento pode ser usado novamente. Apenas uma rolagem é necessária para cada PNJ, mesmo que um PNJ tenha múltiplos sistemas ou armas com Recarga. Se este PNJ tiver dois sistemas de Recarga com números-alvo de 4+ e 5+, uma rolagem de 5 recarregará ambos.",
+      "description": "Uma vez que este sistema ou arma tenha sido usado, ele não pode ser usado novamente até ser recarregado. No início do turno deste PNJ, role 1d6: se o resultado for igual ou maior que {VAL}, o equipamento pode ser usado novamente. Apenas uma rolagem é necessária para cada PNJ, mesmo que um PNJ tenha múltiplos sistemas ou armas com Recarga. Se este PNJ tiver dois sistemas de Recarga com números-alvo de 4+ e 5+, uma rolagem de 5 recarregará ambos."
+    },
+    {
+      "id": "tg_unlimited",
+      "name": "Ilimitado",
+      "short_rule": "Esta habilidade pode ser usada qualquer número de vezes por rodada.",
+      "description": "Esta habilidade pode ser usada qualquer número de vezes por rodada."
+    },
+    {
+      "id": "tg_indestructible",
+      "name": "Indestrutível",
+      "short_rule": "Este equipamento não pode ser marcado como Destruído.",
+      "description": "Este equipamento não pode ser marcado como Destruído."
+    },
+    {
+      "id": "tg_invulnerable",
+      "name": "Invulnerável",
+      "short_rule": "Este equipamento é imune a todos os danos.",
+      "description": "Este equipamento é imune a todos os danos."
+    },
+    {
+      "id": "tg_invisible",
+      "name": "Invisível",
+      "short_rule": "Esta unidade é Invisível.",
+      "description": "Esta unidade é Invisível."
+    },
+    {
+      "id": "tg_resistall",
+      "name": "Resistência (Tudo)",
+      "short_rule": "Esta unidade tem Resistência a todos os tipos de dano.",
+      "description": "Esta unidade tem Resistência a todos os tipos de dano."
+    },
+    {
+      "id": "tg_set_max_uses",
+      "name": "Definir Usos Máximos",
+      "short_rule": "Permite ao jogador definir o número máximo de usos para este equipamento (TAG OCULTA).",
+      "description": "Permite ao jogador definir o número máximo de usos para este equipamento (TAG OCULTA)."
+    },
+    {
+      "id": "tg_set_damage_type",
+      "name": "Definir Tipo de Dano",
+      "short_rule": "Permite ao jogador definir o tipo de dano para este equipamento (TAG OCULTA).",
+      "description": "Permite ao jogador definir o tipo de dano para este equipamento (TAG OCULTA)."
+    },
+    {
+      "id": "tg_set_damage_value",
+      "name": "Definir Valor do Dano",
+      "short_rule": "Permite ao jogador definir o valor do dano para este equipamento (TAG OCULTA).",
+      "description": "Permite ao jogador definir o valor do dano para este equipamento (TAG OCULTA)."
+    },
+    {
+      "id": "tg_no_cascade",
+      "name": "Previne Cascata",
+      "short_rule": "Proíbe um sistema de IA de ser reconhecido como um alvo válido para Cascata (TAG OCULTA).",
+      "description": "Proíbe um sistema de IA de ser reconhecido como um alvo válido para Cascata (TAG OCULTA)."
+    },
+    {
+      "id": "tg_irreducible",
+      "name": "Irredutível",
+      "short_rule": "Proíbe a redução de dano de qualquer fonte (TAG OCULTA).",
+      "description": "Proíbe a redução de dano de qualquer fonte (TAG OCULTA)."
+    },
+    {
+      "id": "tg_npc_system",
+      "name": "Sistema de PNJ",
+      "short_rule": "Esta característica de PNJ é categorizada como um SISTEMA.",
+      "description": "Esta característica de PNJ é categorizada como um SISTEMA."
+    },
+    {
+      "id": "tg_npc_weapon",
+      "name": "Arma de PNJ",
+      "short_rule": "Esta característica de PNJ é categorizada como uma ARMA.",
+      "description": "Esta característica de PNJ é categorizada como uma ARMA."
+    },
+    {
+      "id": "tg_npc_trait",
+      "name": "Traço de PNJ",
+      "short_rule": "Esta característica de PNJ é categorizada como um TRAÇO.",
+      "description": "Esta característica de PNJ é categorizada como um TRAÇO."
+    },
+    {
+      "id": "tg_npc_reaction",
+      "name": "Reação de PNJ",
+      "short_rule": "Esta característica de PNJ é categorizada como uma REAÇÃO.",
+      "description": "Esta característica de PNJ é categorizada como uma REAÇÃO."
+    },
+    {
+      "id": "tg_npc_tech",
+      "name": "Ação Tecnológica de PNJ",
+      "short_rule": "Esta característica de PNJ é categorizada como uma AÇÃO TECNOLÓGICA.",
+      "description": "Esta característica de PNJ é categorizada como uma AÇÃO TECNOLÓGICA."
+    }
+  ]
+};

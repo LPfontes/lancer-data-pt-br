@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LANCER RPG // Gerador de Cards para Impressão (PT-BR)</title>
+  <meta name="description" content="Gerador e impressor de cards para LANCER RPG: Ações, Armas, Sistemas, Status e Condições em Português.">
+  <link rel="stylesheet" href="cards.css">
+</head>
+<body>
+
+  <!-- ABAS DE NAVEGAÇÃO -->
+  <nav class="tabs-nav no-print">
+    <button class="tab-btn active" data-tab="catalog">
+      Catálogo
+    </button>
+    <button class="tab-btn" data-tab="preview">
+      Visualizar Impressão (<span id="queueCountBadge">0</span>)
+    </button>
+    <a href="editor.html" class="tab-btn" style="text-decoration: none; margin-left: auto;">
+      Editor Direto
+    </a>
+  </nav>
+
+  <!-- ÁREA DE CONTEÚDO PRINCIPAL -->
+  <main class="main-container">
+
+    <!-- SEÇÃO 1: CATÁLOGO DE CARDS -->
+    <section id="sectionCatalog" class="no-print">
+      
+      <!-- PAINEL DE FERRAMENTAS E FILTROS -->
+      <div class="toolbar-panel">
+        <div class="search-row">
+          <div class="search-box">
+            <input type="text" id="searchInput" class="search-input" placeholder="Buscar por nome, tag, dano ou efeito...">
+          </div>
+
+          <div class="filter-categories">
+            <button class="cat-pill active" data-category="all">
+              Todas
+            </button>
+            <button class="cat-pill" data-category="action">
+              <span class="dot"></span> Ações (Azul)
+            </button>
+            <button class="cat-pill" data-category="weapon">
+              <span class="dot"></span> Armas (Vermelho)
+            </button>
+            <button class="cat-pill" data-category="system">
+              <span class="dot"></span> Sistemas (Verde)
+            </button>
+            <button class="cat-pill" data-category="status">
+              <span class="dot"></span> Status & Condições (Amarelo)
+            </button>
+          </div>
+
+          <div>
+            <select id="selectSource" class="select-custom">
+              <option value="all">Todas as Licenças / Fontes</option>
+              <option value="GMS">GMS / SMG (Geral)</option>
+              <option value="IPS-N">IPS-N (Estrela do Norte)</option>
+              <option value="SSC">SSC (Smith-Shimano)</option>
+              <option value="HORUS">HÓRUS</option>
+              <option value="HA">HA (Arsenal Harrison)</option>
+            </select>
+          </div>
+
+          <label style="display:flex; align-items:center; gap:6px; font-size:0.85rem; color:#94a3b8; cursor:pointer;">
+            <input type="checkbox" id="chkOnlyQueued">
+            Apenas na Fila
+          </label>
+        </div>
+
+        <!-- LINHA DE ADIÇÃO RÁPIDA (PRESETS) -->
+        <div class="presets-row">
+          <span class="preset-title">Adição Rápida:</span>
+          <button class="btn btn-secondary btn-sm" onclick="window.LancerApp.quickAddBasicActions()">
+            +16 Ações Básicas
+          </button>
+          <button class="btn btn-secondary btn-sm" onclick="window.LancerApp.quickAddStatuses()">
+            +15 Status e Condições
+          </button>
+          <button class="btn btn-secondary btn-sm" onclick="window.LancerApp.quickAddGmsGear()">
+            +Equipamento Inicial GMS
+          </button>
+          <button class="btn btn-secondary btn-sm" onclick="window.LancerApp.quickAddVisible()">
+            +Todos os Visíveis
+          </button>
+          <button class="btn btn-secondary btn-sm" id="btnNewCard" style="margin-left:auto;">
+            Novo Card
+          </button>
+          <button class="btn btn-danger-outline btn-sm" id="btnClearQueue">
+            Limpar Fila
+          </button>
+        </div>
+      </div>
+
+      <!-- GRADE DO CATÁLOGO -->
+      <div id="catalogContainer" class="cards-catalog-grid">
+        <!-- Renderizado dinamicamente via cards.js -->
+      </div>
+    </section>
+
+    <!-- SEÇÃO 2: VISUALIZAÇÃO DE IMPRESSÃO (PREVIEW / FOLHAS A4) -->
+    <section id="sectionPreview" style="display: none;">
+      
+      <!-- BARRA DE CONFIGURAÇÕES DE IMPRESSÃO -->
+      <div class="print-options-bar no-print">
+        <div class="option-group">
+          <label class="option-label" style="cursor: pointer; display: flex; align-items: center; gap: 6px;">
+            <input type="checkbox" id="chkCutLines" checked>
+            Mostrar Linhas Guia de Corte (pontilhadas)
+          </label>
+        </div>
+
+        <div class="option-group">
+          <label class="option-label" for="selectTextMode">Modo de Texto nos Cards:</label>
+          <select id="selectTextMode" class="select-custom">
+            <option value="terse" selected>Resumo Tático (Recomendado)</option>
+            <option value="full">Texto Completo / Detalhado</option>
+          </select>
+        </div>
+
+        <div class="option-group">
+          <label class="option-label" for="selectPrintTextSize">Tamanho do Texto:</label>
+          <select id="selectPrintTextSize" class="select-custom">
+            <option value="xs">Extra Pequeno (5pt - Textos Longos)</option>
+            <option value="sm">Pequeno (6pt)</option>
+            <option value="md" selected>Padrão (7pt - Recomendado)</option>
+            <option value="lg">Grande (8pt - Leitura Fácil)</option>
+            <option value="xl">Muito Grande (9pt)</option>
+          </select>
+        </div>
+
+        <div class="option-group">
+          <button class="btn btn-print" onclick="window.print()">
+            Confirmar e Imprimir
+          </button>
+        </div>
+      </div>
+
+      <!-- FOLHAS A4 DE IMPRESSÃO -->
+      <div id="printPreviewContainer" class="print-preview-view">
+        <!-- Renderizado dinamicamente via cards.js -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL DE CRIAÇÃO / EDIÇÃO DE CARD -->
+  <div id="modalOverlay" class="modal-overlay no-print" style="display: none;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="modalTitle">Criar Card Personalizado</h2>
+        <button class="modal-close" id="modalClose">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <!-- Formulário -->
+        <form id="cardEditForm">
+          <input type="hidden" id="cardFormId">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="cardFormCategory">Categoria (Cor do Card)</label>
+              <select id="cardFormCategory" class="form-select">
+                <option value="action">Ação (Borda e Cabeçalho Azul)</option>
+                <option value="weapon">Arma (Borda e Cabeçalho Vermelho)</option>
+                <option value="system">Sistema (Borda e Cabeçalho Verde)</option>
+                <option value="status">Status / Condição (Borda e Cabeçalho Amarelo)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="cardFormName">Nome do Card</label>
+              <input type="text" id="cardFormName" class="form-input" required placeholder="Ex: Fuzil Antimaterial">
+            </div>
+          </div>
+
+          <!-- Campos Específicos para AÇÃO -->
+          <div id="formRowAction" class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="cardFormActivation">Tipo de Ação / Ativação</label>
+              <select id="cardFormActivation" class="form-select">
+                <option value="Rápida">Ação Rápida</option>
+                <option value="Completa">Ação Completa</option>
+                <option value="Livre">Ação Livre</option>
+                <option value="Protocolo">Protocolo</option>
+                <option value="Reação">Reação</option>
+                <option value="Movimento">Movimento</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="cardFormSource">Origem / Fabricante</label>
+              <input type="text" id="cardFormSource" class="form-input" value="GMS">
+            </div>
+          </div>
+
+          <!-- Campos Específicos para ARMA -->
+          <div id="formRowWeapon" class="form-row" style="display: none;">
+            <div class="form-group">
+              <label class="form-label" for="cardFormMount">Encaixe da Arma</label>
+              <select id="cardFormMount" class="form-select">
+                <option value="Auxiliar">Auxiliar</option>
+                <option value="Principal">Principal</option>
+                <option value="Pesada">Pesada</option>
+                <option value="Superpesada">Superpesada</option>
+                <option value="Flexível">Flexível</option>
+                <option value="Integrada">Integrada</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="cardFormWeaponType">Tipo de Arma</label>
+              <input type="text" id="cardFormWeaponType" class="form-input" placeholder="Ex: Rifle, Canhão, CQB">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="cardFormDamage">Dano</label>
+              <input type="text" id="cardFormDamage" class="form-input" placeholder="Ex: 2d6 Cinético">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="cardFormRange">Alcance / Ameaça</label>
+              <input type="text" id="cardFormRange" class="form-input" placeholder="Ex: Alcance 10, Ameaça 3">
+            </div>
+          </div>
+
+          <!-- Campos Específicos para SISTEMA -->
+          <div id="formRowSystem" class="form-row" style="display: none;">
+            <div class="form-group">
+              <label class="form-label" for="cardFormSP">Custo em SP</label>
+              <input type="number" id="cardFormSP" class="form-input" value="1" min="0" max="10">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="cardFormTags">Tags (separadas por vírgula)</label>
+            <input type="text" id="cardFormTags" class="form-input" placeholder="Ex: Precisa, Carregamento, Ordnance">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="cardFormTextSize">Tamanho do Texto no Card</label>
+            <select id="cardFormTextSize" class="form-select">
+              <option value="xs">Extra Pequeno (5pt)</option>
+              <option value="sm">Pequeno (6pt)</option>
+              <option value="md" selected>Padrão (7pt - Recomendado)</option>
+              <option value="lg">Grande (8pt)</option>
+              <option value="xl">Muito Grande (9pt)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="cardFormTerse">Resumo Tático / Efeito Rápido</label>
+            <textarea id="cardFormTerse" class="form-textarea" rows="3" placeholder="Regra principal ou resumo da ação..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="cardFormDetail">Regra Detalhada (Opcional)</label>
+            <textarea id="cardFormDetail" class="form-textarea" rows="3" placeholder="Detalhes adicionais ou exceções..."></textarea>
+          </div>
+        </form>
+
+        <!-- Coluna de Pré-visualização ao Vivo -->
+        <div class="modal-preview-col">
+          <label class="form-label">Prévia em Tempo Real</label>
+          <div id="modalCardPreview">
+            <!-- Renderizado dinamicamente -->
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" onclick="document.getElementById('modalOverlay').style.display='none'">Cancelar</button>
+        <button type="submit" form="cardEditForm" class="btn btn-primary">Salvar e Adicionar à Fila</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPT COM DADOS EMBUTIDOS (CARREGAMENTO INSTANTÂNEO OFFLINE E FILE://) -->
+  <script src="cards-data.js"></script>
+  <!-- VETORES SVG OFICIAIS DO COMP/CON -->
+  <script src="compcon-icons.js"></script>
+  <!-- SCRIPT DE LÓGICA E IMPRESSÃO -->
+  <script src="cards.js"></script>
+
+</body>
+</html>

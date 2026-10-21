@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LANCER RPG // Editor Direto de Cards (WYSIWYG)</title>
+  <meta name="description" content="Edite cards de LANCER RPG diretamente clicando e digitando sobre o próprio card em tempo real.">
+  <link rel="stylesheet" href="editor.css">
+</head>
+<body class="editor-layout">
+
+  <!-- BARRA SUPERIOR DO EDITOR -->
+  <header class="editor-topbar no-print">
+    <div class="topbar-left">
+      <a href="cards.html" class="btn btn-secondary btn-sm">
+        Voltar ao Catálogo
+      </a>
+
+      <select id="selectLoadCard" class="select-custom" style="min-width: 220px;">
+        <option value="">-- Carregar do Compêndio --</option>
+      </select>
+
+      <button class="btn btn-secondary btn-sm" id="btnNewBlank">
+        Novo em Branco
+      </button>
+    </div>
+
+    <div class="topbar-right">
+      <button class="btn btn-secondary btn-sm" id="btnSaveCard">
+        Salvar Card
+      </button>
+
+      <button class="btn btn-primary btn-sm" id="btnAddQueue">
+        + Fila de Impressão
+      </button>
+
+      <button class="btn btn-print btn-sm" id="btnPrintSingle">
+        Imprimir Card
+      </button>
+    </div>
+  </header>
+
+  <!-- ÁREA PRINCIPAL DO EDITOR -->
+  <div class="editor-main-area">
+
+    <!-- BARRA LATERAL DE FERRAMENTAS -->
+    <aside class="editor-sidebar no-print">
+      
+      <!-- SEÇÃO 1: CATEGORIA / COR DO CARD -->
+      <div class="sidebar-section">
+        <span class="sidebar-title">Categoria & Cor de Destaque</span>
+        <div class="color-picker-group">
+          <button class="color-btn active" data-cat="action">
+            Ação (Azul)
+          </button>
+          <button class="color-btn" data-cat="weapon">
+            Arma (Vermelho)
+          </button>
+          <button class="color-btn" data-cat="system">
+            Sistema (Verde)
+          </button>
+          <button class="color-btn" data-cat="status">
+            Status (Amarelo)
+          </button>
+        </div>
+      </div>
+
+      <!-- SEÇÃO 2: ZOOM DO PALCO -->
+      <div class="sidebar-section">
+        <span class="sidebar-title">Zoom de Edição</span>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <button class="btn btn-secondary btn-sm" id="btnZoomOut">-</button>
+          <span id="zoomLevelLabel" style="font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; min-width: 45px; text-align: center;">100%</span>
+          <button class="btn btn-secondary btn-sm" id="btnZoomIn">+</button>
+          <button class="btn btn-secondary btn-sm" id="btnZoomReset" style="margin-left: auto;">100%</button>
+        </div>
+      </div>
+
+      <!-- SEÇÃO 3: ADICIONAR ELEMENTOS AO CARD -->
+      <div class="sidebar-section">
+        <span class="sidebar-title">Adicionar Chips & Tags</span>
+        <button class="btn btn-secondary btn-sm" id="btnAddDmgStat">
+          + Chip de Dano
+        </button>
+        <button class="btn btn-secondary btn-sm" id="btnAddRngStat">
+          + Chip de Alcance
+        </button>
+        <button class="btn btn-secondary btn-sm" id="btnAddSpStat">
+          + Chip de SP
+        </button>
+        <button class="btn btn-secondary btn-sm" id="btnAddActStat">
+          + Chip de Ativação
+        </button>
+        <button class="btn btn-secondary btn-sm" id="btnAddTag">
+          + Tag de Propriedade
+        </button>
+      </div>
+
+      <!-- SEÇÃO 4: EDITOR DE TEXTO -->
+      <div class="sidebar-section">
+        <span class="sidebar-title">Editor de Texto</span>
+        <div style="display:flex; align-items:center; justify-content:space-between; gap:8px;">
+          <label class="form-label" style="font-size:0.75rem; margin:0;" for="sidebarTextSize">Tamanho:</label>
+          <select id="sidebarTextSize" class="select-custom" style="padding: 3px 8px; font-size: 0.8rem; flex:1;">
+            <option value="xs">Extra Pequeno (5pt)</option>
+            <option value="sm">Pequeno (6pt)</option>
+            <option value="md" selected>Padrão (7pt)</option>
+            <option value="lg">Grande (8pt)</option>
+            <option value="xl">Muito Grande (9pt)</option>
+          </select>
+        </div>
+        <label class="form-label" style="font-size:0.75rem; margin-top:6px; margin-bottom:2px;" for="sidebarTextEffect">Efeito Principal:</label>
+        <textarea id="sidebarTextEffect" class="form-textarea" rows="4" placeholder="Efeito principal do card..."></textarea>
+        
+        <label class="form-label" style="font-size:0.75rem; margin-top:6px; margin-bottom:2px;" for="sidebarTextDetail">Regras Detalhadas:</label>
+        <textarea id="sidebarTextDetail" class="form-textarea" rows="5" placeholder="Regras detalhadas e adicionais..."></textarea>
+      </div>
+
+      <!-- SEÇÃO 5: SEÇÕES OPCIONAIS -->
+      <div class="sidebar-section">
+        <span class="sidebar-title">Seções do Card</span>
+        <button class="btn btn-secondary btn-sm" id="btnToggleDetail">
+          Alternar Regra Detalhada
+        </button>
+      </div>
+
+    </aside>
+
+    <!-- PALCO CENTRAL DE EDIÇÃO DIRETA -->
+    <main class="editor-stage">
+
+      <!-- BARRA DE FORMATAÇÃO DE TEXTO -->
+      <div class="text-format-toolbar no-print">
+        <span style="font-size:0.8rem; color:var(--ui-text-muted); font-weight:600; margin-right:4px;">Texto:</span>
+        <button class="format-btn" id="btnFormatBold" title="Negrito">Negrito</button>
+        <button class="format-btn" id="btnFormatItalic" title="Itálico">Itálico</button>
+        <button class="format-btn" id="btnFormatList" title="Lista com Marcadores">Lista (•)</button>
+        <button class="format-btn" id="btnFormatClear" title="Limpar Formatação">Limpar</button>
+
+        <div class="format-divider"></div>
+
+        <span style="font-size:0.8rem; color:var(--ui-text-muted); font-weight:600;">Tamanho:</span>
+        <button class="format-btn" id="btnTextSizeDown" title="Diminuir tamanho do texto">A-</button>
+        <select id="selectCardTextSize" class="select-custom" style="padding: 2px 8px; font-size: 0.8rem; height: 28px;">
+          <option value="xs">Extra Pequeno (5pt)</option>
+          <option value="sm">Pequeno (6pt)</option>
+          <option value="md" selected>Padrão (7pt)</option>
+          <option value="lg">Grande (8pt)</option>
+          <option value="xl">Muito Grande (9pt)</option>
+        </select>
+        <button class="format-btn" id="btnTextSizeUp" title="Aumentar tamanho do texto">A+</button>
+      </div>
+
+      <div class="stage-wrapper" id="stageWrapper">
+        <div id="editorCardCanvas">
+          <!-- O Card é renderizado e editado diretamente aqui -->
+        </div>
+      </div>
+
+      <div class="editor-hint no-print">
+        Clique em qualquer texto do card para editar diretamente, ou use o Editor de Texto na barra lateral
+      </div>
+    </main>
+
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="cards-data.js"></script>
+  <script src="compcon-icons.js"></script>
+  <script src="editor.js"></script>
+
+</body>
+</html>

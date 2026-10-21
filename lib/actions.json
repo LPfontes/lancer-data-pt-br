@@ -12,7 +12,7 @@
     "name": "Sobrecarregar",
     "activation": "Livre",
     "terse": "SOBRECARREGAR permite que você realize imediatamente qualquer ação rápida de sua escolha como uma Ação Livre, mesmo uma que você já tenha feito neste turno.",
-    "detail": "Quando SOBRECARREGAR, você brevemente leva seu mecha além das especificações de fábrica para receber uma vantagem tática. Momentos de ação intensa não vão taxar muito os sistemas do mecha, mas ação constante além dos limites prescritos tem seu preço.<br>Uma vez por turno, você pode SOBRECARREGAR seu mecha, permitindo fazer qualquer ação rápida como uma ação livre – mesmo que sejam ações que já foram feitas neste turno.<br>Na primeira vez que SOBRECARREGAR, você sofre 1 de calor.<br>Na segunda vez que SOBRECARREGAR, você sofre 1d3 de calor.<br>Na terceira vez, você sofre 1d6 de calor, e toda vez após isso você sofre $1d6+4$ de calor.<br>Um REPARO COMPLETO reinicia essa contagem.",
+    "detail": "Quando SOBRECARREGAR, você brevemente leva seu mecha além das especificações de fábrica para receber uma vantagem tática. Momentos de ação intensa não vão taxar muito os sistemas do mecha, mas ação constante além dos limites prescritos tem seu preço.<br>Uma vez por turno, você pode SOBRECARREGAR seu mecha, permitindo fazer qualquer ação rápida como uma ação livre – mesmo que sejam ações que já foram feitas neste turno.<br>Na primeira vez que SOBRECARREGAR, você sofre 1 de calor.<br>Na segunda vez que SOBRECARREGAR, você sofre 1d3 de calor.<br>Na terceira vez, você sofre 1d6 de calor, e toda vez após isso você sofre 1d6+4 de calor.<br>Um REPARO COMPLETO reinicia essa contagem.",
     "confirm": [
       "LIMITADOR DO REATOR DESATIVADO. TEMPERATURAS DO NÚCLEO AUMENTANDO."
     ]
