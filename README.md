@@ -28,7 +28,7 @@ import { systems, weapons } from 'lancer-data-pt-br';
 |---|---|
 | `actions.json` | Ações básicas e especiais |
 | `backgrounds.json` | Antecedentes de piloto |
-| `core_bonuses.json` | Bônus de núcleo |
+| `core_bonuses.json` | Bônus de Núcleo |
 | `frames.json` | Chassis de mecha |
 | `mods.json` | Modificações de armas |
 | `pilot_gear.json` | Equipamento de piloto |

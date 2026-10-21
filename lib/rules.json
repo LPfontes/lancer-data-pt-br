@@ -53,11 +53,11 @@
     },
     {
       "attr": "dex",
-      "description": "agir com habilidade e precisão sob pressão"
+      "description": "agir com habilidade e Precisão sob pressão"
     },
     {
       "attr": "int",
-      "description": "notar detalhes, pensar criativamente e se preparar"
+      "description": "notar detalhes, pensar criativamente e se <b>Preparar</b>"
     },
     {
       "attr": "cha",
