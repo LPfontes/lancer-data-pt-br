@@ -25,7 +25,8 @@ const cleanText = (text) => {
   const str = extractText(text);
   if (!str) return '';
   return str
-    .replace(/<cite:[^>]+>/g, '')
+    .replace(/<cite:[^>]+>/gi, '')
+    .replace(/\[cite:[^\]]+\]/gi, '')
     .replace(/<br\s*\/?>/gi, '\n')
     .replace(/\\n/g, '\n')
     .replace(/[ \t]+/g, ' ')
@@ -135,7 +136,8 @@ const cleanSingleLine = (text) => {
   const str = extractText(text);
   if (!str) return '';
   return str
-    .replace(/<cite:[^>]+>/g, '')
+    .replace(/<cite:[^>]+>/gi, '')
+    .replace(/\[cite:[^\]]+\]/gi, '')
     .replace(/<br\s*\/?>/gi, ' ')
     .replace(/\\n/g, ' ')
     .replace(/\s+/g, ' ')

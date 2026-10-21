@@ -502,7 +502,8 @@
   function cleanText(text) {
     if (!text) return '';
     return text
-      .replace(/<cite:[^>]+>/g, '')
+      .replace(/<cite:[^>]+>/gi, '')
+      .replace(/\[cite:[^\]]+\]/gi, '')
       .replace(/<br\s*\/?>/gi, ' ')
       .replace(/\\n/g, ' ')
       .replace(/\s+/g, ' ')

@@ -51,7 +51,7 @@
   {
     "id": "mw_charged_blade",
     "category": "weapon",
-    "name": "Lâmina Carregada",
+    "name": "Lâmina Energizada",
     "mount": "Principal",
     "type": "Corpo a Corpo",
     "damage": "1d3+3 Energético",
@@ -99,7 +99,7 @@
   {
     "id": "mw_heavy_charged_blade",
     "category": "weapon",
-    "name": "Lâmina Pesada Carregada",
+    "name": "Lâmina Energizada Pesada",
     "mount": "Pesada",
     "type": "Corpo a Corpo",
     "damage": "1d6+3 Energético",
@@ -166,7 +166,7 @@
   {
     "id": "mw_howitzer",
     "category": "weapon",
-    "name": "Obuseiro",
+    "name": "Obus",
     "mount": "Pesada",
     "type": "Canhão",
     "damage": "2d6 Explosivo",
@@ -192,7 +192,7 @@
   {
     "id": "mw_missile_rack",
     "category": "weapon",
-    "name": "Suporte de Mísseis",
+    "name": "Caixa de Mísseis",
     "mount": "Auxiliar",
     "type": "Lançador",
     "damage": "1d3+1 Explosivo",
@@ -239,7 +239,7 @@
   {
     "id": "mw_nexus_hunter_killer",
     "category": "weapon",
-    "name": "Nexo (Caçador-Assassino)",
+    "name": "Nexo (Caçador Assassino)",
     "mount": "Principal",
     "type": "Nexo",
     "damage": "1d6 Cinético",
@@ -285,7 +285,7 @@
   {
     "id": "mw_pistol",
     "category": "weapon",
-    "name": "Pistola",
+    "name": "Pistola CQR",
     "mount": "Auxiliar",
     "type": "Combate Próximo (CQB)",
     "damage": "1d3 Cinético",
@@ -308,7 +308,7 @@
   {
     "id": "mw_segment_knife",
     "category": "weapon",
-    "name": "Faca de Segmento",
+    "name": "Faca Segmentada",
     "mount": "Auxiliar",
     "type": "Corpo a Corpo",
     "damage": "1d3+1 Energético",
@@ -331,7 +331,7 @@
   {
     "id": "mw_rocket_propelled_grenade",
     "category": "weapon",
-    "name": "Granada Autopropelida",
+    "name": "Lança-Foguetes",
     "mount": "Principal",
     "type": "Lançador",
     "damage": "1d6+1 Explosivo",
@@ -355,7 +355,7 @@
   {
     "id": "mw_shotgun",
     "category": "weapon",
-    "name": "Escopeta",
+    "name": "Espingarda",
     "mount": "Principal",
     "type": "Combate Próximo (CQB)",
     "damage": "1d6 Cinético",
@@ -455,8 +455,8 @@
     "sp": 0,
     "tags": [],
     "tags_summary": "",
-    "terse": "Assim como os mechas da SMG, as armas da SMG são padrões galácticos confiáveis, feitas com peças intercambiáveis e construídas para suportar quase todas as condições. Existem três linhas atualmente em produção. A linha Tipo-II (T-2) exibe as armas corpo a corpo 'carregadas' e as armas de energia proprietárias da SMG.",
-    "detail": "Assim como os mechas da SMG, as armas da SMG são padrões galácticos confiáveis, feitas com peças intercambiáveis e construídas para suportar quase todas as condições. Existem três linhas atualmente em produção. A linha Tipo-II (T-2) exibe as armas corpo a corpo 'carregadas' e as armas de energia proprietárias da SMG.",
+    "terse": "Assim como os mechas da SMG, as armas da SMG são padrões galácticos confiáveis, feitas com peças intercambiáveis e construídas para <b>Suportar</b> quase todas as condições. Existem três linhas atualmente em produção. A <b>Linha</b> Tipo-II (T-2) exibe as armas corpo a corpo 'carregadas' e as armas de <b>Energia</b> proprietárias da SMG.",
+    "detail": "Assim como os mechas da SMG, as armas da SMG são padrões galácticos confiáveis, feitas com peças intercambiáveis e construídas para <b>Suportar</b> quase todas as condições. Existem três linhas atualmente em produção. A <b>Linha</b> Tipo-II (T-2) exibe as armas corpo a corpo 'carregadas' e as armas de <b>Energia</b> proprietárias da SMG.",
     "source": "GMS",
     "license": "GMS",
     "license_level": 0
@@ -487,7 +487,7 @@
   {
     "id": "mw_chain_axe",
     "category": "weapon",
-    "name": "Machado de Serra",
+    "name": "Machado de Corrente",
     "mount": "Principal",
     "type": "Corpo a Corpo",
     "damage": "1d6 Cinético",
@@ -501,8 +501,8 @@
       "Confiável 2"
     ],
     "tags_summary": "Confiável 2 (causa 2 de dano mesmo se errar o ataque)",
-    "terse": "<b>[No Crítico]</b> Seu alvo fica DILACERADO até o final do turno atual.\nTags: Confiável 2 (causa 2 de dano mesmo se errar o ataque)",
-    "detail": "<b>[No Crítico]</b> Seu alvo fica DILACERADO até o final do turno atual.\nTags: Confiável 2 (causa 2 de dano mesmo se errar o ataque)\nPropriedades:\n• Confiável 2 (causa 2 de dano mesmo se errar o ataque)",
+    "terse": "<b>[No Crítico]</b> O seu alvo fica <b>Dilacerado</b> até fim do seu turno.\nTags: Confiável 2 (causa 2 de dano mesmo se errar o ataque)",
+    "detail": "<b>[No Crítico]</b> O seu alvo fica <b>Dilacerado</b> até fim do seu turno.\nTags: Confiável 2 (causa 2 de dano mesmo se errar o ataque)\nPropriedades:\n• Confiável 2 (causa 2 de dano mesmo se errar o ataque)",
     "source": "IPS-N",
     "license": "Blackbeard",
     "license_level": 1
@@ -510,7 +510,7 @@
   {
     "id": "mw_bristlecrown_flechette_launcher",
     "category": "weapon",
-    "name": "Lançador de Dardos Bristlecrown",
+    "name": "Lançador de Flechete Coroa",
     "mount": "Auxiliar",
     "type": "Combate Próximo (CQB)",
     "damage": "1 Cinético",
@@ -522,8 +522,8 @@
     "sp": 0,
     "tags": [],
     "tags_summary": "",
-    "terse": "Esta arma ignora penalidades à distância por estar ENGAJADO e causa 3 de dano Cinético a alvos AGARRADOS ou Biológicos, em vez de 1.",
-    "detail": "Esta arma ignora penalidades à distância por estar ENGAJADO e causa 3 de dano Cinético a alvos AGARRADOS ou Biológicos, em vez de 1.",
+    "terse": "Esta arma ignora as penalidades de distância quando você estiver <b>Engajado</b> e causa <b>3 de Dano Cinético</b> (em vez de 1) em alvos Agarrados ou Biológicos.",
+    "detail": "Esta arma ignora as penalidades de distância quando você estiver <b>Engajado</b> e causa <b>3 de Dano Cinético</b> (em vez de 1) em alvos Agarrados ou Biológicos.",
     "source": "IPS-N",
     "license": "Blackbeard",
     "license_level": 2
@@ -566,8 +566,8 @@
     "sp": 0,
     "tags": [],
     "tags_summary": "",
-    "terse": "O canhão de assalto de escolha da EIP-EN é um canhão automático de resfriamento profundo, utilizável como arma montada ou plataforma operada por manipulador. O canhão, simples em sua funcionalidade, pode ser alimentado por carregador de caixa ou por fita e é uma inclusão padrão em quase todos os pedidos de frota da EIP-EN. Em ambientes de micro e gravidade zero, os pilotos do Drake comumente empregam o canhão de assalto como um sistema de propulsão adicional.",
-    "detail": "O canhão de assalto de escolha da EIP-EN é um canhão automático de resfriamento profundo, utilizável como arma montada ou plataforma operada por manipulador. O canhão, simples em sua funcionalidade, pode ser alimentado por carregador de caixa ou por fita e é uma inclusão padrão em quase todos os pedidos de frota da EIP-EN. Em ambientes de micro e gravidade zero, os pilotos do Drake comumente empregam o canhão de assalto como um sistema de propulsão adicional.",
+    "terse": "O canhão de assalto clássico da EIP-EN é um canhão automático refrigerado, utilizável como uma arma montada ou plataforma operada por atiradores. O canhão, simples em sua funcionalidade, pode ser alimentado tanto por cartuchos de caixa quanto por cintos e é uma inclusão padrão em praticamente qualquer pedido de frota da EIP-EN. Em ambientes micro e de <b>gravidade zero</b>, os pilotos do Drake costumam empregar o canhão de assalto como um sistema de propulsão adicional.",
+    "detail": "O canhão de assalto clássico da EIP-EN é um canhão automático refrigerado, utilizável como uma arma montada ou plataforma operada por atiradores. O canhão, simples em sua funcionalidade, pode ser alimentado tanto por cartuchos de caixa quanto por cintos e é uma inclusão padrão em praticamente qualquer pedido de frota da EIP-EN. Em ambientes micro e de <b>gravidade zero</b>, os pilotos do Drake costumam empregar o canhão de assalto como um sistema de propulsão adicional.",
     "source": "IPS-N",
     "license": "Drake",
     "license_level": 1
@@ -589,8 +589,8 @@
       "Repulsão 2"
     ],
     "tags_summary": "Repulsão 2 (empurra o alvo 2 espaços)",
-    "terse": "<b>[No Acerto]</b> O alvo deve ser bem-sucedido em um salvamento de CASCO ou ficar <b>IMPEDIDO</b> até o final do próximo turno dele.\nTags: Repulsão 2 (empurra o alvo 2 espaços)",
-    "detail": "<b>[No Acerto]</b> O alvo deve ser bem-sucedido em um salvamento de CASCO ou ficar <b>IMPEDIDO</b> até o final do próximo turno dele.\nTags: Repulsão 2 (empurra o alvo 2 espaços)\nPropriedades:\n• Repulsão 2 (empurra o alvo 2 espaços)",
+    "terse": "<b>[No Acerto]</b> O alvo deve ter sucesso em uma salvaguarda de Casco ou ficar <b>Impedido</b> até o final do próximo turno dele.\nTags: Repulsão 2 (empurra o alvo 2 espaços)",
+    "detail": "<b>[No Acerto]</b> O alvo deve ter sucesso em uma salvaguarda de Casco ou ficar <b>Impedido</b> até o final do próximo turno dele.\nTags: Repulsão 2 (empurra o alvo 2 espaços)\nPropriedades:\n• Repulsão 2 (empurra o alvo 2 espaços)",
     "source": "IPS-N",
     "license": "Drake",
     "license_level": 2
@@ -610,8 +610,8 @@
     "sp": 0,
     "tags": [],
     "tags_summary": "",
-    "terse": "O Canhão de Assalto Pesado (CAP) Leviatã é um canhão rotativo maciço de múltiplos canos, alimentado por um reservatório externo, geralmente montado dorsalmente no chassi que o transporta. Sem modificações, o Leviatã só deve ser disparado dentro das especificações de tempo de rajada recomendadas para evitar traumas percussivos nas juntas e nos pilotos. Em parceria com o Think Tank do Arsenal Harrison, a EIP-EN está atualmente investigando soluções remotas para as demandas de consumo de munição do canhão.",
-    "detail": "O Canhão de Assalto Pesado (CAP) Leviatã é um canhão rotativo maciço de múltiplos canos, alimentado por um reservatório externo, geralmente montado dorsalmente no chassi que o transporta. Sem modificações, o Leviatã só deve ser disparado dentro das especificações de tempo de rajada recomendadas para evitar traumas percussivos nas juntas e nos pilotos. Em parceria com o Think Tank do Arsenal Harrison, a EIP-EN está atualmente investigando soluções remotas para as demandas de consumo de munição do canhão.",
+    "terse": "O Canhão de Assalto Pesado (CAS) Leviatã é um canhão rotativo maciço de múltiplos canos alimentados por um reservatório externo, geralmente montado dorsalmente no chassi que o transporta. Sem modificações, o Leviatã só deve ser disparado dentro das especificações de tempo de <b>Explosão</b> recomendadas para evitar trauma percussivo nas juntas e nos pilotos. Em parceria com o Ideário da Arsenal Harrison, a EIP-EN está atualmente investigando soluções remotas para as demandas de consumo de munição do canhão.",
+    "detail": "O Canhão de Assalto Pesado (CAS) Leviatã é um canhão rotativo maciço de múltiplos canos alimentados por um reservatório externo, geralmente montado dorsalmente no chassi que o transporta. Sem modificações, o Leviatã só deve ser disparado dentro das especificações de tempo de <b>Explosão</b> recomendadas para evitar trauma percussivo nas juntas e nos pilotos. Em parceria com o Ideário da Arsenal Harrison, a EIP-EN está atualmente investigando soluções remotas para as demandas de consumo de munição do canhão.",
     "source": "IPS-N",
     "license": "Drake",
     "license_level": 3
@@ -619,7 +619,7 @@
   {
     "id": "mw_cutter_mkii_plasma_torch",
     "category": "weapon",
-    "name": "Tocha de Plasma Cortadora MkII",
+    "name": "Tocha de Plasma Cortadora Mk II",
     "mount": "Auxiliar",
     "type": "Corpo a Corpo",
     "damage": "1 Energético + 1 Calor + 1 Queimadura",
@@ -633,8 +633,8 @@
       "Calor 1 (Próprio)"
     ],
     "tags_summary": "Calor 1 (sofre 1 de calor ao disparar)",
-    "terse": "Esta arma causa 10 de dano energético PF a objetos, cobertura, terreno e ao ambiente.",
-    "detail": "Esta arma causa 10 de dano energético PF a objetos, cobertura, terreno e ao ambiente.\nPropriedades:\n• Calor 1 (sofre 1 de calor ao disparar)",
+    "terse": "Esta arma causa 10 de <b>Energia</b>(PF) a objetos, cobertura, terreno e ambiente.",
+    "detail": "Esta arma causa 10 de <b>Energia</b>(PF) a objetos, cobertura, terreno e ambiente.\nPropriedades:\n• Calor 1 (sofre 1 de calor ao disparar)",
     "source": "IPS-N",
     "license": "Lancaster",
     "license_level": 3
@@ -666,7 +666,7 @@
   {
     "id": "mw_power_knuckles",
     "category": "weapon",
-    "name": "Soqueiras de Energia",
+    "name": "Punhos de Poder",
     "mount": "Auxiliar",
     "type": "Corpo a Corpo",
     "damage": "1d3+1 Explosivo",
@@ -678,8 +678,8 @@
     "sp": 0,
     "tags": [],
     "tags_summary": "",
-    "terse": "<b>[No Crítico]</b> Seu alvo deve ser bem-sucedido em um salvamento de CASCO ou ficar <b>PROSTRADO</b>.",
-    "detail": "<b>[No Crítico]</b> Seu alvo deve ser bem-sucedido em um salvamento de CASCO ou ficar <b>PROSTRADO</b>.",
+    "terse": "<b>[No Crítico]</b> O seu alvo deve ter sucesso em uma salvaguarda de Casco ou ser derrubado <b>Caído</b>.",
+    "detail": "<b>[No Crítico]</b> O seu alvo deve ter sucesso em uma salvaguarda de Casco ou ser derrubado <b>Caído</b>.",
     "source": "IPS-N",
     "license": "Nelson",
     "license_level": 3
@@ -711,7 +711,7 @@
   {
     "id": "mw_bolt_thrower",
     "category": "weapon",
-    "name": "Lançador de Virotes",
+    "name": "Balestra",
     "mount": "Pesada",
     "type": "Canhão",
     "damage": "2d6 Cinético + 1d6 Explosivo",
@@ -758,7 +758,7 @@
   {
     "id": "mw_deck_sweeper_automatic_shotgun",
     "category": "weapon",
-    "name": "Escopeta Automática Limpa-Convés",
+    "name": "Espingarda Automática Varredora de Convés",
     "mount": "Principal",
     "type": "Combate Próximo (CQB)",
     "damage": "2d6 Cinético",
@@ -781,7 +781,7 @@
   {
     "id": "mw_daisy_cutter",
     "category": "weapon",
-    "name": "Corta-Margaridas",
+    "name": "Cortadora Margarida",
     "mount": "Pesada",
     "type": "Combate Próximo (CQB)",
     "damage": "3d6 Cinético",
@@ -795,8 +795,8 @@
       "Limitado 2"
     ],
     "tags_summary": "Limitada 2 (2 usos por missão)",
-    "terse": "<b>[Ao Atacar]</b> Cria uma nuvem de fumaça e detritos no cone de ataque, fornecendo cobertura leve na área afetada que dura até o final de seu próximo turno.\nTags: Limitada 2 (2 usos por missão)",
-    "detail": "<b>[Ao Atacar]</b> Cria uma nuvem de fumaça e detritos no cone de ataque, fornecendo cobertura leve na área afetada que dura até o final de seu próximo turno.\nTags: Limitada 2 (2 usos por missão)\nPropriedades:\n• Limitada 2 (2 usos por missão)",
+    "terse": "<b>[Ao Atacar]</b> Cria uma nuvem de fumaça e detritos no cone de ataque, fornecendo <b>Cobertura Leve</b> na área afetada que dura até o final do seu próximo turno.\nTags: Limitada 2 (2 usos por missão)",
+    "detail": "<b>[Ao Atacar]</b> Cria uma nuvem de fumaça e detritos no cone de ataque, fornecendo <b>Cobertura Leve</b> na área afetada que dura até o final do seu próximo turno.\nTags: Limitada 2 (2 usos por missão)\nPropriedades:\n• Limitada 2 (2 usos por missão)",
     "source": "IPS-N",
     "license": "Tortuga",
     "license_level": 2
@@ -818,8 +818,8 @@
       "Recarga"
     ],
     "tags_summary": "Carregamento (precisa de ação rápida ou estabilizar para recarregar)",
-    "terse": "<b>[No Crítico]</b> Seu alvo fica <b>ATORDOADO</b> até o final do próximo turno dele.\nTags: Carregamento (precisa de <b>ação rápida</b> ou estabilizar para recarregar)",
-    "detail": "<b>[No Crítico]</b> Seu alvo fica <b>ATORDOADO</b> até o final do próximo turno dele.\nTags: Carregamento (precisa de <b>ação rápida</b> ou estabilizar para recarregar)\nPropriedades:\n• Carregamento (precisa de <b>ação rápida</b> ou estabilizar para recarregar)",
+    "terse": "<b>[No Crítico]</b> O seu alvo deve ter sucesso em uma salvaguarda de Casco ou ficar <b>Atordoado</b> até o final do próximo turno dele.\nTags: Carregamento (precisa de <b>ação rápida</b> ou estabilizar para recarregar)",
+    "detail": "<b>[No Crítico]</b> O seu alvo deve ter sucesso em uma salvaguarda de Casco ou ficar <b>Atordoado</b> até o final do próximo turno dele.\nTags: Carregamento (precisa de <b>ação rápida</b> ou estabilizar para recarregar)\nPropriedades:\n• Carregamento (precisa de <b>ação rápida</b> ou estabilizar para recarregar)",
     "source": "IPS-N",
     "license": "Tortuga",
     "license_level": 2
@@ -839,8 +839,8 @@
     "sp": 0,
     "tags": [],
     "tags_summary": "",
-    "terse": "<b>[Ao Atacar]</b> Você também ataca todos os personagens em uma Linha entre você e seu alvo. Você sofre 1 de calor para cada alvo além do primeiro.",
-    "detail": "<b>[Ao Atacar]</b> Você também ataca todos os personagens em uma Linha entre você e seu alvo. Você sofre 1 de calor para cada alvo além do primeiro.",
+    "terse": "<b>[Ao Atacar]</b> Você também ataca todos os personagens em uma <b>Linha</b> entre você e o seu alvo. Você sofre 1 de calor para cada alvo além do primeiro.",
+    "detail": "<b>[Ao Atacar]</b> Você também ataca todos os personagens em uma <b>Linha</b> entre você e o seu alvo. Você sofre 1 de calor para cada alvo além do primeiro.",
     "source": "IPS-N",
     "license": "Vlad",
     "license_level": 1
@@ -862,8 +862,8 @@
       "Calor 1 (Próprio)"
     ],
     "tags_summary": "Calor 1 (sofre 1 de calor ao disparar)",
-    "terse": "<b>[No Acerto]</b> Os alvos devem ser bem-sucedidos em um salvamento de CASCO ou ficarem IMOBILIZADOS até o final do próximo turno deles.\nTags: Calor 1 (sofre 1 de calor ao disparar)",
-    "detail": "<b>[No Acerto]</b> Os alvos devem ser bem-sucedidos em um salvamento de CASCO ou ficarem IMOBILIZADOS até o final do próximo turno deles.\nTags: Calor 1 (sofre 1 de calor ao disparar)\nPropriedades:\n• Calor 1 (sofre 1 de calor ao disparar)",
+    "terse": "<b>[No Acerto]</b> Os alvos devem obter sucesso em uma salvaguarda de Casco ou ficar <b>Impedido</b> até o final do próximo turno deles.\nTags: Calor 1 (sofre 1 de calor ao disparar)",
+    "detail": "<b>[No Acerto]</b> Os alvos devem obter sucesso em uma salvaguarda de Casco ou ficar <b>Impedido</b> até o final do próximo turno deles.\nTags: Calor 1 (sofre 1 de calor ao disparar)\nPropriedades:\n• Calor 1 (sofre 1 de calor ao disparar)",
     "source": "IPS-N",
     "license": "Vlad",
     "license_level": 2
@@ -886,8 +886,8 @@
       "Exagero"
     ],
     "tags_summary": "PF (ignora Armadura); Excesso (rolou 1 no dano: sofre 1 de calor e rerrola o 1)",
-    "terse": "Ao atacar um personagem que esteja CAÍDO, IMOBILIZADO ou <b>ATORDOADO</b>, a tag Excesso desta arma causa +1d6 de dano bônus extra cada vez que for ativada. Isso pode ser ativado indefinidamente se o novo resultado do dado de bônus for 1, acionando o Excesso novamente.",
-    "detail": "Ao atacar um personagem que esteja CAÍDO, IMOBILIZADO ou <b>ATORDOADO</b>, a tag Excesso desta arma causa +1d6 de dano bônus extra cada vez que for ativada. Isso pode ser ativado indefinidamente se o novo resultado do dado de bônus for 1, acionando o Excesso novamente.\nPropriedades:\n• PF (ignora <b>Armadura</b>)\n• Excesso (rolou 1 no dano: sofre 1 de calor e rerrola o 1)",
+    "terse": "Ao atacar um personagem que está <b>Prostrado</b>, <b>Imobilizado</b> ou <b>Atordoado</b>, a tag Exagerado desta arma causa +1d6 <b>Dano bônus</b> sempre que for ativada. Isso pode ser ativado indefinidamente se o novo resultado do dado bônus for um 1, acionando Exagerado novamente.",
+    "detail": "Ao atacar um personagem que está <b>Prostrado</b>, <b>Imobilizado</b> ou <b>Atordoado</b>, a tag Exagerado desta arma causa +1d6 <b>Dano bônus</b> sempre que for ativada. Isso pode ser ativado indefinidamente se o novo resultado do dado bônus for um 1, acionando Exagerado novamente.\nPropriedades:\n• PF (ignora <b>Armadura</b>)\n• Excesso (rolou 1 no dano: sofre 1 de calor e rerrola o 1)",
     "source": "IPS-N",
     "license": "Vlad",
     "license_level": 3
@@ -907,8 +907,8 @@
     "sp": 0,
     "tags": [],
     "tags_summary": "",
-    "terse": "<b>[No Acerto]</b> Todos os personagens dentro da área afetada devem ser bem-sucedidos em um salvamento de CASCO ou serem puxados 1d3+1 espaços em direção ao centro da área.",
-    "detail": "<b>[No Acerto]</b> Todos os personagens dentro da área afetada devem ser bem-sucedidos em um salvamento de CASCO ou serem puxados 1d3+1 espaços em direção ao centro da área.",
+    "terse": "<b>[No Acerto]</b> Todos os personagens dentro da área afetada devem obter sucesso em uma salvaguarda de Casco ou ser puxados <b>1d3+1 espaços</b> em sua direção, ou o mais perto possível.",
+    "detail": "<b>[No Acerto]</b> Todos os personagens dentro da área afetada devem obter sucesso em uma salvaguarda de Casco ou ser puxados <b>1d3+1 espaços</b> em sua direção, ou o mais perto possível.",
     "source": "SSC",
     "license": "Black Witch",
     "license_level": 1
@@ -916,7 +916,7 @@
   {
     "id": "mw_vulture_dmr",
     "category": "weapon",
-    "name": "Fuzil de Precisão Vulture",
+    "name": "FAD Abutre",
     "mount": "Principal",
     "type": "Rifle",
     "damage": "1d6+1 Cinético",
@@ -980,8 +980,8 @@
       "Precisa"
     ],
     "tags_summary": "Precisa (+1d6 no ataque)",
-    "terse": "Esta arma não ataca personagens aliados pegos em sua área de efeito; em vez disso, ela os envolve em um campo de energia coruscante que confunde os sistemas de mira, dando-lhes cobertura leve até o final de seu próximo turno.",
-    "detail": "Esta arma não ataca personagens aliados pegos em sua área de efeito; em vez disso, ela os envolve em um campo de energia coruscante que confunde os sistemas de mira, dando-lhes cobertura leve até o final de seu próximo turno.\nPropriedades:\n• Precisa (+1d6 no ataque)",
+    "terse": "Esta arma não ataca personagens aliados pegos em sua área de efeito; em vez disso, ela os envolve em um campo de <b>Energia</b> coruscante que confunde os Sistemas de mira, dando-lhes <b>Cobertura Leve</b>. até o final de seu próximo turno.",
+    "detail": "Esta arma não ataca personagens aliados pegos em sua área de efeito; em vez disso, ela os envolve em um campo de <b>Energia</b> coruscante que confunde os Sistemas de mira, dando-lhes <b>Cobertura Leve</b>. até o final de seu próximo turno.\nPropriedades:\n• Precisa (+1d6 no ataque)",
     "source": "SSC",
     "license": "Dusk Wing",
     "license_level": 1
@@ -1004,8 +1004,8 @@
       "Arco"
     ],
     "tags_summary": "Precisa (+1d6 no ataque); Arco (ignora cobertura se tiver visão indireta)",
-    "terse": "<b>[No Crítico]</b> O alvo fica <b>IMPEDIDO</b> até o final do próximo turno dele.\nTags: Precisa (+1d6 no ataque) • Arco (ignora cobertura se tiver visão indireta)",
-    "detail": "<b>[No Crítico]</b> O alvo fica <b>IMPEDIDO</b> até o final do próximo turno dele.\nTags: Precisa (+1d6 no ataque) • Arco (ignora cobertura se tiver visão indireta)\nPropriedades:\n• Precisa (+1d6 no ataque)\n• Arco (ignora cobertura se tiver visão indireta)",
+    "terse": "<b>[No Crítico]</b> O alvo fica <b>Impedido</b> até o final do próximo turno dele.\nTags: Precisa (+1d6 no ataque) • Arco (ignora cobertura se tiver visão indireta)",
+    "detail": "<b>[No Crítico]</b> O alvo fica <b>Impedido</b> até o final do próximo turno dele.\nTags: Precisa (+1d6 no ataque) • Arco (ignora cobertura se tiver visão indireta)\nPropriedades:\n• Precisa (+1d6 no ataque)\n• Arco (ignora cobertura se tiver visão indireta)",
     "source": "SSC",
     "license": "Dusk Wing",
     "license_level": 2
@@ -1013,7 +1013,7 @@
   {
     "id": "mw_rail_rifle",
     "category": "weapon",
-    "name": "Fuzil Elétrico",
+    "name": "Fuzil Linear",
     "mount": "Principal",
     "type": "Rifle",
     "damage": "1d6+1 Cinético",
@@ -1123,8 +1123,8 @@
       "Calor 2 (Próprio)"
     ],
     "tags_summary": "Arco (ignora cobertura se tiver visão indireta); Calor 2 (sofre 2 de calor ao disparar)",
-    "terse": "Ataques com esta arma criam até duas áreas de EXPLOSÃO 1, que não podem se sobrepor.\nVocê também pode atrasar o impacto dos ataques feitos com esta arma. Escolha a(s) área(s) alvo, que se tornam visíveis para todos os personagens: os mísseis aterrissam no final da próxima rodada, após todos os personagens terem agido, e causam 3d6 de dano explosivo em vez de 2d6, mas você fica <b>LENTO</b> até o final de seu próximo turno.",
-    "detail": "Ataques com esta arma criam até duas áreas de EXPLOSÃO 1, que não podem se sobrepor.\nVocê também pode atrasar o impacto dos ataques feitos com esta arma. Escolha a(s) área(s) alvo, que se tornam visíveis para todos os personagens: os mísseis aterrissam no final da próxima rodada, após todos os personagens terem agido, e causam 3d6 de dano explosivo em vez de 2d6, mas você fica <b>LENTO</b> até o final de seu próximo turno.\nPropriedades:\n• Arco (ignora cobertura se tiver visão indireta)\n• Calor 2 (sofre 2 de calor ao disparar)",
+    "terse": "Ataques com esta arma criam até duas áreas de <b>Explosão</b> 1, que não podem se sobrepor.\nVocê também pode atrasar o impacto dos ataques feitos com esta arma. Escolha a(s) área(s) alvo, que se tornam visíveis para todos os personagens: os mísseis aterrissam no final da próxima rodada, após todos os personagens terem agido, e causam <b>3d6 de Dano</b> EXPLOSIVO em vez de 2d6, mas você fica <b>Lento</b> até o final de seu próximo turno.",
+    "detail": "Ataques com esta arma criam até duas áreas de <b>Explosão</b> 1, que não podem se sobrepor.\nVocê também pode atrasar o impacto dos ataques feitos com esta arma. Escolha a(s) área(s) alvo, que se tornam visíveis para todos os personagens: os mísseis aterrissam no final da próxima rodada, após todos os personagens terem agido, e causam <b>3d6 de Dano</b> EXPLOSIVO em vez de 2d6, mas você fica <b>Lento</b> até o final de seu próximo turno.\nPropriedades:\n• Arco (ignora cobertura se tiver visão indireta)\n• Calor 2 (sofre 2 de calor ao disparar)",
     "source": "SSC",
     "license": "Monarch",
     "license_level": 3
@@ -1146,8 +1146,8 @@
       "Precisa"
     ],
     "tags_summary": "Precisa (+1d6 no ataque)",
-    "terse": "<b>[No Crítico]</b> Você pode se teletransportar 2 espaços em qualquer direção após o ataque ser resolvido.\nTags: Precisa (+1d6 no ataque)",
-    "detail": "<b>[No Crítico]</b> Você pode se teletransportar 2 espaços em qualquer direção após o ataque ser resolvido.\nTags: Precisa (+1d6 no ataque)\nPropriedades:\n• Precisa (+1d6 no ataque)",
+    "terse": "<b>[No Crítico]</b> Você pode se teleportar <b>2 espaços</b> em qualquer direção após o ataque ser resolvido.\nTags: Precisa (+1d6 no ataque)",
+    "detail": "<b>[No Crítico]</b> Você pode se teleportar <b>2 espaços</b> em qualquer direção após o ataque ser resolvido.\nTags: Precisa (+1d6 no ataque)\nPropriedades:\n• Precisa (+1d6 no ataque)",
     "source": "SSC",
     "license": "Mourning Cloak",
     "license_level": 1
@@ -1201,7 +1201,7 @@
   {
     "id": "mw_oracle_lmg_i",
     "category": "weapon",
-    "name": "Metralhadora Leve Oráculo I",
+    "name": "ML-I Oráculo",
     "mount": "Auxiliar",
     "type": "Rifle",
     "damage": "1d3 Cinético",
@@ -1248,7 +1248,7 @@
   {
     "id": "mw_swarm_hive_nanites",
     "category": "weapon",
-    "name": "Nanorrobôs Enxame/Colmeia",
+    "name": "Nanitas de Enxame/Colmeia",
     "mount": "Principal",
     "type": "Nexo",
     "damage": "2 Cinético + 2 Queimadura",
@@ -1272,7 +1272,7 @@
   {
     "id": "mw_autopod",
     "category": "weapon",
-    "name": "Autopod",
+    "name": "Autocanhão",
     "mount": "Principal",
     "type": "Lançador",
     "damage": "3 Cinético",
@@ -1287,8 +1287,8 @@
       "Único"
     ],
     "tags_summary": "Teleguiada (ignora cobertura e linha de visão); Única (máximo 1 instalada por mecha)",
-    "terse": "Em vez de usar qualquer tipo de mecanismo de gatilho, esta arma varre automaticamente as travas de alvo, disparando discos giratórios e afiados após identificações bem-sucedidas. Ganhe a reação Assalto Autônomo, que é a única maneira de você atacar com o Autopod.\n<b>[<b>Reação</b>]</b> Autonomous Assault: Você pode acertar automaticamente o alvo deles com o Autopod.",
-    "detail": "Em vez de usar qualquer tipo de mecanismo de gatilho, esta arma varre automaticamente as travas de alvo, disparando discos giratórios e afiados após identificações bem-sucedidas. Ganhe a reação Assalto Autônomo, que é a única maneira de você atacar com o Autopod.\n<b>[<b>Reação</b>]</b> Autonomous Assault: Você pode acertar automaticamente o alvo deles com o Autopod.\nPropriedades:\n• Teleguiada (ignora cobertura e linha de visão)\n• Única (máximo 1 instalada por mecha)",
+    "terse": "Em vez de usar qualquer tipo de mecanismo de disparo, esta arma escaneia automaticamente os alvos travados, disparando discos afiados e giratórios após identificações bem-sucedidas. Você ganha a <b>Reação</b> Assalto Autônomo, que é a única maneira de atacar com o Autocanhão.\n<b>[<b>Reação</b>]</b> Assalto Autônomo: Você pode automaticamente acertar o alvo atacado com o Autocanhão.",
+    "detail": "Em vez de usar qualquer tipo de mecanismo de disparo, esta arma escaneia automaticamente os alvos travados, disparando discos afiados e giratórios após identificações bem-sucedidas. Você ganha a <b>Reação</b> Assalto Autônomo, que é a única maneira de atacar com o Autocanhão.\n<b>[<b>Reação</b>]</b> Assalto Autônomo: Você pode automaticamente acertar o alvo atacado com o Autocanhão.\nPropriedades:\n• Teleguiada (ignora cobertura e linha de visão)\n• Única (máximo 1 instalada por mecha)",
     "source": "HORUS",
     "license": "Goblin",
     "license_level": 1
@@ -1296,7 +1296,7 @@
   {
     "id": "mw_vorpal_gun",
     "category": "weapon",
-    "name": "Pistola Vorpal",
+    "name": "Arma Vorpal",
     "mount": "Principal",
     "type": "Canhão",
     "damage": "2d6 Cinético",
@@ -1308,8 +1308,8 @@
     "sp": 0,
     "tags": [],
     "tags_summary": "",
-    "terse": "Ganhe a reação Snicker-Snack, que é a única maneira de você atacar com esta arma.\n<b>[<b>Reação</b>]</b> Snicker-Snack: Você pode fazer um ataque contra o personagem hostil com a Pistola Vorpal.",
-    "detail": "Ganhe a reação Snicker-Snack, que é a única maneira de você atacar com esta arma.\n<b>[<b>Reação</b>]</b> Snicker-Snack: Você pode fazer um ataque contra o personagem hostil com a Pistola Vorpal.",
+    "terse": "Ganhe a <b>Reação</b> VAPT-VUPT, que é a única maneira que você pode atacar com essa arma.\n<b>[<b>Reação</b>]</b> VAPT-VUPT: Você pode fazer um ataque contra o personagem hostil com a Arma Vorpal.",
+    "detail": "Ganhe a <b>Reação</b> VAPT-VUPT, que é a única maneira que você pode atacar com essa arma.\n<b>[<b>Reação</b>]</b> VAPT-VUPT: Você pode fazer um ataque contra o personagem hostil com a Arma Vorpal.",
     "source": "HORUS",
     "license": "Gorgon",
     "license_level": 3
@@ -1317,7 +1317,7 @@
   {
     "id": "mw_ghoul_nexus",
     "category": "weapon",
-    "name": "Nexo Ghoul",
+    "name": "Nexo Carniçal",
     "mount": "Principal",
     "type": "Nexo",
     "damage": "1d3+2 Variável",
@@ -1341,7 +1341,7 @@
   {
     "id": "mw_ghast_nexus",
     "category": "weapon",
-    "name": "Nexo Ghast",
+    "name": "Nexo Lívido",
     "mount": "Pesada",
     "type": "Nexo",
     "damage": "1d6+3 Explosivo",
@@ -1355,8 +1355,8 @@
       "Inteligente"
     ],
     "tags_summary": "Inteligente (ataca a Defesa Tecnológica do alvo)",
-    "terse": "Esta arma pode ser usada para atacar normalmente ou implantada como um Drone.",
-    "detail": "Esta arma pode ser usada para atacar normalmente ou implantada como um Drone.\nPropriedades:\n• Inteligente (ataca a Defesa Tecnológica do alvo)",
+    "terse": "Esta arma pode ser usada para atacar normalmente ou posicionada como um Drone com o seguinte perfil:",
+    "detail": "Esta arma pode ser usada para atacar normalmente ou posicionada como um Drone com o seguinte perfil:\nPropriedades:\n• Inteligente (ataca a Defesa Tecnológica do alvo)",
     "source": "HORUS",
     "license": "Hydra",
     "license_level": 2
@@ -1364,7 +1364,7 @@
   {
     "id": "mw_annihilation_nexus",
     "category": "weapon",
-    "name": "Nexo de Aniquilação",
+    "name": "Nexo Aniquilação",
     "mount": "Superpesada",
     "type": "Nexo",
     "damage": "1d6+3 Energético",
@@ -1379,8 +1379,8 @@
       "Inteligente"
     ],
     "tags_summary": "PF (ignora Armadura); Inteligente (ataca a Defesa Tecnológica do alvo)",
-    "terse": "<b>[Ao Atacar]</b> Você pode fazer um segundo ataque com esta arma no início de seu próximo turno como um protocolo. Este ataque secundário não pode causar dano bônus e não aciona ataques secundários adicionais. Você pode centralizar o ataque desta arma em você mesmo ou em qualquer um de seus Drones dentro dos SENSORES.\n<b>[<b>Protocolo</b>]</b> Ataque Secundário do Nexo Aniquilação: Se você fez um ataque com o Nexo Aniquilação no seu último turno, você pode fazer um segundo ataque com ele como uma <b>ação rápida</b> neste turno.\nTags: PF (ignora <b>Armadura</b>) • Inteligente (ataca a Defesa Tecnológica do alvo)",
-    "detail": "<b>[Ao Atacar]</b> Você pode fazer um segundo ataque com esta arma no início de seu próximo turno como um protocolo. Este ataque secundário não pode causar dano bônus e não aciona ataques secundários adicionais. Você pode centralizar o ataque desta arma em você mesmo ou em qualquer um de seus Drones dentro dos SENSORES.\n<b>[<b>Protocolo</b>]</b> Ataque Secundário do Nexo Aniquilação: Se você fez um ataque com o Nexo Aniquilação no seu último turno, você pode fazer um segundo ataque com ele como uma <b>ação rápida</b> neste turno.\nTags: PF (ignora <b>Armadura</b>) • Inteligente (ataca a Defesa Tecnológica do alvo)\nPropriedades:\n• PF (ignora <b>Armadura</b>)\n• Inteligente (ataca a Defesa Tecnológica do alvo)",
+    "terse": "<b>[Ao Atacar]</b> Você pode fazer um segundo ataque com esta arma no início do seu próximo turno como um protocolo. Este ataque secundário não pode causar dano bônus e não desencadeia ataques secundários adicionais. Você pode centralizar o ataque desta arma em si mesmo ou em qualquer um dos seus Drones dentro do alcance dos Sensores.\n<b>[<b>Protocolo</b>]</b> Ataque Secundário do Nexo Aniquilação: Se você fez um ataque com o Nexo Aniquilação no seu último turno, você pode fazer um segundo ataque com ele no início deste turno como um protocolo.\nTags: PF (ignora <b>Armadura</b>) • Inteligente (ataca a Defesa Tecnológica do alvo)",
+    "detail": "<b>[Ao Atacar]</b> Você pode fazer um segundo ataque com esta arma no início do seu próximo turno como um protocolo. Este ataque secundário não pode causar dano bônus e não desencadeia ataques secundários adicionais. Você pode centralizar o ataque desta arma em si mesmo ou em qualquer um dos seus Drones dentro do alcance dos Sensores.\n<b>[<b>Protocolo</b>]</b> Ataque Secundário do Nexo Aniquilação: Se você fez um ataque com o Nexo Aniquilação no seu último turno, você pode fazer um segundo ataque com ele no início deste turno como um protocolo.\nTags: PF (ignora <b>Armadura</b>) • Inteligente (ataca a Defesa Tecnológica do alvo)\nPropriedades:\n• PF (ignora <b>Armadura</b>)\n• Inteligente (ataca a Defesa Tecnológica do alvo)",
     "source": "HORUS",
     "license": "Hydra",
     "license_level": 3
@@ -1425,8 +1425,8 @@
       "Calor 1 (Próprio)"
     ],
     "tags_summary": "Calor 1 (sofre 1 de calor ao disparar)",
-    "terse": "<b>[No Acerto]</b> Você também pode fazer um ataque secundário contra um personagem diferente a até 3 de alcance do primeiro alvo. Você pode continuar fazendo ataques secundários em acertos, desde que haja novos alvos válidos dentro do alcance; no entanto, cada ataque gera 1 de calor, e ataques secundários não podem causar dano bônus. Personagens não podem ser atingidos mais de uma vez pelo mesmo disparo desta arma.\nTags: Calor 1 (sofre 1 de calor ao disparar)",
-    "detail": "<b>[No Acerto]</b> Você também pode fazer um ataque secundário contra um personagem diferente a até 3 de alcance do primeiro alvo. Você pode continuar fazendo ataques secundários em acertos, desde que haja novos alvos válidos dentro do alcance; no entanto, cada ataque gera 1 de calor, e ataques secundários não podem causar dano bônus. Personagens não podem ser atingidos mais de uma vez pelo mesmo disparo desta arma.\nTags: Calor 1 (sofre 1 de calor ao disparar)\nPropriedades:\n• Calor 1 (sofre 1 de calor ao disparar)",
+    "terse": "<b>[No Acerto]</b> You may also make a secondary attack against a different character within range 3 of the first target. You can continue making secondary attacks on hits, as long as there are new, valid targets within range; however, each attack generates 1 heat, and secondary attacks can’t deal bonus damage. Characters can’t be hit more than once with the same firing of this weapon.\nTags: Calor 1 (sofre 1 de calor ao disparar)",
+    "detail": "<b>[No Acerto]</b> You may also make a secondary attack against a different character within range 3 of the first target. You can continue making secondary attacks on hits, as long as there are new, valid targets within range; however, each attack generates 1 heat, and secondary attacks can’t deal bonus damage. Characters can’t be hit more than once with the same firing of this weapon.\nTags: Calor 1 (sofre 1 de calor ao disparar)\nPropriedades:\n• Calor 1 (sofre 1 de calor ao disparar)",
     "source": "HORUS",
     "license": "Manticore",
     "license_level": 2
@@ -1471,8 +1471,8 @@
     "sp": 0,
     "tags": [],
     "tags_summary": "",
-    "terse": "Esta arma horripilante não possui forma básica; ela se contorce constantemente em diferentes formas, imitando as armas de outros combatentes. Ela conta como todos os tipos de armas à distância simultaneamente (ex: PAP, Fuzil, etc.), mas não pode aceitar Modificações ou se beneficiar de bônus de núcleo, embora ainda se beneficie de talentos normalmente.\nNo início do combate, role 3d20 e anote os resultados em ordem: X, Y e Z. X é o seu Alcance base inicial (antes das modificações dos talentos). No início de cada um de seus turnos após o primeiro, a pistola mímica cicla para o próximo resultado, assumindo-o como seu Alcance base. Após Z, ela volta para X.\nA pistola mímica causa dano cinético igual a 1 + metade do seu Alcance base atual.\nVocê pode provocar a pistola mímica como uma <b>ação completa</b>, rolando um novo conjunto de 3d20.\n<b>[<b>Ação Completa</b>]</b> Provoke Mimic Gun: Role um novo conjunto de 3d20 para definir os valores da Pistola Mímica.",
-    "detail": "Esta arma horripilante não possui forma básica; ela se contorce constantemente em diferentes formas, imitando as armas de outros combatentes. Ela conta como todos os tipos de armas à distância simultaneamente (ex: PAP, Fuzil, etc.), mas não pode aceitar Modificações ou se beneficiar de bônus de núcleo, embora ainda se beneficie de talentos normalmente.\nNo início do combate, role 3d20 e anote os resultados em ordem: X, Y e Z. X é o seu Alcance base inicial (antes das modificações dos talentos). No início de cada um de seus turnos após o primeiro, a pistola mímica cicla para o próximo resultado, assumindo-o como seu Alcance base. Após Z, ela volta para X.\nA pistola mímica causa dano cinético igual a 1 + metade do seu Alcance base atual.\nVocê pode provocar a pistola mímica como uma <b>ação completa</b>, rolando um novo conjunto de 3d20.\n<b>[<b>Ação Completa</b>]</b> Provoke Mimic Gun: Role um novo conjunto de 3d20 para definir os valores da Pistola Mímica.",
+    "terse": "Esta arma horripilante não possui forma básica; ela se contorce constantemente em diferentes formas, imitando as armas de outros combatentes. Ela conta como todos os tipos de armas à distância simultaneamente (ex: PAP, Fuzil, etc.), mas não pode aceitar Modificações ou se beneficiar de bônus de Núcleo, embora ainda se beneficie de talentos normalmente.\nNo início do combate, role 3d20 e anote os resultados em ordem: X, Y e Z. X é o seu <b>Alcance</b> base inicial (antes das modificações dos talentos). No início de cada um de seus turnos após o primeiro, a pistola mímica cicla para o próximo resultado, assumindo-o como seu <b>Alcance</b> base. Após Z, ela volta para X.\nA pistola mímica causa <b>Dano</b> Cinético igual a 1 + metade do seu <b>Alcance</b> base atual.\nVocê pode provocar a pistola mímica como uma <b>Ação Completa</b>, rolando um novo conjunto de 3d20.\n<b>[<b>Ação Completa</b>]</b> Provoke Mimic Gun: Role um novo conjunto de 3d20 para definir os valores da Pistola Mímica.",
+    "detail": "Esta arma horripilante não possui forma básica; ela se contorce constantemente em diferentes formas, imitando as armas de outros combatentes. Ela conta como todos os tipos de armas à distância simultaneamente (ex: PAP, Fuzil, etc.), mas não pode aceitar Modificações ou se beneficiar de bônus de Núcleo, embora ainda se beneficie de talentos normalmente.\nNo início do combate, role 3d20 e anote os resultados em ordem: X, Y e Z. X é o seu <b>Alcance</b> base inicial (antes das modificações dos talentos). No início de cada um de seus turnos após o primeiro, a pistola mímica cicla para o próximo resultado, assumindo-o como seu <b>Alcance</b> base. Após Z, ela volta para X.\nA pistola mímica causa <b>Dano</b> Cinético igual a 1 + metade do seu <b>Alcance</b> base atual.\nVocê pode provocar a pistola mímica como uma <b>Ação Completa</b>, rolando um novo conjunto de 3d20.\n<b>[<b>Ação Completa</b>]</b> Provoke Mimic Gun: Role um novo conjunto de 3d20 para definir os valores da Pistola Mímica.",
     "source": "HORUS",
     "license": "Pegasus",
     "license_level": 2
@@ -1492,8 +1492,8 @@
     "sp": 1,
     "tags": [],
     "tags_summary": "",
-    "terse": "Esta arma não pode fazer ataques normais. Em vez disso, você pode atacar com ela como uma <b>ação livre</b> no final do seu turno. Ela não se beneficia nem aciona seus talentos.\n<b>[<b>Ação Livre</b>]</b> Disparar Autoarma: Esta arma não pode fazer ataques normais. Em vez disso, você pode atacar com ela como uma <b>ação livre</b> ao final de qualquer movimento seu, desde que o alvo esteja dentro do Alcance e da linha de visão.",
-    "detail": "Esta arma não pode fazer ataques normais. Em vez disso, você pode atacar com ela como uma <b>ação livre</b> no final do seu turno. Ela não se beneficia nem aciona seus talentos.\n<b>[<b>Ação Livre</b>]</b> Disparar Autoarma: Esta arma não pode fazer ataques normais. Em vez disso, você pode atacar com ela como uma <b>ação livre</b> ao final de qualquer movimento seu, desde que o alvo esteja dentro do Alcance e da linha de visão.",
+    "terse": "Esta arma não pode fazer ataques normais. Em vez disso, você pode atacar com ela como uma <b>Ação Livre</b> no final do seu turno. Ela não se beneficia nem aciona seus talentos.\n<b>[<b>Ação Livre</b>]</b> Disparar Autoarma: Esta arma não pode fazer ataques normais. Em vez disso, você pode atacar com ela como uma <b>Ação Livre</b> ao final de qualquer movimento seu, desde que o alvo esteja dentro do <b>Alcance</b> e da linha de visão.",
+    "detail": "Esta arma não pode fazer ataques normais. Em vez disso, você pode atacar com ela como uma <b>Ação Livre</b> no final do seu turno. Ela não se beneficia nem aciona seus talentos.\n<b>[<b>Ação Livre</b>]</b> Disparar Autoarma: Esta arma não pode fazer ataques normais. Em vez disso, você pode atacar com ela como uma <b>Ação Livre</b> ao final de qualquer movimento seu, desde que o alvo esteja dentro do <b>Alcance</b> e da linha de visão.",
     "source": "HORUS",
     "license": "Pegasus",
     "license_level": 3
@@ -1513,8 +1513,8 @@
     "sp": 0,
     "tags": [],
     "tags_summary": "",
-    "terse": "O canhão de sítio é a peça de artilharia por excelência do Arsenal: um canhão obuseiro alimentado por um mecanismo de carga automático. Projetado para operar a longas distâncias contra alvos fixos, o canhão de sítio é capaz de demolir fortalezas e devastar formações densas de tropas.",
-    "detail": "O canhão de sítio é a peça de artilharia por excelência do Arsenal: um canhão obuseiro alimentado por um mecanismo de carga automático. Projetado para operar a longas distâncias contra alvos fixos, o canhão de sítio é capaz de demolir fortalezas e devastar formações densas de tropas.",
+    "terse": "O canhão de cerco é a peça de artilharia quintessencial: um canhão obus alimentado por um sistema automatizado de <b>recarga</b>. Tipicamente encaixado em mechas de longa distância utilizados em papéis de artilharia ou suporte de esquadrão, canhões de cerco são tão capazes de fogo direto quanto indireto, como a situação demandar com as opções variáveis de munição.",
+    "detail": "O canhão de cerco é a peça de artilharia quintessencial: um canhão obus alimentado por um sistema automatizado de <b>recarga</b>. Tipicamente encaixado em mechas de longa distância utilizados em papéis de artilharia ou suporte de esquadrão, canhões de cerco são tão capazes de fogo direto quanto indireto, como a situação demandar com as opções variáveis de munição.",
     "source": "HA",
     "license": "Barbarossa",
     "license_level": 3
@@ -1534,8 +1534,8 @@
     "sp": 0,
     "tags": [],
     "tags_summary": "",
-    "terse": "Entre o espesso ambiente arbóreo de Hercínia, as táticas de enxame dos Egregorianos e a natureza intensamente pessoal do combate nas ruínas, o Krakatoa emergiu como a ferramenta ideal para limpar grupos densos de inimigos. Seu combustível termobaricamente acelerado queima mais quente e por mais tempo que qualquer outra alternativa.",
-    "detail": "Entre o espesso ambiente arbóreo de Hercínia, as táticas de enxame dos Egregorianos e a natureza intensamente pessoal do combate nas ruínas, o Krakatoa emergiu como a ferramenta ideal para limpar grupos densos de inimigos. Seu combustível termobaricamente acelerado queima mais quente e por mais tempo que qualquer outra alternativa.",
+    "terse": "Entre os ambientes arbóreos densos de Hercynia, as táticas de enxame dos Egregorianos e a performance inefetiva de munição de balote, a necessidade de armas de efeito amplo era aparente. A SMG rapidamente desenvolveu o Krakatoa — um lança-chamas termobárico — e o distribuiu para afiliados. O Krakatoa foi rapidamente adotado pelas Forças Expedicionárias dos Fuzileiros da União, vendo uso intenso nas profundezas das florestas continentais hercynianas graças à sua estabilidade, confiabilidade e potencial para retardar movimento. Posteriormente retrabalhado e adotado pela Arsenal após a resolução da Crise Hercyniana, o Krakatoa tornou-se uma ferramenta popular para a criação de zonas de negação de acesso.",
+    "detail": "Entre os ambientes arbóreos densos de Hercynia, as táticas de enxame dos Egregorianos e a performance inefetiva de munição de balote, a necessidade de armas de efeito amplo era aparente. A SMG rapidamente desenvolveu o Krakatoa — um lança-chamas termobárico — e o distribuiu para afiliados. O Krakatoa foi rapidamente adotado pelas Forças Expedicionárias dos Fuzileiros da União, vendo uso intenso nas profundezas das florestas continentais hercynianas graças à sua estabilidade, confiabilidade e potencial para retardar movimento. Posteriormente retrabalhado e adotado pela Arsenal após a resolução da Crise Hercyniana, o Krakatoa tornou-se uma ferramenta popular para a criação de zonas de negação de acesso.",
     "source": "HA",
     "license": "Genghis",
     "license_level": 1
@@ -1557,8 +1557,8 @@
       "Calor 4 (Próprio)"
     ],
     "tags_summary": "Calor 4 (sofre 4 de calor ao disparar)",
-    "terse": "Pode ser disparado como Cone 7 <i>ou</i> Linha 10\n<b>[Ao Atacar]</b> Chamas em brasa continuam a queimar em 3 espaços livres de sua escolha dentro da área afetada, durando pelo resto da cena. Quando personagens começam seu turno em um desses espaços ou entram em um pela primeira vez em uma rodada, eles sofrem 1d6 de dano energético.",
-    "detail": "Pode ser disparado como Cone 7 <i>ou</i> Linha 10\n<b>[Ao Atacar]</b> Chamas em brasa continuam a queimar em 3 espaços livres de sua escolha dentro da área afetada, durando pelo resto da cena. Quando personagens começam seu turno em um desses espaços ou entram em um pela primeira vez em uma rodada, eles sofrem 1d6 de dano energético.\nPropriedades:\n• Calor 4 (sofre 4 de calor ao disparar)",
+    "terse": "Pode ser disparado como <b>Cone 7</b> ou <b>Linha 10</b>\n<b>[Ao Atacar]</b> Chamas incandescentes continuam queimando em 3 espaços livres de sua escolha dentro da área afetada, durando até o final da cena. Quando os personagens começam seu turno em um desses espaços ou entram em um pela primeira vez em um turno, eles sofrem 1d6 de dano de energia.",
+    "detail": "Pode ser disparado como <b>Cone 7</b> ou <b>Linha 10</b>\n<b>[Ao Atacar]</b> Chamas incandescentes continuam queimando em 3 espaços livres de sua escolha dentro da área afetada, durando até o final da cena. Quando os personagens começam seu turno em um desses espaços ou entram em um pela primeira vez em um turno, eles sofrem 1d6 de dano de energia.\nPropriedades:\n• Calor 4 (sofre 4 de calor ao disparar)",
     "source": "HA",
     "license": "Genghis",
     "license_level": 3
@@ -1566,7 +1566,7 @@
   {
     "id": "mw_stub_cannon",
     "category": "weapon",
-    "name": "Canhão de Cepo",
+    "name": "Canhão Toco",
     "mount": "Auxiliar",
     "type": "Canhão",
     "damage": "3 Explosivo",
@@ -1590,7 +1590,7 @@
   {
     "id": "mw_gravity_gun",
     "category": "weapon",
-    "name": "Arma de Gravidade",
+    "name": "Arma Gravitacional",
     "mount": "Pesada",
     "type": "Rifle",
     "damage": "-",
@@ -1602,8 +1602,8 @@
     "sp": 0,
     "tags": [],
     "tags_summary": "",
-    "terse": "<b>[Ao Atacar]</b> Personagens dentro da área afetada devem ser bem-sucedidos em um salvamento de CASCO ou sofrer 1d6 de dano energético e serem puxados até 3 espaços em direção ao centro da área.",
-    "detail": "<b>[Ao Atacar]</b> Personagens dentro da área afetada devem ser bem-sucedidos em um salvamento de CASCO ou sofrer 1d6 de dano energético e serem puxados até 3 espaços em direção ao centro da área.",
+    "terse": "<b>[Ao Atacar]</b> Os personagens dentro da área afetada devem obter sucesso em uma salvaguarda de Casco ou sofrer 1d6 de dano de energia e ser puxados o mais próximo possível do centro da explosão. Esta arma não pode ser modificada ou beneficiar de bônus principais.",
+    "detail": "<b>[Ao Atacar]</b> Os personagens dentro da área afetada devem obter sucesso em uma salvaguarda de Casco ou sofrer 1d6 de dano de energia e ser puxados o mais próximo possível do centro da explosão. Esta arma não pode ser modificada ou beneficiar de bônus principais.",
     "source": "HA",
     "license": "Iskander",
     "license_level": 2
@@ -1637,7 +1637,7 @@
   {
     "id": "mw_shatterhead_colony_missiles",
     "category": "weapon",
-    "name": "Mísseis de Colônia Estilhaçacabeça",
+    "name": "Mísseis de Colônia Rompe-Cabeça",
     "mount": "Principal",
     "type": "Lançador",
     "damage": "1d3+1 Energético",
@@ -1651,8 +1651,8 @@
       "Arco"
     ],
     "tags_summary": "Arco (ignora cobertura se tiver visão indireta)",
-    "terse": "A rolagem de ataque final para esta arma nunca pode ser afetada por dificuldade.",
-    "detail": "A rolagem de ataque final para esta arma nunca pode ser afetada por dificuldade.\nPropriedades:\n• Arco (ignora cobertura se tiver visão indireta)",
+    "terse": "A rolagem de ataque final desta arma nunca pode ser afetada por Dificuldade.",
+    "detail": "A rolagem de ataque final desta arma nunca pode ser afetada por Dificuldade.\nPropriedades:\n• Arco (ignora cobertura se tiver visão indireta)",
     "source": "HA",
     "license": "Saladin",
     "license_level": 1
@@ -1683,7 +1683,7 @@
   {
     "id": "mw_andromeda_pattern_heavy_laser_rifle",
     "category": "weapon",
-    "name": "Fuzil a Laser Pesado Modelo ANDROMEDA",
+    "name": "Fuzil a Laser Pesado Modelo ANDRÔMEDA",
     "mount": "Pesada",
     "type": "Canhão",
     "damage": "2d6 Energético + 3 Queimadura",
@@ -1721,8 +1721,8 @@
       "Calor 4 (Próprio)"
     ],
     "tags_summary": "Artilharia (só pode disparar antes de se mover no turno); Calor 4 (sofre 4 de calor ao disparar)",
-    "terse": "<b>[Ao Atacar]</b> Se você estiver na Zona de Perigo, crie um backblast de cone 3 de plasma em chamas na direção oposta ao ataque. Personagens dentro da área afetada devem ter sucesso em um salvamento de ENGENHARIA ou sofrer 4 de queimadura e 2 de calor. Até o início de seu próximo turno, a área afetada fornece cobertura leve.\n<b>[<b>Reação</b>]</b> Tachyon Lance Backblast: Crie um backblast de cone 3 de plasma em chamas na direção oposta ao ataque. Personagens dentro do cone devem ser bem-sucedidos em um salvamento de ENGENHARIA ou sofrer 4 de queimadura e 2 de calor.\nTags: Artilharia (só pode disparar antes de se mover no turno) • Calor 4 (sofre 4 de calor ao disparar)",
-    "detail": "<b>[Ao Atacar]</b> Se você estiver na Zona de Perigo, crie um backblast de cone 3 de plasma em chamas na direção oposta ao ataque. Personagens dentro da área afetada devem ter sucesso em um salvamento de ENGENHARIA ou sofrer 4 de queimadura e 2 de calor. Até o início de seu próximo turno, a área afetada fornece cobertura leve.\n<b>[<b>Reação</b>]</b> Tachyon Lance Backblast: Crie um backblast de cone 3 de plasma em chamas na direção oposta ao ataque. Personagens dentro do cone devem ser bem-sucedidos em um salvamento de ENGENHARIA ou sofrer 4 de queimadura e 2 de calor.\nTags: Artilharia (só pode disparar antes de se mover no turno) • Calor 4 (sofre 4 de calor ao disparar)\nPropriedades:\n• Artilharia (só pode disparar antes de se mover no turno)\n• Calor 4 (sofre 4 de calor ao disparar)",
+    "terse": "<b>[Ao Atacar]</b> Se você estiver na <b>Zona de Perigo</b>, crie um <b>Cone de exaustão</b> de plasma incandescente de <b>3 espaços</b> na direção oposta ao ataque. Os personagens dentro da área afetada devem obter sucesso em uma <b>salvaguarda de Engenharia</b> ou sofrer <b>4 de queimadura</b> e <b>2 de calor</b>. Até o início do seu próximo turno, a área afetada fornece <b>Cobertura Leve</b>.\n<b>[None]</b> Tachyon Lance Backblast: Crie um <b>Cone de sopro</b> de plasma em combustão de <b>3 espaços</b> na direção oposta ao ataque. Os personagens dentro da área afetada devem obter sucesso em uma <b>salvaguarda de Engenharia</b> ou sofrer <b>4 de queimadura</b> e <b>2 de calor</b>. Até o início do seu próximo turno, a área afetada fornece <b>Cobertura Leve</b>.\nTags: Artilharia (só pode disparar antes de se mover no turno) • Calor 4 (sofre 4 de calor ao disparar)",
+    "detail": "<b>[Ao Atacar]</b> Se você estiver na <b>Zona de Perigo</b>, crie um <b>Cone de exaustão</b> de plasma incandescente de <b>3 espaços</b> na direção oposta ao ataque. Os personagens dentro da área afetada devem obter sucesso em uma <b>salvaguarda de Engenharia</b> ou sofrer <b>4 de queimadura</b> e <b>2 de calor</b>. Até o início do seu próximo turno, a área afetada fornece <b>Cobertura Leve</b>.\n<b>[None]</b> Tachyon Lance Backblast: Crie um <b>Cone de sopro</b> de plasma em combustão de <b>3 espaços</b> na direção oposta ao ataque. Os personagens dentro da área afetada devem obter sucesso em uma <b>salvaguarda de Engenharia</b> ou sofrer <b>4 de queimadura</b> e <b>2 de calor</b>. Até o início do seu próximo turno, a área afetada fornece <b>Cobertura Leve</b>.\nTags: Artilharia (só pode disparar antes de se mover no turno) • Calor 4 (sofre 4 de calor ao disparar)\nPropriedades:\n• Artilharia (só pode disparar antes de se mover no turno)\n• Calor 4 (sofre 4 de calor ao disparar)",
     "source": "HA",
     "license": "Sherman",
     "license_level": 3
@@ -1745,8 +1745,8 @@
       "Calor 2 (Próprio)"
     ],
     "tags_summary": "PF (ignora Armadura); Calor 2 (sofre 2 de calor ao disparar)",
-    "terse": "<b>[No Acerto]</b> Faça um ataque secundário contra todos os personagens dentro de EMANAÇÃO 1 do alvo. Estes ataques não podem causar dano bônus e não acionam o custo de calor do Aniquilador ou ataques secundários.\nTags: PF (ignora <b>Armadura</b>) • Calor 2 (sofre 2 de calor ao disparar)",
-    "detail": "<b>[No Acerto]</b> Faça um ataque secundário contra todos os personagens dentro de EMANAÇÃO 1 do alvo. Estes ataques não podem causar dano bônus e não acionam o custo de calor do Aniquilador ou ataques secundários.\nTags: PF (ignora <b>Armadura</b>) • Calor 2 (sofre 2 de calor ao disparar)\nPropriedades:\n• PF (ignora <b>Armadura</b>)\n• Calor 2 (sofre 2 de calor ao disparar)",
+    "terse": "<b>[No Acerto]</b> Make a secondary attack against all characters within burst 1 of the target. These attacks can’t deal bonus damage, and don’t trigger the Annihilator’s heat cost or secondary attacks.\nTags: PF (ignora <b>Armadura</b>) • Calor 2 (sofre 2 de calor ao disparar)",
+    "detail": "<b>[No Acerto]</b> Make a secondary attack against all characters within burst 1 of the target. These attacks can’t deal bonus damage, and don’t trigger the Annihilator’s heat cost or secondary attacks.\nTags: PF (ignora <b>Armadura</b>) • Calor 2 (sofre 2 de calor ao disparar)\nPropriedades:\n• PF (ignora <b>Armadura</b>)\n• Calor 2 (sofre 2 de calor ao disparar)",
     "source": "HA",
     "license": "Tokugawa",
     "license_level": 1
@@ -1793,8 +1793,8 @@
       "Único"
     ],
     "tags_summary": "Limitada 3 (3 usos por missão); Única (máximo 1 instalada por mecha)",
-    "terse": "<b>[Ao Atacar]</b> Clear 4 heat.\nTags: Limitada 3 (3 usos por missão) • Única (máximo 1 instalada por mecha)",
-    "detail": "<b>[Ao Atacar]</b> Clear 4 heat.\nTags: Limitada 3 (3 usos por missão) • Única (máximo 1 instalada por mecha)\nPropriedades:\n• Limitada 3 (3 usos por missão)\n• Única (máximo 1 instalada por mecha)",
+    "terse": "<b>[Ao Atacar]</b> Limpar 4 de calor.\nTags: Limitada 3 (3 usos por missão) • Única (máximo 1 instalada por mecha)",
+    "detail": "<b>[Ao Atacar]</b> Limpar 4 de calor.\nTags: Limitada 3 (3 usos por missão) • Única (máximo 1 instalada por mecha)\nPropriedades:\n• Limitada 3 (3 usos por missão)\n• Única (máximo 1 instalada por mecha)",
     "source": "GMS",
     "license": "GMS",
     "license_level": 0
@@ -1819,8 +1819,8 @@
       "Definir Tipo de Dano"
     ],
     "tags_summary": "Limitada 1d6+2 (1d6+2 usos por missão); Excesso (rolou 1 no dano: sofre 1 de calor e rerrola o 1)",
-    "terse": "Esta arma é um protótipo experimental, personalizado de acordo com seus requisitos específicos.\nQuando você a instala, ou durante um <b>Reparo Completo</b>, você pode escolher um novo tipo de arma, tipo de dano e Ameaça 1 (corpo a corpo) ou Alcance 10 (todos os outros tipos). Adicionalmente, cada vez que você realizar um <b>Reparo Completo</b>, role novamente 1d6+2 para determinar os usos Limitados desta arma.",
-    "detail": "Esta arma é um protótipo experimental, personalizado de acordo com seus requisitos específicos.\nQuando você a instala, ou durante um <b>Reparo Completo</b>, você pode escolher um novo tipo de arma, tipo de dano e Ameaça 1 (corpo a corpo) ou Alcance 10 (todos os outros tipos). Adicionalmente, cada vez que você realizar um <b>Reparo Completo</b>, role novamente 1d6+2 para determinar os usos Limitados desta arma.\nPropriedades:\n• Limitada 1d6+2 (1d6+2 usos por missão)\n• Excesso (rolou 1 no dano: sofre 1 de calor e rerrola o 1)",
+    "terse": "Esta arma é um protótipo experimental, personalizado de acordo com seus requisitos específicos.\nQuando você a instala, ou durante um <b>Reparo Completo</b>, você pode escolher um novo tipo de arma, tipo de <b>Dano</b> e <b>Ameaça</b> 1 (corpo a corpo) ou <b>Alcance 10</b> (todos os outros tipos). Adicionalmente, cada vez que você realizar um <b>Reparo Completo</b>, role novamente 1d6+2 para determinar os usos Limitados desta arma.",
+    "detail": "Esta arma é um protótipo experimental, personalizado de acordo com seus requisitos específicos.\nQuando você a instala, ou durante um <b>Reparo Completo</b>, você pode escolher um novo tipo de arma, tipo de <b>Dano</b> e <b>Ameaça</b> 1 (corpo a corpo) ou <b>Alcance 10</b> (todos os outros tipos). Adicionalmente, cada vez que você realizar um <b>Reparo Completo</b>, role novamente 1d6+2 para determinar os usos Limitados desta arma.\nPropriedades:\n• Limitada 1d6+2 (1d6+2 usos por missão)\n• Excesso (rolou 1 no dano: sofre 1 de calor e rerrola o 1)",
     "source": "GMS",
     "license": "GMS",
     "license_level": 0
@@ -1845,8 +1845,8 @@
       "Definir Tipo de Dano"
     ],
     "tags_summary": "Limitada 1d6+2 (1d6+2 usos por missão); Excesso (rolou 1 no dano: sofre 1 de calor e rerrola o 1)",
-    "terse": "Esta arma é um protótipo experimental, personalizado de acordo com seus requisitos específicos.\nQuando você a instala, ou durante um <b>Reparo Completo</b>, você pode escolher um novo tipo de arma, tipo de dano e Ameaça 1 (corpo a corpo) ou Alcance 10 (todos os outros tipos). Adicionalmente, cada vez que você realizar um <b>Reparo Completo</b>, role novamente 1d6+2 para determinar os usos Limitados desta arma e escolha dois:<ul><li><b>Ópticas Ajustadas:</b> Sua arma protótipo sempre ganha +1 de Precisão nos ataques.</li><li><b>Computador Ajustado:</b> Sua arma protótipo é Inteligente.</li><li><b>Blindagem de reator removida:</b> Cada vez que você atacar com sua arma protótipo, você pode escolher – ao custo de 2 de Calor – atacar com uma das seguintes opções, dependendo do seu tipo de arma:<ul><li><b>Arma à distância:</b> Cone 3, Linha 5 ou <b>[Explosão 1, Alcance 10]</b>.</li><li><b>Arma corpo a corpo:</b> Emanação 1.</li></li></ul></ul>",
-    "detail": "Esta arma é um protótipo experimental, personalizado de acordo com seus requisitos específicos.\nQuando você a instala, ou durante um <b>Reparo Completo</b>, você pode escolher um novo tipo de arma, tipo de dano e Ameaça 1 (corpo a corpo) ou Alcance 10 (todos os outros tipos). Adicionalmente, cada vez que você realizar um <b>Reparo Completo</b>, role novamente 1d6+2 para determinar os usos Limitados desta arma e escolha dois:<ul><li><b>Ópticas Ajustadas:</b> Sua arma protótipo sempre ganha +1 de Precisão nos ataques.</li><li><b>Computador Ajustado:</b> Sua arma protótipo é Inteligente.</li><li><b>Blindagem de reator removida:</b> Cada vez que você atacar com sua arma protótipo, você pode escolher – ao custo de 2 de Calor – atacar com uma das seguintes opções, dependendo do seu tipo de arma:<ul><li><b>Arma à distância:</b> Cone 3, Linha 5 ou <b>[Explosão 1, Alcance 10]</b>.</li><li><b>Arma corpo a corpo:</b> Emanação 1.</li></li></ul></ul>\nPropriedades:\n• Limitada 1d6+2 (1d6+2 usos por missão)\n• Excesso (rolou 1 no dano: sofre 1 de calor e rerrola o 1)",
+    "terse": "Esta arma é um protótipo experimental, personalizado de acordo com seus requisitos específicos.\nQuando você a instala, ou durante um <b>Reparo Completo</b>, você pode escolher um novo tipo de arma, tipo de <b>Dano</b> e <b>Ameaça</b> 1 (corpo a corpo) ou <b>Alcance 10</b> (todos os outros tipos). Adicionalmente, cada vez que você realizar um <b>Reparo Completo</b>, role novamente 1d6+2 para determinar os usos Limitados desta arma e escolha dois:<ul><ul><li>Ópticas Ajustadas: Sua arma protótipo sempre ganha <b>+1 de Precisão</b> nos ataques.</li></ul><ul><li>Computador Ajustado: Sua arma protótipo é <b>Inteligente<b> .</li></ul><ul><li><b>Blindagem</b> de reator removida: Cada vez que você atacar com sua arma protótipo, você pode escolher – ao custo de 2 de <b>Calor</b> – atacar com uma das seguintes opções, dependendo do seu tipo de arma:<ul><li>Arma à distância: <b>Cone</b> 3, <b>Linha</b> 5 ou <b>[<b>Explosão</b> 1, <b>Alcance 10</b>]</b>.</li></ul><ul><li>Arma corpo a corpo: <b>Emanação</b> 1.</li></ul></li></ul></ul>",
+    "detail": "Esta arma é um protótipo experimental, personalizado de acordo com seus requisitos específicos.\nQuando você a instala, ou durante um <b>Reparo Completo</b>, você pode escolher um novo tipo de arma, tipo de <b>Dano</b> e <b>Ameaça</b> 1 (corpo a corpo) ou <b>Alcance 10</b> (todos os outros tipos). Adicionalmente, cada vez que você realizar um <b>Reparo Completo</b>, role novamente 1d6+2 para determinar os usos Limitados desta arma e escolha dois:<ul><ul><li>Ópticas Ajustadas: Sua arma protótipo sempre ganha <b>+1 de Precisão</b> nos ataques.</li></ul><ul><li>Computador Ajustado: Sua arma protótipo é <b>Inteligente<b> .</li></ul><ul><li><b>Blindagem</b> de reator removida: Cada vez que você atacar com sua arma protótipo, você pode escolher – ao custo de 2 de <b>Calor</b> – atacar com uma das seguintes opções, dependendo do seu tipo de arma:<ul><li>Arma à distância: <b>Cone</b> 3, <b>Linha</b> 5 ou <b>[<b>Explosão</b> 1, <b>Alcance 10</b>]</b>.</li></ul><ul><li>Arma corpo a corpo: <b>Emanação</b> 1.</li></ul></li></ul></ul>\nPropriedades:\n• Limitada 1d6+2 (1d6+2 usos por missão)\n• Excesso (rolou 1 no dano: sofre 1 de calor e rerrola o 1)",
     "source": "GMS",
     "license": "GMS",
     "license_level": 0
@@ -1871,8 +1871,8 @@
       "Definir Tipo de Dano"
     ],
     "tags_summary": "Limitada 2d6 (2d6 usos por missão); Excesso (rolou 1 no dano: sofre 1 de calor e rerrola o 1)",
-    "terse": "Esta arma é um protótipo experimental, personalizado de acordo com seus requisitos específicos.\nQuando você a instala, ou durante um <b>Reparo Completo</b>, você pode escolher um novo tipo de arma, tipo de dano e Ameaça 1 (corpo a corpo) ou Alcance 10 (todos os outros tipos). Adicionalmente, cada vez que você realizar um <b>Reparo Completo</b>, role novamente 2d6 para determinar os usos Limitados desta arma e escolha dois:<ul><li><b>Ópticas Ajustadas:</b> Sua arma protótipo sempre ganha +1 de Precisão nos ataques.</li><li><b>Computador Ajustado:</b> Sua arma protótipo é Inteligente.</li><li><b>Blindagem de reator removida:</b> Cada vez que você atacar com sua arma protótipo, você pode escolher – ao custo de 2 de Calor – atacar com uma das seguintes opções, dependendo do seu tipo de arma:<ul><li><b>Arma à distância:</b> Cone 3, Linha 5 ou <b>[Explosão 1, Alcance 10]</b>.</li><li><b>Arma corpo a corpo:</b> Emanação 1.</li></li></ul></ul>",
-    "detail": "Esta arma é um protótipo experimental, personalizado de acordo com seus requisitos específicos.\nQuando você a instala, ou durante um <b>Reparo Completo</b>, você pode escolher um novo tipo de arma, tipo de dano e Ameaça 1 (corpo a corpo) ou Alcance 10 (todos os outros tipos). Adicionalmente, cada vez que você realizar um <b>Reparo Completo</b>, role novamente 2d6 para determinar os usos Limitados desta arma e escolha dois:<ul><li><b>Ópticas Ajustadas:</b> Sua arma protótipo sempre ganha +1 de Precisão nos ataques.</li><li><b>Computador Ajustado:</b> Sua arma protótipo é Inteligente.</li><li><b>Blindagem de reator removida:</b> Cada vez que você atacar com sua arma protótipo, você pode escolher – ao custo de 2 de Calor – atacar com uma das seguintes opções, dependendo do seu tipo de arma:<ul><li><b>Arma à distância:</b> Cone 3, Linha 5 ou <b>[Explosão 1, Alcance 10]</b>.</li><li><b>Arma corpo a corpo:</b> Emanação 1.</li></li></ul></ul>\nPropriedades:\n• Limitada 2d6 (2d6 usos por missão)\n• Excesso (rolou 1 no dano: sofre 1 de calor e rerrola o 1)",
+    "terse": "Esta arma é um protótipo experimental, personalizado de acordo com seus requisitos específicos.\nQuando você a instala, ou durante um <b>Reparo Completo</b>, você pode escolher um novo tipo de arma, tipo de <b>Dano</b> e <b>Ameaça</b> 1 (corpo a corpo) ou <b>Alcance 10</b> (todos os outros tipos). Adicionalmente, cada vez que você realizar um <b>Reparo Completo</b>, role novamente 2d6 para determinar os usos Limitados desta arma e escolha dois:<ul><ul><li>Ópticas Ajustadas: Sua arma protótipo sempre ganha <b>+1 de Precisão</b> nos ataques.</li></ul><ul><li>Computador Ajustado: Sua arma protótipo é <b>Inteligente<b> .</li></ul><ul><li><b>Blindagem</b> de reator removida: Cada vez que você atacar com sua arma protótipo, você pode escolher – ao custo de 2 de <b>Calor</b> – atacar com uma das seguintes opções, dependendo do seu tipo de arma:<ul><li>Arma à distância: <b>Cone</b> 3, <b>Linha</b> 5 ou <b>[<b>Explosão</b> 1, <b>Alcance 10</b>]</b>.</li></ul><ul><li>Arma corpo a corpo: <b>Emanação</b> 1.</li></ul></li></ul></ul>",
+    "detail": "Esta arma é um protótipo experimental, personalizado de acordo com seus requisitos específicos.\nQuando você a instala, ou durante um <b>Reparo Completo</b>, você pode escolher um novo tipo de arma, tipo de <b>Dano</b> e <b>Ameaça</b> 1 (corpo a corpo) ou <b>Alcance 10</b> (todos os outros tipos). Adicionalmente, cada vez que você realizar um <b>Reparo Completo</b>, role novamente 2d6 para determinar os usos Limitados desta arma e escolha dois:<ul><ul><li>Ópticas Ajustadas: Sua arma protótipo sempre ganha <b>+1 de Precisão</b> nos ataques.</li></ul><ul><li>Computador Ajustado: Sua arma protótipo é <b>Inteligente<b> .</li></ul><ul><li><b>Blindagem</b> de reator removida: Cada vez que você atacar com sua arma protótipo, você pode escolher – ao custo de 2 de <b>Calor</b> – atacar com uma das seguintes opções, dependendo do seu tipo de arma:<ul><li>Arma à distância: <b>Cone</b> 3, <b>Linha</b> 5 ou <b>[<b>Explosão</b> 1, <b>Alcance 10</b>]</b>.</li></ul><ul><li>Arma corpo a corpo: <b>Emanação</b> 1.</li></ul></li></ul></ul>\nPropriedades:\n• Limitada 2d6 (2d6 usos por missão)\n• Excesso (rolou 1 no dano: sofre 1 de calor e rerrola o 1)",
     "source": "GMS",
     "license": "GMS",
     "license_level": 0
@@ -1880,7 +1880,7 @@
   {
     "id": "mw_lancaster_integrated",
     "category": "weapon",
-    "name": "Drone de Trava",
+    "name": "Drone de Aderência",
     "mount": "Principal",
     "type": "Lançador",
     "damage": "-",
@@ -1892,8 +1892,8 @@
     "sp": 0,
     "tags": [],
     "tags_summary": "",
-    "terse": "This weapon can’t make normal attacks. Instead, choose an allied mech within Range and line of sight and make a ranged attack against Evasion 8. On a hit, either you or your target may spend 1 Repair to restore half your target’s HP.",
-    "detail": "This weapon can’t make normal attacks. Instead, choose an allied mech within Range and line of sight and make a ranged attack against Evasion 8. On a hit, either you or your target may spend 1 Repair to restore half your target’s HP.",
+    "terse": "Esta arma não pode realizar ataques normais. Em vez disso, escolha um mecha aliado que esteja na linha de visão e dentro do <b>Alcance</b> e faça um ataque à distância contra <b>Evasão</b> 8. Em um acerto, você ou seu alvo podem gastar 1 de Reparo para restaurar metade dos PV do seu alvo.",
+    "detail": "Esta arma não pode realizar ataques normais. Em vez disso, escolha um mecha aliado que esteja na linha de visão e dentro do <b>Alcance</b> e faça um ataque à distância contra <b>Evasão</b> 8. Em um acerto, você ou seu alvo podem gastar 1 de Reparo para restaurar metade dos PV do seu alvo.",
     "source": "GMS",
     "license": "GMS",
     "license_level": 0
@@ -1913,8 +1913,8 @@
     "sp": 0,
     "tags": [],
     "tags_summary": "",
-    "terse": "1/round, when you reload any weapon, this weapon can be fired as a free action.",
-    "detail": "1/round, when you reload any weapon, this weapon can be fired as a free action.",
+    "terse": "1/rodada, quando você <b>Recarregar</b> qualquer arma, esta arma pode ser disparada como uma ação gratuita.",
+    "detail": "1/rodada, quando você <b>Recarregar</b> qualquer arma, esta arma pode ser disparada como uma ação gratuita.",
     "source": "GMS",
     "license": "GMS",
     "license_level": 0
@@ -1922,7 +1922,7 @@
   {
     "id": "mw_barbarossa_integrated",
     "category": "weapon",
-    "name": "Trilho do Apocalipse",
+    "name": "Canhão do Apocalipse",
     "mount": "Classe Nave",
     "type": "Arma de Carretel",
     "damage": "-",
@@ -1934,8 +1934,8 @@
     "sp": 0,
     "tags": [],
     "tags_summary": "",
-    "terse": "O Trilho do Apocalipse deve ser carregado antes de poder ser disparado, usando o Poder de NÚCLEO Carregar Trilho.\nEsta arma tem perfis diferentes determinados pelo valor atual do DADO DO APOCALIPSE quando você a dispara. Cada perfil substitui o anterior. O Trilho do Apocalipse não pode ser disparado contra alvos a menos de alcance 5.\nApós um ataque com o Trilho do Apocalipse, o Dado do Apocalipse volta para 4.\n<b>[<b>Ação Completa</b>]</b> Fire Apocalypse Rail: Se o valor do Dado do Apocalipse for 1–3, você pode atacar em seu turno com o Trilho do Apocalipse como uma <b>ação livre</b>. Se o valor for 4–6, você pode atacar como uma <b>ação livre</b> ao final do turno de qualquer personagem.",
-    "detail": "O Trilho do Apocalipse deve ser carregado antes de poder ser disparado, usando o Poder de NÚCLEO Carregar Trilho.\nEsta arma tem perfis diferentes determinados pelo valor atual do DADO DO APOCALIPSE quando você a dispara. Cada perfil substitui o anterior. O Trilho do Apocalipse não pode ser disparado contra alvos a menos de alcance 5.\nApós um ataque com o Trilho do Apocalipse, o Dado do Apocalipse volta para 4.\n<b>[<b>Ação Completa</b>]</b> Fire Apocalypse Rail: Se o valor do Dado do Apocalipse for 1–3, você pode atacar em seu turno com o Trilho do Apocalipse como uma <b>ação livre</b>. Se o valor for 4–6, você pode atacar como uma <b>ação livre</b> ao final do turno de qualquer personagem.",
+    "terse": "O Canhão do Apocalipse deve ser carregado antes de poder ser disparado, usando o Poder de Núcleo 'Carregar Canhão'.\nEsta arma tem perfis diferentes determinados pelo valor atual do DADO DE APOCALIPSE quando você a dispara. Cada perfil substitui o anterior. O Canhão do Apocalipse não pode ser disparado contra alvos a até <b>Alcance 5</b>.\nDepois de um ataque com o Canhão do Apocalipse, o Dado de Apocalipse reinicia para 4.\n<b>[<b>Ação Completa</b>]</b> Disparar Canhão do Apocalipse: Se o valor do Dado de Apocalipse for 1 a 3, você pode atacar no seu turno com o Canhão do Apocalipse como uma <b>Ação Completa</b>, mas não pode se mover nem usar nenhuma ação no mesmo turno.",
+    "detail": "O Canhão do Apocalipse deve ser carregado antes de poder ser disparado, usando o Poder de Núcleo 'Carregar Canhão'.\nEsta arma tem perfis diferentes determinados pelo valor atual do DADO DE APOCALIPSE quando você a dispara. Cada perfil substitui o anterior. O Canhão do Apocalipse não pode ser disparado contra alvos a até <b>Alcance 5</b>.\nDepois de um ataque com o Canhão do Apocalipse, o Dado de Apocalipse reinicia para 4.\n<b>[<b>Ação Completa</b>]</b> Disparar Canhão do Apocalipse: Se o valor do Dado de Apocalipse for 1 a 3, você pode atacar no seu turno com o Canhão do Apocalipse como uma <b>Ação Completa</b>, mas não pode se mover nem usar nenhuma ação no mesmo turno.",
     "source": "GMS",
     "license": "GMS",
     "license_level": 0
@@ -1943,7 +1943,7 @@
   {
     "id": "mw_sherman_integrated",
     "category": "weapon",
-    "name": "ZF4 SOLIDCORE",
+    "name": "ZF4 Núcleo-SÓLIDO",
     "mount": "Principal",
     "type": "Canhão",
     "damage": "-",
@@ -1962,5 +1962,166 @@
     "source": "GMS",
     "license": "GMS",
     "license_level": 0
+  },
+  {
+    "id": "mw_kraul_rifle",
+    "category": "weapon",
+    "name": "Fuzil Kraul",
+    "mount": "Principal",
+    "type": "Combate Próximo (CQB)",
+    "damage": "1d6 Cinético",
+    "damage_val": "1d6",
+    "damage_type": "Cinético",
+    "range": "Alcance 8",
+    "range_val": 8,
+    "range_type": "Alcance",
+    "sp": 0,
+    "tags": [
+      "Imprecisa"
+    ],
+    "tags_summary": "Imprecisa (+1d6 de dificuldade)",
+    "terse": "<b>[No Acerto]</b> Seu alvo é empalado pelo projétil em forma de arpão desta arma. A qualquer momento após o alvo realizar qualquer ação ou movimento durante o próximo turno dele, você pode recolher a linha e <b>Impulsionar</b> como uma <b>Reação</b>, movendo-se em direção ao alvo pela rota mais direta possível. Ele deve então obter sucesso em um teste de <b>Casco</b> ou será derrubado, ficando <b>Prostrado</b>; com um sucesso ou fracasso, esse efeito termina. A linha se rompe se o alvo se teletransportar.\nTags: Imprecisa (+1d6 de dificuldade)",
+    "detail": "<b>[No Acerto]</b> Seu alvo é empalado pelo projétil em forma de arpão desta arma. A qualquer momento após o alvo realizar qualquer ação ou movimento durante o próximo turno dele, você pode recolher a linha e <b>Impulsionar</b> como uma <b>Reação</b>, movendo-se em direção ao alvo pela rota mais direta possível. Ele deve então obter sucesso em um teste de <b>Casco</b> ou será derrubado, ficando <b>Prostrado</b>; com um sucesso ou fracasso, esse efeito termina. A linha se rompe se o alvo se teletransportar.\nTags: Imprecisa (+1d6 de dificuldade)\nPropriedades:\n• Imprecisa (+1d6 de dificuldade)",
+    "source": "SSC",
+    "license": "Atlas",
+    "license_level": 1
+  },
+  {
+    "id": "mw_terashima_blade",
+    "category": "weapon",
+    "name": "Lâmina Terashima",
+    "mount": "Principal",
+    "type": "Corpo a Corpo",
+    "damage": "-",
+    "damage_val": "-",
+    "damage_type": "-",
+    "range": "-",
+    "range_val": "-",
+    "range_type": "-",
+    "sp": 2,
+    "tags": [
+      "Único"
+    ],
+    "tags_summary": "Única (máximo 1 instalada por mecha)",
+    "terse": "Você pode começar qualquer combate em uma das seguintes posturas e pode mudar ou adotar uma nova postura como <b>Protocolo</b>. Uma vez que tenha adotado uma postura, você permanece nela até que adote uma nova postura, esta arma seja destruída, ou você seja <b>Atordoado</b> ou <b>Bloqueado</b>. Você também pode abandonar uma postura como uma <b>Ação Livre</b>.\n<b>[<b>Protocolo</b>]</b> Mudar Postura: Muda a postura desta arma.\n<b>[<b>Ação Livre</b>]</b> Abandonar Postura: Abandona a postura desta arma.",
+    "detail": "Você pode começar qualquer combate em uma das seguintes posturas e pode mudar ou adotar uma nova postura como <b>Protocolo</b>. Uma vez que tenha adotado uma postura, você permanece nela até que adote uma nova postura, esta arma seja destruída, ou você seja <b>Atordoado</b> ou <b>Bloqueado</b>. Você também pode abandonar uma postura como uma <b>Ação Livre</b>.\n<b>[<b>Protocolo</b>]</b> Mudar Postura: Muda a postura desta arma.\n<b>[<b>Ação Livre</b>]</b> Abandonar Postura: Abandona a postura desta arma.\nPropriedades:\n• Única (máximo 1 instalada por mecha)",
+    "source": "SSC",
+    "license": "Atlas",
+    "license_level": 3
+  },
+  {
+    "id": "mw_hammer_u_rpl",
+    "category": "weapon",
+    "name": "Martelo LU-PR",
+    "mount": "Pesada",
+    "type": "Lançador",
+    "damage": "2d6+3 Explosivo",
+    "damage_val": "2d6+3",
+    "damage_type": "Explosivo",
+    "range": "Alcance 5",
+    "range_val": 5,
+    "range_type": "Alcance",
+    "sp": 0,
+    "tags": [
+      "Imprecisa",
+      "Arco",
+      "Repulsão 2"
+    ],
+    "tags_summary": "Imprecisa (+1d6 de dificuldade); Arco (ignora cobertura se tiver visão indireta); Repulsão 2 (empurra o alvo 2 espaços)",
+    "terse": "Pesada Lançador. Imprecisa (+1d6 de dificuldade) • Arco (ignora cobertura se tiver visão indireta) • Repulsão 2 (empurra o alvo 2 espaços)",
+    "detail": "Pesada Lançador. Imprecisa (+1d6 de dificuldade) • Arco (ignora cobertura se tiver visão indireta) • Repulsão 2 (empurra o alvo 2 espaços)\nPropriedades:\n• Imprecisa (+1d6 de dificuldade)\n• Arco (ignora cobertura se tiver visão indireta)\n• Repulsão 2 (empurra o alvo 2 espaços)",
+    "source": "IPS-N",
+    "license": "Caliban",
+    "license_level": 1
+  },
+  {
+    "id": "mw_hhs_155_cannibal",
+    "category": "weapon",
+    "name": "EOP-155 CANIBAL",
+    "mount": "Pesada",
+    "type": "Combate Próximo (CQB)",
+    "damage": "-",
+    "damage_val": "-",
+    "damage_type": "-",
+    "range": "-",
+    "range_val": "-",
+    "range_type": "-",
+    "sp": 0,
+    "tags": [
+      "Recarga"
+    ],
+    "tags_summary": "Carregamento (precisa de ação rápida ou estabilizar para recarregar)",
+    "terse": "Você pode disparar essa espingarda pesada duas vezes antes de precisar recarregá-la. Ou então você pode disparar ambos os canos de uma vez, recebendo +1 de Dificuldade, aumentando seu dano para 3d6+4 Cinético e sua <b>Repulsão</b> para 4, mas exigindo que ela seja recarregada normalmente. Quando esta arma é recarregada, você pode escolher causar 5 de dano Cinético a um personagem adjacente devido à força das cápsulas ejetadas.",
+    "detail": "Você pode disparar essa espingarda pesada duas vezes antes de precisar recarregá-la. Ou então você pode disparar ambos os canos de uma vez, recebendo +1 de Dificuldade, aumentando seu dano para 3d6+4 Cinético e sua <b>Repulsão</b> para 4, mas exigindo que ela seja recarregada normalmente. Quando esta arma é recarregada, você pode escolher causar 5 de dano Cinético a um personagem adjacente devido à força das cápsulas ejetadas.\nPropriedades:\n• Carregamento (precisa de <b>ação rápida</b> ou estabilizar para recarregar)",
+    "source": "IPS-N",
+    "license": "Caliban",
+    "license_level": 3
+  },
+  {
+    "id": "mw_fusion_rifle",
+    "category": "weapon",
+    "name": "Fuzil de Fusão",
+    "mount": "Principal",
+    "type": "Rifle",
+    "damage": "1-6 Energético",
+    "damage_val": "1-6",
+    "damage_type": "Energético",
+    "range": "Alcance 6",
+    "range_val": 6,
+    "range_type": "Alcance",
+    "sp": 0,
+    "tags": [],
+    "tags_summary": "",
+    "terse": "Esta arma causa dano igual ao seu <b>Alcance</b> em relação ao alvo (até um máximo de 6 de <b>Energia</b>).",
+    "detail": "Esta arma causa dano igual ao seu <b>Alcance</b> em relação ao alvo (até um máximo de 6 de <b>Energia</b>).",
+    "source": "HORUS",
+    "license": "Kobold",
+    "license_level": 1
+  },
+  {
+    "id": "mw_slag_cannon",
+    "category": "weapon",
+    "name": "Canhão de Detritos",
+    "mount": "Principal",
+    "type": "Canhão",
+    "damage": "1d6 Energético",
+    "damage_val": "1d6",
+    "damage_type": "Energético",
+    "range": "Alcance 8",
+    "range_val": 8,
+    "range_type": "Alcance",
+    "sp": 0,
+    "tags": [
+      "Calor 1 (Próprio)"
+    ],
+    "tags_summary": "Calor 1 (sofre 1 de calor ao disparar)",
+    "terse": "No Ataque: Se o seu alvo estiver no chão ou em uma superfície plana, assim que o ataque se resolver, coloque um monte de detritos de <b>Tamanho 1</b> em um espaço livre adjacente ao alvo. O monte de detritos é um objeto com <b>Evasão 5</b> e 10 PV.",
+    "detail": "No Ataque: Se o seu alvo estiver no chão ou em uma superfície plana, assim que o ataque se resolver, coloque um monte de detritos de <b>Tamanho 1</b> em um espaço livre adjacente ao alvo. O monte de detritos é um objeto com <b>Evasão 5</b> e 10 PV.\nPropriedades:\n• Calor 1 (sofre 1 de calor ao disparar)",
+    "source": "HORUS",
+    "license": "Kobold",
+    "license_level": 2
+  },
+  {
+    "id": "mw_unraveler",
+    "category": "weapon",
+    "name": "Desmantelador",
+    "mount": "Principal",
+    "type": "Lançador",
+    "damage": "2d6 Energético",
+    "damage_val": "2d6",
+    "damage_type": "Energético",
+    "range": "Alcance 10",
+    "range_val": 10,
+    "range_type": "Alcance",
+    "sp": 0,
+    "tags": [
+      "Confiável 2"
+    ],
+    "tags_summary": "Confiável 2 (causa 2 de dano mesmo se errar o ataque)",
+    "terse": "Se um ataque desta arma não causar dano suficiente para destruir seu alvo ou causar pelo menos 1 de <b>dano de estrutura</b>, ele causa apenas 2 de dano <b>Confiável</b>, mesmo em caso de acerto.",
+    "detail": "Se um ataque desta arma não causar dano suficiente para destruir seu alvo ou causar pelo menos 1 de <b>dano de estrutura</b>, ele causa apenas 2 de dano <b>Confiável</b>, mesmo em caso de acerto.\nPropriedades:\n• Confiável 2 (causa 2 de dano mesmo se errar o ataque)",
+    "source": "HORUS",
+    "license": "Lich",
+    "license_level": 1
   }
 ]
